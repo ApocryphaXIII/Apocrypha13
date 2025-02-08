@@ -256,9 +256,9 @@
 /obj/machinery/mineral/equipment_vendor/restricted/police
 	jobs_allowed = list(
 		"Police Officer" = 200,
-		"Federal Investigator" = 400,
+		"Police Detective" = 400,
 		"Police Sergeant" = 500,
-		"Police Chief" = 15000,	// don't you love the militirization of the police?
+		"Precinct Captain" = 15000,	// don't you love the militirization of the police?
 	)
 	prize_list = list(
 		new /datum/data/mining_equipment("handcuffs", /obj/item/restraints/handcuffs, 1),

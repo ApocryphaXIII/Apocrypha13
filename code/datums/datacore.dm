@@ -158,7 +158,7 @@
 		"Anarch" = GLOB.anarch_positions,
 		"Giovanni" = GLOB.giovanni_positions,
 		"Old Clan Tzimisce" = GLOB.tzimisce_positions,
-		"Law Enforcement" = GLOB.police_positions + GLOB.national_security_positions,
+		"Law Enforcement" = GLOB.police_positions + GLOB.precinct_db_positions,
 		"Warehouse" = GLOB.warehouse_positions,
 		"Triad" = GLOB.gang_positions
 	)

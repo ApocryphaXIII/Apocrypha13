@@ -81,7 +81,7 @@
 	backpack_contents = list(/obj/item/passport=1, /obj/item/implant/radio=1, /obj/item/vamp/creditcard=1, /obj/item/ammo_box/vampire/c9mm = 1, /obj/item/restraints/handcuffs = 1,/obj/item/melee/classic_baton/vampire = 1, /obj/item/storage/firstaid/ifak = 1)
 
 /datum/job/vamp/police_chief
-	title = "Police Chief"
+	title = "Precinct Captain"
 	department_head = list("Police Department")
 	faction = "Vampire"
 	total_positions = 1
@@ -95,7 +95,7 @@
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SRV
-	display_order = JOB_DISPLAY_ORDER_POLICE_CHIEF
+	display_order = JOB_DISPLAY_ORDER_PRECINCT_CAPTAIN
 	exp_type_department = EXP_TYPE_POLICE
 
 	allowed_species = list("Human")
@@ -106,7 +106,7 @@
 //	known_contacts = list("Investigator")
 
 /datum/outfit/job/police_chief
-	name = "Police Chief"
+	name = "Precinct Captain"
 	jobtype = /datum/job/vamp/police_chief
 
 	ears = /obj/item/p25radio/police/command
