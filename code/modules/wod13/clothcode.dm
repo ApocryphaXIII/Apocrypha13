@@ -671,8 +671,8 @@
 	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
 
 /obj/item/clothing/suit/vampire/jacket/fbi
-	name = "Federal Bureau of Investigation jacket"
-	desc = "\"FBI OPEN UP!!\""
+	name = "Discontinued Old Jacket"
+	desc = "\"Warn by the new members of the SFPD's Detective Bureau. Still have yet to issue new ones. We aren't FBI.\"" // need new sprites - tzula
 	icon_state = "fbi"
 	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
 
@@ -743,7 +743,7 @@
 
 // They got an Army vest post-PD update. I am just giving them the same, instead coded into their equipment instead of mapped.
 /obj/item/clothing/suit/vampire/vest/police/chief
-	name = "police chief duty vest"
+	name = "Precinct Captain duty vest"
 	icon_state = "chiefvest"
 	desc = "Composite bulletproof vest with SFPD markings, tailored for improved protection. This one has captain insignia on it."
 	armor = list(MELEE = 70, BULLET = 70, LASER = 10, ENERGY = 10, BOMB = 60, BIO = 0, RAD = 0, FIRE = 50, ACID = 10, WOUND = 30)

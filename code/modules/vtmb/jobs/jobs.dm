@@ -336,7 +336,7 @@
 	desc = "Sponsored by the Government. This one seems slightly more worn down than all the others."
 
 /obj/item/card/id/police/chief
-	name = "police chief badge"
+	name = "Precinct Captain badge"
 	desc = "Sponsored by the Government. This one has a chrome plated finish."
 
 /obj/item/card/id/police/fbi
