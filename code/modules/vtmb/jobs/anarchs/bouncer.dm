@@ -1,6 +1,6 @@
 
-/datum/job/vamp/bruiser
-	title = "Bruiser"
+/datum/job/vamp/anarch_member
+	title = "Anarch Member"
 	department_head = list("Baron")
 	faction = "Vampire"
 	total_positions = 7
@@ -8,7 +8,7 @@
 	supervisors = "the Baron"
 	selection_color = "#434343"
 
-	outfit = /datum/outfit/job/bruiser
+	outfit = /datum/outfit/job/anarch_member
 
 	access = list(ACCESS_LAWYER, ACCESS_COURT, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_LAWYER, ACCESS_COURT, ACCESS_SEC_DOORS)
@@ -18,7 +18,7 @@
 	mind_traits = list(TRAIT_DONUT_LOVER)
 	liver_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_BRUISER
+	display_order = JOB_DISPLAY_ORDER_ANARCH_MEMBER
 	known_contacts = list("Baron")
 	allowed_bloodlines = list("Daughters of Cacophony", "True Brujah", "Brujah", "Nosferatu", "Gangrel", "Toreador", "Tremere", "Malkavian", "Banu Haqim", "Tzimisce", "Caitiff", "Ventrue", "Lasombra", "Gargoyle", "Kiasyd", "Cappadocian", "Ministry")
 
@@ -26,9 +26,9 @@
 	minimal_masquerade = 2
 	experience_addition = 15
 
-/datum/outfit/job/bruiser
-	name = "Bruiser"
-	jobtype = /datum/job/vamp/bruiser
+/datum/outfit/job/anarch_member
+	name = "Anarch Member"
+	jobtype = /datum/job/vamp/anarch_member
 
 	id = /obj/item/card/id/anarch
 	uniform = /obj/item/clothing/under/vampire/bouncer
@@ -40,6 +40,6 @@
 	backpack_contents = list(/obj/item/passport=1, /obj/item/cockclock=1, /obj/item/vampire_stake=3, /obj/item/flashlight=1, /obj/item/vamp/keys/hack=1, /obj/item/vamp/creditcard=1)
 
 
-/obj/effect/landmark/start/bruiser
-	name = "Bruiser"
+/obj/effect/landmark/start/anarch_member
+	name = "Anarch Member"
 	icon_state = "Bouncer"
