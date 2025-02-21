@@ -1,7 +1,11 @@
 
 /datum/socialrole/bandit
-	s_tones = list("caucasian3",
+	s_tones = list(
+								"caucasian3",
 								"latino",
+								"caucasian1",
+								"caucasian2",
+								"caucasian3",
 								"mediterranean",
 								"asian1",
 								"asian2",
@@ -85,7 +89,6 @@
 		"You know who I work for?",
 		"Get the hell outta here, 'fore I get my gang on yo' ass.",
 		"You need sumn' punk?",
-		"Get lost, liberal.",
 		"Get outta this side of town.",
 		"Think you scare me? You know who I work for?",
 		"Think you're hot shit?"
@@ -94,7 +97,6 @@
 		"Why you starin' at me like that?",
 		"Another dumbass tryin' to look threatening.",
 		"Halloween's over, what's with the costumes.",
-		"I think that whore gave me the clap.",
 		"Gotta get home soon, family to feed and all that.",
 		"Get lost, liberal.",
 		"I think.. I miss my wife.",
