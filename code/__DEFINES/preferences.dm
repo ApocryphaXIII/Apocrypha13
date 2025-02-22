@@ -87,7 +87,7 @@
 #define EXP_TYPE_GIOVANNI   "Giovanni Family"
 #define EXP_TYPE_TZIMISCE   "Tzimisce Mansion"
 #define EXP_TYPE_WAREHOUSE      "Warehouse"
-#define EXP_TYPE_NATIONAL_SECURITY      "National Security"
+#define EXP_TYPE_PRECINCT_DB      "Precinct DB"
 #define EXP_TYPE_CHURCH         "Church"
 #define EXP_TYPE_SPECIAL		"Special"
 #define EXP_TYPE_GHOST			"Ghost"

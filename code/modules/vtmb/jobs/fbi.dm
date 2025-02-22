@@ -1,11 +1,11 @@
 
 /datum/job/vamp/fbi
-	title = "Federal Investigator"
-	department_head = list("Federal Bureau of Investigation")
+	title = "Precinct Detective"
+	department_head = list("The Precinct Captain")
 	faction = "Vampire"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = " the FBI"
+	supervisors = " the Precinct Captain"
 	selection_color = "#1a1d8a"
 
 	outfit = /datum/outfit/job/fbi
@@ -14,8 +14,8 @@
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	paycheck = PAYCHECK_MEDIUM
 	paycheck_department = ACCOUNT_SRV
-	display_order = JOB_DISPLAY_ORDER_FBI
-	exp_type_department = EXP_TYPE_NATIONAL_SECURITY
+	display_order = JOB_DISPLAY_PRECINCT_DETECTIVE
+	exp_type_department = EXP_TYPE_PRECINCT_DB
 
 	allowed_species = list("Human")
 	minimal_generation = 13
@@ -26,7 +26,7 @@
 	known_contacts = list("Police Chief")
 
 /datum/outfit/job/fbi
-	name = "Federal Investigator"
+	name = "Precinct Detective"
 	jobtype = /datum/job/vamp/fbi
 
 	ears = /obj/item/p25radio/police/government
