@@ -5,16 +5,16 @@
 # to the same file or dir, add them to the end of under Multiple Owners
 
 # Map Maintainers
-/_maps/ @ApocryphaXIII/maptainers
-*.dmm @ApocryphaXIII/maptainers
+# /_maps/ @ApocryphaXIII/maptainers
+# *.dmm @ApocryphaXIII/maptainers
 
 # Sprite Maintainers
 # /icons/ @ApocryphaXIII/spritetainers
 # *.dmi @ApocryphaXIII/spritetainers
 
 # Code Maintainers
-# /code/ @ApocryphaXIII/maintainers
-# *.dm @ApocryphaXIII/maintainers
+/code/ @ApocryphaXIII/maintainers
+*.dm @ApocryphaXIII/maintainers
 
 # MAINTAINERS
 
