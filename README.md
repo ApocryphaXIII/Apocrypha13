@@ -8,7 +8,7 @@
 | The Second City Discord | [https://discord.gg/rmAbJcuChD](https://discord.gg/rmAbJcuChD)                       |
 | Coderbus Discord        | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)                             |
 
-This is the codebase for Apocrypham, a downstream/fork for the Darkpack13 Project, a fork of TGstation 2025
+This is the codebase for Apocrypha13, a downstream/fork for the Darkpack13 Project, a fork of TGstation 2025
 
 We are based on the Paradox Interactive World of Darkness(c) gamelines, with administrative oversight determining what we add to our game.
 

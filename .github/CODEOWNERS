@@ -7,15 +7,16 @@
 # Map Maintainers
 
 # Sprite Maintainers
+/icons/ @ApocryphaXIII/spritetainers
+*.dmi @ApocryphaXIII/spritetainers
 
 # Code Maintainers
+/code/ @ApocryphaXIII/maintainers
+*.dm @ApocryphaXIII/maintainers
 
 # MAINTAINERS
 
 # FalloutFalcon
-/modular_darkpack/modules/cars/code/ @FalloutFalcon
-/modular_darkpack/modules/city_time/code/ @FalloutFalcon
-/modular_darkpack/modules/doors/code/vampdoor.dm @FalloutFalcon
 
 # CONTRIBUTORS
 
