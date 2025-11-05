@@ -7091,4 +7091,5 @@
 #include "modular_darkpack\modules\z_travel\code\manhole.dm"
 #include "modular_darkpack\modules\z_travel\code\transfer_point.dm"
 #include "modular_zapoc\modules\carpets\code\carpets.dm"
+#include "modular_zapoc\modules\floors\code\autocutting.dm"
 // END_INCLUDE
