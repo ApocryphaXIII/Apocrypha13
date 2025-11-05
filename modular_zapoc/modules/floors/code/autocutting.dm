@@ -1,10 +1,10 @@
 /turf/open/misc/grass
 	icon_state = "grass1"
-	icon = 'modular_zapoc/modules/floors/icons.dmi'
+	icon = 'modular_zapoc/modules/floors/icons/tiles.dmi'
 	smooth_icon = 'icons/obj/smooth_structures/apoc/grass.dmi'
 
 /turf/open/misc/dirt
-	icon = 'modular_zapoc/modules/floors/icons.dmi'
+	icon = 'modular_zapoc/modules/floors/icons/tiles.dmi'
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_TURF_OPEN + SMOOTH_GROUP_FLOOR_GRASS
 	canSmoothWith = SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_CLOSED_TURFS
