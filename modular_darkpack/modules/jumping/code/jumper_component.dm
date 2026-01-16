@@ -68,9 +68,6 @@
 	if(istype(target, /atom/movable/screen))
 		return
 
-	if(get_turf(jumper) == get_turf(target)) // We can't jump on ourselves
-		return
-
 	if(!COOLDOWN_FINISHED(src, jump_cooldown))
 		to_chat(jumper, span_notice("You can't jump so soon!"))
 		return
@@ -83,9 +80,6 @@
 /datum/config_entry/flag/jump_slowdown // Config datum
 
 /mob/living/proc/post_jump_slowdown(duration)
-	if(duration < 1)
-		duration = 1
-
 	add_movespeed_modifier(/datum/movespeed_modifier/post_jump)
 	addtimer(CALLBACK(src, PROC_REF(remove_movespeed_modifier), /datum/movespeed_modifier/post_jump), duration)
 
@@ -118,9 +112,9 @@
 	if(jumper.combat_mode && get_dist(jumper.loc, target) <= 3 && strength >= 8)
 		addtimer(CALLBACK(src, PROC_REF(jump_boom), jumper),(distance * 0.5))
 		jumper.visible_message(span_danger("[jumper] takes a mighty leap that shatters \the [adjusted_target] where they land!"))
-		jumper.adjust_stamina_loss(20)
+		jumper.adjustStaminaLoss(20)
 	else
-		jumper.adjust_stamina_loss(10)
+		jumper.adjustStaminaLoss(10)
 		jumper.visible_message(span_danger("[jumper] jumps towards [adjusted_target]."))
 
 	var/turf/start_T = get_turf(jumper.loc) //Get the start and target tile for the descriptors

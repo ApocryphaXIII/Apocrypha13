@@ -805,12 +805,14 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
-/obj/machinery/airalarm/directional/north,
+/obj/machinery/airalarm/directional/south{
+	pixel_y = 35
+	},
 /turf/open/floor/iron/cafeteria,
 /area/ruin/pizzeria/kitchen)
 "IW" = (
 /obj/effect/spawner/random/entertainment/cigarette,
-/obj/machinery/light/small/empty/directional/south,
+/obj/machinery/light/small/built/directional/south,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "IY" = (

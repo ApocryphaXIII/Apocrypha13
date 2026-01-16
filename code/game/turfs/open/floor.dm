@@ -3,7 +3,7 @@
 	name = "floor"
 	icon = 'icons/turf/floors.dmi'
 	base_icon_state = "floor"
-	baseturfs = /turf/open/floor/plating/concrete // DARKPACK EDIT CHANGE
+	baseturfs = /turf/open/floor/plating
 
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
@@ -16,7 +16,7 @@
 
 	thermal_conductivity = 0.02
 	heat_capacity = 20000
-	tiled_turf = TRUE
+	tiled_dirt = TRUE
 
 
 	overfloor_placed = TRUE
@@ -208,6 +208,9 @@
 /turf/open/floor/rcd_vals(mob/user, obj/item/construction/rcd/the_rcd)
 	switch(the_rcd.mode)
 		if(RCD_TURF)
+			if(the_rcd.rcd_design_path != /turf/open/floor/plating/rcd)
+				return FALSE
+
 			var/obj/structure/girder/girder = locate() in src
 			if(girder)
 				return girder.rcd_vals(user, the_rcd)
@@ -217,10 +220,6 @@
 				src, RCD_MEMORY_WALL,
 			)
 		if(RCD_WINDOWGRILLE)
-			var/obj/structure/grille/grille = locate() in src
-			if(grille)
-				return grille.rcd_vals(user, the_rcd)
-
 			//default cost for building a grill for fulltile windows
 			var/cost = 4
 			var/delay = 1 SECONDS
@@ -267,9 +266,13 @@
 
 	return FALSE
 
+/// if you are updating this make to to update /turf/open/misc/rcd_act() too
 /turf/open/floor/rcd_act(mob/user, obj/item/construction/rcd/the_rcd, list/rcd_data)
-	switch(rcd_data[RCD_DESIGN_MODE])
+	switch(rcd_data["[RCD_DESIGN_MODE]"])
 		if(RCD_TURF)
+			if(rcd_data["[RCD_DESIGN_PATH]"] != /turf/open/floor/plating/rcd)
+				return FALSE
+
 			var/obj/structure/girder/girder = locate() in src
 			if(girder)
 				return girder.rcd_act(user, the_rcd, rcd_data)
@@ -277,12 +280,12 @@
 			place_on_top(/turf/closed/wall)
 			return TRUE
 		if(RCD_WINDOWGRILLE)
-			var/obj/structure/grille/grille = locate() in src
-			if(grille)
-				return grille.rcd_act(user, the_rcd, rcd_data)
+			//check if we are building a window
+			var/obj/structure/window/window_path = rcd_data["[RCD_DESIGN_PATH]"]
+			if(!ispath(window_path))
+				CRASH("Invalid window path type in RCD: [window_path]")
 
 			//allow directional windows to be built without grills
-			var/obj/structure/window/window_path = rcd_data[RCD_DESIGN_PATH]
 			if(!initial(window_path.fulltile))
 				if(!valid_build_direction(src, user.dir, is_fulltile = FALSE))
 					balloon_alert(user, "window already here!")
@@ -292,11 +295,13 @@
 				return TRUE
 
 			//build grills to deal with full tile windows
-			grille = new(src)
-			grille.set_anchored(TRUE)
+			if(locate(/obj/structure/grille) in src)
+				return FALSE
+			var/obj/structure/grille/new_grille = new(src)
+			new_grille.set_anchored(TRUE)
 			return TRUE
 		if(RCD_AIRLOCK)
-			var/obj/machinery/door/airlock_type = rcd_data[RCD_DESIGN_PATH]
+			var/obj/machinery/door/airlock_type = rcd_data["[RCD_DESIGN_PATH]"]
 
 			if(ispath(airlock_type, /obj/machinery/door/window))
 				if(!valid_build_direction(src, user.dir, is_fulltile = FALSE))
@@ -330,7 +335,7 @@
 			assembly.finish_door()
 			return TRUE
 		if(RCD_STRUCTURE)
-			var/atom/movable/design_type = rcd_data[RCD_DESIGN_PATH]
+			var/atom/movable/design_type = rcd_data["[RCD_DESIGN_PATH]"]
 
 			//map absolute types to basic subtypes
 			var/atom/movable/locate_type = design_type

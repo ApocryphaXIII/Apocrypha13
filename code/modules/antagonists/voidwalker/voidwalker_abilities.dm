@@ -2,8 +2,7 @@
 /datum/action/cooldown/spell/pointed/unsettle
 	name = "Unsettle"
 	desc = "Stare directly into someone who doesn't see you. Remain in their view for a bit to stun them for 2 seconds and announce your presence to them. "
-	button_icon = 'icons/mob/actions/actions_voidwalker.dmi'
-	button_icon_state = "unsettle"
+	button_icon_state = "terrify"
 	background_icon_state = "bg_void"
 	overlay_icon_state = null
 	panel = null
@@ -61,7 +60,7 @@
 
 /datum/action/cooldown/spell/pointed/unsettle/proc/spookify(mob/living/carbon/human/target)
 	target.Paralyze(stun_time)
-	target.adjust_stamina_loss(stamina_damage)
+	target.adjustStaminaLoss(stamina_damage)
 	target.apply_status_effect(/datum/status_effect/speech/slurring/generic)
 	target.emote("scream")
 
@@ -81,7 +80,7 @@
 	name = "Cosmic Transmit"
 	background_icon_state = "bg_void"
 	button_icon = 'icons/mob/actions/actions_voidwalker.dmi'
-	button_icon_state = "telepathy"
+	button_icon_state = "voidwalker_telepathy"
 	panel = null
 	overlay_icon_state = null
 
@@ -113,9 +112,7 @@
 
 /datum/action/cooldown/mob_cooldown/charge/voidwalker
 	name = "Cosmic Dash"
-	background_icon_state = "bg_void"
-	button_icon = 'icons/mob/actions/actions_voidwalker.dmi'
-	button_icon_state = "dash"
+	button_icon_state = "void_dash"
 	charge_past = 0
 	charge_damage = 20
 	cooldown_time = 8 SECONDS

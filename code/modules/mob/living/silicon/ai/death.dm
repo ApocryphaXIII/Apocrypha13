@@ -4,7 +4,7 @@
 
 	if(!gibbed)
 		// Will update all AI status displays with a blue screen of death
-		INVOKE_ASYNC(src, PROC_REF(emote), "dead")
+		INVOKE_ASYNC(src, PROC_REF(emote), "bsod")
 
 	if(!isnull(deployed_shell))
 		disconnect_shell()
@@ -34,8 +34,7 @@
 	ShutOffDoomsdayDevice()
 
 	if(gibbed && drop_mmi)
-		var/obj/item/mmi/loose_cpu = make_mmi(get_turf(src))
-		mind?.transfer_to(loose_cpu.brainmob)
+		make_mmi_drop_and_transfer()
 
 	if(explodes_on_death)
 		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(explosion), loc, 3, 6, 12, null, 15), 1 SECONDS)
@@ -43,5 +42,7 @@
 	SSblackbox.ReportDeath(src)
 
 /mob/living/silicon/ai/proc/ShutOffDoomsdayDevice()
-	nuking = FALSE
-	QDEL_NULL(doomsday_device)
+	if(nuking)
+		nuking = FALSE
+	if(doomsday_device)
+		qdel(doomsday_device)

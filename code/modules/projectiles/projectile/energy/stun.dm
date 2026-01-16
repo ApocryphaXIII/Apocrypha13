@@ -371,8 +371,7 @@
 /atom/movable/screen/alert/tazed
 	name = "Tased!"
 	desc = "You're being tased! You can click this or resist to attempt to stop it, assuming you've not already collapsed."
-	use_user_hud_icon = TRUE
-	overlay_state = "stun"
+	icon_state = "stun"
 	clickable_glow = TRUE
 
 /atom/movable/screen/alert/tazed/Click(location, control, params)

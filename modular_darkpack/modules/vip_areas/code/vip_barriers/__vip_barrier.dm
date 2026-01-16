@@ -1,3 +1,6 @@
+
+
+
 /obj/effect/vip_barrier
 	name = "Basic Check Point"
 	desc = "Not a real checkpoint."
@@ -30,7 +33,7 @@
 /obj/effect/vip_barrier/Initialize(mapload)
 	. = ..()
 
-	if(mapload && src.type == /obj/effect/vip_barrier)
+	if(src.type == /obj/effect/vip_barrier)
 		CRASH("VIP Barrier created using default type, please use a child of this type in mapping.")
 
 	//we do this in an initialize so mappers do not have to code as much
@@ -40,15 +43,8 @@
 		//spessman purity means I have to register a signal with myself, pain
 		RegisterSignal(src, COMSIG_BARRIER_NOTIFY_GUARD_BLOCKED, PROC_REF(playBlockSound))
 		update_icon()
-	else if(mapload && SSbouncer_barriers.initialized)
+	else if(SSbouncer_barriers.initialized)
 		CRASH("A VIP barrier was created for vip_barrier_perms that were not loaded!")
-
-/obj/effect/vip_barrier/Destroy()
-	if(linked_perm)
-		linked_perm.linked_barriers -= src
-		linked_perm = null
-	return ..()
-
 
 /obj/effect/vip_barrier/CanPass(atom/movable/mover, turf/target)
 	. = ..()
@@ -120,7 +116,7 @@
 		return
 
 
-	if(!do_after(user, max(5 SECONDS, social_bypass_time - (user.st_get_stat(STAT_CHARISMA) * 2 SECONDS)), bouncer))
+	if(!do_mob(user, bouncer, max(5 SECONDS, social_bypass_time - (user.st_get_stat(STAT_CHARISMA) * 2 SECONDS))))
 		return
 
 
@@ -143,7 +139,7 @@
 
 
 /obj/effect/vip_barrier/proc/identify_cop(mob/living/carbon/human/user, used_badge = FALSE)
-	if(mean_to_cops && (used_badge || (user.wear_id && istype(user.wear_id,/obj/item/card/police))))
+	if(mean_to_cops && (used_badge || (user.wear_id && istype(user.wear_id,/obj/item/card/id/police))))
 		return TRUE
 	return FALSE
 
@@ -154,7 +150,6 @@
 	update_icon()
 
 /obj/effect/vip_barrier/update_icon()
-	.=..()
 	if(always_invisible)
 		alpha = 0
 		return

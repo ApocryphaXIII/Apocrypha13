@@ -56,5 +56,4 @@
 /atom/movable/screen/alert/status_effect/tower_of_babel
 	name = "Tower of babel"
 	desc = "You seem to be babbling in a strange language..."
-	use_user_hud_icon = TRUE
-	overlay_state = "mind_control"
+	icon_state = "mind_control"

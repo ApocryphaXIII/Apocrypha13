@@ -35,12 +35,10 @@
 
 /obj/machinery/computer/records/security/Initialize(mapload, obj/item/circuitboard/C)
 	. = ..()
-	AddComponent(/datum/component/usb_port, \
-		typecacheof(list(
-			/obj/item/circuit_component/arrest_console_data,
-			/obj/item/circuit_component/arrest_console_arrest,
-		), only_root_path = TRUE) \
-	)
+	AddComponent(/datum/component/usb_port, list(
+		/obj/item/circuit_component/arrest_console_data,
+		/obj/item/circuit_component/arrest_console_arrest,
+	))
 
 /obj/machinery/computer/records/security/emp_act(severity)
 	. = ..()
@@ -132,7 +130,6 @@
 			species = target.species,
 			trim = target.trim,
 			wanted_status = target.wanted_status,
-			past_criminal_records = target.past_criminal_records, // DARKPACK EDIT - FLAVOR TEXT
 		))
 
 	data["records"] = records
@@ -212,7 +209,7 @@
 
 	var/max = CONFIG_GET(number/maxfine)
 	if(params["fine"] > max)
-		to_chat(usr, span_warning("The maximum fine is [max] [MONEY_NAME]."))
+		to_chat(usr, span_warning("The maximum fine is [max] credits."))
 		playsound(src, 'sound/machines/terminal/terminal_error.ogg', 75, TRUE)
 		return FALSE
 
@@ -234,7 +231,7 @@
 	var/datum/crime/citation/new_citation = new(name = input_name, details = input_details, author = usr, fine = params["fine"])
 
 	target.citations += new_citation
-	new_citation.alert_owner(user, src, target.name, "You have been issued a [params["fine"]][MONEY_SYMBOL] citation for [input_name]. Fines are payable at Security.")
+	new_citation.alert_owner(user, src, target.name, "You have been issued a [params["fine"]]cr citation for [input_name]. Fines are payable at Security.")
 	investigate_log("New Citation: <strong>[input_name]</strong> Fine: [params["fine"]] | Added to [target.name] by [key_name(user)]", INVESTIGATE_RECORDS)
 	SSblackbox.ReportCitation(REF(new_citation), user.ckey, user.real_name, target.name, input_name, input_details, params["fine"])
 

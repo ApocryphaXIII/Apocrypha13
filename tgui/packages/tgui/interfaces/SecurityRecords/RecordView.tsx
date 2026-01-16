@@ -68,9 +68,6 @@ const RecordInfo = (props) => {
     species,
     wanted_status,
     voice,
-    // DARKPACK EDIT START - Flavor Text
-    past_criminal_records,
-    // DARKPACK EDIT END
   } = foundRecord;
 
   const [isValid, setIsValid] = useState(true);
@@ -201,13 +198,6 @@ const RecordInfo = (props) => {
                 text={note}
               />
             </LabeledList.Item>
-            {/* DARKPACK EDIT START - Flavor Text */}
-            <LabeledList.Item label="Past Criminal Records">
-              <Box maxWidth="100%" preserveWhitespace>
-                {past_criminal_records || 'N/A'}
-              </Box>
-            </LabeledList.Item>
-            {/* DARKPACK EDIT END */}
           </LabeledList>
         </Section>
       </Stack.Item>

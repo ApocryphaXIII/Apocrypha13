@@ -1,7 +1,6 @@
 // Weapon exports. Stun batons, disablers, etc.
 
 /datum/export/weapon
-	abstract_type = /datum/export/weapon
 	include_subtypes = FALSE
 
 /datum/export/weapon/baton
@@ -26,20 +25,6 @@
 	cost = CARGO_CRATE_VALUE
 	unit_name = "laser gun"
 	export_types = list(/obj/item/gun/energy/laser)
-	exclude_types = list(
-		/obj/item/gun/energy/laser/pistol,
-		/obj/item/gun/energy/laser/assault,
-	)
-
-/datum/export/weapon/laser_pistol
-	cost = CARGO_CRATE_VALUE * 0.2
-	unit_name = "laser pistol"
-	export_types = list(/obj/item/gun/energy/laser/pistol)
-
-/datum/export/weapon/laser_assault
-	cost = CARGO_CRATE_VALUE * 10
-	unit_name = "assault laser gun"
-	export_types = list(/obj/item/gun/energy/laser/assault)
 
 /datum/export/weapon/disabler
 	cost = CARGO_CRATE_VALUE * 0.5
@@ -94,4 +79,4 @@
 	cost = CARGO_CRATE_VALUE * 1.5
 	unit_name = "WT-550 automatic rifle"
 	export_types = list(/obj/item/gun/ballistic/automatic/wt550)
-
+	

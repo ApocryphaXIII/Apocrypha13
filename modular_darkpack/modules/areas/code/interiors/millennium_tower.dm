@@ -1,7 +1,7 @@
 /area/vtm/interior/millennium_tower
 	name = "Millennium Tower F1"
 	icon_state = "millenniumtowerf1"
-	music_index = MUSIC_PRINCE
+	ambient_buzz = 'modular_darkpack/modules/ambience/sounds/prince.ogg'
 	zone_type = ZONE_ELYSIUM
 	fire_controled = TRUE
 

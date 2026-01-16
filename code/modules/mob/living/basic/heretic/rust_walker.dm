@@ -13,7 +13,6 @@
 	sight = SEE_TURFS
 	speed = 1
 	ai_controller = /datum/ai_controller/basic_controller/rust_walker
-	mob_biotypes = MOB_ROBOTIC|MOB_MINERAL
 
 /mob/living/basic/heretic_summon/rust_walker/Initialize(mapload)
 	. = ..()
@@ -45,7 +44,7 @@
 		return
 	var/turf/our_turf = get_turf(src)
 	if(HAS_TRAIT(our_turf, TRAIT_RUSTY))
-		adjust_brute_loss(-3 * seconds_per_tick)
+		adjustBruteLoss(-3 * seconds_per_tick)
 
 	return ..()
 

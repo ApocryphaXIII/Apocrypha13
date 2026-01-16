@@ -24,7 +24,6 @@
 	owner.alpha = initial(owner.alpha)
 	owner.pass_flags &= ~(PASSCLOSEDTURF | PASSGLASS | PASSGRILLE | PASSMACHINE | PASSSTRUCTURE | PASSTABLE | PASSMOB | PASSDOORS | PASSVEHICLE)
 	owner.forceMove(location)
-	owner.apply_status_effect(/datum/status_effect/crucible_soul_cooldown)
 	location = null
 
 /datum/status_effect/crucible_soul/get_examine_text()
@@ -43,14 +42,6 @@
 	var/datum/status_effect/active_effect = owner.has_status_effect(/datum/status_effect/crucible_soul)
 	target = active_effect
 	qdel(target)
-
-/datum/status_effect/crucible_soul_cooldown
-	id = "Crucible Soul Cooldown"
-	status_type = STATUS_EFFECT_UNIQUE
-	duration = 2 MINUTES
-	alert_type = /atom/movable/screen/alert/status_effect/crucible_soul/cooldown
-	show_duration = TRUE
-	remove_on_fullheal = TRUE
 
 // DUSK AND DAWN
 /datum/status_effect/duskndawn
@@ -100,8 +91,8 @@
 		return
 	var/mob/living/carbon/carbie = owner
 
-	carbie.adjust_brute_loss(-0.5 * seconds_between_ticks, updating_health = FALSE)
-	carbie.adjust_fire_loss(-0.5 * seconds_between_ticks, updating_health = FALSE)
+	carbie.adjustBruteLoss(-0.5 * seconds_between_ticks, updating_health = FALSE)
+	carbie.adjustFireLoss(-0.5 * seconds_between_ticks, updating_health = FALSE)
 	for(var/BP in carbie.bodyparts)
 		var/obj/item/bodypart/part = BP
 		for(var/W in part.wounds)
@@ -116,21 +107,17 @@
 				if(WOUND_SEVERITY_CRITICAL)
 					heal_amt = 6
 			var/datum/wound_pregen_data/pregen_data = GLOB.all_wound_pregen_data[wound.type]
-			if (pregen_data.wounding_types_valid(WOUND_BURN))
-				carbie.adjust_fire_loss(-heal_amt)
+			if (pregen_data.wounding_types_valid(list(WOUND_BURN)))
+				carbie.adjustFireLoss(-heal_amt)
 			else
-				carbie.adjust_brute_loss(-heal_amt)
-				carbie.adjust_blood_volume(heal_amt * 3, maximum = BLOOD_VOLUME_NORMAL)
+				carbie.adjustBruteLoss(-heal_amt)
+				carbie.blood_volume += carbie.blood_volume >= BLOOD_VOLUME_NORMAL ? 0 : heal_amt*3
 
 
 /atom/movable/screen/alert/status_effect/crucible_soul
 	name = "Blessing of Crucible Soul"
 	desc = "You phased through reality. You are halfway to your final destination..."
 	icon_state = "crucible"
-
-/atom/movable/screen/alert/status_effect/crucible_soul/cooldown
-	desc = "You have recently phased through reality. You must wait before you can do so once more."
-	icon_state = "crucible_cooldown"
 
 /atom/movable/screen/alert/status_effect/duskndawn
 	name = "Blessing of Dusk and Dawn"
@@ -368,24 +355,3 @@
 	name = "Blessing of The Moon"
 	desc = "The Moon clouds their vision, as the sun always has yours."
 	icon_state = "moon_hide"
-
-// Last Resort
-/datum/status_effect/heretic_lastresort
-	id = "heretic_lastresort"
-	alert_type = /atom/movable/screen/alert/status_effect/heretic_lastresort
-	duration = 12 SECONDS
-	status_type = STATUS_EFFECT_REPLACE
-	tick_interval = STATUS_EFFECT_NO_TICK
-
-/atom/movable/screen/alert/status_effect/heretic_lastresort
-	name = "Last Resort"
-	desc = "Your head spins, heart pumping as fast as it can!"
-	icon_state = "lastresort"
-
-/datum/status_effect/heretic_lastresort/on_apply()
-	ADD_TRAIT(owner, TRAIT_IGNORESLOWDOWN, TRAIT_STATUS_EFFECT(id))
-	to_chat(owner, span_userdanger("You won't give up that easily!"))
-	return TRUE
-
-/datum/status_effect/heretic_lastresort/on_remove()
-	REMOVE_TRAIT(owner, TRAIT_IGNORESLOWDOWN, TRAIT_STATUS_EFFECT(id))

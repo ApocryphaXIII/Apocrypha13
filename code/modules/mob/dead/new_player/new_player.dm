@@ -8,9 +8,7 @@
 	hud_type = /datum/hud/new_player
 	hud_possible = list()
 
-	/// String Values tied to Defines that state whether the new_player is ready to play or not.
-	/// Do try your best to compare this value directly against the defines for certainty but helper procs do exist in bulkier situations.
-	var/ready = PLAYER_NOT_READY
+	var/ready = FALSE
 	/// Referenced when you want to delete the new_player later on in the code.
 	var/spawning = FALSE
 	/// For instant transfer once the round is set up
@@ -65,12 +63,6 @@
 	if (href_list["votepollref"])
 		var/datum/poll_question/poll = locate(href_list["votepollref"]) in GLOB.polls
 		vote_on_poll_handler(poll, href_list)
-
-/// Quickly gets a boolean of whether the new_player is ready to play or not in places where we would like the boolean logic.
-/// The assertion is that readiness must be an opted in TRUE, while all other states (e.g. not ready, broken, etc) are FALSE.
-/// We organize it this way to ensure the system is extensible for other possible ready states.
-/mob/dead/new_player/proc/is_ready_to_play()
-	return ready == PLAYER_READY_TO_PLAY
 
 //When you cop out of the round (NB: this HAS A SLEEP FOR PLAYER INPUT IN IT)
 /mob/dead/new_player/proc/make_me_an_observer()
@@ -133,20 +125,6 @@
 			return "[jobtitle] is not compatible with some antagonist role assigned to you."
 		if(JOB_UNAVAILABLE_AGE)
 			return "Your character is not old enough for [jobtitle]."
-		// DARKPACK EDIT START
-		if(JOB_UNAVAILABLE_SPECIES)
-			return "You can't play [jobtitle] as this species."
-		if(JOB_UNAVAILABLE_SPECIES_SLOTS)
-			return "[jobtitle] doesn't have any free species slots for you."
-		if(JOB_UNAVAILABLE_WHITELIST)
-			return "You aren't whitelisted for [jobtitle]."
-		if(JOB_UNAVAILABLE_KINDRED_AGE)
-			return "Your character is too young for [jobtitle]."
-		if(JOB_UNAVAILABLE_KINDRED_GENERATION)
-			return "Your character's generation is too high for [jobtitle]."
-		if(JOB_UNAVAILABLE_KINDRED_CLAN)
-			return "Your character's clan is incompatible for [jobtitle]."
-		// DARKPACK EDIT END
 
 	return GENERIC_JOB_UNAVAILABLE_ERROR
 
@@ -202,8 +180,6 @@
 		tgui_alert(usr, "There was an unexpected error putting you into your requested job. If you cannot join with any job, you should contact an admin.")
 		return FALSE
 
-	var/latejoin_period = CEILING(STATION_TIME_PASSED() / (5 MINUTES), 5)
-	SSblackbox.record_feedback("tally", "latejoin_time", 1, latejoin_period)
 	mind.late_joiner = TRUE
 	var/atom/destination = mind.assigned_role.get_latejoin_spawn_point()
 	if(!destination)
@@ -222,7 +198,7 @@
 	var/is_captain = IS_NOT_CAPTAIN
 	var/captain_sound = 'sound/announcer/notice/notice2.ogg'
 	// If we already have a captain, are they a "Captain" rank and are we allowing multiple of them to be assigned?
-	if(is_prince_job(job)) // DARKPACK EDIT, ORIGINAL: if(is_captain_job(job))
+	if(is_captain_job(job))
 		is_captain = IS_FULL_CAPTAIN
 		captain_sound = 'sound/announcer/announcement/announce.ogg'
 	// If we don't have an assigned cap yet, check if this person qualifies for some from of captaincy.
@@ -259,12 +235,8 @@
 	if(CONFIG_GET(flag/allow_latejoin_antagonists) && !EMERGENCY_PAST_POINT_OF_NO_RETURN && humanc) //Borgs aren't allowed to be antags. Will need to be tweaked if we get true latejoin ais.
 		SSdynamic.on_latejoin(humanc)
 
-	if(humanc)
-		if(job.job_flags & JOB_ASSIGN_QUIRKS)
-			if(CONFIG_GET(flag/roundstart_traits))
-				SSquirks.AssignQuirks(humanc, humanc.client)
-		else // clear any personalities the prefs added since our job clearly does not want them
-			humanc.clear_personalities()
+	if((job.job_flags & JOB_ASSIGN_QUIRKS) && humanc && CONFIG_GET(flag/roundstart_traits))
+		SSquirks.AssignQuirks(humanc, humanc.client)
 
 	if(humanc) // Quirks may change manifest datapoints, so inject only after assigning quirks
 		GLOB.manifest.inject(humanc)

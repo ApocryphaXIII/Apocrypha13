@@ -1,8 +1,9 @@
 /mob/living/proc/AdjustHumanity(value, limit, forced)
 	// Only vampires have a "working" morality system currently
-	var/datum/splat/vampire/kindred/vampirism = iskindred(src)
-	if (!vampirism)
+	if (!iskindred(src))
 		return
+	var/mob/living/carbon/human/vampire = src
+	var/datum/species/human/kindred/vampirism = vampire.dna.species
 
 	// "Enlightenment" is essentially the Path of Pure Evil. Inverts Humanity changes and limits.
 	var/is_enlightenment = vampirism.enlightenment

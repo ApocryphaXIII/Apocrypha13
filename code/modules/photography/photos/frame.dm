@@ -73,11 +73,13 @@
 	var/art_value = OK_ART
 	var/can_decon = TRUE
 
-/obj/structure/sign/picture_frame/Initialize(mapload)
+/obj/structure/sign/picture_frame/Initialize(mapload, dir, building)
 	. = ..()
 	AddElement(/datum/element/art, art_value)
 	if (!SSpersistence.initialized)
 		LAZYADD(SSpersistence.queued_photo_frames, src)
+	if(dir)
+		setDir(dir)
 
 /obj/structure/sign/picture_frame/Destroy()
 	LAZYREMOVE(SSpersistence.queued_photo_frames, src)

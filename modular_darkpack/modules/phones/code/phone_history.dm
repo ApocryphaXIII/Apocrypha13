@@ -1,6 +1,5 @@
-/datum/phone_history
-	var/name = ""
+/datum/phonehistory
+	var/name = "Unknown"
 	var/number = ""
 	var/time = ""
 	var/call_type = ""
-	var/call_type_tooltip = ""

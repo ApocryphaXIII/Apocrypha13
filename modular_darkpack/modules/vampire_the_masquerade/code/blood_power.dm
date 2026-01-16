@@ -56,7 +56,9 @@
 	human_owner.st_add_stat_mod(STAT_STAMINA, 2, "blood_power")
 
 	var/cost = HAS_TRAIT(owner, TRAIT_HUNGRY) ? 3 : 2
-	human_owner.adjust_blood_pool(cost)
+	human_owner.bloodpool = max(0, human_owner.bloodpool - cost)
+	// TODO: [Rebase] reimplement the hud
+	//human_owner.update_blood_hud()
 
 	ADD_TRAIT(human_owner, TRAIT_IGNORESLOWDOWN, MAGIC_TRAIT)
 

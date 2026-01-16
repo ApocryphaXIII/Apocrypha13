@@ -1,1 +1,0 @@
-/obj/structure/vampmap : /obj/structure/city_map

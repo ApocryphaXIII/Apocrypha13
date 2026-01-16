@@ -55,11 +55,6 @@ endmap
 	minplayers 40
 endmap
 
-map westfieldmall
-    votable
-    default
-endmap
-
 # Debug-only maps.
 
 map gateway_test

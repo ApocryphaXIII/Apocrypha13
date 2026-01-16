@@ -16,7 +16,7 @@
 	var/flash_range = 2 //this is roughly the size of a brig cell.
 
 	/// How strong Paralyze()'d targets are when flashed.
-	var/strength = 5 SECONDS
+	var/strength = 10 SECONDS
 
 	COOLDOWN_DECLARE(flash_cooldown)
 	/// Duration of time between flashes.
@@ -24,11 +24,11 @@
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/flasher, 26)
 
-/obj/machinery/flasher/Initialize(mapload)
-	. = ..()
-	if(mapload)
+/obj/machinery/flasher/Initialize(mapload, ndir = 0, built = 0)
+	. = ..() // ..() is EXTREMELY IMPORTANT, never forget to add it
+	if(!built)
 		bulb = new(src)
-		find_and_mount_on_atom()
+	find_and_hang_on_wall()
 
 /obj/machinery/flasher/vv_edit_var(vname, vval)
 	. = ..()
@@ -120,7 +120,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/flasher, 26)
 		if (get_dist(src, living_mob) > flash_range)
 			continue
 
-		if(bulb.flash_mob(living_mob, confusion_duration = strength * 1.5, extra_log =  "by [src]"))
+		if(living_mob.flash_act(affect_silicon = TRUE))
+			living_mob.log_message("was AOE flashed by an automated portable flasher", LOG_ATTACK)
 			living_mob.Paralyze(strength)
 			flashed = TRUE
 
@@ -160,7 +161,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/flasher, 26)
 	icon = 'icons/obj/machines/sec.dmi'
 	icon_state = "pflash1-p"
 	base_icon_state = "pflash"
-	strength = 4 SECONDS
+	strength = 8 SECONDS
 	anchored = FALSE
 	density = TRUE
 	///Proximity monitor associated with this atom, needed for proximity checks.
@@ -170,19 +171,14 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/flasher, 26)
 	. = ..()
 	proximity_monitor = new(src, 0)
 
-/obj/machinery/flasher/portable/find_and_mount_on_atom(mark_for_late_init, late_init)
-	return //its meant to be carried and mobile
-
 /obj/machinery/flasher/portable/HasProximity(atom/movable/proximity_check_mob)
 	if(!COOLDOWN_FINISHED(src, flash_cooldown))
 		return
 
-	if(!isliving(proximity_check_mob))
-		return
-
-	var/mob/living/proximity_living = proximity_check_mob
-	if (proximity_living.move_intent != MOVE_INTENT_WALK && anchored)
-		flash()
+	if(iscarbon(proximity_check_mob))
+		var/mob/living/carbon/proximity_carbon = proximity_check_mob
+		if (proximity_carbon.move_intent != MOVE_INTENT_WALK && anchored)
+			flash()
 
 /obj/machinery/flasher/portable/vv_edit_var(vname, vval)
 	. = ..()

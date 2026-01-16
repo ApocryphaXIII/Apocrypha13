@@ -24,20 +24,20 @@
 	var/id_trim = null
 
 	/// Type path of item to go in uniform slot
-	var/obj/item/uniform = null
+	var/uniform = null
 
 	/// Type path of item to go in suit slot
-	var/obj/item/suit = null
+	var/suit = null
 
 	/**
 	  * Type path of item to go in suit storage slot
 	  *
 	  * (make sure it's valid for that suit)
 	  */
-	var/obj/item/suit_store = null
+	var/suit_store = null
 
 	/// Type path of item to go in back slot
-	var/obj/item/back = null
+	var/back = null
 
 	/**
 	  * list of items that should go in the backpack of the user
@@ -47,7 +47,7 @@
 	var/list/backpack_contents = null
 
 	/// Type path of item to go in belt slot
-	var/obj/item/belt = null
+	var/belt = null
 
 	/**
 	  * list of items that should go in the belt of the user
@@ -505,7 +505,7 @@
 	for(var/item in beltpack)
 		var/itype = text2path(item)
 		if(itype)
-			belt_contents[itype] = beltpack[item]
+			belt_contents[itype] = belt[item]
 	box = text2path(outfit_data["box"])
 	var/list/impl = outfit_data["implants"]
 	implants = list()

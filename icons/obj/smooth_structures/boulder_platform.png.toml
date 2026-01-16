@@ -1,2 +1,0 @@
-output_name = "boulder_platform"
-template = "bitmask/diagonal_32x32.toml"

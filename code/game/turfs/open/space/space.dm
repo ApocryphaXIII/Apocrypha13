@@ -44,8 +44,8 @@ GLOBAL_LIST_EMPTY(starlight)
 
 /turf/open/space
 	icon = 'icons/turf/space.dmi'
-	icon_state = MAP_SWITCH("space", "space_map")
-	name = "\proper space"
+	MAP_SWITCH(icon_state = "space", icon_state = "space_map")
+	name = CITY_NAME // DARKPACK EDIT CHANGE - ORIGINAL: name = "\proper space"
 	overfloor_placed = FALSE
 	underfloor_accessibility = UNDERFLOOR_INTERACTABLE
 	rust_resistance = RUST_RESISTANCE_ABSOLUTE
@@ -60,8 +60,8 @@ GLOBAL_LIST_EMPTY(starlight)
 	run_later = TRUE
 	plane = PLANE_SPACE
 	layer = SPACE_LAYER
-	light_power = 1
-	light_range = 2
+	light_power = 0.25 // DARKPACK EDIT CHANGE, ORIGINAL: light_power = 1 - CITY_TIME
+	light_range = 0.5 // DARKPACK EDIT CHANGE, ORIGINAL: light_range = 2 - CITY_TIME
 	light_color = COLOR_STARLIGHT
 	light_height = LIGHTING_HEIGHT_SPACE
 	light_on = FALSE
@@ -72,7 +72,7 @@ GLOBAL_LIST_EMPTY(starlight)
 	force_no_gravity = TRUE
 
 /turf/open/space/basic
-	icon_state = MAP_SWITCH("space", "space_basic_map")
+	MAP_SWITCH(icon_state = "space", icon_state = "space_basic_map")
 
 /turf/open/space/basic/New() //Do not convert to Initialize
 	SHOULD_CALL_PARENT(FALSE)
@@ -174,10 +174,10 @@ GLOBAL_LIST_EMPTY(starlight)
 
 /turf/open/space/rcd_act(mob/user, obj/item/construction/rcd/the_rcd, list/rcd_data)
 	if(the_rcd.mode == RCD_TURF)
-		if(rcd_data[RCD_DESIGN_PATH] == /turf/open/floor/plating/rcd)
+		if(rcd_data["[RCD_DESIGN_PATH]"] == /turf/open/floor/plating/rcd)
 			place_on_top(/turf/open/floor/plating, flags = CHANGETURF_INHERIT_AIR)
 			return TRUE
-		else if(rcd_data[RCD_DESIGN_PATH] == /obj/structure/lattice/catwalk)
+		else if(rcd_data["[RCD_DESIGN_PATH]"] == /obj/structure/lattice/catwalk)
 			var/obj/structure/lattice/lattice = locate(/obj/structure/lattice, src)
 			if(lattice)
 				qdel(lattice)
@@ -191,9 +191,6 @@ GLOBAL_LIST_EMPTY(starlight)
 /turf/open/space/ChangeTurf(path, list/new_baseturfs, flags)
 	. = ..()
 	if (!. || isspaceturf(.))
-		return
-
-	if (flags & CHANGETURF_NO_AREA_CHANGE)
 		return
 
 	var/area/new_turf_area = get_area(.)

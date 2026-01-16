@@ -4,4 +4,3 @@
 #define ME_CHANNEL "Me"
 #define OOC_CHANNEL "OOC"
 #define ADMIN_CHANNEL "Admin"
-#define LOOC_CHANNEL "LOOC" // DARKPACK EDIT ADD - LOOC

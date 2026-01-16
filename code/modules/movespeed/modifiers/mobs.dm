@@ -163,10 +163,7 @@
 	variable = TRUE
 
 /datum/movespeed_modifier/goliath_mount
-	multiplicative_slowdown = -27.5
-
-/datum/movespeed_modifier/goldgrub_mount
-	multiplicative_slowdown = -4.5
+	multiplicative_slowdown = -26
 
 /datum/movespeed_modifier/settler
 	multiplicative_slowdown = 0.2

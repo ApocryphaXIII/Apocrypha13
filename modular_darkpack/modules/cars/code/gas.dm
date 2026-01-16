@@ -1,4 +1,4 @@
-/* // DARKPACK TODO - Gas should be handled as a reagent
+/* TODO: [Rebase] - Gas should be handled as a reagent
 /datum/reagent/gasoline
 	name = "Gasoline"
 	color = "#b85614"
@@ -49,7 +49,7 @@
 			return ITEM_INTERACT_FAILURE
 		stored_gasoline = max(0, stored_gasoline-50)
 		new /obj/effect/decal/cleanable/gasoline(get_turf(interacting_with))
-		playsound(get_turf(src), 'modular_darkpack/modules/cars/sounds/gas_splat.ogg', 50, TRUE)
+		playsound(get_turf(src), 'modular_darkpack/modules/deprecated/sounds/gas_splat.ogg', 50, TRUE)
 		return ITEM_INTERACT_SUCCESS
 
 /obj/item/gas_can/afterattack(atom/target, mob/user, list/modifiers, list/attack_modifiers)
@@ -60,7 +60,7 @@
 			return
 		stored_gasoline = max(0, stored_gasoline-50)
 		H.fire_stacks = min(10, H.fire_stacks+10)
-		playsound(get_turf(H), 'modular_darkpack/modules/cars/sounds/gas_splat.ogg', 50, TRUE)
+		playsound(get_turf(H), 'modular_darkpack/modules/deprecated/sounds/gas_splat.ogg', 50, TRUE)
 		user.visible_message(span_warning("[user] covers [target] in something flammable!"))
 
 /obj/effect/decal/cleanable/gasoline
@@ -72,7 +72,6 @@
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_SPILL
 	canSmoothWith = SMOOTH_GROUP_SPILL + SMOOTH_GROUP_WALLS
-	resistance_flags = UNACIDABLE | ACID_PROOF
 	//mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	beauty = -50
 	alpha = 64
@@ -89,45 +88,41 @@
 	if(isliving(AM))
 		var/mob/living/L = AM
 		if(L.on_fire)
-			var/obj/effect/abstract/turf_fire/F = locate() in get_turf(src)
+			var/obj/effect/fire/F = locate() in get_turf(src)
 			if(!F)
-				new /obj/effect/abstract/turf_fire(get_turf(src))
-	. = ..()
+				new /obj/effect/fire(get_turf(src))
+	..(AM)
 */
 
 /obj/effect/decal/cleanable/gasoline/Initialize()
 	. = ..()
-	var/turf/open/my_turf = get_turf(src)
-	if(istype(my_turf))
-		my_turf.flammability += 5
+	/*
+	var/turf/T = get_turf(src)
+	if(istype(T, /turf/open/floor))
+		var/turf/open/floor/F = T
+		F.spread_chance = 100
+		F.burn_material += 100
+	*/
 	if(smoothing_flags & USES_SMOOTHING)
 		QUEUE_SMOOTH(src)
 		QUEUE_SMOOTH_NEIGHBORS(src)
 
 /obj/effect/decal/cleanable/gasoline/Destroy()
-	var/turf/open/my_turf = get_turf(src)
-	if(istype(my_turf))
-		my_turf.flammability -= 5 // Technicly no validtiy for if its the same turf we started on. Making something less flamible is a nothing burger tho
 	QUEUE_SMOOTH_NEIGHBORS(src)
 	return ..()
 
+/*
 /obj/effect/decal/cleanable/gasoline/fire_act(exposed_temperature, exposed_volume)
-	var/turf/open/gas_turf = get_turf(src)
-	if(isopenturf(gas_turf))
-		gas_turf.ignite_turf(30 + gas_turf.flammability)
-	addtimer(CALLBACK(src, PROC_REF(ignite_others)), 0.5 SECONDS)
-	. = ..()
-
-/obj/effect/decal/cleanable/gasoline/proc/ignite_others()
-	for(var/obj/effect/decal/cleanable/gasoline/oil in range(1, get_turf(src)))
-		if(prob(25))
-			continue
-		oil.fire_act()
+	var/obj/effect/fire/F = locate() in loc
+	if(!F)
+		new /obj/effect/fire(loc)
+	..()
+*/
 
 /obj/effect/decal/cleanable/gasoline/attackby(obj/item/I, mob/living/user)
 	var/attacked_by_hot_thing = I.get_temperature()
 	if(attacked_by_hot_thing)
-		visible_message(span_warning("[user] tries to ignite [src] with [I]!"), span_warning("You try to ignite [src] with [I]."))
+		visible_message("<span class='warning'>[user] tries to ignite [src] with [I]!</span>", "<span class='warning'>You try to ignite [src] with [I].</span>")
 		log_combat(user, src, (attacked_by_hot_thing < 480) ? "tried to ignite" : "ignited", I)
 		fire_act(attacked_by_hot_thing)
 		return
@@ -146,7 +141,7 @@
 /obj/structure/fuelstation/click_alt(mob/user)
 	if(stored_money > 0)
 		say("Money refunded.")
-		var/money_to_spawn = min(stored_money, /obj/item/stack/dollar::max_amount)
+		var/money_to_spawn = min(stored_money, 1000)
 		new /obj/item/stack/dollar(loc, money_to_spawn)
 		stored_money -= money_to_spawn
 		return CLICK_ACTION_SUCCESS
@@ -168,6 +163,6 @@
 			var/money_to_spend = round(gas_to_dispense/20)
 			G.stored_gasoline = min(1000, G.stored_gasoline+gas_to_dispense)
 			stored_money = max(0, stored_money-money_to_spend)
-			playsound(loc, 'modular_darkpack/master_files/sounds/effects/gas_fill.ogg', 50, TRUE)
+			playsound(loc, 'modular_darkpack/master_files/sounds/gas_fill.ogg', 50, TRUE)
 			to_chat(user, span_notice("You fill [I]."))
 			say("Gas filled.")

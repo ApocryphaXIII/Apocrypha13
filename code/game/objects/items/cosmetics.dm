@@ -194,10 +194,6 @@
 	inhand_icon_state = "razor"
 	obj_flags = CONDUCTS_ELECTRICITY
 	w_class = WEIGHT_CLASS_TINY
-	sound_vary = TRUE
-	pickup_sound = SFX_GENERIC_DEVICE_PICKUP
-	drop_sound = SFX_GENERIC_DEVICE_DROP
-	custom_price = 50 // DARKPACK EDIT ADD - ECONOMY
 
 /obj/item/razor/suicide_act(mob/living/carbon/user)
 	user.visible_message(span_suicide("[user] begins shaving [user.p_them()]self without the razor guard! It looks like [user.p_theyre()] trying to commit suicide!"))
@@ -233,9 +229,8 @@
 				var/new_style = tgui_input_list(user, "Select a facial hairstyle", "Grooming", SSaccessories.facial_hairstyles_list)
 				if(isnull(new_style))
 					return
-				var/covering = human_target.is_mouth_covered()
-				if(covering)
-					to_chat(user, span_warning("[covering] is in the way!"))
+				if(!get_location_accessible(human_target, location))
+					to_chat(user, span_warning("The headgear is in the way!"))
 					return
 				if(!(noggin.head_flags & HEAD_FACIAL_HAIR))
 					to_chat(user, span_warning("There is no facial hair to style!"))
@@ -252,9 +247,8 @@
 			else
 				return
 		else
-			var/covering = human_target.is_mouth_covered()
-			if(covering)
-				to_chat(user, span_warning("[covering] is in the way!"))
+			if(!get_location_accessible(human_target, location))
+				to_chat(user, span_warning("The mask is in the way!"))
 				return
 			if(!(noggin.head_flags & HEAD_FACIAL_HAIR))
 				to_chat(user, span_warning("There is no facial hair to shave!"))
@@ -291,7 +285,7 @@
 			var/new_style = tgui_input_list(user, "Select a hairstyle", "Grooming", SSaccessories.hairstyles_list)
 			if(isnull(new_style))
 				return
-			if(!human_target.is_location_accessible(location))
+			if(!get_location_accessible(human_target, location))
 				to_chat(user, span_warning("The headgear is in the way!"))
 				return
 			if(!(noggin.head_flags & HEAD_HAIR))
@@ -307,7 +301,7 @@
 				human_target.set_hairstyle(new_style, update = TRUE)
 				return
 		else
-			if(!human_target.is_location_accessible(location))
+			if(!get_location_accessible(human_target, location))
 				to_chat(user, span_warning("The headgear is in the way!"))
 				return
 			if(!(noggin.head_flags & HEAD_HAIR))

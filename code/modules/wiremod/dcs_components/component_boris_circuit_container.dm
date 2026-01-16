@@ -34,7 +34,7 @@
 	var/obj/item/circuit_component/mmi/source_comp = locate(source)
 	if(!istype(source_comp))
 		return COMPONENT_INCOMPATIBLE
-	LAZYADD(mmi_components, source_comp)
+	LAZYADD(mmi_components, source)
 
 /datum/component/boris_circuit_container/on_source_remove(source)
 	var/obj/item/circuit_component/mmi/source_comp = locate(source)

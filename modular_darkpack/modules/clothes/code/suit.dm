@@ -282,27 +282,6 @@
 	acid = 10
 	wound = 35
 
-/obj/item/clothing/suit/vampire/jacket/better/armored
-	name = "armored leather jacket"
-	armor_type = /datum/armor/armored_jackets
-
-/datum/armor/armored_jackets
-	melee = 50
-	bullet = 50
-	laser = 50
-	energy = 10
-	bomb = 40
-	bio = 0
-	fire = 40
-	acid = 10
-	wound = 25
-
-/obj/item/clothing/suit/vampire/trench/alt/armored
-	name = "armored trenchcoat"
-	icon_state = "trench2"
-	max_integrity = 1000;
-	armor_type = /datum/armor/armored_jackets
-
 /obj/item/clothing/suit/vampire/trench
 	name = "trenchcoat"
 	desc = "Best noir clothes for night. Provides some kind of protection."
@@ -522,21 +501,16 @@
 	desc = "A traditional robe worn by priests of the Orthodox faith."
 	icon_state = "vestments"
 
-/obj/item/clothing/suit/vampire/dutch
-	name = "dutch's jacket"
-	desc = "For those long nights on the beach in Tahiti."
-	icon_state = "DutchJacket"
-
 //Pentex Overwear
 /obj/item/clothing/suit/vampire/pentex_labcoat
-	name = "\improper " + MAIN_EVIL_COMPANY + " labcoat"
-	desc = "A crisp white labcoat. This one has the " + MAIN_EVIL_COMPANY + " International logo stiched onto the breast!"
+	name = "Endron labcoat"
+	desc = "A crisp white labcoat. This one has the Endron International logo stiched onto the breast!"
 	icon_state = "pentex_closedlabcoat"
 	armor_type = /datum/armor/labcoat
 
 /obj/item/clothing/suit/vampire/pentex_labcoat_alt
-	name = "\improper " + MAIN_EVIL_COMPANY + " labcoat"
-	desc = "A crisp white labcoat. This one has a green trim and the " + MAIN_EVIL_COMPANY + " International logo stiched onto the breast!"
+	name = "Endron labcoat"
+	desc = "A crisp white labcoat. This one has a green trim and the Endron International logo stiched onto the breast!"
 	icon_state = "pentex_labcoat_alt"
 	armor_type = /datum/armor/labcoat
 

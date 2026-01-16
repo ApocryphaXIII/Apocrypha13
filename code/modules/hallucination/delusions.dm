@@ -56,7 +56,7 @@
 
 /datum/hallucination/delusion/Destroy()
 	if(!QDELETED(hallucinator) && LAZYLEN(delusions))
-		hallucinator.client?.images -= assoc_to_values(delusions)
+		hallucinator.client?.images -= flatten_list(delusions)
 		LAZYNULL(delusions)
 
 	return ..()

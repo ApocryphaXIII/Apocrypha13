@@ -96,6 +96,7 @@
 	extra_price = PAYCHECK_COMMAND
 	payment_department = ACCOUNT_SRV
 	light_mask = "boozeomat-light-mask"
+	allow_custom = TRUE
 
 /obj/machinery/vending/boozeomat/syndicate
 	age_restrictions = FALSE
@@ -103,7 +104,7 @@
 	allow_custom = FALSE
 
 // DARKPACK EDIT ADD START
-/obj/machinery/vending/boozeomat/private
+/obj/machinery/vending/boozeomat/all_access
 	name = "liquor cabinet"
 	desc = "A climate controlled fridge for booze."
 	req_access = null

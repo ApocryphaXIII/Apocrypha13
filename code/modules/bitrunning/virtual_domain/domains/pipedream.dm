@@ -102,3 +102,4 @@
 	name = "Factory Quartermaster"
 	outfit = /datum/outfit/factory/qm
 	icon_state = "corpsecargotech"
+

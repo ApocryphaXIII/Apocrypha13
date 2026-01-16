@@ -23,7 +23,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light_switch, 26)
 
 	AddComponent(/datum/component/redirect_attack_hand_from_turf)
 
-	AddComponent(/datum/component/usb_port, typecacheof(list(/obj/item/circuit_component/light_switch), only_root_path = TRUE))
+	AddComponent(/datum/component/usb_port, list(
+		/obj/item/circuit_component/light_switch,
+	))
 	if(istext(area))
 		area = text2path(area)
 	if(ispath(area))
@@ -32,8 +34,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light_switch, 26)
 		area = get_area(src)
 	if(autoname)
 		name = "light switch ([area.name])"
-	if(mapload)
-		find_and_mount_on_atom()
+	find_and_hang_on_wall(custom_drop_callback = CALLBACK(src, PROC_REF(deconstruct), TRUE))
 	register_context()
 	update_appearance()
 

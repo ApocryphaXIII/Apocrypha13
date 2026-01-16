@@ -26,8 +26,6 @@
 /datum/status_effect/void_chill/on_apply()
 	if(issilicon(owner))
 		return FALSE
-	if(IS_HERETIC_OR_MONSTER(owner))
-		return FALSE
 	return TRUE
 
 /datum/status_effect/void_chill/on_remove()
@@ -96,16 +94,15 @@
 /atom/movable/screen/alert/status_effect/void_chill
 	name = "Void Chill"
 	desc = "There's something freezing you from within and without. You've never felt cold this oppressive before..."
-	icon_state = "heretic_template"
-	overlay_state = "void_chill_minor"
+	icon_state = "void_chill_minor"
 
-/atom/movable/screen/alert/status_effect/void_chill/update_overlays()
+/atom/movable/screen/alert/status_effect/void_chill/update_icon_state()
+	. = ..()
 	if(!istype(attached_effect, /datum/status_effect/void_chill))
-		return ..()
+		return
 	var/datum/status_effect/void_chill/chill_effect = attached_effect
 	if(chill_effect.stacks >= 5)
-		overlay_state = "void_chill_oh_fuck"
-	return ..()
+		icon_state = "void_chill_oh_fuck"
 
 /atom/movable/screen/alert/status_effect/void_chill/update_desc(updates)
 	. = ..()

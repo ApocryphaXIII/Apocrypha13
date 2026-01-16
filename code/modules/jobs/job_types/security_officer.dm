@@ -3,6 +3,7 @@
 	description = "Protect company assets, follow the Standard Operating \
 		Procedure, eat donuts."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
+	department_head = list(JOB_HEAD_OF_SECURITY)
 	faction = FACTION_STATION
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
@@ -19,7 +20,6 @@
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SEC
 
-	mind_traits = list(SECURITY_MIND_TRAITS)
 	liver_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_SECURITY_OFFICER
@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 /datum/job/security_officer/after_roundstart_spawn(mob/living/spawning, client/player_client)
 	. = ..()
 	if(ishuman(spawning))
-		setup_department(spawning, player_client, move_to = TRUE)
+		setup_department(spawning, player_client)
 
 
 /datum/job/security_officer/after_latejoin_spawn(mob/living/spawning)
@@ -73,7 +73,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 
 
 /// Returns the department this mob was assigned to, if any.
-/datum/job/security_officer/proc/setup_department(mob/living/carbon/human/spawning, client/player_client, move_to = FALSE)
+/datum/job/security_officer/proc/setup_department(mob/living/carbon/human/spawning, client/player_client)
 	var/department = player_client?.prefs?.read_preference(/datum/preference/choiced/security_department)
 	if (!isnull(department))
 		department = get_my_department(spawning, department)
@@ -131,15 +131,15 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 
 	var/spawn_point = pick(LAZYACCESS(GLOB.department_security_spawns, department))
 
-	if(!CONFIG_GET(flag/sec_start_brig) && move_to && (destination || spawn_point))
+	if(!CONFIG_GET(flag/sec_start_brig) && (destination || spawn_point))
 		if(spawn_point)
-			spawning.forceMove(get_turf(spawn_point))
+			spawning.Move(get_turf(spawn_point))
 		else
 			var/list/possible_turfs = get_area_turfs(destination)
 			while (length(possible_turfs))
 				var/random_index = rand(1, length(possible_turfs))
 				var/turf/target = possible_turfs[random_index]
-				if (isopenturf(target) && spawning.forceMove(target))
+				if (spawning.Move(target))
 					break
 				possible_turfs.Cut(random_index, random_index + 1)
 
@@ -157,7 +157,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	department,
 	distribution,
 )
-	var/obj/machinery/announcement_system/announcement_system = get_announcement_system(/datum/aas_config_entry/announce_officer, null, list(RADIO_CHANNEL_SECURITY))
+	var/obj/machinery/announcement_system/announcement_system = get_announcement_system(/datum/aas_config_entry/announce_officer)
 	if (isnull(announcement_system))
 		return
 

@@ -1,0 +1,2 @@
+/turf/open/floor/carpet/vamp : /turf/open/floor/carpet/apoc
+/turf/open/floor/carpet/vamp/@SUBTYPES : /turf/open/floor/carpet/apoc/@SUBTYPES

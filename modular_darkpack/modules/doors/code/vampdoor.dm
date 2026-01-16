@@ -5,13 +5,13 @@
 	icon = 'modular_darkpack/modules/deprecated/icons/doors.dmi'
 	icon_state = "door-1"
 	base_icon_state = "door"
-	layer = MAP_SWITCH(CLOSED_DOOR_LAYER, OPEN_DOOR_LAYER)
+	plane = GAME_PLANE
+	layer = ABOVE_ALL_MOB_LAYER
 	pixel_w = -16
 
 	anchored = TRUE
 	density = TRUE
 	opacity = TRUE
-	flags_1 = IGNORE_TURF_PIXEL_OFFSET_1
 	pass_flags_self = PASSDOORS
 
 	max_integrity = 350
@@ -23,20 +23,16 @@
 	var/closed = TRUE
 	var/locked = FALSE
 	var/door_broken = FALSE
-	var/door_layer = CLOSED_DOOR_LAYER
+	var/door_layer = ABOVE_ALL_MOB_LAYER
 	var/lock_id = null
+	var/glass = FALSE
 	var/lockpick_timer = LOCKTIMER_1
-	var/lockpick_difficulty = 6
+	var/lockpick_difficulty = LOCKDIFFICULTY_1
 
-	var/open_sound = 'modular_darkpack/modules/doors/sounds/door_open.ogg'
-	var/close_sound = 'modular_darkpack/modules/doors/sounds/door_close.ogg'
-	var/lock_sound = 'modular_darkpack/modules/doors/sounds/door_locked.ogg'
+	var/open_sound = 'modular_darkpack/modules/deprecated/sounds/door_open.ogg'
+	var/close_sound = 'modular_darkpack/modules/deprecated/sounds/door_close.ogg'
+	var/lock_sound = 'modular_darkpack/modules/deprecated/sounds/door_locked.ogg'
 	var/burnable = FALSE
-	/// Whether to grant an apartment_key
-	var/grant_apartment_key = FALSE
-	var/apartment_key_amount = 1
-	/// The type of a key the resident will get
-	var/apartment_key_type
 
 /obj/structure/vampdoor/Initialize(mapload)
 	. = ..()
@@ -60,10 +56,6 @@
 		if(-INFINITY to LOCKDIFFICULTY_2) //LOCKDIFFICULTY_1 is basically the minimum so we can just do LOCKTIMER_1 from -INFINITY
 			lockpick_timer = LOCKTIMER_1
 
-/obj/structure/vampdoor/CanAStarPass(to_dir, datum/can_pass_info/pass_info)
-	return !density || !locked
-
-// DARKPACK TODO - examinetext on these doors
 /* Examine text will need to be reworked but im not sure on the probailites for rolls considering botches as well.
 /obj/structure/vampdoor/examine(mob/user)
 	. = ..()
@@ -131,7 +123,7 @@
 	fix_door()
 
 /obj/structure/vampdoor/proc/break_door(mob/user)
-	playsound(get_turf(src), 'modular_darkpack/master_files/sounds/effects/door/get_bent.ogg', 100, FALSE)
+	playsound(get_turf(src), 'modular_darkpack/modules/doors/sounds/get_bent.ogg', 100, FALSE)
 	var/obj/item/shield/door/broken_door = new(get_turf(src))
 	broken_door.icon_state = base_icon_state
 	if(user)
@@ -141,7 +133,7 @@
 	desc = "An empty door frame. Someone removed the door by force. A special door repair kit should be able to fix this."
 	door_broken = TRUE
 	set_density(FALSE)
-	set_opacity(FALSE)
+	opacity = 0
 	layer = OPEN_DOOR_LAYER
 	closed = FALSE
 	locked = FALSE
@@ -153,8 +145,8 @@
 	desc = initial(desc)
 	door_broken = FALSE
 	set_density(TRUE)
-	if(initial(opacity))
-		set_opacity(TRUE)
+	if(!glass)
+		opacity = 1
 	layer = ABOVE_ALL_MOB_LAYER
 	closed = TRUE
 	locked = FALSE
@@ -187,7 +179,7 @@
 	playsound(src, close_sound, 75, TRUE)
 	icon_state = "[base_icon_state]-1"
 	set_density(TRUE)
-	if(initial(opacity))
+	if(!glass)
 		set_opacity(TRUE)
 	layer = ABOVE_ALL_MOB_LAYER
 	to_chat(user, span_notice("You close [src]."))
@@ -198,8 +190,6 @@
 	. = ..()
 	if(.)
 		return
-	if(try_award_apartment_key(user))
-		return
 	var/mob/living/living_user = user
 	if(door_broken)
 		to_chat(user, span_warning("There is no door to use here."))
@@ -208,17 +198,13 @@
 		if(ishuman(user))
 			var/mob/living/carbon/human/human_user = user
 			if(human_user.st_get_stat(STAT_STRENGTH) > 5)
-				if((human_user.st_get_stat(STAT_STRENGTH)) >= lockpick_difficulty)
-					to_chat(human_user, span_danger("You wind up a big punch to break down the door..."))
-					if(do_after(human_user, 3 SECONDS, src))
-						proc_unlock(50)
-						break_door(human_user)
-					else
-						to_chat(human_user, span_danger("You must be standing next to the door to break it down."))
+				if((human_user.st_get_stat(STAT_STRENGTH) * 2) >= lockpick_difficulty)
+					proc_unlock(50)
+					break_door(human_user)
 				else
 					pixel_z = pixel_z+rand(-1, 1)
 					pixel_w = pixel_w+rand(-1, 1)
-					playsound(get_turf(src), 'modular_darkpack/master_files/sounds/effects/door/get_bent.ogg', 50, TRUE)
+					playsound(get_turf(src), 'modular_darkpack/modules/doors/sounds/get_bent.ogg', 50, TRUE)
 					proc_unlock(5)
 					to_chat(user, span_warning("You aren't strong enough to break it down!"))
 					addtimer(CALLBACK(src, PROC_REF(reset_transform)), 2)
@@ -228,8 +214,6 @@
 				playsound(src, 'modular_darkpack/modules/doors/sounds/knock.ogg', 75, TRUE)
 				addtimer(CALLBACK(src, PROC_REF(reset_transform)), 2)
 	else
-		if(try_award_apartment_key(user))
-			return
 		if(locked)
 			playsound(src, lock_sound, 75, TRUE)
 			to_chat(user, span_warning("[src] is locked!"))
@@ -257,10 +241,6 @@
 				has_keys = TRUE
 				if(try_keys(user, found_key))
 					return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
-
-	if(lock_id == LOCKACCESS_ALL)
-		if(try_keys(user, need_key = FALSE))
-			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 	if(!has_keys)
 		to_chat(user, span_warning("You need a key to lock/unlock this door!"))
@@ -292,13 +272,10 @@
 	if(door_broken)
 		to_chat(user, span_warning("There is no door to pick here."))
 		return
-	if(user.st_get_stat(STAT_LARCENY) <= 0)
-		to_chat(user, span_warning("How do I do this...?"))
-		return
 	if(locked)
 		proc_unlock(5)
 		playsound(src, 'modular_darkpack/modules/doors/sounds/hack.ogg', 100, TRUE)
-		for(var/mob/living/carbon/human/npc/police/P in oviewers(DEFAULT_SIGHT_DISTANCE, src))
+		for(var/mob/living/carbon/human/npc/police/P in oviewers(7, src))
 			P.Aggro(user)
 		var/total_lockpicking = user.st_get_stat(STAT_LARCENY)
 		if(do_after(user, lockpick_timer, src, interaction_key = DOAFTER_SOURCE_DOOR))
@@ -325,17 +302,13 @@
 			playsound(src, 'modular_darkpack/modules/doors/sounds/hack.ogg', 100, TRUE)
 			return TRUE
 
-/obj/structure/vampdoor/proc/try_keys(mob/living/user, obj/item/vamp/keys/key_used, need_key = TRUE)
+/obj/structure/vampdoor/proc/try_keys(mob/living/user, obj/item/vamp/keys/key_used)
 	/*
 	if(key_used != user.get_active_hand())
 		if(!do_after(human_user, 0.5 SECONDS, src, interaction_key = DOAFTER_SOURCE_DOOR))
 			return
 	*/
-	if(need_key)
-		to_chat(user, span_notice("You try [key_used] against [src]"))
-	else
-		to_chat(user, span_notice("You try to unlock [src]"))
-
+	to_chat(user, span_notice("You try [key_used] against [src]"))
 	if(door_broken)
 		to_chat(user,span_warning("There is no door to open/close here."))
 		return
@@ -354,58 +327,9 @@
 					proc_unlock("key")
 					locked = FALSE
 				return TRUE
-	if(!need_key)
-		playsound(src, lock_sound, 75, TRUE)
-		if(!locked)
-			to_chat(user, "[src] is now locked.")
-			locked = TRUE
-		else
-			to_chat(user, "[src] is now unlocked.")
-			proc_unlock("key")
-			locked = FALSE
-		return TRUE
 
 /obj/structure/vampdoor/proc/reset_transform()
 	pixel_z = initial(pixel_z)
 	pixel_w = initial(pixel_w)
-
-
-/obj/structure/vampdoor/proc/try_award_apartment_key(mob/user)
-	if(!grant_apartment_key)
-		return FALSE
-	if(!lock_id)
-		return FALSE
-	if(!ishuman(user))
-		return FALSE
-	var/mob/living/carbon/human/human = user
-	if(human.received_apartment_key)
-		return FALSE
-	var/alert = tgui_alert(user, "Is this my apartment?", "Apartment", list("Yes", "No"))
-	if(alert != "Yes")
-		return
-	if(!grant_apartment_key)
-		return
-	var/spare_key = tgui_alert(user, "Do I have an extra spare key?", "Apartment", list("Yes", "No"))
-	if(!grant_apartment_key)
-		return
-	if(spare_key == "Yes")
-		apartment_key_amount = 2
-	else
-		apartment_key_amount = 1
-	for(var/i in 1 to apartment_key_amount)
-		var/obj/item/vamp/keys/key
-		if(apartment_key_type)
-			key = new apartment_key_type(get_turf(human))
-		else
-			key = new /obj/item/vamp/keys(get_turf(human))
-		key.accesslocks = list("[lock_id]")
-		human.put_in_hands(key)
-	human.received_apartment_key = TRUE
-	grant_apartment_key = FALSE
-	if(apartment_key_amount > 1)
-		to_chat(human, span_notice("They're just where I left them..."))
-	else
-		to_chat(human, span_notice("It's just where I left it..."))
-	return TRUE
 
 #undef DOAFTER_SOURCE_DOOR

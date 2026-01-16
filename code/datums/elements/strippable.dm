@@ -182,14 +182,9 @@
  * All string keys in the list must be inside tgui\packages\tgui\interfaces\StripMenu.tsx
  * You can also return null if there are no alternate actions.
  */
-/datum/strippable_item/proc/get_alternate_actions(atom/source, mob/user, obj/item/item)
+/datum/strippable_item/proc/get_alternate_actions(atom/source, mob/user)
 	RETURN_TYPE(/list)
-	SHOULD_CALL_PARENT(TRUE)
-
-	var/list/alt_actions = list()
-	if(item)
-		SEND_SIGNAL(item, COMSIG_ITEM_GET_STRIPPABLE_ALT_ACTIONS, source, user, alt_actions)
-	return alt_actions
+	return null
 
 /**
  * Performs an alternate action on this strippable_item.
@@ -198,9 +193,9 @@
  * - action_key: The key of the alternate action to perform.
  * Returns FALSE if unable to perform the action; whether it be due to the signal or some other factor.
  */
-/datum/strippable_item/proc/perform_alternate_action(atom/source, mob/user, action_key, obj/item/item)
+/datum/strippable_item/proc/perform_alternate_action(atom/source, mob/user, action_key)
 	SHOULD_CALL_PARENT(TRUE)
-	if(item && SEND_SIGNAL(item, COMSIG_ITEM_STRIPPABLE_ALT_ACTION, source, user, action_key) & COMPONENT_ALT_ACTION_DONE)
+	if(SEND_SIGNAL(user, COMSIG_TRY_ALT_ACTION, source, action_key) & COMPONENT_CANT_ALT_ACTION)
 		return FALSE
 	return TRUE
 
@@ -378,10 +373,9 @@
 
 		LAZYINITLIST(result)
 
-		result["icon"] = icon2base64(icon(item.icon, item.icon_state, frame = 1))
+		result["icon"] = icon2base64(icon(item.icon, item.icon_state))
 		result["name"] = item.name
-		result["alternate"] = item_data.get_alternate_actions(owner, user, item)
-		list_clear_nulls(result["alternate"])
+		result["alternate"] = item_data.get_alternate_actions(owner, user)
 		var/static/list/already_cried = list()
 		if(length(result["alternate"]) > 3 && !(type in already_cried))
 			stack_trace("Too many alternate actions for [type]! Only three are supported at the moment! This will look bad!")
@@ -492,14 +486,16 @@
 				return
 
 			var/item = strippable_item.get_item(owner)
+			if (isnull(item))
+				return
 
-			if (!(alt_action in strippable_item.get_alternate_actions(owner, user, item)))
+			if (!(alt_action in strippable_item.get_alternate_actions(owner, user)))
 				return
 
 			LAZYORASSOCLIST(interactions, user, key)
 
 			// Potentially yielding
-			strippable_item.perform_alternate_action(owner, user, alt_action, item)
+			strippable_item.perform_alternate_action(owner, user, alt_action)
 
 			LAZYREMOVEASSOC(interactions, user, key)
 

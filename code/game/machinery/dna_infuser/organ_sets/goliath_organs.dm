@@ -63,7 +63,6 @@
 	greyscale_config = /datum/greyscale_config/mutant_organ
 	greyscale_colors = GOLIATH_COLORS
 	can_smoothen_out = FALSE
-	shade_color = "garnet"
 
 	var/obj/item/goliath_infuser_hammer/hammer
 

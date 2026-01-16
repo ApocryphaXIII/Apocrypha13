@@ -95,7 +95,7 @@
 		if(-INFINITY to -1)
 			particle_type = /particles/grav_field_up
 	if (particle_type)
-		add_shared_particles(particle_type)
+		add_shared_particles(/particles/grav_field_down/strong)
 		color = particle_type::color
 	RegisterSignal(src, COMSIG_ATOM_SMOOTHED_ICON, PROC_REF(smoothed))
 

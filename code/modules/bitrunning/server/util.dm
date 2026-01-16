@@ -25,10 +25,10 @@
 			"health" = creature.health,
 			"name" = creature.name,
 			"pilot" = pilot,
-			"brute" = creature.get_brute_loss(),
-			"burn" = creature.get_fire_loss(),
-			"tox" = creature.get_tox_loss(),
-			"oxy" = creature.get_oxy_loss(),
+			"brute" = creature.getBruteLoss(),
+			"burn" = creature.getFireLoss(),
+			"tox" = creature.getToxLoss(),
+			"oxy" = creature.getOxyLoss(),
 		))
 
 	return hosted_avatars
@@ -96,7 +96,7 @@
 	for(var/datum/lazy_template/virtual_domain/available as anything in subtypesof(/datum/lazy_template/virtual_domain))
 		var/init_cost = initial(available.cost)
 
-		if(!(initial(available.domain_flags) & DOMAIN_TEST_ONLY) && \
+		if(!initial(available.test_only) && \
 			init_cost <= points && \
 			init_cost > BITRUNNER_COST_NONE && \
 			init_cost < BITRUNNER_COST_EXTREME \

@@ -21,7 +21,7 @@
 
 /obj/machinery/plumbing/output/Initialize(mapload, bolt, layer)
 	. = ..()
-	AddComponent(/datum/component/plumbing/simple_demand, bolt, layer, distinct_reagent_cap = 5)
+	AddComponent(/datum/component/plumbing/simple_demand, bolt, layer)
 
 ///For pouring reagents from ducts directly into cups
 /obj/machinery/plumbing/output/tap

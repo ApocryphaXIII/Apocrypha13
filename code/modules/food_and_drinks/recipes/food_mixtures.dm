@@ -4,9 +4,8 @@
 		/obj/item/reagent_containers/cup/bowl,
 		/obj/item/popsicle_stick,
 		/obj/item/stack/rods,
-		/obj/item/reagent_containers/cup/glass/sillycup,
 	)
-	crafting_flags = parent_type::crafting_flags | CRAFT_TRANSFERS_REAGENTS | CRAFT_CLEARS_REAGENTS
+	crafting_flags = parent_type::crafting_flags | CRAFT_TRANSFERS_REAGENTS | CRAFT_CLEARS_REAGENTS | CRAFT_ENFORCE_MATERIALS_PARITY
 	///The food types that are added to the result when the recipe is completed
 	var/added_foodtypes = NONE
 	///The food types that are removed to the result when the recipe is completed
@@ -315,7 +314,7 @@
 	required_reagents = list(/datum/reagent/consumable/liquidelectricity/enriched = 2, /datum/reagent/consumable/grounding_solution = 1)
 	mix_message = "The mixture lets off a sharp snap as the electricity discharges."
 	mix_sound = 'sound/items/weapons/taser.ogg'
-	reaction_flags = REACTION_INSTANT | REACTION_TAG_ACTIVE
+	reaction_flags = REACTION_INSTANT
 
 /datum/chemical_reaction/food/martian_batter
 	results = list(/datum/reagent/consumable/martian_batter = 10)

@@ -1,6 +1,4 @@
 /obj/effect/landmark/npc_spawn_point
-	icon = 'modular_darkpack/modules/deprecated/icons/effects/landmarks_static.dmi'
-	icon_state = "spawn"
 
 /obj/effect/landmark/npc_spawn_point/Initialize(mapload)
 	. = ..()
@@ -52,7 +50,7 @@
 
 /mob/living/carbon/human/npc/death()
 	GLOB.alive_npc_list -= src
-	SShumannpcpool.try_repopulate()
+	SShumannpcpool.npclost()
 	GLOB.move_manager.stop_looping(src)
 
 	if (!last_attacker || (get_dist(src, last_attacker) >= 10) || key || hostile)
@@ -62,6 +60,7 @@
 		var/mob/living/simple_animal/hostile/HS = last_attacker
 		if(HS.my_creator)
 			HS.my_creator.AdjustHumanity(-1, 0)
+			HS.my_creator.last_nonraid = world.time
 			HS.my_creator.killed_count += 1
 			if(!HS.my_creator.warrant && !HS.my_creator.ignores_warrant)
 				if(HS.my_creator.killed_count >= 5)
@@ -74,6 +73,7 @@
 	else if (ishuman(last_attacker))
 		var/mob/living/carbon/human/HM = last_attacker
 		HM.AdjustHumanity(-1, 0)
+		HM.last_nonraid = world.time
 		HM.killed_count += 1
 		if(!HM.warrant && !HM.ignores_warrant)
 			if(HM.killed_count >= 5)
@@ -122,7 +122,7 @@
 	face_atom(T)
 	step_to(src, T, 0)
 
-	if (!walktarget || old_movement)
+	if (!walktarget && old_movement)
 		return
 	if (observed_by_player())
 		return
@@ -135,7 +135,7 @@
 		if(iswallturf(location))
 			return location
 		for(var/atom/A in location)
-			// DARKPACK TODO - reimplement decor
+			// TODO: [Rebase] reimplement decor
 			/*
 			if(A.density && !istype(A, /obj/structure/lamppost))
 				return location
@@ -240,7 +240,7 @@
 	return TRUE
 
 /mob/living/carbon/human/npc/proc/observed_by_player()
-	for (var/mob/observing_mob in viewers(DEFAULT_SIGHT_DISTANCE, src))
+	for (var/mob/observing_mob in viewers(7, src))
 		if (!observing_mob.client)
 			continue
 		return TRUE
@@ -263,7 +263,15 @@
 		return
 
 	// Checks for fire, clearing the stored fire if none is in view
-	afraid_of_fire = locate(/obj/effect/abstract/turf_fire) in view(DEFAULT_SIGHT_DISTANCE, src)
+	// TODO: [Rebase] reimplement fire
+	/*
+	var/seeing_fire
+	for (var/obj/effect/fire/seen_fire in view(7, src))
+		afraid_of_fire = seen_fire
+		seeing_fire = TRUE
+	if (!seeing_fire)
+		afraid_of_fire = null
+	*/
 
 	// Combat behaviour
 	if (danger_source)
@@ -272,7 +280,7 @@
 			GLOB.move_manager.move_away(src, danger_source, 10, cached_multiplicative_slowdown)
 		else
 			// Criminals will attack anyone, others will only attack non-police
-			// DARKPACK TODO - reimplement IDs
+			// TODO: [Rebase] reimplement IDs
 			/*
 			var/obj/item/card/id/id_card = danger_source.get_idcard(FALSE)
 			if (!istype(id_card, /obj/item/card/id/police) || is_criminal)
@@ -298,13 +306,18 @@
 			end_combat()
 
 	// Running away from fire behaviour
+	// TODO: [Rebase] reimplement fire
+	/*
 	else if (afraid_of_fire)
 		GLOB.move_manager.move_away(src, afraid_of_fire, 10, cached_multiplicative_slowdown)
 		if (prob(25))
 			emote("scream")
+	*/
 
 	// Walking around behaviour
 	else if (walktarget && !staying)
+		if (prob(25))
+			toggle_move_intent(src)
 		GLOB.move_manager.move_to(src, walktarget, 0, cached_multiplicative_slowdown)
 
 	if (!has_weapon || danger_source || !spawned_weapon)

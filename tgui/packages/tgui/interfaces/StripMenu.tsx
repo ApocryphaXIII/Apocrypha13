@@ -59,11 +59,6 @@ const ALTERNATE_ACTIONS: Record<string, AlternateAction> = {
     text: 'Unknot',
   },
 
-  remove_item_cuffs: {
-    icon: 'handcuffs',
-    text: 'Remove Handcuffs',
-  },
-
   enable_internals: {
     icon: 'tg-air-tank',
     text: 'Enable internals',
@@ -322,7 +317,7 @@ export const StripMenu = (props) => {
                     );
 
                     tooltip = item.name;
-                    if (item.alternate?.length) {
+                    if (item.alternate) {
                       alternateActions = item.alternate.map(
                         (alternateKey, idx) => {
                           const alternateAction =

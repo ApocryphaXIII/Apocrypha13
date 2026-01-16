@@ -29,7 +29,6 @@
 	var/time_left_warning = 60 SECONDS
 	///Sound loop that plays when recording or playing back.
 	var/datum/looping_sound/tape_recorder_hiss/soundloop
-	custom_price = 50 // DARKPACK EDIT ADD - ECONOMY
 
 /obj/item/taperecorder/Initialize(mapload)
 	. = ..()
@@ -110,8 +109,8 @@
 	update_appearance()
 
 /obj/item/taperecorder/fire_act(exposed_temperature, exposed_volume)
-	mytape?.unspool() //Fires unspool the tape, which makes sense if you don't think about it
-	return ..()
+	mytape.unspool() //Fires unspool the tape, which makes sense if you don't think about it
+	..()
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 /obj/item/taperecorder/attack_hand(mob/user, list/modifiers)
@@ -154,7 +153,7 @@
 	return ..()
 
 
-/obj/item/taperecorder/Hear(atom/movable/speaker, message_langs, raw_message, radio_freq, radio_freq_name, radio_freq_color, spans, list/message_mods = list(), message_range, source) // DARKPACK EDIT, ORIGINAL: /obj/item/taperecorder/Hear(atom/movable/speaker, message_langs, raw_message, radio_freq, radio_freq_name, radio_freq_color, spans, list/message_mods = list(), message_range)
+/obj/item/taperecorder/Hear(atom/movable/speaker, message_langs, raw_message, radio_freq, radio_freq_name, radio_freq_color, spans, list/message_mods = list(), message_range)
 	. = ..()
 	if(message_mods[MODE_RELAY] || !mytape || istype(speaker, /obj/item/taperecorder))
 		return
@@ -397,7 +396,6 @@
 	var/unspooled = FALSE
 	var/list/icons_available = list()
 	var/radial_icon_file = 'icons/hud/radial_tape.dmi'
-	custom_price = 10 // DARKPACK EDIT ADD - ECONOMY
 
 /obj/item/tape/Initialize(mapload)
 	. = ..()

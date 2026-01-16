@@ -1,5 +1,7 @@
 /mob/living/carbon/human/proc/AdjustMasquerade(value, reason = "debug")
-	if(ismundane(src))
+	if(!issupernatural(src))
+		return
+	if(!GLOB.canon_event)
 		return
 
 	switch(value)

@@ -100,8 +100,6 @@
 	flags_cover = GLASSESCOVERSEYES
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/blue
-	custom_materials = list(/datum/material/glass = SHEET_MATERIAL_AMOUNT * 0.55, /datum/material/iron = SMALL_MATERIAL_AMOUNT / 2)
-
 /* // DARKPACK EDIT REMOVE
 /obj/item/clothing/glasses/hud/health/sunglasses/Initialize(mapload)
 	. = ..()
@@ -143,8 +141,6 @@
 	flash_protect = FLASH_PROTECTION_FLASH
 	flags_cover = GLASSESCOVERSEYES
 	tint = 1
-	custom_materials = list(/datum/material/glass = SHEET_MATERIAL_AMOUNT * 0.55, /datum/material/iron = SMALL_MATERIAL_AMOUNT / 2)
-
 /* // DARKPACK EDIT REMOVE
 /obj/item/clothing/glasses/hud/diagnostic/sunglasses/Initialize(mapload)
 	. = ..()
@@ -188,8 +184,6 @@
 	flags_cover = GLASSESCOVERSEYES
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/darkred
-	custom_materials = list(/datum/material/glass = SHEET_MATERIAL_AMOUNT * 0.55, /datum/material/iron = SMALL_MATERIAL_AMOUNT / 2)
-
 /* // DARKPACK EDIT REMOVE
 /obj/item/clothing/glasses/hud/security/sunglasses/Initialize(mapload)
 	. = ..()
@@ -249,14 +243,18 @@
 	if (wearer.glasses != src)
 		return
 
+	for(var/trait in clothing_traits)
+		REMOVE_CLOTHING_TRAIT(user, trait)
+
 	if (TRAIT_MEDICAL_HUD in clothing_traits)
-		detach_clothing_traits(TRAIT_MEDICAL_HUD)
+		clothing_traits = null
 	else if (TRAIT_SECURITY_HUD in clothing_traits)
-		detach_clothing_traits(TRAIT_MEDICAL_HUD)
-		attach_clothing_traits(TRAIT_SECURITY_HUD)
+		clothing_traits = list(TRAIT_MEDICAL_HUD)
 	else
-		detach_clothing_traits(TRAIT_MEDICAL_HUD)
-		attach_clothing_traits(TRAIT_SECURITY_HUD)
+		clothing_traits = list(TRAIT_SECURITY_HUD)
+
+	for(var/trait in clothing_traits)
+		ADD_CLOTHING_TRAIT(user, trait)
 
 /datum/action/item_action/switch_hud
 	name = "Switch HUD"

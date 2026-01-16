@@ -46,7 +46,6 @@
 					latches = "quad_latch" // like winning the lottery, but worse
 	update_appearance()
 	AddElement(/datum/element/falling_hazard, damage = force, wound_bonus = wound_bonus, hardhat_safety = TRUE, crushes = FALSE, impact_sound = hitsound)
-	AddElement(/datum/element/cuffable_item)
 
 /obj/item/storage/toolbox/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
 	if (user.combat_mode || !user.has_hand_for_held_index(user.get_inactive_hand_index()))
@@ -100,7 +99,7 @@
 	picked_tool.melee_attack_chain(user, interacting_with, modifiers)
 	current_interactions -= 1
 
-	if (QDELETED(picked_tool) || picked_tool.loc != user || !picked_tool.IsReachableBy(user))
+	if (QDELETED(picked_tool) || picked_tool.loc != user || !user.CanReach(picked_tool))
 		current_interactions = 0
 		return
 
@@ -149,15 +148,13 @@
 		/obj/item/storage/toolbox/crafter = "#9D3282",
 		/obj/item/storage/toolbox/syndicate = "#3d3d3d",
 	)
-	var/obj/item/bot_assembly/repairbot/repair = new(drop_location())
+	var/obj/item/bot_assembly/repairbot/repair = new
 	repair.toolbox = type
 	var/new_color = toolbox_colors[type] || "#445eb3"
 	repair.set_color(new_color)
+	user.put_in_hands(repair)
 	repair.update_appearance()
 	repair.balloon_alert(user, "sensor added!")
 	qdel(tool)
-	var/held_index = user.is_holding(src)
 	qdel(src)
-	if (held_index)
-		user.put_in_hand(repair, held_index)
 	return ITEM_INTERACT_SUCCESS

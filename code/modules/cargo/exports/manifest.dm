@@ -36,7 +36,8 @@
 		return TRUE
 	return FALSE
 
-/datum/export/manifest_error_denied/get_base_cost(obj/item/paper/fluff/jobs/cargo/manifest/M)
+/datum/export/manifest_error_denied/get_cost(obj/O)
+	var/obj/item/paper/fluff/jobs/cargo/manifest/M = O
 	return ..() + M.order_cost
 
 
@@ -58,7 +59,8 @@
 		return TRUE
 	return FALSE
 
-/datum/export/manifest_error/get_base_cost(obj/item/paper/fluff/jobs/cargo/manifest/M)
+/datum/export/manifest_error/get_cost(obj/O)
+	var/obj/item/paper/fluff/jobs/cargo/manifest/M = O
 	return -min(M.order_cost * 0.5, MAX_MANIFEST_PENALTY)
 
 
@@ -80,7 +82,8 @@
 		return TRUE
 	return FALSE
 
-/datum/export/manifest_correct_denied/get_base_cost(obj/item/paper/fluff/jobs/cargo/manifest/M)
+/datum/export/manifest_correct_denied/get_cost(obj/O)
+	var/obj/item/paper/fluff/jobs/cargo/manifest/M = O
 	return -min(M.order_cost * 0.5, MAX_MANIFEST_PENALTY)
 
 #undef MAX_MANIFEST_PENALTY

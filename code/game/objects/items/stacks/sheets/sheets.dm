@@ -18,13 +18,14 @@
 	pickup_sound = 'sound/items/handling/materials/metal_pick_up.ogg'
 	drop_sound = 'sound/items/handling/materials/metal_drop.ogg'
 	sound_vary = TRUE
-	usable_for_construction = TRUE
-	/// text string used to find typepaths used in door and wall (false and tram too) construction for door assemblies and girders respectively
-	var/construction_path_type = null
+	/// this is used for girders in the creation of walls/false walls
+	var/sheettype = null
 	///If true, this is worth points in the gulag labour stacker
 	var/gulag_valid = FALSE
 	///Set to true if this is vended from a material storage
 	var/manufactured = FALSE
+	///What type of wall does this sheet spawn
+	var/walltype
 	/// whether this sheet can be sniffed by the material sniffer
 	var/sniffable = FALSE
 

@@ -24,7 +24,7 @@
 	storage_type = /datum/storage/box/debug
 
 /obj/item/storage/box/debugtools/PopulateContents()
-	var/list/items_inside = list(
+	var/static/items_inside = list(
 		/obj/item/card/emag=1,
 		/obj/item/construction/rcd/combat/admin=1,
 		/obj/item/disk/tech_disk/debug=1,
@@ -41,7 +41,6 @@
 		/obj/item/uplink/nuclear/debug=1,
 		/obj/item/clothing/ears/earmuffs/debug=1,
 		/obj/item/gps/visible_debug=1,
-		/obj/item/clothing/glasses/meson/engine/admin=1,
 		)
 	generate_items_inside(items_inside, src)
 

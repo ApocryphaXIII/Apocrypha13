@@ -6,7 +6,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/m9mm
 	can_suppress = TRUE
 	burst_size = 1
-	fire_delay = 0 SECONDS
+	fire_delay = 0
 	actions_types = list()
 	bolt_type = BOLT_TYPE_LOCKING
 	fire_sound = 'sound/items/weapons/gun/pistol/shot.ogg'
@@ -25,7 +25,6 @@
 	bolt_wording = "slide"
 	suppressor_x_offset = 10
 	suppressor_y_offset = -1
-	recoil_backtime_multiplier = 1
 
 /obj/item/gun/ballistic/automatic/pistol/no_mag
 	spawnwithmagazine = FALSE
@@ -66,27 +65,23 @@
 	for an underbarrel-mounted disruptor, similar in operation to the standalone SC/FISHER. Chambered in 10mm."
 	desc_controls = "Right-click to use the underbarrel disruptor. Two shots maximum between self-charges."
 	icon_state = "pistol_evil_fisher"
-	suppressed = SUPPRESSED_QUIET
+	suppressed = TRUE
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	var/obj/item/gun/energy/recharge/fisher/underbarrel
 
+/obj/item/gun/ballistic/automatic/pistol/clandestine/fisher/examine_more(mob/user)
+	. = ..()
+	. += span_notice("The Ansem/SC is a Scarborough Arms-manufactured overhaul suite for the also Scarborough Arms-manufactured Ansem handgun, designed for special \
+	operators who like to operate operationally, and/or people who really, really hate lightbulbs, and tend to fight people who really like lightbulbs. \
+	The slide is lengthened and has an integrated suppressor, while a compact kinetic light disruptor was mounted underneath the barrel. \
+	Scarborough Arms has never actually officially responded to allegations that they're involved with the modification and/or manufacture \
+	of the SC/FISHER or similar disruptor weapons. Operators are reminded that kinetic light disruptors do not actually physically harm targets.<br>\
+	Caveat emptor.")
+
 /obj/item/gun/ballistic/automatic/pistol/clandestine/fisher/Initialize(mapload)
 	. = ..()
 	underbarrel = new /obj/item/gun/energy/recharge/fisher(src)
-	AddElement(/datum/element/examine_lore, \
-		lore = "The Ansem/SC is a Scarborough Arms overhaul suite for their own Ansem handgun, designed for special operators who operate operationally, \
-		especially against people who like using lightbulbs.<br>\
-		<br>\
-		The slide is chopped down, with the front half of the handgun featuring a monolithic integral suppressor built around the barrel, \
-		and a compact kinetic light disruptor mounted underneath the barrel assembly. The integral suppressor is engineered to not affect \
-		ballistic performance nor affect the concealability of the handgun, leading to a surprisingly robust firearm.<br>\
-		<br>\
-		Scarborough Arms has never actually addressed allegations of their involvement with the modification and/or manufacture \
-		of the SC/FISHER or similar disruptor weapons. Prospective operators are reminded that kinetic light disruptors do not actually physically harm targets.<br>\
-		<br>\
-		Caveat emptor." \
-	)
 
 /obj/item/gun/ballistic/automatic/pistol/clandestine/fisher/Destroy()
 	QDEL_NULL(underbarrel)
@@ -94,13 +89,10 @@
 
 /obj/item/gun/ballistic/automatic/pistol/clandestine/fisher/try_fire_gun(atom/target, mob/living/user, params)
 	if(LAZYACCESS(params2list(params), RIGHT_CLICK))
-		underbarrel.try_fire_gun(target, user, params)
-		return
+		return underbarrel.try_fire_gun(target, user, params)
 	return ..()
 
 /obj/item/gun/ballistic/automatic/pistol/clandestine/fisher/afterattack(atom/target, mob/user, list/modifiers, list/attack_modifiers)
-	if(QDELETED(target))
-		return
 	var/obj/projectile/energy/fisher/melee/simulated_hit = new
 	simulated_hit.firer = user
 	simulated_hit.on_hit(target)
@@ -189,7 +181,6 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/r10mm
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	obj_flags = UNIQUE_RENAME // if you did the sidequest, you get the customization
-	custom_materials = list(/datum/material/gold = SHEET_MATERIAL_AMOUNT * 30, /datum/material/silver = SHEET_MATERIAL_AMOUNT * 25, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 11.5)
 
 /obj/item/gun/ballistic/automatic/pistol/aps
 	name = "\improper Stechkin APS machine pistol"

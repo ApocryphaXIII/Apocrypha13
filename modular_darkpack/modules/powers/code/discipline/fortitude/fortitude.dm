@@ -11,6 +11,12 @@
 	activate_sound = 'modular_darkpack/modules/powers/sounds/fortitude_activate.ogg'
 	deactivate_sound = 'modular_darkpack/modules/powers/sounds/fortitude_deactivate.ogg'
 
+/datum/discipline_power/fortitude/proc/apply_passive_stamina_bonus(bonus)
+	if (owner.st_get_stat_mod(STAT_STAMINA, "fortitude") >= bonus)
+		return
+
+	owner.st_add_stat_mod(STAT_STAMINA, bonus, "fortitude")
+
 //FORTITUDE 1
 /datum/discipline_power/fortitude/one
 	name = "Fortitude 1"
@@ -32,14 +38,16 @@
 
 /datum/discipline_power/fortitude/one/activate()
 	. = ..()
+
 	owner.apply_status_effect(/datum/status_effect/fortitude/one)
 
 /datum/discipline_power/fortitude/one/deactivate()
 	. = ..()
+
 	owner.remove_status_effect(/datum/status_effect/fortitude/one)
 
 /datum/discipline_power/fortitude/one/post_gain()
-	owner.st_add_stat_mod(STAT_STAMINA, 1, "Fortitude")
+	apply_passive_stamina_bonus(1)
 
 //FORTITUDE 2
 /datum/discipline_power/fortitude/two
@@ -62,14 +70,16 @@
 
 /datum/discipline_power/fortitude/two/activate()
 	. = ..()
+
 	owner.apply_status_effect(/datum/status_effect/fortitude/two)
 
 /datum/discipline_power/fortitude/two/deactivate()
 	. = ..()
+
 	owner.remove_status_effect(/datum/status_effect/fortitude/two)
 
 /datum/discipline_power/fortitude/two/post_gain()
-	owner.st_add_stat_mod(STAT_STAMINA, 2, "Fortitude")
+	apply_passive_stamina_bonus(2)
 
 //FORTITUDE 3
 /datum/discipline_power/fortitude/three
@@ -92,14 +102,16 @@
 
 /datum/discipline_power/fortitude/three/activate()
 	. = ..()
+
 	owner.apply_status_effect(/datum/status_effect/fortitude/three)
 
 /datum/discipline_power/fortitude/three/deactivate()
 	. = ..()
+
 	owner.remove_status_effect(/datum/status_effect/fortitude/three)
 
 /datum/discipline_power/fortitude/three/post_gain()
-	owner.st_add_stat_mod(STAT_STAMINA, 3, "Fortitude")
+	apply_passive_stamina_bonus(3)
 
 //FORTITUDE 4
 /datum/discipline_power/fortitude/four
@@ -122,14 +134,16 @@
 
 /datum/discipline_power/fortitude/four/activate()
 	. = ..()
+
 	owner.apply_status_effect(/datum/status_effect/fortitude/four)
 
 /datum/discipline_power/fortitude/four/deactivate()
 	. = ..()
+
 	owner.remove_status_effect(/datum/status_effect/fortitude/four)
 
 /datum/discipline_power/fortitude/four/post_gain()
-	owner.st_add_stat_mod(STAT_STAMINA, 4, "Fortitude")
+	apply_passive_stamina_bonus(4)
 
 //FORTITUDE 5
 /datum/discipline_power/fortitude/five
@@ -152,11 +166,13 @@
 
 /datum/discipline_power/fortitude/five/activate()
 	. = ..()
+
 	owner.apply_status_effect(/datum/status_effect/fortitude/five)
 
 /datum/discipline_power/fortitude/five/deactivate()
 	. = ..()
+
 	owner.remove_status_effect(/datum/status_effect/fortitude/five)
 
 /datum/discipline_power/fortitude/five/post_gain()
-	owner.st_add_stat_mod(STAT_STAMINA, 5, "Fortitude")
+	apply_passive_stamina_bonus(5)

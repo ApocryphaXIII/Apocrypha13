@@ -5,7 +5,7 @@
 /datum/unit_test/fish_aquarium_icons
 
 /datum/unit_test/fish_aquarium_icons/Run()
-	for(var/obj/item/fish/fish as anything in valid_subtypesof(/obj/item/fish)) // DARKPACK EDIT CHANGE - FISHING
+	for(var/obj/item/fish/fish as anything in subtypesof(/obj/item/fish))
 		if(ispath(fish, /obj/item/fish/testdummy)) //We don't care about unit test fish.
 			continue
 		var/init_icon = fish::dedicated_in_aquarium_icon
@@ -113,7 +113,7 @@
 
 /datum/unit_test/fish_scanning/Run()
 	var/scannable_fishes = 0
-	for(var/obj/item/fish/fish_prototype as anything in valid_subtypesof(/obj/item/fish)) // DARKPACK EDIT CHANGE - FISHING
+	for(var/obj/item/fish/fish_prototype as anything in subtypesof(/obj/item/fish))
 		if(initial(fish_prototype.fish_flags) & FISH_FLAG_EXPERIMENT_SCANNABLE)
 			scannable_fishes++
 	for(var/datum/experiment/scanning/fish/fish_scan as anything in typesof(/datum/experiment/scanning/fish))
@@ -124,6 +124,7 @@
 
 ///dummy fish item used for the tests, as well with related subtypes and datums.
 /obj/item/fish/testdummy
+	grind_results = list()
 	average_weight = FISH_GRIND_RESULTS_WEIGHT_DIVISOR * 2
 	average_size = FISH_SIZE_BULKY_MAX
 	num_fillets = 2
@@ -132,12 +133,7 @@
 	breeding_timeout = 0
 	fish_flags = parent_type::fish_flags & ~(FISH_FLAG_SHOW_IN_CATALOG|FISH_FLAG_EXPERIMENT_SCANNABLE)
 	fish_id_redirect_path = /obj/item/fish/goldfish //Stops SSfishing from complaining
-
-	///used to know how many fillets should be gotten out of this fish
-	var/expected_num_fillets = 0
-
-/obj/item/fish/testdummy/fish_grind_results()
-	return null
+	var/expected_num_fillets = 0 //used to know how many fillets should be gotten out of this fish
 
 /obj/item/fish/testdummy/small
 	// The parent type is too big to reproduce inside the more compact fish tank
@@ -453,7 +449,7 @@
 /datum/fish_source/unit_test_all_fish
 
 /datum/fish_source/unit_test_all_fish/New()
-	for(var/fish_type in valid_subtypesof(/obj/item/fish)) // DARKPACK EDIT CHANGE - FISHING
+	for(var/fish_type in subtypesof(/obj/item/fish))
 		fish_table[fish_type] = 10
 	return ..()
 

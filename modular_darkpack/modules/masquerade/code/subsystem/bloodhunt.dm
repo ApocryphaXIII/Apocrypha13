@@ -33,9 +33,6 @@ SUBSYSTEM_DEF(bloodhunt)
 
 /atom/movable/screen/alert/bloodhunt/Destroy()
 	STOP_PROCESSING(SSprocessing, src)
-	angle = null
-	blood_target = null
-	selected_target = null
 	return ..()
 
 /atom/movable/screen/alert/bloodhunt/Click()

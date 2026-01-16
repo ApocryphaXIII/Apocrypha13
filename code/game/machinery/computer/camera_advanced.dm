@@ -55,10 +55,9 @@
 		actions += new move_down_action(src)
 	if(add_usb_port)
 		AddComponent(/datum/component/usb_port, \
-			typecacheof(list(
+			list(
 				/obj/item/circuit_component/advanced_camera,
 				/obj/item/circuit_component/advanced_camera_intercept,
-				), \
 			), \
 			extra_registration_callback = PROC_REF(register_usb_port), \
 			extra_unregistration_callback = PROC_REF(unregister_usb_port) \
@@ -184,10 +183,10 @@
 		else
 			camera_location = myturf
 	else
-		if((!consider_zlock || (myturf.z in z_lock)) && SScameras.is_visible_by_cameras(myturf))
+		if((!consider_zlock || (myturf.z in z_lock)) && GLOB.cameranet.checkTurfVis(myturf))
 			camera_location = myturf
 		else
-			for(var/obj/machinery/camera/C as anything in SScameras.cameras)
+			for(var/obj/machinery/camera/C as anything in GLOB.cameranet.cameras)
 				if(!C.can_use() || consider_zlock && !(C.z in z_lock))
 					continue
 				var/list/network_overlap = networks & C.network
@@ -230,7 +229,7 @@
 	var/mob/eye/camera/remote/remote_eye = owner.remote_control
 	var/obj/machinery/computer/camera_advanced/origin = remote_eye.origin_ref.resolve()
 
-	var/list/cameras_by_tag = SScameras.get_available_camera_by_tag_list(origin.networks, origin.z_lock)
+	var/list/cameras_by_tag = GLOB.cameranet.get_available_camera_by_tag_list(origin.networks, origin.z_lock)
 
 	playsound(origin, 'sound/machines/terminal/terminal_prompt.ogg', 25, FALSE)
 	var/camera = tgui_input_list(usr, "Camera to view", "Cameras", cameras_by_tag)
@@ -404,7 +403,7 @@
 	var/turf/eye_turf = get_turf(source)
 	if(!eye_turf)
 		return
-	if(!SScameras.is_visible_by_cameras(eye_turf))
+	if(!GLOB.cameranet.checkTurfVis(eye_turf))
 		return
 	eye_x.set_output(source.x)
 	eye_y.set_output(source.y)
@@ -491,7 +490,7 @@
 	var/turf/target_turf = get_turf(target)
 	if(!target_turf)
 		return
-	if(!SScameras.is_visible_by_cameras(target_turf))
+	if(!GLOB.cameranet.checkTurfVis(target_turf))
 		return
 	if(TIMER_COOLDOWN_RUNNING(parent.shell, COOLDOWN_CIRCUIT_TARGET_INTERCEPT))
 		return
