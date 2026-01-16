@@ -9,9 +9,8 @@ import { AntagsPage } from './AntagsPage';
 import { JobsPage } from './JobsPage';
 import { LoadoutPage } from './loadout';
 import { MainPage } from './MainPage';
-import { QuirkPersonalityPage } from './QuirksPage';
+import { QuirksPage } from './QuirksPage';
 import { SpeciesPage } from './SpeciesPage';
-import { StatsPage } from './Stats'; // DARKPACK EDIT ADD
 
 enum Page {
   Antags,
@@ -20,7 +19,6 @@ enum Page {
   Species,
   Quirks,
   Loadout,
-  Stats, // DARKPACK EDIT ADD
 }
 
 type ProfileProps = {
@@ -78,18 +76,12 @@ export function CharacterPreferenceWindow(props) {
 
       break;
     case Page.Quirks:
-      pageContents = <QuirkPersonalityPage />;
+      pageContents = <QuirksPage />;
       break;
 
     case Page.Loadout:
       pageContents = <LoadoutPage />;
       break;
-
-    // DARKPACK EDIT ADD START - Stats
-    case Page.Stats:
-      pageContents = <StatsPage />;
-      break;
-    // DARKPACK EDIT ADD END
 
     default:
       exhaustiveCheck(currentPage);
@@ -127,22 +119,6 @@ export function CharacterPreferenceWindow(props) {
             </PageButton>
           </Stack.Item>
 
-          {
-          // DARKPACK EDIT ADD START - STATS
-          }
-          <Stack.Item grow>
-            <PageButton
-              currentPage={currentPage}
-              page={Page.Stats}
-              setPage={setCurrentPage}
-            >
-              Stats
-            </PageButton>
-          </Stack.Item>
-          {
-          // DARKPACK EDIT ADD END
-          }
-
           <Stack.Item grow>
             <PageButton
               currentPage={currentPage}
@@ -177,21 +153,15 @@ export function CharacterPreferenceWindow(props) {
             </PageButton>
           </Stack.Item>
 
-          {
-          // DARKPACK EDIT ADD START - Merits
-          }
           <Stack.Item grow>
             <PageButton
               currentPage={currentPage}
               page={Page.Quirks}
               setPage={setCurrentPage}
             >
-              Merits / Flaws
+              Quirks
             </PageButton>
           </Stack.Item>
-          {
-          // DARKPACK EDIT ADD END
-          }
         </Stack>
       </Stack.Item>
       <Stack.Divider />

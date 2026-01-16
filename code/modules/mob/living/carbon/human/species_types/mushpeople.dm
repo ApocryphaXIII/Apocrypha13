@@ -59,7 +59,9 @@
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_POD_HAIR
 
-	dna_block = /datum/dna_block/feature/accessory/mush_cap
+	preference = "feature_mushperson_cap"
+
+	dna_block = /datum/dna_block/feature/mush_cap
 	restyle_flags = EXTERNAL_RESTYLE_PLANT
 
 	bodypart_overlay = /datum/bodypart_overlay/mutant/mushroom_cap
@@ -71,6 +73,9 @@
 	layers = EXTERNAL_ADJACENT
 	feature_key = FEATURE_MUSH_CAP
 	dyable = TRUE
+
+/datum/bodypart_overlay/mutant/mushroom_cap/get_global_feature_list()
+	return SSaccessories.caps_list
 
 /datum/bodypart_overlay/mutant/mushroom_cap/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
 	return !(bodypart_owner.owner?.obscured_slots & HIDEHAIR)

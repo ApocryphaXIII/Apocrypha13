@@ -80,7 +80,6 @@
 
 /obj/item/toy/cards/cardhand/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
 	var/obj/item/toy/singlecard/card
-	var/interacting_with_deck = FALSE
 	if(istype(tool, /obj/item/toy/singlecard))
 		card = tool
 
@@ -94,8 +93,7 @@
 			to_chat(user, span_warning("\The [dealer_deck] is stacked too high!"))
 			return ITEM_INTERACT_BLOCKING
 
-		card = dealer_deck.get_top_card(user)
-		interacting_with_deck = TRUE
+		card = dealer_deck.draw(user)
 
 	if(!card)
 		return NONE
@@ -103,9 +101,6 @@
 	if(insert(card))
 		if(LAZYACCESS(modifiers, RIGHT_CLICK))
 			card.Flip()
-		if(interacting_with_deck)
-			var/obj/item/toy/cards/deck/dealer_deck = tool
-			dealer_deck.draw(user)
 		return ITEM_INTERACT_SUCCESS
 
 	to_chat(user, span_warning("You can't hold any more cards in your hand!"))

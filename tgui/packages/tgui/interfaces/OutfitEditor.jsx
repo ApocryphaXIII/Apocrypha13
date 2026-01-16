@@ -131,7 +131,7 @@ const OutfitSlot = (props) => {
         // todo: intuitive way to clear items
         onClick={(e) => act(e.ctrlKey ? 'ctrlClick' : 'click', { slot })}
       >
-        <Icon name={icon} rotation={iconRot} mr={0.5} />
+        <Icon name={icon} rotation={iconRot} />
         {name}
       </Button>
       <Box height="32px">

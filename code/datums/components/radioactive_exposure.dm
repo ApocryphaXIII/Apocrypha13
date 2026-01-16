@@ -75,5 +75,4 @@
 /atom/movable/screen/alert/radioactive_area
 	name = "Radioactive Area"
 	desc = "This place is no good! We need to get some protection or get out fast!"
-	use_user_hud_icon = TRUE
-	overlay_state = "radioactive_area"
+	icon_state = ALERT_RADIOACTIVE_AREA

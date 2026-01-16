@@ -47,7 +47,6 @@
 /obj/item/pet_carrier/Initialize(mapload)
 	. = ..()
 	register_context()
-	AddElement(/datum/element/cuffable_item)
 
 /obj/item/pet_carrier/Destroy()
 	if(occupants.len)

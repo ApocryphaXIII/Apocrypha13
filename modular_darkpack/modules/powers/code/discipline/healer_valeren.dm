@@ -48,7 +48,8 @@
 /datum/discipline_power/valeren/anesthetic_touch/activate(mob/living/target)
 	. = ..()
 	//I'm not a fan of how punishing this is towards human players, but not my job to rework it
-	if (ismundane(target))
+	//refactor this when the species refactoring comes through
+	if (ishumanbasic(target))
 		target.SetSleeping(15 SECONDS)
 	else
 		target.add_confusion(5)

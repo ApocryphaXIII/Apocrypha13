@@ -10,7 +10,6 @@
 	density = TRUE
 	max_integrity = 300
 	integrity_failure = 0.5
-	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 10)
 
 	///A flag that describes this device type
 	var/hardware_flag = PROGRAM_CONSOLE
@@ -202,7 +201,7 @@
 // "Stun" weapons can cause minor damage to components (short-circuits?)
 // "Burn" damage is equally strong against internal components and exterior casing
 // "Brute" damage mostly damages the casing.
-/obj/machinery/modular_computer/projectile_hit(obj/projectile/hitting_projectile, def_zone, piercing_hit, blocked)
-	return cpu?.projectile_hit(hitting_projectile, def_zone, piercing_hit, blocked) || ..()
+/obj/machinery/modular_computer/bullet_act(obj/projectile/proj)
+	return cpu?.projectile_hit(proj) || ..()
 
 #undef CPU_INTERACTABLE

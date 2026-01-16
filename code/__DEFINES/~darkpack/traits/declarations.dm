@@ -7,14 +7,6 @@
 Remember to update _globalvars/traits.dm if you're adding/removing/renaming traits.
 */
 
-// CITY_TRAITS
-#define STATION_TRAIT_RED_STAR "station_trait_red_star"
-#define STATION_TRAIT_WILD_MASQUERADE "station_trait_wild_masquerade"
-#define STATION_TRAIT_INFESTATION "station_trait_infestation"
-#define STATION_TRAIT_PEST_CONTROL "station_trait_pest_control"
-#define STATION_TRAIT_STRAY_MIGRATION "station_trait_stray_migration"
-#define STATION_TRAIT_COSPLAY_CONVENTION "station_trait_cosplay_convention"
-
 // Mob traits
 
 // If the user is unbondable via blood bonds.
@@ -23,29 +15,23 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_DEFICIENT_VITAE "deficient_vitae"
 //If the kindred is obfuscated.
 #define TRAIT_OBFUSCATED "obfuscated"
-#define TRAIT_BLOODY_LOVER "bloody_lover"
-#define TRAIT_TOUGH_FLESH "tough_flesh"
-#define TRAIT_BLOODY_SUCKER "bloody_sucker"
-#define TRAIT_NON_INT "non_intellectual"
-#define TRAIT_COFFIN_THERAPY "coffin_therapy"
-#define TRAIT_RUBICON "rubicon"
-#define TRAIT_HUNGRY "hungry"
-#define TRAIT_STAKE_RESISTANT "stake_resistant"
-#define TRAIT_STAKE_IMMUNE "stake_immune"
-#define TRAIT_STAKED "staked"
-#define TRAIT_LAZY "lazy"
-#define TRAIT_HOMOSEXUAL "homosexual"
-#define TRAIT_HUNTED "hunted"
-#define TRAIT_VIOLATOR "violator"
-#define TRAIT_DIABLERIE "diablerie"
-#define TRAIT_GULLET "gullet"
-#define TRAIT_CHARMER "charmer"
-#define TRAIT_COLD_AURA "cold_aura"
-#define TRAIT_WARM_AURA "warm_aura"
-#define TRAIT_FRENETIC_AURA "frenetic_aura"
-#define TRAIT_BLUSH_OF_HEALTH "blush_of_health"
+#define TRAIT_BLOODY_LOVER		"bloody_lover"
+#define TRAIT_TOUGH_FLESH		"tough_flesh"
+#define TRAIT_BLOODY_SUCKER		"bloody_sucker"
+#define TRAIT_NON_INT			"non_intellectual"
+#define TRAIT_COFFIN_THERAPY	"coffin_therapy"
+#define TRAIT_RUBICON			"rubicon"
+#define TRAIT_HUNGRY			"hungry"
+#define TRAIT_STAKE_RESISTANT	"stake_resistant"
+#define TRAIT_LAZY				"lazy"
+#define TRAIT_HOMOSEXUAL		"homosexual"
+#define TRAIT_HUNTED			"hunted"
+#define TRAIT_VIOLATOR			"violator"
+#define TRAIT_DIABLERIE			"diablerie"
+#define TRAIT_GULLET			"gullet"
+#define TRAIT_CHARMER			"charmer"
 /// The mob will automatically breach the Masquerade when seen by others, with no exceptions
-#define TRAIT_UNMASQUERADE "unmasquerade"
+#define TRAIT_UNMASQUERADE		"unmasquerade"
 /// The mob always dodges melee attacks
 #define TRAIT_ENHANCED_MELEE_DODGE "enhanced_melee_dodge"
 /// Can pass through walls so long as it doesn't move the mob into a new area
@@ -70,7 +56,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_SENSITIVE_HUMANITY "sensitive_humanity"
 /// Duration of frenzy is doubled
 #define TRAIT_LONGER_FRENZY "longer_frenzy"
-// DARKPACK TODO - refactor these traits into mutant bodyparts and a component maybe
+// TODO: [Rebase] refactor these traits into mutant bodyparts and a component maybe
 /// If eyes are uncovered, they will be obviously supernatural to everyone nearby
 #define TRAIT_MASQUERADE_VIOLATING_EYES "masquerade_violating_eyes"
 /// If face is uncovered, they will be obviously supernatural to everyone nearby
@@ -87,25 +73,5 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_BLOOD_DRINKER "blood_drinker"
 /// Does not biologically age, and so has a disconnected biological and chronological age
 #define TRAIT_UNAGING "unaging"
-// Does the mob know thaumaturgy?
-#define TRAIT_THAUMATURGY_KNOWLEDGE "thaumaturgy_knowledge"
-// Does the mob have ghostsight?
-#define TRAIT_GHOST_VISION "ghost_vision"
-#define TRAIT_VICISSITUDE_KNOWLEDGE "vicissitude_knowledge"
-#define TRAIT_MYSTICISM_KNOWLEDGE "mysticism_knowledge"
-#define TRAIT_NECROMANCY_KNOWLEDGE "necromancy_knowledge"
-#define TRAIT_ILLEGAL_IDENTITY "illegal_identity" // GOVERMENT
-
-// Allows the user to pass through doors
-#define TRAIT_PASSDOOR "trait_passdoor" // DARKPACK EDIT ADD - Obtenebration & Mysticism Rework
-#define TRAIT_IN_FRENZY "in_frenzy"
-
-// Is the mob silenced (by Quietus 1 for example)
-#define TRAIT_SILENCED "silenced"
-// is the vampire weak to Dominate?
-#define TRAIT_WEAK_TO_DOMINATE "dominate_weak"
-
-/// They have warped time at some point in this round
-#define TRAIT_TIMEWARPER "timewarper"
 
 // END TRAIT DEFINES

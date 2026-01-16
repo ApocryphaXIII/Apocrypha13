@@ -225,6 +225,7 @@
 	. = ..()
 	update_blood_hud()
 	update_rage_hud()
+	update_auspex_hud()
 
 /mob/living/Initialize(mapload)
 	. = ..()

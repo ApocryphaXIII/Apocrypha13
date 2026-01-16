@@ -35,11 +35,9 @@
 	extra_price = PAYCHECK_COMMAND
 	payment_department = ACCOUNT_SRV
 	light_mask = "cigs-light-mask"
+	allow_custom = TRUE
 
 /obj/machinery/vending/cigarette/syndicate
-	name = "\improper Waffle Co Breakfast Cigarettes"
-	product_slogans = "Start your day the right way!;Breakfast of champions!;Smokes that mean business!;Omnizine, your uplink to smooth taste!"
-	product_ads = "Waffle Co's science advisory: omnizine may prevent most forms of smoking-related illness!*;New study: Rival corporations more trusting of men who smoke!;A Waffle Co cigarette makes yellow star feel like black orbit!"
 	products = list(
 		/obj/item/storage/fancy/cigarettes/cigpack_syndicate = 7,
 		/obj/item/storage/fancy/cigarettes/cigpack_uplift = 3,
@@ -53,12 +51,7 @@
 		/obj/item/storage/fancy/rollingpapers = 5,
 	)
 	initial_language_holder = /datum/language_holder/syndicate
-	refill_canister = /obj/item/vending_refill/cigarette/syndicate
-
-/obj/item/vending_refill/cigarette/syndicate
-	machine_name = "Waffle Co Breakfast Cigarettes"
-	icon_state = "refill_syndismoke"
-
+	allow_custom = FALSE
 
 /obj/machinery/vending/cigarette/beach //Used in the lavaland_biodome_beach.dmm ruin
 	name = "\improper ShadyCigs Ultra"

@@ -61,7 +61,7 @@
 			. = CONTEXTUAL_SCREENTIP_SET
 		return .
 
-	if(held_item.is_chem_container())
+	if(is_reagent_container(held_item) && held_item.is_open_container())
 		if(!QDELETED(beaker))
 			context[SCREENTIP_CONTEXT_LMB] = "Replace beaker"
 		else
@@ -169,13 +169,18 @@
 	return containers
 
 /obj/machinery/chem_master/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
-	if(!tool.can_insert_container(user, src))
+	if(user.combat_mode || (tool.item_flags & ABSTRACT) || (tool.flags_1 & HOLOGRAM_1) || !can_interact(user) || !user.can_perform_action(src, ALLOW_SILICON_REACH | FORBID_TELEKINESIS_REACH))
 		return NONE
-	if(!replace_beaker(user, tool))
-		return ITEM_INTERACT_BLOCKING
 
-	ui_interact(user)
-	return ITEM_INTERACT_SUCCESS
+	if(is_reagent_container(tool) && tool.is_open_container())
+		replace_beaker(user, tool)
+		if(!panel_open)
+			ui_interact(user)
+			return ITEM_INTERACT_SUCCESS
+		else
+			return ITEM_INTERACT_BLOCKING
+
+	return NONE
 
 /obj/machinery/chem_master/wrench_act(mob/living/user, obj/item/tool)
 	if(user.combat_mode)
@@ -215,7 +220,7 @@
 		return ITEM_INTERACT_SUCCESS
 
 /**
- * Insert, remove, replace the existig beaker. Returns TRUE on success.
+ * Insert, remove, replace the existig beaker
  * Arguments
  *
  * * mob/living/user - the player trying to replace the beaker
@@ -226,15 +231,9 @@
 
 	if(!QDELETED(beaker))
 		try_put_in_hand(beaker, user)
-	if(!QDELETED(new_beaker))
-		if(!user.transferItemToLoc(new_beaker, src))
-			update_appearance(UPDATE_OVERLAYS)
-			return FALSE
+	if(!QDELETED(new_beaker) && user.transferItemToLoc(new_beaker, src))
 		beaker = new_beaker
-
 	update_appearance(UPDATE_OVERLAYS)
-
-	return TRUE
 
 /obj/machinery/chem_master/attack_hand_secondary(mob/user, list/modifiers)
 	. = ..()
@@ -293,8 +292,6 @@
 	.["printingProgress"] = printing_progress
 	.["printingTotal"] = printing_total
 	.["selectedPillDuration"] = pill_layers
-	var/obj/item/held_item = user.get_active_held_item()
-	.["hasBeakerInHand"] = held_item?.is_chem_container() || FALSE
 
 	//contents of source beaker
 	var/list/beaker_data = null
@@ -419,13 +416,6 @@
 				return
 
 			replace_beaker(ui.user)
-			return TRUE
-
-		if("insert")
-			var/obj/item/reagent_containers/container = ui.user.get_active_held_item()
-			if(container?.can_insert_container(ui.user, src))
-				replace_beaker(ui.user, container)
-
 			return TRUE
 
 		if("transfer")

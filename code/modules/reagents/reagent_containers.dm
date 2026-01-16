@@ -150,7 +150,6 @@
 
 	var/punctuation = ismob(target) ? "!" : "."
 
-	user.changeNext_move(CLICK_CD_MELEE)
 	user.visible_message(
 		span_danger("[user] splashes the contents of [src] onto [target][punctuation]"),
 		span_danger("You splash the contents of [src] onto [target][punctuation]"),
@@ -408,8 +407,7 @@
 
 	var/trans = round(reagents.trans_to(target, amount_per_transfer_from_this, transferred_by = user), CHEMICAL_VOLUME_ROUNDING)
 	playsound(target.loc, SFX_LIQUID_POUR, 50, TRUE)
-	if(trans)
-		to_chat(user, span_notice("You transfer [trans] unit\s of the solution to [target]."))
+	to_chat(user, span_notice("You transfer [trans] unit\s of the solution to [target]."))
 	SEND_SIGNAL(src, COMSIG_REAGENTS_CUP_TRANSFER_TO, target)
 	target.update_appearance()
 	return ITEM_INTERACT_SUCCESS
@@ -429,6 +427,3 @@
 	SEND_SIGNAL(src, COMSIG_REAGENTS_CUP_TRANSFER_FROM, target)
 	target.update_appearance()
 	return ITEM_INTERACT_SUCCESS
-
-/obj/item/reagent_containers/is_chem_container()
-	return is_open_container() && !(item_flags & ABSTRACT) && !(flags_1 & HOLOGRAM_1)

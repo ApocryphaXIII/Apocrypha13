@@ -99,8 +99,3 @@
 /obj/effect/abstract/marker/powernet
 	name = "powernet run marker"
 	var/powernet_owner
-
-/// Used by RangedReachCheck
-/obj/effect/abstract/reach_checker
-	pass_flags = PASSTABLE
-	invisibility = INVISIBILITY_ABSTRACT

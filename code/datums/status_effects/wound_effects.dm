@@ -3,8 +3,7 @@
 /atom/movable/screen/alert/status_effect/determined
 	name = "Determined"
 	desc = "The serious wounds you've sustained have put your body into fight-or-flight mode! Now's the time to look for an exit!"
-	use_user_hud_icon = TRUE
-	overlay_state = "wounded"
+	icon_state = "wounded"
 
 /datum/status_effect/determined
 	id = "determined"
@@ -68,7 +67,6 @@
 /atom/movable/screen/alert/status_effect/limp
 	name = "Limping"
 	desc = "One or more of your legs has been wounded, slowing down steps with that leg! Get it fixed, or at least in a sling of gauze!"
-	icon_state = "injury"
 
 /datum/status_effect/limp/proc/check_step(mob/whocares, OldLoc, Dir, forced)
 	SIGNAL_HANDLER

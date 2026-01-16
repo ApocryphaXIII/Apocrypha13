@@ -157,8 +157,3 @@
 	name = "Natural Wig"
 	item_path = /obj/item/clothing/head/wig/natural
 */ // DARKPACK EDIT REMOVAL END - Loadout categories
-
-/datum/loadout_item/head/santa
-	name = "Santa Hat"
-	item_path = /obj/item/clothing/head/costume/santa/gags
-	required_holiday = FESTIVE_SEASON

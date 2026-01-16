@@ -3,12 +3,10 @@
  */
 /datum/ai_planning_subtree/make_babies
 	operational_datums = list(/datum/component/breed)
-	/// Chance to make babies
+	///chance to make babies
 	var/chance = 5
-	/// Make babies behavior we will use
+	///make babies behavior we will use
 	var/datum/ai_behavior/reproduce_behavior = /datum/ai_behavior/make_babies
-	/// Find partner behavior we will use
-	var/datum/ai_behavior/partner_behavior = /datum/ai_behavior/find_partner
 
 /datum/ai_planning_subtree/make_babies/SelectBehaviors(datum/ai_controller/controller, seconds_per_tick)
 	. = ..()
@@ -27,4 +25,4 @@
 		return
 
 	// Find target
-	controller.queue_behavior(partner_behavior, BB_BABIES_TARGET, BB_BABIES_PARTNER_TYPES, BB_BABIES_CHILD_TYPES)
+	controller.queue_behavior(/datum/ai_behavior/find_partner, BB_BABIES_TARGET, BB_BABIES_PARTNER_TYPES, BB_BABIES_CHILD_TYPES)

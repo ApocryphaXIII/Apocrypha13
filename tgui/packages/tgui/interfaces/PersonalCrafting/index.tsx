@@ -21,15 +21,9 @@ import { CATEGORY_ICONS_COOKING, CATEGORY_ICONS_CRAFTING } from './constants';
 import { FoodtypeContent } from './content/FoodtypeContent';
 import { MaterialContent } from './content/MaterialContent';
 import { RecipeContent, RecipeContentCompact } from './content/RecipeContent';
-import {
-  type CraftingData,
-  type Material,
-  MODE,
-  type Recipe,
-  TABS,
-} from './types';
+import { type CraftingData, MODE, type Recipe, TABS } from './types';
 
-export function PersonalCrafting(props: any) {
+export function PersonalCrafting(props) {
   const { act, data } = useBackend<CraftingData>();
   const {
     mode,
@@ -39,7 +33,6 @@ export function PersonalCrafting(props: any) {
     display_craftable_only,
     craftability,
     diet,
-    atom_data,
   } = data;
 
   const [searchText, setSearchText] = useState('');
@@ -67,21 +60,6 @@ export function PersonalCrafting(props: any) {
   const [tabMode, setTabMode] = useState(TABS.category);
 
   const searchName = createSearch(searchText, (item: Recipe) => item.name);
-
-  const getMaterialName = (atomId: string): string => {
-    const idNum = Number(atomId);
-    const atom = atom_data[idNum - 1];
-    return atom?.name || atomId;
-  };
-
-  const searchMaterial = createSearch(searchText, (material: Material) => {
-    return getMaterialName(material.atom_id);
-  });
-
-  const filteredMaterials =
-    searchText.length > 0 && tabMode === TABS.material
-      ? filter(material_occurences, searchMaterial)
-      : material_occurences;
 
   let recipes = filter(
     data.recipes,
@@ -242,7 +220,7 @@ export function PersonalCrafting(props: any) {
                           </Tabs.Tab>
                         ))}
                       {tabMode === TABS.material &&
-                        filteredMaterials.map((material) => (
+                        material_occurences.map((material) => (
                           <Tabs.Tab
                             key={material.atom_id}
                             selected={
@@ -262,7 +240,7 @@ export function PersonalCrafting(props: any) {
                           >
                             <MaterialContent
                               atom_id={material.atom_id}
-                              occurences={(material as Material).occurences}
+                              occurences={material.occurences}
                             />
                           </Tabs.Tab>
                         ))}
@@ -293,13 +271,7 @@ export function PersonalCrafting(props: any) {
                                       ? 'red'
                                       : 'default'
                                   }
-                                  name={
-                                    category in CATEGORY_ICONS
-                                      ? CATEGORY_ICONS[
-                                          category as keyof typeof CATEGORY_ICONS
-                                        ]
-                                      : 'circle'
-                                  }
+                                  name={CATEGORY_ICONS[category] || 'circle'}
                                 />
                               </Stack.Item>
                               <Stack.Item

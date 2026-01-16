@@ -220,9 +220,9 @@
 	. = FALSE
 
 	// Damage to heal
-	var/brute_to_heal = min(hurtguy.get_brute_loss(), 35 * heal_multiplier)
+	var/brute_to_heal = min(hurtguy.getBruteLoss(), 35 * heal_multiplier)
 	// no double dipping
-	var/burn_to_heal = min(hurtguy.get_fire_loss(), (35 - brute_to_heal) * heal_multiplier)
+	var/burn_to_heal = min(hurtguy.getFireLoss(), (35 - brute_to_heal) * heal_multiplier)
 
 	// Get at least organic limb to transfer the damage to
 	var/list/mendicant_organic_limbs = list()
@@ -241,11 +241,11 @@
 		mendicant_transfer_limb.receive_damage(brute_to_heal * pain_multiplier, burn_to_heal * pain_multiplier, forced = TRUE, wound_bonus = CANT_WOUND)
 
 	if(brute_to_heal)
-		hurtguy.adjust_brute_loss(-brute_to_heal)
+		hurtguy.adjustBruteLoss(-brute_to_heal)
 		. = TRUE
 
 	if(burn_to_heal)
-		hurtguy.adjust_fire_loss(-burn_to_heal)
+		hurtguy.adjustFireLoss(-burn_to_heal)
 		. = TRUE
 
 	if(!.)
@@ -306,51 +306,55 @@
 			iter_wound.remove_wound()
 			iter_wound.apply_wound(mendicant_transfer_limb)
 
-	if(!CAN_HAVE_BLOOD(mendicant) || !CAN_HAVE_BLOOD(hurtguy))
+	if(HAS_TRAIT(mendicant, TRAIT_NOBLOOD))
 		return .
 
 	// 10% base
 	var/max_blood_transfer = (BLOOD_VOLUME_NORMAL * 0.10) * heal_multiplier
 	// Too little blood
-	if(hurtguy.get_blood_volume() < BLOOD_VOLUME_NORMAL)
-		// We ignore incompatibility here.
-		var/blood_transferred = mendicant.transfer_blood_to(hurtguy, max_blood_transfer, ignore_low_blood = TRUE, ignore_incompatibility = TRUE)
+	if(hurtguy.blood_volume < BLOOD_VOLUME_NORMAL)
+		var/max_blood_to_hurtguy = min(mendicant.blood_volume, BLOOD_VOLUME_NORMAL - hurtguy.blood_volume)
+		var/blood_to_hurtguy = min(max_blood_transfer, max_blood_to_hurtguy)
+		if(!blood_to_hurtguy)
+			return .
 
-		if(!blood_transferred)
+		// We ignore incompatibility here.
+		if(!mendicant.transfer_blood_to(hurtguy, blood_to_hurtguy, forced = TRUE, ignore_incompatibility = TRUE))
 			return
 
 		to_chat(mendicant, span_notice("Your veins (and brain) feel a bit lighter."))
 		. = TRUE
 		// Because we do our own spin on it!
 		if(hurtguy.get_blood_compatibility(mendicant) == FALSE)
-			hurtguy.adjust_tox_loss((blood_transferred * 0.1) * pain_multiplier) // 1 dmg per 10 blood
+			hurtguy.adjustToxLoss((blood_to_hurtguy * 0.1) * pain_multiplier) // 1 dmg per 10 blood
 			to_chat(hurtguy, span_notice("Your veins feel thicker, but they itch a bit."))
 		else
 			to_chat(hurtguy, span_notice("Your veins feel thicker!"))
 		return
 
-	if(hurtguy.get_blood_volume() < BLOOD_VOLUME_EXCESS)
+	if(hurtguy.blood_volume < BLOOD_VOLUME_MAXIMUM)
 		return
 
-	// We ignore incompatibility here.
-	var/blood_received = hurtguy.transfer_blood_to(mendicant, hurtguy.get_blood_volume() - BLOOD_VOLUME_EXCESS, ignore_incompatibility = TRUE)
+	// Too MUCH blood
+	var/max_blood_to_mendicant = BLOOD_VOLUME_EXCESS - hurtguy.blood_volume
+	var/blood_to_mendicant = min(max_blood_transfer, max_blood_to_mendicant)
+	// mender always gonna have blood
 
-	if(!blood_received)
+	// We ignore incompatibility here.
+	if(!hurtguy.transfer_blood_to(mendicant, hurtguy.blood_volume - BLOOD_VOLUME_EXCESS, forced = TRUE, ignore_incompatibility = TRUE))
 		return
 
 	to_chat(hurtguy, span_notice("Your veins don't feel quite so swollen anymore."))
 	. = TRUE
 	// Because we do our own spin on it!
 	if(mendicant.get_blood_compatibility(hurtguy) == FALSE)
-		mendicant.adjust_tox_loss((blood_received * 0.1) * pain_multiplier) // 1 dmg per 10 blood
+		mendicant.adjustToxLoss((blood_to_mendicant * 0.1) * pain_multiplier) // 1 dmg per 10 blood
 		to_chat(mendicant, span_notice("Your veins swell and itch!"))
 	else
 		to_chat(mendicant, span_notice("Your veins swell!"))
 
 
 /datum/action/cooldown/spell/touch/lay_on_hands/proc/determine_if_this_hurts_instead(mob/living/carbon/mendicant, mob/living/hurtguy)
-
-	var/hurtguy_smiteable = SEND_SIGNAL(hurtguy, COMSIG_ON_LAY_ON_HANDS, mendicant)
 
 	if(hurtguy.mob_biotypes & MOB_UNDEAD && mendicant.mob_biotypes & MOB_UNDEAD)
 		return FALSE //always return false if we're both undead //undead solidarity
@@ -361,9 +365,10 @@
 	if(HAS_TRAIT(hurtguy, TRAIT_EVIL) && !HAS_TRAIT(mendicant, TRAIT_EVIL)) //Is the guy evil and we're not evil? If so, hurt.
 		return TRUE
 
-	if(hurtguy_smiteable) //Is some other property of the target (like the empath component) causing them to be smited? If so, hurt.
+	if(!(hurtguy.mob_biotypes & MOB_UNDEAD) && HAS_TRAIT(hurtguy, TRAIT_EMPATH) && HAS_TRAIT(mendicant, TRAIT_EVIL)) //Is the guy not undead, they're an empath and we're evil? If so, hurt.
 		return TRUE
-	return (FALSE)
+
+	return FALSE
 
 ///If our target was undead or evil, we blast them with a firey beam rather than healing them. For, you know, 'holy' reasons. When did genes become so morally uptight?
 

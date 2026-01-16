@@ -18,7 +18,6 @@
 	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	interaction_flags_click = NEED_DEXTERITY | NEED_HANDS | FORBID_TELEKINESIS_REACH
-	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 3.5)
 	/// Keeps track of the total points scored
 	var/total_score = 0
 	/// The chance to score a ball into the hoop based on distance
@@ -26,7 +25,7 @@
 
 /obj/structure/hoop/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/simple_rotation, ROTATION_REQUIRE_WRENCH|ROTATION_IGNORE_ANCHORED)
+	AddComponent(/datum/component/simple_rotation, ROTATION_REQUIRE_WRENCH|ROTATION_IGNORE_ANCHORED, post_rotation = CALLBACK(src, PROC_REF(reset_appearance)))
 	update_appearance()
 	register_context()
 
@@ -34,7 +33,7 @@
 	context[SCREENTIP_CONTEXT_CTRL_LMB] = "Reset score"
 	return CONTEXTUAL_SCREENTIP_SET
 
-/obj/structure/hoop/post_rotation(mob/user, degrees)
+/obj/structure/hoop/proc/reset_appearance()
 	update_appearance()
 
 /obj/structure/hoop/proc/score(obj/item/toy/basketball/ball, mob/living/baller, points)
@@ -110,7 +109,7 @@
 	score(ball, baller, 2)
 
 	if(istype(ball, /obj/item/toy/basketball))
-		baller.adjust_stamina_loss(STAMINA_COST_DUNKING)
+		baller.adjustStaminaLoss(STAMINA_COST_DUNKING)
 
 /obj/structure/hoop/attack_hand(mob/living/baller, list/modifiers)
 	. = ..()
@@ -128,7 +127,7 @@
 	loser.Paralyze(100)
 	visible_message(span_danger("[baller] dunks [loser] into \the [src]!"))
 	playsound(src, 'sound/machines/scanner/scanbuzz.ogg', 100, FALSE)
-	baller.adjust_stamina_loss(STAMINA_COST_DUNKING_MOB)
+	baller.adjustStaminaLoss(STAMINA_COST_DUNKING_MOB)
 	baller.stop_pulling()
 
 /obj/structure/hoop/click_ctrl(mob/user)
@@ -149,16 +148,13 @@
 	var/click_on_hoop = TRUE
 	var/mob/living/thrower = throwingdatum?.get_thrower()
 
-	if(!istype(thrower))
-		return
-
 	// aim penalty for not clicking directly on the hoop when shooting
 	if(!istype(backboard) || backboard != src)
 		click_on_hoop = FALSE
 		score_chance *= 0.5
 
 	// aim penalty for spinning while shooting
-	if(HAS_TRAIT(thrower, TRAIT_SPINNING))
+	if(istype(thrower) && HAS_TRAIT(thrower, TRAIT_SPINNING))
 		score_chance *= 0.5
 
 	if(prob(score_chance))

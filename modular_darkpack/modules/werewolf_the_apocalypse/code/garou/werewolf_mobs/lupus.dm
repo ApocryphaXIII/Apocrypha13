@@ -41,7 +41,7 @@
 	else
 		icon_state = "[sprite_color]"
 
-	switch(get_fire_loss()+get_brute_loss())
+	switch(getFireLoss()+getBruteLoss())
 		if(25 to 75)
 			var/mutable_appearance/damage_overlay = mutable_appearance(icon, "damage1[laid_down ? "_rest" : ""]")
 			add_overlay(damage_overlay)

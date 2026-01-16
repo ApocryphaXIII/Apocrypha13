@@ -119,7 +119,6 @@
 	greyscale_config = /datum/greyscale_config/mutant_organ
 	greyscale_colors = CARP_COLORS
 	can_smoothen_out = FALSE
-	shade_color = "blue"
 
 	///Timer counting down. When finished, the owner gets a bad moodlet.
 	var/cooldown_timer

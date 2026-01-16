@@ -33,6 +33,7 @@
 
 /datum/outfit/cyber_police/post_equip(mob/living/carbon/human/user, visuals_only)
 	var/obj/item/clothing/under/officer_uniform = user.w_uniform
-	if(istype(officer_uniform))
-		officer_uniform.set_has_sensor(NO_SENSORS)
-		officer_uniform.set_sensor_mode(SENSOR_OFF)
+	if(officer_uniform)
+		officer_uniform.has_sensor = NO_SENSORS
+		officer_uniform.sensor_mode = SENSOR_OFF
+		user.update_suit_sensors()

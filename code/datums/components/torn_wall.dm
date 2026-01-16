@@ -13,11 +13,10 @@
 	dupe_mode = COMPONENT_DUPE_UNIQUE_PASSARGS
 	var/current_stage = TORN_WALL_INITIAL
 
-/datum/component/torn_wall/Initialize(current_stage)
+/datum/component/torn_wall/Initialize()
 	. = ..()
 	if (!isclosedturf(parent) || isindestructiblewall(parent))
 		return COMPONENT_INCOMPATIBLE
-	src.current_stage = current_stage || src.current_stage
 
 /datum/component/torn_wall/RegisterWithParent()
 	RegisterSignal(parent, COMSIG_ATOM_EXAMINE, PROC_REF(on_examined))

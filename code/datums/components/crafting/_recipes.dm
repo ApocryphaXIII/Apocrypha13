@@ -26,8 +26,6 @@
 	var/list/parts = list()
 	///items, structures and machineries of types that are in this list won't transfer their materials to the result
 	var/list/requirements_mats_blacklist
-	///if set, the materials in this list and their values will be subtracted from the result.
-	var/list/removed_mats
 	///like tool_behaviors but for reagents
 	var/list/chem_catalysts = list()
 	///where it shows up in the crafting UI
@@ -104,9 +102,9 @@
 	src.reqs[material] = stack_recipe.req_amount
 	src.category = stack_recipe.category || CAT_MISC
 	src.placement_checks = stack_recipe.placement_checks
-	src.crafting_flags = stack_recipe.crafting_flags
 
-	src.removed_mats = stack_recipe.removed_mats
+	if(!(stack_recipe.crafting_flags & CRAFT_APPLIES_MATS))
+		requirements_mats_blacklist = list(material) //the item is not intended to have mats :shrug:
 
 /**
  * Run custom pre-craft checks for this recipe, don't add feedback messages in this because it will spam the client
@@ -124,8 +122,3 @@
 /// Additional UI data to be passed to the crafting UI for this recipe
 /datum/crafting_recipe/proc/crafting_ui_data()
 	return list()
-
-// DARKPACK EDIT ADD START
-/datum/crafting_recipe/proc/is_recipe_available(mob/user)
-	return TRUE
-// DARKPACK EDIT ADD END

@@ -30,8 +30,7 @@
 			continue
 
 		if (antag_flag in known_antag_flags)
-			if(!(initial(ruleset.ruleset_flags) & RULESET_VARIATION))
-				TEST_FAIL("[ruleset] has a non-unique antag_flag [antag_flag] (used by [known_antag_flags[antag_flag]])!")
+			TEST_FAIL("[ruleset] has a non-unique antag_flag [antag_flag] (used by [known_antag_flags[antag_flag]])!")
 			continue
 
 		known_antag_flags[antag_flag] = ruleset

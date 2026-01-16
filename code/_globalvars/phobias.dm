@@ -398,6 +398,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/item/grenade/clusterbuster/spawner_spesscarp,
 		/obj/item/grenade/spawnergrenade/spesscarp,
 		/obj/item/knife/carp,
+		/obj/item/nullrod/carp,
 		/obj/item/organ/brain/carp,
 		/obj/item/organ/heart/carp,
 		/obj/item/organ/liver/fish,
@@ -543,7 +544,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 	// DARKPACK EDIT ADD START - Religious phobia
 	"religion" = typecacheof(list(
 		/obj/item/book/bible,
-		/obj/item/card/hunter
+		///obj/item/card/id/hunter
 	)),
 	// DARKPACK EDIT ADD END - Religious phobia
 ))

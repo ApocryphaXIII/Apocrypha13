@@ -38,12 +38,10 @@
 
 /// Preferences relating to World of Darkness TTRPG elements
 #define PREFERENCE_PRIORITY_WORLD_OF_DARKNESS 11
-
-#define PREFERENCE_PRIORITY_REQUIRES_CLAN 12
 // DARKPACK EDIT ADD END - TTRPG preferences
 
 /// The maximum preference priority, keep this updated, but don't use it for `priority`.
-#define MAX_PREFERENCE_PRIORITY PREFERENCE_PRIORITY_REQUIRES_CLAN // DARKPACK EDIT CHANGE - TTRPG Preferences
+#define MAX_PREFERENCE_PRIORITY PREFERENCE_PRIORITY_WORLD_OF_DARKNESS // DARKPACK EDIT CHANGE - TTRPG Preferences
 
 /// For choiced preferences, this key will be used to set display names in constant data.
 #define CHOICED_PREFERENCE_DISPLAY_NAMES "display_names"
@@ -60,13 +58,17 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 
 /proc/init_preference_entries()
 	var/list/output = list()
-	for (var/datum/preference/preference_type as anything in valid_subtypesof(/datum/preference))
+	for (var/datum/preference/preference_type as anything in subtypesof(/datum/preference))
+		if (initial(preference_type.abstract_type) == preference_type)
+			continue
 		output[preference_type] = new preference_type
 	return output
 
 /proc/init_preference_entries_by_key()
 	var/list/output = list()
-	for (var/datum/preference/preference_type as anything in valid_subtypesof(/datum/preference))
+	for (var/datum/preference/preference_type as anything in subtypesof(/datum/preference))
+		if (initial(preference_type.abstract_type) == preference_type)
+			continue
 		output[initial(preference_type.savefile_key)] = GLOB.preference_entries[preference_type]
 	return output
 
@@ -119,7 +121,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 
 	/// If the selected species has this in its /datum/species/body_markings,
 	/// will show the feature as selectable.
-	var/datum/bodypart_overlay/simple/body_marking/relevant_body_markings = null
+	var/relevant_body_markings = null
 
 	/// If the selected species has this in its /datum/species/inherent_traits,
 	/// will show the feature as selectable.
@@ -127,7 +129,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 
 	/// If the selected species has this in its /datum/species/var/external_organs,
 	/// will show the feature as selectable.
-	var/obj/item/organ/relevant_organ = null
+	var/relevant_external_organ = null
 
 	/// If the selected species has this head_flag by default,
 	/// will show the feature as selectable.
@@ -197,7 +199,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 /// Returns TRUE for a successful application.
 /// Return FALSE if it is invalid.
 /datum/preference/proc/write(list/save_data, value)
-	//SHOULD_NOT_OVERRIDE(TRUE) // DARKPACK EDIT REMOVAL - I want to overide this acctually c:
+	SHOULD_NOT_OVERRIDE(TRUE)
 
 	if (!is_valid(value))
 		return FALSE
@@ -283,7 +285,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 /datum/preferences/proc/write_preference(datum/preference/preference, preference_value)
 	var/save_data = get_save_data_for_savefile_identifier(preference.savefile_identifier)
 	var/new_value = preference.deserialize(preference_value, src)
-	var/success = preference.write(save_data, new_value, src) // DARKPACK EDIT ADD END
+	var/success = preference.write(save_data, new_value)
 	if (success)
 		value_cache[preference.type] = new_value
 	return success
@@ -296,7 +298,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 		return FALSE
 
 	var/new_value = preference.deserialize(preference_value, src)
-	var/success = preference.write(null, new_value, src) // DARKPACK EDIT CHANGE
+	var/success = preference.write(null, new_value)
 
 	if (!success)
 		return FALSE
@@ -339,7 +341,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 
 /// Checks if this preference is relevant and thus visible to the passed preferences object.
 /datum/preference/proc/has_relevant_feature(datum/preferences/preferences)
-	if(isnull(relevant_inherent_trait) && isnull(relevant_organ) && isnull(relevant_head_flag) && isnull(relevant_body_markings))
+	if(isnull(relevant_inherent_trait) && isnull(relevant_external_organ) && isnull(relevant_head_flag) && isnull(relevant_body_markings))
 		return TRUE
 
 	return current_species_has_savekey(preferences)
@@ -452,71 +454,6 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 		data["name"] = main_feature_name
 
 	return data
-
-/// This subtype handles a lot of boilerplate for implementing a species preference tied to a feature key / sprite accessory
-/datum/preference/choiced/species_feature
-	abstract_type = /datum/preference/choiced/species_feature
-	/// What feature key does this feature represent?
-	/// Does not need to be set, it will infer it from either relevant_organ or relevant_body_markings.
-	/// However you can set it manually if you have a more complex feature.
-	var/feature_key
-
-/datum/preference/choiced/species_feature/New()
-	. = ..()
-	if(relevant_organ && relevant_organ::bodypart_overlay)
-		feature_key ||= relevant_organ::bodypart_overlay::feature_key
-		main_feature_name ||= capitalize(relevant_organ::name)
-	if(relevant_body_markings)
-		feature_key ||= relevant_body_markings::dna_feature_key
-		main_feature_name ||= "Body markings"
-	if(isnull(feature_key))
-		CRASH("`feature_key` was not set or inferable for [type]!")
-
-/datum/preference/choiced/species_feature/init_possible_values()
-	return assoc_to_keys_features(get_accessory_list())
-
-/datum/preference/choiced/species_feature/create_default_value()
-	return get_consistent_feature_entry(get_accessory_list())
-
-/datum/preference/choiced/species_feature/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features[feature_key] = value
-
-/// Returns what acessory list to draw from
-/datum/preference/choiced/species_feature/proc/get_accessory_list() as /list
-	return SSaccessories.feature_list[feature_key]
-
-/// Get a specific accessory for a given value
-/datum/preference/choiced/species_feature/proc/get_accessory_for_value(value)
-	return get_accessory_list()[value]
-
-// DARKPACK EDIT ADD START
-/// A preference that is a choice of one option among a fixed set.
-/// Used for preferences such as clothing.
-/datum/preference/external_choiced
-	abstract_type = /datum/preference/external_choiced
-
-/datum/preference/external_choiced/proc/get_choices(datum/preferences/preferences)
-	CRASH("`get_choices()` was not implemented for [type]!")
-
-/datum/preference/external_choiced/is_valid(value, datum/preferences/preferences)
-	return value in get_choices(preferences)
-
-// This guy is evil and needs preferences for like every proc
-/datum/preference/external_choiced/write(list/save_data, value, datum/preferences/preferences)
-	if (!is_valid(value, preferences))
-		return FALSE
-
-	if (!isnull(save_data))
-		save_data[savefile_key] = serialize(value)
-
-	return TRUE
-
-/datum/preference/external_choiced/deserialize(input, datum/preferences/preferences)
-	return sanitize_inlist(input, get_choices(preferences), create_default_value(preferences))
-
-/datum/preference/external_choiced/create_default_value(datum/preferences/preferences)
-	return pick(get_choices(preferences))
-// DARKPACK EDIT ADD END
 
 /// A preference that represents an RGB color of something.
 /// Will give the value as 6 hex digits, without a hash.

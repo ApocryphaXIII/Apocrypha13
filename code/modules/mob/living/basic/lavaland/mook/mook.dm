@@ -257,10 +257,6 @@
 	ai_controller.set_blackboard_key(BB_SONG_INSTRUMENT, held_guitar)
 	update_appearance()
 
-/mob/living/basic/mining/mook/worker/bard/Destroy(force)
-	QDEL_NULL(held_guitar)
-	. = ..()
-
 /mob/living/basic/mining/mook/worker/tribal_chief
 	name = "tribal chief"
 	desc = "Acknowledge him!"

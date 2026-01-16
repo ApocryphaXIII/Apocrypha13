@@ -17,7 +17,7 @@ export type AtomData = {
   icon: string;
 };
 
-export type Material = {
+type Material = {
   atom_id: string;
   occurences: number;
 };

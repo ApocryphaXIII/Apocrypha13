@@ -6,8 +6,6 @@
 
 // The default UI style is the first one in the list
 GLOBAL_LIST_INIT(available_ui_styles, list(
-	"World of Darkness" = 'modular_darkpack/master_files/icons/hud/screen_darkness_new.dmi', // DARKPACK EDIT ADD - Put at the top because it has almost full coverage now!
-	"Pentex-Knox" = 'modular_darkpack/master_files/icons/hud/screen_pentexknox.dmi', // DARKPACK EDIT ADD - Trasen-Knox logo with a Pentex logo
 	"Midnight" = 'icons/hud/screen_midnight.dmi',
 	"Retro" = 'icons/hud/screen_retro.dmi',
 	"Plasmafire" = 'icons/hud/screen_plasmafire.dmi',
@@ -15,8 +13,10 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	"Operative" = 'icons/hud/screen_operative.dmi',
 	"Clockwork" = 'icons/hud/screen_clockwork.dmi',
 	"Glass" = 'icons/hud/screen_glass.dmi',
-	//	"Trasen-Knox" = 'icons/hud/screen_trasenknox.dmi', // DARKPACK EDIT REMOVE - Pentex-Knox instead
-	"Detective" = 'icons/hud/screen_detective.dmi'
+	"Trasen-Knox" = 'icons/hud/screen_trasenknox.dmi',
+	"Detective" = 'icons/hud/screen_detective.dmi',
+	"World of Darkness" = 'modular_darkpack/master_files/icons/hud/screen_darkness.dmi', // DARKPACK EDIT ADD - Put at the bottom as it has terrible coverage
+	"World of Darkness New" = 'modular_darkpack/master_files/icons/hud/screen_darkness_new.dmi', // DARKPACK EDIT ADD - Put at the bottom as it has terrible coverage
 ))
 
 /proc/ui_style2icon(ui_style)
@@ -242,13 +242,10 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	throw_icon = null
 	resist_icon = null
 	QDEL_LIST(infodisplay)
-	open_containers = null
 
 	healths = null
 	stamina = null
 	healthdoll = null
-	bloodpool_icon = null // DARKPACK EDIT ADD
-	zone_icon = null // DARKPACK EDIT ADD
 	spacesuit = null
 	hunger = null
 	alien_plasma_display = null
@@ -348,8 +345,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 				screenmob.client.screen += infodisplay
 			if(always_visible_inventory.len)
 				screenmob.client.screen += always_visible_inventory
-			if(open_containers.len && screenmob == mymob) // Don't show open inventories to ghosts
-				list_clear_nulls(open_containers)
+			if(open_containers.len)
 				screenmob.client.screen += open_containers
 			screenmob.client.screen += toggle_palette
 
@@ -412,7 +408,6 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 		for(var/M in mymob.observers)
 			show_hud(hud_version, M)
 	else if (viewmob.hud_used)
-		viewmob.hide_other_mob_action_buttons(mymob)
 		viewmob.hud_used.plane_masters_update()
 		viewmob.show_other_mob_action_buttons(mymob)
 
@@ -845,4 +840,4 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 
 /datum/action_group/listed/refresh_actions()
 	. = ..()
-	owner?.palette_actions.refresh_actions() // We effect them, so we gotta refresh em
+	owner.palette_actions.refresh_actions() // We effect them, so we gotta refresh em

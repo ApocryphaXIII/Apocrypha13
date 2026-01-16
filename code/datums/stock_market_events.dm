@@ -8,7 +8,7 @@
 		"MODular Solutions",
 		"SolGov",
 		"Australicus Industrial Mining",
-		"Nanotrasen-DeForest Corporation",
+		"Vey-Medical",
 		"Aussec Armory",
 		"Dreamland Robotics"
 	)
@@ -147,3 +147,5 @@
 	SSstock_market.materials_quantity[mat] = initial(mat.tradable_base_quantity) //Force the material to be available again.
 	SSstock_market.materials_prices[mat] = initial(mat.value_per_unit) * SHEET_MATERIAL_AMOUNT //Force the price to be reset once the lockdown is over.
 	create_news()
+
+

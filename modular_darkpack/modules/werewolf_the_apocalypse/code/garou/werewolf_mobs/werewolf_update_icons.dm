@@ -27,7 +27,7 @@
 		var/mutable_appearance/scar_overlay = mutable_appearance(icon, "scar[sprite_scar][laid_down ? "_rest" : ""]")
 		add_overlay(scar_overlay)
 
-	switch(get_fire_loss()+get_brute_loss())
+	switch(getFireLoss()+getBruteLoss())
 		if(25 to 100)
 			var/mutable_appearance/damage_overlay = mutable_appearance(icon, "damage1[laid_down ? "_rest" : ""]")
 			add_overlay(damage_overlay)

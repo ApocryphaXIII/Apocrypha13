@@ -6,17 +6,13 @@
 	should_generate_icons = TRUE
 
 /datum/preference/choiced/ai_emote_display/init_possible_values()
-	if(!length(GLOB.ai_status_display_all_options))
-		init_ai_status_display_options()
-	return assoc_to_keys(GLOB.ai_status_display_all_options)
+	return assoc_to_keys(GLOB.ai_status_display_emotes)
 
 /datum/preference/choiced/ai_emote_display/icon_for(value)
 	if (value == "Random")
 		return uni_icon('icons/mob/silicon/ai.dmi', "questionmark")
 	else
-		if(!length(GLOB.ai_status_display_all_options))
-			init_ai_status_display_options()
-		return uni_icon('icons/obj/machines/status_display.dmi', GLOB.ai_status_display_all_options[value])
+		return uni_icon('icons/obj/machines/status_display.dmi', GLOB.ai_status_display_emotes[value])
 
 /datum/preference/choiced/ai_emote_display/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))

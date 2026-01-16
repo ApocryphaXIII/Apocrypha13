@@ -3,19 +3,14 @@
 	icon = 'modular_darkpack/modules/decor/icons/city_sign.dmi'
 
 /obj/structure/sign/city/police_department
-	name = "\improper " + CITY_POLICE_DEPARTMENT + " sign"
+	name = CITY_POLICE_DEPARTMENT
 	desc = "Stop right there you criminal scum! Nobody can break the law on my watch!!"
 	icon_state = "police"
 	pixel_z = 40
 
-// DARKPACK TODO - This uses directionals for all of its sprite states for some reason
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/police_department, 32)
-
 /obj/structure/sign/city/order
 	name = "order sign"
 	icon_state = "order"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/order, 32)
 
 /obj/structure/sign/city/hotel
 	name = "sign"
@@ -24,17 +19,15 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/order, 32)
 	//plane = GAME_PLANE
 	layer = ABOVE_ALL_MOB_LAYER
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/hotel, 0)
-
 /obj/structure/sign/city/hotel/Initialize(mapload)
 	. = ..()
 	set_light(3, 3, "#8e509e")
-	if(check_holidays(FESTIVE_SEASON))
-		var/area/my_area = get_area(src)
-		if(istype(my_area) && my_area.outdoors)
-			icon_state = "[initial(icon_state)]-snow"
+	if(check_holidays(CHRISTMAS))
+		if(istype(get_area(src), /area/vtm))
+			var/area/vtm/V = get_area(src)
+			if(V.outdoors)
+				icon_state = "[initial(icon_state)]-snow"
 
-// DARKPACK TODO - This uses directionals for all of its sprite states for some reason
 /obj/structure/sign/city/millenium
 	name = "sign"
 	desc = "It says M I L L E N I U M."
@@ -42,8 +35,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/hotel, 0)
 	icon_state = "millenium"
 	layer = ABOVE_ALL_MOB_LAYER
 	anchored = TRUE
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/millenium, 0)
 
 /obj/structure/sign/city/millenium/Initialize(mapload)
 	. = ..()
@@ -57,15 +48,14 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/millenium, 0)
 	layer = ABOVE_ALL_MOB_LAYER
 	anchored = TRUE
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/anarch, 0)
-
 /obj/structure/sign/city/anarch/Initialize(mapload)
 	. = ..()
 	set_light(3, 3, "#ffffff")
-	if(check_holidays(FESTIVE_SEASON))
-		var/area/my_area = get_area(src)
-		if(istype(my_area) && my_area.outdoors)
-			icon_state = "[initial(icon_state)]-snow"
+	if(check_holidays(CHRISTMAS))
+		if(istype(get_area(src), /area/vtm))
+			var/area/vtm/V = get_area(src)
+			if(V.outdoors)
+				icon_state = "[initial(icon_state)]-snow"
 
 /obj/structure/sign/city/chinese
 	name = "sign"
@@ -75,27 +65,19 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/anarch, 0)
 	layer = ABOVE_ALL_MOB_LAYER
 	anchored = TRUE
 
-// DARKPACK TODO - This uses directionals for all of its sprite states for some reason
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/chinese, 0)
-
 /obj/structure/sign/city/chinese/Initialize(mapload)
 	. = ..()
-	if(check_holidays(FESTIVE_SEASON))
-		var/area/my_area = get_area(src)
-		if(istype(my_area) && my_area.outdoors)
-			icon_state = "[initial(icon_state)]-snow"
+	if(check_holidays(CHRISTMAS))
+		if(istype(get_area(src), /area/vtm))
+			var/area/vtm/V = get_area(src)
+			if(V.outdoors)
+				icon_state = "[initial(icon_state)]-snow"
 
 /obj/structure/sign/city/chinese/alt
 	icon_state = "chinese2"
 
-// DARKPACK TODO - This uses directionals for all of its sprite states for some reason
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/chinese/alt, 0)
-
 /obj/structure/sign/city/chinese/alt2
 	icon_state = "chinese3"
-
-// DARKPACK TODO - This uses directionals for all of its sprite states for some reason
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/chinese/alt2, 0)
 
 /obj/structure/sign/city/strip_club
 	name = "sign"
@@ -105,9 +87,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/chinese/alt2, 0)
 	layer = ABOVE_ALL_MOB_LAYER
 	anchored = TRUE
 	pixel_w = -8
-	//pixel_z = 32
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/strip_club, 32)
+	pixel_z = 32
 
 /obj/structure/sign/city/strip_club/Initialize(mapload)
 	. = ..()
@@ -121,16 +101,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/strip_club, 32)
 	layer = ABOVE_ALL_MOB_LAYER
 	anchored = TRUE
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/cabaret_sign, 32)
-
 /obj/structure/sign/city/cabaret_sign/Initialize(mapload)
 	. = ..()
 	set_light(3, 2, "#d98aec")
 
 /obj/structure/sign/city/cabaret_sign/two
 	icon_state = "et"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/cabaret_sign/two, 32)
 
 /obj/structure/sign/city/store
 	icon = 'modular_darkpack/modules/decor/icons/store_sign.dmi'
@@ -143,50 +119,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/cabaret_sign/two, 32)
 	desc = "Eat some precious tacos and pizza!"
 	icon_state = "bacotell"
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/store/bacotell, 32)
-
 /obj/structure/sign/city/store/bubway
 	name = "BubWay"
 	desc = "Eat some precious burgers and pizza!"
 	icon_state = "bubway"
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/store/bubway, 32)
-
 /obj/structure/sign/city/store/gummaguts
 	name = "Gumma Guts"
 	desc = "Eat some precious chicken nuggets and donuts!"
 	icon_state = "gummaguts"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/store/gummaguts, 32)
-
-/obj/structure/sign/city/skateshop
-	name = "Beralta Skateshop"
-	icon_state = "beralta1"
-	desc = "Bowell Beralta, apart from having a very unfortunate name, is one of the biggest names in authentic knock-off skateboards."
-
-/obj/structure/sign/city/skateshop/two
-	icon_state = "beralta2"
-
-/obj/structure/sign/city/skateshop/three
-	icon_state = "beralta3"
-
-/obj/structure/sign/city/skateshop/four
-	icon_state = "beralta4"
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/skateshop, 32)
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/skateshop/two, 32)
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/skateshop/three, 32)
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/skateshop/four, 32)
-
-/obj/structure/sign/city/store/reddragon
-	name = "Red Dragon"
-	desc = "Eat yummy-yummy flame fire noodles!"
-	icon_state = "reddragon"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/store/reddragon, 32)
-
-/obj/structure/sign/city/store/otolleys
-	name = "O\'Tolleys"
-	desc = "O-o-o Oh Toll-ees, Families Welcome!"
-	icon_state = "otolleys"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/city/store/otolleys, 32)

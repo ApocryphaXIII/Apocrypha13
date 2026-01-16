@@ -31,8 +31,7 @@
 /obj/machinery/ticket_machine/Initialize(mapload)
 	. = ..()
 	update_appearance()
-	if(mapload)
-		find_and_mount_on_atom()
+	find_and_hang_on_wall()
 
 /obj/machinery/ticket_machine/Destroy()
 	for(var/obj/item/ticket_machine_ticket/ticket in tickets)

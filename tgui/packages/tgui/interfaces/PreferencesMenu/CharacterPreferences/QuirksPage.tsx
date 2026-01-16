@@ -21,7 +21,6 @@ import {
 import { useRandomToggleState } from '../useRandomToggleState';
 import { useServerPrefs } from '../useServerPrefs';
 import { getRandomization, PreferenceList } from './MainPage';
-import { PersonalityPage } from './PersonalityPage';
 
 function getColorValueClass(quirk: Quirk) {
   if (quirk.value > 0) {
@@ -289,7 +288,7 @@ function StatDisplay(props) {
   );
 }
 
-function QuirkPage() {
+export function QuirksPage(props) {
   const { act, data } = useBackend<PreferencesMenuData>();
 
   // this is mainly just here to copy from MainPage.tsx
@@ -323,7 +322,7 @@ function QuirkPage() {
     }
   });
 
-  let balance = -data.default_quirk_balance;
+  let balance = 0;
   let positiveQuirks = 0;
 
   for (const selectedQuirkName of selectedQuirks) {
@@ -514,46 +513,6 @@ function QuirkPage() {
             />
           </Stack.Item>
         </Stack>
-      </Stack.Item>
-    </Stack>
-  );
-}
-
-export function QuirkPersonalityPage() {
-  const [contentPage, setContentPage] = useState<'quirks' | 'personality'>(
-    'quirks',
-  );
-
-  return (
-    <Stack fill vertical>
-      <Stack.Item>
-        <Stack>
-          <Stack.Item grow>
-            <Button
-              selected={contentPage === 'quirks'}
-              onClick={() => setContentPage('quirks')}
-              fluid
-              align="center"
-              fontSize="14px"
-            >
-              Quirks
-            </Button>
-          </Stack.Item>
-          <Stack.Item grow>
-            <Button
-              selected={contentPage === 'personality'}
-              onClick={() => setContentPage('personality')}
-              fluid
-              align="center"
-              fontSize="14px"
-            >
-              Personality
-            </Button>
-          </Stack.Item>
-        </Stack>
-      </Stack.Item>
-      <Stack.Item grow>
-        {contentPage === 'personality' ? <PersonalityPage /> : <QuirkPage />}
       </Stack.Item>
     </Stack>
   );

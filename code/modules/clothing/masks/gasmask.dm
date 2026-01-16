@@ -19,10 +19,6 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH | PEPPERPROOF
 	resistance_flags = NONE
 	voice_filter = "lowpass=f=750,volume=2"
-	sound_vary = TRUE
-	pickup_sound = SFX_GAS_MASK_PICKUP
-	drop_sound = SFX_GAS_MASK_DROP
-	equip_sound = SFX_GAS_MASK_EQUIP
 	///Max numbers of installable filters
 	var/max_filters = 1
 	///List to keep track of each filter
@@ -268,7 +264,7 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	name = "plague doctor mask"
 	desc = "A modernised version of the classic design, this mask will not only protect you from exposure to the Pestilence but it can also be connected to an air supply."
 	icon_state = "plaguedoctor"
-	flags_inv = HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT|HIDEHAIR
 	inhand_icon_state = "gas_mask"
 	clothing_flags = BLOCK_GAS_SMOKE_EFFECT|MASKINTERNALS
 	dirt_state = "plague_dirt"
@@ -446,7 +442,6 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	icon_state = "carp_mask"
 	inhand_icon_state = null
 	flags_cover = MASKCOVERSEYES
-	clothing_flags = CARP_STYLE_FACTOR
 	fishing_modifier = -4
 
 /obj/item/clothing/mask/gas/tiki_mask
@@ -454,7 +449,7 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	desc = "A creepy wooden mask. Surprisingly expressive for a poorly carved bit of wood."
 	icon_state = "tiki_eyebrow"
 	inhand_icon_state = null
-	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 2)
+	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 1.25)
 	resistance_flags = FLAMMABLE
 	flags_cover = MASKCOVERSEYES
 	max_integrity = 100

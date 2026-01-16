@@ -7,7 +7,7 @@ import type { CargoData } from './types';
 
 export function CargoRequests(props) {
   const { act, data } = useBackend<CargoData>();
-  const { requests = [], requestonly, can_send, can_approve_requests, displayed_currency_name} = data;
+  const { requests = [], requestonly, can_send, can_approve_requests } = data;
 
   return (
     <Section fill scrollable>
@@ -19,7 +19,6 @@ export function CargoRequests(props) {
             <Table.Cell>Object</Table.Cell>
             <Table.Cell>Orderer</Table.Cell>
             <Table.Cell>Reason</Table.Cell>
-            <Table.Cell>Account</Table.Cell>
             <Table.Cell>Cost</Table.Cell>
             {(!requestonly || !!can_send) && !!can_approve_requests && (
               <Table.Cell>Actions</Table.Cell>
@@ -36,11 +35,8 @@ export function CargoRequests(props) {
               <Table.Cell color="lightgray" width="25%">
                 <i>{decodeHtmlEntities(request.reason)}</i>
               </Table.Cell>
-              <Table.Cell collapsing>
-                {request.account}
-              </Table.Cell>
               <Table.Cell collapsing color="gold">
-                {formatMoney(request.cost)}{displayed_currency_name}
+                {formatMoney(request.cost)} cr
               </Table.Cell>
               {(!requestonly || !!can_send) && !!can_approve_requests && (
                 <Table.Cell collapsing>

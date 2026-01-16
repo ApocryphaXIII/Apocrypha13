@@ -17,6 +17,7 @@
 	..()
 	update_appearance()
 
+
 /obj/machinery/atmospherics/components/unary/click_alt(mob/living/beno)
 	beno.handle_ventcrawl(src)
 	return CLICK_ACTION_SUCCESS

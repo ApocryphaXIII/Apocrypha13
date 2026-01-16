@@ -11,8 +11,6 @@
 	var/check_flags = DISC_CHECK_CONSCIOUS | DISC_CHECK_CAPABLE
 	/// How many blood points this power costs to activate
 	var/vitae_cost = 1
-	/// How many willpower points this power costs to activate
-	var/willpower_cost = 0
 	/// Bitflags determining what types of entities this power is allowed to target. NONE if self-targeting only.
 	var/target_type = NONE
 	/// How many tiles away this power can be used from.
@@ -102,13 +100,7 @@
  * this power's vitae cost.
  */
 /datum/discipline_power/proc/can_afford()
-	if(vitae_cost)
-		if(!(owner.bloodpool >= /*(HAS_TRAIT(owner, TRAIT_DOUBLE_VITAE_COST) ? vitae_cost*2 :*/ vitae_cost))
-			return FALSE
-	if(willpower_cost)
-		if(!owner.st_get_stat(STAT_TEMPORARY_WILLPOWER) >= willpower_cost)
-			return FALSE
-	return TRUE
+	return (owner.bloodpool >= vitae_cost)
 
 /**
  * Returns if this power can currently be activated
@@ -168,7 +160,7 @@
 	//the user cannot afford the power's vitae expenditure
 	if (!can_afford())
 		if (alert)
-			do_afford_alert()
+			to_chat(owner, span_warning("You do not have enough blood to cast [src]!"))
 		return FALSE
 
 	//the power's cooldown has not elapsed
@@ -254,11 +246,6 @@
 
 	//can't activate if the owner isn't capable of it
 	if (!can_activate_untargeted(alert))
-		return FALSE
-
-	if ((check_flags & DISC_CHECK_DIRECT_SEE) && !can_see(owner, target, range))
-		if (alert)
-			to_chat(owner, span_warning("You cannot cast [src] without being in direct line of sight!"))
 		return FALSE
 
 	//self activated so target doesn't matter
@@ -412,7 +399,7 @@
 	SEND_SIGNAL(src, COMSIG_POWER_ACTIVATE, src, target)
 	SEND_SIGNAL(owner, COMSIG_POWER_ACTIVATE, src, target)
 	if (target)
-		SEND_SIGNAL(target, COMSIG_POWER_ACTIVATE_ON, src, was_hostile_usage(target))
+		SEND_SIGNAL(target, COMSIG_POWER_ACTIVATE_ON, src)
 
 	//make it active if it can only have one active instance at a time
 	if (!multi_activate)
@@ -427,6 +414,8 @@
 	do_activate_sound()
 
 	do_effect_sound(target)
+
+	INVOKE_ASYNC(src, PROC_REF(do_npc_aggro), target)
 
 	INVOKE_ASYNC(src, PROC_REF(do_masquerade_violation), target)
 
@@ -453,21 +442,31 @@
 	if (effect_sound)
 		playsound(target ? target : owner, effect_sound, 50, FALSE)
 
+// TODO: [Rebase] reimplement npcs
 /**
  * Overridable proc handling how the power aggravates NPCs
  * it's used on.
  */
-/datum/discipline_power/proc/was_hostile_usage(atom/target)
-	if(aggravating)
-		return TRUE
+/datum/discipline_power/proc/do_npc_aggro(atom/target)
+	/*
+	if (aggravating && isnpc(target))
+		var/mob/living/carbon/human/npc/npc = target
+		npc.Aggro(owner, hostile)
+	*/
 
 /**
  * Overridable proc handling Masquerade violations as a result
  * of using this power amongst NPCs.
  */
 /datum/discipline_power/proc/do_masquerade_violation(atom/target)
+	/*
 	if (violates_masquerade)
-		SEND_SIGNAL(owner, COMSIG_MASQUERADE_VIOLATION)
+		if (owner.CheckEyewitness(target ? target : owner, owner, 7, TRUE))
+			//TODO: detach this from being a human
+			if (ishuman(owner))
+				var/mob/living/carbon/human/human = owner
+				human.adjust_masquerade(-1)
+	*/
 
 /**
  * Overridable proc handling the spending of resources (vitae/blood)
@@ -476,8 +475,7 @@
  */
 /datum/discipline_power/proc/spend_resources()
 	if (can_afford())
-		owner.adjust_blood_pool(-vitae_cost)
-		owner.st_set_stat(STAT_TEMPORARY_WILLPOWER, owner.st_get_stat(STAT_TEMPORARY_WILLPOWER) - willpower_cost)
+		owner.bloodpool = owner.bloodpool - vitae_cost
 		owner.update_action_buttons()
 		return TRUE
 	else
@@ -692,10 +690,7 @@
 		return
 
 	if (spend_resources())
-		if(vitae_cost > 0)
-			to_chat(owner, span_warning("[src] consumes your blood to stay active."))
-		if(willpower_cost > 0)
-			to_chat(owner, span_warning("[src] consumes your willpower to stay active."))
+		to_chat(owner, span_warning("[src] consumes your blood to stay active."))
 		if (!duration_override)
 			do_duration(target)
 	else
@@ -722,13 +717,3 @@
 
 	deltimer(duration_timers[to_clear])
 	duration_timers.Cut(to_clear, to_clear + 1)
-
-
-// For certain discipline alerts, for example auspex 5 requiring willpower instead of blood points.
-/datum/discipline_power/proc/do_afford_alert()
-	if(vitae_cost && willpower_cost)
-		to_chat(owner, span_warning("You do not have enough blood and or willpower to cast [src]!"))
-	else if(vitae_cost)
-		to_chat(owner, span_warning("You do not have enough blood to cast [src]!"))
-	else if(willpower_cost)
-		to_chat(owner, span_warning("You do not have enough willpower to cast [src]!"))

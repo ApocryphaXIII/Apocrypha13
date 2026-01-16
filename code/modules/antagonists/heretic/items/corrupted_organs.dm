@@ -264,7 +264,8 @@
 		hearer.adjust_timed_status_effect(15 SECONDS, /datum/status_effect/speech/slurring/heretic)
 		hearer.emote("scream")
 		hearer.add_mood_event("gates_of_mansus", /datum/mood_event/gates_of_mansus)
-		hearer.sound_damage(10, 40 SECONDS)
+		var/obj/item/organ/ears/regret = hearer.get_organ_slot(ORGAN_SLOT_EARS)
+		regret?.adjustEarDamage(10,20)
 	return "[owner.p_Their()] lungs emit [span_hypnophrase(breath_noise)]"
 
 /// It's full of worms

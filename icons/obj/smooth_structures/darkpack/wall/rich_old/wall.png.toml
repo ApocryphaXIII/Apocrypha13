@@ -1,5 +1,0 @@
-output_name = "wall"
-template = "bitmask/walls.toml"
-
-[prefabs]
-12 = 5

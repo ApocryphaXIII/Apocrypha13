@@ -7,6 +7,3 @@
 	resistance_flags = FLAMMABLE
 	storage_type = /datum/storage/basket
 
-/obj/item/storage/basket/Initialize(mapload)
-	. = ..()
-	AddElement(/datum/element/cuffable_item)

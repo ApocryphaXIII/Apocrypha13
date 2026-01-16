@@ -169,5 +169,4 @@
 /atom/movable/screen/alert/status_effect/hazard_area
 	name = "Hazardous Area"
 	desc = "The area you are currently within is incredibly hazardous to you. Check your surroundings and vacate as soon as possible."
-	use_user_hud_icon = TRUE
-	overlay_state = "hazard_area"
+	icon_state = "hazard_area"

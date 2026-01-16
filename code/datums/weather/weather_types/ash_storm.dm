@@ -28,9 +28,6 @@
 	var/list/weak_sounds = list()
 	var/list/strong_sounds = list()
 
-/datum/weather/ash_storm/get_playlist_ref()
-	return GLOB.ash_storm_sounds
-
 /datum/weather/ash_storm/telegraph()
 	for(var/area/impacted_area as anything in impacted_areas)
 		if(impacted_area.outdoors)
@@ -64,7 +61,7 @@
 		return TRUE
 
 /datum/weather/ash_storm/weather_act_mob(mob/living/victim)
-	victim.adjust_fire_loss(4, required_bodytype = BODYTYPE_ORGANIC)
+	victim.adjustFireLoss(4, required_bodytype = BODYTYPE_ORGANIC)
 	return ..()
 
 /datum/weather/ash_storm/end()

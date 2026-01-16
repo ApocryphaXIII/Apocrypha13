@@ -348,43 +348,30 @@ export function JobsPage() {
       <Stack vertical fill>
         <Stack.Item mt={15}>
           <Stack fill g={1} className="PreferencesMenu__Jobs">
-            {
-              // DARKPACK EDIT ADD START
-            }
             <Stack.Item>
               <Stack vertical>
                 <PriorityHeaders />
-                <Department department="Prince" />
-                <Department department="Camarilla" />
-                <Department department="Anarch" />
-                <Department department="Church" />
+                <Department department="Engineering" />
+                <Department department="Science" />
+                <Department department="Silicon" />
+                <Department department="Assistant" />
               </Stack>
             </Stack.Item>
             <Stack.Item mt={-5.9}>
               <Stack vertical>
                 <PriorityHeaders />
-                <Department department="Chantry" />
-                <Department department="Clinic" />
-                <Department department="Strip_Club" />
-                <Department department="Warehouse" />
-                <Department department="Police" />
-                <Department department="Pentex" />
+                <Department department="Captain" />
+                <Department department="Service" />
+                <Department department="Cargo" />
               </Stack>
             </Stack.Item>
             <Stack.Item>
               <Stack vertical>
                 <PriorityHeaders />
-                <Department department="Giovanni" />
-                <Department department="Manor" />
-                <Department department="Sabbat" />
-                <Department department="Citizen" />
-                <Department department="City_Services" />
-                <Department department="Garou_Nation" />
+                <Department department="Security" />
+                <Department department="Medical" />
               </Stack>
             </Stack.Item>
-            {
-              // DARKPACK EDIT ADD END
-            }
           </Stack>
         </Stack.Item>
       </Stack>

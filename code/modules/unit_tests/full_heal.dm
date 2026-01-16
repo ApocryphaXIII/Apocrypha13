@@ -46,17 +46,17 @@
 	dummy.apply_damages(brute = 10, burn = 10, tox = 10, oxy = 10, stamina = 10, aggravated = 10) // DARKPACK EDIT CHANGE - AGGRAVATED_DAMAGE
 	dummy.fully_heal(HEAL_DAMAGE)
 
-	if(dummy.get_brute_loss())
+	if(dummy.getBruteLoss())
 		TEST_FAIL("The dummy still had brute damage after a fully heal!")
-	if(dummy.get_fire_loss())
+	if(dummy.getFireLoss())
 		TEST_FAIL("The dummy still had burn damage after a fully heal!")
-	if(dummy.get_tox_loss())
+	if(dummy.getToxLoss())
 		TEST_FAIL("The dummy still had toxins damage after a fully heal!")
-	if(dummy.get_oxy_loss())
+	if(dummy.getOxyLoss())
 		TEST_FAIL("The dummy still had oxy damage after a fully heal!")
-	if(dummy.get_stamina_loss())
+	if(dummy.getStaminaLoss())
 		TEST_FAIL("The dummy still had stamina damage after a fully heal!")
 	// DARKPACK EDIT ADD START - AGGRAVATED_DAMAGE
-	if(dummy.get_agg_loss())
+	if(dummy.getAggLoss())
 		TEST_FAIL("The dummy still had aggravated damage after a fully heal!")
 	// DARKPACK EDIT ADD END

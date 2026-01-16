@@ -105,11 +105,13 @@ GLOBAL_VAR(department_cd_override)
 /// Checks if we can "see" the passed supply pack
 /datum/computer_file/program/department_order/proc/can_see_pack(datum/supply_pack/to_check)
 	PROTECTED_PROC(TRUE)
-	if((to_check.order_flags & ORDER_EMAG_ONLY) && !(computer.obj_flags & EMAGGED))
+	if(to_check.hidden && !(computer.obj_flags & EMAGGED))
 		return FALSE
-	if((to_check.order_flags & ORDER_SPECIAL) && !(to_check.order_flags & ORDER_SPECIAL_ENABLED))
+	if(to_check.special && !to_check.special_enabled)
 		return FALSE
-	if(to_check.order_flags & (ORDER_INVISIBLE | ORDER_POD_ONLY | ORDER_GOODY | ORDER_NOT_DEPARTMENTAL))
+	if(to_check.drop_pod_only)
+		return FALSE
+	if(to_check.goody)
 		return FALSE
 	return TRUE
 
@@ -147,7 +149,7 @@ GLOBAL_VAR(department_cd_override)
 		else
 			computer.physical.balloon_alert(orderer, "linked")
 			playsound(computer, 'sound/machines/ping.ogg', 30, TRUE)
-			//set_linked_department(new_dept_type) // DARKPACK EDIT REMOVAL
+			set_linked_department(new_dept_type)
 		return TRUE
 
 	if(isnull(linked_department))
@@ -264,7 +266,7 @@ GLOBAL_VAR(department_cd_override)
 	return FALSE
 
 /datum/aas_config_entry/department_orders
-	name = "Departmental: Order Announcement"
+	name = "Departmental Order Announcement"
 	announcement_lines_map = list(
 		"Order Placed" = "A department order has been placed by %PERSON for %ORDER.",
 		"Cooldown Reset" = "Department order cooldown has expired! A new order may now be placed!",

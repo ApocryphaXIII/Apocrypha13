@@ -14,7 +14,6 @@ type Data = {
   wanted_criminal: string | null;
   wanted_body: string | null;
   wanted_photo: string | null;
-  newspaper_company: string; // DARKPACK EDIT ADD
 };
 
 type ChannelNames = {
@@ -88,11 +87,12 @@ const NewspaperIntro = (props) => {
 
   return (
     <Section>
-      {/* DARKPACK EDIT START*/}
       <Box bold fontSize="30px">
-        {data.newspaper_company}
+        The Griffon
       </Box>
-      {/* DARKPACK EDIT END*/}
+      <Box bold fontSize="15px">
+        For use on Space Facilities only!
+      </Box>
       <Box fontSize="12px">Table of Contents:</Box>
       {channels.map((channel) => (
         <Box key={channel.page_number}>
@@ -120,8 +120,9 @@ const NewspaperChannel = (props) => {
           <Box fontSize="12px">
             Channel made by: {individual_channel.author_name}
           </Box>
-          {channel_has_messages
-            ? individual_channel.channel_messages.map((message) => (
+          {channel_has_messages ? (
+            <>
+              {individual_channel.channel_messages.map((message) => (
                 <>
                   <Box key={message.message}>
                     <Box
@@ -132,8 +133,11 @@ const NewspaperChannel = (props) => {
                   </Box>
                   <Divider />
                 </>
-              ))
-            : 'No feed stories stem from this channel...'}
+              ))}
+            </>
+          ) : (
+            'No feed stories stem from this channel...'
+          )}
         </Box>
       ))}
     </Section>

@@ -58,7 +58,7 @@
 //CONFLAGRATION
 /datum/discipline_power/daimonion/conflagration
 	name = "Conflagration"
-	desc = "Fireball."
+	desc = "Turn your hands into deadly claws."
 
 	level = 3
 	check_flags = DISC_CHECK_CONSCIOUS | DISC_CHECK_CAPABLE
@@ -69,12 +69,16 @@
 	duration_length = 30 SECONDS
 	cooldown_length = 10 SECONDS
 
-// DARKPACK TODO - Make it so this doesnt give you infinite 0 blood cost fireballs
 /datum/discipline_power/daimonion/conflagration/activate()
 	. = ..()
+	owner.drop_all_held_items()
+	owner.put_in_r_hand(new /obj/item/knife/vamp/gangrel(owner))
+	owner.put_in_l_hand(new /obj/item/knife/vamp/gangrel(owner))
 
 /datum/discipline_power/daimonion/conflagration/deactivate()
 	. = ..()
+	for(var/obj/item/knife/vamp/gangrel/claws in owner)
+		qdel(claws)
 
 /datum/discipline_power/daimonion/conflagration/post_gain()
 	. = ..()
@@ -113,7 +117,7 @@
 	cooldown_length = 10 SECONDS
 	grouped_powers = list(/datum/discipline_power/daimonion/condemnation)
 
-	var/datum/action/cooldown/spell/shapeshift/bat/bat_shapeshift
+	var/obj/effect/proc_holder/spell/targeted/shapeshift/bat/bat_shapeshift
 
 /datum/discipline_power/daimonion/psychomachia/activate()
 	. = ..()
@@ -143,7 +147,7 @@
 	cooldown_length = 10 SECONDS
 	grouped_powers = list(/datum/discipline_power/daimonion/psychomachia)
 
-	var/datum/action/cooldown/spell/shapeshift/bat/bat_shapeshift
+	var/obj/effect/proc_holder/spell/targeted/shapeshift/bat/bat_shapeshift
 
 /datum/discipline_power/daimonion/condemnation/activate()
 	. = ..()

@@ -82,6 +82,11 @@
 	///break if moved, if false also makes it ignore if the wall its on breaks
 	var/break_if_moved = TRUE
 
+/obj/machinery/light/Move()
+	if(status != LIGHT_BROKEN && break_if_moved)
+		break_light_tube(TRUE)
+	return ..()
+
 // create a new lighting fixture
 /obj/machinery/light/Initialize(mapload)
 	. = ..()
@@ -113,25 +118,18 @@
 	RegisterSignal(src, COMSIG_LIGHT_EATER_ACT, PROC_REF(on_light_eater))
 	AddElement(/datum/element/atmos_sensitive, mapload)
 	AddElement(/datum/element/contextual_screentip_bare_hands, rmb_text = "Remove bulb")
-	if(mapload)
-		find_and_mount_on_atom(mark_for_late_init = TRUE)
-
-/obj/machinery/light/get_turfs_to_mount_on()
-	return list(get_step(src, dir))
-
-/obj/machinery/light/find_and_mount_on_atom(mark_for_late_init, late_init)
 	if(break_if_moved)
-		return ..()
+		find_and_hang_on_wall(custom_drop_callback = CALLBACK(src, PROC_REF(knock_down)))
 
 /obj/machinery/light/post_machine_initialize()
 	. = ..()
 #ifndef MAP_TEST
 	switch(fitting)
 		if("tube")
-			if(prob(1)) // DARKPACK EDIT CHANGE
+			if(prob(2))
 				break_light_tube(TRUE)
 		if("bulb")
-			if(prob(2)) // DARKPACK EDIT CHANGE
+			if(prob(5))
 				break_light_tube(TRUE)
 #endif
 	update(trigger = FALSE)
@@ -142,16 +140,6 @@
 		on = FALSE
 	QDEL_NULL(cell)
 	return ..()
-
-/obj/machinery/light/Move()
-	if(status != LIGHT_BROKEN && break_if_moved)
-		break_light_tube(TRUE)
-	return ..()
-
-/obj/machinery/light/Exited(atom/movable/gone, direction)
-	. = ..()
-	if(gone == cell)
-		cell = null
 
 /obj/machinery/light/setDir(newdir)
 	. = ..()
@@ -183,7 +171,7 @@
 			icon_state = "[base_state]-broken"
 	return ..()
 
-/* // DARKPACK EDIT REMOVAL - Temp removal because flav is a hack and did not do this properly.
+/* DARKPACK EDIT REMOVAL - Temp removal because flav is a hack and did not do this properly.
 /obj/machinery/light/update_overlays()
 	. = ..()
 	if(!on || status != LIGHT_OK)
@@ -421,28 +409,34 @@
 			electrocute_mob(user, get_area(src), src, (rand(7,10) * 0.1), TRUE)
 
 /obj/machinery/light/on_deconstruction(disassembled)
-	var/atom/drop_point = drop_location()
-
-	var/obj/item/wallframe/light_fixture/frame = null
+	var/obj/structure/light_construct/new_light = null
+	var/current_stage = 2
+	if(!disassembled)
+		current_stage = 1
 	switch(fitting)
 		if("tube")
-			frame = new /obj/item/wallframe/light_fixture(drop_point)
+			new_light = new /obj/structure/light_construct(loc)
+			new_light.icon_state = "tube-construct-stage[current_stage]"
+
 		if("bulb")
-			frame = new /obj/item/wallframe/light_fixture/small(drop_point)
-		if("floor bulb")
-			frame = new /obj/item/wallframe/light_fixture/small(drop_point)
+			new_light = new /obj/structure/light_construct/small(loc)
+			new_light.icon_state = "bulb-construct-stage[current_stage]"
+	new_light.setDir(dir)
+	new_light.stage = current_stage
 	if(!disassembled)
-		frame.take_damage(frame.max_integrity * 0.5, sound_effect = FALSE)
+		new_light.take_damage(new_light.max_integrity * 0.5, sound_effect=FALSE)
 		if(status != LIGHT_BROKEN)
 			break_light_tube()
 		if(status != LIGHT_EMPTY)
 			drop_light_tube()
 		new /obj/item/stack/cable_coil(loc, 1, "red")
-	transfer_fingerprints_to(frame)
+	transfer_fingerprints_to(new_light)
 
 	var/obj/item/stock_parts/power_store/real_cell = get_cell()
 	if(!QDELETED(real_cell))
-		real_cell.forceMove(drop_point)
+		new_light.cell = real_cell
+		real_cell.forceMove(new_light)
+		cell = null
 
 /obj/machinery/light/attacked_by(obj/item/attacking_object, mob/living/user, list/modifiers, list/attack_modifiers)
 	. = ..()
@@ -724,6 +718,23 @@
 			continue
 		INVOKE_ASYNC(src, PROC_REF(flicker))
 
+/**
+ * All the effects that occur when a light falls off a wall that it was hung onto.
+ */
+/obj/machinery/light/proc/knock_down()
+	if (fitting == "bulb")
+		new /obj/item/wallframe/light_fixture/small(drop_location())
+	else
+		new /obj/item/wallframe/light_fixture(drop_location())
+	new /obj/item/stack/cable_coil(drop_location(), 1, "red")
+	if(status != LIGHT_BROKEN)
+		break_light_tube(FALSE)
+	if(status != LIGHT_EMPTY)
+		drop_light_tube()
+	if(cell)
+		cell.forceMove(drop_location())
+	qdel(src)
+
 /obj/machinery/light/floor
 	name = "floor light"
 	desc = "A lightbulb you can walk on without breaking it, amazing."
@@ -735,23 +746,9 @@
 	layer = BELOW_CATWALK_LAYER
 	plane = FLOOR_PLANE
 	light_type = /obj/item/light/bulb
-	fitting = "floor bulb"
+	fitting = "bulb"
 	nightshift_brightness = 4
 	fire_brightness = 4.5
-
-/obj/machinery/light/floor/get_turfs_to_mount_on()
-	return list(get_turf(src))
-
-/obj/machinery/light/floor/is_mountable_turf(turf/target)
-	return !isgroundlessturf(target)
-
-/obj/machinery/light/floor/get_moutable_objects()
-	var/static/list/attachables = list(
-		/obj/structure/thermoplastic,
-		/obj/structure/lattice/catwalk,
-	)
-
-	return attachables
 
 /obj/machinery/light/floor/get_light_offset()
 	return list(0, 0)
@@ -759,15 +756,6 @@
 /obj/machinery/light/floor/broken
 	status = LIGHT_BROKEN
 	icon_state = "floor-broken"
-
-/obj/machinery/light/floor/burned
-	status = LIGHT_BURNED
-	icon_state = "floor-burned"
-
-/obj/machinery/light/floor/empty
-	icon_state = "floor-empty"
-	start_with_cell = FALSE
-	status = LIGHT_EMPTY
 
 /obj/machinery/light/floor/transport
 	name = "transport light"

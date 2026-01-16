@@ -1,0 +1,2 @@
+output_name = "frill"
+template = "bitmask/frills.toml"

@@ -2,7 +2,7 @@
 /datum/component/hat_stabilizer
 	dupe_mode = COMPONENT_DUPE_UNIQUE_PASSARGS
 	/// Currently "stored" hat. No armor or function will be inherited, only the icon and cover flags.
-	var/obj/item/attached_hat
+	var/obj/item/clothing/head/attached_hat
 	/// If TRUE, the hat will fall to the ground when the owner does so. It can also be shot off.
 	var/loose_hat = FALSE
 	/// Original cover flags for the helmet, before a hat is placed
@@ -12,8 +12,6 @@
 	var/use_worn_icon = TRUE
 	/// Pixel z offset for the hat
 	var/pixel_z_offset
-	/// Which way a loose hat is offset
-	var/head_angle = 1
 
 /datum/component/hat_stabilizer/Initialize(use_worn_icon = FALSE, pixel_z_offset = 0, loose_hat = FALSE)
 	if(!ismovable(parent))
@@ -116,7 +114,7 @@
 	if(loose_hat)
 		var/matrix/tilt_trix = matrix(worn_overlay.transform)
 		var/angle = 5
-		tilt_trix.Turn(angle * head_angle)
+		tilt_trix.Turn(angle * pick(1, -1))
 		worn_overlay.transform = tilt_trix
 	worn_overlay.pixel_z = pixel_z_offset + attached_hat.worn_y_offset
 	overlays += worn_overlay
@@ -134,7 +132,7 @@
 	if(loose_hat)
 		var/matrix/tilt_trix = matrix(worn_overlay.transform)
 		var/angle = 5
-		tilt_trix.Turn(angle * head_angle)
+		tilt_trix.Turn(angle * pick(1, -1))
 		worn_overlay.transform = tilt_trix
 	worn_overlay.pixel_z = pixel_z_offset + attached_hat.worn_y_offset
 	overlays += worn_overlay
@@ -149,44 +147,41 @@
 	SIGNAL_HANDLER
 
 	var/atom/movable/movable_parent = parent
-	if(!(hitting_item.slot_flags & ITEM_SLOT_HEAD))
+	if(!istype(hitting_item, /obj/item/clothing/head))
 		return
 
 	if(attached_hat)
 		movable_parent.balloon_alert(user, "hat already attached!")
 		return
-	if(isclothing(hitting_item))
-		var/obj/item/clothing/hat = hitting_item
-		if(hat.clothing_flags & STACKABLE_HELMET_EXEMPT)
-			movable_parent.balloon_alert(user, "invalid hat!")
-			return
 
-	if(!user.transferItemToLoc(hitting_item, parent, force = FALSE, silent = TRUE))
+	var/obj/item/clothing/hat = hitting_item
+	if(hat.clothing_flags & STACKABLE_HELMET_EXEMPT)
+		movable_parent.balloon_alert(user, "invalid hat!")
 		return
 
-	attach_hat(hitting_item, user)
+	if(!user.transferItemToLoc(hat, parent, force = FALSE, silent = TRUE))
+		return
 
-/datum/component/hat_stabilizer/proc/attach_hat(obj/item/hat, mob/user)
+	attach_hat(hat, user)
+
+/datum/component/hat_stabilizer/proc/attach_hat(obj/item/clothing/hat, mob/user)
 	var/atom/movable/movable_parent = parent
 	attached_hat = hat
 	RegisterSignal(hat, COMSIG_MOVABLE_MOVED, PROC_REF(on_hat_movement))
-	head_angle = pick(1, -1)
 
 	if (!isnull(user))
 		movable_parent.balloon_alert(user, "hat attached")
 
-	if (!isclothing(parent))
+	if (!istype(parent, /obj/item/clothing))
 		movable_parent.update_appearance()
 		return
 
 	var/obj/item/clothing/apparel = parent
-	if(isclothing(attached_hat))
-		var/obj/item/clothing/realhat = attached_hat
-		apparel.attach_clothing_traits(realhat.clothing_traits)
-		apparel.visor_flags_cover |= realhat.visor_flags_cover
+	apparel.attach_clothing_traits(attached_hat.clothing_traits)
 	former_flags = apparel.flags_cover
 	former_visor_flags = apparel.visor_flags_cover
 	apparel.flags_cover |= attached_hat.flags_cover
+	apparel.visor_flags_cover |= attached_hat.visor_flags_cover
 	apparel.update_appearance()
 
 	if (ismob(apparel.loc))
@@ -225,16 +220,14 @@
 	else
 		movable_parent.balloon_alert_to_viewers("the hat falls to the floor!")
 
-	if (!isclothing(parent))
+	if (!istype(parent, /obj/item/clothing))
 		attached_hat = null
 		movable_parent.update_appearance()
 		return
 
 	var/former_hat = attached_hat
 	var/obj/item/clothing/apparel = parent
-	if(isclothing(attached_hat))
-		var/obj/item/clothing/truehat = attached_hat
-		apparel.detach_clothing_traits(truehat.clothing_traits)
+	apparel.detach_clothing_traits(attached_hat.clothing_traits)
 	apparel.flags_cover = former_flags
 	apparel.visor_flags_cover = former_visor_flags
 	apparel.update_appearance()
@@ -242,8 +235,8 @@
 	if (ismob(apparel.loc))
 		var/mob/wearer = apparel.loc
 		wearer.update_clothing(wearer.get_slot_by_item(apparel))
-	if(isnull(user))
-		return former_hat
+
+	return former_hat
 
 /datum/component/hat_stabilizer/proc/on_requesting_context_from_item(atom/source, list/context, obj/item/held_item, mob/user)
 	SIGNAL_HANDLER

@@ -134,8 +134,10 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "mZ" = (
+/obj/machinery/airalarm{
+	pixel_y = 25
+	},
 /obj/structure/cable,
-/obj/machinery/airalarm/directional/north,
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "nW" = (
@@ -190,7 +192,6 @@
 /obj/item/poster/random_contraband,
 /obj/item/organ/tongue/zombie,
 /obj/structure/closet/crate/trashcart,
-/obj/structure/sign/warning/directional/south,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "rB" = (
@@ -615,7 +616,6 @@
 	brute_damage = 200;
 	mob_type = /mob/living/carbon/human/species/lizard
 	},
-/obj/structure/sign/warning/directional/south,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "Ua" = (
@@ -651,7 +651,7 @@
 "VL" = (
 /obj/machinery/power/shuttle_engine/propulsion,
 /turf/template_noop,
-/area/space/nearstation)
+/area/template_noop)
 "VV" = (
 /obj/effect/decal/cleanable/blood/gibs/robot_debris/up,
 /obj/structure/frame/computer,
@@ -664,6 +664,10 @@
 /obj/machinery/light/warm,
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron,
+/area/ruin/space/has_grav/garbagetruck/medicalwaste)
+"XC" = (
+/obj/structure/sign/warning,
+/turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "XD" = (
 /obj/structure/sinkframe,
@@ -756,7 +760,7 @@ AB
 py
 io
 TM
-MC
+XC
 "}
 (4,1,1) = {"
 iw
@@ -910,7 +914,7 @@ Tp
 zH
 AU
 qX
-MC
+XC
 "}
 (11,1,1) = {"
 gh

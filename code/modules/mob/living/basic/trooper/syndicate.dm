@@ -37,9 +37,9 @@
 	r_hand = /obj/item/knife/combat/survival
 	var/projectile_deflect_chance = 0
 
-/mob/living/basic/trooper/syndicate/melee/projectile_hit(obj/projectile/hitting_projectile, def_zone, piercing_hit, blocked)
+/mob/living/basic/trooper/syndicate/melee/bullet_act(obj/projectile/projectile)
 	if(prob(projectile_deflect_chance))
-		visible_message(span_danger("[src] blocks [hitting_projectile] with its shield!"))
+		visible_message(span_danger("[src] blocks [projectile] with its shield!"))
 		return BULLET_ACT_BLOCK
 	return ..()
 
@@ -218,8 +218,7 @@
 	desc = "A small, twin-bladed machine capable of inflicting very deadly lacerations."
 	icon_state = "viscerator_attack"
 	icon_living = "viscerator_attack"
-	density = FALSE
-	pass_flags = PASSTABLE | PASSMOB | PASSMACHINE | PASSFLAPS
+	pass_flags = PASSTABLE | PASSMOB
 	combat_mode = TRUE
 	mob_biotypes = MOB_ROBOTIC
 	basic_mob_flags = DEL_ON_DEATH

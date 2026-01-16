@@ -1,6 +1,4 @@
 https://github.com/DarkPack13/SecondCity/pull/96
-https://github.com/DarkPack13/SecondCity/pull/103
-https://github.com/DarkPack13/SecondCity/pull/156
 
 ## \<NPC>
 
@@ -28,4 +26,4 @@ This module handles everything related to darkpack non-player characters using T
 
 ### Credits:
 
-XeonMations, KCartridge
+XeonMations

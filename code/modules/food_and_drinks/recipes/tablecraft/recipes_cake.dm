@@ -234,10 +234,6 @@
 		/datum/reagent/consumable/sprinkles = 5,
 		/datum/reagent/teslium = 1 //To shock the whole thing into life
 	)
-	parts = list(
-		/obj/item/organ/brain,
-		/obj/item/organ/heart
-	)
 	result = /mob/living/basic/pet/cat/cak
 	category = CAT_CAKE //Cat! Haha, get it? CAT? GET IT? We get it - Love Felines
  */

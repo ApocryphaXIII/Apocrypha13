@@ -226,7 +226,7 @@
 
 /obj/effect/mine/sound/bwoink
 	name = "bwoink mine"
-	sound = 'modular_darkpack/master_files/sounds/adminhelp.ogg' // DARKPACK EDIT CHANGE
+	sound = 'sound/effects/adminhelp.ogg'
 
 /// These mines spawn pellet_clouds around them when triggered
 /obj/effect/mine/shrapnel

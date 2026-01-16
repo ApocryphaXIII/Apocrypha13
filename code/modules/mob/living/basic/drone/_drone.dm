@@ -48,7 +48,6 @@
 	lighting_cutoff_blue = 25
 	can_be_held = TRUE
 	worn_slot_flags = ITEM_SLOT_HEAD
-	inhand_holder_type = /obj/item/mob_holder/drone
 	/// `TRUE` if we have picked our visual appearance, `FALSE` otherwise (default)
 	var/picked = FALSE
 	/// Stored drone color, restored when unhacked
@@ -134,8 +133,8 @@
 	shy_update()
 	alert_drones(DRONE_NET_CONNECT)
 
-	var/datum/atom_hud/data/diagnostic/diag_hud = GLOB.huds[DATA_HUD_DIAGNOSTIC]
-	diag_hud.add_atom_to_hud(src)
+	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
+		diag_hud.add_atom_to_hud(src)
 
 	add_traits(list(
 		TRAIT_VENTCRAWLER_ALWAYS,
@@ -258,7 +257,7 @@
 	Stun(70)
 	to_chat(src, span_danger("<b>ER@%R: MME^RY CO#RU9T!</b> R&$b@0tin)..."))
 	if(severity == 1)
-		adjust_brute_loss(heavy_emp_damage)
+		adjustBruteLoss(heavy_emp_damage)
 		to_chat(src, span_userdanger("HeAV% DA%^MMA+G TO I/O CIR!%UUT!"))
 
 /mob/living/basic/drone/proc/alarm_triggered(datum/source, alarm_type, area/source_area)
@@ -296,6 +295,3 @@
 	if(built_in_camera?.can_use())
 		return TRUE
 	return ..()
-
-/mob/living/basic/drone/hypnosis_vulnerable()
-	return FALSE //It obeys its laws

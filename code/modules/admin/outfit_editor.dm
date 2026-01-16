@@ -55,7 +55,7 @@
 			"name" = initial(item.name),
 			"desc" = initial(item.desc),
 			// at this point initializing the item is probably faster tbh
-			"sprite" = icon2base64(icon(initial(item.icon), initial(item.icon_state), frame = 1)),
+			"sprite" = icon2base64(icon(initial(item.icon), initial(item.icon_state))),
 		)
 
 	return data
@@ -78,9 +78,7 @@
 	var/icon/dummysprite = get_flat_human_icon(null,
 		dummy_key = dummy_key,
 		showDirs = list(SOUTH),
-		outfit_override = drip,
-		no_anim = TRUE,
-	)
+		outfit_override = drip)
 	data["dummy64"] = icon2base64(dummysprite)
 
 	return data

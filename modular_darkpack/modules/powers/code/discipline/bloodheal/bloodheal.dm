@@ -77,6 +77,11 @@
 	owner.update_damage_overlays()
 	owner.update_health_hud()
 
+/datum/discipline_power/bloodheal/can_activate_untargeted(alert)
+	adjust_vitae_cost()
+
+	. = ..()
+
 /datum/discipline_power/bloodheal/spend_resources()
 	adjust_vitae_cost()
 
@@ -85,8 +90,8 @@
 /datum/discipline_power/bloodheal/proc/adjust_vitae_cost()
 	vitae_cost = initial(vitae_cost)
 	//tally up damage
-	var/total_bashing_lethal_damage = owner.get_brute_loss() + owner.get_tox_loss() + owner.get_oxy_loss()
-	var/total_aggravated_damage = owner.get_agg_loss() + owner.get_fire_loss()
+	var/total_bashing_lethal_damage = owner.getBruteLoss() + owner.getToxLoss() + owner.getOxyLoss()
+	var/total_aggravated_damage = owner.getAggLoss() + owner.getFireLoss()
 
 	//lower blood expenditure to what's necessary
 	var/vitae_to_heal_bashing_lethal = ceil(total_bashing_lethal_damage / HEAL_BASHING_LETHAL_DAMAGE)

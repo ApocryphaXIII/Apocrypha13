@@ -24,7 +24,7 @@
 	///Chance per second that we will move
 	var/move_chance = ANOMALY_MOVECHANCE
 
-/obj/effect/anomaly/Initialize(mapload, new_lifespan, drops_core = TRUE)
+/obj/effect/anomaly/Initialize(mapload, new_lifespan)
 	. = ..()
 
 	if(!mapload)
@@ -35,9 +35,6 @@
 
 	if (!impact_area)
 		return INITIALIZE_HINT_QDEL
-
-	if(!drops_core)
-		anomaly_core = null
 
 	if(anomaly_core)
 		anomaly_core = new anomaly_core(src)

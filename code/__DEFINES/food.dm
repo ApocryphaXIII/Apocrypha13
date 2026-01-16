@@ -121,7 +121,7 @@ DEFINE_BITFIELD(foodtypes, list(
 #define FOOD_COMPLEXITY_5 5
 
 /// Labels for food quality
-GLOBAL_ALIST_INIT(food_quality_description, alist(
+GLOBAL_LIST_INIT(food_quality_description, list(
 	FOOD_QUALITY_NORMAL = "okay",
 	FOOD_QUALITY_NICE = "nice",
 	FOOD_QUALITY_GOOD = "good",
@@ -131,8 +131,19 @@ GLOBAL_ALIST_INIT(food_quality_description, alist(
 	FOOD_QUALITY_TOP = "godlike",
 ))
 
+/// Mood events for food quality
+GLOBAL_LIST_INIT(food_quality_events, list(
+	FOOD_QUALITY_NORMAL = /datum/mood_event/food,
+	FOOD_QUALITY_NICE = /datum/mood_event/food/nice,
+	FOOD_QUALITY_GOOD = /datum/mood_event/food/good,
+	FOOD_QUALITY_VERYGOOD = /datum/mood_event/food/verygood,
+	FOOD_QUALITY_FANTASTIC = /datum/mood_event/food/fantastic,
+	FOOD_QUALITY_AMAZING = /datum/mood_event/food/amazing,
+	FOOD_QUALITY_TOP = /datum/mood_event/food/top,
+))
+
 /// Weighted lists of crafted food buffs randomly given according to crafting_complexity unless the food has a specific buff
-GLOBAL_ALIST_INIT(food_buffs, alist(
+GLOBAL_LIST_INIT(food_buffs, list(
 	FOOD_COMPLEXITY_1 = list(
 		/datum/status_effect/food/haste = 1,
 	),
@@ -169,7 +180,7 @@ GLOBAL_ALIST_INIT(food_buffs, alist(
 // DARKPACK EDIT ADD START - FOOD
 //Food has state to swap to upon first bite
 #define FOOD_BITE_SPRITE (1<<4)
-// DARKPACK EDIT ADD END
+// DARKPACK EDIT ADD
 
 DEFINE_BITFIELD(food_flags, list(
 	"FOOD_FINGER_FOOD" = FOOD_FINGER_FOOD,

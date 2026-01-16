@@ -157,7 +157,7 @@ function IDSection(props: IDSectionProps) {
             <LabeledList.Item label="Name">
               {user?.name || 'No Name Detected'}
             </LabeledList.Item>
-            <LabeledList.Item label="Point Balance">
+            <LabeledList.Item label="Balance">
               {user?.cash || 'No Balance Detected'}
             </LabeledList.Item>
           </LabeledList>

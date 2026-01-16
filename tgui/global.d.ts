@@ -64,11 +64,6 @@ type ByondType = {
   strictMode: boolean;
 
   /**
-   * The external URL for the IndexedDB IFrame to use as the origin
-   */
-  storageCdn: string;
-
-  /**
    * Makes a BYOND call.
    *
    * If path is empty, this will trigger a Topic call.
@@ -189,7 +184,7 @@ type ByondType = {
  * Object that provides access to Byond Skin API and is available in
  * any tgui application.
  */
-const Byond: ByondType = {};
+const Byond: ByondType;
 
 interface Window {
   Byond: ByondType;
@@ -204,6 +199,4 @@ interface Window {
   hubStorage: Storage;
   domainStorage: Storage;
   serverStorage: Storage;
-
-  __chatRenderer__: any;
 }

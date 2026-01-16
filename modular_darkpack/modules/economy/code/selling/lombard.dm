@@ -147,11 +147,11 @@
 		to_chat(user, span_warning("[black_market ? "This" : "The pawnshop"] doesn't accept [selling_comp.illegal ? "illegal" : "legal"] goods."))
 		return
 
-	if(!src.IsReachableBy(user))
+	if(!user.CanReach(src))
 		to_chat(user, span_warning("You're too far from [src]!"))
 		return
 
-	if(!sold.IsReachableBy(user))
+	if(!user.CanReach(sold))
 		to_chat(user, span_warning("You can't reach [sold]!"))
 		return
 
@@ -172,7 +172,7 @@
 	// Humanity loss warning for bulk sales
 	if(selling_comp.humanity_loss && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		var/datum/splat/vampire/kindred/vampirism = iskindred(H)
+		var/datum/species/human/kindred/vampirism = H.dna.species
 		if(!iskindred(H) || !vampirism.enlightenment)
 			var/humanity_loss_modifier = HAS_TRAIT(H, TRAIT_SENSITIVE_HUMANITY) ? 2 : 1
 			var/total_humanity_risk = length(items_to_sell) * humanity_loss_modifier * selling_comp.humanity_loss
@@ -187,7 +187,7 @@
 				if(choice == "No")
 					return
 
-				if(!src.IsReachableBy(user) || !sold.IsReachableBy(user))
+				if(!user.CanReach(src) || !user.CanReach(sold))
 					return
 
 	var/list/sold_items = sell_multiple_items(items_to_sell, user)

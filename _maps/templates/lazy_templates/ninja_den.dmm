@@ -532,9 +532,9 @@
 /area/centcom/central_command_areas/holding)
 "ni" = (
 /obj/structure/rack,
-/obj/item/melee/energy/sword/nullrod/red{
+/obj/item/nullrod/claymore/saber/red{
 	damtype = "stamina";
-	active_force = 30
+	force = 30
 	},
 /obj/item/nullrod/claymore/katana{
 	damtype = "stamina";
@@ -898,9 +898,9 @@
 /area/centcom/central_command_areas/holding)
 "vr" = (
 /obj/structure/rack,
-/obj/item/melee/energy/sword/nullrod{
+/obj/item/nullrod/claymore/saber{
 	damtype = "stamina";
-	active_force = 30;
+	force = 30;
 	pixel_x = 5;
 	pixel_y = -3
 	},

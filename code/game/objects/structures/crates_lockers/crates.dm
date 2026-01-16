@@ -184,7 +184,6 @@
 	paint_jobs = null
 	elevation_open = 0
 	can_weld_shut = FALSE
-	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 5)
 
 /obj/structure/closet/crate/trashcart //please make this a generic cart path later after things calm down a little
 	desc = "A heavy, metal trashcart with wheels."
@@ -284,8 +283,8 @@
 	new /obj/item/reagent_containers/blood/b_plus(src)
 	new /obj/item/reagent_containers/blood/o_minus(src)
 	new /obj/item/reagent_containers/blood/o_plus(src)
-//	new /obj/item/reagent_containers/blood/lizard(src) // DARKPACK EDIT REMOVAL
-//	new /obj/item/reagent_containers/blood/ethereal(src) // DARKPACK EDIT REMOVAL
+	new /obj/item/reagent_containers/blood/lizard(src)
+	new /obj/item/reagent_containers/blood/ethereal(src)
 	for(var/i in 1 to 3)
 		new /obj/item/reagent_containers/blood/random(src)
 	new /obj/item/paper/fluff/jobs/medical/blood_types(src)

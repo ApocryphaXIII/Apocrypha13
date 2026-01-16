@@ -251,19 +251,6 @@
 
 				L.forceMove(stepTurf)
 			L.setDir(direct)
-		// DARKPACK EDIT START
-		if(INCORPOREAL_MOVE_AVATAR)
-			var/turf/open/floor/stepTurf = get_step(L, direct)
-			if(stepTurf)
-				if(stepTurf.turf_flags & NOJAUNT)
-					to_chat(L, span_warning("Some strange aura is blocking the way."))
-					return
-				if(locate(/obj/effect/blessing) in stepTurf)
-					to_chat(L, span_warning("Holy energies block your path!"))
-					return
-				L.forceMove(stepTurf)
-			L.setDir(direct)
-		// DARKPACK EDIT END
 	return TRUE
 
 /**
@@ -395,13 +382,9 @@
  * force_drop = the slip forces them to drop held items
  */
 /mob/proc/slip(knockdown_amount, obj/slipped_on, lube_flags, paralyze, daze, force_drop = FALSE)
-	SEND_SIGNAL(src, COMSIG_MOB_SLIPPED, knockdown_amount, slipped_on, lube_flags, paralyze, daze, force_drop)
-
-/mob/living/slip(knockdown_amount, obj/slipped_on, lube_flags, paralyze, daze, force_drop = FALSE)
 	add_mob_memory(/datum/memory/was_slipped, antagonist = slipped_on)
-	add_mood_event("slipped", /datum/mood_event/slipped)
-	add_personality_mood_to_viewers(src, "slip_observed", list(/datum/personality/whimsical = /datum/mood_event/whimsical_slip), range = 5)
-	return ..()
+
+	SEND_SIGNAL(src, COMSIG_MOB_SLIPPED, knockdown_amount, slipped_on, lube_flags, paralyze, daze, force_drop)
 
 //bodypart selection verbs - Cyberboss
 //8: repeated presses toggles through head - eyes - mouth

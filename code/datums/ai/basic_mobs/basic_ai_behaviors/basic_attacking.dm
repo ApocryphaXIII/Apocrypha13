@@ -22,7 +22,7 @@
 	var/atom/target = controller.blackboard[target_key]
 	if (isnull(target))
 		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
-	if (!target.IsReachableBy(controller.pawn))
+	if (!controller.pawn.CanReach(target))
 		controller.clear_blackboard_key(BB_BASIC_MOB_MELEE_COOLDOWN_TIMER)
 		return AI_BEHAVIOR_INSTANT
 
