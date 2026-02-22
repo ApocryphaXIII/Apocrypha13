@@ -1,8 +1,8 @@
 /datum/job/vampire/dealer
 	title = "Dealer"
 	faction = FACTION_CITY
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "nobody. You are beholden only to yourself."
 	config_tag = "DEALER"
 	job_flags = CITY_JOB_FLAGS
@@ -16,8 +16,6 @@
 	)
 
 	known_contacts = list("Prince", "Seneschal", "Sheriff", "Baron")
-	allowed_splats = list(SPLAT_NONE)
-	splat_slots = list(SPLAT_NONE = 1)
 
 	description = "You provide both legal and illegal supplies to those that get busy during the night. You are your own person yet you know people are out for you. Time to buckle in..."
 	minimal_masquerade = 0
