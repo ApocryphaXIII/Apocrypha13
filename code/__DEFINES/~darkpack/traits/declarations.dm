@@ -42,7 +42,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_CHARMER "charmer"
 
 // Mutates the apperance of auras
-#define TRAIT_COLD_AURA "cold_aura"
+#define TRAIT_PALE_AURA "pale_aura"
 #define TRAIT_WARM_AURA "warm_aura"
 #define TRAIT_FRENETIC_AURA "frenetic_aura"
 
@@ -144,7 +144,14 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 // BELOW ARE ALL MERITS/FLAWS
 #define TRAIT_ILLEGAL_IDENTITY "illegal_identity" // GOVERNMENT
+#define TRAIT_ANIMAL_MUSK "animal_musk"
 #define TRAIT_PERMAFANGS "permafangs"
+#define TRAIT_PIERCED_VEIL "pierced_veil"
+#define TRAIT_WEAK_WILLED "weak_willed"
+#define TRAIT_TIME_SENSE "time_sense"
+#define TRAIT_METAMORPH "metamorph"
+#define TRAIT_MERIT_UNTAMABLE "merit_untamable"
+#define TRAIT_FAIR_GLABRO "fair_glabro"
 
 
 // END TRAIT DEFINES
