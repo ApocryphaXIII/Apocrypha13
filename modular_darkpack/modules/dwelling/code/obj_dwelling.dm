@@ -149,11 +149,14 @@
 /obj/structure/vampdoor/dwelling/proc/set_security(sec_type)
 	switch(sec_type)
 		if("minor")
-			lockpick_difficulty = 5
+			lockpick_difficulty = LOCKDIFFICULTY_3
+			lockpick_timer = LOCKTIMER_3
 		if("moderate")
-			lockpick_difficulty = 6
+			lockpick_difficulty = LOCKDIFFICULTY_5
+			lockpick_timer = LOCKTIMER_5
 		if("major")
-			lockpick_difficulty = 7
+			lockpick_difficulty = LOCKDIFFICULTY_7
+			lockpick_timer = LOCKTIMER_7
 	lock_id = area_reference.area_tag
 
 /obj/structure/vampdoor/dwelling/proc/start_casing(mob/user) //Returns casing and lockpick infromation after a while.

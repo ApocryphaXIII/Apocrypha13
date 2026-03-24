@@ -5,8 +5,6 @@
 /datum/mind/New(_key)
 	. = ..()
 	guestbook = new()
-	if(current?.real_name)
-		LAZYADDASSOC(guestbook.known_names, current.real_name, current.real_name)
 
 /datum/mind/Destroy()
 	QDEL_NULL(guestbook)
