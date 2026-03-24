@@ -15706,7 +15706,8 @@
 "jsI" = (
 /obj/machinery/button/door{
 	pixel_y = 30;
-	id = 1
+	id = "ambulance_shutters";
+	name = "Garage Door"
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/unionsquare)
