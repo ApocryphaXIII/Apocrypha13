@@ -6376,18 +6376,18 @@
 /turf/open/floor/city/toilet,
 /area/vtm/interior/police)
 "dPR" = (
-/obj/structure/table,
-/obj/item/flashlight/lamp{
-	pixel_y = 9;
-	pixel_x = -2
+/obj/structure/mirror/directional/north{
+	pixel_x = -8
 	},
-/obj/machinery/light/directional/west,
-/obj/structure/platform/lowwall/painted,
-/obj/item/clothing/suit/apron/surgical{
-	pixel_y = 6;
-	pixel_x = 9
+/obj/structure/sink/directional/south{
+	pixel_x = -8;
+	pixel_y = 13
 	},
-/turf/open/floor/plating/rough,
+/obj/structure/closet/crate/bin{
+	pixel_y = 16;
+	pixel_x = 7
+	},
+/turf/open/floor/city/plating,
 /area/vtm/interior/clinic)
 "dQp" = (
 /obj/structure/methlab,
@@ -33536,18 +33536,18 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/sewer/nosferatu_town)
 "tOH" = (
-/obj/structure/mirror/directional/north{
-	pixel_x = -8
+/obj/structure/table,
+/obj/item/flashlight/lamp{
+	pixel_y = 9;
+	pixel_x = -2
 	},
-/obj/structure/sink/directional/south{
-	pixel_x = -8;
-	pixel_y = 13
+/obj/machinery/light/directional/west,
+/obj/structure/platform/lowwall/painted,
+/obj/item/clothing/suit/apron/surgical{
+	pixel_y = 6;
+	pixel_x = 9
 	},
-/obj/structure/closet/crate/bin{
-	pixel_y = 16;
-	pixel_x = 7
-	},
-/turf/open/floor/city/plating,
+/turf/open/floor/plating/rough,
 /area/vtm/interior/clinic)
 "tOI" = (
 /obj/fusebox,
@@ -52590,7 +52590,7 @@ tKt
 nlL
 nlL
 uJv
-dPR
+tOH
 dHN
 nlL
 nlL
@@ -52901,7 +52901,7 @@ mXA
 aSK
 xpT
 nlL
-tOH
+dPR
 uCc
 uCc
 hrn
