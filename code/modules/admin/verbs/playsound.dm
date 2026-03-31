@@ -62,37 +62,41 @@ ADMIN_VERB(play_direct_mob_sound, R_SOUND, "Play Direct Mob Sound", "Play a soun
 
 GLOBAL_VAR_INIT(web_sound_cooldown, 0)
 
-///Takes an input from either proc/play_web_sound or the request manager and runs it through yt-dlp and prompts the user before playing it to the server.
+// TFN EDITS - uses MUSIC_SERVER_URL in darkpack_config.txt to resolve via a remote PHP endpoint instead of local yt-dlp
 /proc/web_sound(mob/user, input, credit)
 	if(!check_rights(R_SOUND))
 		return
-	var/ytdl = CONFIG_GET(string/invoke_youtubedl)
-	if(!ytdl)
-		to_chat(user, span_boldwarning("yt-dlp was not configured, action unavailable"), confidential = TRUE) //Check config.txt for the INVOKE_YOUTUBEDL value
+	// TFN EDIT START
+	var/music_server = CONFIG_GET(string/music_server_url)
+	if(!music_server)
+		to_chat(user, span_boldwarning("php endpoint not configured! set music_server_url or revert your fork to use the traditional web_sound proc"), confidential = TRUE)
 		return
 	var/web_sound_url = ""
 	var/stop_web_sounds = FALSE
 	var/list/music_extra_data = list()
 	var/duration = 0
 	if(istext(input))
-		var/shell_scrubbed_input = shell_url_scrub(input)
-		var/list/output = world.shelleo("[ytdl] --geo-bypass --format \"bestaudio\[ext=mp3]/best\[ext=mp4]\[height <= 360]/bestaudio\[ext=m4a]/bestaudio\[ext=aac]\" --dump-single-json --no-playlist -- \"[shell_scrubbed_input]\"")
-		var/errorlevel = output[SHELLEO_ERRORLEVEL]
-		var/stdout = output[SHELLEO_STDOUT]
-		var/stderr = output[SHELLEO_STDERR]
-		if(errorlevel)
-			to_chat(user, span_boldwarning("yt-dlp URL retrieval FAILED:"), confidential = TRUE)
-			to_chat(user, span_warning("[stderr]"), confidential = TRUE)
+		// TFN EDIT START - url stuff
+		var/encoded = url_encode(input)
+		var/request_url = "[trim(music_server)]?url=[encoded]"
+		to_chat(user, span_notice("DEBUG: [request_url]"), confidential = TRUE)
+		var/datum/http_request/request = new()
+		request.prepare(RUSTG_HTTP_METHOD_GET, request_url, "", list("Content-Type" = "application/json"))
+		request.begin_async()
+		UNTIL_OR_TIMEOUT(request.is_complete(), 20 SECONDS)
+		var/datum/http_response/http_response = request.into_response()
+		if(http_response.errored || http_response.status_code != 200)
 			return
 		var/list/data
 		try
-			data = json_decode(stdout)
+			data = json_decode(http_response.body)
 		catch(var/exception/e)
-			to_chat(user, span_boldwarning("yt-dlp JSON parsing FAILED:"), confidential = TRUE)
-			to_chat(user, span_warning("[e]: [stdout]"), confidential = TRUE)
+			to_chat(user, span_boldwarning("invalid JSON: [e]"), confidential = TRUE)
 			return
-		if (data["url"])
-			web_sound_url = data["url"]
+		if(!data || !data["url"])
+			return
+		web_sound_url = data["url"]
+		// TFN EDIT END - url stuff
 		var/title = "[data["title"]]"
 		var/webpage_url = title
 		if (data["webpage_url"])
@@ -145,7 +149,7 @@ GLOBAL_VAR_INIT(web_sound_cooldown, 0)
 			if(client.prefs.read_preference(/datum/preference/numeric/volume/sound_midi) > 0)
 				recipients += client
 		recipients |= user.client
-		to_chat(recipients, fieldset_block("Now Playing: [span_bold(music_extra_data["title"])] by [span_bold(music_extra_data["artist"])]", jointext(to_chat_message, ""), "boxed_message"))
+		to_chat(recipients, fieldset_block("Now Playing: [span_bold(music_extra_data["title"])]", jointext(to_chat_message, ""), "boxed_message")) // TFN edit - remove the artist field since its almost always 'unknown'
 
 		SSblackbox.record_feedback("nested tally", "played_url", 1, list("[user.ckey]", "[input]"))
 		log_admin("[key_name(user)] played web sound: [input]")
@@ -181,7 +185,7 @@ GLOBAL_VAR_INIT(web_sound_cooldown, 0)
 	BLACKBOX_LOG_ADMIN_VERB("Play Internet Sound")
 
 ADMIN_VERB_CUSTOM_EXIST_CHECK(play_web_sound)
-	return !!CONFIG_GET(string/invoke_youtubedl)
+	return !!CONFIG_GET(string/music_server_url) // TFN EDIT - php endpoint url
 
 ADMIN_VERB(play_web_sound, R_SOUND, "Play Internet Sound", "Play a given internet sound to all players.", ADMIN_CATEGORY_FUN)
 	if(!CLIENT_COOLDOWN_FINISHED(GLOB, web_sound_cooldown))
