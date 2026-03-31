@@ -50,6 +50,7 @@
 /datum/outfit/dragon_ball
 	abstract_type = /datum/outfit/dragon_ball
 
+	l_pocket = /obj/item/food/grown/senzu
 
 /datum/outfit/dragon_ball/saiyan
 	name = "Dragon Ball - Saiyan"
@@ -86,6 +87,8 @@
 	suit = /obj/item/clothing/suit/vampire/dragon_ball/frieza
 	gloves = /obj/item/clothing/gloves/vampire/dragon_ball/frieza
 	shoes = /obj/item/clothing/shoes/vampire/dragon_ball/frieza
+
+	r_pocket = /obj/item/saibamen_seed
 
 /datum/outfit/dragon_ball/piccolo
 	name = "Dragon Ball - Piccolo"

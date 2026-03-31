@@ -33,6 +33,8 @@
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/dragon_ball/icons/beans_onfloor.dmi')
 	icon_state = "seed"
 
+	w_class = WEIGHT_CLASS_SMALL
+
 /obj/item/saibamen_seed/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
 	if(!isturf(interacting_with))
 		return
