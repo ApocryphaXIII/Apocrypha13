@@ -112,7 +112,7 @@
 /obj/projectile/beam/kamehameha/on_hit(atom/target, blocked = 0, pierce_hit)
 	. = ..()
 	if(. == BULLET_ACT_HIT)
-		explosion(target, light_impact_range = 2, flame_range = 0, flash_range = 1, adminlog = FALSE)
+		explosion(target, light_impact_range = 1, flame_range = 0, flash_range = 1, adminlog = FALSE)
 		playsound(target.loc, 'sound/effects/meteorimpact.ogg', 40, TRUE)
 
 
@@ -147,7 +147,7 @@
 /obj/projectile/beam/energy_ball/on_hit(atom/target, blocked = 0, pierce_hit)
 	. = ..()
 	if(. == BULLET_ACT_HIT)
-		explosion(target, light_impact_range = 2, flame_range = 0, flash_range = 1, adminlog = FALSE)
+		explosion(target, light_impact_range = 1, flame_range = 0, flash_range = 1, adminlog = FALSE)
 		playsound(target.loc, 'sound/effects/meteorimpact.ogg', 40, TRUE)
 
 // /datum/action/cooldown/power/saiyan/flight

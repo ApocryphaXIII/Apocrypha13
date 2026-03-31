@@ -19,7 +19,7 @@
 
 /datum/splat/saiyan/prepare_human_for_preview(mob/living/carbon/human/human)
 	human.set_haircolor("#272621", update = FALSE)
-	human.set_eye_color("#008000", "#008000")
+	human.set_eye_color("#008000")
 	human.set_hairstyle("Spiky 2", update = TRUE)
 	// human.undershirt = "Shirt (Ian)"
 	human.update_body()
@@ -37,22 +37,21 @@
 	abstract_type = /datum/outfit/dragon_ball
 
 /datum/outfit/dragon_ball/saiyan
-	name = "Saiyan"
+	name = "Dragon Ball - Saiyan"
 	uniform = /obj/item/clothing/under/vampire/dragon_ball/saiyan_gi
 	suit = /obj/item/clothing/suit/vampire/dragon_ball/saiyan_gi
 	gloves = /obj/item/clothing/gloves/vampire/dragon_ball/saiyan
 	shoes = /obj/item/clothing/shoes/vampire/dragon_ball/saiyan
 
 /datum/outfit/dragon_ball/frieza
-	name = "Frieza Force"
+	name = "Dragon Ball - Frieza Force"
 	uniform = /obj/item/clothing/under/vampire/dragon_ball/frieza_gi
 	suit = /obj/item/clothing/suit/vampire/dragon_ball/frieza_gi
 	gloves = /obj/item/clothing/gloves/vampire/dragon_ball/frieza
 	shoes = /obj/item/clothing/shoes/vampire/dragon_ball/frieza
 
-
 /datum/outfit/dragon_ball/piccolo
-	name = "Piccolo"
+	name = "Dragon Ball - Piccolo"
 	head = /obj/item/clothing/head/vampire/dragon_ball/piccolo
 	uniform = /obj/item/clothing/under/vampire/dragon_ball/piccolo_gi
 	suit = /obj/item/clothing/suit/vampire/dragon_ball/piccolo_gi
