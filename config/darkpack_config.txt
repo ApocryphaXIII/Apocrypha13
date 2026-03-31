@@ -63,3 +63,6 @@ LOG_STATS
 
 ## Bool for if roleplay only merits/quirks are enabled
 ROLEPLAY_ONLY_MERITS 1
+
+## url that leads to a php endpoint where yt-dl runs. should return a json package including a url to the mp3
+#MUSIC_SERVER_URL https://vampire-freaks.com/api
