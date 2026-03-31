@@ -1,16 +1,12 @@
 /datum/action/cooldown/power/saiyan
 
 /atom/movable/screen/alert/status_effect/saiyan
-	icon = 'modular_darkpack/modules/dragon_ball/icons/assets.dmi'
-	// icon_state = "bg_gift"
-	overlay_icon = 'modular_darkpack/modules/dragon_ball/icons/assets.dmi'
-
 
 /datum/action/cooldown/power/saiyan/super_saiyan
 	desc = "An advanced transformation."
+	button_icon = 'modular_darkpack/modules/dragon_ball/icons/aura.dmi'
 	button_icon_state = "aura"
 	cooldown_time = 3 SCENES
-
 
 /datum/action/cooldown/power/saiyan/super_saiyan/Activate(atom/target)
 	. = ..()
@@ -29,18 +25,19 @@
 /datum/status_effect/super_saiyan/on_apply()
 	. = ..()
 
-
 	var/mob/living/carbon/human/human_owner = astype(owner)
 	if(human_owner)
 		old_hair_color = human_owner.hair_color
-		owner.set_haircolor("#F0E2B6")
+		human_owner.set_haircolor("#eff142")
 
 		human_owner.st_add_stat_mod(STAT_DEXTERITY, 5, "super_saiyan")
 		human_owner.st_add_stat_mod(STAT_STRENGTH, 5, "super_saiyan")
 		human_owner.st_add_stat_mod(STAT_STAMINA, 5, "super_saiyan")
 
+		// This is a acctually a bad implementation for anyone curious despite this being how we are doing all our disc stuff rn.
+		// See `addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, cut_overlay` for how you would acctually wanna do this
 		human_owner.remove_overlay(MUTATIONS_LAYER)
-		var/mutable_appearance/song_overlay = mutable_appearance('modular_darkpack/modules/dragon_ball/icons/assets.dmi', "aura", -FRONT_MUTATIONS_LAYER)
+		var/mutable_appearance/song_overlay = mutable_appearance('modular_darkpack/modules/dragon_ball/icons/aura.dmi', "aura", -FRONT_MUTATIONS_LAYER)
 		human_owner.overlays_standing[MUTATIONS_LAYER] = song_overlay
 		human_owner.apply_overlay(MUTATIONS_LAYER)
 
@@ -62,27 +59,36 @@
 	name = /datum/action/cooldown/power/saiyan/super_saiyan::name
 	desc = /datum/action/cooldown/power/saiyan/super_saiyan::desc
 	overlay_state = /datum/action/cooldown/power/saiyan/super_saiyan::button_icon_state
+	icon = 'modular_darkpack/modules/dragon_ball/icons/aura.dmi'
+	overlay_icon = 'modular_darkpack/modules/dragon_ball/icons/aura.dmi'
 
 
-/datum/action/cooldown/power/saiyan/kamehameha
-	name = "Kamehameha"
-	desc = "A signature attack of the students of the Turtle School."
+/datum/action/cooldown/power/saiyan/projectile
 	click_to_activate = TRUE
+	// Its shitcode
+	shared_cooldown = MOB_SHARED_COOLDOWN_1
+	var/projectile_type
+	var/projectile_sound_effect = 'modular_darkpack/modules/dragon_ball/sounds/BCCMNSND_00045.wav'
 
-
-/datum/action/cooldown/power/saiyan/kamehameha/Activate(atom/target)
+/datum/action/cooldown/power/saiyan/projectile/Activate(atom/target)
 	. = ..()
 
-	var/obj/projectile/beam/kamehameha/blast = new(owner.loc)
+	var/obj/projectile/blast = new projectile_type(owner.loc)
 	blast.firer = owner
 	blast.def_zone = ran_zone(owner.zone_selected)
 	blast.aim_projectile(target, owner)
 	INVOKE_ASYNC(blast, TYPE_PROC_REF(/obj/projectile, fire))
-	playsound(owner, 'modular_darkpack/modules/dragon_ball/sounds/BCCMNSND_00045.wav', 75, TRUE)
+	playsound(owner, projectile_sound_effect, 75, TRUE)
 
 	StartCooldown()
 	return TRUE
 
+
+/datum/action/cooldown/power/saiyan/projectile/kamehameha
+	name = "Kamehameha"
+	desc = "A signature attack of the students of the Turtle School."
+	click_to_activate = TRUE
+	projectile_type = /obj/projectile/beam/kamehameha
 
 /obj/projectile/beam/kamehameha
 	hitscan = TRUE
@@ -106,8 +112,19 @@
 	icon_state = "impact"
 	icon = 'modular_darkpack/modules/dragon_ball/icons/kamehameha.dmi'
 
-// /datum/action/cooldown/power/saiyan/energy_ball
+
+/datum/action/cooldown/power/saiyan/projectile/energy_ball
+	name = "Energy Ball"
+	#warn REWRITE
+	// desc = "A signature attack of the students of the Turtle School."
+	projectile_type = /obj/projectile/beam/energy_ball
 
 /obj/projectile/beam/energy_ball
+	icon_state = "ball"
+	icon = 'modular_darkpack/modules/dragon_ball/icons/kamehameha.dmi'
+
+	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
+	light_color = COLOR_BLUE_LIGHT
+
 
 // /datum/action/cooldown/power/saiyan/flight

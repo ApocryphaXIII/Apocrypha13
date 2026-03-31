@@ -2,7 +2,7 @@
 	name = "Saiyan"
 	id = SPLAT_SAIYAN
 	power_type = /datum/action/cooldown/power/saiyan
-	var/list/clothing_roundstart = list(
+	var/list/gear_roundstart = list(
 		/obj/item/clothing/under/vampire/saiyan_gi,
 		/obj/item/clothing/gloves/vampire/saiyan,
 		/obj/item/clothing/shoes/vampire/saiyan,
@@ -10,19 +10,12 @@
 
 /datum/splat/saiyan/on_gain()
 	add_power(/datum/action/cooldown/power/saiyan/super_saiyan)
-	add_power(/datum/action/cooldown/power/saiyan/kamehameha)
-	// add_power(/datum/action/cooldown/power/saiyan/energy_ball)
+	add_power(/datum/action/cooldown/power/saiyan/projectile/kamehameha)
+	add_power(/datum/action/cooldown/power/saiyan/projectile/energy_ball)
 
-	var/static/list/slots = list(
-		LOCATION_LPOCKET = ITEM_SLOT_LPOCKET,
-		LOCATION_RPOCKET = ITEM_SLOT_RPOCKET,
-		LOCATION_BACKPACK = ITEM_SLOT_BACK,
-		LOCATION_HANDS = ITEM_SLOT_HANDS
-	)
-
-	for(var/clothing_type in clothing_roundstart)
-		var/obj/item/clothing/new_clothing = new clothing_type(owner.loc)
-		owner.equip_in_one_of_slots(new_clothing, slots, FALSE)
+	for(var/item_type in gear_roundstart)
+		var/obj/item/new_item = new item_type(owner.loc)
+		new_item.equip_to_best_slot(owner)
 
 /datum/splat/saiyan/prepare_human_for_preview(mob/living/carbon/human/human)
 	human.set_haircolor("#272621", update = FALSE)
@@ -46,3 +39,4 @@
 	uniform = /obj/item/clothing/under/vampire/saiyan_gi
 	gloves = /obj/item/clothing/gloves/vampire/saiyan
 	shoes = /obj/item/clothing/shoes/vampire/saiyan
+
