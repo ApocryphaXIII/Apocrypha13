@@ -28,7 +28,7 @@
 	var/mob/living/carbon/human/human_owner = astype(owner)
 	if(human_owner)
 		old_hair_color = human_owner.hair_color
-		human_owner.set_haircolor("#eff142")
+		human_owner.set_haircolor("#fffbbc")
 
 		human_owner.st_add_stat_mod(STAT_DEXTERITY, 5, "super_saiyan")
 		human_owner.st_add_stat_mod(STAT_STRENGTH, 5, "super_saiyan")
