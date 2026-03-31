@@ -79,6 +79,9 @@
 /datum/action/cooldown/power/saiyan/projectile/Activate(atom/target)
 	. = ..()
 
+	if(!do_after(owner, 1 SECONDS))
+		return
+
 	var/obj/projectile/blast = new projectile_type(owner.loc)
 	blast.firer = owner
 	blast.def_zone = ran_zone(owner.zone_selected)
@@ -112,8 +115,9 @@
 /obj/projectile/beam/kamehameha/on_hit(atom/target, blocked = 0, pierce_hit)
 	. = ..()
 	if(. == BULLET_ACT_HIT)
-		explosion(target, light_impact_range = 1, flame_range = 0, flash_range = 1, adminlog = FALSE)
-		playsound(target.loc, 'sound/effects/meteorimpact.ogg', 40, TRUE)
+		var/target_turf = get_turf(target) // This should prevent it from delimbing as often
+		explosion(target_turf, light_impact_range = 1, flame_range = 0, flash_range = 1, adminlog = FALSE)
+		playsound(target_turf, 'sound/effects/meteorimpact.ogg', 40, TRUE)
 
 
 /obj/effect/projectile/muzzle/kamehameha
@@ -147,7 +151,26 @@
 /obj/projectile/beam/energy_ball/on_hit(atom/target, blocked = 0, pierce_hit)
 	. = ..()
 	if(. == BULLET_ACT_HIT)
-		explosion(target, light_impact_range = 1, flame_range = 0, flash_range = 1, adminlog = FALSE)
-		playsound(target.loc, 'sound/effects/meteorimpact.ogg', 40, TRUE)
+		var/target_turf = get_turf(target) // This should prevent it from delimbing as often
+		explosion(target_turf, light_impact_range = 1, flame_range = 0, flash_range = 1, adminlog = FALSE)
+		playsound(target_turf, 'sound/effects/meteorimpact.ogg', 40, TRUE)
 
 // /datum/action/cooldown/power/saiyan/flight
+
+/datum/action/innate/saiyan_flight
+	name = "Take Flight"
+
+	background_icon_state = "bg_saiyan"
+	background_icon = 'modular_darkpack/modules/dragon_ball/icons/hud.dmi'
+
+	button_icon = 'modular_darkpack/modules/dragon_ball/icons/hud.dmi'
+	button_icon_state = "fly"
+
+/datum/action/innate/saiyan_flight/Trigger(mob/clicker, trigger_flags)
+	// if(!do_after(src, 0.5 SECONDS, timed_action_flags = IGNORE_USER_LOC_CHANGE))
+	// 	return
+	if (!(HAS_TRAIT(owner, TRAIT_MOVE_FLYING)))
+		owner.emote("jump")
+		ADD_TRAIT(owner, TRAIT_MOVE_FLYING, ACTION_TRAIT)
+	else
+		REMOVE_TRAIT(owner, TRAIT_MOVE_FLYING, ACTION_TRAIT)
