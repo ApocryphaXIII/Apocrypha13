@@ -7130,7 +7130,7 @@
 #include "modular_darkpack\modules\doors\code\keys\keys.dm"
 #include "modular_darkpack\modules\doors\code\keys\keys_npc.dm"
 #include "modular_darkpack\modules\doors\code\keys\lockpick.dm"
-#include "modular_darkpack\modules\dragon_ball\code\gi_clothing.dm"
+#include "modular_darkpack\modules\dragon_ball\code\clothing.dm"
 #include "modular_darkpack\modules\dragon_ball\code\saibamen.dm"
 #include "modular_darkpack\modules\dragon_ball\code\senzu_bean.dm"
 #include "modular_darkpack\modules\dragon_ball\code\saiyan_splat\power_managment.dm"

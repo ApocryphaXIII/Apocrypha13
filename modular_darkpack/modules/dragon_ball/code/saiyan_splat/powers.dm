@@ -1,16 +1,23 @@
 /datum/action/cooldown/power/saiyan
+	background_icon_state = "bg_saiyan"
+	background_icon = 'modular_darkpack/modules/dragon_ball/icons/hud.dmi'
+
+	button_icon = 'modular_darkpack/modules/dragon_ball/icons/hud.dmi'
 
 /atom/movable/screen/alert/status_effect/saiyan
+	icon_state = /datum/action/cooldown/power/saiyan::background_icon_state
+	icon = /datum/action/cooldown/power/saiyan::background_icon
 
 /datum/action/cooldown/power/saiyan/super_saiyan
+	name = "Super Saiyan"
 	desc = "An advanced transformation."
-	button_icon = 'modular_darkpack/modules/dragon_ball/icons/aura.dmi'
-	button_icon_state = "aura"
+
+	button_icon_state = "super_saiyan"
 	cooldown_time = 3 SCENES
 
 /datum/action/cooldown/power/saiyan/super_saiyan/Activate(atom/target)
 	. = ..()
-	playsound(owner, 'modular_darkpack/modules/dragon_ball/sounds/WAVE_SE_1B.wav', 75, FALSE)
+	playsound(owner, 'modular_darkpack/modules/dragon_ball/sounds/wave.wav', 75, FALSE)
 	owner.emote("scream")
 	var/mob/living/living_owner = astype(owner)
 	living_owner?.apply_status_effect(/datum/status_effect/super_saiyan)
@@ -30,7 +37,7 @@
 		old_hair_color = human_owner.hair_color
 		human_owner.set_haircolor("#fffbbc")
 
-		human_owner.st_add_stat_mod(STAT_DEXTERITY, 5, "super_saiyan")
+		human_owner.st_add_stat_mod(STAT_DEXTERITY, 10, "super_saiyan")
 		human_owner.st_add_stat_mod(STAT_STRENGTH, 5, "super_saiyan")
 		human_owner.st_add_stat_mod(STAT_STAMINA, 5, "super_saiyan")
 
@@ -58,9 +65,8 @@
 /atom/movable/screen/alert/status_effect/saiyan/super_saiyan
 	name = /datum/action/cooldown/power/saiyan/super_saiyan::name
 	desc = /datum/action/cooldown/power/saiyan/super_saiyan::desc
+	overlay_icon = /datum/action/cooldown/power/saiyan/super_saiyan::button_icon
 	overlay_state = /datum/action/cooldown/power/saiyan/super_saiyan::button_icon_state
-	icon = 'modular_darkpack/modules/dragon_ball/icons/aura.dmi'
-	overlay_icon = 'modular_darkpack/modules/dragon_ball/icons/aura.dmi'
 
 
 /datum/action/cooldown/power/saiyan/projectile
@@ -68,7 +74,7 @@
 	// Its shitcode
 	shared_cooldown = MOB_SHARED_COOLDOWN_1
 	var/projectile_type
-	var/projectile_sound_effect = 'modular_darkpack/modules/dragon_ball/sounds/BCCMNSND_00045.wav'
+	var/projectile_sound_effect = 'modular_darkpack/modules/dragon_ball/sounds/blast.wav'
 
 /datum/action/cooldown/power/saiyan/projectile/Activate(atom/target)
 	. = ..()
@@ -87,11 +93,14 @@
 /datum/action/cooldown/power/saiyan/projectile/kamehameha
 	name = "Kamehameha"
 	desc = "A signature attack of the students of the Turtle School."
+	button_icon_state = "laser"
 	click_to_activate = TRUE
 	projectile_type = /obj/projectile/beam/kamehameha
 
 /obj/projectile/beam/kamehameha
 	hitscan = TRUE
+
+	damage = 75
 
 	muzzle_type = /obj/effect/projectile/muzzle/kamehameha
 	tracer_type = /obj/effect/projectile/tracer/kamehameha
@@ -99,6 +108,13 @@
 
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
 	light_color = COLOR_BLUE_LIGHT
+
+/obj/projectile/beam/kamehameha/on_hit(atom/target, blocked = 0, pierce_hit)
+	. = ..()
+	if(. == BULLET_ACT_HIT)
+		explosion(target, light_impact_range = 2, flame_range = 0, flash_range = 1, adminlog = FALSE)
+		playsound(target.loc, 'sound/effects/meteorimpact.ogg', 40, TRUE)
+
 
 /obj/effect/projectile/muzzle/kamehameha
 	icon_state = "muzzle"
@@ -115,16 +131,23 @@
 
 /datum/action/cooldown/power/saiyan/projectile/energy_ball
 	name = "Energy Ball"
-	#warn REWRITE
-	// desc = "A signature attack of the students of the Turtle School."
+	desc = "A generic ki blast."
+	button_icon_state = "ball"
 	projectile_type = /obj/projectile/beam/energy_ball
 
 /obj/projectile/beam/energy_ball
 	icon_state = "ball"
 	icon = 'modular_darkpack/modules/dragon_ball/icons/kamehameha.dmi'
 
+	damage = 125
+
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
 	light_color = COLOR_BLUE_LIGHT
 
+/obj/projectile/beam/energy_ball/on_hit(atom/target, blocked = 0, pierce_hit)
+	. = ..()
+	if(. == BULLET_ACT_HIT)
+		explosion(target, light_impact_range = 2, flame_range = 0, flash_range = 1, adminlog = FALSE)
+		playsound(target.loc, 'sound/effects/meteorimpact.ogg', 40, TRUE)
 
 // /datum/action/cooldown/power/saiyan/flight

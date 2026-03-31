@@ -3,9 +3,9 @@
 	id = SPLAT_SAIYAN
 	power_type = /datum/action/cooldown/power/saiyan
 	var/list/gear_roundstart = list(
-		/obj/item/clothing/under/vampire/saiyan_gi,
-		/obj/item/clothing/gloves/vampire/saiyan,
-		/obj/item/clothing/shoes/vampire/saiyan,
+		/obj/item/clothing/under/vampire/dragon_ball/saiyan_gi,
+		/obj/item/clothing/gloves/vampire/dragon_ball/saiyan,
+		/obj/item/clothing/shoes/vampire/dragon_ball/saiyan,
 	)
 
 /datum/splat/saiyan/on_gain()
@@ -23,20 +23,38 @@
 	human.set_hairstyle("Spiky 2", update = TRUE)
 	// human.undershirt = "Shirt (Ian)"
 	human.update_body()
-	human.equipOutfit(/datum/outfit/saiyan, TRUE)
+	human.equipOutfit(/datum/outfit/dragon_ball/saiyan, TRUE)
 
-// DARKPACK TODO - WEREWOLF - (len lore)
 /datum/splat/saiyan/get_splat_description()
 	return "Hi im goku."
 
-// DARKPACK TODO - WEREWOLF - (len lore)
 /datum/splat/saiyan/get_splat_lore()
 	return list(
-		"Lorem Ipsum",
+		"Saiyans (サイヤ人 Saiya-jin) are a race of extraterrestrials known for a aggresive warrior culture.",
 	)
 
-/datum/outfit/saiyan
-	uniform = /obj/item/clothing/under/vampire/saiyan_gi
-	gloves = /obj/item/clothing/gloves/vampire/saiyan
-	shoes = /obj/item/clothing/shoes/vampire/saiyan
+/datum/outfit/dragon_ball
+	abstract_type = /datum/outfit/dragon_ball
 
+/datum/outfit/dragon_ball/saiyan
+	name = "Saiyan"
+	uniform = /obj/item/clothing/under/vampire/dragon_ball/saiyan_gi
+	suit = /obj/item/clothing/suit/vampire/dragon_ball/saiyan_gi
+	gloves = /obj/item/clothing/gloves/vampire/dragon_ball/saiyan
+	shoes = /obj/item/clothing/shoes/vampire/dragon_ball/saiyan
+
+/datum/outfit/dragon_ball/frieza
+	name = "Frieza Force"
+	uniform = /obj/item/clothing/under/vampire/dragon_ball/frieza_gi
+	suit = /obj/item/clothing/suit/vampire/dragon_ball/frieza_gi
+	gloves = /obj/item/clothing/gloves/vampire/dragon_ball/frieza
+	shoes = /obj/item/clothing/shoes/vampire/dragon_ball/frieza
+
+
+/datum/outfit/dragon_ball/piccolo
+	name = "Piccolo"
+	head = /obj/item/clothing/head/vampire/dragon_ball/piccolo
+	uniform = /obj/item/clothing/under/vampire/dragon_ball/piccolo_gi
+	suit = /obj/item/clothing/suit/vampire/dragon_ball/piccolo_gi
+	gloves = /obj/item/clothing/gloves/vampire/dragon_ball/piccolo
+	shoes = /obj/item/clothing/shoes/vampire/dragon_ball/piccolo

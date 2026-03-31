@@ -1,6 +1,6 @@
 /obj/item/seeds/soya/senzu
 	name = "senzu bean seed pack"
-	desc = "These seeds grow into senzu bean plants."
+	desc = "These seeds grow into senzu bean stalks."
 	species = "senzu bean"
 	plantname = "Senzu Bean Plants"
 	product = /obj/item/food/grown/senzu
@@ -13,10 +13,11 @@
 
 /obj/item/food/grown/senzu
 	seed = /obj/item/seeds/soya/senzu
-	name = "senzu beans"
+	name = "senzu bean"
 	desc = "It's pretty bland, but oh the possibilities..."
-	gender = PLURAL
-	icon_state = "soybeans"
+	icon = 'modular_darkpack/modules/dragon_ball/icons/beans.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/dragon_ball/icons/beans_onfloor.dmi')
+	icon_state = "senzu"
 	foodtypes = VEGETABLES
-	tastes = list("fishy" = 1)
+	tastes = list("fish" = 1)
 	wine_power = 40
