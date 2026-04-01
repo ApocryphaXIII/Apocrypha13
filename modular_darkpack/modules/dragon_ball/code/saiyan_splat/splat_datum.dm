@@ -40,6 +40,9 @@
 	owner.st_add_stat_mod(STAT_STRENGTH, 2, "saiyan")
 	owner.st_add_stat_mod(STAT_STAMINA, 5, "saiyan")
 
+	var/datum/martial_art/cqc/carp = new(owner)
+	carp.teach(owner)
+
 /datum/splat/saiyan/prepare_human_for_preview(mob/living/carbon/human/human)
 	human.set_haircolor("#272621", update = FALSE)
 	human.set_eye_color("#008000")
@@ -126,3 +129,82 @@
 	uniform = /obj/item/clothing/under/vampire/dragon_ball/tien
 	gloves = /obj/item/clothing/gloves/vampire/dragon_ball/tien
 	shoes = /obj/item/clothing/shoes/vampire/dragon_ball/tien
+
+
+/datum/loadout_item/uniform/saiyan
+	item_path = /obj/item/clothing/under/vampire/dragon_ball/saiyan
+
+/datum/loadout_item/uniform/frieza
+	item_path = /obj/item/clothing/under/vampire/dragon_ball/frieza
+
+/datum/loadout_item/uniform/piccolo
+	item_path = /obj/item/clothing/under/vampire/dragon_ball/piccolo
+
+/datum/loadout_item/uniform/roshi
+	item_path = /obj/item/clothing/under/vampire/dragon_ball/roshi
+
+/datum/loadout_item/uniform/bulma
+	item_path = /obj/item/clothing/under/vampire/dragon_ball/bulma
+
+/datum/loadout_item/uniform/tien
+	item_path = /obj/item/clothing/under/vampire/dragon_ball/tien
+
+
+/datum/loadout_item/suit/saiyan
+	item_path = /obj/item/clothing/suit/vampire/dragon_ball/saiyan
+
+/datum/loadout_item/suit/frieza
+	item_path = /obj/item/clothing/suit/vampire/dragon_ball/frieza
+
+/datum/loadout_item/suit/piccolo
+	item_path = /obj/item/clothing/suit/vampire/dragon_ball/piccolo
+
+/datum/loadout_item/suit/bulma
+	item_path = /obj/item/clothing/suit/vampire/dragon_ball/bulma
+
+
+/datum/loadout_item/shoes/saiyan
+	item_path = /obj/item/clothing/shoes/vampire/dragon_ball/saiyan
+
+/datum/loadout_item/shoes/frieza
+	item_path = /obj/item/clothing/shoes/vampire/dragon_ball/frieza
+
+/datum/loadout_item/shoes/piccolo
+	item_path = /obj/item/clothing/shoes/vampire/dragon_ball/piccolo
+
+/datum/loadout_item/shoes/roshi
+	item_path = /obj/item/clothing/shoes/vampire/dragon_ball/roshi
+
+/datum/loadout_item/shoes/bulma
+	item_path = /obj/item/clothing/shoes/vampire/dragon_ball/bulma
+
+/datum/loadout_item/shoes/tien
+	item_path = /obj/item/clothing/shoes/vampire/dragon_ball/tien
+
+
+/datum/loadout_item/hands/saiyan
+	item_path = /obj/item/clothing/gloves/vampire/dragon_ball/saiyan
+
+/datum/loadout_item/hands/frieza
+	item_path = /obj/item/clothing/gloves/vampire/dragon_ball/frieza
+
+/datum/loadout_item/hands/piccolo
+	item_path = /obj/item/clothing/gloves/vampire/dragon_ball/piccolo
+
+/datum/loadout_item/hands/bulma
+	item_path = /obj/item/clothing/gloves/vampire/dragon_ball/bulma
+
+/datum/loadout_item/hands/tien
+	item_path = /obj/item/clothing/gloves/vampire/dragon_ball/tien
+
+
+/datum/loadout_item/head/piccolo
+	item_path = /obj/item/clothing/head/vampire/dragon_ball/piccolo
+
+
+/datum/loadout_item/glasses/roshi
+	item_path = /obj/item/clothing/glasses/vampire/sun/roshi
+
+
+/datum/loadout_item/pocket_items/roshi
+	item_path = /obj/item/storage/backpack/roshi_turtle_shell

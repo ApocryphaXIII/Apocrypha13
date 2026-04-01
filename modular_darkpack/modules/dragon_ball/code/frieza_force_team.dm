@@ -1,12 +1,12 @@
-/datum/ert/darkpack/freiza
+/datum/ert/darkpack/frieza
 	leader_role = /datum/antagonist/ert/darkpack/frieza_force
 	roles = list(/datum/antagonist/ert/darkpack/frieza_force)
-	rename_team = "Freiza Force"
+	rename_team = "Frieza Force"
 	mission = "Take control of this planet for lord Frieza."
-	polldesc = "Freiza Force"
+	polldesc = "Frieza Force"
 
 /datum/antagonist/ert/darkpack/frieza_force
-	name = "Freiza Force"
+	name = "Frieza Force"
 	outfit = /datum/outfit/dragon_ball/frieza
-	role = "Freiza Force"
+	role = "Frieza Force"
 
