@@ -359,6 +359,9 @@
 	if(QDELETED(src) || deletion_queued) // in case one of the above signals deleted the projectile for whatever reason
 		return BULLET_ACT_BLOCK
 
+	if(get_saiyan_splat(target))
+		return BULLET_ACT_BLOCK
+
 	var/turf/target_turf = get_turf(target)
 	if(target == original)
 		impact_x = target.pixel_x + p_x - ICON_SIZE_X / 2
