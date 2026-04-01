@@ -10,6 +10,15 @@
 	)
 	*/
 
+/proc/get_saiyan_splat(mob/character)
+	RETURN_TYPE(/datum/splat/saiyan)
+
+	return character.get_splat(/datum/splat/saiyan)
+
+/*
+	if(SEND_SIGNAL(src, COMSIG_ITEM_HIT_REACT, owner, hitby, attack_text, final_block_chance, damage, attack_type, damage_type) & COMPONENT_HIT_REACTION_BLOCK)
+		return TRUE
+*/
 /datum/splat/saiyan/on_gain()
 	add_power(/datum/action/cooldown/power/saiyan/super_saiyan)
 	add_power(/datum/action/cooldown/power/saiyan/projectile/kamehameha)
@@ -27,9 +36,9 @@
 		new_item.equip_to_best_slot(owner)
 	*/
 
-	owner.st_add_stat_mod(STAT_DEXTERITY, 1, "saiyan")
-	owner.st_add_stat_mod(STAT_STRENGTH, 1, "saiyan")
-	owner.st_add_stat_mod(STAT_STAMINA, 2, "saiyan")
+	owner.st_add_stat_mod(STAT_DEXTERITY, 2, "saiyan")
+	owner.st_add_stat_mod(STAT_STRENGTH, 2, "saiyan")
+	owner.st_add_stat_mod(STAT_STAMINA, 5, "saiyan")
 
 /datum/splat/saiyan/prepare_human_for_preview(mob/living/carbon/human/human)
 	human.set_haircolor("#272621", update = FALSE)
