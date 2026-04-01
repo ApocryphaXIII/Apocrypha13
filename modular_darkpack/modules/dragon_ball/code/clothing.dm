@@ -9,7 +9,7 @@
 	icon = 'modular_darkpack/modules/dragon_ball/icons/gi_clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/dragon_ball/icons/gi_clothing.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/dragon_ball/icons/gi_clothing.dmi')
-	slowdown = 1.1 // Weighted Gi
+	slowdown = 0.2 // Weighted Gi
 
 /obj/item/clothing/gloves/vampire/dragon_ball
 	abstract_type = /obj/item/clothing/gloves/vampire/dragon_ball
