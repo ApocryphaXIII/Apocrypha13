@@ -26,6 +26,12 @@
 
 	ai_controller = /datum/ai_controller/basic_controller/simple/simple_hostile_obstacles
 
+/mob/living/basic/saibamen/death()
+	. = ..()
+	visible_message(span_warning("[src] explodes!"))
+	explosion(src, flame_range = 3, adminlog = FALSE)
+	gib(DROP_ALL_REMAINS)
+
 /obj/item/saibamen_seed
 	name = "saibamen seed"
 	desc = "Can be used to grow a saibamen of a power level of up to 1200 if grown on earth!!"
@@ -62,5 +68,9 @@
 		span_warning("You plant [src] and it quickly starts to grow into a creature."),
 		span_warning("You hear shifting roots and soil.")
 	)
-	new /mob/living/basic/saibamen(interacting_with)
+
+	var/mob/living/carbon/human/human_user = astype(user)
+	human_user?.add_beastmaster_minion(/mob/living/basic/saibamen, interacting_with)
+
 	qdel(src)
+
