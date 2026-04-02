@@ -40,6 +40,8 @@
 	owner.st_add_stat_mod(STAT_STRENGTH, 2, "saiyan")
 	owner.st_add_stat_mod(STAT_STAMINA, 5, "saiyan")
 
+	ADD_TRAIT(owner, TRAIT_NOSOFTCRIT, "saiyan")
+
 	var/datum/martial_art/cqc/carp = new(owner)
 	carp.teach(owner)
 
