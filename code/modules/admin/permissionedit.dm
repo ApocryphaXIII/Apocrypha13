@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(permission_action_types, list(
 				admins_by_rank[composed_rank.name] |= list(stored_key)
 
 		// Then, pull the full list of DB ranks
-		var/datum/db_query/query_extract_ranks = SSdbcore.NewQuery("SELECT rank, flags, exclude_flags, can_edit_flags FROM [format_table_name("admin_ranks")]")
+		var/datum/db_query/query_extract_ranks = SSdbcore.NewQuery("SELECT * FROM [format_table_name("admin_ranks")]")
 		if(!query_extract_ranks.warn_execute())
 			qdel(query_extract_ranks)
 			return
@@ -317,7 +317,7 @@ GLOBAL_LIST_INIT(permission_action_types, list(
 		QDEL_NULL(query_extract_admins)
 
 		// Then, pull the full list of DB ranks to purity check against
-		var/datum/db_query/query_extract_ranks = SSdbcore.NewQuery("SELECT rank, flags, exclude_flags, can_edit_flags FROM [format_table_name("admin_ranks")]")
+		var/datum/db_query/query_extract_ranks = SSdbcore.NewQuery("SELECT * FROM [format_table_name("admin_ranks")]")
 		if(!query_extract_ranks.warn_execute())
 			qdel(query_extract_ranks)
 			return
