@@ -44,6 +44,17 @@
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"at" = (
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 6;
+	pixel_x = -26;
+	pixel_y = -12
+	},
+/obj/structure/railing/darkpack/wood{
+	dir = 9
+	},
+/turf/open/misc/beach/vamp,
+/area/vtm/outside/forest/sept)
 "aw" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt/corner{
@@ -419,10 +430,10 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "dr" = (
-/obj/structure/chair/sofa/bench{
+/obj/effect/turf_decal/darkpack/grass,
+/obj/structure/chair/sofa/city_bench/wood{
 	dir = 1
 	},
-/obj/effect/turf_decal/darkpack/grass,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "ds" = (
@@ -601,6 +612,12 @@
 /obj/effect/turf_decal/bordur/inverse,
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest)
+"eR" = (
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 9
+	},
+/turf/open/misc/beach/vamp,
+/area/vtm/outside/forest/sept)
 "eV" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 10
@@ -692,14 +709,11 @@
 /turf/open/floor/plating/rough/cave,
 /area/vtm/outside/forest/sept)
 "fY" = (
-/obj/structure/railing{
-	dir = 8
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 5;
+	pixel_x = -26
 	},
-/obj/structure/closet/crate/grave/fancy,
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/open/misc/dirt,
+/turf/open/misc/beach/vamp,
 /area/vtm/outside/forest/sept)
 "fZ" = (
 /obj/effect/decal/pallet,
@@ -741,6 +755,11 @@
 "gf" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 10
+	},
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 10;
+	pixel_x = -6;
+	pixel_y = -12
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest/sept)
@@ -1175,10 +1194,10 @@
 /turf/open/genturf,
 /area/vtm/planetgeneration)
 "kX" = (
-/obj/structure/chair/sofa/bench/right{
+/obj/effect/turf_decal/darkpack/grass,
+/obj/structure/chair/sofa/city_bench/wood/right{
 	dir = 1
 	},
-/obj/effect/turf_decal/darkpack/grass,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "ld" = (
@@ -1560,9 +1579,9 @@
 /turf/open/floor/wood/old,
 /area/vtm/interior/forest)
 "oB" = (
-/obj/structure/closet/crate/grave/fancy,
-/obj/structure/railing{
-	dir = 8
+/obj/structure/railing/wooden_fence{
+	dir = 8;
+	pixel_x = -2
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
@@ -2043,8 +2062,9 @@
 /area/vtm/planetgeneration)
 "sz" = (
 /obj/structure/closet/crate/grave/fancy,
-/obj/structure/railing{
-	dir = 4
+/obj/structure/railing/wooden_fence{
+	dir = 8;
+	pixel_x = -2
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
@@ -2242,7 +2262,6 @@
 /obj/structure/table/countertop/bubway,
 /obj/structure/sink/directional/north{
 	icon_state = "basin";
-	pixel_x = 0;
 	pixel_y = -5
 	},
 /obj/item/rag{
@@ -2293,10 +2312,10 @@
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "uh" = (
-/obj/structure/chair/sofa/bench/left{
+/obj/effect/turf_decal/darkpack/grass,
+/obj/structure/chair/sofa/city_bench/wood/left{
 	dir = 1
 	},
-/obj/effect/turf_decal/darkpack/grass,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "ui" = (
@@ -2434,7 +2453,7 @@
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
 "vC" = (
-/obj/structure/railing{
+/obj/structure/railing/darkpack/wood{
 	dir = 5
 	},
 /turf/open/misc/beach/vamp,
@@ -2920,7 +2939,6 @@
 /area/vtm/planetgeneration)
 "zI" = (
 /obj/effect/decal/garou_glyph/toxic{
-	pixel_x = 0;
 	pixel_y = -1
 	},
 /turf/open/misc/grass/random,
@@ -3357,6 +3375,16 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
+"Dl" = (
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 9;
+	pixel_x = -6
+	},
+/obj/structure/railing/darkpack/wood{
+	dir = 6
+	},
+/turf/open/misc/beach/vamp,
+/area/vtm/outside/forest/sept)
 "Dm" = (
 /obj/structure/glowshroom,
 /obj/effect/decal/remains/human,
@@ -3378,7 +3406,7 @@
 /turf/open/genturf,
 /area/vtm/planetgeneration)
 "Dr" = (
-/obj/structure/chair/sofa/bench/left{
+/obj/structure/chair/sofa/city_bench/wood/left{
 	dir = 1
 	},
 /turf/open/misc/dirt,
@@ -3642,7 +3670,7 @@
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
 "Gm" = (
-/obj/structure/railing{
+/obj/structure/railing/darkpack/wood{
 	dir = 6
 	},
 /turf/open/misc/beach/vamp,
@@ -3925,6 +3953,12 @@
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest)
+"IL" = (
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 5
+	},
+/turf/open/misc/beach/vamp,
+/area/vtm/outside/forest/sept)
 "IN" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 6
@@ -4004,7 +4038,7 @@
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
 "JK" = (
-/obj/structure/railing{
+/obj/structure/railing/darkpack/wood{
 	dir = 10
 	},
 /turf/open/misc/beach/vamp,
@@ -4167,8 +4201,11 @@
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest)
 "Lv" = (
-/obj/structure/railing{
+/obj/structure/railing/darkpack/wood{
 	dir = 9
+	},
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 10
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest/sept)
@@ -4262,6 +4299,15 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"Ml" = (
+/obj/structure/railing/darkpack/wood{
+	dir = 5
+	},
+/obj/structure/railing/darkpack/wood/ending{
+	dir = 6
+	},
+/turf/open/misc/beach/vamp,
+/area/vtm/outside/forest/sept)
 "Mm" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 10
@@ -4743,7 +4789,7 @@
 /turf/open/genturf,
 /area/vtm/planetgeneration)
 "Qv" = (
-/obj/structure/railing,
+/obj/structure/railing/darkpack/wood,
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest/sept)
 "Qy" = (
@@ -4853,7 +4899,6 @@
 	},
 /obj/effect/turf_decal/bordur,
 /obj/structure/city_map{
-	pixel_x = 0;
 	pixel_y = 9
 	},
 /turf/open/floor/plating/rough/cave,
@@ -4982,8 +5027,7 @@
 "Sz" = (
 /obj/structure/bonfire/prelit{
 	pixel_y = -24;
-	density = 1;
-	pixel_x = 0
+	density = 1
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
@@ -5263,11 +5307,11 @@
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "UU" = (
-/obj/structure/chair/sofa/bench{
-	dir = 1
-	},
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 8
+	},
+/obj/structure/chair/sofa/city_bench/wood{
+	dir = 1
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
@@ -5552,9 +5596,8 @@
 /turf/open/genturf,
 /area/vtm/planetgeneration)
 "Yd" = (
-/obj/structure/railing{
-	dir = 1;
-	pixel_y = 4
+/obj/structure/railing/darkpack/wood{
+	dir = 1
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest/sept)
@@ -7998,7 +8041,7 @@ Vj
 EH
 EH
 Bm
-oB
+sz
 Rc
 ny
 LP
@@ -8196,7 +8239,7 @@ Vj
 EH
 lZ
 zz
-fY
+sz
 FD
 ny
 LP
@@ -8592,7 +8635,7 @@ Vj
 EH
 EH
 RO
-Rc
+oB
 Rc
 Rc
 ny
@@ -9976,7 +10019,7 @@ EH
 Lv
 mf
 mf
-mf
+eR
 JK
 nm
 fD
@@ -10170,12 +10213,12 @@ sm
 sm
 Vj
 EH
-Lv
+at
 mf
 mf
 iA
 mf
-mf
+fY
 JK
 Vw
 kX
@@ -12349,11 +12392,11 @@ EH
 EH
 YF
 gf
-vC
+Ml
 mf
 mf
-mf
-Gm
+IL
+Dl
 UC
 KH
 Rc
