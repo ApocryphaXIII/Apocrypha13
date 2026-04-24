@@ -78,7 +78,7 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 		if(!(shifter_splat?.tribe?.name in allowed_tribes))
 			return FALSE
 
-	if(allowed_jobs && !(is_type_in_list(role, allowed_jobs)))
+	if(allowed_jobs && !(is_type_in_list(user.job, allowed_jobs)))
 		return FALSE
 
 	return TRUE
