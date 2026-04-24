@@ -16,14 +16,16 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 	// If not 0, must have at least this much athletics to pass.
 	var/minimum_athletics = 0
 	// Lists for determining who is allowed to use the shortcut
-	var/allowed_species
-	var/allowed_bloodlines
-	var/allowed_tribes
-	var/allowed_jobs
-	var/anyone_can_enter
+	/// Type path of allowed splat
+	var/allowed_splat
+	/// List of names for allowed kindred clans
+	var/list/allowed_clans
+	/// List of names for allowed fera tribes
+	var/list/allowed_tribes
+	/// List of typepaths for allowed jobs
+	var/list/datum/job/allowed_jobs
 
-/*
-/obj/agility_shortcut/Initialize() // Evil copypaste of transferpoint code
+/obj/agility_shortcut/Initialize(mapload) // Evil copypaste of transferpoint code
 	. = ..()
 	if(!exit)
 		if(isnum(id))
@@ -37,12 +39,18 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 				GLOB.unallocated_agility_shortcuts -= src
 				break
 
-/obj/agility_shortcut/attack_hand(mob/living/user)
+/obj/agility_shortcut/attack_hand(mob/user)
+	if(isliving(user))
+		try_travel(user)
+	else
+		user.forceMove(get_turf(exit))
+
+/obj/agility_shortcut/proc/try_travel(mob/living/user)
 	var/time
 	if(scale_with_distance)
 		var/distance_mod = round(get_dist(src, exit) * 2, 10)
 		time = base_timer + distance_mod
-		var/user_power = user.get_total_athletics()
+		var/user_power = user.st_get_stat(STAT_ATHLETICS)
 		time = base_timer - (user_power*10)
 
 	if(validate_allowance(user))
@@ -54,31 +62,26 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 		to_chat(user, span_warning("No way I'm crawling in there."))
 
 /obj/agility_shortcut/proc/validate_allowance(mob/living/user)
-	if(anyone_can_enter)
-		return TRUE
-
-	if(minimum_athletics && (minimum_athletics > user.get_total_athletics()))
+	if(minimum_athletics && (minimum_athletics > user.st_get_stat(STAT_ATHLETICS)))
 		return FALSE
 
-	if(ishuman(user))
-		var/mob/living/carbon/human/mover = user
-		if(mover.dna.species in allowed_species)
-			return TRUE
+	if(allowed_splat && !user.get_splat(allowed_splat))
+		return FALSE
 
-		if(mover.clan in allowed_bloodlines)
-			return TRUE
+	if(allowed_clans)
+		var/datum/splat/vampire/kindred/kindred_splat = get_kindred_splat(user)
+		if(!(kindred_splat?.clan?.name in allowed_clans))
+			return FALSE
 
-		if(mover.auspice.tribe.name in allowed_tribes)
-			return TRUE
+	if(allowed_tribes)
+		var/datum/splat/werewolf/shifter/shifter_splat = get_shifter_splat(user)
+		if(!(shifter_splat?.tribe?.name in allowed_tribes))
+			return FALSE
 
-	if("Werewolf" in allowed_species && (isgarou(user) || iswerewolf(user)))
-		return TRUE
+	if(allowed_jobs && !(is_type_in_list(role, allowed_jobs)))
+		return FALSE
 
-	if(user.job in allowed_jobs)
-		return TRUE
-
-	return FALSE
-*/
+	return TRUE
 
 ////* And now, for the subtypes. *////
 
@@ -100,4 +103,3 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 
 /obj/agility_shortcut/anyone
 	desc = "You could probably fit in there. Want to find out?"
-	anyone_can_enter = TRUE
