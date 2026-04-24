@@ -31926,7 +31926,7 @@
 /area/vtm/interior/apartment)
 "spq" = (
 /obj/structure/platform/lowwall/city/window,
-/turf/open/space/basic,
+/turf/open/floor/plating/rough,
 /area/vtm/interior/smoke)
 "spD" = (
 /obj/structure/platform/lowwall/rich/window,
@@ -33856,7 +33856,7 @@
 /area/vtm/outside/pacificheights)
 "ttj" = (
 /obj/structure/platform/lowwall/city/window,
-/turf/open/space/basic,
+/turf/open/floor/plating/rough,
 /area/vtm/interior/church)
 "ttn" = (
 /obj/effect/turf_decal/siding/white{
