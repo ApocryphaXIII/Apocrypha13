@@ -12,7 +12,7 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 	// If false, scales with athletics
 	var/scale_with_distance = FALSE
 	// Default do_after timer. A value of 60 takes a 5 athletics character 1 second to enter.
-	var/base_timer = 80
+	var/base_timer = 8 SECONDS
 	// If not 0, must have at least this much athletics to pass.
 	var/minimum_athletics = 0
 	// Lists for determining who is allowed to use the shortcut
