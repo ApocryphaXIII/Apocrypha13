@@ -39,6 +39,10 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 				GLOB.unallocated_agility_shortcuts -= src
 				break
 
+/obj/agility_shortcut/Destroy(force)
+	. = ..()
+	GLOB.unallocated_agility_shortcuts -= src
+
 /obj/agility_shortcut/attack_hand(mob/user)
 	if(isliving(user))
 		try_travel(user)
