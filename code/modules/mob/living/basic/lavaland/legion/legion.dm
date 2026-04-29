@@ -164,7 +164,7 @@
 	pixel_x = -16
 	sentience_type = SENTIENCE_BOSS
 	has_emissive = FALSE
-	var/spawn_type = /mob/living/basic/mining/legion
+	var/spawn_type = /mob/living/basic/mining/legion // APOC EDIT ADD - (Gray masses)
 
 /mob/living/basic/mining/legion/large/Initialize(mapload)
 	. = ..()
@@ -175,7 +175,7 @@
 		max_spawned = 3,\
 		spawn_text = "peels itself off from",\
 		faction = faction,\
-	)
+	) // APOC EDIT CHANGE - (Gray masses)
 
 /// Create what we want to drop on death, in proc form so we can always return a static list
 /mob/living/basic/mining/legion/large/get_loot_list()

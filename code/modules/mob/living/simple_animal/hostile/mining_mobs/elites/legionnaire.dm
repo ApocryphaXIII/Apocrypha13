@@ -53,7 +53,7 @@
 	/// Whether or not the legionnaire is currently charging, used to deny movement input if he is
 	var/charging = FALSE
 
-	var/bonfire_type = /obj/structure/legionnaire_bonfire // APOC EDIT ADD - Gray masses support
+	var/bonfire_type = /obj/structure/legionnaire_bonfire // APOC EDIT ADD - (Gray masses)
 
 /datum/action/innate/elite_attack/legionnaire_charge
 	name = "Legionnaire Charge"

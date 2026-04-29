@@ -22,7 +22,7 @@
 #define LEGION_SMALL 1
 
 /mob/living/simple_animal/hostile/megafauna/legion
-	name = "gray mass ultraspore" // APOC EDIT CHANGE
+	name = "gray mass ultraspore" // APOC EDIT CHANGE - (Gray masses)
 	health = 700
 	maxHealth = 700
 	icon_state = "mega_legion"
@@ -38,20 +38,20 @@
 	armour_penetration = 50
 	melee_damage_lower = 25
 	melee_damage_upper = 25
-	mob_biotypes = MOB_ORGANIC|MOB_SPECIAL // APOC EDIT CHANGE
+	mob_biotypes = MOB_ORGANIC|MOB_SPECIAL // APOC EDIT CHANGE - (Gray masses)
 	speed = 5
 	ranged = TRUE
 	del_on_death = TRUE
 	retreat_distance = 5
 	minimum_distance = 5
 	ranged_cooldown_time = 2 SECONDS
-	gps_name = "Putrid Signal" // APOC EDIT CHANGE
+	gps_name = "Putrid Signal" // APOC EDIT CHANGE - (Gray masses)
 	// Achievements not set as they're added only when the last skull is killed
 	crusher_achievement_type = /datum/award/achievement/boss/legion_crusher
 	SET_BASE_PIXEL(-32, -16)
 	maptext_height = 96
 	maptext_width = 96
-	loot = list(/obj/effect/spawner/random/occult/artifact = 3) // APOC EDIT CHANGE
+	loot = list(/obj/effect/spawner/random/occult/artifact = 3) // APOC EDIT CHANGE - (Gray masses)
 	vision_range = 13
 	wander = FALSE
 	appearance_flags = LONG_GLIDE

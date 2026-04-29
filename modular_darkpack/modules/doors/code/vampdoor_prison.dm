@@ -2,7 +2,7 @@
 	name = "security door"
 	icon_state = "prison-1"
 	base_icon_state = "prison"
-	opacity = FALSE
+	opacity = FALSE // APOC EDIT ADD
 	bash_difficulty = 8
 	bash_successes_needed = 5
 	lockpick_difficulty = 8

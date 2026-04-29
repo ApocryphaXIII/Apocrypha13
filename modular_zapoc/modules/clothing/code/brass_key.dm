@@ -9,8 +9,8 @@
 	righthand_file = 'modular_zapoc/modules/clothing/icons/brass_key_righthand.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
-	// pickup_sound = 'sound/items/handling/crowbar_pickup.ogg'
-	// drop_sound = 'sound/items/handling/crowbar_drop.ogg'
+	drop_sound = 'sound/items/handling/tools/crowbar_drop.ogg'
+	pickup_sound = 'sound/items/handling/tools/crowbar_pickup.ogg'
 	// grid_width = 6 GRID_BOXES
 	// grid_height = 6 GRID_BOXES
 	throw_range = 1

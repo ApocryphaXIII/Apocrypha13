@@ -30,9 +30,9 @@
 
 /// A basic turret that shoots at nearby mobs. Intended to be used for the legion megafauna.
 /obj/structure/legionturret
-	name = "gray masses sentinel"  // APOC EDIT CHANGE
+	name = "gray masses sentinel"  // APOC EDIT CHANGE - (Gray masses)
 	desc = "The eye pierces your soul."
-	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi' // APOC EDIT CHANGE
+	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi' // APOC EDIT CHANGE - (Gray masses)
 	icon_state = "legion_turret"
 	light_power = 0.5
 	light_range = 2
@@ -78,7 +78,7 @@
 		return
 	//Now we generate the tracer.
 	var/angle = get_angle(our_turf, target_turf)
-	our_turf.Beam(target_turf, 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi', "blood_light", time = shot_delay)
+	our_turf.Beam(target_turf, 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi', "blood_light", time = shot_delay) // APOC EDIT CHANGE - (Gray masses)
 	playsound(src, 'sound/machines/airlock/airlockopen.ogg', 100, TRUE)
 	addtimer(CALLBACK(src, PROC_REF(fire_beam), angle), shot_delay)
 
@@ -107,5 +107,5 @@
 
 /// Used for the legion turret beam.
 /obj/effect/projectile/tracer/legion
-	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi' // APOC EDIT CHANGE
+	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi' // APOC EDIT CHANGE - (Gray masses)
 	icon_state = "blood"

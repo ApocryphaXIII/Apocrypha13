@@ -28,8 +28,8 @@
 		/mob/living/simple_animal/hostile/asteroid/elite/herald/mirror,
 		/mob/living/simple_animal/hostile/asteroid/elite/legionnaire,
 		/mob/living/simple_animal/hostile/asteroid/elite/legionnairehead,
-		/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/gray_masses, // APOC EDIT ADD START
-		/mob/living/simple_animal/hostile/asteroid/elite/legionnairehead/gray_masses, // APOC EDIT ADD END
+		/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/gray_masses, // APOC EDIT ADD START - (Gray masses)
+		/mob/living/simple_animal/hostile/asteroid/elite/legionnairehead/gray_masses, // APOC EDIT ADD END - (Gray masses)
 		/mob/living/simple_animal/hostile/asteroid/elite/pandora,
 		/mob/living/simple_animal/hostile/asteroid/polarbear,
 		/mob/living/simple_animal/hostile/asteroid/polarbear/lesser,
