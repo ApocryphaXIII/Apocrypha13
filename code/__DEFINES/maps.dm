@@ -263,3 +263,4 @@ Always compile, always use that verb, and always make sure that it works for wha
 #define MINETYPE_NONE "none"
 #define MINETYPE_LAVALAND "lavaland"
 #define MINETYPE_ICE "ice"
+#define MINETYPE_UMBRA_AND_EXTRA "umbra_and_extra" // APOC EDIT ADD - (Special Fran)

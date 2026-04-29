@@ -107,5 +107,5 @@
 
 /// Used for the legion turret beam.
 /obj/effect/projectile/tracer/legion
-	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi'  // APOC EDIT CHANGE
+	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi' // APOC EDIT CHANGE
 	icon_state = "blood"

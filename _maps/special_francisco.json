@@ -87,6 +87,7 @@
 			"total_positions": 0
 		}
 	},
+	"minetype": "umbra_and_extra",
 	"max_npcs": 60,
 	"umbra_map_path": "map_files/Vampire/special_fran",
 	"umbra_map_file": "special_fran_umbra.dmm"
