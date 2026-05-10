@@ -17012,7 +17012,7 @@
 "jQQ" = (
 /obj/structure/table/modern,
 /obj/effect/turf_decal/siding/white/end,
-/obj/item/vtm_artifact/heart_of_eliza{
+/obj/item/occult_artifact/vampire/heart_of_eliza{
 	anchored = 1
 	},
 /turf/open/floor/plating/granite/black,
@@ -33397,7 +33397,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/obj/item/vtm_artifact/fae_charm{
+/obj/item/occult_artifact/vampire/fae_charm{
 	anchored = 1
 	},
 /turf/open/floor/plating/granite/black,
