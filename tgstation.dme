@@ -7904,6 +7904,7 @@
 #include "modular_zapoc\modules\gray_masses\code\tall_gray_man.dm"
 #include "modular_zapoc\modules\items\code\keys.dm"
 #include "modular_zapoc\modules\jobs\code\_departments.dm"
+#include "modular_zapoc\modules\jobs\code\landmarks.dm"
 #include "modular_zapoc\modules\jobs\code\ocean76\76er.dm"
 #include "modular_zapoc\modules\jobs\code\ocean76\76er_boss.dm"
 #include "modular_zapoc\modules\mapping\code\corpses.dm"
