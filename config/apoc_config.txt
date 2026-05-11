@@ -1,0 +1,2 @@
+## NICE images for COOL discord users, seperated by commas i.e. BITE_IMG_LIST http://url/image.gif, http://url/image.png
+# BITE_IMG_LIST

@@ -151,7 +151,11 @@ SUBSYSTEM_DEF(ticker)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
 			to_chat(world, span_notice("<b>Welcome to [station_name()]!</b>"))
 			for(var/channel_tag in CONFIG_GET(str_list/channel_announce_new_game))
-				send2chat(new /datum/tgs_message_content("New round starting on [SSmapping.current_map.map_name]!"), channel_tag)
+				if(SSticker.GetTimeLeft() == -10) // APOC EDIT CHANGE START - DISCORD
+					send2chat(new /datum/tgs_message_content("New round delayed. Thanks for playing Apocrypha XIII!"), channel_tag) // APOC EDIT CHANGE
+				else
+					send2chat(new /datum/tgs_message_content("<@&1474327242510303336> New round starting on [SSmapping.config.map_name]!"), channel_tag)
+				// APOC EDIT CHANGE END
 			current_state = GAME_STATE_PREGAME
 			SEND_SIGNAL(src, COMSIG_TICKER_ENTER_PREGAME)
 
