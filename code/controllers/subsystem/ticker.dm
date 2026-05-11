@@ -154,7 +154,7 @@ SUBSYSTEM_DEF(ticker)
 				if(SSticker.GetTimeLeft() == -10) // APOC EDIT CHANGE START - DISCORD
 					send2chat(new /datum/tgs_message_content("New round delayed. Thanks for playing Apocrypha XIII!"), channel_tag) // APOC EDIT CHANGE
 				else
-					send2chat(new /datum/tgs_message_content("<@&1474327242510303336> New round starting on [SSmapping.config.map_name]!"), channel_tag)
+					send2chat(new /datum/tgs_message_content("<@&1474327242510303336> New round starting on [station_name()]!"), channel_tag)
 				// APOC EDIT CHANGE END
 			current_state = GAME_STATE_PREGAME
 			SEND_SIGNAL(src, COMSIG_TICKER_ENTER_PREGAME)
