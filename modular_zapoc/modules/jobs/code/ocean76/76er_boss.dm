@@ -4,7 +4,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Arch"
-	config_tag = "OCEAN76"
+	config_tag = "OCEAN76BOSS"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/ocean
 
