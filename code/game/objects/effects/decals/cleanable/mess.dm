@@ -22,8 +22,10 @@
 	pixel_x = base_pixel_x + rand(-5, 5)
 	pixel_y = base_pixel_y + rand(-5, 5)
 
+// DARKPACK EDIT CHANGE START
 /obj/effect/decal/cleanable/ash/NeverShouldHaveComeHere(turf/here_turf)
-	return !istype(here_turf, /obj/structure/bodycontainer/crematorium) && ..()
+	return isclosedturf(here_turf)
+// DARKPACK EDIT CHANGE END
 
 /obj/effect/decal/cleanable/ash/large
 	name = "large pile of ashes"
