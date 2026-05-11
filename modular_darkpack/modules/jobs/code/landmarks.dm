@@ -140,4 +140,13 @@ JOB_START_HELPER(voivode/voivode, JOB_VOIVODE)
 JOB_START_HELPER(voivode/bogatyr, JOB_BOGATYR)
 JOB_START_HELPER(voivode/zadruga, JOB_ZADRUGA)
 
+// APOC EDIT ADD START - JOBS - Ocean 76
+/* Ocean 76ers */
+/obj/effect/landmark/start/darkpack/ocean
+	name = "generic gang member start"
+
+JOB_START_HELPER(ocean/boss, JOB_OCEAN_76_BOSS)
+JOB_START_HELPER(ocean/ganger, JOB_OCEAN_76_GANGER)
+//APOC EDIT ADD END
+
 #undef JOB_START_HELPER

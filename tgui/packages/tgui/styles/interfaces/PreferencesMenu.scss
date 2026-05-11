@@ -30,7 +30,9 @@ $department_map: (
   'Citizen': var(--color-light-grey),
   'City_Services': var(--color-white),
   'Garou_Nation': var(--color-olive),
-  'Pentex': var(--color-green), // DARKPACK EDIT ADD END
+  'Pentex': var(--color-green),
+  // DARKPACK EDIT ADD END
+  'Ocean_76': hsl(195.27, 22.82%, 47.25%), // APOC EDIT ADD START - JOBS - Ocean 76
 );
 
 .ChoicedSelection {
