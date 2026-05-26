@@ -16093,7 +16093,9 @@
 	},
 /area/vtm/interior/voivodate/sanctum)
 "jtg" = (
-/obj/modular_map_root/special_fran,
+/obj/modular_map_root/special_fran{
+	key = "sewer"
+	},
 /turf/closed/wall/vampwall/brick_old,
 /area/vtm/interior/sewer)
 "jtD" = (
@@ -50310,29 +50312,29 @@ uHD
 hxj
 lFH
 hxj
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
-uHD
 jtg
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
+uHD
 uHD
 uHD
 uHD

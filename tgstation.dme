@@ -20,6 +20,9 @@
 // BEGIN_INCLUDE
 #include "__odlint.dm"
 #include "_maps\_basemap.dm"
+#include "_maps\map_files\Vampire\special_fran\modules\sewer3.dmm"
+#include "_maps\map_files\Vampire\special_fran\modules\sewer4.dmm"
+#include "_maps\map_files\Vampire\special_fran\modules\sewer5.dmm"
 #include "code\__byond_version_compat.dm"
 #include "code\_compile_options.dm"
 #include "code\_experiments.dm"

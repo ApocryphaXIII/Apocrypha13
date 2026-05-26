@@ -12,6 +12,14 @@
 /obj/item/gas_can,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
+"cn" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"cv" = (
+/obj/effect/spawner/random/trash/cigbutt,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
 "cT" = (
 /obj/effect/spawner/random/flora/rocks,
 /turf/open/floor/plating/rough/cave,
@@ -30,6 +38,11 @@
 /obj/effect/mapping_helpers/door/lock,
 /obj/effect/mapping_helpers/door/access/npc,
 /turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"eW" = (
+/obj/effect/decal/pallet,
+/obj/item/grenade/firecracker,
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
 "fF" = (
 /obj/effect/decal/pallet,
@@ -71,6 +84,11 @@
 /obj/structure/cable,
 /turf/open/floor/plating/stone,
 /area/vtm/interior/sewer)
+"hN" = (
+/obj/machinery/light/small/directional/north,
+/obj/effect/spawner/random/trash,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
 "iu" = (
 /obj/effect/spawner/random/medical/surgery_tool,
 /obj/effect/spawner/random/medical/surgery_tool,
@@ -95,12 +113,16 @@
 	pixel_x = -7;
 	pixel_y = 5
 	},
+/obj/machinery/light/small/directional/west,
+/obj/item/ammo_box/darkpack/c44{
+	pixel_x = 8;
+	pixel_y = 1
+	},
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
 "lf" = (
 /obj/item/gun/ballistic/automatic/pistol/darkpack/deagle,
 /obj/item/ammo_box/magazine/m44,
-/obj/item/ammo_box/darkpack/c44,
 /obj/item/ammo_box/magazine/m44,
 /obj/structure/closet/cabinet,
 /turf/open/floor/plating/rough/cave,
@@ -153,9 +175,15 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
+"qk" = (
+/obj/effect/decal/pallet,
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
 "qY" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/methdealer,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
 "rB" = (
@@ -187,6 +215,10 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
+"vN" = (
+/obj/effect/spawner/random/trash/grime,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
 "xe" = (
 /obj/effect/decal/pallet,
 /obj/effect/spawner/random/structure/closet_empty/crate,
@@ -204,6 +236,10 @@
 "zv" = (
 /mob/living/basic/szlachta/hostile,
 /turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Ae" = (
+/obj/machinery/light/small/dim/directional/east,
+/turf/open/floor/plating/canalplating,
 /area/vtm/interior/sewer)
 "AB" = (
 /obj/effect/decal/cleanable/rubble,
@@ -284,6 +320,16 @@
 /obj/effect/spawner/random/engineering/tank,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
+"MB" = (
+/obj/modular_map_connector,
+/turf/template_noop,
+/area/template_noop)
+"NT" = (
+/obj/structure/ladder/manhole/up{
+	requires_friend = 0
+	},
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
 "Og" = (
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/sewer)
@@ -340,8 +386,17 @@
 /obj/structure/barricade/wooden/crude,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
+"Wd" = (
+/mob/living/basic/szlachta/tanker/hostile,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
 "Wf" = (
 /obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Wg" = (
+/obj/effect/decal/cleanable/gasoline,
+/obj/effect/decal/cleanable/rubble,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
 "Xh" = (
@@ -359,8 +414,8 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
 "Ya" = (
-/mob/living/basic/szlachta/tanker/hostile,
-/turf/open/floor/plating/rough/cave,
+/obj/effect/decal/cleanable/trash,
+/turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
 "YS" = (
 /obj/effect/gibspawner/human/bodypartless,
@@ -379,7 +434,7 @@
 /area/vtm/interior/sewer)
 
 (1,1,1) = {"
-VK
+MB
 VK
 AY
 AY
@@ -412,7 +467,7 @@ By
 By
 By
 By
-By
+Ya
 AY
 lf
 kd
@@ -549,8 +604,8 @@ Ty
 Uu
 Og
 Og
-Og
-Og
+VK
+VK
 VK
 "}
 (8,1,1) = {"
@@ -576,7 +631,7 @@ Og
 Og
 Og
 Og
-VK
+Og
 "}
 (9,1,1) = {"
 VK
@@ -595,13 +650,13 @@ Og
 KW
 ad
 Ty
-Ty
+iD
 Og
 Og
+NT
 Ty
 Ty
 Og
-VK
 "}
 (10,1,1) = {"
 VK
@@ -612,7 +667,7 @@ AY
 al
 By
 By
-DA
+qk
 By
 By
 Og
@@ -624,9 +679,9 @@ Og
 Og
 AB
 gt
+Er
 Ty
 Og
-VK
 "}
 (11,1,1) = {"
 VK
@@ -636,7 +691,7 @@ VK
 AY
 iu
 By
-By
+Ya
 Hh
 fF
 By
@@ -647,10 +702,10 @@ Og
 ne
 KW
 Og
-gt
+Wd
 Ty
 Ty
-Og
+Ty
 Og
 "}
 (12,1,1) = {"
@@ -672,10 +727,10 @@ ad
 Ty
 gt
 Og
-Ya
-Ty
-Ty
-gt
+Og
+Wg
+Og
+AB
 Og
 "}
 (13,1,1) = {"
@@ -699,7 +754,7 @@ gt
 ye
 my
 Ty
-gt
+RY
 nW
 Og
 "}
@@ -720,7 +775,7 @@ VK
 Og
 ad
 gt
-gt
+cv
 ye
 mH
 Ty
@@ -744,7 +799,7 @@ Og
 VK
 Og
 ad
-gt
+cv
 iD
 Og
 cT
@@ -762,7 +817,7 @@ AY
 By
 By
 Uj
-By
+cn
 By
 By
 Og
@@ -805,7 +860,7 @@ Og
 "}
 (18,1,1) = {"
 Lo
-Lo
+Ae
 eq
 ZT
 By
@@ -834,7 +889,7 @@ EX
 AY
 By
 By
-By
+cn
 By
 By
 DA
@@ -860,17 +915,17 @@ AY
 AY
 AY
 AY
-By
+hN
 By
 xe
 AY
 Og
 Og
+vN
 gt
 gt
 gt
-gt
-Ty
+eW
 Ty
 Ty
 Og
