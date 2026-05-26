@@ -1,0 +1,5 @@
+directory = "_maps/map_files/Vampire/special_fran/modules/"
+
+
+[rooms.sewer]
+modules = ["sewer_1.dmm", "sewer_2.dmm", "sewer_3.dmm"]
