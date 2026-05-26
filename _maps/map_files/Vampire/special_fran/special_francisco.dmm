@@ -5342,6 +5342,11 @@
 /obj/structure/closet/crate/dumpster,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/chinatown)
+"ddf" = (
+/obj/structure/table/reinforced/ctf,
+/obj/lombard/blackmarket,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
 "ddq" = (
 /obj/effect/turf_decal/siding/white,
 /obj/structure/vampdoor/old,
@@ -6109,7 +6114,6 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced/ctf,
-/obj/lombard/blackmarket,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
 "dDV" = (
@@ -9914,7 +9918,6 @@
 	dir = 9
 	},
 /obj/structure/chair/sofa/corp/left{
-	alpha = 225;
 	dir = 4;
 	color = "#CD5C5C"
 	},
@@ -18363,7 +18366,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#4a3925"
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1;
 	color = "#CD5C5C"
 	},
@@ -19543,6 +19546,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/plating/canal,
 /area/vtm/interior/sewer)
 "lxo" = (
@@ -20780,8 +20784,9 @@
 /area/vtm/interior/ghetto)
 "mlT" = (
 /obj/effect/turf_decal/bordur/corner,
-/obj/structure/vampfence/rich{
-	dir = 4
+/obj/structure/vampfence/corner/rich{
+	dir = 8;
+	icon_state = "fence_end"
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/park)
@@ -32602,7 +32607,6 @@
 /area/vtm/interior/apartment)
 "sTS" = (
 /obj/structure/chair/sofa/corp/left{
-	alpha = 225;
 	dir = 4;
 	color = "#CD5C5C"
 	},
@@ -34581,7 +34585,6 @@
 /area/vtm/interior/church/staff)
 "tXE" = (
 /obj/structure/chair/sofa/corp/left{
-	alpha = 225;
 	dir = 4
 	},
 /turf/open/floor/city/plating,
@@ -37973,7 +37976,6 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/machinery/light/small/red/directional/south,
 /turf/open/water/vamp_sewer,
 /area/vtm/interior/sewer)
 "wco" = (
@@ -39673,8 +39675,9 @@
 /obj/effect/turf_decal/bordur/corner{
 	dir = 4
 	},
-/obj/structure/vampfence/rich{
-	dir = 4
+/obj/structure/vampfence/corner/rich{
+	dir = 4;
+	icon_state = "fence_end"
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/park)
@@ -48717,7 +48720,7 @@ uHD
 uHD
 mUY
 dDN
-xrc
+ddf
 uHD
 uHD
 uHD

@@ -175,6 +175,11 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
+"pW" = (
+/obj/structure/closet/crate/coffin,
+/obj/item/reagent_containers/cup/silver_goblet,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
 "qk" = (
 /obj/effect/decal/pallet,
 /obj/machinery/light/small/directional/west,
@@ -679,7 +684,7 @@ Og
 Og
 AB
 gt
-Er
+pW
 Ty
 Og
 "}

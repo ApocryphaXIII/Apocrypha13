@@ -17,6 +17,13 @@
 	dir = 8
 	},
 /area/vtm/interior/sewer)
+"dU" = (
+/mob/living/carbon/human/npc/bandit{
+	hostile = 1;
+	aggressive = 1
+	},
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
 "ex" = (
 /turf/open/floor/plating/stone,
 /area/vtm/interior/sewer)
@@ -26,6 +33,18 @@
 /area/vtm/interior/sewer)
 "iu" = (
 /turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"jA" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/turf/open/floor/plating/stone,
 /area/vtm/interior/sewer)
 "nh" = (
 /turf/open/floor/plating/rough/cave,
@@ -58,6 +77,10 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
+"zP" = (
+/obj/structure/methlab/movable,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
 "AG" = (
 /obj/structure/platform/lowwall/brick_old,
 /obj/item/reagent_containers/cup/glass/bottle/beer/vampire{
@@ -84,6 +107,14 @@
 "EC" = (
 /turf/open/water/vamp_sewer/border,
 /area/vtm/interior/sewer)
+"Fd" = (
+/obj/effect/spawner/random/structure/shipping_container,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Gq" = (
+/obj/effect/spawner/random/structure/closet_empty/crate/with_loot,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
 "Hl" = (
 /obj/effect/spawner/random/trash/rat,
 /turf/open/floor/plating/canalplating,
@@ -99,7 +130,24 @@
 "VC" = (
 /mob/living/carbon/human/npc/bandit,
 /obj/structure/chair/plastic/darkpack,
+/obj/effect/mapping_helpers/mob_buckler,
 /turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"VT" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = -6;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/cup/mortar{
+	pixel_x = 9;
+	pixel_y = 9
+	},
+/obj/item/pestle{
+	pixel_x = 3;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/stone,
 /area/vtm/interior/sewer)
 "XH" = (
 /obj/structure/flora/rock/stalagmite,
@@ -212,9 +260,9 @@ ow
 ow
 bj
 bj
+Gq
 nh
-nh
-ex
+dU
 ex
 ex
 ex
@@ -236,8 +284,8 @@ ow
 ow
 ow
 bj
-nh
-nh
+Fd
+zP
 ex
 ex
 nh
@@ -262,7 +310,7 @@ ow
 ow
 bj
 nh
-ex
+jA
 ex
 ex
 XH
@@ -286,9 +334,9 @@ qS
 qS
 qS
 qS
-bj
-bj
-bj
+ex
+VT
+ex
 bj
 bj
 bj
