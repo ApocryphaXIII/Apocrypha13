@@ -15,13 +15,13 @@
 		/datum/job_department/ocean,
 	)
 
-	known_contacts = list("Ocean 76er", "Dealer")
+	known_contacts = list("Operator", "Dealer")
 	allowed_splats = list(SPLAT_NONE)
-	description = "This city should belong to those who live in it. Your family in the 76 got your back, you should have theirs."
+	description = "This city should belong to those who live in it. Your operators are at your command, and they have your back."
 	minimal_masquerade = 5
 
 /datum/outfit/job/vampire/ocean_boss
-	name = "Ocean 76er Boss"
+	name = "Handler"
 	jobtype = /datum/job/vampire/ocean
 	uniform = /obj/item/clothing/under/vampire/biker
 	shoes = /obj/item/clothing/shoes/vampire/sneakers

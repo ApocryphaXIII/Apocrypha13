@@ -15,12 +15,12 @@
 		/datum/job_department/ocean,
 	)
 
-	known_contacts = list("Ocean 76er Boss")
-	description = "This city should belong to those who live in it. Your family in the 76 got your back, you should have theirs."
+	known_contacts = list("Handler")
+	description = "This city should belong to those who live in it. Run the streets the way they're supposed to be run."
 	minimal_masquerade = 0
 
 /datum/outfit/job/vampire/ocean
-	name = "Ocean 76er"
+	name = "Operator"
 	jobtype = /datum/job/vampire/ocean
 	uniform = /obj/item/clothing/under/vampire/biker
 	shoes = /obj/item/clothing/shoes/vampire/sneakers
