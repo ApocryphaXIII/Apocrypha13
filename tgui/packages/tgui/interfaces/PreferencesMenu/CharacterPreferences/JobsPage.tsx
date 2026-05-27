@@ -404,6 +404,7 @@ export function JobsPage() {
                 {/* APOC EDIT ADD END */}
                 <Department department="City_Services" />
                 <Department department="Garou_Nation" />
+                <Department department="Society_of_Leopold" />
               </Stack>
             </Stack.Item>
             {
