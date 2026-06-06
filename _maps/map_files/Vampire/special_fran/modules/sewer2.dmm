@@ -98,6 +98,11 @@
 /obj/structure/bonfire/prelit/fire_barrel,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
+"iM" = (
+/obj/effect/decal/pallet,
+/obj/effect/spawner/random/occult/artifact/vampire_only,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
 "jd" = (
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/gasoline,
@@ -559,7 +564,7 @@ DH
 gt
 Ty
 Ty
-IY
+iM
 Og
 VK
 "}

@@ -56,10 +56,6 @@
 "t" = (
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
-"u" = (
-/obj/structure/platform/lowwall/brick_old,
-/turf/closed/wall/vampwall/rock,
-/area/vtm/interior/sewer)
 "y" = (
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/sewer)
@@ -671,9 +667,9 @@ y
 y
 y
 k
-u
-u
-u
+O
+O
+O
 k
 y
 y

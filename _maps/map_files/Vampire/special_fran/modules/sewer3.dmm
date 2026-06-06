@@ -64,6 +64,10 @@
 /obj/item/storage/backpack/duffelbag,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
+"w" = (
+/obj/effect/spawner/random/occult/artifact/werewolf_only,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
 "A" = (
 /obj/structure/table/wood,
 /obj/item/storage/cans/sixbeer,
@@ -183,7 +187,7 @@ P
 P
 a
 a
-q
+w
 i
 i
 i

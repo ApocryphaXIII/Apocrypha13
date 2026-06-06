@@ -334,6 +334,7 @@
 /area/vtm/interior/sewer)
 "UT" = (
 /obj/structure/table/countertop/green,
+/obj/effect/spawner/random/occult/artifact/werewolf_only,
 /turf/open/floor/city/clinic,
 /area/vtm/interior/sewer)
 "XP" = (

@@ -44,6 +44,7 @@
 	pixel_x = -7;
 	pixel_y = 5
 	},
+/obj/effect/spawner/random/occult/artifact,
 /turf/open/floor/plating/stone,
 /area/vtm/interior/sewer)
 "nh" = (
