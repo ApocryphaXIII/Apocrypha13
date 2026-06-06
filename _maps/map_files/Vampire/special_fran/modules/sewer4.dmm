@@ -144,6 +144,10 @@
 "sT" = (
 /turf/closed/wall/vampwall/rustbad,
 /area/vtm/interior/sewer)
+"tZ" = (
+/obj/effect/landmark/npcwall,
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/sewer)
 "ua" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4
@@ -442,8 +446,8 @@ of
 of
 of
 of
-pP
-pP
+tZ
+tZ
 "}
 (2,1,1) = {"
 of
