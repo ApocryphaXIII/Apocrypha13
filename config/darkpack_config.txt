@@ -1,3 +1,11 @@
+## Defines whether or not mentors can see ckeys alongside mobnames.
+## uncomment to hide ckeys from mentors
+#MENTORS_MOBNAME_ONLY
+
+## Defines whether the server uses the legacy mentor system with mentors.txt or the SQL system.
+## uncomment to use mentors.txt instead of SQL
+#MENTOR_LEGACY_SYSTEM
+
 ## Uncomment to use Requiem jump windup
 #JUMP_WINDUP
 ## Comment to remove Apocrypha post-jump slowdown
@@ -35,6 +43,7 @@ ROUNDSTART_SPLATS splat_kindred
 ROUNDSTART_SPLATS splat_ghoul
 ROUNDSTART_SPLATS splat_kinfolk
 ROUNDSTART_SPLATS splat_garou
+ROUNDSTART_SPLATS splat_corax
 
 ## If dead people and ghosts can LOOC to people who are alive.
 DISABLE_GHOST_LOOC

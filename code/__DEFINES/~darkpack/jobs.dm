@@ -103,6 +103,12 @@
 #define JOB_PENTEX_SEC "Security Agent"
 #define JOB_PENTEX_EMPLOYEE "Employee"
 
+// Society of Leopold
+#define JOB_NOVICE "Novice"
+#define JOB_ABBE "Abbe"
+#define JOB_CONDOTTIERI "Condottieri"
+#define JOB_INQUISITOR "Inquisitor"
+
 //////////////////////////////////////////////////
 
 #define JOB_DISPLAY_ORDER_CITIZEN 1
@@ -172,6 +178,16 @@
 #define JOB_DISPLAY_ORDER_PENTEX_SEC 52
 #define JOB_DISPLAY_ORDER_EMPLOYEE 53
 
+#define JOB_DISPLAY_ORDER_ABBE 54
+#define JOB_DISPLAY_ORDER_INQUISITOR 55
+#define JOB_DISPLAY_ORDER_CONDOTTIERI 56
+#define JOB_DISPLAY_ORDER_NOVICE 57
+
+// APOC EDIT ADD START - JOBS - (Ocean 76)
+#define JOB_DISPLAY_ORDER_OCEAN_76_BOSS 58
+#define JOB_DISPLAY_ORDER_OCEAN_76_GANGER 59
+// APOC EDIT ADD END
+
 //////////////////////////////////////////////////
 
 #define DEPARTMENT_BITFLAG_CITIZEN (1<<0)
@@ -206,6 +222,12 @@
 #define DEPARTMENT_PENTEX "Pentex"
 #define DEPARTMENT_BITFLAG_GAIA (1<<15)
 #define DEPARTMENT_GAIA "Garou_Nation"
+#define DEPARTMENT_BITFLAG_SOCIETY_OF_LEOPOLD (1<<16)
+#define DEPARTMENT_SOCIETY_OF_LEOPOLD "Society_of_Leopold"
+// APOC EDIT ADD - JOBS - Ocean 76
+#define DEPARTMENT_BITFLAG_OCEAN (1<<17)
+#define DEPARTMENT_OCEAN "Ocean_76"
+// APOC EDIT ADD END
 
 DEFINE_BITFIELD(departments_bitflags, list(
 	"CITIZEN" = DEPARTMENT_BITFLAG_CITIZEN,
@@ -220,10 +242,12 @@ DEFINE_BITFIELD(departments_bitflags, list(
 	"SUPPLY" = DEPARTMENT_BITFLAG_SUPPLY,
 	"GIOVANNI" = DEPARTMENT_BITFLAG_GIOVANNI,
 	"POLICE" = DEPARTMENT_BITFLAG_POLICE,
+	"OCEAN76" = DEPARTMENT_BITFLAG_OCEAN, // APOC EDIT ADD - JOBS - (Ocean 76)
 	"SABBAT" = DEPARTMENT_BITFLAG_SABBAT,
 	"CHANTRY" = DEPARTMENT_BITFLAG_CHANTRY,
 	"MANOR" = DEPARTMENT_BITFLAG_MANOR,
 	"CITY_SERVICES" = DEPARTMENT_BITFLAG_CITY_SERVICES,
+	"SOCIETY_OF_LEOPOLD" = DEPARTMENT_BITFLAG_SOCIETY_OF_LEOPOLD,
 ))
 
 /// Combination flag for jobs which are considered regular crew members of the station.
@@ -244,6 +268,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define SUPERVISOR_REGENT "the Regent"
 #define SUPERVISOR_SENESCHAL_PUBLIC "the COO"
 #define SUPERVISOR_BARON_PUBLIC "the Bar's Owner"
+#define SUPERVISOR_SOCIETY_OF_LEOPOLD "the Society of Leopold, the Inquisition, the local Provincial, and God"
 
 // Playtime tracking system, see jobs_exp.dm
 #define EXP_TYPE_KINDRED "Kindred"
@@ -263,3 +288,4 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define EXP_TYPE_MANOR "Tzimisce Manor"
 #define EXP_TYPE_CHURCH "Church"
 #define EXP_TYPE_CLUB "Strip Club"
+#define EXP_TYPE_OCEAN "Ocean 76" // APOC EDIT ADD - JOBS - Ocean 76

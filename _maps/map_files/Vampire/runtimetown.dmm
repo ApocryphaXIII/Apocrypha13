@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ah" = (
+/obj/effect/turf_decal/bordur/corner,
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/pacificheights)
 "an" = (
 /obj/structure/vampfence/corner/rich{
 	dir = 8
@@ -45,6 +49,13 @@
 /obj/structure/roadsign/crosswalk,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
+"bs" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/abstract/cargo_landing_spot,
+/turf/open/misc/dirt,
+/area/vtm/outside/supply)
 "bB" = (
 /obj/structure/chair/wood/darkpack/red,
 /turf/open/floor/plating/rough,
@@ -131,6 +142,12 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/techshop)
+"cD" = (
+/obj/transfer_point_vamp{
+	id = "test_4"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights)
 "cQ" = (
 /obj/structure/table,
 /obj/item/storage/medkit/darkpack/ifak,
@@ -224,10 +241,10 @@
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/pacificheights)
 "fd" = (
-/obj/effect/turf_decal/bordur{
+/obj/item/vamp/keys/clinic,
+/obj/effect/turf_decal/bordur/corner{
 	dir = 1
 	},
-/obj/item/vamp/keys/clinic,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
 "fh" = (
@@ -354,7 +371,6 @@
 /obj/effect/decal/cleanable/trash{
 	icon_state = "trash5"
 	},
-/obj/effect/spawner/random/occult/artifact,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "hK" = (
@@ -400,7 +416,7 @@
 /turf/closed/wall/vampwall/painted,
 /area/vtm/interior/shop)
 "iJ" = (
-/obj/effect/spawner/random/occult/artifact,
+/mob/living/basic/pet/cat/darkpack/cain,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "iK" = (
@@ -447,6 +463,15 @@
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/pacificheights)
+"ji" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/item/pen/fourcolor,
+/obj/effect/turf_decal/bordur{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/pacificheights)
 "jj" = (
 /obj/structure/table,
 /obj/item/liquid_flamethrower,
@@ -483,6 +508,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
+/obj/effect/abstract/cargo_landing_spot,
 /turf/open/misc/dirt,
 /area/vtm/outside/supply)
 "jQ" = (
@@ -503,6 +529,12 @@
 	linked_elevator_id = "DebugElevator2"
 	},
 /turf/open/misc/grass,
+/area/vtm/outside/pacificheights)
+"jU" = (
+/obj/effect/turf_decal/bordur/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk,
 /area/vtm/outside/pacificheights)
 "jW" = (
 /obj/effect/decal/wallpaper/paper/stripe,
@@ -557,6 +589,12 @@
 /obj/item/molotov,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/pacificheights)
+"kN" = (
+/obj/effect/turf_decal/bordur{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/pacificheights)
 "kS" = (
 /turf/closed/wall/vampwall/market,
 /area/vtm/interior/shop)
@@ -593,7 +631,6 @@
 /area/vtm/interior/techshop)
 "lM" = (
 /obj/effect/decal/cleanable/trash,
-/obj/effect/spawner/random/occult/artifact,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "lN" = (
@@ -601,7 +638,10 @@
 /area/vtm/outside/supply)
 "lU" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/key_of_alamut,
+/obj/item/occult_artifact/vampire/key_of_alamut{
+	pixel_x = -2;
+	pixel_y = 3
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "lX" = (
@@ -611,8 +651,15 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
+/obj/effect/abstract/cargo_landing_spot,
 /turf/open/misc/dirt,
 /area/vtm/outside/supply)
+"lZ" = (
+/obj/transfer_point_vamp{
+	id = "test_3"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights)
 "md" = (
 /obj/structure/vampdoor{
 	dir = 4
@@ -649,7 +696,10 @@
 "mZ" = (
 /obj/machinery/fax/police,
 /obj/structure/table/wood,
-/turf/open/misc/beach/vamp,
+/obj/effect/turf_decal/bordur{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
 "nj" = (
 /turf/open/openspace,
@@ -875,7 +925,14 @@
 /area/vtm/outside/pacificheights)
 "qY" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/bloodstar,
+/obj/item/occult_artifact/vampire/bloodstone{
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/obj/item/occult_artifact/vampire/daimonori{
+	pixel_x = -5;
+	pixel_y = 4
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "ri" = (
@@ -1162,7 +1219,15 @@
 /area/vtm/graveyard)
 "va" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/fae_charm,
+/obj/effect/spawner/random/occult/artifact/werewolf_only{
+	pixel_y = 4
+	},
+/obj/effect/spawner/random/occult/artifact/werewolf_only{
+	pixel_x = -6
+	},
+/obj/effect/spawner/random/occult/artifact/werewolf_only{
+	pixel_x = 7
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "vi" = (
@@ -1199,6 +1264,12 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/graveyard/interior)
+"vA" = (
+/obj/transfer_point_vamp{
+	id = "test_5"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights)
 "vD" = (
 /mob/living/carbon/human/npc/shop,
 /turf/open/floor/city/toilet,
@@ -1241,7 +1312,14 @@
 /area/vtm/outside/supply)
 "wr" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/odious_chalice,
+/obj/item/occult_artifact/vampire/odious_chalice{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/occult_artifact/vampire/bloodstar{
+	pixel_x = 12;
+	pixel_y = 4
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "wO" = (
@@ -1278,6 +1356,12 @@
 	linked_elevator_id = "DebugElevator2"
 	},
 /turf/open/floor/plating/sidewalk,
+/area/vtm/outside/pacificheights)
+"xC" = (
+/obj/effect/turf_decal/bordur/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
 "xE" = (
 /obj/structure/table,
@@ -1401,7 +1485,10 @@
 /area/vtm/outside/pacificheights)
 "zF" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/weekapaug_thistle,
+/obj/item/occult_artifact/vampire/weekapaug_thistle{
+	pixel_x = -1;
+	pixel_y = 2
+	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
@@ -1518,6 +1605,12 @@
 /obj/fusebox/transformer,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/baywalk)
+"Cg" = (
+/obj/transfer_point_vamp{
+	id = "test_6"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights)
 "Ct" = (
 /obj/structure/lamppost/one{
 	dir = 1
@@ -1546,6 +1639,12 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/graveyard/interior)
+"CM" = (
+/obj/transfer_point_vamp{
+	id = "test_1"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights)
 "CP" = (
 /obj/structure/table/wood,
 /obj/item/ammo_box/darkpack/c12g{
@@ -1645,6 +1744,11 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/cog)
+"DS" = (
+/obj/effect/decal/pallet,
+/obj/effect/abstract/cargo_landing_spot,
+/turf/open/misc/dirt,
+/area/vtm/outside/supply)
 "DT" = (
 /obj/machinery/fax/endron,
 /obj/structure/table/wood,
@@ -1895,6 +1999,12 @@
 /obj/structure/transport/linear/public,
 /turf/open/floor/plating/elevatorshaft,
 /area/vtm/outside/pacificheights)
+"Hm" = (
+/obj/transfer_point_vamp{
+	id = "test_2"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/pacificheights)
 "Hn" = (
 /obj/effect/turf_decal/bordur{
 	dir = 4
@@ -1983,7 +2093,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/graveyard/interior)
 "ID" = (
-/turf/closed/wall/vampwall/market,
+/turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
 "IL" = (
 /obj/structure/ladder/manhole/up,
@@ -2098,7 +2208,14 @@
 /area/vtm/outside/supply)
 "Kz" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/heart_of_eliza,
+/obj/item/occult_artifact/vampire/heart_of_eliza{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/occult_artifact/vampire/fae_charm{
+	pixel_x = 7;
+	pixel_y = 7
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "KB" = (
@@ -2174,9 +2291,21 @@
 	},
 /turf/open/floor/plating/asphalt,
 /area/vtm/outside/pacificheights)
+"LC" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/abstract/cargo_landing_spot,
+/turf/open/misc/dirt,
+/area/vtm/outside/supply)
 "LG" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/daimonori,
+/obj/item/occult_artifact/werewolf/dagger_of_retribution{
+	pixel_x = -2;
+	pixel_y = 1
+	},
+/obj/item/occult_artifact/werewolf/nyxs_bangle{
+	pixel_x = 6;
+	pixel_y = 6
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "LL" = (
@@ -2299,8 +2428,10 @@
 /area/vtm/outside/pacificheights)
 "Nb" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/tarulfang,
-/mob/living/basic/pet/cat/darkpack/cain,
+/obj/item/occult_artifact/vampire/tarulfang{
+	pixel_x = 4;
+	pixel_y = 5
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "Nd" = (
@@ -2552,6 +2683,8 @@
 "QD" = (
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/trash,
+/obj/effect/spawner/random/occult/artifact,
+/obj/ritual_rune/thaumaturgy/identification,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "QJ" = (
@@ -2567,7 +2700,6 @@
 /area/vtm/outside/pacificheights)
 "QN" = (
 /obj/effect/decal/cleanable/litter,
-/obj/effect/spawner/random/occult/artifact,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "QR" = (
@@ -2638,7 +2770,6 @@
 /obj/effect/decal/cleanable/trash{
 	icon_state = "trash7"
 	},
-/obj/effect/spawner/random/occult/artifact,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "RV" = (
@@ -2765,10 +2896,10 @@
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/cog)
 "UC" = (
-/obj/item/paper_bin,
-/obj/item/pen/fourcolor,
-/obj/structure/table/wood,
-/turf/open/misc/beach/vamp,
+/obj/effect/turf_decal/bordur{
+	dir = 8
+	},
+/turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
 "UH" = (
 /obj/structure/railing{
@@ -2824,7 +2955,10 @@
 /area/vtm/outside/pacificheights)
 "VH" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/galdjum,
+/obj/item/occult_artifact/vampire/galdjum{
+	pixel_x = 5;
+	pixel_y = 2
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "VJ" = (
@@ -2903,11 +3037,23 @@
 /area/vtm/interior/clinic)
 "WB" = (
 /obj/structure/table/wood,
-/obj/item/vtm_artifact/mummywrap_fetish,
+/obj/item/occult_artifact/vampire/mummywrap_fetish{
+	pixel_x = -6;
+	pixel_y = 3
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "WD" = (
 /obj/structure/table/reinforced,
+/obj/effect/spawner/random/occult/artifact/vampire_only,
+/obj/effect/spawner/random/occult/artifact/vampire_only{
+	pixel_x = 7;
+	pixel_y = -3
+	},
+/obj/effect/spawner/random/occult/artifact/vampire_only{
+	pixel_x = -9;
+	pixel_y = -2
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "WH" = (
@@ -3003,7 +3149,10 @@
 "XP" = (
 /obj/machinery/fax/admin/police,
 /obj/structure/table/wood,
-/turf/open/misc/beach/vamp,
+/obj/effect/turf_decal/bordur{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
 "XW" = (
 /obj/effect/turf_decal/bordur,
@@ -3059,7 +3208,17 @@
 /area/vtm/outside/pacificheights)
 "YY" = (
 /obj/structure/table/reinforced,
-/obj/item/ritual_tome/arcane,
+/obj/item/ritual_tome/arcane{
+	pixel_y = 6
+	},
+/obj/item/ritual_tome/necromancy{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/obj/item/ritual_tome/abyss{
+	pixel_x = 4;
+	pixel_y = 2
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/sewer)
 "Zc" = (
@@ -3252,7 +3411,7 @@ GF
 (3,1,1) = {"
 GF
 Ef
-qY
+zM
 LG
 va
 zM
@@ -3456,9 +3615,9 @@ GF
 (6,1,1) = {"
 GF
 Ef
-zM
+qY
 RP
-iJ
+zd
 lU
 Ef
 JH
@@ -3525,7 +3684,7 @@ GF
 GF
 Ef
 Nb
-iJ
+zd
 QN
 WB
 Ef
@@ -3593,8 +3752,8 @@ GF
 GF
 Ef
 zF
-iJ
-iJ
+zd
+zd
 zd
 OP
 PO
@@ -3683,14 +3842,14 @@ iV
 VQ
 ik
 fd
-NR
+ji
 XP
-NR
+kN
 mZ
-NR
-NR
-NR
-NR
+kN
+kN
+kN
+Zs
 NR
 Rj
 Rj
@@ -3750,15 +3909,15 @@ cj
 ik
 VQ
 ik
-Fs
-NR
-UC
-NR
-NR
-NR
-NR
-NR
-NR
+kX
+ik
+ik
+ik
+ik
+ik
+ik
+ik
+cD
 NR
 Rj
 Rj
@@ -3818,15 +3977,15 @@ cj
 FB
 VQ
 ik
-Fs
-NR
-NR
-NR
-NR
-NR
-NR
-NR
-NR
+kX
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+vA
 NR
 Rj
 Rj
@@ -3886,15 +4045,15 @@ bp
 ik
 VQ
 ik
-Fs
-NR
-NR
-NR
-NR
-NR
-NR
-NR
-NR
+kX
+ik
+ik
+ik
+ik
+ik
+ik
+ik
+Cg
 NR
 Rj
 Rj
@@ -3954,15 +4113,15 @@ cj
 rW
 rW
 rW
-Fs
-NR
-NR
-NR
-NR
-NR
-NR
-NR
-NR
+xC
+UC
+UC
+UC
+UC
+UC
+UC
+UC
+Zs
 NR
 Rj
 Rj
@@ -6337,7 +6496,7 @@ HJ
 Fs
 Wa
 Wa
-Mn
+bs
 Lb
 kj
 Wa
@@ -6405,7 +6564,7 @@ ik
 Fs
 Wa
 Wa
-Mn
+bs
 Lb
 kj
 Wa
@@ -6475,7 +6634,7 @@ Wa
 Wa
 Mn
 Lb
-kj
+LC
 Wa
 Lb
 Wa
@@ -6543,7 +6702,7 @@ Wa
 Wa
 Mn
 Lb
-kj
+LC
 Wa
 Lb
 sR
@@ -6816,7 +6975,7 @@ Wa
 Wa
 Lb
 Wa
-sR
+DS
 Lb
 Wa
 Wa
@@ -6884,7 +7043,7 @@ Wa
 Wa
 Lb
 Wa
-sR
+DS
 Lb
 Wa
 Wa
@@ -7697,9 +7856,9 @@ Kk
 Zs
 Zs
 qV
-qV
-qV
-qV
+CM
+Hm
+lZ
 qV
 Zs
 Zs
@@ -8180,14 +8339,14 @@ rW
 cZ
 QS
 qV
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+qV
+qV
+qV
+qV
+qV
+qV
+qV
+qV
 Ys
 Ys
 Ys
@@ -8247,15 +8406,15 @@ ik
 ik
 kX
 ik
+cD
 ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+ik
+ik
+ik
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8315,15 +8474,15 @@ ik
 ik
 kX
 hi
+vA
 ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+ik
+ik
+ik
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8383,15 +8542,15 @@ ik
 ik
 kX
 ik
+Cg
 ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+ik
+ik
+ik
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8452,14 +8611,14 @@ rW
 sk
 Zc
 qV
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+Zc
+Zc
+Zc
+ah
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8519,15 +8678,15 @@ ik
 ik
 KU
 nq
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
 qV
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
 Ys
 Ys
 Ys
@@ -8587,15 +8746,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8655,15 +8814,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8723,15 +8882,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8791,15 +8950,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8859,15 +9018,15 @@ ik
 HJ
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8927,15 +9086,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -8995,15 +9154,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9063,15 +9222,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9131,15 +9290,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9199,15 +9358,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9267,15 +9426,15 @@ rW
 rW
 HO
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9335,15 +9494,15 @@ ik
 ik
 KU
 eQ
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+eQ
+eQ
+eQ
+eQ
+XJ
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9403,15 +9562,15 @@ ik
 ik
 Dr
 AU
-ID
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+QS
+QS
+QS
+QS
+jU
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9472,14 +9631,14 @@ ik
 ik
 ik
 ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+ik
+ik
+ik
+ik
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9540,14 +9699,14 @@ ik
 ik
 ik
 ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+ik
+ik
+ik
+ik
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9608,14 +9767,14 @@ ik
 ik
 ik
 ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+ik
+ik
+ik
+ik
+ik
+ik
+ik
+qV
 Ys
 Ys
 Ys
@@ -9675,15 +9834,15 @@ ik
 ik
 ik
 ik
-ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+XM
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+qV
 Ys
 Ys
 Ys
@@ -9743,15 +9902,15 @@ ik
 ik
 ik
 ik
-ik
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
-Ys
+XM
+qV
+qV
+qV
+qV
+qV
+qV
+qV
+qV
 Ys
 Ys
 Ys
@@ -9811,7 +9970,7 @@ ik
 ik
 ik
 ik
-ik
+XM
 Ys
 Ys
 Ys
@@ -9879,7 +10038,7 @@ ik
 ik
 ik
 ik
-ik
+XM
 Ys
 Ys
 Ys
@@ -9947,7 +10106,7 @@ ik
 ik
 ik
 ik
-ik
+XM
 Ys
 Ys
 Ys
@@ -10015,7 +10174,7 @@ ik
 ik
 so
 gS
-qV
+XM
 Ys
 Ys
 Ys
@@ -10083,7 +10242,7 @@ Ak
 Ak
 cZ
 QS
-qV
+XM
 Ys
 Ys
 Ys
@@ -10151,7 +10310,7 @@ ik
 ik
 ov
 ik
-qV
+XM
 Ys
 Ys
 Ys
@@ -10219,7 +10378,7 @@ ik
 ik
 ov
 Qi
-qV
+XM
 Ys
 Ys
 Ys
@@ -10287,7 +10446,7 @@ ik
 ik
 ov
 ik
-qV
+XM
 Ys
 Ys
 Ys
@@ -10355,7 +10514,7 @@ rW
 rW
 sk
 Zc
-qV
+XM
 Ys
 Ys
 Ys
@@ -10423,7 +10582,7 @@ ik
 ik
 KU
 nq
-qV
+XM
 Ys
 Ys
 Ys
@@ -11981,9 +12140,9 @@ Zs
 Zs
 Zs
 qV
-qV
-qV
-qV
+CM
+Hm
+lZ
 qV
 xh
 XM

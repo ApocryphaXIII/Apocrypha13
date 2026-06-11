@@ -153,7 +153,7 @@
 	if(examine_message && quality)
 		examine_message += " You sense [quality]."
 	examine_message += "\n \n" // makes the below stand out more
-	if(HAS_TRAIT(parent_mob, TRAIT_DIABLERIE))
+	if(HAS_TRAIT(parent_mob, TRAIT_DIABLERIE) && !HAS_TRAIT(parent_mob, TRAIT_HIDDEN_DIABLERIE))
 		examine_message += "Black veins pulse through [parent_mob.p_their()] aura."
 	if(HAS_TRAIT(parent_mob, TRAIT_FRENETIC_AURA))
 		examine_message += "[parent_mob.p_Their()] aura appears especially energetic."
@@ -273,7 +273,7 @@
 	aura_smoke_image.color = aura_appearance.color
 	aura_smoke_image.alpha = 50
 
-	if(HAS_TRAIT(parent_mob, TRAIT_DIABLERIE))
+	if(HAS_TRAIT(parent_mob, TRAIT_DIABLERIE) && !HAS_TRAIT(parent_mob, TRAIT_HIDDEN_DIABLERIE))
 		var/mutable_appearance/diablerie_image = mutable_appearance('modular_darkpack/modules/powers/icons/auras.dmi', "diab", ABOVE_MOB_LAYER + 1, parent_mob, ABOVE_GAME_PLANE)
 		holder.add_overlay(diablerie_image)
 		aura_classic_image.color = "#1717178b"
@@ -295,6 +295,7 @@
 		hsv_color_value[2] = hsv_color_value[2] * 0.7 // Reduce saturation for ghouls
 		aura_smoke_image.color = hsv2rgb(hsv_color_value)
 		aura_classic_image.icon_state = "old_aura_ghoul"
+		aura_smoke_image.alpha = 50
 
 	if(isavatar(parent_mob) || isobserver(parent_mob))
 		holder.opacity = holder.opacity * 0.5

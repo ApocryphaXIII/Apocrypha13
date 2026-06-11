@@ -916,6 +916,7 @@
 /area/vtm)
 "aDK" = (
 /obj/structure/chair/sofa/corp,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
 "aDL" = (
@@ -2013,6 +2014,14 @@
 /area/vtm/interior/millennium_tower)
 "blb" = (
 /obj/structure/table/countertop/bubway,
+/obj/item/vamp/keys/hack{
+	pixel_x = -5;
+	pixel_y = 1
+	},
+/obj/item/vamp/keys/hack{
+	pixel_x = 7;
+	pixel_y = 5
+	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/gangbasement)
 "bll" = (
@@ -2450,6 +2459,10 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/pacificheights)
+"bAp" = (
+/obj/effect/landmark/start/darkpack/ocean/ganger,
+/turf/open/floor/carpet/darkpack/blackgold,
+/area/vtm/interior/gang)
 "bAT" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -9115,6 +9128,7 @@
 "foi" = (
 /obj/structure/chair/comfy/darkpack,
 /obj/machinery/light/directional/north,
+/obj/effect/landmark/start/darkpack/ocean/boss,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/gangbasement)
 "fom" = (
@@ -9559,6 +9573,7 @@
 /obj/structure/chair/sofa/corp{
 	color = "#CD5C5C"
 	},
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
 "fzO" = (
@@ -13343,6 +13358,14 @@
 /area/vtm)
 "hJF" = (
 /obj/structure/table,
+/obj/item/vamp/keys/hack{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/vamp/keys/hack{
+	pixel_x = -6;
+	pixel_y = 4
+	},
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/gangbasement)
 "hJG" = (
@@ -13464,6 +13487,7 @@
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/chair/stool/bar/darkpack/red,
 /obj/effect/decal/cleanable/trash,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/gang)
 "hNx" = (
@@ -15882,6 +15906,12 @@
 "jiP" = (
 /turf/open/misc/beach/vamp,
 /area/vtm/interior)
+"jiU" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/chair/stool/bar/darkpack/red,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/gang)
 "jji" = (
 /obj/structure/closet{
 	icon_door = "eng_rad";
@@ -15904,6 +15934,7 @@
 	dir = 4;
 	color = "#CD5C5C"
 	},
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet,
 /area/vtm/interior/gangbasement)
 "jjE" = (
@@ -17005,7 +17036,7 @@
 "jQQ" = (
 /obj/structure/table/modern,
 /obj/effect/turf_decal/siding/white/end,
-/obj/item/vtm_artifact/heart_of_eliza{
+/obj/item/occult_artifact/vampire/heart_of_eliza{
 	anchored = 1
 	},
 /turf/open/floor/plating/granite/black,
@@ -19299,6 +19330,7 @@
 /area/vtm/interior/endron_facility/restricted)
 "ljE" = (
 /obj/structure/chair/sofa/city_bench/metal/right,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/gangbasement)
 "ljG" = (
@@ -21143,6 +21175,7 @@
 	color = "#CD5C5C"
 	},
 /obj/structure/coclock,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet,
 /area/vtm/interior/gangbasement)
 "mrR" = (
@@ -21236,6 +21269,10 @@
 "mtJ" = (
 /turf/open/indestructible/necropolis/air,
 /area/vtm/interior/wyrm_corrupted)
+"mtO" = (
+/obj/effect/landmark/start/darkpack/ocean/ganger,
+/turf/open/floor/city/toilet/large,
+/area/vtm/interior/gangbasement)
 "mua" = (
 /obj/structure/rack/tall/wood_shelf,
 /obj/item/flashlight/lamp/green{
@@ -24349,6 +24386,7 @@
 /area/vtm/interior/church/haven)
 "oio" = (
 /obj/structure/chair/stool/bar/darkpack/red,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/gangbasement)
 "oip" = (
@@ -26038,6 +26076,7 @@
 /area/vtm/interior/vet)
 "pcL" = (
 /obj/structure/chair/sofa/corp/right,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
 "pcW" = (
@@ -28287,6 +28326,7 @@
 "qsg" = (
 /obj/structure/table,
 /obj/effect/decal/pallet,
+/obj/item/vamp/keys/hack,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/gangbasement)
 "qsi" = (
@@ -28591,6 +28631,7 @@
 /area/vtm/interior/endron_facility/restricted)
 "qAO" = (
 /obj/structure/chair/sofa/city_bench/metal/left,
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/gangbasement)
 "qAP" = (
@@ -33377,7 +33418,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/obj/item/vtm_artifact/fae_charm{
+/obj/item/occult_artifact/vampire/fae_charm{
 	anchored = 1
 	},
 /turf/open/floor/plating/granite/black,
@@ -34502,6 +34543,7 @@
 /obj/structure/chair/sofa/middle/brown{
 	dir = 4
 	},
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/gang)
 "tNT" = (
@@ -37980,6 +38022,7 @@
 	dir = 4;
 	color = "#CD5C5C"
 	},
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet,
 /area/vtm/interior/gangbasement)
 "vQn" = (
@@ -38440,6 +38483,7 @@
 /obj/structure/chair/sofa/corp/left{
 	color = "#CD5C5C"
 	},
+/obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
 "wet" = (
@@ -47720,7 +47764,7 @@ uCF
 uCF
 uCF
 uca
-pYL
+mtO
 mlC
 ljE
 tWK
@@ -58748,7 +58792,7 @@ hFq
 hFq
 wON
 dxH
-oBT
+bAp
 oBT
 oBT
 dCA
@@ -58853,7 +58897,7 @@ hFq
 hFq
 hFq
 hFq
-wON
+jiU
 fTv
 oBT
 oBT
@@ -59067,7 +59111,7 @@ eqO
 qpy
 hFq
 hFq
-wON
+jiU
 cIN
 xYD
 iIs
