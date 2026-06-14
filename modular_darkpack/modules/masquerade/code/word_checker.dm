@@ -16,7 +16,7 @@
 
 	var/treated_message = translate_language(speaker, message_language, raw_message, spans, message_mods)
 	var/regexed_message = MASQUERADE_FILTER_CHECK(LOWER_TEXT(treated_message))
-	if(length(regexed_message))
+	if(regexed_message)
 		SEND_SIGNAL(src, COMSIG_SEEN_MASQUERADE_VIOLATION, speaker)
 	return TRUE
 
@@ -29,7 +29,7 @@
 		var/message = compose_message(hearing_args[HEARING_SPEAKER], hearing_args[HEARING_LANGUAGE], hearing_args[HEARING_RAW_MESSAGE], hearing_args[HEARING_RADIO_FREQ], hearing_args[HEARING_RADIO_FREQ_NAME], hearing_args[HEARING_RADIO_FREQ_COLOR], hearing_args[HEARING_SPANS], hearing_args[HEARING_MESSAGE_MODE], FALSE)
 		SSmasquerade.log_phone_message(message, source)
 		var/regexed_message = MASQUERADE_FILTER_CHECK(LOWER_TEXT(hearing_args[HEARING_RAW_MESSAGE]))
-		if(length(regexed_message))
+		if(regexed_message)
 			SEND_SIGNAL(src, COMSIG_SEEN_MASQUERADE_VIOLATION, hearing_args[HEARING_SPEAKER])
 
 #undef MASQUERADE_FILTER_CHECK
