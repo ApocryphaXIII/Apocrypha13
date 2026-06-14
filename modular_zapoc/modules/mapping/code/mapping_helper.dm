@@ -7,7 +7,7 @@
 	var/chance_to_del = 100
 	var/range = 0
 
-/obj/effect/mapping_helpers/deleter/Initialize()
+/obj/effect/mapping_helpers/deleter/Initialize(mapload)
 	. = ..()
 	if(!objs_to_del.len)
 		stack_trace("Deleter helper placed with no target type!")

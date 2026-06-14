@@ -861,7 +861,7 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/outside/forest/sept)
 "hB" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /obj/effect/realistic_fog/dense,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/cave)

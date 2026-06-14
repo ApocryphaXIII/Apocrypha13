@@ -209,7 +209,7 @@
 /turf/closed/wall/vampwall/rich,
 /area/vtm/outside/fishermanswharf)
 "bN" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "bP" = (
@@ -3073,7 +3073,7 @@
 	pixel_x = -14;
 	pixel_y = 9
 	},
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "yx" = (
@@ -4998,7 +4998,7 @@
 /turf/open/misc/grass,
 /area/vtm/outside/fishermanswharf)
 "MZ" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior)
 "Na" = (

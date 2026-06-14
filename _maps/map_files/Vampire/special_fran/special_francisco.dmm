@@ -2753,7 +2753,7 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
 "bHh" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/misc/grass,
 /area/vtm/interior)
 "bHi" = (
@@ -2922,7 +2922,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/misc/dirt,
 /area/vtm/interior)
 "bLx" = (
@@ -4031,7 +4031,7 @@
 /area/vtm/outside/pacificheights)
 "crV" = (
 /obj/machinery/light/small/directional/north,
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/canal,
 /area/vtm/interior/sewer)
 "csh" = (
@@ -7118,7 +7118,7 @@
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/sewer)
 "egP" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
 "ehj" = (
@@ -13603,7 +13603,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/misc/dirt,
 /area/vtm/interior)
 "hQB" = (
@@ -19047,7 +19047,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm)
 "lbu" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/canal,
 /area/vtm/interior/sewer)
 "lbA" = (
@@ -21076,7 +21076,7 @@
 /area/vtm/interior/millennium_tower)
 "mop" = (
 /obj/item/reagent_containers/cup/glass/bottle/beer/vampire,
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
 "mox" = (
@@ -21150,7 +21150,7 @@
 /turf/open/floor/plating/roofwalk,
 /area/vtm)
 "mrg" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/interior)
 "mrm" = (
@@ -21675,7 +21675,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/anarch/basement)
 "mFE" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/outside/financialdistrict)
 "mFX" = (
@@ -34490,7 +34490,7 @@
 /area/vtm/voivodate)
 "tMn" = (
 /obj/effect/decal/pallet,
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm)
 "tMF" = (
@@ -41881,7 +41881,7 @@
 /area/vtm/interior/ghetto)
 "ygj" = (
 /obj/effect/decal/pallet,
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
 "ygx" = (
