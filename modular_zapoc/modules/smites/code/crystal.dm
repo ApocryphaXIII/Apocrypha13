@@ -132,4 +132,4 @@
 		if(prob(25))
 			trapped_object.forceMove(free_turf)
 	animate(src, alpha = 0, time = 1 SECONDS)
-	QDEL_IN(1 SECONDS)
+	QDEL_IN(src, 1 SECONDS)
