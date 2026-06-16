@@ -25,7 +25,7 @@
 
 
 /datum/smite/crystal/configure(client/user)
-	quick_crystal = (alert(user, "Skip setup?", "the crystal", "Yes", "No", "Cancel"))
+	quick_crystal = tgui_alert(user, "Skip setup?", "the crystal", list("Yes", "No", "Cancel"))
 	if(quick_crystal == "No")
 		charge = input(user, "What are they charged with?") as null|text // Displayed to victim
 		sentence_choice = (alert(user, "How long will they spend in the crystal?", "the crystal", "Just a second", "Only one week", "Like a century"))
@@ -81,33 +81,42 @@
 		message_admins(msg)
 		log_admin(msg)
 
-/obj/smite_crystal/attack_hand(mob/user)
+/obj/smite_crystal/attack_hand(mob/living/user, list/modifiers)
 	if(!(user in contents))
 		var/sacrifice_mob = tgui_alert(user, "Get in the crystal?", "the crystal", list("Yes", "No"))
 
 		switch(sacrifice_mob)
 			if("Yes")
 				user.forceMove(src)
-				user.visible_message("<span class='notice'>[user] gets in [src].</span>", \
-					"<span class='notice'>You get in [src].</span>")
+				user.visible_message(
+					span_notice("[user] gets in [src]."),
+					span_notice("You get in [src].")
+				)
 			if("No")
-				user.visible_message("<span class='notice'>[user] thinks better of getting in [src].</span>", \
-				"<span class='notice'>You think better of getting in [src].</span>")
+				user.visible_message(
+					span_notice("[user] thinks better of getting in [src]."),
+					span_notice("You think better of getting in [src].")
+				)
 	else
 		to_chat(user, span_notice("You bang on the walls of the crystal."))
 
 
-/obj/smite_crystal/attackby(obj/item/I, mob/user)
-	var/sacrifice = (alert(user, "Place [I] to the crystal? You might not get it back!", "the crystal", "Yes", "No"))
+/obj/smite_crystal/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
+	. = ..()
+	var/sacrifice = tgui_alert(user, "Place [tool] to the crystal? You might not get it back!", list("the crystal", "Yes", "No"))
 
 	switch(sacrifice)
 		if("Yes")
-			I.forceMove(src)
-			user.visible_message("<span class='notice'>[user] places [I] into [src].</span>", \
-			"<span class='notice'>You place [I] into [src].</span>")
+			tool.forceMove(src)
+			user.visible_message(
+				span_notice("[user] places [tool] into [src]."),
+				span_notice("You place [tool] into [src].")
+			)
 		if("No")
-			user.visible_message("<span class='notice'>[user] thinks better of placing [I] into [src].</span>", \
-				"<span class='notice'>You think better of placing [I] into [src].</span>")
+			user.visible_message(
+				span_notice("[user] thinks better of placing [tool] into [src]."),
+				span_notice("You think better of placing [tool] into [src].")
+			)
 
 
 /obj/smite_crystal/proc/freedom_timer(duration, freedom_text)
@@ -115,12 +124,12 @@
 
 
 /obj/smite_crystal/proc/freedom(freedom_text)
-	for(var/mob/i in contents)
-		i.forceMove(get_turf(src))
-		to_chat(i, "[freedom_text]")
-	for(var/obj/o in contents)
+	var/free_turf = get_turf(src)
+	for(var/mob/guy in contents)
+		guy.forceMove(free_turf)
+		to_chat(guy, freedom_text)
+	for(var/obj/trapped_object in contents)
 		if(prob(25))
-			o.forceMove(get_turf(src))
+			trapped_object.forceMove(free_turf)
 	animate(src, alpha = 0, time = 1 SECONDS)
-	spawn(1 SECONDS)
-		qdel(src)
+	QDEL_IN(1 SECONDS)
