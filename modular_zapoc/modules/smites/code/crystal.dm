@@ -21,65 +21,57 @@
 	var/felt_time // What did it feel like?
 	var/sound_choice
 	var/quick_crystal
-	var/abort
 
 
 /datum/smite/crystal/configure(client/user)
 	quick_crystal = tgui_alert(user, "Skip setup?", "the crystal", list("Yes", "No", "Cancel"))
 	if(quick_crystal == "No")
-		charge = input(user, "What are they charged with?") as null|text // Displayed to victim
-		sentence_choice = (alert(user, "How long will they spend in the crystal?", "the crystal", "Just a second", "Only one week", "Like a century"))
-		sound_choice = (alert(user, "Play audio?", "the crystal", "Target only", "Nearby", "No"))
-		abort = (alert(user, "Charge: [charge]. Sentence: [sentence_choice]. Audio: [sound_choice]. Confirm?", "the crystal", "Go", "Cancel"))
+		charge = tgui_input_text(user, "What are they charged with?", "the crystal", "ADDED NOTHING") // Displayed to victim
+		sentence_choice = tgui_alert(user, "How long will they spend in the crystal?", "the crystal", list("Just a second", "Only one week", "Like a century"))
+		sound_choice = tgui_alert(user, "Play audio?", "the crystal", list("Target only", "Nearby", "No"))
 	else if(quick_crystal == "Yes")
 		charge = "ADDED NOTHING"
 		sentence_choice = "Just a second"
 		sound_choice = "Nearby"
-		abort = "Go"
-	else if(quick_crystal == "Cancel")
-		abort = "Cancel"
+	else
+		return FALSE
 
 
 /datum/smite/crystal/effect(client/user, mob/living/target)
-	if(abort == "Go")
-		var/obj/smite_crystal/crystal = new /obj/smite_crystal(get_turf(target))
-		target.forceMove(crystal)
-		target.Stun(jailtime)
+	var/obj/smite_crystal/crystal = new /obj/smite_crystal(get_turf(target))
+	target.forceMove(crystal)
+	target.Stun(jailtime)
 
-		to_chat(target, span_phobia(("YOUR CHARGE: [span_colossus("[charge]")]")))
+	to_chat(target, span_phobia(("YOUR CHARGE: [span_colossus("[charge]")]")))
 
-		switch(sentence_choice)
-			if("Just a second")
-				jailtime = 30 SECONDS
-				felt_time = span_notice("You spend three hours in the crystal, but only a second has passed back in reality.")
-			if("Only one week")
-				jailtime = 1 MINUTES
-				felt_time = span_notice("You spend a week in the crystal, but only a minute has passed back in reality.")
-			if("Like a century") // Teleports target to error room
-				jailtime = 30 SECONDS
-				felt_time = span_notice("You spend a century in the crystal, but only two minutes have passed back in reality. Wait, what is this place?")
-				target.move_to_error_room()
+	switch(sentence_choice)
+		if("Just a second")
+			jailtime = 30 SECONDS
+			felt_time = span_notice("You spend three hours in the crystal, but only a second has passed back in reality.")
+		if("Only one week")
+			jailtime = 1 MINUTES
+			felt_time = span_notice("You spend a week in the crystal, but only a minute has passed back in reality.")
+		if("Like a century") // Teleports target to error room
+			jailtime = 30 SECONDS
+			felt_time = span_notice("You spend a century in the crystal, but only two minutes have passed back in reality. Wait, what is this place?")
+			target.move_to_error_room()
 
-		switch(sound_choice)
-			if("Target only")
-				target.playsound_local(get_turf(target), 'modular_zapoc/modules/smites/sound/crystal.ogg', 75)
-				to_chat(target, span_purple("What the hell are you talkin' about? You've added nothing to the conversation- Get in the- Get in the crystal. Sorry, buddy, get in the crystal. HAH hahahahahahaha. We're going to put you in the crystal, you're gonna be in the crystal for a minute; It's gonna feel like one week. It's only one week, man! Some of the people are in the crystal for like, a century, okay? You're going in- the minute is gonna feel like a week so you have some time to think about what you've done. And then you're going to come out of the crystal."))
+	switch(sound_choice)
+		if("Target only")
+			target.playsound_local(get_turf(target), 'modular_zapoc/modules/smites/sound/crystal.ogg', 75)
+			to_chat(target, span_purple("What the hell are you talkin' about? You've added nothing to the conversation- Get in the- Get in the crystal. Sorry, buddy, get in the crystal. HAH hahahahahahaha. We're going to put you in the crystal, you're gonna be in the crystal for a minute; It's gonna feel like one week. It's only one week, man! Some of the people are in the crystal for like, a century, okay? You're going in- the minute is gonna feel like a week so you have some time to think about what you've done. And then you're going to come out of the crystal."))
 
-			if("Nearby")
-				playsound(target, 'modular_zapoc/modules/smites/sound/crystal.ogg', 75)
-				to_chat(target, span_purple("What the hell are you talkin' about? You've added nothing to the conversation- Get in the- Get in the crystal. Sorry, buddy, get in the crystal. HAH hahahahahahaha. We're going to put you in the crystal, you're gonna be in the crystal for a minute; It's gonna feel like one week. It's only one week, man! Some of the people are in the crystal for like, a century, okay? You're going in- the minute is gonna feel like a week so you have some time to think about what you've done. And then you're going to come out of the crystal."))
+		if("Nearby")
+			playsound(get_turf(target), 'modular_zapoc/modules/smites/sound/crystal.ogg', 75)
+			to_chat(target, span_purple("What the hell are you talkin' about? You've added nothing to the conversation- Get in the- Get in the crystal. Sorry, buddy, get in the crystal. HAH hahahahahahaha. We're going to put you in the crystal, you're gonna be in the crystal for a minute; It's gonna feel like one week. It's only one week, man! Some of the people are in the crystal for like, a century, okay? You're going in- the minute is gonna feel like a week so you have some time to think about what you've done. And then you're going to come out of the crystal."))
 
-			if("No")
-				to_chat(target, span_purple("What the hell are you talkin' about? You've added nothing to the conversation- Get in the- Get in the crystal. Sorry, buddy, get in the crystal. HAH hahahahahahaha. We're going to put you in the crystal, you're gonna be in the crystal for a minute; It's gonna feel like one week. It's only one week, man! Some of the people are in the crystal for like, a century, okay? You're going in- the minute is gonna feel like a week so you have some time to think about what you've done. And then you're going to come out of the crystal."))
+		if("No")
+			to_chat(target, span_purple("What the hell are you talkin' about? You've added nothing to the conversation- Get in the- Get in the crystal. Sorry, buddy, get in the crystal. HAH hahahahahahaha. We're going to put you in the crystal, you're gonna be in the crystal for a minute; It's gonna feel like one week. It's only one week, man! Some of the people are in the crystal for like, a century, okay? You're going in- the minute is gonna feel like a week so you have some time to think about what you've done. And then you're going to come out of the crystal."))
 
-		crystal.freedom_timer(jailtime, felt_time)
-		var/msg = "[key_name(target)] was put in the crystal by [key_name(user)] for [LOWER_TEXT(sentence_choice)]. They are charged with: [charge]."
-		message_admins(msg)
-		log_admin(msg)
-	else
-		var/msg = "[key_name(user)] cancelled the crystal before execution."
-		message_admins(msg)
-		log_admin(msg)
+	crystal.freedom_timer(jailtime, felt_time)
+	var/msg = "[key_name(target)] was put in the crystal by [key_name(user)] for [LOWER_TEXT(sentence_choice)]. They are charged with: [charge]."
+	message_admins(msg)
+	log_admin(msg)
 
 /obj/smite_crystal/attack_hand(mob/living/user, list/modifiers)
 	if(!(user in contents))
@@ -102,7 +94,6 @@
 
 
 /obj/smite_crystal/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
-	. = ..()
 	var/sacrifice = tgui_alert(user, "Place [tool] to the crystal? You might not get it back!", list("the crystal", "Yes", "No"))
 
 	switch(sacrifice)
@@ -117,6 +108,8 @@
 				span_notice("[user] thinks better of placing [tool] into [src]."),
 				span_notice("You think better of placing [tool] into [src].")
 			)
+
+	return ITEM_INTERACT_BLOCKING
 
 
 /obj/smite_crystal/proc/freedom_timer(duration, freedom_text)
