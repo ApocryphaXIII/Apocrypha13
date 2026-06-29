@@ -10,11 +10,11 @@
 		if(GAME_STATE_SETTING_UP)
 			round_status = "starting"
 		if(GAME_STATE_PLAYING)
-			round_status = "active -- Join now! [server]"
+			round_status = "active -- Join now!"
 		if(GAME_STATE_FINISHED)
 			round_status = "restarting"
 
-	return new /datum/tgs_message_content("[GLOB.round_id ? "Round #[GLOB.round_id] ([round_timestamp()]): " : "([round_timestamp()]): "]Players: [length(GLOB.clients.len)] (Active: [get_active_player_count(0,1,0)]), Map: [station_name()], Round [round_status] -- Join now! [server]") // APOC EDIT CHANGE - DISCORD
+	return new /datum/tgs_message_content("[GLOB.round_id ? "Round #[GLOB.round_id] ([round_timestamp()]): " : "([round_timestamp()]): "]Players: [length(GLOB.clients.len)] (Active: [get_active_player_count(0,1,0)]), Map: [station_name()], Round [round_status] -- [server]") // APOC EDIT CHANGE - DISCORD
 
 /datum/controller/subsystem/ticker/proc/HasRoundStarted()
 	return current_state >= GAME_STATE_PLAYING
