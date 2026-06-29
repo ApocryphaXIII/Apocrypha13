@@ -16,17 +16,6 @@
 
 	return new /datum/tgs_message_content("[GLOB.round_id ? "Round #[GLOB.round_id] ([round_timestamp()]): " : "([round_timestamp()]): "]Players: [length(GLOB.clients.len)] (Active: [get_active_player_count(0,1,0)]), Map: [station_name()], Round [round_status] -- [server]") // APOC EDIT CHANGE - DISCORD
 
-/datum/controller/subsystem/ticker/proc/HasRoundStarted()
-	return current_state >= GAME_STATE_PLAYING
-
-///Whether the game is currently in progress, excluding roundend
-/datum/controller/subsystem/ticker/proc/IsRoundInProgress()
-	return current_state == GAME_STATE_PLAYING
-
-///Whether the game is currently in progress, excluding roundend
-/datum/controller/subsystem/ticker/proc/IsPostgame()
-	return current_state == GAME_STATE_FINISHED
-
 /datum/tgs_chat_command/fangfuckies // Friend
 	name = "fangfuckies"
 	help_text = "Posts a random biting gif (0.1% chance for an ultra-rare bonus gif.)"
