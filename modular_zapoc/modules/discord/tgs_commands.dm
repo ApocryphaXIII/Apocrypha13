@@ -1,20 +1,24 @@
 /datum/tgs_chat_command/tgscheck/Run(datum/tgs_chat_user/sender, params)
 	var/server = CONFIG_GET(string/public_address) || CONFIG_GET(string/server)
-	var/round_status = "delayed"
+	var/round_status
+	var/timeleft = SSticker.GetTimeLeft()
 
 	switch(SSticker.current_state)
 		if(GAME_STATE_STARTUP)
-			round_status = "initializing"
+			round_status = "Round Initializing"
 		if(GAME_STATE_PREGAME)
-			round_status = "pre-game"
+			round_status = "Pre-Game"
 		if(GAME_STATE_SETTING_UP)
-			round_status = "starting"
+			round_status = "Round Starting"
 		if(GAME_STATE_PLAYING)
-			round_status = "active -- Join now!"
+			round_status = "Active -- Join now!"
 		if(GAME_STATE_FINISHED)
-			round_status = "restarting"
+			round_status = "Round Restarting"
 
-	return new /datum/tgs_message_content("[GLOB.round_id ? "Round #[GLOB.round_id] ([round_timestamp()]): " : "([round_timestamp()]): "]Players: [length(GLOB.clients.len)] (Active: [get_active_player_count(0,1,0)]), Map: [station_name()], Round [round_status] -- [server]") // APOC EDIT CHANGE - DISCORD
+	if(timeleft == -10)
+		round_status = "Round Delayed -- Thanks for playing!"
+
+	return new /datum/tgs_message_content("[GLOB.round_id ? "Round #[GLOB.round_id] ([round_timestamp()]): " : "([round_timestamp()]): "]Players: [length(GLOB.clients.len)] (Active: [get_active_player_count(0,1,0)]), Map: [station_name()], [round_status] -- [server]")
 
 /datum/tgs_chat_command/fangfuckies // Friend
 	name = "fangfuckies"
