@@ -149,4 +149,14 @@ JOB_START_HELPER(society_of_leopold/condittieri, JOB_CONDOTTIERI)
 JOB_START_HELPER(society_of_leopold/inquisitor, JOB_INQUISITOR)
 JOB_START_HELPER(society_of_leopold/novice, JOB_NOVICE)
 
+// APOC EDIT ADD START - JOBS - Ocean 76
+/* Ocean 76ers */
+/obj/effect/landmark/start/darkpack/ocean
+	name = "generic gang member start"
+	icon = 'modular_zapoc/modules/jobs/icons/landmarks.dmi'
+
+JOB_START_HELPER(ocean/boss, JOB_OCEAN_76_BOSS)
+JOB_START_HELPER(ocean/ganger, JOB_OCEAN_76_GANGER)
+// APOC EDIT ADD END
+
 #undef JOB_START_HELPER

@@ -7,7 +7,7 @@
 	max_integrity = 400
 	color = "#c4eaff"
 
-/obj/structure/man_crystal/Initialize()
+/obj/structure/man_crystal/Initialize(mapload)
 	. = ..()
 	set_light(6, l_color = color)
 

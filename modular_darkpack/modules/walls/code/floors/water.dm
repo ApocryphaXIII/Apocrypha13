@@ -3,6 +3,17 @@
 	icon = 'modular_darkpack/modules/walls/icons/floors.dmi'
 	icon_state = "ocean"
 	baseturfs = /turf/open/water/river
+	fishing_datum = /datum/fish_source/river
+
+/turf/open/water/river/deep
+	name = "river"
+	icon = 'modular_darkpack/modules/walls/icons/floors.dmi'
+	icon_state = "ocean"
+	desc = "A little too deep for comfort"
+	immerse_overlay = "immerse_deep"
+	baseturfs = /turf/open/water/river/deep
+	is_swimming_tile = TRUE
+	color = "#979797"
 
 /turf/open/water/beach/vamp
 	name = "ocean"

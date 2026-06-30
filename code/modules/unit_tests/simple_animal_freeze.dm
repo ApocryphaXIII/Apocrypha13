@@ -20,8 +20,6 @@
 		/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/gray_masses, // APOC EDIT ADD START - (Gray masses)
 		/mob/living/simple_animal/hostile/asteroid/elite/legionnairehead/gray_masses, // APOC EDIT ADD END - (Gray masses)
 		/mob/living/simple_animal/hostile/asteroid/elite/pandora,
-		/mob/living/simple_animal/hostile/asteroid/polarbear,
-		/mob/living/simple_animal/hostile/asteroid/polarbear/lesser,
 		/mob/living/simple_animal/hostile/megafauna,
 		/mob/living/simple_animal/hostile/megafauna/bubblegum,
 		/mob/living/simple_animal/hostile/megafauna/bubblegum/hallucination,
