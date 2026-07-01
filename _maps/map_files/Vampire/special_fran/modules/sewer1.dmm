@@ -103,8 +103,8 @@
 /area/vtm/interior/sewer)
 "Ek" = (
 /obj/modular_map_connector,
-/turf/template_noop,
-/area/template_noop)
+/turf/closed/wall/vampwall/brick_old,
+/area/vtm/interior/sewer)
 "EC" = (
 /turf/open/water/vamp_sewer/border,
 /area/vtm/interior/sewer)
@@ -157,11 +157,11 @@
 
 (1,1,1) = {"
 Ek
-ow
-ow
-ow
-ow
-ow
+bj
+nh
+ex
+ex
+bj
 ow
 ow
 ow
@@ -181,12 +181,12 @@ ow
 ow
 "}
 (2,1,1) = {"
-ow
-ow
-ow
-ow
-ow
-ow
+bj
+bj
+nh
+ex
+bj
+bj
 ow
 ow
 ow
@@ -206,11 +206,11 @@ ow
 ow
 "}
 (3,1,1) = {"
-ow
-ow
-ow
-ow
-ow
+nh
+ex
+ex
+nh
+bj
 bj
 bj
 bj
@@ -231,10 +231,10 @@ ow
 ow
 "}
 (4,1,1) = {"
-ow
-ow
-ow
-ow
+nh
+bj
+ex
+bj
 bj
 bj
 XH
@@ -256,9 +256,9 @@ ow
 ow
 "}
 (5,1,1) = {"
-ow
-ow
-ow
+ex
+bj
+bj
 bj
 bj
 Gq
@@ -281,8 +281,8 @@ bj
 ow
 "}
 (6,1,1) = {"
-ow
-ow
+bj
+bj
 ow
 bj
 Fd

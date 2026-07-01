@@ -332,7 +332,7 @@
 /area/vtm/interior/sewer)
 "MB" = (
 /obj/modular_map_connector,
-/turf/template_noop,
+/turf/closed/wall/vampwall/brick_old,
 /area/template_noop)
 "NT" = (
 /obj/structure/ladder/manhole/up{

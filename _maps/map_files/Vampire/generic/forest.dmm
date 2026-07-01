@@ -644,10 +644,6 @@
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 9
 	},
-/obj/machinery/vending/cola{
-	pixel_y = 20;
-	density = 0
-	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "fm" = (

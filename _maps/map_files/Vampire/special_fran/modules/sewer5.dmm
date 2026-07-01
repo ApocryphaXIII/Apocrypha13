@@ -126,7 +126,7 @@
 /area/vtm/interior/sewer)
 "Q" = (
 /obj/modular_map_connector,
-/turf/template_noop,
+/turf/closed/wall/vampwall/brick_old,
 /area/template_noop)
 "S" = (
 /obj/structure/platform/lowwall/brick_old,

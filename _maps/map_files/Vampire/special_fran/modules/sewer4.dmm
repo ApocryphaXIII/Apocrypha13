@@ -217,7 +217,7 @@
 /area/vtm/interior/sewer)
 "Ah" = (
 /obj/modular_map_connector,
-/turf/template_noop,
+/turf/closed/wall/vampwall/brick_old,
 /area/template_noop)
 "AG" = (
 /obj/structure/extinguisher_cabinet/directional/east,
