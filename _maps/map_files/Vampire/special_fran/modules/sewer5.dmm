@@ -127,7 +127,7 @@
 "Q" = (
 /obj/modular_map_connector,
 /turf/closed/wall/vampwall/brick_old,
-/area/template_noop)
+/area/vtm/interior/sewer)
 "S" = (
 /obj/structure/platform/lowwall/brick_old,
 /obj/item/clothing/head/vampire/skull{

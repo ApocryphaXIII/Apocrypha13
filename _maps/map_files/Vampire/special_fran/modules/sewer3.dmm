@@ -83,7 +83,7 @@
 "G" = (
 /obj/modular_map_connector,
 /turf/closed/wall/vampwall/brick_old,
-/area/template_noop)
+/area/vtm/interior/sewer)
 "H" = (
 /mob/living/basic/bat,
 /turf/open/floor/plating/rough/cave,

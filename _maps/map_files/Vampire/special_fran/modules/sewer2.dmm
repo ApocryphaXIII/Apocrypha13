@@ -333,7 +333,7 @@
 "MB" = (
 /obj/modular_map_connector,
 /turf/closed/wall/vampwall/brick_old,
-/area/template_noop)
+/area/vtm/interior/sewer)
 "NT" = (
 /obj/structure/ladder/manhole/up{
 	requires_friend = 0
