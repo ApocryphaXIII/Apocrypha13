@@ -59,6 +59,9 @@ LOG_STATS
 
 #HUMANITY_SUNLIGHT_RESISTANCE
 
+## url that leads to a php endpoint where yt-dl runs. should return a json package including a url to the mp3
+#MUSIC_SERVER_URL https://vampire-freaks.com/api
+
 #EXTRA_ISSUE_URLS https://github.com/DarkPack13/SecondCity
 
 ## Bool for if roleplay only merits/quirks are enabled
