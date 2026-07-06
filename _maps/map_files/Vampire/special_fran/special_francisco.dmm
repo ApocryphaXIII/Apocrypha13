@@ -188,9 +188,9 @@
 /obj/structure/vampdoor/simple{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/door/access/anarch,
 /obj/effect/landmark/npcwall,
 /obj/effect/mapping_helpers/door/autoname,
+/obj/effect/mapping_helpers/door/access/bar,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/smoke)
 "ahp" = (
@@ -3327,10 +3327,7 @@
 	pixel_x = -3;
 	pixel_y = 38
 	},
-/obj/machinery/chem_dispenser/drinks{
-	pixel_y = 0;
-	pixel_x = 0
-	},
+/obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop/bacotell)
 "bZe" = (
@@ -3732,9 +3729,9 @@
 /obj/structure/vampdoor/simple{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/door/access/anarch,
 /obj/effect/mapping_helpers/door/lock,
 /obj/effect/turf_decal/siding/white,
+/obj/effect/mapping_helpers/door/access/bar,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/anarch/basement)
 "cin" = (
@@ -4022,8 +4019,8 @@
 /area/vtm/outside/unionsquare)
 "csB" = (
 /obj/structure/vampdoor/simple,
-/obj/effect/mapping_helpers/door/access/anarch,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/bar,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/smoke)
 "csC" = (
@@ -6046,7 +6043,6 @@
 /obj/structure/table/countertop/bubway,
 /obj/structure/sink/directional/north{
 	icon_state = "basin";
-	pixel_x = 0;
 	pixel_y = -9
 	},
 /obj/item/reagent_containers/cup/glass/mug{
@@ -6490,7 +6486,6 @@
 /area/vtm/interior/laundromat)
 "dPG" = (
 /obj/machinery/vending/cola/starkist{
-	pixel_x = 0;
 	pixel_y = 22;
 	density = 0
 	},
@@ -8563,7 +8558,6 @@
 "faU" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/vending/cola/shamblers{
-	pixel_x = 0;
 	pixel_y = 22;
 	density = 0
 	},
@@ -10154,13 +10148,11 @@
 	},
 /obj/structure/rack/tall/wood_shelf{
 	pixel_y = 12;
-	pixel_x = 0;
 	density = 0
 	},
 /obj/item/toy/mecha/ripley{
 	pixel_y = 34;
-	anchored = 1;
-	pixel_x = 0
+	anchored = 1
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/mallarcade)
@@ -12904,7 +12896,6 @@
 /area/vtm/outside/financialdistrict)
 "hxI" = (
 /obj/effect/spawner/random/structure/billboard/darkpack{
-	pixel_x = 0;
 	pixel_y = 3
 	},
 /turf/open/misc/dirt,
@@ -14970,11 +14961,9 @@
 /obj/item/knife/plastic,
 /obj/structure/table,
 /obj/item/pizzabox{
-	pixel_x = 0;
 	pixel_y = 13
 	},
 /obj/item/pizzabox{
-	pixel_x = 0;
 	pixel_y = 13
 	},
 /turf/open/floor/city/bacotell,
@@ -22117,8 +22106,7 @@
 /obj/structure/table/reinforced,
 /obj/structure/sink/directional/east{
 	icon_state = "basin";
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /turf/open/floor/plating/canal,
 /area/vtm/interior/sewer)
@@ -22569,8 +22557,8 @@
 	},
 /obj/effect/decal/cleanable/cardboard,
 /obj/structure/vampdoor/simple,
-/obj/effect/mapping_helpers/door/access/anarch,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/bar,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/anarch/basement)
 "ner" = (
@@ -23057,24 +23045,20 @@
 "nvn" = (
 /obj/structure/rack/tall/wood_shelf{
 	pixel_y = 12;
-	pixel_x = 0;
 	density = 0
 	},
 /obj/item/toy/plush/moth{
 	pixel_y = 36;
 	anchored = 1;
-	name = "Cloth Eatron";
-	pixel_x = 0
+	name = "Cloth Eatron"
 	},
 /obj/item/toy/mecha/firefighter{
 	pixel_y = 17;
-	pixel_x = 0;
 	anchored = 1
 	},
 /obj/item/clothing/head/costume/kitty{
 	pixel_y = 23;
-	anchored = 1;
-	pixel_x = 0
+	anchored = 1
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/mallarcade)
@@ -24773,7 +24757,6 @@
 	color = "#570090"
 	},
 /obj/machinery/vending/cola/pwr_game{
-	pixel_x = 0;
 	pixel_y = 22;
 	density = 0
 	},
@@ -25362,8 +25345,8 @@
 	dir = 1
 	},
 /obj/structure/vampdoor/simple,
-/obj/effect/mapping_helpers/door/access/anarch,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/bar,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/anarch/basement)
 "oIo" = (
@@ -25649,7 +25632,6 @@
 "oSs" = (
 /obj/structure/rack/tall/wood_shelf{
 	pixel_y = 12;
-	pixel_x = 0;
 	density = 0
 	},
 /obj/item/toy/katana{
@@ -25660,8 +25642,7 @@
 /obj/item/toy/plush/human{
 	pixel_y = 40;
 	anchored = 1;
-	name = "Runescape Matthews";
-	pixel_x = 0
+	name = "Runescape Matthews"
 	},
 /obj/item/toy/figure/ian{
 	pixel_y = 16;
@@ -25842,7 +25823,6 @@
 "oWp" = (
 /obj/machinery/vending/cola/shamblers{
 	density = 0;
-	pixel_x = 0;
 	pixel_y = 22
 	},
 /turf/open/floor/city/plating_mono,
@@ -27756,11 +27736,11 @@
 /obj/structure/vampdoor/simple{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/door/access/anarch,
 /obj/effect/mapping_helpers/door/lock,
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
+/obj/effect/mapping_helpers/door/access/bar,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/anarch/basement)
 "qcO" = (
@@ -31667,7 +31647,6 @@
 "smZ" = (
 /obj/machinery/vending/cola/shamblers{
 	density = 0;
-	pixel_x = 0;
 	pixel_y = 22
 	},
 /turf/open/floor/wood/smooth/old,
@@ -34828,7 +34807,6 @@
 /area/vtm/interior/sewer)
 "tWe" = (
 /obj/machinery/vending/cola/shamblers{
-	pixel_x = 0;
 	pixel_y = 22;
 	density = 0
 	},
@@ -35145,8 +35123,7 @@
 "ugU" = (
 /obj/machinery/chem_dispenser/drinks{
 	dir = 1;
-	pixel_x = -1;
-	pixel_y = 0
+	pixel_x = -1
 	},
 /obj/structure/table/countertop/purple,
 /turf/open/floor/city/plating,
@@ -35212,7 +35189,6 @@
 /area/vtm/interior/bianchiBank)
 "ujt" = (
 /obj/machinery/vending/cola/pwr_game{
-	pixel_x = 0;
 	pixel_y = 22;
 	density = 0
 	},
@@ -37223,9 +37199,9 @@
 /area/vtm/interior/police)
 "vso" = (
 /obj/structure/vampdoor/simple,
-/obj/effect/mapping_helpers/door/access/anarch,
 /obj/effect/mapping_helpers/door/lock,
 /obj/effect/turf_decal/siding/white,
+/obj/effect/mapping_helpers/door/access/bar,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/anarch/basement)
 "vsF" = (
@@ -38489,10 +38465,7 @@
 	dir = 1
 	},
 /obj/structure/table/countertop/red,
-/obj/machinery/chem_dispenser/drinks{
-	pixel_y = 0;
-	pixel_x = 0
-	},
+/obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/pizza)
 "wgN" = (
@@ -40589,7 +40562,6 @@
 /area/vtm/outside/financialdistrict)
 "xvN" = (
 /obj/machinery/vending/cola/pwr_game{
-	pixel_x = 0;
 	pixel_y = 22;
 	density = 0
 	},
@@ -40910,8 +40882,7 @@
 "xGR" = (
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 1;
-	pixel_x = 3;
-	pixel_y = 0
+	pixel_x = 3
 	},
 /obj/structure/table/countertop/purple,
 /turf/open/floor/city/plating,
@@ -41355,7 +41326,6 @@
 	dir = 4
 	},
 /obj/machinery/vending/cola/shamblers{
-	pixel_x = 0;
 	pixel_y = 22;
 	density = 0
 	},
