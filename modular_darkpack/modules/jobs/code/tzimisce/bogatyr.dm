@@ -15,9 +15,9 @@
 	display_order = JOB_DISPLAY_ORDER_BOGATYR
 
 	allowed_splats = list(SPLAT_KINDRED)
-	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE)
+	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE) // APOC EDIT CHANGE - JOBS - (Voivode)
 
-	description = "Whether you are of Voivode-in-Waiting's blood or if you've been honored, you are one of the Kin of the Voivode. Protect your Family, as your Family would protect you."
+	description = "You bare the name of the warriors that guarded ancient Dragons, to be a Bogatyr is to serve the Voivodes and the Seer Voivodate. Protect your family and the Sarcophagus of the Voivode-in-Waiting." // APOC EDIT CHANGE - JOBS - (Voivode)
 	minimum_masquerade = 2
 
 	known_contacts = list("Prince", "Baron", "Sheriff")
@@ -34,4 +34,4 @@
 	suit = /obj/item/clothing/suit/vampire/bogatyr
 	belt = /obj/item/storage/belt/sheath/vamp/sword
 	l_pocket = /obj/item/smartphone/bogatyr
-	backpack_contents = list(/obj/item/vamp/keys/old_clan_tzimisce=1, /obj/item/card/credit=1)
+	backpack_contents = list(/obj/item/vamp/keys/voivodate = 1, /obj/item/card/credit=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)

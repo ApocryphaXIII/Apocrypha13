@@ -34,7 +34,7 @@
 
 //Anarch
 #define JOB_BARON "Baron"
-#define JOB_TAPSTER "Tapster"
+#define JOB_TAPSTER "The Anarchy Rose Employee" // APOC EDIT CHANGE
 #define JOB_BRUISER "Bruiser"
 #define JOB_EMISSARY "Emissary"
 #define JOB_SWEEPER "Sweeper"
@@ -48,6 +48,7 @@
 #define JOB_BOGATYR "Bogatyr"
 #define JOB_VOIVODE "Voivode"
 #define JOB_ZADRUGA "Zadruga"
+#define JOB_VOIVODATE_CITIZEN "Voivodate Citizen"
 
 //Police
 #define JOB_POLICE_CAPTAIN "Police Captain"
@@ -280,7 +281,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 // this prob should just say clinic genericly.
 #define EXP_TYPE_CLINIC "St. John's Clinic"
 #define EXP_TYPE_GIOVANNI "Giovanni Family"
-#define EXP_TYPE_MANOR "Tzimisce Manor"
+#define EXP_TYPE_MANOR "Voivodate" // APOC EDIT CHANGE -
 #define EXP_TYPE_CHURCH "Church"
 #define EXP_TYPE_CLUB "Strip Club"
 #define EXP_TYPE_OCEAN "Ocean 76" // APOC EDIT ADD - JOBS - Ocean 76
