@@ -426,6 +426,15 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 		// DARKPACK EDIT ADD START
 		if(!CONFIG_GET(flag/usewhitelist))
 			features += "Whitelisted"
+
+		var/list/splat_names = list()
+		for (var/splats_id in get_selectable_splats())
+			var/splats_type = GLOB.splat_list[splats_id]
+			var/datum/splat/splats = GLOB.splat_prototypes[splats_type]
+
+			splat_names += splats.name
+		if(splat_names.len)
+			features += "Splats: [jointext(splat_names, ", ")]."
 		// DARKPACK EDIT ADD END
 
 
