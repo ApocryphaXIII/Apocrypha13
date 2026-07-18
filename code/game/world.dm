@@ -413,6 +413,10 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 		new_status += "(<a href=\"[CONFIG_GET(string/forumurl)]\">Discord</a>)"
 		if(CONFIG_GET(string/servertagline))
 			new_status += "<br>[CONFIG_GET(string/servertagline)]<br>"
+		if(CONFIG_GET(flag/nsfw_content))
+			features += "18+"
+		if(CONFIG_GET(flag/usewhitelist))
+			features += "whitelisted"
 		// DARKPACK EDIT ADD END
 		if(CONFIG_GET(flag/allow_respawn))
 			features += "respawn" // show "respawn" regardless of "respawn as char" or "free respawn"
@@ -420,8 +424,6 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 			features += "AI disabled"
 		hostedby = CONFIG_GET(string/hostedby)
 		// DARKPACK EDIT ADD START
-		if(!CONFIG_GET(flag/usewhitelist))
-			features += "Whitelisted"
 
 		var/list/splat_names = list()
 		for (var/splats_id in get_selectable_splats())
@@ -430,7 +432,7 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 
 			splat_names += splats.name
 		if(splat_names.len)
-			features += "Splats: [jointext(splat_names, ", ")]"
+			features += "splats: [jointext(splat_names, ", ")]"
 		// DARKPACK EDIT ADD END
 
 
@@ -445,7 +447,7 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 		features += "hosted by <b>[hostedby]</b>"
 
 	if(length(features))
-		new_status += ": [jointext(features, ", ")]"
+		new_status += "[jointext(features, ", ")]" // DARKPACK EDIT CHANGE
 
 	if(!SSticker || SSticker?.current_state == GAME_STATE_STARTUP)
 		new_status += "<br><b>STARTING</b>"
