@@ -410,11 +410,7 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 		if (server_name)
 			new_status += "<b>[server_name]</b> "
 		// DARKPACK EDIT ADD START
-		new_status += " ("
-		new_status += "<a href=\"[CONFIG_GET(string/forumurl)]\">"
-		new_status += "Discord"
-		new_status += "</a>"
-		new_status += ")\]"
+		new_status += "(<a href=\"[CONFIG_GET(string/forumurl)]\">Discord</a>)"
 		if(CONFIG_GET(string/servertagline))
 			new_status += "<br>[CONFIG_GET(string/servertagline)]<br>"
 		// DARKPACK EDIT ADD END
