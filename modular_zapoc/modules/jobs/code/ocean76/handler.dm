@@ -18,7 +18,7 @@
 	known_contacts = list("Operator", "Dealer")
 	allowed_splats = list(SPLAT_NONE)
 	description = "This city should belong to those who live in it. Your operators are at your command, and they have your back."
-	minimal_masquerade = 5
+	minimum_masquerade = 5
 
 /datum/outfit/job/vampire/ocean_boss
 	name = "Handler"

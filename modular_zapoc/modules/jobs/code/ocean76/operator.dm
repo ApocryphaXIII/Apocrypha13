@@ -17,7 +17,7 @@
 
 	known_contacts = list("Handler")
 	description = "This city should belong to those who live in it. Run the streets the way they're supposed to be run."
-	minimal_masquerade = 0
+	minimum_masquerade = 0
 
 /datum/outfit/job/vampire/ocean
 	name = "Operator"
