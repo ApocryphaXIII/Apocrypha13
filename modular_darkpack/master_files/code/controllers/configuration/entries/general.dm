@@ -21,3 +21,5 @@
 // url for the alternate web_sound server. you can safely leave this alone if you want, vampire
 /// e.g. https://vampire-freaks.com/api
 /datum/config_entry/string/music_server_url // Not an existing override, bite me.
+
+/datum/config_entry/string/servertagline

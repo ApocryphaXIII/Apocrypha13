@@ -70,3 +70,6 @@ ROLEPLAY_ONLY_MERITS 1
 ## Configs for the type of attack we use when we click at a ranged distance. Only one can be enabled at a time.
 #DIRECTIONAL_COMBAT
 SWING_COMBAT
+
+## Server tagline: This will appear right below the server's title.
+# SERVERTAGLINE A total conversion project to the WoD setting.

@@ -409,11 +409,25 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 		var/server_name = CONFIG_GET(string/servername)
 		if (server_name)
 			new_status += "<b>[server_name]</b> "
+		// DARKPACK EDIT ADD START
+		new_status += " ("
+		new_status += "<a href=\"[CONFIG_GET(string/forumurl)]\">"
+		new_status += "Discord"
+		new_status += "</a>"
+		new_status += ")\]"
+		if(CONFIG_GET(string/servertagline))
+			new_status += "<br>[CONFIG_GET(string/servertagline)]<br>"
+		// DARKPACK EDIT ADD END
 		if(CONFIG_GET(flag/allow_respawn))
 			features += "respawn" // show "respawn" regardless of "respawn as char" or "free respawn"
 		if(!CONFIG_GET(flag/allow_ai))
 			features += "AI disabled"
 		hostedby = CONFIG_GET(string/hostedby)
+		// DARKPACK EDIT ADD START
+		if(!CONFIG_GET(flag/usewhitelist))
+			features += "Whitelisted"
+		// DARKPACK EDIT ADD END
+
 
 	if (CONFIG_GET(flag/station_name_in_hub_entry))
 		new_status += " &#8212; <b>[station_name()]</b>"
