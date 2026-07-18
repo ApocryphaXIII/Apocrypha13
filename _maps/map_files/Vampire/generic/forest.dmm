@@ -1560,7 +1560,7 @@
 	pixel_x = -3
 	},
 /obj/structure/stone_tile/slab,
-/obj/item/food/grown/parsnip{
+/obj/item/food/grown/carrotlike/parsnip{
 	pixel_x = 6
 	},
 /turf/open/floor/plating/rough/cave,
@@ -4672,7 +4672,7 @@
 	pixel_x = -7;
 	pixel_y = 12
 	},
-/obj/item/food/grown/watermelon{
+/obj/item/food/grown/melonlike/watermelon{
 	pixel_x = 6;
 	pixel_y = 4
 	},

@@ -6098,7 +6098,7 @@
 /area/vtm/interior/chantry)
 "dDw" = (
 /obj/structure/table/countertop/bubway,
-/obj/structure/reagent_dispensers/beerkeg{
+/obj/effect/spawner/random/food_or_drink/keg{
 	pixel_y = 6
 	},
 /turf/open/floor/plating/concrete,
@@ -7823,10 +7823,10 @@
 /area/vtm/interior/police/fed)
 "eFz" = (
 /obj/structure/rack/fruit_stand,
-/obj/item/food/grown/watermelon{
+/obj/item/food/grown/melonlike/watermelon{
 	anchored = 1
 	},
-/obj/item/food/grown/watermelon{
+/obj/item/food/grown/melonlike/watermelon{
 	pixel_y = 10;
 	anchored = 1
 	},
@@ -19224,9 +19224,9 @@
 /obj/item/food/grown/mushroom/chanterelle,
 /obj/item/food/grown/mushroom/chanterelle,
 /obj/item/food/grown/mushroom/chanterelle,
-/obj/item/food/grown/carrot,
-/obj/item/food/grown/carrot,
-/obj/item/food/grown/carrot,
+/obj/item/food/grown/carrotlike/carrot,
+/obj/item/food/grown/carrotlike/carrot,
+/obj/item/food/grown/carrotlike/carrot,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/voivodate)
 "lik" = (
