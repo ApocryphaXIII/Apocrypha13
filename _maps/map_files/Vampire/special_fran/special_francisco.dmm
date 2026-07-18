@@ -5799,9 +5799,7 @@
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/clinic)
 "dvy" = (
-/obj/machinery/vending/boozeomat{
-	pixel_y = 15
-	},
+/obj/machinery/vending/boozeomat/private,
 /turf/open/floor/city/plating,
 /area/vtm/interior/strip)
 "dvz" = (
@@ -13014,7 +13012,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/supply)
 "hIy" = (
-/obj/machinery/vending/boozeomat,
+/obj/machinery/vending/boozeomat/private,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f2)
 "hIE" = (
@@ -27142,7 +27140,7 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/shop)
 "pYv" = (
-/obj/machinery/vending/boozeomat,
+/obj/machinery/vending/boozeomat/private,
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/gang)
 "pYB" = (
@@ -34670,7 +34668,6 @@
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
-/obj/structure/closet/secure_closet/freezer/commercial,
 /obj/structure/closet/secure_closet/freezer/commercial,
 /turf/open/floor/city/plating,
 /area/vtm/interior/clinic)
