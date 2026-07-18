@@ -434,7 +434,7 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 
 			splat_names += splats.name
 		if(splat_names.len)
-			features += "Splats: [jointext(splat_names, ", ")]."
+			features += "Splats: [jointext(splat_names, ", ")]"
 		// DARKPACK EDIT ADD END
 
 
