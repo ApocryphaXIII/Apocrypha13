@@ -28,4 +28,4 @@
 	head = /obj/item/clothing/head/vampire/bandana/black
 	l_pocket = /obj/item/smartphone
 	r_pocket = /obj/item/knife/vamp
-	backpack_contents = list(/obj/item/vamp/keys/ocean, /obj/item/clothing/suit/vampire/vest = 1, /obj/item/clothing/mask/vampire/balaclava = 1, /obj/item/gun/ballistic/automatic/pistol/darkpack/beretta = 1, /obj/item/ammo_box/magazine/semi9mm = 2, /obj/item/card/credit = 1)
+	backpack_contents = list(/obj/item/vamp/keys/ocean = 1, /obj/item/clothing/suit/vampire/vest = 1, /obj/item/clothing/mask/vampire/balaclava = 1, /obj/item/gun/ballistic/automatic/pistol/darkpack/beretta = 1, /obj/item/ammo_box/magazine/semi9mm = 2, /obj/item/card/credit = 1)

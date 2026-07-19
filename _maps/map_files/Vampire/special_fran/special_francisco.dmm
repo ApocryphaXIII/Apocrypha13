@@ -8012,7 +8012,7 @@
 "eMY" = (
 /obj/structure/table/wood/fancy/red,
 /obj/item/ritual_tome/arcane,
-/obj/effect/spawner/random/occult/artifact,
+/obj/effect/spawner/random/occult/artifact/vampire_only,
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
 "eNb" = (
@@ -12344,7 +12344,7 @@
 /obj/item/clothing/suit/hooded/robes/tremere,
 /obj/item/clothing/suit/hooded/robes/tremere,
 /obj/item/clothing/suit/hooded/robes/tremere,
-/obj/effect/spawner/random/occult/artifact,
+/obj/effect/spawner/random/occult/artifact/vampire_only,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/chantry)
 "hgH" = (
@@ -14225,6 +14225,13 @@
 "ilz" = (
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
+"ilK" = (
+/obj/structure/table/countertop,
+/obj/structure/retail/antique{
+	dir = 1
+	},
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/shop/pawnshop)
 "ilO" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 9;
@@ -21560,7 +21567,9 @@
 /turf/open/floor/plating/stone,
 /area/vtm/interior/voivodate/sanctum)
 "mIC" = (
-/obj/structure/closet/secure_closet/weapons,
+/obj/structure/closet/secure_closet/weapons{
+	locked = 0
+	},
 /obj/item/gun/ballistic/automatic/darkpack/ar15{
 	desc = "A shiny new SFPD Carbine, courtesy of improved budgets and a dire need to clean these streets.";
 	name = "Police Issue CAR-15"
@@ -25711,7 +25720,8 @@
 /area/vtm/interior/police)
 "pbe" = (
 /obj/structure/closet/secure_closet/weapons{
-	pixel_y = 10
+	pixel_y = 10;
+	locked = 0
 	},
 /obj/item/gun/ballistic/automatic/darkpack/mp5,
 /obj/item/gun/ballistic/automatic/darkpack/mp5,
@@ -35205,7 +35215,7 @@
 /obj/item/clothing/suit/hooded/robes/magister,
 /obj/item/clothing/suit/hooded/robes/magister,
 /obj/item/clothing/suit/hooded/robes/magister,
-/obj/effect/spawner/random/occult/artifact,
+/obj/effect/spawner/random/occult/artifact/vampire_only,
 /turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
 "uvV" = (
@@ -60921,7 +60931,7 @@ fgh
 uRS
 iVW
 nPt
-haj
+ilK
 nPt
 oZQ
 cyn

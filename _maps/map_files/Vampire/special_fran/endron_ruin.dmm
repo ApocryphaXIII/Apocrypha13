@@ -1058,7 +1058,7 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "qe" = (
-/obj/structure/extinguisher_cabinet/directional/west,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
 "qf" = (
@@ -1734,7 +1734,7 @@
 /area/vtm/interior/endron_facility/forest)
 "AB" = (
 /obj/structure/lattice/grate,
-/mob/living/simple_animal/hostile/asteroid/elite/legionnaire,
+/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/gray_masses,
 /turf/open/water/vamp_sewer,
 /area/vtm/interior/endron_facility/forest)
 "AL" = (
@@ -2118,7 +2118,7 @@
 "FG" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/trimline/yellow/line,
-/obj/structure/extinguisher_cabinet/directional/west,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "FM" = (
@@ -2322,7 +2322,7 @@
 /area/vtm/outside/forest)
 "It" = (
 /obj/structure/glowshroom/glowcap,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "Iu" = (

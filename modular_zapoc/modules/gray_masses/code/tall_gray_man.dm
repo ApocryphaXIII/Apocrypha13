@@ -5,10 +5,12 @@
 	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses_tall.dmi'
 	loot_drop = list(/obj/effect/spawner/random/occult/artifact)
 	stat_attack = CONSCIOUS
-	attack_action_types = list(/datum/action/innate/elite_attack/legionnaire_charge,
-								/datum/action/innate/elite_attack/head_detach,
-								/datum/action/innate/elite_attack/bonfire_teleport,
-								/datum/action/innate/elite_attack/spew_smoke)
+	attack_action_types = list(
+		/datum/action/innate/elite_attack/legionnaire_charge,
+		/datum/action/innate/elite_attack/head_detach,
+		/datum/action/innate/elite_attack/bonfire_teleport,
+		/datum/action/innate/elite_attack/spew_smoke
+	)
 	bonfire_type = /obj/structure/legionnaire_bonfire/gray_masses
 
 /mob/living/simple_animal/hostile/asteroid/elite/legionnairehead/gray_masses
