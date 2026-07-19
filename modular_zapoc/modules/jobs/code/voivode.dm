@@ -4,8 +4,9 @@
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = " the Laws of Hospitality"
-
+	config_tag = "VOIVODATE_CITIZEN"
 	outfit = /datum/outfit/job/voivodate_citizen
+	job_flags = CITY_JOB_FLAGS
 
 	display_order = 4
 	exp_required_type_department = EXP_TYPE_MANOR
