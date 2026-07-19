@@ -25,6 +25,6 @@
 	uniform = /obj/item/clothing/under/vampire/biker
 	shoes = /obj/item/clothing/shoes/vampire/sneakers
 	head = /obj/item/clothing/head/vampire/bandana/black
-	l_pocket = /obj/item/vamp/keys/ocean
+	l_pocket = /obj/item/smartphone
 	r_pocket = /obj/item/knife/vamp
-	backpack_contents = list(/obj/item/clothing/mask/vampire/balaclava = 1, /obj/item/gun/ballistic/automatic/pistol/darkpack/glock19 = 1, /obj/item/ammo_box/magazine/glock9mm = 2)
+	backpack_contents = list(/obj/item/vamp/keys/ocean, /obj/item/clothing/mask/vampire/balaclava = 1, /obj/item/gun/ballistic/automatic/pistol/darkpack/glock19 = 1, /obj/item/ammo_box/magazine/glock9mm = 2)

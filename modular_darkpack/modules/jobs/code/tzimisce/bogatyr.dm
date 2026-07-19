@@ -2,8 +2,8 @@
 /datum/job/vampire/bogatyr
 	title = JOB_BOGATYR
 	faction = FACTION_SABBAT
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2 // APOC EDIT CHANGE - JOBS - (Voivode)
+	spawn_positions = 2 // APOC EDIT CHANGE - JOBS - (Voivode)
 	supervisors = " the Laws of Hospitality"
 	config_tag = "BOGATYR"
 	outfit = /datum/outfit/job/vampire/bogatyr

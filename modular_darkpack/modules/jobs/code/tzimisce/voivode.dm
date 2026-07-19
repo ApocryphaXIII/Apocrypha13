@@ -31,4 +31,4 @@
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	belt = /obj/item/storage/belt/sheath/vamp/sword
 	l_pocket = /obj/item/smartphone/voivode
-	backpack_contents = list(/obj/item/vamp/keys/old_clan_tzimisce=1, /obj/item/instrument/eguitar/vamp=1, /obj/item/card/credit/elder=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)
+	backpack_contents = list(/obj/item/vamp/keys/voivodate/master = 1, /obj/item/instrument/eguitar/vamp = 1, /obj/item/card/credit/elder = 1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)

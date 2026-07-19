@@ -129,6 +129,7 @@ JOB_START_HELPER(pentex/employee, JOB_PENTEX_EMPLOYEE)
 	name = "generic voivodate start"
 
 JOB_START_HELPER(voivode/voivode, JOB_VOIVODE)
+JOB_START_HELPER(voivode/bogatyr_captain, JOB_BOGATYR_CAPTAIN) // APOC EDIT ADD - JOBS - (Voivode)
 JOB_START_HELPER(voivode/bogatyr, JOB_BOGATYR)
 JOB_START_HELPER(voivode/zadruga, JOB_ZADRUGA)
 JOB_START_HELPER(voivode/voivodate_citizen, JOB_VOIVODATE_CITIZEN) // APOC EDIT ADD - JOBS - (Voivode)
