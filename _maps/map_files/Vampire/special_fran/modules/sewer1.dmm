@@ -1,0 +1,732 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aq" = (
+/obj/structure/vampipe{
+	pixel_y = 32;
+	icon_state = "piping25"
+	},
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"bj" = (
+/turf/closed/wall/vampwall/rock,
+/area/vtm/interior/sewer)
+"cp" = (
+/turf/open/water/vamp_sewer,
+/area/vtm/interior/sewer)
+"cs" = (
+/turf/open/floor/iron/stairs{
+	dir = 8
+	},
+/area/vtm/interior/sewer)
+"dU" = (
+/mob/living/carbon/human/npc/bandit{
+	hostile = 1;
+	aggressive = 1
+	},
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"ex" = (
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"gP" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"iu" = (
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"jA" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/effect/spawner/random/occult/artifact,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"nh" = (
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"ow" = (
+/turf/template_noop,
+/area/template_noop)
+"pj" = (
+/obj/structure/bonfire/prelit/fire_barrel,
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"pN" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"qS" = (
+/turf/closed/wall/vampwall/brick_old,
+/area/vtm/interior/sewer)
+"uP" = (
+/obj/structure/vampipe{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"wH" = (
+/obj/structure/platform/lowwall/brick_old,
+/obj/item/reagent_containers/cup/glass/bottle/beer/vampire/blue_stripe{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"zP" = (
+/obj/structure/methlab/movable,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"AG" = (
+/obj/structure/platform/lowwall/brick_old,
+/obj/item/reagent_containers/cup/glass/bottle/beer/vampire{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Ck" = (
+/obj/structure/vampdoor/old{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"CW" = (
+/obj/structure/vampdoor/old,
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"Ek" = (
+/obj/modular_map_connector,
+/turf/closed/wall/vampwall/brick_old,
+/area/vtm/interior/sewer)
+"EC" = (
+/turf/open/water/vamp_sewer/border,
+/area/vtm/interior/sewer)
+"Fd" = (
+/obj/effect/spawner/random/structure/shipping_container,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Gq" = (
+/obj/effect/spawner/random/structure/closet_empty/crate/with_loot,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Hl" = (
+/obj/effect/spawner/random/trash/rat,
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"Ih" = (
+/obj/structure/platform/lowwall/brick_old,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Jm" = (
+/obj/structure/flora/rock/stalagmite,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"VC" = (
+/mob/living/carbon/human/npc/bandit,
+/obj/structure/chair/plastic/darkpack,
+/obj/effect/mapping_helpers/mob_buckler,
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"VT" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = -6;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/cup/mortar{
+	pixel_x = 9;
+	pixel_y = 9
+	},
+/obj/item/pestle{
+	pixel_x = 3;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"XH" = (
+/obj/structure/flora/rock/stalagmite,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+
+(1,1,1) = {"
+Ek
+bj
+nh
+ex
+ex
+bj
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+"}
+(2,1,1) = {"
+bj
+bj
+nh
+ex
+bj
+bj
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+"}
+(3,1,1) = {"
+nh
+ex
+ex
+nh
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+ow
+ow
+ow
+ow
+ow
+"}
+(4,1,1) = {"
+nh
+bj
+ex
+bj
+bj
+bj
+XH
+nh
+nh
+nh
+XH
+nh
+XH
+ex
+ex
+nh
+nh
+bj
+bj
+bj
+bj
+ow
+ow
+"}
+(5,1,1) = {"
+ex
+bj
+bj
+bj
+bj
+Gq
+nh
+dU
+ex
+ex
+ex
+ex
+ex
+nh
+nh
+nh
+nh
+XH
+nh
+nh
+bj
+bj
+ow
+"}
+(6,1,1) = {"
+bj
+bj
+ow
+bj
+Fd
+zP
+ex
+ex
+nh
+ex
+ex
+nh
+nh
+nh
+nh
+nh
+ex
+ex
+ex
+ex
+nh
+bj
+bj
+"}
+(7,1,1) = {"
+ow
+ow
+ow
+bj
+nh
+jA
+ex
+ex
+XH
+bj
+bj
+bj
+bj
+nh
+nh
+nh
+nh
+nh
+nh
+nh
+nh
+nh
+bj
+"}
+(8,1,1) = {"
+qS
+qS
+qS
+qS
+ex
+VT
+ex
+bj
+bj
+bj
+bj
+bj
+bj
+nh
+nh
+nh
+nh
+bj
+bj
+nh
+ex
+nh
+bj
+"}
+(9,1,1) = {"
+qS
+uP
+Hl
+qS
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+ex
+ex
+ex
+nh
+bj
+bj
+bj
+bj
+Jm
+ex
+bj
+"}
+(10,1,1) = {"
+qS
+uP
+iu
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+gP
+pN
+pN
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+"}
+(11,1,1) = {"
+qS
+aq
+iu
+Ih
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(12,1,1) = {"
+CW
+iu
+iu
+Ih
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(13,1,1) = {"
+qS
+iu
+iu
+Ih
+EC
+cp
+cp
+qS
+EC
+cp
+cp
+qS
+EC
+cp
+cp
+qS
+EC
+cp
+cp
+qS
+EC
+cp
+qS
+"}
+(14,1,1) = {"
+qS
+iu
+VC
+AG
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(15,1,1) = {"
+qS
+iu
+pj
+Ih
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(16,1,1) = {"
+qS
+iu
+VC
+wH
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(17,1,1) = {"
+qS
+iu
+iu
+Ih
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(18,1,1) = {"
+qS
+iu
+iu
+Ih
+EC
+cp
+cp
+qS
+EC
+cp
+cp
+qS
+EC
+cp
+cp
+qS
+EC
+cp
+cp
+qS
+EC
+cp
+qS
+"}
+(19,1,1) = {"
+qS
+iu
+iu
+Ih
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(20,1,1) = {"
+qS
+iu
+iu
+Ih
+EC
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+qS
+"}
+(21,1,1) = {"
+qS
+Ck
+qS
+qS
+cs
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+qS
+"}
+(22,1,1) = {"
+qS
+iu
+iu
+iu
+iu
+qS
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+"}
+(23,1,1) = {"
+qS
+qS
+qS
+qS
+qS
+qS
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+ow
+"}

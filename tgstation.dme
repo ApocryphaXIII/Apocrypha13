@@ -8158,6 +8158,7 @@
 #include "modular_zapoc\modules\jobs\code\ocean76\operator.dm"
 #include "modular_zapoc\modules\mapping\code\corpses.dm"
 #include "modular_zapoc\modules\mapping\code\mapping_helper.dm"
+#include "modular_zapoc\modules\mapping\code\modular_rooms.dm"
 #include "modular_zapoc\modules\mapping\code\transfer_zones.dm"
 #include "modular_zapoc\modules\mobs\code\cockroach.dm"
 #include "modular_zapoc\modules\smites\code\crystal.dm"

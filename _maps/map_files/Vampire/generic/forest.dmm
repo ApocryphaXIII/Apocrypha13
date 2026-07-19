@@ -644,10 +644,6 @@
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 9
 	},
-/obj/machinery/vending/cola{
-	pixel_y = 20;
-	density = 0
-	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "fm" = (
@@ -719,7 +715,7 @@
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 10
 	},
-/obj/machinery/jukebox,
+/obj/machinery/jukebox/no_access,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "fU" = (
@@ -4615,10 +4611,10 @@
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest)
 "Pa" = (
-/obj/machinery/vending/boozeomat,
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 5
 	},
+/obj/machinery/vending/boozeomat/private,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "Pb" = (
