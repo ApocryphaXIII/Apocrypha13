@@ -14,7 +14,7 @@
 	)
 
 	allowed_splats = list(SPLAT_KINDRED, SPLAT_GHOUL)
-	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE, VAMPIRE_CLAN_SALUBRI, VAMPIRE_CLAN_SALUBRI_WARRIOR, VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY)
+	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE, VAMPIRE_CLAN_HEALER_SALUBRI, VAMPIRE_CLAN_WARRIOR_SALUBRI, VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY)
 
 	description = "You belong to the Seer's Voivodate, a resurgance of the pre-existing California Voivodate. Above all you must respect the Hospitality, and the Voivodes."
 	known_contacts = list("Voivode", "Zadruga", "Bogatyr", "Bogatyr Captain")
