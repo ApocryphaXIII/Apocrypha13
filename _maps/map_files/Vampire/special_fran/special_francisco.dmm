@@ -9069,8 +9069,12 @@
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/museum)
 "fqn" = (
-/turf/closed/wall/vampwall/rock,
-/area/misc/cordon)
+/obj/agility_shortcut/urban/spiral{
+	id = "corruption";
+	pixel_y = 30
+	},
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/wyrm_corrupted)
 "fqu" = (
 /obj/item/kirbyplants/darkpack/random,
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -45774,7 +45778,7 @@ hUM
 wrk
 "}
 (41,1,1) = {"
-jVd
+wrk
 osH
 exW
 exW
@@ -45881,9 +45885,9 @@ hUM
 wrk
 "}
 (42,1,1) = {"
+wrk
 osH
-osH
-exW
+fqn
 aRI
 rwk
 rwk
@@ -45988,7 +45992,7 @@ hUM
 wrk
 "}
 (43,1,1) = {"
-osH
+wrk
 osH
 exW
 exW
@@ -46095,7 +46099,7 @@ qcO
 qcO
 "}
 (44,1,1) = {"
-jVd
+wrk
 osH
 vaM
 pTe
@@ -46666,7 +46670,7 @@ smE
 tWb
 nbL
 wSZ
-fqn
+hUM
 uHD
 swG
 kzb
@@ -46773,7 +46777,7 @@ smE
 tWb
 fhq
 wSZ
-fqn
+hUM
 uHD
 vuL
 kzb
@@ -46880,7 +46884,7 @@ smE
 tWb
 nbL
 wSZ
-fqn
+hUM
 uHD
 ogG
 kzb
