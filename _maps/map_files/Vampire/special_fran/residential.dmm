@@ -209,7 +209,7 @@
 /turf/closed/wall/vampwall/rich,
 /area/vtm/outside/fishermanswharf)
 "bN" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "bP" = (
@@ -1965,6 +1965,10 @@
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/apartment)
+"pD" = (
+/obj/effect/spawner/random/structure/billboard/darkpack,
+/turf/open/misc/grass,
+/area/vtm/outside/fishermanswharf)
 "pG" = (
 /obj/effect/turf_decal/asphaltline/alt{
 	dir = 8
@@ -3073,7 +3077,7 @@
 	pixel_x = -14;
 	pixel_y = 9
 	},
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "yx" = (
@@ -4998,7 +5002,7 @@
 /turf/open/misc/grass,
 /area/vtm/outside/fishermanswharf)
 "MZ" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior)
 "Na" = (
@@ -5029,6 +5033,10 @@
 /obj/structure/platform/lowwall/junk/window,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/shop/gummaguts)
+"Nt" = (
+/obj/structure/chair/plastic/darkpack,
+/turf/open/misc/beach/vamp,
+/area/vtm/outside/northbeach)
 "Nu" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -6546,16 +6554,6 @@
 /obj/structure/bookcase/random/reference,
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/ghetto)
-"Zs" = (
-/obj/effect/turf_decal/asphaltline/alt{
-	dir = 8
-	},
-/obj/effect/turf_decal/asphaltline/alt{
-	dir = 8
-	},
-/obj/structure/retail/gummaguts_menu,
-/turf/open/floor/plating/asphalt,
-/area/vtm/outside/fishermanswharf/ghetto)
 "Zv" = (
 /obj/structure/chair/plastic/darkpack{
 	dir = 8
@@ -9696,7 +9694,7 @@ iw
 vE
 Sh
 Sh
-mo
+Nt
 Sh
 Xf
 Sh
@@ -11018,10 +11016,10 @@ OY
 OY
 rk
 xb
-MY
-MY
-MY
-MY
+jy
+WZ
+WZ
+jy
 MY
 WZ
 WZ
@@ -11125,10 +11123,10 @@ OY
 OY
 rk
 xb
+pD
 MY
-jy
-jy
 WZ
+MY
 WZ
 WZ
 pP
@@ -11233,9 +11231,9 @@ OY
 rk
 xb
 MY
-jy
-WZ
-pP
+MY
+MY
+MY
 WZ
 WZ
 WZ
@@ -14388,7 +14386,7 @@ jk
 bA
 jk
 Ll
-Zs
+jk
 Ll
 hk
 xX

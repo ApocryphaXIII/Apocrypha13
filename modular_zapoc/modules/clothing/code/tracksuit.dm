@@ -12,7 +12,7 @@
 	var/mutable_appearance/jacket_overlay
 
 
-/obj/item/clothing/under/trackpants/Initialize()
+/obj/item/clothing/under/trackpants/Initialize(mapload)
 	. = ..()
 	if(spawn_with_jacket)
 		var/obj/item/clothing/suit/trackjacket/TJ = new spawn_jacket

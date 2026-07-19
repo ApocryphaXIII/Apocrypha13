@@ -68,10 +68,6 @@
 "bb" = (
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
-"bf" = (
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "bi" = (
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/trimline/red/line{
@@ -250,13 +246,6 @@
 	},
 /turf/open/water/bloodwave,
 /area/vtm/interior/forest/cave/bane)
-"ee" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 10
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "ef" = (
 /obj/structure/flora/rock/pile/darkpack,
 /turf/open/floor/plating/rough,
@@ -288,14 +277,6 @@
 	dir = 1
 	},
 /turf/open/floor/city/plating,
-/area/vtm/interior/endron_facility/forest)
-"eJ" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_count = 20;
-	spawn_scatter_radius = 3
-	},
-/turf/open/water/acid,
 /area/vtm/interior/endron_facility/forest)
 "eK" = (
 /obj/effect/turf_decal/darkpack/cave{
@@ -595,13 +576,6 @@
 /obj/item/clothing/head/vampire/pentex_beret,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
-"iZ" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 10
-	},
-/obj/effect/spawner/random/trash/mess,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "jf" = (
 /obj/structure/table,
 /obj/item/trash/raisins,
@@ -757,7 +731,6 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 4
 	},
-/obj/effect/spawner/random/trash/garbage,
 /turf/open/water/bloodwave,
 /area/vtm/interior/forest/cave/bane)
 "ly" = (
@@ -882,11 +855,6 @@
 /obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
-"nl" = (
-/obj/effect/turf_decal/darkpack/cave,
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "nv" = (
 /obj/machinery/shower/directional/north,
 /obj/structure/curtain,
@@ -1054,13 +1022,6 @@
 	},
 /turf/cordon/secret,
 /area/misc/cordon)
-"pD" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "pG" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt/corner{
@@ -1336,13 +1297,6 @@
 /obj/effect/spawner/random/trash/janitor_supplies,
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
-"tE" = (
-/obj/effect/turf_decal/darkpack/cave/corner{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "tG" = (
 /obj/structure/fence{
 	dir = 4
@@ -1713,14 +1667,9 @@
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/forest/cave/bane)
 "zn" = (
-/obj/structure/rack{
-	density = 0;
-	icon = 'icons/obj/tank.dmi';
-	icon_state = "holder";
-	name = "tank rack"
-	},
 /obj/item/tank/internals/anesthetic,
 /obj/item/clothing/mask/breath/medical,
+/obj/structure/rack,
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
 "zx" = (
@@ -1809,7 +1758,6 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
 	},
-/obj/effect/spawner/random/trash/garbage,
 /turf/open/water/bloodwave,
 /area/vtm/interior/forest/cave/bane)
 "Bl" = (
@@ -1979,13 +1927,6 @@
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
-"Dh" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 1
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "Dl" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -2056,13 +1997,6 @@
 /obj/effect/mob_spawn/corpse/human/endron,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
-"Ee" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 5
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "Ef" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
@@ -2349,7 +2283,6 @@
 /area/vtm/interior/endron_facility/forest)
 "HB" = (
 /obj/effect/decal/garou_glyph/wyrm{
-	pixel_x = 0;
 	pixel_y = 31
 	},
 /turf/open/misc/dirt,
@@ -6015,7 +5948,7 @@ wD
 wD
 bi
 Mh
-YT
+tw
 sL
 Pw
 Nj
@@ -6232,7 +6165,7 @@ mK
 Mf
 wD
 HO
-eJ
+tw
 Ul
 Ox
 qz
@@ -7405,7 +7338,7 @@ za
 za
 Ef
 FR
-iZ
+IA
 za
 Jk
 za
@@ -7513,7 +7446,7 @@ za
 za
 za
 za
-Dh
+ed
 wb
 IA
 RS
@@ -7624,11 +7557,11 @@ za
 za
 CX
 Ux
-tE
+Wi
 eK
-pD
 eK
-ee
+eK
+IA
 Lp
 Lp
 hP
@@ -7734,7 +7667,7 @@ EE
 Ak
 CX
 Ux
-bf
+Pg
 Pg
 Pg
 Wi
@@ -7847,7 +7780,7 @@ Pg
 wb
 Pg
 Pg
-nl
+ev
 Lp
 JR
 Iv
@@ -8171,7 +8104,7 @@ md
 Lp
 CX
 Ux
-bf
+Pg
 Pg
 Pg
 ev
@@ -8279,7 +8212,7 @@ za
 Lp
 iN
 RS
-Ee
+CX
 Ux
 Pg
 KX

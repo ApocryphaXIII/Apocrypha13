@@ -6,6 +6,10 @@
 	},
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/penumbra)
+"aj" = (
+/obj/effect/landmark/teleport_mark/gaia,
+/turf/open/misc/dirt,
+/area/vtm/outside/penumbra)
 "ap" = (
 /obj/structure/chair/comfy/darkpack{
 	dir = 8
@@ -37,7 +41,7 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/outside/penumbra)
 "br" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/penumbra)
 "bH" = (
@@ -533,10 +537,6 @@
 /obj/structure/bed/medical/anchored,
 /turf/open/floor/city/plating_stone,
 /area/vtm/outside/penumbra)
-"uc" = (
-/obj/effect/landmark/teleport_mark/wyld,
-/turf/open/misc/dirt,
-/area/vtm/outside/penumbra)
 "uq" = (
 /turf/closed/wall/vampwall/rich,
 /area/vtm/outside/penumbra)
@@ -776,7 +776,7 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/outside/penumbra)
 "CK" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/penumbra)
 "CQ" = (
@@ -1079,7 +1079,7 @@
 /turf/open/water/vamp_sewer,
 /area/vtm/outside/penumbra)
 "NK" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/penumbra)
 "Oa" = (
@@ -4491,7 +4491,7 @@ gr
 gr
 Oa
 Jr
-uc
+Jr
 dd
 dd
 dd
@@ -4598,7 +4598,7 @@ gr
 gr
 Jr
 Jr
-Jr
+aj
 Jr
 dd
 dd

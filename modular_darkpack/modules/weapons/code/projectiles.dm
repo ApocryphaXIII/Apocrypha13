@@ -167,12 +167,43 @@
 		var/mob/living/carbon/M = target
 		M.Stun(4)
 
+/obj/projectile/bullet/darkpack/dragonsbreath
+	name = "12g shotgun incendiary pellet"
+	damage = 6
+	damage_type = BURN
+	range = 22 //range of where you can see + one screen after
+	armour_penetration = 0
+	exposed_wound_bonus = 0
+	wound_bonus = 0
+	var/fire_stacks = 1 // 1 stack per pellet but we have 9 pellets so it adds up
+
+/obj/projectile/bullet/darkpack/dragonsbreath/on_hit(atom/target, blocked = 0, pierce_hit)
+	. = ..()
+	do_sparks(2, TRUE, src)
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.adjust_fire_stacks(fire_stacks)
+		M.ignite_mob()
+
 // Crossbow Bolt
 /obj/projectile/bullet/crossbow_bolt
 	name = "bolt"
 	damage = 45
 	armour_penetration = 75
+	exposed_wound_bonus = 30
+	wound_bonus = 30 //We're gonna make this hurt as much as possible. 
 	sharpness = SHARP_POINTY
+	embed_type = /datum/embedding/crossbolt //YEEEEOUCH!!!!
+
+/datum/embedding/crossbolt
+	embed_chance = 90
+	fall_chance = 2
+	jostle_chance = 2
+	ignore_throwspeed_threshold = TRUE
+	pain_stam_pct = 0.5
+	pain_mult = 3
+	jostle_pain_mult = 3
+	rip_time = 3 SECONDS
 
 // 7.62x51mm NATO
 /obj/projectile/bullet/darkpack/vamp762x51mm
