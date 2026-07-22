@@ -39,6 +39,12 @@
 	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi'
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 
+/mob/living/basic/mining/legion_brood/gray_masses/get_legion_type(mob/living/carbon/human/target)
+	if(ismonkey(target) || HAS_TRAIT(target, TRAIT_DWARF))
+		return /mob/living/basic/mining/legion/dwarf/gray_masses
+	return /mob/living/basic/mining/legion/gray_masses
+
+
 /obj/effect/spawner/random/lavaland_mob/legion/gray_masses
 	name = "random gray man"
 	desc = "Chance to spawn a rare shiny version."
