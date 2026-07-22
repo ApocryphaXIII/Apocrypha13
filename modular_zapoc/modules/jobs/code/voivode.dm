@@ -31,7 +31,7 @@
 
 /obj/item/smartphone/voivodate_citizen
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = TZMISCE_NETWORK, OUR_ROLE = "Servant of the Manor", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = TZMISCE_NETWORK, OUR_ROLE = "Citizen of the Manor", USE_JOB_TITLE = FALSE)
 		)
 
 
