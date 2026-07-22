@@ -7,6 +7,10 @@
 	corpse_type = /obj/effect/mob_spawn/corpse/human/gray_masses
 	brood_type = /mob/living/basic/mining/legion_brood/gray_masses
 
+/mob/living/basic/mining/legion/gray_masses/death(gibbed)
+	new /obj/effect/particle_effect/fluid/smoke/gray_masses(loc)
+	return ..()
+
 /// Create what we want to drop on death, in proc form so we can always return a static list
 /mob/living/basic/mining/legion/gray_masses/get_loot_list()
 	var/static/list/death_loot = list(/obj/item/organ/monster_core/regenerative_core/legion/gray_masses)
@@ -20,7 +24,14 @@
 	name = "small gray man"
 	desc = "You can still see what was once a rather small human under the shifting mass of corruption."
 	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses.dmi'
+	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	corpse_type = /obj/effect/mob_spawn/corpse/human/gray_masses/dwarf
+	brood_type = /mob/living/basic/mining/legion_brood/gray_masses
+
+/mob/living/basic/mining/legion/dwarf/gray_masses/death(gibbed)
+	new /obj/effect/particle_effect/fluid/smoke/gray_masses(loc)
+	return ..()
+
 
 // HUGE sovlful Gray Man
 /mob/living/basic/mining/legion/large/gray_masses
