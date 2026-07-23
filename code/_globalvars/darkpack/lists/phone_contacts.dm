@@ -40,3 +40,12 @@ GLOBAL_LIST_INIT(contact_networks, alist(
 		ENDRON_NETWORK = GLOB.endron_network,
 		SOCIETY_OF_LEOPOLD_NETWORK = GLOB.society_network,
 	))
+
+// APOC EDIT ADD START
+/// Index to a define to point at a runtime-global list at compile-time.
+#define NETWORK_ID 1
+/// Index to a string, for the contact title.
+#define OUR_ROLE 2
+/// Index to a boolean, on whether to replace role with job title (or alt-title).
+#define USE_JOB_TITLE 3
+// APOC EDIT ADD END
