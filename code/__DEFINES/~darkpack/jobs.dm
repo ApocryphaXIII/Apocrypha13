@@ -286,7 +286,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 // this prob should just say clinic genericly.
 #define EXP_TYPE_CLINIC "St. John's Clinic"
 #define EXP_TYPE_GIOVANNI "Giovanni Family"
-#define EXP_TYPE_MANOR "Voivodate" // APOC EDIT CHANGE -
+#define EXP_TYPE_MANOR "Voivodate" // APOC EDIT CHANGE - (Voivode)
 #define EXP_TYPE_CHURCH "Church"
 #define EXP_TYPE_CLUB "Strip Club"
 #define EXP_TYPE_OCEAN "Ocean 76" // APOC EDIT ADD - JOBS - Ocean 76
