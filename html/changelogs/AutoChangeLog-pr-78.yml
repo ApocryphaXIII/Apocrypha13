@@ -1,0 +1,14 @@
+author: "FalloutFalcon"
+delete-after: True
+changes:
+  - rscadd: "Adds voivate citizen and bogatyr captain"
+  - bugfix: "Fixes some voivode/manor jobs and reworks them into the seers voivdate again rather then tzimicise"
+  - bugfix: "\"Tapster\" has been renamed to reflect the new map"
+  - bugfix: "Some rolls have the proper keys, phones, or credit cards"
+  - map: "Gives the caern a single klaive and a fetish spawner"
+  - map: "Cleans up carean or forest areas to not leak rain and light"
+  - map: "Readds the little \"gangrel\" hideout in the forest"
+  - map: "Chantry artifact spawns are vampire only"
+  - map: "Gives the pawnshop the antique store shop."
+  - map: "Fixes some random wallmount directionals"
+  - map: "Adds missing shortcut to bsd totem"

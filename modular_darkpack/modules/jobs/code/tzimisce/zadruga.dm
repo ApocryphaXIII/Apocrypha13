@@ -28,4 +28,4 @@
 	suit = /obj/item/clothing/suit/vampire/jacket/punk
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	l_pocket = /obj/item/smartphone/zadruga
-	backpack_contents = list(/obj/item/vamp/keys/old_clan_tzimisce=1, /obj/item/card/credit=1)
+	backpack_contents = list(/obj/item/vamp/keys/voivodate = 1, /obj/item/card/credit=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)

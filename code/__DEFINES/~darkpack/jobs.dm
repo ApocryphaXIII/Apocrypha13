@@ -34,7 +34,7 @@
 
 //Anarch
 #define JOB_BARON "Baron"
-#define JOB_TAPSTER "Tapster"
+#define JOB_TAPSTER "The Anarchy Rose Employee" // APOC EDIT CHANGE - JOBS
 #define JOB_BRUISER "Bruiser"
 #define JOB_EMISSARY "Emissary"
 #define JOB_SWEEPER "Sweeper"
@@ -45,9 +45,11 @@
 #define JOB_CHANTRY_GARGOYLE "Chantry Gargoyle"
 
 //Tzimisce
+#define JOB_BOGATYR_CAPTAIN "Bogatyr Captain" // APOC EDIT ADD - JOBS - (Voivode)
 #define JOB_BOGATYR "Bogatyr"
 #define JOB_VOIVODE "Voivode"
 #define JOB_ZADRUGA "Zadruga"
+#define JOB_VOIVODATE_CITIZEN "Voivodate Citizen" // APOC EDIT ADD - JOBS - (Voivode)
 
 //Police
 #define JOB_POLICE_CAPTAIN "Police Captain"
@@ -150,9 +152,13 @@
 #define JOB_DISPLAY_ORDER_DISPATCHER 4
 #define JOB_DISPLAY_ORDER_FBI 5
 
+// APOC EDIT CHANGE START - JOBS - (Voivode)
 #define JOB_DISPLAY_ORDER_VOIVODE 1
-#define JOB_DISPLAY_ORDER_BOGATYR 2
-#define JOB_DISPLAY_ORDER_ZADRUGA 3
+#define JOB_DISPLAY_ORDER_BOGATYR_CAPTAIN 2
+#define JOB_DISPLAY_ORDER_BOGATYR 3
+#define JOB_DISPLAY_ORDER_ZADRUGA 4
+#define JOB_DISPLAY_ORDER_VOIVODATE_CITIZEN 5
+// APOC EDIT CHANGE END
 
 #define JOB_DISPLAY_ORDER_SABBATDUCTUS 1
 #define JOB_DISPLAY_ORDER_SABBATPACK 2
@@ -280,7 +286,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 // this prob should just say clinic genericly.
 #define EXP_TYPE_CLINIC "St. John's Clinic"
 #define EXP_TYPE_GIOVANNI "Giovanni Family"
-#define EXP_TYPE_MANOR "Tzimisce Manor"
+#define EXP_TYPE_MANOR "Voivodate" // APOC EDIT CHANGE - (Voivode)
 #define EXP_TYPE_CHURCH "Church"
 #define EXP_TYPE_CLUB "Strip Club"
 #define EXP_TYPE_OCEAN "Ocean 76" // APOC EDIT ADD - JOBS - Ocean 76

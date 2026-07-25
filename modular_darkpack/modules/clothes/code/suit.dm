@@ -56,7 +56,7 @@
 
 /obj/item/clothing/head/hooded/heisenberg_hood
 	name = "chemical hood"
-	desc = "A hood attached to a cchemical costume."
+	desc = "A hood attached to a chemical costume." // APOC EDIT CHANGE
 	icon_state = "heisenberg_helm"
 	icon = 'modular_darkpack/modules/clothes/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/clothes/icons/worn.dmi'
@@ -65,6 +65,7 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEHAIR | HIDEEARS
+	clothing_flags = THICKMATERIAL | BLOCK_GAS_SMOKE_EFFECT | SNUG_FIT | STACKABLE_HELMET_EXEMPT | HEADINTERNALS // APOC EDIT ADD
 	armor_type = /datum/armor/chemical_costume
 
 //** SPOOOOKY ROBES FROM THE CAPPADOCIAN UPDATE **//
