@@ -132,7 +132,7 @@ SUBSYSTEM_DEF(ticker)
 			to_chat(world, span_notice("<b>Welcome to [station_name()]!</b>"))
 			for(var/channel_tag in CONFIG_GET(str_list/channel_announce_new_game))
 				if(SSticker.GetTimeLeft() == -10) // APOC EDIT CHANGE START - DISCORD
-					send2chat(new /datum/tgs_message_content("New round delayed. Thanks for playing Apocrypha XIII!"), channel_tag) // APOC EDIT CHANGE
+					send2chat(new /datum/tgs_message_content("New round delayed. Thanks for playing [CONFIG_GET(string/servername)]"), channel_tag) // APOC EDIT CHANGE
 				else
 					send2chat(new /datum/tgs_message_content("<@&1474327242510303336> New round starting on [station_name()]!"), channel_tag)
 				// APOC EDIT CHANGE END

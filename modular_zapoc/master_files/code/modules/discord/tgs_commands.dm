@@ -18,7 +18,7 @@
 	if(timeleft == -10)
 		round_status = "Round Delayed -- Thanks for playing!"
 
-	return new /datum/tgs_message_content("[GLOB.round_id ? "Round #[GLOB.round_id] ([round_timestamp()]): " : "([round_timestamp()]): "]Players: [length(GLOB.clients.len)] (Active: [get_active_player_count(0,1,0)]), Map: [station_name()], [round_status] -- [server]")
+	return new /datum/tgs_message_content("[GLOB.round_id ? "Round #[GLOB.round_id] ([round_timestamp()]): " : "([round_timestamp()]): "]Players: [length(GLOB.clients)] (Active: [get_active_player_count(0,1,0)]), Map: [station_name()], [round_status] -- [server]")
 
 /datum/tgs_chat_command/fangfuckies // Friend
 	name = "fangfuckies"
