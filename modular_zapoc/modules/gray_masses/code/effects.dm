@@ -3,7 +3,7 @@
 	desc = "Shrooms, anyone?"
 	alpha = 1
 
-/obj/effect/decal/cleanable/ash/gray_masses/Initialize()
+/obj/effect/decal/cleanable/ash/gray_masses/Initialize(mapload)
 	. = ..()
 	animate(src, alpha = 255, time = 3 SECONDS, loop = 0)
 
