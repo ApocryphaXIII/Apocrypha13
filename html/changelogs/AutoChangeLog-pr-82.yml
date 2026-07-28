@@ -1,6 +1,0 @@
-author: "FalloutFalcon"
-delete-after: True
-changes:
-  - rscadd: "Killing grey mass can release spores that need to be circumvented with smoke preventing items (like chemical suits)"
-  - bugfix: "Grey masses turn corpses into More grey mass instead of Legions.\nfix Dwarf grey mass spawn the right spores"
-  - map: "Makes the endron ruin a little bit less punishing by opening up some areas or block sightlines that are otherwise very difficult to push while being attacked by spores whos owner you cant reach"
