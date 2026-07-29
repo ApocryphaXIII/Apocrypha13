@@ -80,6 +80,3 @@ PASSIVE_BP_DRAIN_TIMER 12000
 DISCIPLINE_KEYBINDS
 ## Gives every single power a keybind, will majorly clutter the keybinds menu if uncommented in exchange for being very convenient for players
 #INDIVIDUAL_POWER_KEYBINDS
-
-## Delay the round from starting if no admins are connected.
-#DELAY_IF_NO_ADMINS
