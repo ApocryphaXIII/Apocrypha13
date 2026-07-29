@@ -149,6 +149,16 @@ SUBSYSTEM_DEF(ticker)
 					if(player.client?.holder)
 						++total_admins_ready
 
+			// APOC EDIT ADD START - (delay if no admins)
+			if(CONFIG_GET(flag/delay_if_no_admins))
+				if(timeLeft <= 600 && timeLeft > -1)
+					if(length(GLOB.admins) <= 0)
+						SetTimeLeft(-1)
+						start_immediately = FALSE
+						to_chat(world, span_infoplain("<b>The game start has been delayed due to no admins connected.</b>"), confidential = TRUE)
+						return
+			// APOC EDIT ADD END
+
 			if(start_immediately)
 				timeLeft = 0
 

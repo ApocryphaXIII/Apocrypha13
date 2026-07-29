@@ -74,3 +74,6 @@ SWING_COMBAT
 ## Configs for passive bloodpool drain, if this is enabled, then the below timer can be adjusted to make vampires and ghouls lose 1 blood point when the timer is up
 #PASSIVE_BP_DRAIN
 PASSIVE_BP_DRAIN_TIMER 12000
+
+## Delay the round from starting if no admins are connected.
+#DELAY_IF_NO_ADMINS
