@@ -159,6 +159,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_JAMMING_WEAPONS "jamming_weapons"
 #define TRAIT_NATURAL "natural"
 #define TRAIT_AURA_OF_CONFIDENCE "aura_of_confidence"
+/// Allowed to enter through the forest bawn.
+#define TRAIT_ALLOWED_FOREST_BAWN "allowed_forest_bawn"
 
 /// Mob has had atleast one tooth yanked out while having no method of regenerating it.
 #define TRAIT_TOOTH_PULLED "tooth_pulled"

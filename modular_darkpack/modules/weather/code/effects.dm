@@ -4,6 +4,7 @@ GLOBAL_LIST_EMPTY(snow_list)
 
 /obj/effect/realistic_fog
 	// Smaller sprite so you can use it in mapping without it sucking
+	name = "fog"
 	icon = 'modular_darkpack/modules/weather/icons/fog.dmi'
 	icon_state = MAP_SWITCH("fog", "helper")
 	alpha = 0
@@ -18,6 +19,7 @@ GLOBAL_LIST_EMPTY(snow_list)
 	var/alpha_upper = 21
 
 /obj/effect/realistic_fog/dense
+	name = "dense fog"
 	alpha_lower = 10
 	alpha_upper = 40
 

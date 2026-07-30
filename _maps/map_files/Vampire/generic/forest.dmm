@@ -237,7 +237,7 @@
 	light_on = 1;
 	start_on = 14
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "by" = (
@@ -1668,7 +1668,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 8
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "mD" = (
@@ -1841,7 +1841,7 @@
 /area/vtm/interior/forest)
 "nZ" = (
 /obj/structure/glowshroom/single,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "ob" = (
@@ -2264,7 +2264,7 @@
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 1
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "qY" = (
@@ -2332,7 +2332,9 @@
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 4
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest{
+	opacity = 1
+	},
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "rp" = (
@@ -2604,6 +2606,12 @@
 /obj/machinery/hydroponics/soil/rich,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
+"tr" = (
+/obj/effect/realistic_fog/bawn/forest{
+	opacity = 1
+	},
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/forest/cave)
 "tt" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
@@ -2794,7 +2802,7 @@
 /area/vtm/planetgeneration)
 "ux" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "uz" = (
@@ -2868,7 +2876,7 @@
 /area/vtm/interior/forest/cave)
 "uT" = (
 /obj/structure/flora/rock/darkpack,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/cave)
 "uZ" = (
@@ -3057,6 +3065,10 @@
 	dir = 1
 	},
 /turf/open/misc/grass,
+/area/vtm/interior/forest/cave)
+"wi" = (
+/obj/effect/realistic_fog/bawn/forest,
+/turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "wl" = (
 /obj/effect/turf_decal/darkpack/sand{
@@ -3667,6 +3679,10 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
+"Bo" = (
+/obj/effect/realistic_fog/bawn/forest,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/forest/cave)
 "Bq" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 5
@@ -3840,7 +3856,7 @@
 /obj/effect/turf_decal/darkpack/rough/corner{
 	dir = 1
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "Cq" = (
@@ -3961,7 +3977,7 @@
 "CZ" = (
 /obj/effect/turf_decal/darkpack/cave,
 /obj/effect/turf_decal/darkpack/rough/corner,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "Db" = (
@@ -4505,7 +4521,9 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 10
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest{
+	opacity = 1
+	},
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "Hz" = (
@@ -4962,6 +4980,10 @@
 /obj/structure/stone_tile/surrounding/cracked,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/cave)
+"Li" = (
+/obj/effect/realistic_fog/bawn/forest,
+/turf/open/water/river,
+/area/vtm/interior/forest/cave)
 "Lq" = (
 /obj/effect/decal/pallet,
 /obj/structure/table/wood,
@@ -4990,7 +5012,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/darkpack/cave/corner,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "LA" = (
@@ -5021,6 +5043,13 @@
 	dir = 8
 	},
 /area/vtm/interior/forest)
+"LN" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 9
+	},
+/obj/effect/realistic_fog/bawn/forest,
+/turf/open/water/river,
+/area/vtm/interior/forest/cave)
 "LO" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
@@ -5361,6 +5390,12 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
+"Oi" = (
+/obj/effect/realistic_fog/bawn/forest{
+	opacity = 1
+	},
+/turf/open/water/river,
+/area/vtm/interior/forest/cave)
 "Oj" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /turf/open/water/river,
@@ -5839,7 +5874,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/darkpack/rough/corner,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "RG" = (
@@ -5851,7 +5886,7 @@
 /area/vtm/interior/forest/cave)
 "RJ" = (
 /obj/structure/glowshroom,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/cave)
 "RO" = (
@@ -5952,7 +5987,7 @@
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 5
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "Sz" = (
@@ -6405,7 +6440,7 @@
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
 	},
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "Wc" = (
@@ -6678,7 +6713,9 @@
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest)
 "Ys" = (
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest{
+	opacity = 1
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "Yu" = (
@@ -6738,7 +6775,7 @@
 /area/vtm/interior/forest/cave)
 "YL" = (
 /obj/structure/flora/rock/darkpack_big,
-/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/bawn/forest,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "YN" = (
@@ -15684,9 +15721,9 @@ FK
 FK
 FK
 FK
-ZF
+Li
 Bx
-Wf
+Bo
 aU
 EH
 EH
@@ -15881,11 +15918,11 @@ EH
 iw
 iw
 Sb
-ZF
+Li
 FK
 Wa
 yh
-Wf
+tr
 Nr
 RJ
 hl
@@ -16080,14 +16117,14 @@ HD
 ye
 Sr
 Sb
-ZF
+Li
 FK
 Wa
 tF
 Hv
 aU
-Wf
-jF
+Bo
+LN
 Lz
 Fz
 Nr
@@ -16275,13 +16312,13 @@ EH
 EH
 EH
 Rh
-Ys
+wi
 ye
 qV
 FK
-ZF
+Li
 FK
-ZF
+Oi
 Hm
 mB
 tF
@@ -16472,18 +16509,18 @@ EH
 EH
 EH
 EH
-Ys
+wi
 HD
-Ys
+wi
 CO
 Cp
 FK
-ZF
+Oi
+FK
+Li
 FK
 ZF
-FK
-ZF
-FK
+Li
 Wa
 EH
 EH
@@ -16673,15 +16710,15 @@ EH
 EH
 bv
 ye
-Ys
+wi
 CO
 rn
 Sb
-ZF
+Li
 FK
-ZF
+Li
 FK
-ZF
+Li
 EH
 EH
 EH
@@ -16876,7 +16913,7 @@ Ys
 ye
 Sr
 Sb
-ZF
+Li
 FK
 EH
 EH
