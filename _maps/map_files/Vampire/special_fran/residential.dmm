@@ -160,7 +160,7 @@
 	color = "#4a3925"
 	},
 /obj/structure/vampdoor/wood{
-	id = "ResHighEnd2"
+	lock_id = "ResHighEnd2"
 	},
 /obj/effect/mapping_helpers/door/access/claimable,
 /obj/effect/mapping_helpers/door/lock,
@@ -2362,7 +2362,6 @@
 /turf/open/misc/grass,
 /area/vtm)
 "rL" = (
-/obj/structure/table,
 /obj/structure/sink/directional/north{
 	icon_state = "basin";
 	pixel_x = 0;
@@ -2372,6 +2371,7 @@
 	pixel_y = 0;
 	pixel_x = 0
 	},
+/obj/structure/table,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
 "rM" = (
@@ -2548,7 +2548,7 @@
 "sW" = (
 /obj/structure/vampdoor{
 	dir = 8;
-	id = "ResHighEnd1"
+	lock_id = "ResHighEnd1"
 	},
 /obj/effect/turf_decal/siding/white{
 	color = "#434343";
@@ -2838,7 +2838,7 @@
 "ve" = (
 /obj/effect/mapping_helpers/door/lock,
 /obj/structure/vampdoor/wood{
-	id = "ResLowEnd1"
+	lock_id = "ResLowEnd1"
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
@@ -3761,7 +3761,7 @@
 /area/vtm/outside/fishermanswharf/ghetto)
 "Bs" = (
 /obj/structure/vampdoor/wood{
-	id = "ResHighEnd1"
+	lock_id = "ResHighEnd1"
 	},
 /obj/effect/mapping_helpers/door/access/claimable,
 /obj/effect/turf_decal/siding/white{
@@ -4894,14 +4894,6 @@
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
-"JW" = (
-/obj/effect/landmark/npcwall,
-/obj/fake_platform/stone,
-/obj/structure/city_map{
-	layer = 3.1
-	},
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm/outside/northbeach)
 "JZ" = (
 /obj/effect/decal/cleanable/trash,
 /obj/machinery/light/small/directional/south,
@@ -4978,7 +4970,7 @@
 	},
 /obj/structure/vampdoor{
 	dir = 1;
-	id = "ResHighEnd2"
+	lock_id = "ResHighEnd2"
 	},
 /obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/wood,
@@ -6288,12 +6280,19 @@
 /area/vtm/interior/ghetto)
 "TO" = (
 /obj/structure/vampdoor/wood{
-	id = "ResLowEnd1"
+	lock_id = "ResLowEnd1"
 	},
 /obj/effect/mapping_helpers/door/access/claimable,
 /obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
+"TP" = (
+/obj/structure/city_map{
+	pixel_x = 0;
+	pixel_y = -4
+	},
+/turf/open/misc/grass,
+/area/vtm/outside/fishermanswharf)
 "TQ" = (
 /obj/item/toy/basketball,
 /turf/open/floor/plating/sidewalk/poor,
@@ -6519,7 +6518,6 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "Vt" = (
-/obj/structure/table/wood,
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_y = 12;
 	pixel_x = 7
@@ -6528,12 +6526,12 @@
 	pixel_x = 11;
 	pixel_y = 9
 	},
-/obj/structure/table,
 /obj/effect/turf_decal/siding/white{
 	pixel_y = 0;
 	pixel_x = 0
 	},
-/turf/open/floor/wood/smooth/old,
+/obj/structure/table,
+/turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
 "Vw" = (
 /obj/structure/stairs/ramp/south,
@@ -11178,7 +11176,7 @@ he
 Tx
 Eq
 cy
-JW
+mE
 Qs
 Qs
 Qs
@@ -11504,7 +11502,7 @@ MY
 MY
 MY
 MY
-MY
+TP
 Pl
 Eq
 AU
