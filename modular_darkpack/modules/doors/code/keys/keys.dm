@@ -212,14 +212,14 @@ GLOBAL_LIST_INIT(city_door_lock_ids, list())
 	)
 
 /obj/item/vamp/keys/malkav
-	name = "insane keys"
+	name = "abandoned psych ward keys"
 	accesslocks = list(
 		LOCKACCESS_MALK
 	)
 	color = "#8cc4ff"
 
 /obj/item/vamp/keys/malkav/primogen
-	name = "really insane keys"
+	name = "really abandoned psych ward keys"
 	accesslocks = list(
 		LOCKACCESS_MALK_PRIMOGEN,
 		LOCKACCESS_MALK,
