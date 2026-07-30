@@ -2307,17 +2307,6 @@
 /obj/item/kirbyplants/darkpack/random,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
-"btT" = (
-/obj/structure/vampdoor/wood{
-	dir = 4;
-	lock_id = "HighEndApt2"
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/obj/effect/mapping_helpers/door/lock,
-/turf/open/floor/city/plating_stone,
-/area/vtm/interior/apartment)
 "buR" = (
 /obj/effect/landmark/npcwall,
 /obj/structure/sign/city/store/bacotell/directional/north{
@@ -4334,6 +4323,15 @@
 /obj/structure/railing,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/laundromat)
+"cBj" = (
+/obj/structure/vampdoor/wood{
+	dir = 4;
+	lock_id = "HighEndApt2"
+	},
+/obj/effect/mapping_helpers/door/access/claimable,
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/carpet/darkpack/blackgold,
+/area/vtm/interior/apartment)
 "cBt" = (
 /obj/structure/stairs/north,
 /turf/open/floor/plating/concrete,
@@ -9608,15 +9606,6 @@
 /obj/item/gun/energy/taser/darkpack,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
-"fGm" = (
-/obj/structure/vampdoor/wood{
-	dir = 4;
-	lock_id = "HighEndApt2"
-	},
-/obj/effect/mapping_helpers/door/access/claimable,
-/obj/effect/mapping_helpers/door/lock,
-/turf/open/floor/carpet/darkpack/blackgold,
-/area/vtm/interior/apartment)
 "fGz" = (
 /obj/item/reagent_containers/cup/glass/bottle/beer/vampire,
 /obj/effect/decal/cleanable/litter,
@@ -11715,14 +11704,6 @@
 	},
 /turf/open/floor/wood/rough,
 /area/vtm)
-"gQp" = (
-/obj/structure/table/wood/fancy/royalblack,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/effect/spawner/random/occult/artifact,
-/turf/open/floor/carpet/darkpack/blackgold,
-/area/vtm/interior/millennium_tower/f4)
 "gQt" = (
 /obj/structure/dresser,
 /obj/item/kirbyplants/organic/plant6{
@@ -14825,6 +14806,17 @@
 "iCa" = (
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/voivodate/cave)
+"iCq" = (
+/obj/structure/vampdoor/wood{
+	dir = 4;
+	lock_id = "HighEndApt2"
+	},
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/city/plating_stone,
+/area/vtm/interior/apartment)
 "iCT" = (
 /obj/structure/dresser,
 /obj/machinery/light/small/directional/east,
@@ -38085,6 +38077,12 @@
 /obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
+"weh" = (
+/obj/effect/spawner/random/entertainment/slot_machine{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/shop/gasstation)
 "wet" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
@@ -40001,6 +39999,14 @@
 "xls" = (
 /turf/closed/wall/vampwall/city,
 /area/vtm/outside/unionsquare)
+"xlN" = (
+/obj/structure/table/wood/fancy/royalblack,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/effect/spawner/random/occult/artifact/vampire_only,
+/turf/open/floor/carpet/darkpack/blackgold,
+/area/vtm/interior/millennium_tower/f4)
 "xlP" = (
 /obj/effect/turf_decal/bordur{
 	dir = 1
@@ -53170,7 +53176,7 @@ wrk
 ddL
 qas
 qas
-pth
+weh
 xLf
 lxo
 sWP
@@ -80278,7 +80284,7 @@ nKz
 xte
 cEc
 jZs
-gQp
+xlN
 dBQ
 jVD
 bJp
@@ -82770,7 +82776,7 @@ rKU
 mDV
 awi
 awi
-btT
+iCq
 awi
 awi
 awi
@@ -84051,7 +84057,7 @@ awi
 awi
 awi
 fcU
-fGm
+cBj
 awi
 awi
 awi
