@@ -801,7 +801,7 @@
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
 "gh" = (
-/obj/fake_platform/stone/noclimb,
+/obj/fake_platform/stone/easyclimb,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/northbeach)
 "gj" = (
@@ -1585,7 +1585,7 @@
 /area/vtm)
 "lM" = (
 /obj/effect/decal/cleanable/trash,
-/obj/fake_platform/stone/noclimb,
+/obj/fake_platform/stone/easyclimb,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/northbeach)
 "lN" = (
@@ -4083,6 +4083,10 @@
 "DX" = (
 /turf/open/floor/plating/rough/cave,
 /area/vtm)
+"DY" = (
+/obj/effect/landmark/navigate_destination,
+/turf/open/floor/wood/old,
+/area/vtm/outside/northbeach)
 "Eb" = (
 /obj/structure/table,
 /obj/item/melee/vamp/tire{
@@ -4534,6 +4538,11 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm)
+"HE" = (
+/obj/structure/table/wood,
+/obj/machinery/light/directional/east,
+/turf/open/floor/stone,
+/area/vtm/interior/shop/gummaguts)
 "HH" = (
 /obj/effect/decal/wallpaper/paper/darkred/low,
 /obj/structure/table,
@@ -5091,6 +5100,11 @@
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
+"Lz" = (
+/obj/structure/table/countertop/bubway,
+/obj/machinery/light/directional/east,
+/turf/open/floor/stone,
+/area/vtm/interior/shop/gummaguts)
 "LD" = (
 /turf/open/floor/iron/stairs{
 	dir = 8
@@ -5608,6 +5622,7 @@
 	dir = 8
 	},
 /obj/structure/table/wood,
+/obj/item/melee/skateboard/improvised,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/northbeach)
 "Pb" = (
@@ -5624,10 +5639,6 @@
 	},
 /turf/open/floor/carpet/darkpack/greengold,
 /area/vtm/interior/ghetto)
-"Pf" = (
-/obj/item/melee/skateboard/improvised,
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm/outside/northbeach)
 "Pi" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/double,
@@ -5799,6 +5810,10 @@
 "Qy" = (
 /turf/open/floor/plating/asphalt,
 /area/vtm/interior/apartment)
+"QA" = (
+/obj/effect/landmark/navigate_destination,
+/turf/open/floor/stone,
+/area/vtm/interior/shop/gummaguts)
 "QC" = (
 /obj/structure/chair/plastic,
 /turf/open/floor/wood/old,
@@ -5840,10 +5855,6 @@
 	},
 /obj/structure/lamppost/sidewalk,
 /turf/open/floor/wood/old,
-/area/vtm/outside/northbeach)
-"QO" = (
-/obj/structure/ladder,
-/turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/northbeach)
 "QP" = (
 /obj/structure/dresser,
@@ -6625,6 +6636,12 @@
 /obj/effect/landmark/npcwall,
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/northbeach)
+"Wg" = (
+/obj/effect/landmark/navigate_destination{
+	location = "Residential to Downtown Bridge"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/outside/fishermanswharf)
 "Wh" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -9445,7 +9462,7 @@ gO
 yj
 BQ
 he
-he
+Wg
 Tx
 Zb
 FT
@@ -10207,7 +10224,7 @@ IL
 Xf
 Pq
 Pq
-Pf
+Pq
 Pq
 Pq
 gl
@@ -10318,7 +10335,7 @@ Pq
 Pq
 Pq
 Pq
-QO
+Pq
 Wt
 Wt
 Wt
@@ -10578,14 +10595,14 @@ Sh
 Sh
 Sh
 Sh
-QW
+iY
 Wj
 SJ
 Kp
 Wj
 xP
 xP
-xP
+DY
 xP
 ec
 xP
@@ -13932,7 +13949,7 @@ Vo
 Vo
 Ox
 Vo
-Vo
+QA
 QJ
 Ns
 yT
@@ -14462,11 +14479,11 @@ uG
 gj
 Vo
 Jh
-TS
+HE
 Oi
 Vo
 Vo
-QJ
+Lz
 QJ
 Ns
 Ns
