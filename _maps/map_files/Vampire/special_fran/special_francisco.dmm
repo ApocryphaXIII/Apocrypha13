@@ -2310,7 +2310,7 @@
 "btT" = (
 /obj/structure/vampdoor/wood{
 	dir = 4;
-	id = "HighEndApt2"
+	lock_id = "HighEndApt2"
 	},
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -9611,7 +9611,7 @@
 "fGm" = (
 /obj/structure/vampdoor/wood{
 	dir = 4;
-	id = "HighEndApt2"
+	lock_id = "HighEndApt2"
 	},
 /obj/effect/mapping_helpers/door/access/claimable,
 /obj/effect/mapping_helpers/door/lock,
