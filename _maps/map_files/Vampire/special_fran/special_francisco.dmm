@@ -5289,6 +5289,15 @@
 /obj/structure/closet/crate/dumpster,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/chinatown)
+"dda" = (
+/obj/structure/chair/stool/bar/darkpack{
+	pixel_x = 0;
+	pixel_y = 0;
+	buckling_x = "-5";
+	buckling_y = "19"
+	},
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment)
 "ddq" = (
 /obj/effect/turf_decal/siding/white,
 /obj/structure/vampdoor/old,
@@ -7588,15 +7597,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic)
-"eAB" = (
-/obj/structure/chair/stool/bar/darkpack{
-	pixel_x = -5;
-	pixel_y = 19;
-	buckling_x = "-5";
-	buckling_y = "19"
-	},
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/apartment)
 "eAN" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/random,
@@ -83204,8 +83204,8 @@ wkh
 bze
 bze
 ygx
+dda
 woU
-eAB
 woU
 woU
 ygx
