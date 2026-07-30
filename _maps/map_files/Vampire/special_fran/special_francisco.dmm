@@ -1780,6 +1780,15 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/city/plating,
 /area/vtm/interior/voivodate)
+"bdr" = (
+/obj/structure/rack/clothing/rand{
+	dir = 1;
+	pixel_x = 10;
+	pixel_y = 0
+	},
+/obj/structure/sign/poster/city_large/blade/old/directional/north,
+/turf/open/floor/carpet/darkpack/old,
+/area/vtm/interior/shop/ishu)
 "bdA" = (
 /turf/open/misc/grass,
 /area/vtm/interior)
@@ -2483,6 +2492,16 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/pacificheights)
+"bAg" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/agility_shortcut/anyone{
+	id = "Sewer1";
+	name = "strange hole"
+	},
+/turf/open/water/vamp_sewer,
+/area/vtm/interior/sewer)
 "bAp" = (
 /obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/blackgold,
@@ -6338,11 +6357,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/iron/showroomfloor,
 /area/vtm/interior/shop/grocery)
-"dOG" = (
-/obj/structure/sign/poster/city/kish,
-/obj/effect/decal/wallpaper/grey,
-/turf/closed/wall/vampwall/brick,
-/area/vtm/interior/shop/ishu)
 "dOW" = (
 /obj/effect/turf_decal/caution{
 	dir = 4
@@ -14608,8 +14622,7 @@
 /obj/machinery/button/elevator/directional/north{
 	id = "DwtnApts";
 	pixel_y = 35;
-	pixel_x = 9;
-	preset_destination_names = list("2" = "Ground", "3" = "Level Two",  "4" = "Level Three")
+	pixel_x = 9
 	},
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior)
@@ -17031,8 +17044,7 @@
 /obj/machinery/button/elevator/directional/north{
 	id = "DwtnApts";
 	pixel_y = 35;
-	pixel_x = 9;
-	preset_destination_names = list("2" = "Ground", "3" = "Level Two",  "4" = "Level Three")
+	pixel_x = 9
 	},
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 5
@@ -17243,11 +17255,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
-"kak" = (
-/obj/structure/sign/poster/city_large/lod,
-/obj/effect/decal/wallpaper/grey,
-/turf/closed/wall/vampwall/brick,
-/area/vtm/interior/shop/ishu)
 "kaA" = (
 /obj/effect/landmark/start/darkpack/citizen/citizen,
 /turf/open/floor/plating/sidewalkalt,
@@ -18198,7 +18205,7 @@
 /obj/structure/transport/linear/public,
 /obj/machinery/elevator_control_panel/directional/north{
 	linked_elevator_id = "DwtnApts";
-	preset_destination_names = list("2" = "Ground", "3" = "Level Two",  "4" = "Level Three")
+	preset_destination_names = list("3" = "Ground", "4" = "Level Two", "5" = "Level Three")
 	},
 /turf/open/floor/plating/elevatorshaft,
 /area/vtm/interior)
@@ -18766,6 +18773,13 @@
 /obj/effect/decal/wallpaper/grey,
 /turf/closed/wall/vampwall/market,
 /area/vtm/interior/vjanitor)
+"kXr" = (
+/obj/agility_shortcut/anyone{
+	id = "Sewer1";
+	name = "strange hole"
+	},
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
 "kXO" = (
 /obj/effect/decal/wallpaper/stone,
 /turf/closed/wall/vampwall/rich/old,
@@ -29765,6 +29779,7 @@
 /obj/structure/rack/clothing/rand{
 	dir = 8
 	},
+/obj/structure/sign/poster/city/kish/directional/north,
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/shop/ishu)
 "rnN" = (
@@ -31384,11 +31399,6 @@
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/financialdistrict)
-"snz" = (
-/obj/structure/sign/poster/city_large/blade/old,
-/obj/effect/decal/wallpaper/grey,
-/turf/closed/wall/vampwall/brick,
-/area/vtm/interior/shop/ishu)
 "snC" = (
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/church/staff)
@@ -34520,6 +34530,15 @@
 /obj/structure/chair/darkpack,
 /turf/open/floor/wood/ornate,
 /area/vtm/interior/coffee)
+"tVJ" = (
+/obj/structure/rack/clothing/rand{
+	dir = 1;
+	pixel_x = -8;
+	pixel_y = 0
+	},
+/obj/structure/sign/poster/city_large/lod/directional/north,
+/turf/open/floor/carpet/darkpack/old,
+/area/vtm/interior/shop/ishu)
 "tVL" = (
 /obj/structure/chair/darkpack{
 	dir = 4
@@ -34980,13 +34999,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/restricted)
-"ulu" = (
-/obj/agility_shortcut/urban/spiral{
-	id = "corruption";
-	pixel_y = 30
-	},
-/turf/open/floor/plating/sidewalkalt,
-/area/vtm/outside/financialdistrict)
 "ulA" = (
 /obj/effect/decal/kopatich{
 	pixel_x = -17;
@@ -36031,6 +36043,10 @@
 /area/vtm)
 "uQs" = (
 /mob/living/carbon/human/npc/walkby,
+/obj/machinery/elevator_control_panel/directional/north{
+	linked_elevator_id = "DwtnApts";
+	preset_destination_names = list("2" = "Ground", "3" = "Level Two", "4" = "Level Three")
+	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/pacificheights)
 "uQu" = (
@@ -37458,6 +37474,13 @@
 "vIj" = (
 /turf/open/water/beach/vamp/deep,
 /area/vtm/voivodate)
+"vIJ" = (
+/obj/agility_shortcut/urban/spiral{
+	id = "corruption";
+	pixel_y = 30
+	},
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
 "vIM" = (
 /obj/effect/turf_decal/bordur{
 	dir = 5
@@ -42301,8 +42324,8 @@ dUd
 hxj
 uHD
 hUM
-hUM
-hUM
+kXr
+daa
 hUM
 hUM
 hUM
@@ -42407,10 +42430,10 @@ dUd
 dUd
 hxj
 uHD
-hUM
-hUM
-hUM
-hUM
+daa
+jWB
+jWB
+daa
 hUM
 hUM
 hUM
@@ -42515,9 +42538,9 @@ dUd
 hxj
 uHD
 uHD
-uHD
-uHD
-uHD
+jWB
+daa
+jWB
 uHD
 hUM
 hUM
@@ -43887,7 +43910,7 @@ egD
 bco
 hUM
 hUM
-tAt
+bAg
 hUM
 hUM
 hUM
@@ -45054,7 +45077,7 @@ hUM
 hUM
 hUM
 uHD
-kzb
+vIJ
 kzb
 kzb
 uHD
@@ -57340,7 +57363,7 @@ wrk
 wrk
 wrk
 dad
-ulu
+hmb
 hmb
 hmb
 hmb
@@ -60498,7 +60521,7 @@ hQk
 cQA
 cQA
 cQA
-dOG
+uBn
 rnG
 xGw
 xGw
@@ -60605,8 +60628,8 @@ hQk
 cQA
 cQA
 cQA
-snz
-hYx
+uBn
+bdr
 xGw
 xGw
 tOn
@@ -60712,8 +60735,8 @@ hQk
 cQA
 cQA
 sQi
-kak
-tOn
+uBn
+tVJ
 xGw
 rzt
 xGw
