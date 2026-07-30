@@ -1,0 +1,7 @@
+author: "FalloutFalcon"
+delete-after: True
+changes:
+  - rscadd: "Gardening crate comes with a portaseeder and a spade"
+  - map: "Adds charcoal pens to the caern"
+  - map: "Adds a slot machine to the gas station"
+  - map: "Prince office artifact spawn will only have vampire artifacts"
