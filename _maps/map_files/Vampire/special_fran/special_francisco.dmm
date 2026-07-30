@@ -4226,6 +4226,10 @@
 /obj/item/clothing/gloves/vampire/latex,
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/suit/apron/surgical,
+/obj/item/storage/box/bodybags{
+	pixel_x = 7;
+	pixel_y = 16
+	},
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "cyd" = (
@@ -5399,13 +5403,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
-"dgz" = (
-/obj/structure/urinal/directional/west{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/turf/open/floor/city/toilet/large,
-/area/vtm/interior/mallunderground)
 "dgN" = (
 /obj/structure/railing{
 	dir = 8;
@@ -10448,10 +10445,6 @@
 /area/vtm/interior/shop/pawnshop)
 "ggL" = (
 /obj/effect/spawner/random/occult/artifact,
-/obj/structure/urinal/directional/east{
-	pixel_x = 0;
-	pixel_y = 0
-	},
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/mallunderground)
 "gha" = (
@@ -11191,6 +11184,10 @@
 	pixel_y = 8
 	},
 /obj/machinery/light/directional/east,
+/obj/item/storage/box/bodybags{
+	pixel_x = 8;
+	pixel_y = 17
+	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/clinic)
 "gBQ" = (
@@ -15352,7 +15349,7 @@
 /area/vtm/interior/apartment)
 "iWl" = (
 /obj/effect/decal/wallpaper/light,
-/turf/closed/wall/vampwall/market,
+/turf/closed/wall/vampwall/bar,
 /area/vtm/interior/mallunderground)
 "iWx" = (
 /obj/structure/flora/bush/fullgrass/style_random,
@@ -23864,9 +23861,6 @@
 /obj/effect/mapping_helpers/door/autoname,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/clinic)
-"obr" = (
-/turf/closed/wall/vampwall/market,
-/area/vtm/interior/tattoo)
 "obF" = (
 /obj/effect/decal/cleanable/trash,
 /obj/structure/bed/dogbed,
@@ -45528,9 +45522,9 @@ odu
 vmh
 sSA
 vmh
-wQZ
-wQZ
-wQZ
+vmh
+vmh
+vmh
 uHD
 byP
 kzb
@@ -45626,7 +45620,7 @@ hUM
 odu
 xqY
 tiz
-obr
+odu
 qQD
 eNO
 ctE
@@ -45637,7 +45631,7 @@ smE
 smE
 wIk
 edk
-dgz
+edk
 uHD
 vuL
 kzb
@@ -45733,7 +45727,7 @@ hUM
 odu
 fId
 ugL
-obr
+odu
 dVh
 cgq
 tFw
@@ -45839,8 +45833,8 @@ tqI
 hUM
 odu
 tUk
-obr
-obr
+odu
+odu
 hNO
 riE
 pXr
@@ -45849,9 +45843,9 @@ fwZ
 gqY
 tWb
 nbL
-wQZ
-wQZ
-wQZ
+vmh
+vmh
+vmh
 uHD
 vuL
 kzb
@@ -60310,7 +60304,7 @@ wdp
 wdp
 wdp
 wdp
-oFn
+nrz
 fLi
 vao
 vFD
