@@ -5290,9 +5290,7 @@
 "dda" = (
 /obj/structure/chair/stool/bar/darkpack{
 	pixel_x = 0;
-	pixel_y = 0;
-	buckling_x = "-5";
-	buckling_y = "19"
+	pixel_y = 0
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
@@ -38077,12 +38075,6 @@
 /obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
-"weh" = (
-/obj/effect/spawner/random/entertainment/slot_machine{
-	dir = 4
-	},
-/turf/open/floor/plating/concrete,
-/area/vtm/interior/shop/gasstation)
 "wet" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
@@ -40004,7 +39996,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/spawner/random/occult/artifact/vampire_only,
+/obj/effect/spawner/random/occult/artifact,
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/millennium_tower/f4)
 "xlP" = (
@@ -53176,7 +53168,7 @@ wrk
 ddL
 qas
 qas
-weh
+pth
 xLf
 lxo
 sWP
