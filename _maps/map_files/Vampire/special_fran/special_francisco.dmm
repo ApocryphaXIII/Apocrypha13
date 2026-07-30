@@ -7301,6 +7301,12 @@
 /obj/structure/closet/cardboard,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
+"esj" = (
+/obj/effect/spawner/random/entertainment/slot_machine{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/shop/gasstation)
 "esn" = (
 /obj/structure/table,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -11720,7 +11726,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/spawner/random/occult/artifact,
+/obj/effect/spawner/random/occult/artifact/vampire_only,
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/millennium_tower/f4)
 "gQt" = (
@@ -53170,7 +53176,7 @@ wrk
 ddL
 qas
 qas
-pth
+esj
 xLf
 lxo
 sWP
