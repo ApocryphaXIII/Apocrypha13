@@ -150,6 +150,36 @@
   - bugfix: Fixes guestbook revealing names even on masked people
 2026-07-27:
   FalloutFalcon:
+  - rscadd: Adds voivate citizen and bogatyr captain
+  - bugfix: Fixes some voivode/manor jobs and reworks them into the seers voivdate
+      again rather then tzimicise
+  - bugfix: '"Tapster" has been renamed to reflect the new map'
+  - bugfix: Some rolls have the proper keys, phones, or credit cards
+  - map: Gives the caern a single klaive and a fetish spawner
+  - map: Cleans up carean or forest areas to not leak rain and light
+  - map: Readds the little "gangrel" hideout in the forest
+  - map: Chantry artifact spawns are vampire only
+  - map: Gives the pawnshop the antique store shop.
+  - map: Fixes some random wallmount directionals
+  - map: Adds missing shortcut to bsd totem
+  - bugfix: Vampire artifact spawner should only spawn vampire artifacts
+  - qol: Attack information as it relates to rolls is now displayed in a weapons combat
+      information
+  - qol: Attacking with a weapon BELOW a single bonus dice no longer makes a roll
+      that includes your entire dice pool
+  - balance: Weapons with a dice pool that is not rounded turns the remainder into
+      a chance for a bonus dice.
+  - bugfix: Private rolling to admins properly displays to them
+  - bugfix: Vampire artifact spawner should only spawn vampire artifacts
+  Stutternov:
+  - bugfix: Fixes AK sawing oversight.
+  TheCarnalest:
+  - bugfix: Scry the Hearthstone now displays guestbook names.
+  - rscadd: Scry the Hearthstone now gives you direction and distance to players in
+      your area as well as alerting you when they leave and enter, but can no longer
+      be used outdoors.
+2026-07-30:
+  FalloutFalcon:
   - rscadd: New weaker variant of acid turf.
   - bugfix: Mobs with no defined AGG damage modifier will default to 100% taken.
   - balance: Removed brawl/fist immunity from tendrils and golaith so they can be

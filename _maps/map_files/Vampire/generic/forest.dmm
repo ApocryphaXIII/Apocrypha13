@@ -2468,6 +2468,18 @@
 "so" = (
 /obj/structure/table/wood,
 /obj/item/storage/pill_bottle/estrogen,
+/obj/item/pen/charcoal{
+	pixel_x = -14;
+	pixel_y = 2
+	},
+/obj/item/pen/charcoal{
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/obj/item/pen/charcoal{
+	pixel_x = -10;
+	pixel_y = 10
+	},
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/sept)
 "sq" = (
