@@ -244,7 +244,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 1
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "ef" = (
 /obj/structure/flora/rock/pile/darkpack,
@@ -257,7 +257,7 @@
 /area/vtm/interior/endron_facility/forest)
 "ev" = (
 /obj/effect/turf_decal/darkpack/cave,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "ez" = (
 /obj/structure/vampdoor/glass,
@@ -282,7 +282,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 8
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "eR" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -731,7 +731,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 4
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "ly" = (
 /obj/structure/table,
@@ -930,7 +930,7 @@
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 1
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "on" = (
 /obj/structure/chair/sofa/corp/left{
@@ -1424,7 +1424,7 @@
 /area/vtm/interior/endron_facility/forest)
 "wb" = (
 /obj/effect/realistic_fog/dense,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "wg" = (
 /obj/structure/sign/directions/science{
@@ -1765,7 +1765,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "Bl" = (
 /obj/effect/turf_decal/trimline/purple/corner{
@@ -1808,14 +1808,9 @@
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
 "Bz" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 9
-	},
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 5
-	},
-/turf/open/indestructible/necropolis/air,
-/area/vtm/interior/forest/cave/bane)
+/obj/structure/lattice/catwalk,
+/turf/open/water/acid/weak,
+/area/vtm/interior/endron_facility/forest)
 "BD" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/light/red/directional/east,
@@ -1915,7 +1910,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "CY" = (
 /obj/structure/closet{
@@ -1944,7 +1939,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 6
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "DA" = (
 /obj/effect/decal/cleanable/gasoline,
@@ -2011,7 +2006,7 @@
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "Ek" = (
 /obj/effect/turf_decal/darkpack/dirt{
@@ -2161,7 +2156,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 8
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "FU" = (
 /obj/effect/decal/cleanable/gasoline,
@@ -2350,7 +2345,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 10
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "IC" = (
 /obj/structure/table,
@@ -2541,7 +2536,7 @@
 	dir = 4
 	},
 /obj/effect/realistic_fog/dense,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "KY" = (
 /obj/item/fish/darkpack/catfish,
@@ -2871,7 +2866,7 @@
 /turf/open/water/vamp_sewer,
 /area/vtm/interior/endron_facility/forest)
 "Pg" = (
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "Ph" = (
 /obj/warehouse_generator{
@@ -2953,8 +2948,8 @@
 /area/vtm/interior/forest/cave/bane)
 "QI" = (
 /obj/machinery/light/small/broken/directional/south,
-/obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/spawner/random/trash/garbage,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
 "QK" = (
@@ -3226,7 +3221,7 @@
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 1
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "UA" = (
 /obj/machinery/light/broken/directional/south,
@@ -3321,7 +3316,7 @@
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
 	},
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "Ww" = (
 /obj/effect/turf_decal/trimline/purple/corner,
@@ -3477,7 +3472,7 @@
 "YT" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/spawner/random/trash/garbage,
-/turf/open/water/acid,
+/turf/open/water/acid/weak,
 /area/vtm/interior/endron_facility/forest)
 "YY" = (
 /obj/structure/curtain,
@@ -4773,7 +4768,7 @@ qS
 cU
 qP
 bV
-tw
+NT
 sL
 Pw
 Ul
@@ -4882,7 +4877,7 @@ ap
 ap
 Gm
 HO
-tw
+NT
 aD
 Mi
 Ox
@@ -4991,7 +4986,7 @@ NT
 yi
 CL
 HO
-tw
+NT
 sL
 JP
 DZ
@@ -5100,7 +5095,7 @@ NT
 Ij
 XA
 bV
-tw
+NT
 fg
 wD
 UW
@@ -5209,7 +5204,7 @@ yi
 jf
 XA
 HO
-tw
+NT
 sL
 Pw
 Vr
@@ -5318,7 +5313,7 @@ NT
 cU
 XA
 HO
-tw
+NT
 sL
 Pw
 zj
@@ -5427,7 +5422,7 @@ hc
 NT
 Gm
 bV
-tw
+NT
 Og
 yN
 Ox
@@ -5536,7 +5531,7 @@ NT
 NT
 zF
 HO
-tw
+NT
 Ky
 LS
 Ul
@@ -5645,7 +5640,7 @@ ap
 Ff
 Gm
 HO
-tw
+NT
 vF
 wD
 LL
@@ -5754,7 +5749,7 @@ ap
 NT
 CL
 HO
-tw
+NT
 fg
 wD
 Bt
@@ -5863,7 +5858,7 @@ Li
 Ju
 mm
 HO
-tw
+NT
 aD
 uB
 Ul
@@ -5972,7 +5967,7 @@ wD
 wD
 bi
 Mh
-tw
+NT
 sL
 Pw
 Nj
@@ -6080,8 +6075,8 @@ Mf
 Mf
 wD
 hp
-tw
-tw
+NT
+NT
 sL
 Pw
 Ul
@@ -6189,7 +6184,7 @@ mK
 Mf
 wD
 HO
-tw
+NT
 Ul
 Ox
 qz
@@ -6298,7 +6293,7 @@ mK
 Mf
 wD
 HO
-tw
+NT
 sL
 wD
 wD
@@ -6407,7 +6402,7 @@ mK
 Mf
 wD
 DI
-tw
+NT
 qu
 wD
 iY
@@ -6421,11 +6416,11 @@ Mf
 Mf
 uR
 uR
-tw
-tw
-tw
-tw
-tw
+NT
+NT
+NT
+NT
+NT
 DA
 TL
 wD
@@ -6516,7 +6511,7 @@ mK
 Mf
 wD
 bV
-tw
+NT
 sL
 wD
 iY
@@ -6534,7 +6529,7 @@ uR
 NT
 NT
 NT
-tw
+NT
 DA
 uR
 XM
@@ -6625,7 +6620,7 @@ mK
 aF
 wD
 sE
-tw
+NT
 aD
 wD
 sK
@@ -6643,7 +6638,7 @@ uR
 Ro
 uM
 NT
-tw
+NT
 uR
 uR
 kK
@@ -6734,7 +6729,7 @@ mK
 Mf
 wD
 cV
-tw
+NT
 fg
 wD
 OL
@@ -6752,7 +6747,7 @@ uR
 wD
 yp
 DA
-tw
+NT
 cD
 dr
 ww
@@ -6843,7 +6838,7 @@ mK
 Mf
 wD
 hp
-tw
+NT
 Ky
 wD
 OL
@@ -6952,7 +6947,7 @@ mK
 Mf
 wD
 HO
-tw
+NT
 sL
 wD
 OL
@@ -7026,10 +7021,10 @@ mK
 mK
 mK
 mK
-mK
-mK
-mK
-mK
+Mf
+Mf
+Mf
+Mf
 Mf
 Mf
 Mf
@@ -7061,7 +7056,7 @@ mK
 Mf
 wD
 HO
-tw
+NT
 aD
 tQ
 Tf
@@ -7133,12 +7128,12 @@ mK
 (34,1,1) = {"
 mK
 mK
-mK
-mK
-mK
-mK
-mK
-mK
+Mf
+Mf
+Mf
+za
+za
+za
 Mf
 za
 za
@@ -7170,7 +7165,7 @@ mK
 Mf
 wD
 UA
-tw
+NT
 qu
 wD
 iY
@@ -7188,7 +7183,7 @@ Mf
 wD
 eI
 jm
-tw
+NT
 DA
 eZ
 wD
@@ -7241,14 +7236,14 @@ mK
 "}
 (35,1,1) = {"
 mK
-mK
-mK
-mK
-mK
 Mf
 Mf
-Mf
-Mf
+za
+za
+za
+Fx
+za
+za
 za
 AX
 ok
@@ -7279,7 +7274,7 @@ mK
 Mf
 wD
 HO
-tw
+NT
 sL
 wD
 CY
@@ -7297,7 +7292,7 @@ Mf
 wD
 NR
 kW
-tw
+NT
 NT
 FG
 wD
@@ -7349,15 +7344,15 @@ mK
 mK
 "}
 (36,1,1) = {"
-mK
-mK
-mK
-Mf
 Mf
 Mf
 za
 za
-za
+Jh
+rs
+jN
+SS
+cp
 za
 za
 Ef
@@ -7388,7 +7383,7 @@ mK
 Mf
 wD
 HO
-tw
+NT
 qu
 wD
 wD
@@ -7458,15 +7453,15 @@ mK
 mK
 "}
 (37,1,1) = {"
-mK
-mK
-Mf
 Mf
 za
 za
-za
-Fx
-za
+if
+pL
+SS
+Wx
+SS
+SS
 za
 za
 za
@@ -7497,7 +7492,7 @@ Mf
 Mf
 wD
 HO
-tw
+NT
 sL
 wD
 bi
@@ -7567,15 +7562,15 @@ mK
 mK
 "}
 (38,1,1) = {"
-mK
-Mf
 Mf
 za
-za
-Jh
-rs
-jN
-cp
+if
+SS
+SS
+SS
+SS
+SS
+SS
 za
 za
 za
@@ -7610,13 +7605,13 @@ Ab
 To
 wD
 BF
-tw
+Bz
 NT
 ez
 NT
-tw
-tw
-tw
+Bz
+Bz
+Bz
 lN
 yM
 wD
@@ -7676,15 +7671,15 @@ mK
 mK
 "}
 (39,1,1) = {"
-mK
 Mf
 za
-za
-if
-pL
+oh
 SS
-Wx
-cW
+SS
+SS
+SS
+SS
+SS
 za
 za
 EE
@@ -7719,21 +7714,21 @@ sM
 wD
 wD
 hp
-tw
+Bz
 Ul
 wD
 Tv
 Ul
 Ul
-tw
-tw
+Bz
+Bz
 TE
 wD
 wD
 wD
 wg
 cD
-tw
+Bz
 Ul
 SQ
 wD
@@ -7785,10 +7780,10 @@ mK
 mK
 "}
 (40,1,1) = {"
-mK
 Mf
 za
-if
+za
+SS
 zK
 SS
 SS
@@ -7820,7 +7815,7 @@ cr
 Iv
 xt
 IE
-tw
+Bz
 lN
 Rp
 Rp
@@ -7828,22 +7823,22 @@ Xa
 Rp
 Rp
 lZ
-tw
+Bz
 Ox
 Pw
 Ul
 Em
 Xi
 Ul
-tw
+Bz
 Wb
 lA
 Pw
 Ul
 Ox
-tw
-tw
-tw
+Bz
+Bz
+Bz
 Ul
 Ul
 wD
@@ -7929,31 +7924,31 @@ tw
 Iv
 Pw
 ky
-tw
-tw
-tw
-tw
-tw
-tw
-tw
-tw
-tw
+Bz
+Bz
+Bz
+Bz
+Bz
+Bz
+Bz
+Bz
+Bz
 Vr
 wD
 IY
 QP
 Gs
 Vr
-tw
-tw
+Bz
+Bz
 dD
 aI
 NT
-tw
-tw
+Bz
+Bz
 kP
-tw
-tw
+Bz
+Bz
 NT
 Sd
 kf
@@ -8038,7 +8033,7 @@ BD
 Iv
 xt
 Ul
-tw
+Bz
 DT
 KM
 KM
@@ -8046,21 +8041,21 @@ vy
 KM
 sC
 Bl
-tw
+Bz
 Ul
 Pw
 Ul
 Em
 Zp
 Ul
-tw
+Bz
 DT
 TC
 Pw
 Ul
 Ul
-tw
-tw
+Bz
+Bz
 YT
 Ul
 EL
@@ -8114,7 +8109,7 @@ mK
 (43,1,1) = {"
 Mf
 za
-Bz
+if
 Nw
 SS
 SS
@@ -8155,21 +8150,21 @@ Jp
 wD
 wD
 bW
-tw
+Bz
 Ox
 wD
 nz
 Ox
 Ul
-tw
-tw
+Bz
+Bz
 gX
 wD
 wD
 wD
 EL
 Ul
-tw
+Bz
 Ul
 Ul
 wD
@@ -8223,13 +8218,13 @@ mK
 (44,1,1) = {"
 Mf
 za
-za
 oh
-PU
 SS
-Aw
-Ty
-QH
+SS
+SS
+SS
+SS
+SS
 za
 za
 za
@@ -8264,13 +8259,13 @@ yi
 on
 wD
 FD
-tw
+Bz
 NT
 ez
 NT
-tw
-tw
-tw
+Bz
+Bz
+Bz
 Ww
 eb
 wD
@@ -8331,14 +8326,14 @@ mK
 "}
 (45,1,1) = {"
 Mf
-Mf
 za
 za
-gI
-po
-po
-EO
-za
+oh
+PU
+SS
+Aw
+Ty
+QH
 za
 za
 za
@@ -8439,16 +8434,16 @@ mK
 mK
 "}
 (46,1,1) = {"
-mK
 Mf
 Mf
 za
 za
+gI
+po
+po
+EO
 za
 za
-za
-za
-Mf
 Mf
 Mf
 za
@@ -8549,14 +8544,14 @@ mK
 "}
 (47,1,1) = {"
 mK
-mK
 Mf
 Mf
-Mf
-Mf
-Mf
-Mf
-Mf
+za
+za
+za
+za
+za
+za
 Mf
 mK
 Mf
@@ -8605,7 +8600,7 @@ wD
 wD
 wD
 bp
-tw
+NT
 xc
 wD
 wD
@@ -8659,14 +8654,14 @@ mK
 (48,1,1) = {"
 mK
 mK
-mK
-mK
-mK
-mK
-mK
-mK
-mK
-mK
+Mf
+Mf
+Mf
+Mf
+Mf
+Mf
+Mf
+Mf
 mK
 Mf
 Mf
@@ -8714,7 +8709,7 @@ JZ
 gK
 cD
 cD
-tw
+NT
 TA
 wD
 sT
@@ -8823,7 +8818,7 @@ uU
 cD
 Vp
 OV
-tw
+NT
 eg
 wD
 TH
@@ -8932,7 +8927,7 @@ gK
 cD
 ha
 OV
-tw
+NT
 TA
 yx
 RP
@@ -9041,7 +9036,7 @@ BN
 gK
 ha
 OV
-tw
+NT
 TA
 yx
 gK
@@ -9150,7 +9145,7 @@ gK
 gK
 ox
 ZL
-tw
+NT
 TA
 wD
 gK
@@ -9259,7 +9254,7 @@ pr
 gK
 ox
 OV
-tw
+NT
 TA
 wD
 ql
@@ -9368,7 +9363,7 @@ wD
 wD
 wD
 gV
-tw
+NT
 xc
 wD
 wD
@@ -9477,7 +9472,7 @@ TH
 Ma
 Pw
 OV
-tw
+NT
 TA
 wD
 rm
@@ -9586,7 +9581,7 @@ gK
 pn
 Pw
 OV
-tw
+NT
 TA
 wD
 rm
@@ -9695,7 +9690,7 @@ gK
 gK
 At
 OV
-tw
+NT
 TA
 At
 gK
@@ -9804,7 +9799,7 @@ gK
 zn
 Pw
 OV
-tw
+NT
 TA
 wD
 ks
@@ -9913,7 +9908,7 @@ ly
 jl
 Pw
 OV
-tw
+NT
 TA
 wD
 Ma
@@ -10022,7 +10017,7 @@ wD
 wD
 wD
 Gb
-tw
+NT
 xc
 wD
 wD
@@ -10131,7 +10126,7 @@ JZ
 gK
 wD
 OV
-tw
+NT
 TA
 rr
 sk
@@ -10240,7 +10235,7 @@ uU
 WH
 wD
 OV
-tw
+NT
 TA
 rr
 sk
@@ -10349,7 +10344,7 @@ gK
 gK
 pT
 OV
-tw
+NT
 mN
 xr
 sk
@@ -10458,7 +10453,7 @@ gK
 ae
 pT
 OV
-tw
+NT
 TA
 xr
 sk
@@ -10567,7 +10562,7 @@ WH
 gK
 wD
 kF
-tw
+NT
 eg
 rr
 sk

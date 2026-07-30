@@ -124,3 +124,8 @@
 		//	qdel(checked_atom)
 
 	new /turf/open/water/bloodwave(next_turf, get_dir(next_turf, src))
+
+// APOC EDIT ADD START
+/turf/open/water/bloodwave/shallow
+	is_swimming_tile = FALSE
+// APOC EDIT ADD END
