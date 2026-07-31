@@ -9,7 +9,6 @@
 	outfit = /datum/outfit/job/vampire/ocean
 
 	display_order = JOB_DISPLAY_ORDER_OCEAN_76_GANGER
-	exp_required_type_department = EXP_TYPE_OCEAN
 	department_for_prefs = /datum/job_department/ocean
 	departments_list = list(
 		/datum/job_department/ocean,
