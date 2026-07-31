@@ -96,3 +96,38 @@
 	)
 
 	return to_add
+
+// START - ANANASI SPLAT
+/datum/splat/werewolf/shifter/ananasi/prepare_human_for_preview(mob/living/carbon/human/human)
+	human.set_haircolor("#241e1c", update = FALSE)
+	human.set_hairstyle("Long Over Eye (ALT)", update = TRUE)
+	human.undershirt = "Shirt (Black)"
+	human.update_body()
+
+/datum/splat/werewolf/shifter/ananasi/get_splat_description()
+	return "Lorem Ipsum"
+
+/datum/splat/werewolf/shifter/ananasi/get_splat_lore()
+	return list(
+		"Lorem Ipsum",
+	)
+
+/datum/splat/werewolf/shifter/corax/create_pref_unique_perks()
+	var/list/to_add = list()
+
+	to_add += list(
+		list(
+			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
+			SPECIES_PERK_ICON = FA_ICON_SPIDER,
+			SPECIES_PERK_NAME = "Shapeshifting",
+			SPECIES_PERK_DESC = "Ananasi can shift between 4 different forms that grant them bonuses.",
+		),
+		list(
+			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
+			SPECIES_PERK_ICON = FA_ICON_BAND_AID,
+			SPECIES_PERK_NAME = "Passive healing",
+			SPECIES_PERK_DESC = "Ananasi have a strong passive healing while outside of their breed form.",
+		),
+	)
+
+	return to_add

@@ -16,6 +16,9 @@
 #define BREED_CORAX_HOMID "Corax Homid"
 #define BREED_CORVID "Corvid"
 
+#define BREED_ANANASI_HOMID "Ananasi Homid"
+#define BREED_ARACHNID "Arachnid"
+
 #define FEATURE_FUR_COLOR "fera_fur"
 
 // fera will likely have a seperate list of colors but uses the same feature or var as other fera
@@ -29,6 +32,15 @@ GLOBAL_LIST_INIT(garou_fur_colors, list(
 ))
 
 GLOBAL_LIST_INIT(corax_fur_colors, list(
+	"black" = "black",
+	"brown" = "brown",
+	"white" = "white",
+	"green" = "green",
+	"red" = "red",
+	"gray" = "gray",
+))
+
+GLOBAL_LIST_INIT(ananasi_fur_colors, list(
 	"black" = "black",
 	"brown" = "brown",
 	"white" = "white",

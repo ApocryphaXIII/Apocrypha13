@@ -171,9 +171,9 @@
 
 	var/datum/species/human/shifter/shifter_species = owner.dna.species
 	if(istype(shifter_species))
-		if(shifter_species.is_veil_breaching_form(owner) && !causes_delirium())
+		if(shifter_species.is_veil_breaching_form(owner) && (!shifter_species.form_causes_delirium || HAS_TRAIT(owner, TRAIT_PIERCED_VEIL)))
 			SEND_SIGNAL(owner, COMSIG_MASQUERADE_VIOLATION)
-		if(causes_delirium())
+		if(shifter_species.form_causes_delirium)
 			for(var/mob/living/carbon/human/guy in oviewers(owner, DEFAULT_SIGHT_DISTANCE))
 				if(!guy.affected_by_delirium())
 					continue
@@ -181,7 +181,7 @@
 
 /datum/splat/werewolf/shifter/proc/causes_delirium()
 	var/datum/species/human/shifter/shifter_species = owner.dna.species
-	if(istype(shifter_species))
+	if(!istype(shifter_species))
 		return FALSE
 	if(shifter_species.form_causes_delirium && !HAS_TRAIT(owner, TRAIT_PIERCED_VEIL))
 		return TRUE
@@ -253,6 +253,7 @@
 	transformation_list = list(
 		/datum/species/human/shifter/homid,
 		/datum/species/human/shifter/war,
+		/datum/species/human/shifter/dire,
 		/datum/species/human/shifter/feral
 	)
 	transformation_stats = list(
@@ -289,6 +290,52 @@
 	. = ..()
 	remove_power(/datum/action/cooldown/power/gift/eye_drink)
 
+// START - ANANASI SPLAT
+
+/datum/splat/werewolf/shifter/ananasi
+	name = "Ananasi"
+	id = SPLAT_ANANASI
+	splat_traits = list(
+		TRAIT_FERA_FORMS,
+		TRAIT_FERA_FUR,
+		TRAIT_FERA_RENOWN,
+	)
+	transformation_list = list(
+		/datum/species/human/shifter/homid,
+		/datum/species/human/shifter/war,
+		/datum/species/human/shifter/dire,
+		/datum/species/human/shifter/feral
+	)
+	transformation_stats = list(
+		SPECIES_FERA_WAR = list(
+			STAT_STRENGTH = 3,
+			STAT_STAMINA = 2,
+			STAT_DEXTERITY = 3,
+			STAT_MANIPULATION = -1,
+			STAT_APPEARANCE = -1
+		),
+		SPECIES_FERA_FERAL = list(
+			STAT_DEXTERITY = 6,
+		),
+		SPECIES_FERA_DIRE = list(
+			STAT_STRENGTH = 4,
+			STAT_DEXTERITY = 2,
+			STAT_MANIPULATION = -3,
+			STAT_APPEARANCE = -2
+		)
+	)
+	transform_sound = 'modular_darkpack/modules/werewolf_the_apocalypse/sounds/ananasi_transform.ogg'
+	mob_icons = list(
+		SPECIES_FERA_BESTIAL = 'icons/mob/simple/smspider.dmi',
+		SPECIES_FERA_WAR = 'icons/mob/simple/smspider.dmi',
+		SPECIES_FERA_DIRE = 'icons/mob/simple/smspider.dmi',
+		SPECIES_FERA_FERAL = 'icons/mob/simple/smspider.dmi'
+	)
+	transform_hud_icon = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/hud_transforms.dmi'
+	mimmicing_animal = /mob/living/basic/spider/giant/viper
+
+	warcry_emote = "hiss"
+
 
 /mob/living/carbon/human/splat/kinfolk
 	auto_splats = list(/datum/splat/werewolf/kinfolk)
@@ -298,3 +345,6 @@
 
 /mob/living/carbon/human/splat/corax
 	auto_splats = list(/datum/splat/werewolf/shifter/corax)
+
+/mob/living/carbon/human/splat/ananasi
+	auto_splats = list(/datum/splat/werewolf/shifter/ananasi)
