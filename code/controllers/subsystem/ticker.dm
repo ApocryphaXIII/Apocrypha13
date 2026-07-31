@@ -38,8 +38,8 @@ SUBSYSTEM_DEF(ticker)
 	var/timeLeft //pregame timer
 	var/start_at
 
-	var/gametime_offset = 21 HOURS //Deciseconds to add to world.time for station time. // DARKPACK EDIT CHANGE - ORIGINAL: var/gametime_offset = 432000
-	var/station_time_rate_multiplier = 2 //factor of station time progressal vs real time. // DARKPACK EDIT CHANGE - ORIGINAL: var/station_time_rate_multiplier = 12
+	var/gametime_offset = 21 HOURS //Deciseconds to add to world.time for station time. // DARKPACK EDIT ADD - CITY_TIME
+	var/city_time_rate_multiplier = 2 //factor of station time progressal vs real time. // DARKPACK EDIT CHANGE - CITY_TIME
 
 	/// Num of players, used for pregame stats on statpanel
 	var/totalPlayers = 0
@@ -115,51 +115,34 @@ SUBSYSTEM_DEF(ticker)
 	else
 		set_lobby_music("[global.config.directory]/title_music/sounds/[pick(music)]")
 
-	if(!GLOB.syndicate_code_phrase)
-		GLOB.syndicate_code_phrase = generate_code_phrase(return_list=TRUE)
-
-		var/codewords = jointext(GLOB.syndicate_code_phrase, "|")
-		var/regex/codeword_match = new("([codewords])", "ig")
-
-		GLOB.syndicate_code_phrase_regex = codeword_match
-
-	if(!GLOB.syndicate_code_response)
-		GLOB.syndicate_code_response = generate_code_phrase(return_list=TRUE)
-
-		var/codewords = jointext(GLOB.syndicate_code_response, "|")
-		var/regex/codeword_match = new("([codewords])", "ig")
-
-		GLOB.syndicate_code_response_regex = codeword_match
-
 	start_at = world.time + (CONFIG_GET(number/lobby_countdown) * (1 SECONDS))
+	// DARKPACK EDIT ADD START - CITY_TIME
 	round_start_time = start_at // May be changed later, but prevents the time from jumping back when the round actually starts
-	if(CONFIG_GET(flag/randomize_shift_time))
-		gametime_offset = rand(0, 23) * (1 HOURS)
-	else if(CONFIG_GET(flag/shift_time_realtime))
-		gametime_offset = world.timeofday + GLOB.timezoneOffset
-		station_time_rate_multiplier = 1
-	else
-		gametime_offset = (CONFIG_GET(number/shift_time_start_hour) * (1 HOURS))
+	gametime_offset = (CONFIG_GET(number/shift_time_start_hour) * (1 HOURS))
+	// DARKPACK EDIT ADD END
 	return SS_INIT_SUCCESS
 
 /datum/controller/subsystem/ticker/fire()
 	switch(current_state)
 		if(GAME_STATE_STARTUP)
 			if(Master.initializations_finished_with_no_players_logged_in)
-				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
+				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * (1 SECONDS))
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
 			to_chat(world, span_notice("<b>Welcome to [station_name()]!</b>"))
 			for(var/channel_tag in CONFIG_GET(str_list/channel_announce_new_game))
-				send2chat(new /datum/tgs_message_content("New round starting on [SSmapping.current_map.map_name]!"), channel_tag)
+				if(SSticker.GetTimeLeft() == -10) // APOC EDIT CHANGE START - DISCORD
+					send2chat(new /datum/tgs_message_content("New round delayed. Thanks for playing [CONFIG_GET(string/servername)]"), channel_tag) // APOC EDIT CHANGE
+				else
+					send2chat(new /datum/tgs_message_content("<@&1474327242510303336> New round starting on [station_name()]!"), channel_tag)
+				// APOC EDIT CHANGE END
 			current_state = GAME_STATE_PREGAME
 			SEND_SIGNAL(src, COMSIG_TICKER_ENTER_PREGAME)
-
 			fire()
 		if(GAME_STATE_PREGAME)
-				//lobby stats for statpanels
+			//lobby stats for statpanels
 			if(isnull(timeLeft))
-				timeLeft = max(0,start_at - world.time)
+				timeLeft = max(0, start_at - world.time)
 			totalPlayers = LAZYLEN(GLOB.new_player_list)
 			totalPlayersReady = 0
 			total_admins_ready = 0
@@ -168,6 +151,16 @@ SUBSYSTEM_DEF(ticker)
 					++totalPlayersReady
 					if(player.client?.holder)
 						++total_admins_ready
+
+			// APOC EDIT ADD START - (delay if no admins)
+			if(CONFIG_GET(flag/delay_if_no_admins))
+				if(timeLeft <= 600 && timeLeft > -1)
+					if(length(GLOB.admins) <= 0)
+						SetTimeLeft(-1)
+						start_immediately = FALSE
+						to_chat(world, span_infoplain("<b>The game start has been delayed due to no admins connected.</b>"), confidential = TRUE)
+						return
+			// APOC EDIT ADD END
 
 			if(start_immediately)
 				timeLeft = 0
@@ -192,7 +185,7 @@ SUBSYSTEM_DEF(ticker)
 			if(!setup())
 				//setup failed
 				current_state = GAME_STATE_STARTUP
-				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
+				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * (1 SECONDS))
 				timeLeft = null
 				Master.SetRunLevel(RUNLEVEL_LOBBY)
 				SEND_SIGNAL(src, COMSIG_TICKER_ERROR_SETTING_UP)
@@ -214,6 +207,11 @@ SUBSYSTEM_DEF(ticker)
 					reboot_hud.maptext = MAPTEXT_PIXELLARI("<center>Server reboot \n\ DELAYED</center>")
 				else
 					reboot_hud.maptext = MAPTEXT_PIXELLARI("<center>Server rebooting in:\n\ [DisplayTimeText(timeleft(SSticker.reboot_timer), 1)]</center>")
+
+/datum/controller/subsystem/ticker/vv_edit_var(var_name, var_value)
+	if(var_name == NAMEOF(src, login_music))
+		set_lobby_music(var_value, override = TRUE)
+	return ..()
 
 /// Checks if the round should be ending, called every ticker tick
 /datum/controller/subsystem/ticker/proc/check_finished()
@@ -909,6 +907,10 @@ SUBSYSTEM_DEF(ticker)
 		return
 
 	login_music = new_music
+	//we just overrode the song, let's update everyone.
+	if(override)
+		for(var/mob/dead/new_player/new_player as anything in GLOB.new_player_list)
+			new_player?.client.playtitlemusic()
 
 #undef ROUND_START_MUSIC_LIST
 #undef SS_TICKER_TRAIT

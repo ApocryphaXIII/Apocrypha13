@@ -30,6 +30,7 @@ export const MESSAGE_TYPE_WARNING = 'warning';
 export const MESSAGE_TYPE_DEADCHAT = 'deadchat';
 export const MESSAGE_TYPE_OOC = 'ooc';
 export const MESSAGE_TYPE_LOOC = 'looc'; // DARKPACK EDIT ADD
+export const MESSAGE_TYPE_MENTOR = 'mentor'; // DARKPACK EDIT ADD - MENTOR
 export const MESSAGE_TYPE_ADMINPM = 'adminpm';
 export const MESSAGE_TYPE_COMBAT = 'combat';
 export const MESSAGE_TYPE_ADMINCHAT = 'adminchat';
@@ -66,8 +67,16 @@ export const MESSAGE_TYPES: MessageType[] = [
     type: MESSAGE_TYPE_LOCALCHAT,
     name: 'Local',
     description: 'In-character local messages (say, emote, etc)',
-    selector: '.say, .emote, .looc, .do', // DARKPACK EDIT CHANGE - ORIGINAL: selector: '.say, .emote',
+    selector: '.say, .emote, .do', // DARKPACK EDIT CHANGE - DO - ORIGINAL: selector: '.say, .emote',
   },
+  // DARKPACK EDIT ADD START - SUBTLE
+  {
+    type: MESSAGE_TYPE_SUBTLE,
+    name: 'Subtle',
+    description: 'Subtle and Subtler actions.',
+    selector: '.subtle, .subtler',
+  },
+  // DARKPACK EDIT ADD END
   {
     type: MESSAGE_TYPE_RADIO,
     name: 'Radio',
@@ -107,7 +116,7 @@ export const MESSAGE_TYPES: MessageType[] = [
     description: 'The bluewall of global OOC messages',
     selector: '.ooc, .adminooc, .adminobserverooc, .oocplain',
   },
-  // DARKPACK EDIT ADD START
+  // DARKPACK EDIT ADD START - LOOC
   {
     type: MESSAGE_TYPE_LOOC,
     name: 'LOOC',
@@ -127,12 +136,14 @@ export const MESSAGE_TYPES: MessageType[] = [
     description: 'Urist McTraitor has stabbed you with a knife!',
     selector: '.danger',
   },
-  { // DARKPACK EDIT ADD START - SUBTLE
-    type: MESSAGE_TYPE_SUBTLE,
-    name: 'Subtle',
-    description: 'Subtle and Subtler actions.',
-    selector: '.subtle, .subtler',
-  }, // DARKPACK EDIT ADD END
+  // DARKPACK EDIT ADD START - MENTOR
+  {
+    type: MESSAGE_TYPE_MENTOR,
+    name: 'Mentor Log',
+    description: 'Mentor PMs and other mentor things.',
+    selector: '.mentor, .mentornotice',
+  },
+  // DARKPACK EDIT ADD END
   {
     type: MESSAGE_TYPE_UNKNOWN,
     name: 'Unsorted',

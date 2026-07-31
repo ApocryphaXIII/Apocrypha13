@@ -97,7 +97,7 @@
 	// adjust_blindfold(user)
 
 
-/obj/item/clothing/glasses/apoc/blindfold/proc/adjust_blindfold(mob/living/carbon/user)
+/obj/item/clothing/glasses/apoc/blindfold/proc/adjust_blindfold(mob/living/carbon/human/user)
 	switch(adjusted_state)
 		if("both")
 			adjusted_state = "left"

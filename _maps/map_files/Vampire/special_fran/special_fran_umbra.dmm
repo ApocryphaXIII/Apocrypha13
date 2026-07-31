@@ -6,6 +6,10 @@
 	},
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/penumbra)
+"aj" = (
+/obj/effect/landmark/teleport_mark/gaia,
+/turf/open/misc/dirt,
+/area/vtm/outside/penumbra)
 "ap" = (
 /obj/structure/chair/comfy/darkpack{
 	dir = 8
@@ -37,7 +41,7 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/outside/penumbra)
 "br" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/penumbra)
 "bH" = (
@@ -59,7 +63,6 @@
 /area/vtm/outside/penumbra)
 "cb" = (
 /obj/machinery/washing_machine{
-	pixel_x = 0;
 	pixel_y = 18
 	},
 /turf/open/floor/city/circled/large,
@@ -302,7 +305,6 @@
 /area/vtm/outside/penumbra)
 "jo" = (
 /obj/item/flashlight/flare/candle/infinite{
-	pixel_x = 0;
 	pixel_y = 6
 	},
 /obj/item/flashlight/flare/candle/infinite{
@@ -532,10 +534,6 @@
 "tU" = (
 /obj/structure/bed/medical/anchored,
 /turf/open/floor/city/plating_stone,
-/area/vtm/outside/penumbra)
-"uc" = (
-/obj/effect/landmark/teleport_mark/wyld,
-/turf/open/misc/dirt,
 /area/vtm/outside/penumbra)
 "uq" = (
 /turf/closed/wall/vampwall/rich,
@@ -776,7 +774,7 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/outside/penumbra)
 "CK" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/penumbra)
 "CQ" = (
@@ -987,7 +985,6 @@
 /area/vtm/outside/penumbra)
 "Kb" = (
 /obj/structure/roadsign/busstop{
-	pixel_x = 0;
 	pixel_y = 14
 	},
 /turf/open/floor/plating/sidewalk/rich,
@@ -1001,8 +998,7 @@
 /area/vtm/outside/penumbra)
 "Km" = (
 /obj/structure/lamppost/one{
-	dir = 4;
-	density = 0
+	dir = 4
 	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/outside/penumbra)
@@ -1029,7 +1025,6 @@
 /area/vtm/outside/penumbra)
 "La" = (
 /obj/effect/decal/rugs{
-	pixel_x = 0;
 	pixel_y = 17
 	},
 /turf/open/umbra,
@@ -1079,7 +1074,7 @@
 /turf/open/water/vamp_sewer,
 /area/vtm/outside/penumbra)
 "NK" = (
-/obj/structure/fire_barrel,
+/obj/structure/bonfire/fire_barrel,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/penumbra)
 "Oa" = (
@@ -1119,10 +1114,7 @@
 /turf/open/umbra,
 /area/vtm/outside/penumbra)
 "Pk" = (
-/obj/item/flashlight/flare/candle/infinite{
-	pixel_y = 0;
-	pixel_x = 0
-	},
+/obj/item/flashlight/flare/candle/infinite,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/penumbra)
 "Pq" = (
@@ -1366,7 +1358,6 @@
 "VZ" = (
 /obj/structure/table/wood,
 /obj/item/food/pizzaslice/moldy{
-	pixel_x = 0;
 	pixel_y = 7;
 	anchored = 1
 	},
@@ -4491,7 +4482,7 @@ gr
 gr
 Oa
 Jr
-uc
+Jr
 dd
 dd
 dd
@@ -4598,7 +4589,7 @@ gr
 gr
 Jr
 Jr
-Jr
+aj
 Jr
 dd
 dd

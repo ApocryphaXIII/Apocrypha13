@@ -9,11 +9,11 @@
 	outfit = /datum/outfit/job/vampire/tapster
 
 	display_order = JOB_DISPLAY_ORDER_TAPSTER
-	department_for_prefs = /datum/job_department/anarch
 	departments_list = list(
 		/datum/job_department/anarch,
 	)
 
+	/* // APOC EDIT REMOVAL - JOBS
 	alt_titles = list(
 		"Bartender",
 		"Barkeeper",
@@ -23,12 +23,13 @@
 		"Waiter",
 		"Waitress"
 	)
+	*/
 
 	known_contacts = list("Baron", "Bouncer", "Emissary", "Sweeper")
 	allowed_splats = list(SPLAT_NONE, SPLAT_GHOUL)
 	splat_slots = list(SPLAT_NONE = 2, SPLAT_GHOUL = 2)
-	description = "You are a bartender of the local biker hangout. Serve the eclectic clients that pass through, and try not to ask too many questions."
-	minimal_masquerade = 0
+	description = "You are an employee of the local smoke shop. Serve the eclectic clients that pass through, and try not to ask too many questions." // APOC EDIT CHANGE - JOBS
+	minimum_masquerade = 0
 
 /datum/outfit/job/vampire/tapster
 	name = "Tapster"

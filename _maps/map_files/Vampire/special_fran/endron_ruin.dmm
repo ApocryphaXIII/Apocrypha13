@@ -68,10 +68,6 @@
 "bb" = (
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
-"bf" = (
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "bi" = (
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/trimline/red/line{
@@ -250,13 +246,6 @@
 	},
 /turf/open/water/bloodwave,
 /area/vtm/interior/forest/cave/bane)
-"ee" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 10
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "ef" = (
 /obj/structure/flora/rock/pile/darkpack,
 /turf/open/floor/plating/rough,
@@ -288,14 +277,6 @@
 	dir = 1
 	},
 /turf/open/floor/city/plating,
-/area/vtm/interior/endron_facility/forest)
-"eJ" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_count = 20;
-	spawn_scatter_radius = 3
-	},
-/turf/open/water/acid,
 /area/vtm/interior/endron_facility/forest)
 "eK" = (
 /obj/effect/turf_decal/darkpack/cave{
@@ -595,13 +576,6 @@
 /obj/item/clothing/head/vampire/pentex_beret,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
-"iZ" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 10
-	},
-/obj/effect/spawner/random/trash/mess,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "jf" = (
 /obj/structure/table,
 /obj/item/trash/raisins,
@@ -757,7 +731,6 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 4
 	},
-/obj/effect/spawner/random/trash/garbage,
 /turf/open/water/bloodwave,
 /area/vtm/interior/forest/cave/bane)
 "ly" = (
@@ -882,11 +855,6 @@
 /obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
-"nl" = (
-/obj/effect/turf_decal/darkpack/cave,
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "nv" = (
 /obj/machinery/shower/directional/north,
 /obj/structure/curtain,
@@ -1054,13 +1022,6 @@
 	},
 /turf/cordon/secret,
 /area/misc/cordon)
-"pD" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "pG" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt/corner{
@@ -1097,7 +1058,7 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "qe" = (
-/obj/structure/extinguisher_cabinet/directional/west,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
 "qf" = (
@@ -1272,14 +1233,14 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "sM" = (
-/obj/structure/vampdoor/glass{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/door/access/pentex,
 /obj/effect/mapping_helpers/door/lock,
 /obj/effect/turf_decal/trimline/red/line,
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 1
+	},
+/obj/structure/vampdoor{
+	dir = 4
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
@@ -1336,13 +1297,6 @@
 /obj/effect/spawner/random/trash/janitor_supplies,
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
-"tE" = (
-/obj/effect/turf_decal/darkpack/cave/corner{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "tG" = (
 /obj/structure/fence{
 	dir = 4
@@ -1379,7 +1333,6 @@
 "uB" = (
 /obj/structure/vampdoor/wood,
 /obj/effect/mapping_helpers/door/access/pentex,
-/obj/effect/mapping_helpers/door/lock,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
@@ -1465,9 +1418,9 @@
 /turf/open/floor/plating/asphalt,
 /area/vtm/interior/endron_facility/forest)
 "vF" = (
-/obj/structure/lattice/catwalk,
-/mob/living/basic/mining/legion/gray_masses,
-/turf/open/water/acid,
+/obj/effect/turf_decal/trimline/red/line,
+/obj/machinery/light/directional/south,
+/turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "wb" = (
 /obj/effect/realistic_fog/dense,
@@ -1709,18 +1662,21 @@
 	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
+"yN" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/endron_facility/forest)
 "za" = (
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/forest/cave/bane)
+"zj" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/city/plating,
+/area/vtm/interior/endron_facility/forest)
 "zn" = (
-/obj/structure/rack{
-	density = 0;
-	icon = 'icons/obj/tank.dmi';
-	icon_state = "holder";
-	name = "tank rack"
-	},
 /obj/item/tank/internals/anesthetic,
 /obj/item/clothing/mask/breath/medical,
+/obj/structure/rack,
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
 "zx" = (
@@ -1785,7 +1741,7 @@
 /area/vtm/interior/endron_facility/forest)
 "AB" = (
 /obj/structure/lattice/grate,
-/mob/living/simple_animal/hostile/asteroid/elite/legionnaire,
+/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/gray_masses,
 /turf/open/water/vamp_sewer,
 /area/vtm/interior/endron_facility/forest)
 "AL" = (
@@ -1809,7 +1765,6 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
 	},
-/obj/effect/spawner/random/trash/garbage,
 /turf/open/water/bloodwave,
 /area/vtm/interior/forest/cave/bane)
 "Bl" = (
@@ -1979,13 +1934,6 @@
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
-"Dh" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 1
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "Dl" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -2012,7 +1960,6 @@
 "DN" = (
 /obj/structure/chair/office/darkpack/green,
 /obj/effect/spawner/random/trash/garbage,
-/mob/living/basic/mining/legion/gray_masses,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "DR" = (
@@ -2049,6 +1996,7 @@
 /area/vtm/interior/endron_facility/forest)
 "DZ" = (
 /obj/effect/gibspawner/human/bodypartless,
+/mob/living/basic/mining/legion/gray_masses,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "Eb" = (
@@ -2056,13 +2004,6 @@
 /obj/effect/mob_spawn/corpse/human/endron,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
-"Ee" = (
-/obj/effect/turf_decal/darkpack/cave{
-	dir = 5
-	},
-/obj/effect/spawner/random/trash/garbage,
-/turf/open/water/bloodwave,
-/area/vtm/interior/forest/cave/bane)
 "Ef" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
@@ -2184,7 +2125,7 @@
 "FG" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/trimline/yellow/line,
-/obj/structure/extinguisher_cabinet/directional/west,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "FM" = (
@@ -2349,7 +2290,6 @@
 /area/vtm/interior/endron_facility/forest)
 "HB" = (
 /obj/effect/decal/garou_glyph/wyrm{
-	pixel_x = 0;
 	pixel_y = 31
 	},
 /turf/open/misc/dirt,
@@ -2384,12 +2324,17 @@
 /obj/underplate,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
+"In" = (
+/obj/effect/spawner/random/trash/mess,
+/mob/living/basic/mining/legion/gray_masses,
+/turf/open/floor/city/plating,
+/area/vtm/interior/endron_facility/forest)
 "Ip" = (
 /turf/open/misc/grass/random/rocks,
 /area/vtm/outside/forest)
 "It" = (
 /obj/structure/glowshroom/glowcap,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "Iu" = (
@@ -2507,6 +2452,14 @@
 	},
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/forest/cave/bane)
+"Jp" = (
+/obj/effect/mapping_helpers/door/access/pentex,
+/obj/effect/mapping_helpers/door/lock,
+/obj/structure/vampdoor{
+	dir = 4
+	},
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/endron_facility/forest)
 "Ju" = (
 /obj/effect/turf_decal/siding/thinplating/light{
 	dir = 4
@@ -2695,6 +2648,10 @@
 	},
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
+"LS" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/endron_facility/forest)
 "Ma" = (
 /obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/city/circled,
@@ -2714,7 +2671,6 @@
 "Mi" = (
 /obj/structure/vampdoor/glass,
 /obj/effect/mapping_helpers/door/access/pentex,
-/obj/effect/mapping_helpers/door/lock,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
@@ -2839,8 +2795,9 @@
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
 "Og" = (
-/mob/living/basic/mining/legion/gray_masses,
-/turf/open/floor/city/plating_mono,
+/obj/effect/turf_decal/trimline/red/line,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "Ox" = (
 /obj/effect/spawner/random/trash/garbage,
@@ -3002,9 +2959,9 @@
 /area/vtm/interior/endron_facility/forest)
 "QK" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
-/obj/structure/vampdoor/glass,
 /obj/effect/mapping_helpers/door/access/pentex,
 /obj/effect/mapping_helpers/door/lock,
+/obj/structure/vampdoor,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "QL" = (
@@ -4925,11 +4882,11 @@ ap
 ap
 Gm
 HO
-vF
+tw
 aD
 Mi
 Ox
-yI
+Ul
 Qr
 wD
 wD
@@ -5364,7 +5321,7 @@ HO
 tw
 sL
 Pw
-Ul
+zj
 Nj
 Qr
 wD
@@ -5467,14 +5424,14 @@ Mf
 wD
 RR
 hc
-Og
+NT
 Gm
 bV
 tw
-sL
-qz
+Og
+yN
 Ox
-Vr
+In
 iQ
 gf
 wD
@@ -5581,8 +5538,8 @@ zF
 HO
 tw
 Ky
-wD
-yI
+LS
+Ul
 Vr
 il
 Fe
@@ -5689,7 +5646,7 @@ Ff
 Gm
 HO
 tw
-sL
+vF
 wD
 LL
 jD
@@ -6015,7 +5972,7 @@ wD
 wD
 bi
 Mh
-YT
+tw
 sL
 Pw
 Nj
@@ -6232,7 +6189,7 @@ mK
 Mf
 wD
 HO
-eJ
+tw
 Ul
 Ox
 qz
@@ -7405,7 +7362,7 @@ za
 za
 Ef
 FR
-iZ
+IA
 za
 Jk
 za
@@ -7513,7 +7470,7 @@ za
 za
 za
 za
-Dh
+ed
 wb
 IA
 RS
@@ -7624,11 +7581,11 @@ za
 za
 CX
 Ux
-tE
+Wi
 eK
-pD
 eK
-ee
+eK
+IA
 Lp
 Lp
 hP
@@ -7734,7 +7691,7 @@ EE
 Ak
 CX
 Ux
-bf
+Pg
 Pg
 Pg
 Wi
@@ -7834,7 +7791,7 @@ za
 if
 zK
 SS
-ci
+SS
 SS
 cW
 za
@@ -7847,7 +7804,7 @@ Pg
 wb
 Pg
 Pg
-nl
+ev
 Lp
 JR
 Iv
@@ -8050,7 +8007,7 @@ Mf
 za
 za
 se
-ci
+SS
 SS
 ci
 SS
@@ -8171,7 +8128,7 @@ md
 Lp
 CX
 Ux
-bf
+Pg
 Pg
 Pg
 ev
@@ -8194,7 +8151,7 @@ SV
 eb
 wD
 wD
-RW
+Jp
 wD
 wD
 bW
@@ -8279,7 +8236,7 @@ za
 Lp
 iN
 RS
-Ee
+CX
 Ux
 Pg
 KX
@@ -8304,7 +8261,7 @@ wD
 wD
 kT
 yi
-Yg
+on
 wD
 FD
 tw
@@ -8413,7 +8370,7 @@ Mf
 wD
 Ul
 NT
-on
+Yg
 wD
 mz
 KM

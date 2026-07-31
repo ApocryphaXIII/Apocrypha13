@@ -4,7 +4,6 @@
 	temp_exponent_factor = 1
 	optimal_ph_min = 2
 	optimal_ph_max = 10
-	thermic_constant = 0
 	H_ion_release = 0
 	rate_up_lim = 60
 	purity_min = 0
@@ -50,11 +49,11 @@
 
 /datum/chemical_reaction/drink/gin_tonic
 	results = list(/datum/reagent/consumable/ethanol/gintonic = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/gin = 2, /datum/reagent/consumable/tonic = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/gin = 1, /datum/reagent/consumable/tonic = 2)
 
 /datum/chemical_reaction/drink/rum_coke
 	results = list(/datum/reagent/consumable/ethanol/rum_coke = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/rum = 2, /datum/reagent/consumable/space_cola = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/rum = 1, /datum/reagent/consumable/space_cola = 2)
 
 /datum/chemical_reaction/drink/cuba_libre
 	results = list(/datum/reagent/consumable/ethanol/cuba_libre = 4)
@@ -75,11 +74,11 @@
 
 /datum/chemical_reaction/drink/whiskey_cola
 	results = list(/datum/reagent/consumable/ethanol/whiskey_cola = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 2, /datum/reagent/consumable/space_cola = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/space_cola = 2)
 
 /datum/chemical_reaction/drink/screwdriver
 	results = list(/datum/reagent/consumable/ethanol/screwdrivercocktail = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 2, /datum/reagent/consumable/orangejuice = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/consumable/orangejuice = 2)
 
 /datum/chemical_reaction/drink/bloody_mary
 	results = list(/datum/reagent/consumable/ethanol/bloody_mary = 4)
@@ -156,8 +155,9 @@
 
 /datum/chemical_reaction/drink/threemileisland
 	results = list(/datum/reagent/consumable/ethanol/threemileisland = 10)
-	required_reagents = list(/datum/reagent/consumable/ethanol/longislandicedtea = 10, /datum/reagent/uranium = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/longislandicedtea = 10, /datum/reagent/consumable/ethanol/atomicbomb = 1) // DARKPACK EDIT CHANGE
 	reaction_tags = REACTION_TAG_DRINK | REACTION_TAG_EASY | REACTION_TAG_OTHER
+	mix_message = "Is that a geiger counter going off?" // DARKPACK EDIT ADD
 
 /datum/chemical_reaction/drink/whiskeysoda
 	results = list(/datum/reagent/consumable/ethanol/whiskeysoda = 3)
@@ -181,15 +181,16 @@
 
 /datum/chemical_reaction/drink/manhattan_proj
 	results = list(/datum/reagent/consumable/ethanol/manhattan_proj = 10)
-	required_reagents = list(/datum/reagent/consumable/ethanol/manhattan = 10, /datum/reagent/uranium = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/manhattan = 10, /datum/reagent/consumable/ethanol/atomicbomb = 1) // DARKPACK EDIT CHANGE
+	mix_message = "Smells like Death, the Destroyer of Worlds." // DARKPACK EDIT ADD
 
 /datum/chemical_reaction/drink/vodka_tonic
 	results = list(/datum/reagent/consumable/ethanol/vodkatonic = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 2, /datum/reagent/consumable/tonic = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/consumable/tonic = 2)
 
 /datum/chemical_reaction/drink/gin_fizz
 	results = list(/datum/reagent/consumable/ethanol/ginfizz = 4)
-	required_reagents = list(/datum/reagent/consumable/ethanol/gin = 2, /datum/reagent/consumable/sodawater = 1, /datum/reagent/consumable/limejuice = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/gin = 1, /datum/reagent/consumable/sodawater = 2, /datum/reagent/consumable/limejuice = 1)
 
 /datum/chemical_reaction/drink/bahama_mama
 	results = list(/datum/reagent/consumable/ethanol/bahama_mama = 5)
@@ -197,7 +198,7 @@
 
 /datum/chemical_reaction/drink/singulo
 	results = list(/datum/reagent/consumable/ethanol/singulo = 10)
-	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 5, /datum/reagent/liquid_dark_matter = 1, /datum/reagent/consumable/ethanol/wine = 5)
+	required_reagents = list(/datum/reagent/consumable/ethanol/vodka = 5, /datum/reagent/toxin/mindbreaker = 1, /datum/reagent/consumable/ethanol/wine = 5) // DARKPACK EDIT CHANGE
 
 /datum/chemical_reaction/drink/alliescocktail
 	results = list(/datum/reagent/consumable/ethanol/alliescocktail = 2)

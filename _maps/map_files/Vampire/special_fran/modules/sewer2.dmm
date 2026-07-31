@@ -1,0 +1,1020 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ad" = (
+/obj/structure/cable,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"al" = (
+/obj/structure/rack/wide/wood_shelf,
+/obj/effect/spawner/random/engineering/tool,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"aK" = (
+/obj/item/gas_can,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"cn" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"cv" = (
+/obj/effect/spawner/random/trash/cigbutt,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"cT" = (
+/obj/effect/spawner/random/flora/rocks,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"dO" = (
+/obj/structure/rack/tall/store_shelf_metal,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"ed" = (
+/obj/item/stack/dollar/hundred,
+/obj/structure/table/wood,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"eq" = (
+/obj/structure/vampdoor/oldwood,
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/npc,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"eW" = (
+/obj/effect/decal/pallet,
+/obj/item/grenade/firecracker,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"fF" = (
+/obj/effect/decal/pallet,
+/obj/effect/spawner/random/structure/closet_empty/crate/with_loot,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"fN" = (
+/obj/effect/spawner/random/entertainment/drugs,
+/obj/effect/spawner/random/entertainment/drugs,
+/obj/structure/table/wood,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"fQ" = (
+/obj/machinery/light/prince/ghost/directional/south,
+/obj/effect/decal/cleanable/gasoline,
+/obj/structure/cable,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"gk" = (
+/obj/structure/rack/tall/store_shelf_metal,
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = 2;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = 9;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/glass/baggie/meth{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"gt" = (
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"gA" = (
+/obj/structure/cable,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"hN" = (
+/obj/machinery/light/small/directional/north,
+/obj/effect/spawner/random/trash,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"iu" = (
+/obj/effect/spawner/random/medical/surgery_tool,
+/obj/effect/spawner/random/medical/surgery_tool,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"iD" = (
+/obj/structure/bonfire/prelit/fire_barrel,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"iM" = (
+/obj/effect/decal/pallet,
+/obj/effect/spawner/random/occult/artifact/vampire_only,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"jd" = (
+/obj/structure/barricade/wooden,
+/obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"jH" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"kd" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/blood/empty{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/machinery/light/small/directional/west,
+/obj/item/ammo_box/darkpack/c44{
+	pixel_x = 8;
+	pixel_y = 1
+	},
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"lf" = (
+/obj/item/gun/ballistic/automatic/pistol/darkpack/deagle,
+/obj/item/ammo_box/magazine/m44,
+/obj/item/ammo_box/magazine/m44,
+/obj/structure/closet/cabinet,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"md" = (
+/obj/machinery/door/poddoor/shutters{
+	dir = 4
+	},
+/obj/structure/platform/lowwall/junk,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"my" = (
+/obj/effect/mob_spawn/corpse/human/ciz4,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"mH" = (
+/obj/item/pickaxe/rusted,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"ne" = (
+/mob/living/basic/szlachta/fister/hostile,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"nm" = (
+/obj/structure/rack/wide/wood_shelf,
+/obj/effect/spawner/random/engineering/toolbox,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"nI" = (
+/obj/structure/table/wood,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"nW" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"oW" = (
+/obj/effect/decal/pallet,
+/obj/structure/closet/crate/large,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"pI" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"pP" = (
+/obj/structure/vampdoor/oldwood{
+	dir = 4
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"pW" = (
+/obj/structure/closet/crate/coffin,
+/obj/item/reagent_containers/cup/silver_goblet,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"qk" = (
+/obj/effect/decal/pallet,
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"qY" = (
+/obj/structure/table/wood,
+/obj/item/storage/box/methdealer,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"rB" = (
+/obj/structure/vampdoor/oldwood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"rP" = (
+/obj/structure/rack/tall/store_shelf_metal,
+/obj/effect/spawner/random/medical/minor_healing,
+/obj/effect/spawner/random/medical/minor_healing,
+/obj/effect/spawner/random/medical/minor_healing,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"rY" = (
+/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/obj/item/reagent_containers/blood/methpack,
+/obj/item/reagent_containers/blood/methpack,
+/obj/item/reagent_containers/blood/methpack,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"tf" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 6
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"vN" = (
+/obj/effect/spawner/random/trash/grime,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"xe" = (
+/obj/effect/decal/pallet,
+/obj/effect/spawner/random/structure/closet_empty/crate,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"xw" = (
+/obj/structure/methlab,
+/obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"ye" = (
+/obj/effect/spawner/random/structure/girder,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"zv" = (
+/mob/living/basic/szlachta/hostile,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Ae" = (
+/obj/machinery/light/small/dim/directional/east,
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"AB" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"AY" = (
+/turf/closed/wall/vampwall/junk,
+/area/vtm/interior/sewer)
+"By" = (
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"DA" = (
+/obj/effect/decal/pallet,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"DH" = (
+/obj/effect/mob_spawn/corpse/human/ciz2,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"Er" = (
+/obj/structure/closet/crate/coffin,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"EE" = (
+/obj/structure/fake_stairs/directional/north,
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"EX" = (
+/turf/closed/wall/vampwall/brick_old,
+/area/vtm/interior/sewer)
+"FA" = (
+/obj/structure/vampdoor/oldwood{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/npc,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"FB" = (
+/obj/item/gas_can/full,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Hh" = (
+/obj/effect/decal/pallet,
+/obj/structure/closet/crate/large,
+/obj/item/stack/dollar/hundred,
+/obj/item/stack/dollar/hundred,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"HV" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/gasoline,
+/obj/structure/cable,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"IY" = (
+/obj/effect/decal/pallet,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Kh" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"KW" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Ln" = (
+/obj/effect/decal/pallet,
+/obj/item/storage/box/fireworks/dangerous,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Lo" = (
+/turf/open/floor/plating/canalplating,
+/area/vtm/interior/sewer)
+"Mv" = (
+/obj/effect/spawner/random/engineering/tank,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"MB" = (
+/obj/modular_map_connector,
+/turf/closed/wall/vampwall/brick_old,
+/area/vtm/interior/sewer)
+"NT" = (
+/obj/structure/ladder/manhole/up{
+	requires_friend = 0
+	},
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Og" = (
+/turf/closed/wall/vampwall/rock,
+/area/vtm/interior/sewer)
+"Pl" = (
+/obj/effect/decal/pallet,
+/obj/structure/closet/crate/large,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Qt" = (
+/obj/machinery/griddle,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"QF" = (
+/mob/living/basic/szlachta/tanker/hostile,
+/obj/structure/cable,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Rp" = (
+/obj/effect/mob_spawn/corpse/human/ciz1,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"RY" = (
+/obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"Th" = (
+/obj/structure/rack/tall/wood_shelf,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Tl" = (
+/mob/living/basic/szlachta/fister/hostile,
+/obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"Ty" = (
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Uj" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Uu" = (
+/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"VK" = (
+/turf/template_noop,
+/area/template_noop)
+"VL" = (
+/obj/structure/fake_stairs/directional/north,
+/obj/structure/barricade/wooden/crude,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Wd" = (
+/mob/living/basic/szlachta/tanker/hostile,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"Wf" = (
+/obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Wg" = (
+/obj/effect/decal/cleanable/gasoline,
+/obj/effect/decal/cleanable/rubble,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"Xh" = (
+/obj/structure/rack/wide/wood_shelf,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Xn" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/gasoline,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/sewer)
+"XZ" = (
+/obj/structure/table/wood,
+/obj/item/pickaxe,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"Ya" = (
+/obj/effect/decal/cleanable/trash,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"YS" = (
+/obj/effect/gibspawner/human/bodypartless,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+"YT" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/stone,
+/area/vtm/interior/sewer)
+"ZT" = (
+/obj/item/restraints/legcuffs/beartrap/prearmed,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/sewer)
+
+(1,1,1) = {"
+MB
+VK
+AY
+AY
+md
+md
+md
+AY
+AY
+AY
+AY
+AY
+AY
+AY
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+"}
+(2,1,1) = {"
+VK
+VK
+AY
+dO
+By
+By
+By
+By
+Ya
+AY
+lf
+kd
+ed
+AY
+VK
+VK
+VK
+Og
+Og
+Og
+Og
+VK
+VK
+"}
+(3,1,1) = {"
+VK
+VK
+AY
+gk
+By
+By
+By
+nI
+nI
+Og
+Ty
+Ty
+Ty
+Og
+Og
+Og
+Og
+Og
+Ln
+IY
+Og
+Og
+VK
+"}
+(4,1,1) = {"
+VK
+VK
+AY
+qY
+By
+By
+By
+nI
+nI
+Og
+Er
+Ty
+Ty
+Og
+Og
+Mv
+Mv
+Ty
+Ty
+Ty
+IY
+Og
+VK
+"}
+(5,1,1) = {"
+VK
+VK
+Og
+fN
+By
+By
+By
+By
+rY
+jH
+Og
+FA
+Og
+Og
+xw
+RY
+DH
+gt
+Ty
+Ty
+iM
+Og
+VK
+"}
+(6,1,1) = {"
+VK
+VK
+Og
+XZ
+By
+By
+By
+By
+By
+Og
+Og
+Ty
+Og
+YT
+Tl
+gt
+Ty
+Ty
+Ty
+Og
+Og
+Og
+VK
+"}
+(7,1,1) = {"
+VK
+VK
+Og
+Og
+AY
+EE
+By
+By
+By
+Ty
+mH
+Ty
+Ty
+Ty
+Ty
+Ty
+Ty
+Uu
+Og
+Og
+VK
+VK
+VK
+"}
+(8,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+VL
+By
+By
+By
+ad
+ad
+ad
+ad
+ad
+ad
+Ty
+Ty
+Qt
+Og
+Og
+Og
+Og
+Og
+"}
+(9,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+AY
+pP
+AY
+AY
+AY
+Og
+Og
+Og
+KW
+ad
+Ty
+iD
+Og
+Og
+NT
+Ty
+Ty
+Og
+"}
+(10,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+al
+By
+By
+qk
+By
+By
+Og
+Og
+ad
+ad
+Og
+Og
+Og
+AB
+gt
+pW
+Ty
+Og
+"}
+(11,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+iu
+By
+Ya
+Hh
+fF
+By
+Og
+Og
+ad
+Og
+ne
+KW
+Og
+Wd
+Ty
+Ty
+Ty
+Og
+"}
+(12,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+fF
+By
+By
+DA
+oW
+By
+Og
+Og
+ad
+ad
+Ty
+gt
+Og
+Og
+Wg
+Og
+AB
+Og
+"}
+(13,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+rP
+By
+By
+zv
+oW
+By
+Og
+Og
+Og
+ad
+Ty
+gt
+ye
+my
+Ty
+RY
+nW
+Og
+"}
+(14,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+dO
+By
+By
+Pl
+Rp
+By
+Og
+VK
+Og
+ad
+gt
+cv
+ye
+mH
+Ty
+aK
+RY
+Og
+"}
+(15,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+nm
+By
+pI
+tf
+By
+By
+Og
+VK
+Og
+ad
+cv
+iD
+Og
+cT
+Ty
+Xn
+RY
+Og
+"}
+(16,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+By
+By
+Uj
+cn
+By
+By
+Og
+Og
+Og
+QF
+gt
+Og
+Og
+ye
+jd
+Wf
+KW
+Og
+"}
+(17,1,1) = {"
+EX
+EX
+AY
+AY
+AY
+AY
+AY
+rB
+AY
+Og
+Og
+Og
+gt
+gt
+ad
+Ty
+Ty
+Kh
+ad
+HV
+fQ
+AY
+Og
+"}
+(18,1,1) = {"
+Lo
+Ae
+eq
+ZT
+By
+By
+By
+YS
+By
+AY
+Og
+ad
+gA
+ad
+ad
+ad
+ad
+ad
+HV
+Wf
+Ty
+Og
+VK
+"}
+(19,1,1) = {"
+EX
+EX
+AY
+By
+By
+cn
+By
+By
+DA
+AY
+Og
+Ty
+Ty
+Ty
+Ty
+gt
+gt
+gt
+Wf
+FB
+Og
+Og
+VK
+"}
+(20,1,1) = {"
+VK
+VK
+AY
+AY
+AY
+AY
+hN
+By
+xe
+AY
+Og
+Og
+vN
+gt
+gt
+gt
+eW
+Ty
+Ty
+Og
+Og
+VK
+VK
+"}
+(21,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+Th
+By
+By
+Xh
+AY
+VK
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+VK
+VK
+VK
+"}
+(22,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+Th
+By
+By
+By
+AY
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+"}
+(23,1,1) = {"
+VK
+VK
+VK
+VK
+AY
+AY
+AY
+AY
+AY
+AY
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+VK
+"}

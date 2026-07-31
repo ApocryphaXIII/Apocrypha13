@@ -8,7 +8,6 @@
 	outfit = /datum/outfit/job/vampire/zadruga
 	job_flags = CITY_JOB_FLAGS
 	exp_required_type_department = EXP_TYPE_MANOR
-	department_for_prefs = /datum/job_department/manor
 	departments_list = list(
 		/datum/job_department/manor,
 	)
@@ -16,7 +15,7 @@
 
 	allowed_splats = list(SPLAT_GHOUL)
 	description = "You were born in servitude to the Master of the Manor: your father served the Voivode, as did his father. Now, you carry their blood, and with it their responsibilities."
-	minimal_masquerade = 2
+	minimum_masquerade = 2
 
 	known_contacts = list("Prince", "Baron", "Sheriff")
 
@@ -29,4 +28,4 @@
 	suit = /obj/item/clothing/suit/vampire/jacket/punk
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	l_pocket = /obj/item/smartphone/zadruga
-	backpack_contents = list(/obj/item/vamp/keys/old_clan_tzimisce=1, /obj/item/card/credit=1)
+	backpack_contents = list(/obj/item/vamp/keys/voivodate = 1, /obj/item/card/credit=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)

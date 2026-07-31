@@ -17,6 +17,7 @@
 
 /obj/structure/closet/crate/wooden/communitygardens/tools/PopulateContents()
 	new /obj/item/storage/bag/plants(src)
+	new /obj/item/storage/bag/plants/portaseeder(src) // APOC EDIT ADD
 	new /obj/item/clothing/gloves/botanic_leather(src)
 	new /obj/item/reagent_containers/cup/bottle/nutrient/rh(src)
 	new /obj/item/reagent_containers/spray/weedspray(src)
@@ -24,6 +25,7 @@
 	new /obj/item/cultivator/rake(src)
 	new /obj/item/hatchet/wooden(src)
 	new /obj/item/secateurs(src)
+	new /obj/item/shovel/spade(src) // APOC EDIT ADD
 	new /obj/item/reagent_containers/cup/watering_can/metal(src)
 	new /obj/item/soil_sack(src)
 	new /obj/item/soil_sack(src)

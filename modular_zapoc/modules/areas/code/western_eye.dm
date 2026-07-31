@@ -5,6 +5,9 @@
 /area/vtm/outside/forest/sept
 	name = "Sinkhole Cave"
 	sound_environment = SOUND_ENVIRONMENT_CAVE
+/area/vtm/interior/forest/sept
+	name = "Sinkhole Cave"
+	sound_environment = SOUND_ENVIRONMENT_CAVE
 
 /area/vtm/interior/forest/cave
 	name = "Forest Cave"

@@ -1,5 +1,5 @@
 /mob/living/carbon/human/Initialize(mapload)
-	add_verb(src, /mob/living/proc/mob_sleep)
+	ASSIGN_GAME_VERB(src, /mob/living, mob_sleep)
 	add_verb(src, /mob/living/proc/toggle_resting)
 
 	icon_state = "" //Remove the inherent human icon that is visible on the map editor. We're rendering ourselves limb by limb, having it still be there results in a bug where the basic human icon appears below as south in all directions and generally looks nasty.
@@ -655,7 +655,7 @@
 	if(dna?.species)
 		add_atom_colour(COLOR_BLACK, TEMPORARY_COLOUR_PRIORITY)
 		var/mutable_appearance/shock_animation_dna = mutable_appearance(icon, "electrocuted_base", appearance_flags = RESET_COLOR|KEEP_APART)
-		apply_height_filters(shock_animation_dna)
+		apply_height(shock_animation_dna, ENTIRE_BODY)
 		zap_appearance = shock_animation_dna
 
 	// Otherwise do a generic animation
@@ -714,7 +714,7 @@
 	if(heal_flags & HEAL_NEGATIVE_MUTATIONS)
 		for(var/datum/mutation/existing_mutation in dna.mutations)
 			if(existing_mutation.quality != POSITIVE && existing_mutation.remove_on_aheal)
-				dna.remove_mutation(existing_mutation, list(MUTATION_SOURCE_ACTIVATED, MUTATION_SOURCE_MUTATOR, MUTATION_SOURCE_TIMED_INJECTOR))
+				dna.remove_mutation(existing_mutation, GLOB.standard_mutation_sources)
 
 	if(heal_flags & HEAL_TEMP)
 		set_coretemperature(get_body_temp_normal(apply_change = FALSE))
@@ -1024,12 +1024,12 @@
 /mob/living/carbon/human/proc/add_eye_color_left(color, color_priority, update_body = TRUE)
 	LAZYSET(eye_color_left_overrides, "[color_priority]", color)
 	if (update_body)
-		update_body()
+		update_eyes()
 
 /mob/living/carbon/human/proc/add_eye_color_right(color, color_priority, update_body = TRUE)
 	LAZYSET(eye_color_right_overrides, "[color_priority]", color)
 	if (update_body)
-		update_body()
+		update_eyes()
 
 /mob/living/carbon/human/proc/add_eye_color(color, color_priority, update_body = TRUE)
 	add_eye_color_left(color, color_priority, update_body = FALSE)
@@ -1039,9 +1039,12 @@
 	LAZYREMOVE(eye_color_left_overrides, "[color_priority]")
 	LAZYREMOVE(eye_color_right_overrides, "[color_priority]")
 	if (update_body)
-		update_body()
+		update_eyes()
 
-/mob/living/carbon/human/proc/get_right_eye_color()
+/mob/living/carbon/proc/get_right_eye_color()
+	return
+
+/mob/living/carbon/human/get_right_eye_color()
 	if (!LAZYLEN(eye_color_right_overrides))
 		return eye_color_right
 
@@ -1054,7 +1057,10 @@
 			eye_color = eye_color_right_overrides[override_priority]
 	return eye_color
 
-/mob/living/carbon/human/proc/get_left_eye_color()
+/mob/living/carbon/proc/get_left_eye_color()
+	return
+
+/mob/living/carbon/human/get_left_eye_color()
 	if (!LAZYLEN(eye_color_left_overrides))
 		return eye_color_left
 
@@ -1083,7 +1089,7 @@
 /mob/living/carbon/human/species/set_species(datum/species/mrace, icon_update, pref_load, replace_missing)
 	. = ..()
 	if(use_random_name)
-		fully_replace_character_name(real_name, generate_random_mob_name())
+		fully_replace_character_name(newname = generate_random_mob_name())
 
 ///Proc used to make monkey roles able to function like crew, but not be able to shift into humans easily.
 /mob/living/carbon/human/proc/crewlike_monkify()
@@ -1112,6 +1118,35 @@
 	if (!hands_covered && check_hands)
 		return FALSE
 	return head_covered || HAS_TRAIT(src, TRAIT_HEAD_ATMOS_SEALED)
+
+/mob/living/carbon/human/should_electrocute(power_source)
+	if (gloves?.siemens_coefficient == 0)
+		return FALSE
+	return ..()
+
+/mob/living/carbon/human/can_touch_acid(atom/acided_atom, acid_power, acid_volume)
+	if(gloves?.resistance_flags & (UNACIDABLE | ACID_PROOF))
+		return TRUE
+	return ..()
+
+/mob/living/carbon/human/can_touch_burning(atom/burning_atom, acid_power, acid_volume)
+	if(gloves?.max_heat_protection_temperature >= BURNING_ITEM_MINIMUM_TEMPERATURE)
+		return TRUE
+	return ..()
+
+/mob/living/carbon/human/get_sight_and_cutoffs()
+	. = ..()
+	if(!istype(glasses))
+		return
+	. |= glasses.vision_flags
+	if(glasses.invis_override)
+		set_invis_see(glasses.invis_override)
+	else
+		set_invis_see(min(glasses.invis_view, see_invisible))
+	if(!isnull(glasses.lighting_cutoff))
+		lighting_cutoff = max(lighting_cutoff, glasses.lighting_cutoff)
+	if(length(glasses.color_cutoffs))
+		lighting_color_cutoffs = blend_cutoff_colors(lighting_color_cutoffs, glasses.color_cutoffs)
 
 /mob/living/carbon/human/species/abductor
 	race = /datum/species/abductor
@@ -1152,8 +1187,11 @@
 /mob/living/carbon/human/species/lizard/silverscale
 	race = /datum/species/lizard/silverscale
 
+/mob/living/carbon/human/species/spirit
+	race = /datum/species/spirit
+
 /mob/living/carbon/human/species/ghost
-	race = /datum/species/ghost
+	race = /datum/species/spirit/ghost
 
 /mob/living/carbon/human/species/ethereal
 	race = /datum/species/ethereal
