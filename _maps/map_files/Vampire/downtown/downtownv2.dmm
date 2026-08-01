@@ -2,12 +2,90 @@
 "a" = (
 /turf/open/space/basic,
 /area/space)
+"c" = (
+/obj/structure/platform/lowwall/rich/window,
+/turf/open/space/basic,
+/area/space)
+"e" = (
+/turf/closed/wall/vampwall/rich,
+/area/space)
 "l" = (
 /turf/open/floor/plating/concrete,
+/area/space)
+"n" = (
+/obj/structure/sink/directional/south,
+/obj/structure/mirror/broken/directional/north,
+/turf/open/floor/city/toilet/large,
+/area/space)
+"p" = (
+/obj/structure/sink/directional/south,
+/obj/structure/mirror/directional/north,
+/turf/open/floor/city/toilet/large,
+/area/space)
+"r" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/city/toilet/large,
+/area/space)
+"t" = (
+/obj/structure/vampdoor,
+/turf/open/floor/city/toilet/large,
+/area/space)
+"x" = (
+/obj/structure/vampdoor/prison,
+/turf/open/floor/plating/concrete,
+/area/space)
+"H" = (
+/obj/structure/platform/lowwall/rich,
+/obj/structure/retail/gummaguts_menu{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
+"J" = (
+/turf/open/floor/city/toilet/large,
+/area/space)
+"K" = (
+/obj/structure/platform/lowwall/rich,
+/obj/underplate{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/underplate/stuff{
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/obj/underplate/stuff{
+	pixel_x = -2;
+	pixel_y = 0
+	},
+/turf/open/space/basic,
 /area/space)
 "S" = (
 /obj/effect/mapping_helpers/viewport_helper,
 /turf/open/floor/plating/concrete,
+/area/space)
+"U" = (
+/obj/structure/closet/crate/bin{
+	pixel_x = -8;
+	pixel_y = 16
+	},
+/turf/open/floor/city/toilet/large,
+/area/space)
+"X" = (
+/obj/structure/toilet{
+	dir = 8;
+	pixel_x = 0
+	},
+/turf/open/floor/city/toilet/large,
+/area/space)
+"Z" = (
+/obj/structure/closet/crate/bin{
+	pixel_x = 8;
+	pixel_y = 16
+	},
+/turf/open/floor/city/toilet/large,
 /area/space)
 
 (1,1,1) = {"
@@ -31951,13 +32029,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+l
+l
+l
+l
+l
+l
+l
 a
 a
 a
@@ -32208,13 +32286,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+l
+l
+l
+l
+l
+l
+l
 a
 a
 a
@@ -32465,13 +32543,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+l
+l
+l
+l
+l
+l
+l
 a
 a
 a
@@ -32722,13 +32800,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+l
+l
+l
+l
+l
+l
+l
 a
 a
 a
@@ -32979,13 +33057,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+e
+c
+H
+c
+H
+c
+e
 a
 a
 a
@@ -33236,13 +33314,13 @@ a
 a
 a
 a
+e
 a
 a
+K
 a
 a
-a
-a
-a
+e
 a
 a
 a
@@ -34247,7 +34325,7 @@ a
 a
 a
 a
-a
+e
 a
 a
 a
@@ -34504,9 +34582,9 @@ a
 a
 a
 a
-a
-a
-a
+e
+e
+e
 a
 a
 a
@@ -34759,12 +34837,12 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
+e
+e
+e
+e
+e
+e
 a
 a
 a
@@ -35016,12 +35094,12 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
+e
+U
+r
+e
+e
+e
 a
 a
 a
@@ -35273,12 +35351,12 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
+e
+n
+J
+t
+l
+x
 a
 a
 a
@@ -35530,12 +35608,12 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
+e
+e
+e
+e
+e
+e
 a
 a
 a
@@ -35787,12 +35865,12 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
+e
+p
+J
+t
+l
+x
 a
 a
 a
@@ -36044,12 +36122,12 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
+e
+Z
+X
+e
+e
+e
 a
 a
 a
@@ -36301,12 +36379,12 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
+e
+e
+e
+e
+e
+e
 a
 a
 a
@@ -36560,9 +36638,9 @@ a
 a
 a
 a
-a
-a
-a
+e
+e
+e
 a
 a
 a
@@ -36817,7 +36895,7 @@ a
 a
 a
 a
-a
+e
 a
 a
 a
