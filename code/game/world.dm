@@ -418,23 +418,24 @@ GLOBAL_VAR_INIT(last_maptick_time, 0)
 		if(CONFIG_GET(flag/usewhitelist))
 			features += "whitelisted"
 		// DARKPACK EDIT ADD END
+		/* // DARKPACK EDIT REMOVAL
 		if(CONFIG_GET(flag/allow_respawn))
 			features += "respawn" // show "respawn" regardless of "respawn as char" or "free respawn"
 		if(!CONFIG_GET(flag/allow_ai))
 			features += "AI disabled"
 		hostedby = CONFIG_GET(string/hostedby)
+		*/
 		// DARKPACK EDIT ADD START
 
-		var/list/splat_names = list()
-		for (var/splats_id in get_selectable_splats())
+		var/static/splat_name
+		if(!splat_name)
+			var/splat_id = pick(get_selectable_splats())
 			var/splats_type = GLOB.splat_list[splats_id]
 			var/datum/splat/splats = GLOB.splat_prototypes[splats_type]
-
-			splat_names += splats.name
-		if(splat_names.len)
-			features += "splats: [jointext(splat_names, ", ")]"
+			splat_name = splats?.name
+		if(splat_name)
+			features += "try [splat_name]"
 		// DARKPACK EDIT ADD END
-
 
 	if (CONFIG_GET(flag/station_name_in_hub_entry))
 		new_status += " &#8212; <b>[station_name()]</b>"
