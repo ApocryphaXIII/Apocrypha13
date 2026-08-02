@@ -6914,7 +6914,7 @@
 	damage_deflection = 60;
 	max_integrity = 300;
 	name = "Parking Shutter";
-	id = "camarilla garage"s"
+	id = "camarilla garage"
 	},
 /obj/effect/landmark/npcwall,
 /obj/effect/turf_decal/bordur{
@@ -36150,7 +36150,7 @@
 	damage_deflection = 60;
 	max_integrity = 300;
 	name = "Parking Shutter";
-	id = "camarilla garage"s"
+	id = "camarilla garage"
 	},
 /obj/effect/landmark/npcwall,
 /turf/open/floor/plating/asphalt,
