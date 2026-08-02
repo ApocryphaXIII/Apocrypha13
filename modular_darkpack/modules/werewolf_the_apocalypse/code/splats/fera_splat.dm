@@ -326,7 +326,6 @@
 	)
 	transform_sound = 'modular_darkpack/modules/werewolf_the_apocalypse/sounds/ananasi_transform.ogg'
 	mob_icons = list(
-		SPECIES_FERA_BESTIAL = 'icons/mob/simple/smspider.dmi',
 		SPECIES_FERA_WAR = 'icons/mob/simple/smspider.dmi',
 		SPECIES_FERA_DIRE = 'icons/mob/simple/smspider.dmi',
 		SPECIES_FERA_FERAL = 'icons/mob/simple/smspider.dmi'
