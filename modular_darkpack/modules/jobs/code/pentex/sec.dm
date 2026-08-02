@@ -17,6 +17,8 @@
 	outfit = /datum/outfit/job/vampire/pentex_sec
 
 	allowed_tribes = list(TRIBE_BLACK_SPIRAL_DANCERS, TRIBE_RONIN)
+	maximal_generation = 9
+	maximum_immortal_age = 200
 	minimum_masquerade = 3
 
 	display_order = JOB_DISPLAY_ORDER_PENTEX_SEC
@@ -40,7 +42,7 @@
 	name = JOB_PENTEX_SEC
 	jobtype = /datum/job/vampire/pentex_sec
 
-//	ears = /obj/item/p25radio
+	ears = /obj/item/radio/headset/darkpack
 	id = /obj/item/card/pentex/sec
 	uniform =  /obj/item/clothing/under/vampire/pentex_shortsleeve
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
