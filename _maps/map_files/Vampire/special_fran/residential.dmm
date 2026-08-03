@@ -1567,7 +1567,7 @@
 /area/vtm/interior/apartment)
 "lI" = (
 /obj/structure/vampdoor/wood{
-	id = "ResLowEnd1"
+	lock_id = "ResLowEnd1"
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)

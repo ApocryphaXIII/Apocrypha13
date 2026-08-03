@@ -2272,6 +2272,14 @@
 "brp" = (
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior)
+"brv" = (
+/obj/structure/vampdoor/wood{
+	lock_id = "HighEndApt5"
+	},
+/obj/effect/mapping_helpers/door/access/claimable,
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment)
 "bry" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 10
@@ -3344,16 +3352,6 @@
 	},
 /turf/open/misc/grass/random/bushes,
 /area/vtm/interior/voivodate/cave)
-"bXG" = (
-/obj/structure/vampdoor/wood{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/white{
-	dir = 4;
-	color = "#636363"
-	},
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/apartment)
 "bXX" = (
 /obj/structure/chair/plastic/darkpack{
 	dir = 4
@@ -6295,7 +6293,9 @@
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/police/fed)
 "dLt" = (
-/obj/structure/vampdoor/wood,
+/obj/structure/vampdoor/wood{
+	lock_id = "HighEndApt3"
+	},
 /obj/effect/mapping_helpers/door/access/claimable,
 /obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/wood/smooth/old,
@@ -7798,6 +7798,14 @@
 	},
 /turf/closed/wall/vampwall/rich,
 /area/vtm/interior/millennium_tower)
+"eID" = (
+/obj/structure/vampdoor/wood{
+	lock_id = "HighEndApt4"
+	},
+/obj/effect/mapping_helpers/door/access/claimable,
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment)
 "eIG" = (
 /obj/structure/lamppost/one,
 /turf/open/floor/plating/sidewalk/rich,
@@ -12673,6 +12681,10 @@
 "huR" = (
 /obj/structure/table,
 /obj/structure/platform/lowwall/rich,
+/obj/machinery/reagentgrinder{
+	pixel_y = 0;
+	pixel_x = 4
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/apartment)
 "hvz" = (
@@ -22926,6 +22938,13 @@
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plating/granite,
 /area/vtm/interior/endron_facility/restricted)
+"nwb" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 4
+	},
+/obj/effect/decal/wallpaper/paper/darkgreen,
+/turf/closed/wall/vampwall/rich,
+/area/vtm/interior/apartment)
 "nwm" = (
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/wood/old,
@@ -23314,6 +23333,9 @@
 /area/vtm/interior/voivodate)
 "nKa" = (
 /obj/structure/vampdoor/wood{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /turf/open/floor/wood/smooth,
@@ -29879,7 +29901,8 @@
 /area/vtm/interior/bianchiBank)
 "rrb" = (
 /obj/structure/vampdoor/wood{
-	dir = 4
+	dir = 4;
+	lock_id = "HighEndApt3"
 	},
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -32979,6 +33002,14 @@
 	},
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/voivodate)
+"tez" = (
+/obj/structure/vampdoor/wood{
+	dir = 4;
+	lock_id = "HighEndApt6"
+	},
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment)
 "teS" = (
 /obj/structure/table/countertop/bubway,
 /turf/open/floor/plating/concrete,
@@ -35658,6 +35689,14 @@
 	},
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/outside/chinatown)
+"uDJ" = (
+/obj/structure/vampdoor/wood{
+	lock_id = "HighEndApt6"
+	},
+/obj/effect/mapping_helpers/door/access/claimable,
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment)
 "uDS" = (
 /obj/machinery/light/small/red/directional/south,
 /turf/open/floor/plating/canal,
@@ -36592,7 +36631,8 @@
 /area/vtm/interior/mallclothes)
 "vhk" = (
 /obj/structure/vampdoor/wood{
-	dir = 4
+	dir = 4;
+	lock_id = "HighEndApt4"
 	},
 /obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/wood/smooth/old,
@@ -38261,13 +38301,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/smoke)
-"wkh" = (
-/obj/structure/vampdoor/wood,
-/obj/effect/turf_decal/siding/white{
-	dir = 1
-	},
-/turf/open/floor/city/clinic,
-/area/vtm/interior/apartment)
 "wlD" = (
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
@@ -38789,6 +38822,17 @@
 /obj/item/stack/sheet/mineral/wood/fifty,
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/interior/chantry)
+"wzu" = (
+/obj/structure/vampdoor/wood{
+	dir = 4;
+	lock_id = "HighEndApt5"
+	},
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/door/lock,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment)
 "wzz" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 1
@@ -38823,14 +38867,6 @@
 /obj/effect/mapping_helpers/door/access/ocean,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/gangbasement)
-"wAv" = (
-/obj/machinery/reagentgrinder{
-	pixel_y = 4;
-	pixel_x = -9
-	},
-/obj/structure/table/wood,
-/turf/open/floor/city/plating_stone,
-/area/vtm/interior/apartment)
 "wAx" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/plating/concrete,
@@ -71881,7 +71917,7 @@ dHD
 aDh
 aDh
 awi
-awi
+fcU
 xIG
 awi
 nIn
@@ -72193,7 +72229,7 @@ rdj
 rdj
 awi
 awi
-awi
+nwb
 nKa
 awi
 awi
@@ -72298,13 +72334,13 @@ rdj
 rdj
 rdj
 rdj
-awi
+nIn
 guk
 bLk
 bze
 fcU
 uFo
-wAv
+vhF
 vhF
 xqa
 mRu
@@ -72405,7 +72441,7 @@ rdj
 rdj
 rdj
 rdj
-awi
+nIn
 kxL
 bze
 vQs
@@ -72639,7 +72675,7 @@ eEb
 awi
 sFs
 sFs
-dLt
+eID
 woU
 woU
 wNS
@@ -73715,7 +73751,7 @@ idS
 awi
 awi
 fcU
-rrb
+wzu
 awi
 awi
 rdj
@@ -73923,7 +73959,7 @@ xqo
 pkt
 sFs
 sFs
-dLt
+brv
 woU
 woU
 uQK
@@ -74565,7 +74601,7 @@ wrk
 pkt
 sFs
 sFs
-dLt
+uDJ
 woU
 woU
 wNS
@@ -74785,7 +74821,7 @@ uLc
 awi
 awi
 ygx
-vhk
+tez
 awi
 awi
 rdj
@@ -83227,7 +83263,7 @@ ulg
 mRu
 mRu
 mRu
-wkh
+cLM
 bze
 bze
 ygx
@@ -83429,8 +83465,8 @@ rdj
 rdj
 awi
 awi
-awi
-bXG
+fcU
+uLc
 awi
 awi
 fcU
@@ -83534,7 +83570,7 @@ rdj
 rdj
 rdj
 rdj
-awi
+nIn
 sNC
 bLk
 bze
@@ -83641,7 +83677,7 @@ rdj
 rdj
 rdj
 rdj
-awi
+nIn
 kxL
 bze
 vQs
