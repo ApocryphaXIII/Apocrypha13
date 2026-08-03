@@ -433,7 +433,7 @@
 
 		//makes conga lines work with ladders and flying up and down; checks if the guy you are pulling is pulling someone,
 		//then uses recursion to run the same function again
-		if (pulling.pulling)
+		if (pulling.pulling && (pulling.pulling != src)) // DARKPACK EDIT CHANGE - (Fix infinite recursioin)
 			. |= pulling.pulling.get_z_move_affected(z_move_flags)
 
 /**

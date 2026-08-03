@@ -12,5 +12,5 @@
 		if (pulling.buckled_mobs)
 			. |= pulling.buckled_mobs
 
-		if (pulling.pulling)
+		if (pulling.pulling && (pulling.pulling != src))
 			. |= pulling.pulling.get_teleport_move_affected()
