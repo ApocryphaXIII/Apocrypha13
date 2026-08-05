@@ -1,7 +1,7 @@
 
 /datum/job/vampire/bogatyr
 	title = JOB_BOGATYR
-	faction = FACTION_SABBAT
+	faction = FACTION_VOIVODATE
 	total_positions = 2 // APOC EDIT CHANGE - JOBS - (Voivode)
 	spawn_positions = 2 // APOC EDIT CHANGE - JOBS - (Voivode)
 	supervisors = " the Laws of Hospitality"
@@ -22,7 +22,7 @@
 	maximum_immortal_age = 200
 	minimum_masquerade = 2
 
-	known_contacts = list("Prince", "Baron", "Sheriff")
+	known_contacts = list("Voivode", "Zadruga", "Bogatyr", "Bogatyr Captain")
 
 /datum/outfit/job/vampire/bogatyr
 	name = "Bogatyr"

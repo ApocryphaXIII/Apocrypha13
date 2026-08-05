@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_malkavian
 	title = JOB_PRIMOGEN_MALKAVIAN
-	description = "Offer your infinite knowledge to Prince of the City. You likely have a hold over the local hospital, make good use of it and ensure the blood bags remain available."
+	description = "Offer your infinite knowledge to Prince of the City. Uphold clan interests. Lead the children of the moon and shattered mirror."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -18,8 +18,7 @@
 
 	display_order = JOB_DISPLAY_ORDER_MALKAVIAN
 	departments_list = list(
-		/datum/job_department/clinic,
-		/datum/job_department/camarilla,
+		/datum/job_department/camarilla
 	)
 
 	minimal_generation = 12

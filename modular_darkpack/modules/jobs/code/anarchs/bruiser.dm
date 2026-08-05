@@ -29,7 +29,7 @@
 	allowed_splats = list(SPLAT_KINDRED, SPLAT_GHOUL)
 	maximal_generation = 9
 	maximum_immortal_age = 200
-	description = "You are the enforcer of the Anarchs. The baron is always in need of muscle power. Enforce the Traditions - in the anarch way."
+	description = "You are the enforcer of the Anarchs. The baron is always in need of muscle power. Enforce the Status Perfectus. You can find the Anarch haven under the Dragonsbreath Smokeshop."
 	minimum_masquerade = 2
 
 /datum/outfit/job/vampire/bruiser

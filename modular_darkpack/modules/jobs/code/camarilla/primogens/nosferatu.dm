@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_nosferatu
 	title = JOB_PRIMOGEN_NOSFERATU
-	description = "Offer your infinite knowledge to Prince of the City, and run the warren, your domain watches over the sewers."
+	description = "Offer your infinite knowledge to Prince of the City. Manage what's left of your Warrens. Keep your clan interests in mind."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -18,8 +18,7 @@
 
 	display_order = JOB_DISPLAY_ORDER_NOSFERATU
 	departments_list = list(
-		/datum/job_department/camarilla,
-		/datum/job_department/city_services
+		/datum/job_department/camarilla
 	)
 
 	minimal_generation = 12

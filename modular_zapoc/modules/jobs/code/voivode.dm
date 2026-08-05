@@ -1,6 +1,6 @@
 /datum/job/vampire/voivodate_citizen
 	title = JOB_VOIVODATE_CITIZEN
-	faction = FACTION_SABBAT
+	faction = FACTION_VOIVODATE
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = " the Laws of Hospitality"
@@ -44,7 +44,7 @@
 	description = "Captain of the Bogatyri, protectors of the Seer's Voivodate. You lead them in the protection of your family and the Voivode-in-Waiting who sleeps in the basement. Serve the Voivodes, and enforce the Hospitality on your family's lands."
 
 	display_order = JOB_DISPLAY_ORDER_BOGATYR_CAPTAIN
-	known_contacts = list("Prince", "Baron", "Sheriff", "Emissary", "Seneschal", "Zadruga", "Bogatyr")
+	known_contacts = list("Voivode", "Zadruga", "Bogatyr", "Bogatyr Captain")
 
 /datum/outfit/job/vampire/bogatyr/captain
 	name = "Bogatyr Captain"
