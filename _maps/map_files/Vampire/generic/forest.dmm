@@ -81,20 +81,6 @@
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest/sept)
-"aw" = (
-/obj/effect/turf_decal/darkpack/dirt,
-/obj/effect/turf_decal/darkpack/dirt/corner{
-	dir = 1
-	},
-/turf/open/misc/grass/random/grass,
-/area/vtm/outside/forest/sept)
-"ax" = (
-/obj/effect/turf_decal/darkpack/grass,
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 1
-	},
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "ay" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -228,6 +214,15 @@
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/cave)
+"bs" = (
+/obj/effect/turf_decal/darkpack/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/darkpack/dirt{
+	dir = 6
+	},
+/turf/open/misc/dirt,
+/area/vtm/outside/forest/sept)
 "bu" = (
 /obj/transfer_point_vamp/forest/north/two,
 /turf/open/floor/plating/rough,
@@ -445,7 +440,7 @@
 "cQ" = (
 /obj/machinery/light/small/pink/directional/north,
 /turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cabin)
+/area/vtm/interior/forest/cave)
 "cS" = (
 /turf/closed/wall/vampwall/wood,
 /area/vtm/interior/forest/cabin)
@@ -547,15 +542,6 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest)
-"dF" = (
-/obj/effect/turf_decal/darkpack/dirt{
-	dir = 10
-	},
-/obj/effect/turf_decal/darkpack/dirt{
-	dir = 9
-	},
-/turf/open/misc/grass/random/grass,
-/area/vtm/outside/forest/sept)
 "dG" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 10
@@ -811,13 +797,10 @@
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
 "fs" = (
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 8
-	},
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
 	},
-/turf/open/misc/dirt,
+/turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
 "fu" = (
 /obj/effect/turf_decal/darkpack/cave{
@@ -903,20 +886,14 @@
 /area/vtm/outside/forest/sept)
 "fZ" = (
 /obj/effect/decal/pallet,
-/obj/structure/table/wood,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
-/obj/item/knife/butcher,
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 8
-	},
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 1
 	},
+/obj/structure/table/wood,
+/obj/item/knife/butcher,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "ga" = (
@@ -1029,11 +1006,6 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
-"hc" = (
-/obj/effect/turf_decal/darkpack/grass,
-/obj/machinery/hydroponics/soil/rich,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "he" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
 /obj/effect/decal/pallet,
@@ -2011,13 +1983,6 @@
 	},
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/cave)
-"pd" = (
-/obj/effect/turf_decal/darkpack/grass/corner,
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 6
-	},
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "pg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/countertop/bubway,
@@ -2336,13 +2301,8 @@
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "rp" = (
-/obj/effect/turf_decal/darkpack/dirt{
-	dir = 8
-	},
-/obj/effect/turf_decal/darkpack/dirt/corner{
-	dir = 1
-	},
-/turf/open/misc/grass/random/grass,
+/mob/living/basic/pet/dog/wolf/kinfolk,
+/turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "rs" = (
 /obj/effect/turf_decal/darkpack/grass{
@@ -2608,14 +2568,6 @@
 /obj/structure/table/wood/poker,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/cave)
-"th" = (
-/mob/living/basic/pet/dog/wolf/kinfolk,
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 1
-	},
-/obj/machinery/hydroponics/soil/rich,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "tt" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
@@ -2640,16 +2592,6 @@
 /obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/vtm/interior/forest/cave)
-"tx" = (
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 1
-	},
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 8
-	},
-/obj/machinery/hydroponics/simple/wooden,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "ty" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 8
@@ -2665,12 +2607,6 @@
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
-"tA" = (
-/obj/effect/turf_decal/darkpack/grass,
-/obj/effect/turf_decal/darkpack/grass/corner,
-/obj/machinery/hydroponics/simple/wooden,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "tD" = (
 /obj/effect/decal/coastline{
 	dir = 6
@@ -2759,15 +2695,6 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
-"ue" = (
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 10
-	},
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "uh" = (
 /obj/effect/turf_decal/darkpack/grass,
 /obj/structure/chair/sofa/city_bench/wood/left{
@@ -3117,6 +3044,22 @@
 	},
 /obj/effect/turf_decal/darkpack/grass/corner,
 /obj/structure/closet/crate/wooden/communitygardens/seeds,
+/obj/item/seeds/carrot/parsnip,
+/obj/item/seeds/carrot,
+/obj/item/seeds/cabbage,
+/obj/item/seeds/cabbage,
+/obj/item/seeds/berry,
+/obj/item/seeds/berry,
+/obj/item/seeds/peas,
+/obj/item/seeds/peas,
+/obj/item/seeds/wheat/rice,
+/obj/item/seeds/wheat/rice,
+/obj/item/seeds/wheat,
+/obj/item/seeds/wheat,
+/obj/item/seeds/tobacco,
+/obj/item/seeds/tobacco,
+/obj/item/seeds/potato/sweet,
+/obj/item/seeds/potato,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "wE" = (
@@ -3311,6 +3254,13 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"xU" = (
+/obj/structure/closet/crate/wooden/communitygardens/tools,
+/obj/item/reagent_containers/cup/jerrycan/ammonia,
+/obj/item/soil_sack,
+/obj/item/soil_sack,
+/turf/open/misc/dirt,
+/area/vtm/outside/forest/sept)
 "xY" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /obj/structure/flora/tree/jungle,
@@ -3480,14 +3430,6 @@
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/genturf,
 /area/vtm/planetgeneration)
-"zx" = (
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/darkpack/grass/corner,
-/obj/effect/turf_decal/darkpack/grass,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "zz" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 1
@@ -4123,22 +4065,6 @@
 "Em" = (
 /obj/effect/decal/pallet,
 /obj/structure/table/wood,
-/obj/item/seeds/potato,
-/obj/item/seeds/potato/sweet,
-/obj/item/seeds/tobacco,
-/obj/item/seeds/tobacco,
-/obj/item/seeds/wheat,
-/obj/item/seeds/wheat,
-/obj/item/seeds/wheat/rice,
-/obj/item/seeds/wheat/rice,
-/obj/item/seeds/peas,
-/obj/item/seeds/peas,
-/obj/item/seeds/berry,
-/obj/item/seeds/berry,
-/obj/item/seeds/cabbage,
-/obj/item/seeds/cabbage,
-/obj/item/seeds/carrot,
-/obj/item/seeds/carrot/parsnip,
 /obj/item/melee/vamp/handsickle,
 /obj/effect/turf_decal/darkpack/grass,
 /obj/effect/turf_decal/darkpack/grass{
@@ -4160,15 +4086,6 @@
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
-"EE" = (
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 4
-	},
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "EG" = (
 /obj/structure/flora/rock/pile/darkpack,
 /obj/effect/turf_decal/darkpack/grass{
@@ -4276,13 +4193,6 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/cave)
-"FJ" = (
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 8
-	},
-/obj/machinery/hydroponics/soil/rich,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "FK" = (
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
@@ -4797,9 +4707,6 @@
 "JP" = (
 /obj/effect/turf_decal/darkpack/grass,
 /obj/effect/turf_decal/darkpack/grass/corner,
-/obj/effect/turf_decal/darkpack/grass/corner{
-	dir = 1
-	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "JQ" = (
@@ -5134,13 +5041,6 @@
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest)
-"Mt" = (
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 1
-	},
-/obj/machinery/hydroponics/simple/wooden,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "Mw" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/box/baggie,
@@ -5303,11 +5203,6 @@
 	},
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/sept)
-"NG" = (
-/obj/item/soil_sack,
-/obj/item/soil_sack,
-/turf/open/misc/grass/random/grass,
-/area/vtm/outside/forest/sept)
 "NI" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 10
@@ -5508,10 +5403,6 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
-"Pg" = (
-/obj/structure/closet/crate/wooden/communitygardens/tools,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "Ph" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 10
@@ -6330,7 +6221,6 @@
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
 "Vo" = (
-/obj/effect/turf_decal/darkpack/grass,
 /obj/machinery/hydroponics/simple/wooden,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
@@ -6371,16 +6261,6 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
-"VI" = (
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 8
-	},
-/obj/effect/turf_decal/darkpack/grass{
-	dir = 4
-	},
-/obj/item/reagent_containers/cup/jerrycan/ammonia,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest/sept)
 "VM" = (
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 5
@@ -6760,10 +6640,10 @@
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
 "YR" = (
-/obj/structure/bed/dogbed,
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
 	},
+/obj/structure/bed/dogbed,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "YS" = (
@@ -8526,7 +8406,7 @@ EH
 EH
 EH
 EH
-Sp
+Rc
 EH
 EH
 EH
@@ -8724,7 +8604,7 @@ EH
 EH
 EH
 yR
-ny
+Rc
 LP
 LP
 LP
@@ -8922,7 +8802,7 @@ EH
 Rc
 Rc
 Rc
-ny
+Rc
 LP
 LP
 LP
@@ -9120,7 +9000,7 @@ EH
 Bm
 sz
 Rc
-ny
+Rc
 LP
 LP
 LP
@@ -9318,7 +9198,7 @@ lZ
 zz
 sz
 FD
-ny
+Rc
 LP
 LP
 LP
@@ -9516,8 +9396,8 @@ ea
 zz
 sz
 Rc
-Yf
-NI
+Rc
+Rc
 LP
 LP
 LP
@@ -9715,7 +9595,7 @@ RO
 oB
 Rc
 Rc
-ny
+Rc
 LP
 LP
 LP
@@ -9913,7 +9793,7 @@ oz
 mz
 Rc
 Rc
-ny
+Rc
 LP
 LP
 LP
@@ -10108,11 +9988,11 @@ LP
 EH
 LP
 no
-NA
-Sp
-yE
-EE
-ue
+Rc
+Rc
+Rc
+Rc
+Rc
 LP
 LP
 LP
@@ -10306,12 +10186,12 @@ LP
 LP
 LP
 LP
-no
-ME
+Rc
+Rc
 LP
 LP
-zO
-ue
+Rc
+Rc
 LP
 LP
 LP
@@ -10509,12 +10389,12 @@ LP
 LP
 LP
 LP
-zO
-ue
+Rc
+Rc
+Rc
 LP
 LP
-LP
-JX
+Rc
 eE
 Iy
 Ym
@@ -10708,11 +10588,11 @@ LP
 LP
 LP
 LP
-zO
-yE
-Ok
-yE
-ax
+Rc
+Rc
+Rc
+Rc
+Rc
 LP
 LP
 LP
@@ -10907,10 +10787,10 @@ LP
 LP
 LP
 LP
+Rc
+Rc
 LP
-sT
-LP
-sT
+Rc
 LP
 LP
 UP
@@ -11104,11 +10984,11 @@ ny
 LP
 LP
 TI
-NG
-JX
-pd
 LP
-sT
+Rc
+Rc
+LP
+Rc
 LP
 UP
 UP
@@ -11302,11 +11182,11 @@ kX
 LP
 LP
 fZ
-VI
-zx
+Rc
+Rc
 LP
-JX
-yf
+Rc
+Rc
 UP
 UP
 uz
@@ -11501,9 +11381,9 @@ LP
 LP
 Em
 LP
-sT
+Rc
 LP
-sT
+Rc
 LP
 UP
 uz
@@ -11699,9 +11579,9 @@ LP
 JX
 wB
 LP
-sT
+Rc
 LP
-sT
+Rc
 UP
 UP
 uz
@@ -11897,9 +11777,9 @@ eJ
 JP
 LP
 LP
-tx
-FJ
-tA
+Rc
+Rc
+Rc
 UP
 uz
 uz
@@ -12092,12 +11972,12 @@ Qv
 Vw
 kX
 LP
-sT
 LP
 LP
-th
-Pg
-hc
+LP
+Rc
+Rc
+Rc
 UP
 uz
 js
@@ -12290,11 +12170,11 @@ Qv
 Vw
 dr
 LP
-sT
+LP
 DT
 LP
-Mt
-ma
+Vo
+Rc
 Vo
 UP
 uz
@@ -12488,12 +12368,12 @@ Qv
 Vw
 uh
 LP
-zO
+LP
 fs
-qq
-aS
-dF
-ny
+Rc
+ma
+Rc
+ma
 UP
 UP
 uz
@@ -12687,11 +12567,11 @@ Vw
 ny
 LP
 LP
-NY
+LP
 BC
 rp
-jr
-ny
+xU
+Rc
 LP
 UP
 uz
@@ -12884,12 +12764,12 @@ Qv
 Vw
 kX
 LP
-ZB
-aS
+LP
+LP
 Rc
-WD
-aw
-ny
+ma
+Rc
+ma
 LP
 UP
 UP
@@ -13081,14 +12961,14 @@ mf
 Qv
 Vw
 UU
-qq
-aS
+Rc
+LP
 eb
 Rc
+Vo
+bs
+Vo
 Rc
-zr
-Yf
-NI
 LP
 UP
 UP
