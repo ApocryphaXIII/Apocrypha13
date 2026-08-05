@@ -28995,16 +28995,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/city/plating,
 /area/vtm/interior/radio)
-"qSM" = (
-/obj/structure/rack,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/suit/vampire/vest,
-/obj/item/clothing/suit/vampire/vest,
-/obj/item/clothing/suit/vampire/vest,
-/obj/item/clothing/head/vampire/helmet,
-/turf/open/floor/city/plating,
-/area/vtm/interior/endron_facility/restricted)
 "qSN" = (
 /obj/effect/decal/wallpaper/blue/low,
 /obj/structure/curtain/bounty,
@@ -76939,7 +76929,7 @@ eeP
 cAb
 cAb
 eeP
-qSM
+cAb
 cAb
 iqE
 wIZ
