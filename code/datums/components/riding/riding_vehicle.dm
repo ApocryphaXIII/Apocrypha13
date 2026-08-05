@@ -239,7 +239,7 @@
 		return
 	RegisterSignal(rider, COMSIG_MOVE_INTENT_TOGGLED, PROC_REF(toggle_move_delay))
 	if(rider.move_intent == MOVE_INTENT_WALK)
-		vehicle_move_delay += 1.2 // APOCRYPHA EDIT - #129 Skate Shop Vehicle Nerfs
+		vehicle_move_delay += 1.2 // APOC EDIT CHANGE - (#129 Skate Shop Vehicle Nerfs)
 
 /datum/component/riding/vehicle/scooter/skateboard/handle_unbuckle(mob/living/rider)
 	. = ..()
@@ -247,17 +247,17 @@
 		return
 	UnregisterSignal(rider, COMSIG_MOVE_INTENT_TOGGLED)
 	if(rider.move_intent == MOVE_INTENT_WALK)
-		vehicle_move_delay -= 1.2 // APOCRYPHA EDIT - #129 Skate Shop Vehicle Nerfs
+		vehicle_move_delay -= 1.2 // APOC EDIT CHANGE - (#129 Skate Shop Vehicle Nerfs)
 
 /datum/component/riding/vehicle/scooter/skateboard/proc/toggle_move_delay(mob/living/rider)
 	SIGNAL_HANDLER
 	if(rider.move_intent == MOVE_INTENT_WALK)
-		vehicle_move_delay += 1.2 // APOCRYPHA EDIT - #129 Skate Shop Vehicle Nerfs
+		vehicle_move_delay += 1.2 // APOC EDIT CHANGE - (#129 Skate Shop Vehicle Nerfs)
 	else
-		vehicle_move_delay -= 1.2 // APOCRYPHA EDIT - #129 Skate Shop Vehicle Nerfs
+		vehicle_move_delay -= 1.2 // APOC EDIT CHANGE - (#129 Skate Shop Vehicle Nerfs)
 
 /datum/component/riding/vehicle/scooter/skateboard/pro
-	vehicle_move_delay = 1.1 // APOCRYPHA EDIT - #129 Skate Shop Vehicle Nerfs
+	vehicle_move_delay = 1.1 // APOC EDIT CHANGE - (#129 Skate Shop Vehicle Nerfs)
 
 ///This one lets the rider ignore gravity, move in zero g and son on, but only on ground turfs or at most one z-level above them.
 /datum/component/riding/vehicle/scooter/skateboard/hover
@@ -339,7 +339,7 @@
 	vehicle_move_delay += 1
 
 /datum/component/riding/vehicle/scooter/skateboard/wheelys
-	vehicle_move_delay = 1.4 // APOCRYPHA EDIT - #129 Skate Shop Vehicle Nerfs
+	vehicle_move_delay = 1.4 // APOC EDIT CHANGE - (#129 Skate Shop Vehicle Nerfs)
 	can_slow_down = FALSE
 
 /datum/component/riding/vehicle/scooter/skateboard/wheelys/rollerskates
