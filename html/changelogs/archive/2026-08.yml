@@ -1,0 +1,13 @@
+2026-08-01:
+  dwinters99:
+  - bugfix: BSD totem in the endron ruin no longer counts as an actual totem
+2026-08-03:
+  KCartridge:
+  - rscadd: P25 radio to Endronites Loadouts
+  Marshmellow105:
+  - map: adds a det camera and missing decal to pd
+  - map: changes all /obj/item/detective_scanner to /obj/item/detective_scanner/darkpack
+  - map: changes all photocopiers on specialfran to gratis subtype so you can use
+      them
+  Potatocrip:
+  - code_imp: lets ghouls pick bruiser and sweeper
