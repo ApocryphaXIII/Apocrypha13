@@ -185,14 +185,14 @@ GLOBAL_DATUM(necropolis_gate, /obj/structure/necropolis_gate/legion_gate)
 			user.log_message("released Legion.", LOG_GAME)
 
 		var/sound/legion_sound = sound('sound/mobs/non-humanoids/legion/legion_spawn.ogg')
-		for(var/mob/M in GLOB.player_list)
+		for(var/mob/M in range(50, src)) // APOC EDIT CHANGE - Our z-level only
 			if(is_valid_z_level(get_turf(M), T))
-				to_chat(M, span_userdanger("Discordant whispers flood your mind in a thousand voices. Each one speaks your name, over and over. Something horrible has been released."))
+				to_chat(M, span_userdanger("You skin tingles and a chill goes down your spine. Spores race to fill your lungs.")) // APOC EDIT CHANGE - reworded for our flavor
 				M.playsound_local(T, null, 100, FALSE, 0, FALSE, pressure_affected = FALSE, sound_to_use = legion_sound)
-				flash_color(M, flash_color = "#FF0000", flash_time = 50)
+				flash_color(M, flash_color = "#B9BB93", flash_time = 50)
 		var/mutable_appearance/release_overlay = mutable_appearance('icons/effects/effects.dmi', "legiondoor")
 		notify_ghosts(
-			"Legion has been released in the [get_area(src)]!",
+			"The Gray Mass Ultraspore has been released in the [get_area(src)]!", // APOC EDIT CHANGE - reworded for our flavor
 			source = src,
 			alert_overlay = release_overlay,
 			notify_flags = NOTIFY_CATEGORY_NOFLASH,
