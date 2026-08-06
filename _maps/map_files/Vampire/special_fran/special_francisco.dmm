@@ -16565,7 +16565,7 @@
 "jKA" = (
 /obj/structure/sign/city/store/reddragon/directional/north{
 	pixel_x = 0;
-	pixel_y = 32
+	pixel_y = 36
 	},
 /turf/open/openspace,
 /area/vtm/interior)
@@ -17254,8 +17254,8 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/radio)
 "kdR" = (
-/obj/machinery/vending/cigarette{
-	pixel_x = -5;
+/obj/machinery/vending/snack{
+	pixel_x = -2;
 	pixel_y = 22;
 	density = 0
 	},
@@ -20798,8 +20798,11 @@
 /turf/open/floor/plating/sidewalk,
 /area/vtm)
 "mmI" = (
-/obj/machinery/washing_machine,
 /obj/machinery/light/prince/directional/north,
+/obj/machinery/washing_machine{
+	pixel_x = -1;
+	pixel_y = 14
+	},
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "mna" = (
@@ -28457,10 +28460,6 @@
 /obj/structure/reagent_dispensers/cleaningfluid,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/vjanitor)
-"qGC" = (
-/obj/effect/mapping_helpers/door/access/claimable,
-/turf/closed/wall/vampwall/rich,
-/area/vtm/interior/apartment)
 "qHd" = (
 /obj/structure/chair/office/darkpack/green{
 	dir = 8
@@ -40644,10 +40643,6 @@
 	},
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower)
-"xIW" = (
-/obj/machinery/vending/snack,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/gang)
 "xJb" = (
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/shop)
@@ -59033,7 +59028,7 @@ cHk
 hFq
 pXX
 hFq
-xIW
+hFq
 hFq
 dST
 tfD
@@ -72304,7 +72299,7 @@ mRu
 awi
 sFs
 sFs
-qGC
+awi
 awi
 awi
 awi
