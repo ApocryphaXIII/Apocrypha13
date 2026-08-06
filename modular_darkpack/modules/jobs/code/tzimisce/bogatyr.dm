@@ -18,6 +18,8 @@
 	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE) // APOC EDIT CHANGE - JOBS - (Voivode)
 
 	description = "You bare the name of the warriors that guarded ancient Dragons, to be a Bogatyr is to serve the Voivodes and the Seer Voivodate. Protect your family and the Sarcophagus of the Voivode-in-Waiting." // APOC EDIT CHANGE - JOBS - (Voivode)
+	maximal_generation = 9
+	maximum_immortal_age = 200
 	minimum_masquerade = 2
 
 	known_contacts = list("Prince", "Baron", "Sheriff")
