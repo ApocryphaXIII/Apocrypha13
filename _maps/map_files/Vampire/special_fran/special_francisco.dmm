@@ -3085,10 +3085,6 @@
 /obj/effect/landmark/start/darkpack/citizen/citizen,
 /turf/open/floor/plating/granite/black,
 /area/vtm/outside/park)
-"bQw" = (
-/obj/machinery/photocopier/gratis/prebuilt,
-/turf/open/floor/city/plating,
-/area/vtm/interior/endron_facility/restricted)
 "bQA" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/railing{
@@ -5110,7 +5106,7 @@
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/chinatown)
 "cXD" = (
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/chantry)
 "cXF" = (
@@ -9085,7 +9081,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/ghetto)
 "fsy" = (
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /obj/machinery/light/directional/west,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
@@ -9294,14 +9290,6 @@
 /obj/effect/landmark/start/darkpack/law_enforcement/officer,
 /turf/open/floor/city/plating,
 /area/vtm/interior/police)
-"fxt" = (
-/obj/item/melee/vamp/brick{
-	anchored = 1;
-	name = "Scorched brick";
-	desc = "A visibly burnt piece of rubble, once trash now on display - A memory of a supposed explosion, from where? Nobody can quite recall..."
-	},
-/turf/closed/wall/vampwall/rich/old,
-/area/vtm)
 "fxv" = (
 /obj/structure/vampfence/rich,
 /turf/open/water/vamp_sewer/border,
@@ -9866,7 +9854,7 @@
 /area/vtm/interior/shop/bacotell)
 "fOX" = (
 /obj/effect/turf_decal/siding/white,
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
 "fPf" = (
@@ -13022,7 +13010,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/apartment)
 "hHi" = (
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/police)
 "hHw" = (
@@ -15130,11 +15118,6 @@
 /obj/structure/coclock,
 /turf/open/floor/city/plating,
 /area/vtm/interior/museum)
-"iSx" = (
-/obj/structure/table/wood,
-/obj/item/camera/detective,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/police/fed)
 "iSP" = (
 /obj/effect/turf_decal/siding/white/corner{
 	color = "#570090"
@@ -16969,9 +16952,9 @@
 /area/vtm/interior/endron_facility/restricted)
 "jUS" = (
 /obj/structure/table/wood,
-/obj/item/detective_scanner/darkpack,
-/obj/item/detective_scanner/darkpack,
-/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner,
+/obj/item/detective_scanner,
+/obj/item/detective_scanner,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/police/fed)
 "jVc" = (
@@ -20774,7 +20757,7 @@
 /area/vtm/outside/financialdistrict)
 "mlB" = (
 /obj/machinery/light/directional/east,
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/endron_facility/restricted)
 "mlC" = (
@@ -21244,7 +21227,7 @@
 /area/vtm/interior/police)
 "mAD" = (
 /obj/structure/coclock,
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /turf/open/floor/city/factory,
 /area/vtm/interior/radio)
 "mAQ" = (
@@ -21955,15 +21938,6 @@
 /obj/machinery/light/prince/directional/east,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
-"mSX" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/photocopier/gratis/prebuilt,
-/turf/open/floor/city/plating,
-/area/vtm/interior/endron_facility/restricted)
 "mTm" = (
 /obj/structure/chair/sofa/corp/corner,
 /turf/open/floor/carpet/darkpack/redsilver,
@@ -23096,15 +23070,6 @@
 "nEJ" = (
 /turf/open/floor/wood/rough,
 /area/vtm/interior/voivodate)
-"nFs" = (
-/obj/structure/vampdoor/glass,
-/obj/effect/mapping_helpers/door/access/police,
-/obj/effect/mapping_helpers/door/lock,
-/obj/effect/turf_decal/siding/white{
-	dir = 1
-	},
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/police)
 "nFG" = (
 /obj/effect/decal/rugs,
 /turf/open/floor/city/bacotell,
@@ -25313,12 +25278,12 @@
 "oRY" = (
 /obj/item/storage/box/deputy,
 /obj/item/camera/detective,
-/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner,
 /obj/structure/table,
-/obj/item/detective_scanner/darkpack,
-/obj/item/detective_scanner/darkpack,
-/obj/item/detective_scanner/darkpack,
-/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner,
+/obj/item/detective_scanner,
+/obj/item/detective_scanner,
+/obj/item/detective_scanner,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "oSa" = (
@@ -28316,7 +28281,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/endron_facility/restricted)
 "qBU" = (
@@ -30556,7 +30521,9 @@
 /turf/open/floor/carpet/lone,
 /area/vtm/interior/chantry)
 "rKN" = (
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt{
+	density = 0
+	},
 /turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/clinic)
 "rKU" = (
@@ -32825,7 +32792,7 @@
 /obj/structure/table/wood,
 /obj/item/storage/box/deputy,
 /obj/item/camera/detective,
-/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner,
 /turf/open/floor/wood/ornate,
 /area/vtm/interior/police)
 "tas" = (
@@ -35370,11 +35337,6 @@
 /obj/structure/bed/maint,
 /mob/living/carbon/human/npc/hobo,
 /obj/effect/spawner/random/occult/artifact,
-/obj/item/melee/vamp/brick{
-	anchored = 1;
-	name = "Scorched brick";
-	desc = "A visibly burnt piece of rubble, once trash now on display - A memory of a supposed explosion, from where? Nobody can quite recall..."
-	},
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/outside/financialdistrict)
 "uxy" = (
@@ -38451,7 +38413,7 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
 "wpi" = (
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /obj/machinery/light/prince/directional/south,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/chantry)
@@ -41546,7 +41508,7 @@
 /turf/open/openspace,
 /area/vtm/interior/voivodate)
 "yin" = (
-/obj/machinery/photocopier/gratis/prebuilt,
+/obj/machinery/photocopier/prebuilt,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/restricted)
 "yip" = (
@@ -50332,7 +50294,7 @@ hUM
 hUM
 rhD
 ryJ
-iSx
+mMM
 wnZ
 tOk
 rOF
@@ -61034,7 +60996,7 @@ rfg
 rfg
 rfg
 rfg
-nFs
+iBu
 lVj
 lVj
 tFx
@@ -64064,7 +64026,7 @@ wrk
 wrk
 wDE
 wDE
-fxt
+wDE
 wDE
 wDE
 wDE
@@ -65668,7 +65630,7 @@ cAb
 cAb
 cAb
 eeP
-bQw
+pCo
 viI
 sMy
 pIW
@@ -66203,7 +66165,7 @@ eeP
 fiN
 jqo
 eeP
-bQw
+pCo
 ylh
 bAT
 iQe
@@ -75819,7 +75781,7 @@ rdj
 rdj
 rdj
 eeP
-mSX
+cAb
 kfr
 lTK
 eeP
