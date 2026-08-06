@@ -169,7 +169,7 @@
 /turf/open/floor/wood/smooth,
 /area/vtm/interior)
 "agy" = (
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /obj/machinery/light/directional/west,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
@@ -798,7 +798,7 @@
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "azv" = (
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/chantry)
 "aAH" = (
@@ -1121,7 +1121,7 @@
 /turf/open/floor/wood/smooth,
 /area/vtm/interior)
 "aIL" = (
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /obj/machinery/light/prince/directional/south,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/chantry)
@@ -9027,7 +9027,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/endron_facility/restricted)
 "foV" = (
@@ -10407,7 +10407,7 @@
 /obj/structure/table/wood,
 /obj/item/storage/box/deputy,
 /obj/item/camera/detective,
-/obj/item/detective_scanner,
+/obj/item/detective_scanner/darkpack,
 /turf/open/floor/wood/ornate,
 /area/vtm/interior/police)
 "gfl" = (
@@ -13569,6 +13569,11 @@
 /obj/structure/rack,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/supply)
+"hTN" = (
+/obj/structure/table/wood,
+/obj/item/camera/detective,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/police/fed)
 "hTQ" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/vampdoor/wood,
@@ -13664,7 +13669,7 @@
 /area/vtm/interior/police)
 "hWh" = (
 /obj/structure/coclock,
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/city/factory,
 /area/vtm/interior/radio)
 "hWp" = (
@@ -17317,12 +17322,12 @@
 "kbu" = (
 /obj/item/storage/box/deputy,
 /obj/item/camera/detective,
-/obj/item/detective_scanner,
+/obj/item/detective_scanner/darkpack,
 /obj/structure/table,
-/obj/item/detective_scanner,
-/obj/item/detective_scanner,
-/obj/item/detective_scanner,
-/obj/item/detective_scanner,
+/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner/darkpack,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "kbG" = (
@@ -18210,7 +18215,7 @@
 /area/vtm/interior/sewer)
 "kCn" = (
 /obj/machinery/light/directional/east,
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/endron_facility/restricted)
 "kCO" = (
@@ -23238,6 +23243,15 @@
 /obj/structure/closet/secure_closet/chemical,
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/clinic)
+"nHE" = (
+/obj/structure/vampdoor/glass,
+/obj/effect/mapping_helpers/door/access/police,
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/police)
 "nHQ" = (
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/bianchiBank)
@@ -25083,7 +25097,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/clinic)
 "oHg" = (
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/restricted)
 "oHh" = (
@@ -26604,7 +26618,7 @@
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/voivodate)
 "pCo" = (
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
 "pCw" = (
@@ -26826,7 +26840,7 @@
 /area/vtm/interior/chantry)
 "pJt" = (
 /obj/effect/turf_decal/siding/white,
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
 "pKb" = (
@@ -30879,9 +30893,7 @@
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/gang)
 "rTS" = (
-/obj/machinery/photocopier/prebuilt{
-	density = 0
-	},
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/clinic)
 "rUn" = (
@@ -32634,9 +32646,9 @@
 /area/vtm/interior/voivodate/cave)
 "sWp" = (
 /obj/structure/table/wood,
-/obj/item/detective_scanner,
-/obj/item/detective_scanner,
-/obj/item/detective_scanner,
+/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner/darkpack,
+/obj/item/detective_scanner/darkpack,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/police/fed)
 "sWq" = (
@@ -36019,7 +36031,7 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
 "uQV" = (
-/obj/machinery/photocopier/prebuilt,
+/obj/machinery/photocopier/gratis/prebuilt,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/police)
 "uRs" = (
@@ -50182,7 +50194,7 @@ hUM
 hUM
 rhD
 ryJ
-mMM
+hTN
 wnZ
 tOk
 rOF
@@ -60884,7 +60896,7 @@ rfg
 rfg
 rfg
 rfg
-iBu
+nHE
 lVj
 lVj
 tFx
