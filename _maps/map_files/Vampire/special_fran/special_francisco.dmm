@@ -10101,7 +10101,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/sidewalk,
-/area/vtm/interior)
+/area/vtm/outside/pacificheights)
 "fXe" = (
 /turf/open/misc/grass/random/bushes,
 /area/vtm/outside/financialdistrict)
@@ -25358,10 +25358,6 @@
 	},
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
-"oUc" = (
-/obj/item/seeds/coffee/robusta,
-/turf/open/floor/plating/sidewalk,
-/area/vtm/outside/financialdistrict)
 "oUe" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood/smooth/old,
@@ -30757,9 +30753,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate)
-"rRO" = (
-/turf/open/floor/plating/sidewalk/rich,
-/area/vtm)
 "rRR" = (
 /obj/structure/platform/lowwall/city/window,
 /turf/open/floor/plating/rough,
@@ -36049,10 +36042,6 @@
 /area/vtm)
 "uQs" = (
 /mob/living/carbon/human/npc/walkby,
-/obj/machinery/elevator_control_panel/directional/north{
-	linked_elevator_id = "DwtnApts";
-	preset_destination_names = list("2" = "Ground", "3" = "Level Two", "4" = "Level Three")
-	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/pacificheights)
 "uQu" = (
@@ -38973,7 +38962,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/sidewalk,
-/area/vtm/interior)
+/area/vtm/outside/pacificheights)
 "wGN" = (
 /obj/structure/table/wood/fancy/red,
 /obj/machinery/computer/libraryconsole/bookmanagement,
@@ -56194,7 +56183,7 @@ wdp
 wdp
 wdp
 wdp
-rRO
+wdp
 wdp
 wdp
 wdp
@@ -56720,7 +56709,7 @@ sRy
 sRy
 sRy
 aVS
-oUc
+aVS
 fLi
 vao
 vao
@@ -62326,22 +62315,22 @@ mSl
 hQk
 cQA
 hSg
-jhF
-jhF
+cQA
+cQA
 fXc
-jhF
-jhF
+cQA
+cQA
 wGC
 wGC
 wGC
 wGC
 wGC
-jhF
+cQA
 fXc
-jhF
-jhF
-jhF
-jhF
+cQA
+cQA
+cQA
+cQA
 cdA
 ivi
 aWz

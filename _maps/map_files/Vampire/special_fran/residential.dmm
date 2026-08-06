@@ -2678,6 +2678,10 @@
 	pixel_y = 10
 	},
 /obj/item/paper_bin,
+/obj/structure/curtain/bounty/start_closed{
+	pixel_x = 32;
+	pixel_y = 0
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
 "sN" = (
@@ -4637,6 +4641,10 @@
 	pixel_x = 9;
 	pixel_y = 10
 	},
+/obj/structure/curtain/bounty/start_closed{
+	pixel_x = 32;
+	pixel_y = 0
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
 "FV" = (
@@ -6575,9 +6583,6 @@
 /turf/open/misc/dirt,
 /area/vtm/outside/northbeach)
 "SZ" = (
-/obj/structure/curtain/bounty{
-	open = 0
-	},
 /obj/structure/platform/lowwall/junk/window,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/ghetto)
