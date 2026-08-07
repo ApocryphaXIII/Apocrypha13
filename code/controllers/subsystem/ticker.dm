@@ -163,7 +163,7 @@ SUBSYSTEM_DEF(ticker)
 					if(important_admins_on < CONFIG_GET(flag/delay_if_no_admins))
 						SetTimeLeft(-1)
 						start_immediately = FALSE
-						to_chat(world, span_infoplain("<b>The game start has been delayed due to no admins connected.</b>"), confidential = TRUE)
+						to_chat(world, span_infoplain("<b>The game start has been delayed due to not enough important admins connected.</b>"), confidential = TRUE)
 						return
 			// APOC EDIT ADD END
 
