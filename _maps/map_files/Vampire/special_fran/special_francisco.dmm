@@ -6639,10 +6639,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/restricted)
-"dVs" = (
-/obj/effect/landmark/start/darkpack/law_enforcement/sergeant,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/police)
 "dVE" = (
 /obj/effect/decal/pallet,
 /turf/open/floor/plating/sidewalk,
@@ -8610,7 +8606,6 @@
 /obj/machinery/light/red/directional/west,
 /obj/item/ammo_box/darkpack/c12g/rubber,
 /obj/item/ammo_box/darkpack/c12g/rubber,
-/obj/item/ammo_box/darkpack/c12g/incap,
 /obj/item/ammo_box/magazine/glock9mm,
 /obj/item/ammo_box/magazine/glock9mm,
 /obj/item/ammo_box/magazine/glock9mm,
@@ -35345,6 +35340,10 @@
 /obj/effect/decal/wallpaper/stone,
 /turf/closed/wall/vampwall/rich,
 /area/vtm/interior/millennium_tower/f4)
+"uwZ" = (
+/obj/effect/landmark/start/darkpack/law_enforcement/sergeant,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/police)
 "uxp" = (
 /obj/structure/chair/darkpack{
 	dir = 4;
@@ -61901,7 +61900,7 @@ flG
 sBt
 auS
 lVj
-dVs
+uwZ
 wcy
 wcy
 eVs
