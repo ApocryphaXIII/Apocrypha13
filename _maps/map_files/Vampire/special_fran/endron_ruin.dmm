@@ -2675,7 +2675,10 @@
 /area/vtm/interior/endron_facility/forest)
 "Mx" = (
 /obj/structure/werewolf_totem/spiral{
-	pixel_x = -16
+	pixel_x = -16;
+	tribes = list();
+	name = "desecrated spiral totem";
+	desc = "Doesn't do much of anything anymore."
 	},
 /turf/open/indestructible/necropolis/air,
 /area/vtm/interior/forest/cave/bane)

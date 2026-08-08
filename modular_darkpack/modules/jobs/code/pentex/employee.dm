@@ -25,6 +25,8 @@
 	)
 
 	allowed_tribes = list(TRIBE_BLACK_SPIRAL_DANCERS, TRIBE_RONIN)
+	maximal_generation = 9
+	maximum_immortal_age = 200
 	minimum_masquerade = 3
 
 	display_order = JOB_DISPLAY_ORDER_EMPLOYEE
@@ -47,7 +49,7 @@
 	name = JOB_PENTEX_EMPLOYEE
 	jobtype = /datum/job/vampire/employee
 
-//	ears = /obj/item/p25radio
+	ears = /obj/item/radio/headset/darkpack
 	id = /obj/item/card/pentex
 	uniform = /obj/item/clothing/under/vampire/pentex_longleeve
 	gloves = /obj/item/clothing/gloves/vampire/work
