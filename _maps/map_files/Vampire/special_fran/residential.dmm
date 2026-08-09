@@ -6,12 +6,12 @@
 "ac" = (
 /obj/effect/decal/wallpaper/paper/darkred/low,
 /obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_y = 14;
-	pixel_x = -3
-	},
 /obj/machinery/light/prince/directional/west,
 /obj/structure/platform/lowwall/rich,
+/obj/machinery/reagentgrinder/kitchen{
+	pixel_x = 0;
+	pixel_y = 10
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/apartment)
 "ag" = (
@@ -321,7 +321,7 @@
 	color = "#434343";
 	dir = 8
 	},
-/obj/structure/table,
+/obj/machinery/griddle,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/apartment)
 "cn" = (
@@ -336,9 +336,7 @@
 /area/misc/cordon)
 "cr" = (
 /obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_y = 17
-	},
+/obj/machinery/reagentgrinder/kitchen,
 /obj/structure/platform/lowwall/rich/old,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/apartment)
@@ -356,11 +354,6 @@
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/northbeach)
-"cz" = (
-/obj/machinery/oven/range,
-/obj/structure/table/countertop/bubway,
-/turf/open/floor/city/bacotell,
-/area/vtm/interior/ghetto)
 "cA" = (
 /obj/effect/turf_decal/bordur{
 	dir = 9
@@ -651,19 +644,7 @@
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/ghetto)
 "eP" = (
-/obj/structure/table,
-/obj/item/food/fried_chicken{
-	pixel_x = -3;
-	pixel_y = 8
-	},
-/obj/item/food/fried_chicken{
-	pixel_x = -5;
-	pixel_y = 12
-	},
-/obj/item/food/meat/steak/chicken{
-	pixel_x = 4;
-	pixel_y = 2
-	},
+/obj/structure/table/countertop/red,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop/gummaguts)
 "eY" = (
@@ -849,12 +830,8 @@
 /turf/open/floor/carpet/darkpack/purplegold,
 /area/vtm/interior/apartment)
 "gg" = (
-/obj/structure/table,
-/obj/machinery/microwave{
-	pixel_x = 0;
-	pixel_y = 4
-	},
 /obj/machinery/light/directional/north,
+/obj/machinery/griddle,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
 "gh" = (
@@ -1117,11 +1094,34 @@
 /obj/structure/closet/cardboard,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
+"hW" = (
+/obj/item/knife/kitchen{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/kitchen/fork,
+/obj/item/kitchen/fork,
+/obj/item/kitchen/fork,
+/obj/structure/closet,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/plate,
+/obj/item/kitchen/spoon,
+/obj/item/kitchen/spoon,
+/obj/item/kitchen/rollingpin{
+	pixel_y = 0;
+	pixel_x = 0
+	},
+/obj/item/plate/oven_tray,
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/apartment)
 "hZ" = (
 /obj/structure/table/wood,
-/obj/structure/fluff/tv{
-	icon_state = "tv_nature";
-	pixel_y = 13
+/obj/structure/fluff/tv/nature{
+	pixel_x = 0;
+	pixel_y = 12;
+	dir = 4
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
@@ -1142,6 +1142,14 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/fishermanswharf/ghetto)
+"ig" = (
+/obj/machinery/griddle,
+/obj/item/food/meat/steak/chicken{
+	pixel_x = 1;
+	pixel_y = 2
+	},
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/shop/gummaguts)
 "ii" = (
 /obj/machinery/light/prince/directional/north,
 /turf/open/floor/carpet/darkpack/redsilver,
@@ -1178,31 +1186,6 @@
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/misc/dirt,
 /area/vtm/outside/northbeach)
-"iy" = (
-/obj/item/knife/kitchen{
-	pixel_y = 5;
-	pixel_x = 5
-	},
-/obj/item/kitchen/fork,
-/obj/item/kitchen/fork,
-/obj/item/kitchen/fork,
-/obj/structure/closet,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/rice,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/plate,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/rollingpin{
-	pixel_y = 9;
-	pixel_x = 1
-	},
-/obj/item/clothing/suit/apron/chef{
-	pixel_y = 13;
-	pixel_x = 4
-	},
-/turf/open/floor/city/bacotell,
-/area/vtm/interior/apartment)
 "iB" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
@@ -1335,18 +1318,13 @@
 "ju" = (
 /obj/structure/table/wood,
 /obj/effect/decal/wallpaper/stone/low,
-/obj/machinery/reagentgrinder{
-	pixel_y = 15;
-	pixel_x = 6
-	},
 /obj/structure/platform/lowwall/rich/old,
+/obj/machinery/reagentgrinder/kitchen{
+	pixel_x = 4;
+	pixel_y = 10
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/apartment)
-"jw" = (
-/obj/structure/table,
-/obj/machinery/oven/range,
-/turf/open/floor/city/bacotell,
-/area/vtm/interior/ghetto)
 "jy" = (
 /turf/open/misc/grass/random/bushes,
 /area/vtm/outside/fishermanswharf)
@@ -1426,8 +1404,8 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
 "kc" = (
-/obj/structure/table,
 /obj/machinery/light/small/directional/west,
+/obj/machinery/griddle,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
 "kf" = (
@@ -1496,9 +1474,10 @@
 /area/vtm/outside/northbeach)
 "kH" = (
 /obj/structure/table/wood,
-/obj/structure/fluff/tv{
+/obj/structure/fluff/tv/nature{
 	pixel_x = -16;
-	pixel_y = 16
+	pixel_y = 12;
+	dir = 1
 	},
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/ghetto)
@@ -1829,11 +1808,11 @@
 /turf/open/misc/grass,
 /area/vtm)
 "mQ" = (
-/obj/structure/fluff/tv{
-	pixel_x = 1;
-	pixel_y = 16
-	},
 /obj/structure/table/wood,
+/obj/structure/fluff/tv/news{
+	pixel_x = 0;
+	pixel_y = 12
+	},
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/ghetto)
 "mT" = (
@@ -1939,6 +1918,17 @@
 /obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plating/asphalt,
 /area/vtm/interior/apartment)
+"nv" = (
+/obj/structure/table/countertop/bubway,
+/obj/effect/turf_decal/siding/white{
+	color = "#434343"
+	},
+/obj/underplate/stuff{
+	pixel_y = 12;
+	pixel_x = -2
+	},
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/shop/gummaguts)
 "nw" = (
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/ghetto)
@@ -1972,11 +1962,6 @@
 /obj/structure/city_map,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/fishermanswharf)
-"nP" = (
-/obj/structure/table,
-/obj/structure/sink/basin/directional/west,
-/turf/open/floor/city/bacotell,
-/area/vtm/interior/ghetto)
 "nR" = (
 /obj/structure/vampdoor/wood{
 	dir = 4
@@ -2504,6 +2489,14 @@
 	pixel_x = 0
 	},
 /obj/structure/table,
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = 11;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_y = 12;
+	pixel_x = 7
+	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
 "rM" = (
@@ -2652,7 +2645,8 @@
 /obj/machinery/light/prince/directional/north,
 /obj/structure/table/wood,
 /obj/structure/fluff/tv{
-	pixel_y = 15
+	pixel_x = 0;
+	pixel_y = 12
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
@@ -2878,8 +2872,8 @@
 	color = "#636363"
 	},
 /obj/effect/decal/wallpaper/light/low,
-/obj/structure/table/wood,
 /obj/structure/platform/lowwall/rich/old,
+/obj/machinery/griddle,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/apartment)
 "ub" = (
@@ -3436,9 +3430,9 @@
 /area/vtm/outside/northbeach)
 "xT" = (
 /obj/structure/table/wood,
-/obj/structure/fluff/tv{
-	pixel_y = 13;
-	pixel_x = 5
+/obj/structure/fluff/tv/news{
+	pixel_x = 10;
+	pixel_y = 12
 	},
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/ghetto)
@@ -3627,6 +3621,10 @@
 /obj/effect/decal/wallpaper/papers/two{
 	pixel_y = 24
 	},
+/obj/structure/fluff/tv/nature{
+	pixel_x = 16;
+	pixel_y = 11
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
 "yX" = (
@@ -3749,9 +3747,10 @@
 /area/vtm/interior/ghetto)
 "zS" = (
 /obj/structure/table/wood,
-/obj/structure/fluff/tv{
-	pixel_y = 17;
-	pixel_x = 7
+/obj/structure/fluff/tv/analog{
+	pixel_x = 10;
+	pixel_y = 12;
+	dir = 1
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
@@ -4117,6 +4116,14 @@
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
+"Ck" = (
+/obj/structure/table/countertop/red,
+/obj/machinery/processor{
+	pixel_x = 0;
+	pixel_y = 4
+	},
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/shop/gummaguts)
 "Cm" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
@@ -4174,15 +4181,17 @@
 /area/vtm/outside/fishermanswharf/ghetto)
 "CK" = (
 /obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_y = 17
+/obj/machinery/reagentgrinder/kitchen{
+	pixel_x = -4;
+	pixel_y = 14
 	},
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "CM" = (
 /obj/structure/table,
-/obj/machinery/reagentgrinder{
-	pixel_y = 17
+/obj/machinery/reagentgrinder/kitchen{
+	pixel_x = 4;
+	pixel_y = 7
 	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/apartment)
@@ -4344,6 +4353,15 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/open/misc/grass,
 /area/vtm)
+"DS" = (
+/obj/structure/table,
+/obj/structure/sink/directional/east{
+	icon_state = "basin";
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/ghetto)
 "DU" = (
 /obj/effect/turf_decal/asphaltline/alt,
 /turf/open/floor/plating/asphalt,
@@ -4627,6 +4645,14 @@
 /area/vtm/interior/apartment)
 "FR" = (
 /obj/machinery/deepfryer,
+/obj/item/food/fried_chicken{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/food/fried_chicken{
+	pixel_x = 4;
+	pixel_y = 6
+	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop/gummaguts)
 "FT" = (
@@ -4907,7 +4933,7 @@
 /turf/open/water/beach/vamp,
 /area/vtm/outside/northbeach)
 "HU" = (
-/obj/machinery/oven/range,
+/obj/machinery/griddle,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/apartment)
 "HV" = (
@@ -5137,8 +5163,8 @@
 	pixel_y = 7
 	},
 /obj/item/food/grown/cabbage,
-/obj/item/food/grown/garlic,
 /obj/item/food/grown/chili,
+/obj/item/food/grown/garlic,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "Jw" = (
@@ -5320,6 +5346,12 @@
 	},
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/apartment)
+"Kx" = (
+/obj/effect/decal/wallpaper/stone/low,
+/obj/structure/platform/lowwall/rich/old,
+/obj/machinery/griddle,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/apartment)
 "Ky" = (
 /obj/structure/table/wood,
 /obj/vampire_computer,
@@ -5361,9 +5393,9 @@
 /area/vtm/interior/ghetto)
 "KQ" = (
 /obj/structure/table/wood,
-/obj/structure/fluff/tv{
+/obj/structure/fluff/tv/nature{
 	pixel_x = -16;
-	pixel_y = 16
+	pixel_y = 13
 	},
 /turf/open/floor/carpet/darkpack/orangesilver,
 /area/vtm/interior/ghetto)
@@ -5645,9 +5677,9 @@
 	pixel_x = 2;
 	pixel_y = 11
 	},
-/obj/machinery/reagentgrinder{
-	pixel_x = -9;
-	pixel_y = 9
+/obj/machinery/reagentgrinder/kitchen{
+	pixel_x = -7;
+	pixel_y = 10
 	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
@@ -6109,9 +6141,9 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "PN" = (
-/obj/machinery/reagentgrinder{
-	pixel_y = 13;
-	pixel_x = -4
+/obj/machinery/reagentgrinder/kitchen{
+	pixel_x = -5;
+	pixel_y = 9
 	},
 /obj/structure/table/countertop/beige,
 /turf/open/floor/wood/old,
@@ -6164,10 +6196,6 @@
 /area/vtm/interior/apartment)
 "Qv" = (
 /obj/structure/table/wood,
-/obj/structure/fluff/tv{
-	pixel_y = 14;
-	pixel_x = -16
-	},
 /obj/item/flashlight/lamp/green{
 	pixel_x = 3;
 	pixel_y = 7
@@ -6714,9 +6742,8 @@
 /area/vtm/interior/apartment)
 "TY" = (
 /obj/effect/turf_decal/siding/wood/corner{
-	icon_state = "siding_wideplating_corner";
-	color = "#4a3925";
-	dir = 8
+	dir = 8;
+	color = "#4a3925"
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
@@ -6949,19 +6976,15 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "Vt" = (
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_y = 12;
-	pixel_x = 7
-	},
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = 11;
-	pixel_y = 9
-	},
 /obj/effect/turf_decal/siding/white{
 	pixel_y = 0;
 	pixel_x = 0
 	},
 /obj/structure/table,
+/obj/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 4
+	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto)
 "Vw" = (
@@ -7532,6 +7555,10 @@
 /mob/living/carbon/human/npc/gummaguts,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop/gummaguts)
+"ZJ" = (
+/obj/machinery/griddle,
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/ghetto)
 "ZL" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -13930,7 +13957,7 @@ uN
 Qu
 Ua
 Hk
-yR
+hW
 hG
 rC
 kS
@@ -13998,7 +14025,7 @@ UR
 In
 eZ
 kc
-zM
+Qo
 Ub
 bG
 bG
@@ -14398,7 +14425,7 @@ Hp
 FR
 uG
 uG
-KR
+nv
 Vo
 Vo
 RD
@@ -14502,7 +14529,7 @@ Hr
 eo
 wP
 Hp
-FR
+Ck
 uG
 uG
 KR
@@ -14716,7 +14743,7 @@ eo
 wP
 wP
 Hp
-oS
+ig
 uG
 uG
 KR
@@ -15180,7 +15207,7 @@ AO
 Jk
 PC
 mg
-VM
+zL
 bG
 Jq
 Jq
@@ -15287,7 +15314,7 @@ Jk
 Jk
 Ao
 ei
-jw
+Qo
 bG
 yb
 os
@@ -15394,7 +15421,7 @@ Jk
 gG
 gD
 ei
-zL
+ZJ
 bG
 yv
 os
@@ -16594,7 +16621,7 @@ rk
 rk
 wP
 Qu
-iy
+HU
 YX
 YX
 Vz
@@ -16636,7 +16663,7 @@ oH
 oH
 rG
 rG
-Bu
+Kx
 fw
 fw
 tO
@@ -16667,7 +16694,7 @@ ow
 dd
 In
 Xa
-cz
+Qo
 Hi
 Ve
 Km
@@ -17827,7 +17854,7 @@ jt
 Hi
 Mx
 fr
-VM
+DS
 VM
 ei
 CP
@@ -18041,7 +18068,7 @@ tt
 Hi
 GK
 In
-nP
+ZJ
 nc
 zM
 As
