@@ -184,3 +184,23 @@
   - map: Adds charcoal pens to the caern
   - map: Adds a slot machine to the gas station
   - map: Prince office artifact spawn will only have vampire artifacts
+  Absolucy:
+  - bugfix: made smartphone contacts lag the server less
+  Faengi:
+  - config: Added a config setting to limit high generations to a limited selection
+      of jobs
+  - rscadd: Gave the Society of Leopold intel reports to find breachers with
+  - rscadd: Added more breach phrases to the list
+  FalloutFalcon:
+  - balance: You can guestbook from a full screen width
+  - bugfix: Delirium will properly be applied
+  - admin: 2 VV topics for managing actions or gifts
+  buffyuwu:
+  - rscadd: Admins can now set generations below 8
+  chazzyjazzy:
+  - rscadd: Adds the red news reporter role which can broadcast to the city using
+      the captain-caster camera and mapped-in greenscreens as well as 'entertainment
+      monitors' and the mobile cameras
+  - rscadd: expands lore primers to help new players figure out what morality paths
+      are as well as some stuff about Garou, Clans, etc
+  - bugfix: fixes firearms recoil roll difficulty never being reset
