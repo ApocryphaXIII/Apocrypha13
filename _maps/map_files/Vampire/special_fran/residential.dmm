@@ -3136,10 +3136,7 @@
 "vT" = (
 /obj/structure/chair/plastic/darkpack{
 	dir = 8;
-	pixel_x = 0;
-	pixel_y = 0;
-	buckling_x = "7";
-	buckling_y = "16"
+	
 	},
 /turf/open/floor/wood,
 /area/vtm/interior/ghetto)
