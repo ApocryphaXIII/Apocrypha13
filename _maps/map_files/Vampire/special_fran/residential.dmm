@@ -3135,8 +3135,7 @@
 /area/vtm/outside/fishermanswharf/ghetto)
 "vT" = (
 /obj/structure/chair/plastic/darkpack{
-	dir = 8;
-	
+	dir = 8
 	},
 /turf/open/floor/wood,
 /area/vtm/interior/ghetto)
