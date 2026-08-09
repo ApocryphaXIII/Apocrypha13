@@ -21812,9 +21812,6 @@
 /obj/structure/chair/wood/darkpack,
 /turf/open/floor/stone,
 /area/vtm/interior/shop/bacotell)
-"mOj" = (
-/turf/open/space/basic,
-/area/vtm)
 "mOJ" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp/green,
@@ -77806,8 +77803,8 @@ rdj
 rdj
 rdj
 rdj
-mOj
-mOj
+rdj
+rdj
 rdj
 rdj
 rdj
@@ -77913,8 +77910,8 @@ rdj
 rdj
 rdj
 rdj
-mOj
-mOj
+rdj
+rdj
 rdj
 rdj
 rdj
