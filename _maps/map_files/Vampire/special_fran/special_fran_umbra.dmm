@@ -931,7 +931,7 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/outside/penumbra)
 "Id" = (
-/obj/item/food/grown/moonflower{
+/obj/item/food/grown/flower/moonflower{
 	anchored = 1
 	},
 /turf/open/misc/grass/random/grass,
