@@ -4411,6 +4411,12 @@
 /obj/structure/table/optable,
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/police/fed)
+"cDJ" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 1
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "cDO" = (
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 8
@@ -9358,7 +9364,7 @@
 	},
 /obj/structure/flora/tree/jungle/small,
 /obj/structure/flora/bush/style_random,
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "fzi" = (
 /obj/structure/stairs/south,
@@ -9498,7 +9504,6 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/mallunderground)
 "fCF" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/clothing/suit/vampire/trench/voivode{
 	pixel_x = 1;
 	pixel_y = 2
@@ -9518,6 +9523,7 @@
 /obj/item/clothing/suit/vampire/sancho/armored,
 /obj/item/clothing/shoes/vampire/sancho,
 /obj/item/clothing/neck/vampire/sancho,
+/obj/structure/closet/cabinet,
 /turf/open/floor/carpet/darkpack/bluegold,
 /area/vtm/interior/voivodate)
 "fCP" = (
@@ -10171,6 +10177,10 @@
 	},
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/millennium_tower/f4)
+"fXL" = (
+/obj/effect/turf_decal/darkpack/cave,
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "fXM" = (
 /turf/open/openspace,
 /area/vtm/interior/millennium_tower/f4)
@@ -11969,6 +11979,12 @@
 /obj/effect/mapping_helpers/door/autoname,
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/shop/newspaper)
+"gXA" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 8
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "gXE" = (
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes/cigpack_xeno,
@@ -14553,6 +14569,9 @@
 /obj/structure/closet/crate/dumpster,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/pacificheights)
+"iwV" = (
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "iwW" = (
 /turf/open/floor/iron/showroomfloor,
 /area/vtm/interior/shop/grocery)
@@ -16310,6 +16329,12 @@
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/park)
+"jzC" = (
+/obj/effect/turf_decal/darkpack/cave/corner{
+	dir = 1
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "jAh" = (
 /obj/structure/chair/office/darkpack/green{
 	dir = 4
@@ -16576,6 +16601,12 @@
 	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/outside/park)
+"jJK" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 10
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "jJY" = (
 /obj/machinery/door/poddoor/shutters/armory{
 	name = "Armory Shutters"
@@ -16874,7 +16905,7 @@
 "jRL" = (
 /obj/structure/flora/tree/jungle,
 /obj/structure/flora/bush/style_random,
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "jRU" = (
 /turf/open/floor/wood/smooth/old,
@@ -18636,6 +18667,13 @@
 	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/shop)
+"kUK" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 1
+	},
+/obj/structure/flora/bush/style_random,
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "kUU" = (
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/city/toilet/large,
@@ -18928,7 +18966,7 @@
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
 	},
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "lfi" = (
 /obj/structure/chair/darkpack{
@@ -19776,7 +19814,7 @@
 	dir = 5
 	},
 /obj/structure/flora/bush/style_random,
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "lFH" = (
 /turf/open/water/vamp_sewer/border,
@@ -24530,6 +24568,12 @@
 	},
 /turf/open/floor/plating/asphalt,
 /area/vtm/outside/financialdistrict)
+"otm" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 5
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "ots" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -25684,8 +25728,9 @@
 /area/vtm/interior/police)
 "pbe" = (
 /obj/structure/closet/secure_closet/weapons{
-	pixel_y = 10;
-	locked = 0
+	pixel_y = 0;
+	locked = 0;
+	pixel_x = 0
 	},
 /obj/item/gun/ballistic/automatic/darkpack/mp5,
 /obj/item/gun/ballistic/automatic/darkpack/mp5,
@@ -25735,6 +25780,12 @@
 /obj/effect/landmark/start/darkpack/ocean/ganger,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/gang)
+"pcV" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 9
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "pcW" = (
 /obj/machinery/light/small/red/directional/north,
 /turf/open/water/bloodwave,
@@ -25981,7 +26032,6 @@
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/gangbasement)
 "plI" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/clothing/suit/vampire/trench/voivode{
 	pixel_x = 1;
 	pixel_y = 2
@@ -25997,6 +26047,7 @@
 /obj/item/clothing/suit/vampire/sancho/armored,
 /obj/item/clothing/shoes/vampire/sancho,
 /obj/item/clothing/neck/vampire/sancho,
+/obj/structure/closet/cabinet,
 /turf/open/floor/carpet/darkpack/bluegold,
 /area/vtm/interior/voivodate)
 "plK" = (
@@ -29547,7 +29598,7 @@
 "rgT" = (
 /obj/effect/turf_decal/darkpack/cave,
 /obj/structure/flora/bush/style_random,
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "rgY" = (
 /turf/open/floor/plating/sidewalk/poor,
@@ -32698,6 +32749,12 @@
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/police)
+"sWh" = (
+/obj/effect/turf_decal/darkpack/cave/corner{
+	dir = 4
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "sWm" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -32892,7 +32949,7 @@
 /area/vtm/interior/voivodate/sanctum)
 "tbl" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "tbv" = (
 /obj/structure/closet/cabinet,
@@ -34540,7 +34597,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 4
 	},
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "tVc" = (
 /obj/structure/roofstuff/vent_end{
@@ -35938,7 +35995,7 @@
 	dir = 10
 	},
 /obj/structure/flora/grass/jungle,
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "uKp" = (
 /obj/machinery/light/small/red/directional/south,
@@ -37269,7 +37326,7 @@
 	},
 /obj/structure/flora/bush/style_random,
 /obj/structure/flora/bush/style_random,
-/turf/open/water/beach/vamp/deep,
+/turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "vAt" = (
 /obj/structure/rack,
@@ -40365,6 +40422,12 @@
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/financialdistrict)
+"xvU" = (
+/obj/effect/turf_decal/darkpack/cave{
+	dir = 6
+	},
+/turf/open/water/river,
+/area/vtm/interior/voivodate/cave)
 "xvZ" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/darkpack,
@@ -90441,8 +90504,8 @@ uZd
 diP
 wOe
 mKm
-vbX
-nrY
+pcV
+gXA
 uJY
 mKm
 uBX
@@ -90547,11 +90610,11 @@ uGt
 fUo
 lWp
 fUo
-vbX
+pcV
 tbl
-aAH
+iwV
 leC
-fkO
+jJK
 mKm
 lWp
 mKm
@@ -90654,10 +90717,10 @@ dtG
 fUo
 lWp
 fUo
-oAN
+cDJ
 jRL
-aAH
-aAH
+iwV
+iwV
 rgT
 fUo
 uBX
@@ -90760,13 +90823,13 @@ uGt
 mKm
 diP
 wOe
-vbX
+pcV
 tbl
-lPv
+sWh
 tVb
-dxo
+jzC
 leC
-fkO
+jJK
 gjr
 mrr
 uZd
@@ -90867,13 +90930,13 @@ uZd
 fUo
 lWp
 mKm
-gLp
-aAH
-qPI
+kUK
+iwV
+fXL
 uNw
-oAN
-aAH
-qPI
+cDJ
+iwV
+fXL
 uZd
 mrr
 uZd
@@ -90974,13 +91037,13 @@ mKm
 uZd
 lWp
 fUo
-rDp
+otm
 vzO
 leC
-nrY
+gXA
 tbl
-lPv
-nvX
+sWh
+xvU
 fUo
 mrr
 fUo
@@ -91082,11 +91145,11 @@ fUo
 uBX
 hTT
 fUo
-oAN
-aAH
-aAH
+cDJ
+iwV
+iwV
 fzc
-nvX
+xvU
 uZd
 dtG
 mrr
@@ -91192,7 +91255,7 @@ fUo
 lFG
 tVb
 tVb
-nvX
+xvU
 dtG
 aXa
 diP
