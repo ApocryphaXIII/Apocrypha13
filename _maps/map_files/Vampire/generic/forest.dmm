@@ -804,7 +804,7 @@
 /turf/open/misc/grass,
 /area/vtm/interior/forest/cave)
 "fm" = (
-/obj/item/food/grown/moonflower,
+/obj/item/food/grown/flower/moonflower,
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 10
 	},
@@ -2102,7 +2102,7 @@
 /area/vtm/outside/forest/sept)
 "pO" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
-/obj/item/food/grown/moonflower,
+/obj/item/food/grown/flower/moonflower,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
@@ -2305,7 +2305,7 @@
 /area/vtm/interior/forest/sept)
 "rd" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
-/obj/item/food/grown/moonflower,
+/obj/item/food/grown/flower/moonflower,
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
 "re" = (
@@ -2468,6 +2468,18 @@
 "so" = (
 /obj/structure/table/wood,
 /obj/item/storage/pill_bottle/estrogen,
+/obj/item/pen/charcoal{
+	pixel_x = -14;
+	pixel_y = 2
+	},
+/obj/item/pen/charcoal{
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/obj/item/pen/charcoal{
+	pixel_x = -10;
+	pixel_y = 10
+	},
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/sept)
 "sq" = (
@@ -4926,7 +4938,7 @@
 "KJ" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
-/obj/item/food/grown/moonflower,
+/obj/item/food/grown/flower/moonflower,
 /obj/effect/realistic_fog/dense,
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
@@ -5822,7 +5834,7 @@
 /area/vtm/outside/forest)
 "Ry" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
-/obj/item/food/grown/moonflower,
+/obj/item/food/grown/flower/moonflower,
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
 	},
