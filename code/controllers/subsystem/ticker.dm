@@ -14,7 +14,7 @@ SUBSYSTEM_DEF(ticker)
 	/// or a "round-ending" event, like summoning Nar'Sie, a blob victory, the nuke going off, etc. ([FORCE_END_ROUND])
 	var/force_ending = END_ROUND_AS_NORMAL
 	/// If TRUE, there is no lobby phase, the game starts immediately.
-	#ifdef ABSOLUTE_MINIMUM
+	#ifdef AUTOSTART_GAME
 	var/start_immediately = TRUE
 	#else
 	var/start_immediately = FALSE
@@ -131,8 +131,11 @@ SUBSYSTEM_DEF(ticker)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
 			to_chat(world, span_notice("<b>Welcome to [station_name()]!</b>"))
 			for(var/channel_tag in CONFIG_GET(str_list/channel_announce_new_game))
-				send2chat(new /datum/tgs_message_content("New round starting on [SSmapping.current_map.map_name]!"), channel_tag)
-
+				if(SSticker.GetTimeLeft() == -10) // APOC EDIT CHANGE START - DISCORD
+					send2chat(new /datum/tgs_message_content("New round delayed. Thanks for playing [CONFIG_GET(string/servername)]"), channel_tag) // APOC EDIT CHANGE
+				else
+					send2chat(new /datum/tgs_message_content("<@&1474327242510303336> New round starting on [station_name()]!"), channel_tag)
+				// APOC EDIT CHANGE END
 			current_state = GAME_STATE_PREGAME
 			SEND_SIGNAL(src, COMSIG_TICKER_ENTER_PREGAME)
 			fire()
@@ -148,6 +151,16 @@ SUBSYSTEM_DEF(ticker)
 					++totalPlayersReady
 					if(player.client?.holder)
 						++total_admins_ready
+
+			// APOC EDIT ADD START - (delay if no admins)
+			if(CONFIG_GET(flag/delay_if_no_admins))
+				if(timeLeft <= 600 && timeLeft > -1)
+					if(length(GLOB.admins) <= 0)
+						SetTimeLeft(-1)
+						start_immediately = FALSE
+						to_chat(world, span_infoplain("<b>The game start has been delayed due to no admins connected.</b>"), confidential = TRUE)
+						return
+			// APOC EDIT ADD END
 
 			if(start_immediately)
 				timeLeft = 0
@@ -389,11 +402,11 @@ SUBSYSTEM_DEF(ticker)
 			if(L.client.inactivity >= GLOB.logout_timer_set) //Connected, but inactive (alt+tabbed or something)
 				msg += "<b>[L.name]</b> ([L.key]), the [L.job] (<font color='#ffcc00'><b>Connected, Inactive</b></font>)\n"
 				failed = TRUE //AFK client
-			if(!failed && L.stat)
+			if(!failed && IS_UNCONSCIOUS_OR_CRIT(L))
 				if(HAS_TRAIT(L, TRAIT_SUICIDED)) //Suicider
 					msg += "<b>[L.name]</b> ([L.key]), the [L.job] ([span_bolddanger("Suicide")])\n"
 					failed = TRUE //Disconnected client
-				if(!failed && (L.stat == UNCONSCIOUS || L.stat == HARD_CRIT))
+				if(!failed && (L.stat == HARD_CRIT))
 					msg += "<b>[L.name]</b> ([L.key]), the [L.job] (Dying)\n"
 					failed = TRUE //Unconscious
 				if(!failed && L.stat == DEAD)

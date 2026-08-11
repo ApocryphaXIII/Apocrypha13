@@ -4,7 +4,6 @@
 	desc = "A towering skeleton, embodying the terrifying power of the Gray Masses."
 	icon = 'modular_zapoc/modules/gray_masses/icons/gray_masses_tall.dmi'
 	loot_drop = list(/obj/effect/spawner/random/occult/artifact)
-	stat_attack = CONSCIOUS
 	attack_action_types = list(
 		/datum/action/innate/elite_attack/legionnaire_charge,
 		/datum/action/innate/elite_attack/head_detach,
