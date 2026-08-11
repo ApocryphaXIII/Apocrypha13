@@ -10,6 +10,11 @@
 				SEND_SOUND(src, sound('modular_darkpack/modules/blood_drinking/sounds/need_blood.ogg', volume = 75))
 				to_chat(src, span_warning("You're not desperate enough to try <i>that</i>."))
 				return
+			if(get_ananasi_splat(src))
+				if(get_kindred_splat(bit_living))
+					SEND_SOUND(src, sound('modular_darkpack/modules/blood_drinking/sounds/need_blood.ogg', volume = 75))
+					to_chat(src, span_warning("This <b>BLOOD</b> is toxic to you!"))
+					return
 			// Allow ghouls to steal viate?
 			if(get_ghoul_splat(src))
 				if(!get_kindred_splat(bit_living))
