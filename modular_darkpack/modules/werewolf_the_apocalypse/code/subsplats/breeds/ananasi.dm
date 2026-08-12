@@ -7,8 +7,7 @@
 	start_gnosis = 4
 	breed_species = /datum/species/human/shifter/homid
 	gifts_provided = list(
-		/datum/action/cooldown/power/gift/sense_wyrm,
-		/datum/action/cooldown/power/gift/spirit_speech,
+		/datum/action/cooldown/power/gift/breath_of_the_wyld/inspire,
 		/datum/action/cooldown/power/gift/resist_pain,
 		/datum/action/cooldown/power/gift/stolen_moments
 	)
@@ -18,8 +17,7 @@
 	start_gnosis = 4
 	breed_species = /datum/species/human/shifter/feral
 	gifts_provided = list(
-		/datum/action/cooldown/power/gift/sense_wyrm,
-		/datum/action/cooldown/power/gift/spirit_speech,
+		/datum/action/cooldown/power/gift/breath_of_the_wyld/inspire,
 		/datum/action/cooldown/power/gift/resist_pain,
 		/datum/action/cooldown/power/gift/stolen_moments
 	)

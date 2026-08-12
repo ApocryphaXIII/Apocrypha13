@@ -333,10 +333,13 @@
 		SPECIES_FERA_FERAL = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/crawlerling.dmi'
 	)
 	transform_hud_icon = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/hud_transforms.dmi'
-	mimmicing_animal = /mob/living/basic/spider/giant/viper
+	mimmicing_animal = /mob/living/basic/spider/giant/arachnid
 
 	warcry_emote = "hiss"
 
+/datum/splat/werewolf/shifter/ananasi/on_gain()
+	. = ..()
+	to_chat(owner, span_boldnotice("You are playing a splat that is capable of <i>infiltrating</i> roles that other splats cannot. Do so <i>carefully and responsibly,</i> and always be courteous to your fellow players."))
 
 /mob/living/carbon/human/splat/kinfolk
 	auto_splats = list(/datum/splat/werewolf/kinfolk)
