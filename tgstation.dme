@@ -8260,6 +8260,7 @@
 #include "modular_darkpack\modules\werewolf_the_apocalypse\code\subsplats\breeds\_breed.dm"
 #include "modular_darkpack\modules\werewolf_the_apocalypse\code\subsplats\breeds\corax.dm"
 #include "modular_darkpack\modules\werewolf_the_apocalypse\code\subsplats\breeds\garou.dm"
+#include "modular_darkpack\modules\werewolf_the_apocalypse\code\subsplats\breeds\ananasi.dm"
 #include "modular_darkpack\modules\werewolf_the_apocalypse\code\subsplats\tribes\_tribe.dm"
 #include "modular_darkpack\modules\werewolf_the_apocalypse\code\subsplats\tribes\garou.dm"
 #include "modular_darkpack\modules\werewolf_the_apocalypse\code\weapons\klaives.dm"

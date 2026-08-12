@@ -9,7 +9,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/sense_wyrm,
 		/datum/action/cooldown/power/gift/spirit_speech,
-		/datum/action/cooldown/power/gift/resist_pain
+		/datum/action/cooldown/power/gift/resist_pain,
 	)
 
 /datum/subsplat/werewolf/breed_form/ananasi/arachnid
@@ -19,7 +19,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/sense_wyrm,
 		/datum/action/cooldown/power/gift/spirit_speech,
-		/datum/action/cooldown/power/gift/resist_pain
+		/datum/action/cooldown/power/gift/resist_pain,
 	)
 
 /datum/subsplat/werewolf/breed_form/ananasi/arachnid/generation_pref_icon(datum/universal_icon/main_icon)
