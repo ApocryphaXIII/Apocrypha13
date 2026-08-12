@@ -96,9 +96,10 @@
 
 // START - ANANASI SPLAT
 /datum/splat/werewolf/shifter/ananasi/prepare_human_for_preview(mob/living/carbon/human/human)
-	human.set_haircolor("#241e1c", update = FALSE)
-	human.set_hairstyle("Long Over Eye (ALT)", update = TRUE)
+	human.set_haircolor("#50504f", update = FALSE)
+	human.set_hairstyle("Wisp", update = TRUE)
 	human.undershirt = "Shirt (Black)"
+	human.glasses = "Prescription Glasses"
 	human.update_body()
 
 /datum/splat/werewolf/shifter/ananasi/get_splat_description()

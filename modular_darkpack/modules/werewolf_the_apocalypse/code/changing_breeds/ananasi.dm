@@ -1,7 +1,46 @@
+/datum/action/cooldown/power/gift/bloodheal
+	name = "Blood Heal"
+	desc = "The Ananasi can heal their wounds by drawing on their own blood."
+	button_icon_state = "bloodheal"
+	click_to_activate = FALSE
+	rank = 1
+	handles_spend_resources = FALSE
+
+/datum/action/cooldown/power/gift/bloodheal/can_afford(feedback)
+	var/mob/living/human_owner = astype(owner)
+	if(!human_owner)
+		return ..()
+	if(human_owner.bloodpool < 1)
+		if(feedback)
+			to_chat(owner, span_warning("You don't have enough blood to cast [src]!"))
+		return FALSE
+	return ..()
+
+/datum/action/cooldown/power/gift/bloodheal/spend_resources()
+	var/mob/living/human_owner = astype(owner)
+	. = ..()
+	if(human_owner)
+		human_owner.adjust_blood_pool(-1)
+
+/datum/action/cooldown/power/gift/bloodheal/Activate(atom/target)
+	var/mob/living/human_owner = astype(owner)
+	if(!human_owner)
+		return FALSE
+	if(!do_after(human_owner, 1 TURNS))
+		return FALSE
+
+	. = ..()
+
+	human_owner.heal_ordered_damage(30, list(BRUTE, TOX, OXY, STAMINA))
+	human_owner.heal_ordered_damage(6, list(BURN, AGGRAVATED))
+	human_owner.update_damage_overlays()
+	human_owner.update_health_hud()
+	return TRUE
+
 /datum/action/cooldown/power/gift/stolen_moments
 	name = "Stolen Moments"
 	desc = "This Gift allows the Ananasi to literally steal away the last few minutes of memories from another being."
-	button_icon_state = "dominate"
+	button_icon_state = "stolen_moments"
 	click_to_activate = TRUE
 	rank = 1
 

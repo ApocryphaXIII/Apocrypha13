@@ -1,7 +1,7 @@
 
 /datum/action/cooldown/power/gift/resist_pain
 	name = "Resist Pain"
-	desc = "Through force of will, the Philodox is able to ignore the pain of his wounds and continue acting normally."
+	desc = "Through force of will, the Fera is able to ignore the pain of their wounds and continue acting normally."
 	button_icon_state = "resist_pain"
 	rank = 1
 	willpower_cost = 1

@@ -1,6 +1,7 @@
 /datum/subsplat/werewolf/breed_form/ananasi
 	abstract_type = /datum/subsplat/werewolf/breed_form/ananasi
 	fera_restriction = SPLAT_ANANASI
+	roleplay_level = "Advanced"
 
 /datum/subsplat/werewolf/breed_form/ananasi/homid
 	name = BREED_ANANASI_HOMID
@@ -9,7 +10,8 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/breath_of_the_wyld/inspire,
 		/datum/action/cooldown/power/gift/resist_pain,
-		/datum/action/cooldown/power/gift/stolen_moments
+		/datum/action/cooldown/power/gift/stolen_moments,
+		/datum/action/cooldown/power/gift/bloodheal
 	)
 
 /datum/subsplat/werewolf/breed_form/ananasi/arachnid
@@ -19,7 +21,8 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/breath_of_the_wyld/inspire,
 		/datum/action/cooldown/power/gift/resist_pain,
-		/datum/action/cooldown/power/gift/stolen_moments
+		/datum/action/cooldown/power/gift/stolen_moments,
+		/datum/action/cooldown/power/gift/bloodheal
 	)
 
 /datum/subsplat/werewolf/breed_form/ananasi/arachnid/generation_pref_icon(datum/universal_icon/main_icon)
