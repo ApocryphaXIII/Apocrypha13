@@ -296,6 +296,7 @@
 /datum/splat/werewolf/shifter/ananasi
 	name = "Ananasi"
 	id = SPLAT_ANANASI
+	uses_rage = FALSE
 	splat_traits = list(
 		TRAIT_FERA_FORMS,
 		TRAIT_FERA_FUR,
@@ -327,9 +328,9 @@
 	)
 	transform_sound = 'modular_darkpack/modules/werewolf_the_apocalypse/sounds/ananasi_transform.ogg'
 	mob_icons = list(
-		SPECIES_FERA_WAR = 'icons/mob/simple/smspider.dmi',
-		SPECIES_FERA_DIRE = 'icons/mob/simple/smspider.dmi',
-		SPECIES_FERA_FERAL = 'icons/mob/simple/smspider.dmi'
+		SPECIES_FERA_WAR = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/lilian.dmi',
+		SPECIES_FERA_DIRE = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/pithus.dmi',
+		SPECIES_FERA_FERAL = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/crawlerling.dmi'
 	)
 	transform_hud_icon = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/hud_transforms.dmi'
 	mimmicing_animal = /mob/living/basic/spider/giant/viper

@@ -25,6 +25,6 @@
 	)
 
 /datum/subsplat/werewolf/breed_form/ananasi/arachnid/generation_pref_icon(datum/universal_icon/main_icon)
-	var/datum/universal_icon/breed_crinos = uni_icon('modular_darkpack/modules/werewolf_the_apocalypse/icons/corax_forms/corvid.dmi', "black")
+	var/datum/universal_icon/breed_crinos = uni_icon('modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/lilian.dmi', "black")
 	breed_crinos.scale(32, 32)
 	main_icon.blend_icon(breed_crinos, ICON_OVERLAY)
