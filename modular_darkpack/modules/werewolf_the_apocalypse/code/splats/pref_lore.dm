@@ -124,7 +124,7 @@
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 			SPECIES_PERK_ICON = FA_ICON_BAND_AID,
 			SPECIES_PERK_NAME = "Passive healing",
-			SPECIES_PERK_DESC = "Ananasi have a strong passive healing while outside of their breed form.",
+			SPECIES_PERK_DESC = "Ananasi can use blood they've consumed to heal their injuries.",
 		),
 	)
 
