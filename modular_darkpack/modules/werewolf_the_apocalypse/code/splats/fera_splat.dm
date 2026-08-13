@@ -251,7 +251,6 @@
 	transformation_list = list(
 		/datum/species/human/shifter/homid,
 		/datum/species/human/shifter/war,
-		/datum/species/human/shifter/dire,
 		/datum/species/human/shifter/feral
 	)
 	transformation_stats = list(
