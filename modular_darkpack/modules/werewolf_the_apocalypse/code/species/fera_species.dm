@@ -277,7 +277,6 @@
 /datum/species/human/shifter/dire/visible_gender_override(mob/living/carbon/human/holder)
 	return "beast"
 
-
 /datum/species/human/shifter/feral
 	name = "feral form"
 	id = SPECIES_FERA_FERAL

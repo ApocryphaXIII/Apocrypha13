@@ -147,7 +147,7 @@
 	// their fast healing is represented in day/days in breed-form so we just dont.
 	var/can_passively_heal = !(is_breed_form() && (get_breed_form_species() != /datum/species/human/shifter/war))
 	if(COOLDOWN_FINISHED(src, passive_healing_cd))
-		if(can_passively_heal)
+		if(can_passively_heal && !HAS_TRAIT(owner, TRAIT_NO_PASSIVE_HEALING))
 			// 2 to represent lethal. Fera passive regen closes burn, but not aggravated damage.
 			owner.heal_storyteller_health(2, heal_aggravated = FALSE, heal_scars = TRUE, heal_blood = TRUE, heal_burn = TRUE)
 			// Keep organ healing ticking so internal damage recovers even between major regrowth pulses.
@@ -168,9 +168,9 @@
 
 	var/datum/species/human/shifter/shifter_species = owner.dna.species
 	if(istype(shifter_species))
-		if(shifter_species.is_veil_breaching_form(owner) && (!shifter_species.form_causes_delirium || HAS_TRAIT(owner, TRAIT_PIERCED_VEIL)))
+		if(shifter_species.is_veil_breaching_form(owner) && !causes_delirium())
 			SEND_SIGNAL(owner, COMSIG_MASQUERADE_VIOLATION)
-		if(shifter_species.form_causes_delirium)
+		if(causes_delirium())
 			for(var/mob/living/carbon/human/guy in oviewers(owner, DEFAULT_SIGHT_DISTANCE))
 				if(!guy.affected_by_delirium())
 					continue
@@ -288,8 +288,6 @@
 	. = ..()
 	remove_power(/datum/action/cooldown/power/gift/eye_drink)
 
-// START - ANANASI SPLAT
-
 /datum/splat/werewolf/shifter/ananasi
 	name = "Ananasi"
 	id = SPLAT_ANANASI
@@ -298,6 +296,7 @@
 		TRAIT_FERA_FORMS,
 		TRAIT_FERA_FUR,
 		TRAIT_FERA_RENOWN,
+		TRAIT_NO_PASSIVE_HEALING,
 	)
 	transformation_list = list(
 		/datum/species/human/shifter/homid,
@@ -333,10 +332,6 @@
 	mimmicing_animal = /mob/living/basic/spider/giant/arachnid
 
 	warcry_emote = "hiss"
-
-/datum/splat/werewolf/shifter/ananasi/on_gain()
-	. = ..()
-	to_chat(owner, span_boldnotice("You are playing a splat that is capable of <i>infiltrating</i> roles that other splats cannot. Do so <i>carefully and responsibly,</i> and always be courteous to your fellow players."))
 
 /mob/living/carbon/human/splat/kinfolk
 	auto_splats = list(/datum/splat/werewolf/kinfolk)
