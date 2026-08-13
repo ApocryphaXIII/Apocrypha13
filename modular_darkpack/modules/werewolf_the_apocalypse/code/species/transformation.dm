@@ -109,4 +109,14 @@
 /datum/splat/werewolf/shifter/proc/get_breed_form_species()
 	return breed_form?.breed_species
 
+/// Resolves generic form slot (SPECIES_FERA_WAR, SPECIES_FERA_FERAL, etc) to whatever species
+/// type this splat uses for that slot, letting individual fera subtypes (garou/corax/ananasi/etc)
+/// swap in their own unique subtype species
+/datum/splat/werewolf/shifter/proc/get_form_by_id(form_id)
+	if(!form_id)
+		return
+	for(var/datum/species/human/shifter/form_type as anything in transformation_list)
+		if(initial(form_type.id) == form_id)
+			return form_type
+
 #undef DOGGY_ANIMATION_TIME
