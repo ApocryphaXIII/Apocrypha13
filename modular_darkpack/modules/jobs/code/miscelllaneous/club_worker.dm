@@ -21,7 +21,7 @@
 		"Club Attendant"
 	)
 
-	allowed_splats = list(SPLAT_KINDRED, SPLAT_GHOUL, SPLAT_KINFOLK, SPLAT_NONE)
+	allowed_splats = list(SPLAT_KINDRED, SPLAT_GHOUL, SPLAT_KINFOLK, SPLAT_NONE, SPLAT_SHIFTERS)
 
 	maximal_generation = 9
 	maximum_immortal_age = 200
