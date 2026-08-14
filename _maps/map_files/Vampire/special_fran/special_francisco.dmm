@@ -7823,7 +7823,7 @@
 /obj/structure/vampdoor{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/daughters,
+/obj/effect/mapping_helpers/door/access/strip,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/strip)
 "eHq" = (
@@ -13153,7 +13153,7 @@
 /area/vtm/interior/millennium_tower/f2)
 "hIE" = (
 /obj/structure/vampdoor,
-/obj/effect/mapping_helpers/door/access/daughters,
+/obj/effect/mapping_helpers/door/access/strip,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/strip)
 "hIG" = (
@@ -13521,13 +13521,6 @@
 /obj/structure/hedge,
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/millennium_tower/f4)
-"hSC" = (
-/obj/structure/vampdoor{
-	dir = 8
-	},
-/obj/effect/mapping_helpers/door/access/strip,
-/turf/open/floor/city/plating_mono,
-/area/vtm/interior/strip)
 "hSG" = (
 /obj/effect/landmark/npcwall,
 /obj/effect/turf_decal/bordur/corner,
@@ -17652,13 +17645,6 @@
 	},
 /turf/open/floor/wood/herring,
 /area/vtm/interior/voivodate)
-"klw" = (
-/obj/structure/mop_bucket,
-/obj/item/reagent_containers/cup/bucket,
-/obj/item/pushbroom,
-/obj/item/mop,
-/turf/open/floor/city/plating,
-/area/vtm/interior/strip)
 "klR" = (
 /obj/structure/table/wood,
 /obj/item/folder/red{
@@ -26662,9 +26648,11 @@
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f4)
 "pDq" = (
-/obj/structure/vampdoor,
-/obj/effect/mapping_helpers/door/access/strip,
-/turf/open/floor/city/plating_mono,
+/obj/structure/mop_bucket,
+/obj/item/reagent_containers/cup/bucket,
+/obj/item/pushbroom,
+/obj/item/mop,
+/turf/open/floor/city/plating,
 /area/vtm/interior/strip)
 "pDt" = (
 /obj/structure/vampdoor/glass,
@@ -46087,7 +46075,7 @@ hrk
 vWN
 vWN
 urj
-hSC
+eHp
 vWN
 vWN
 vWN
@@ -46196,7 +46184,7 @@ sQl
 iNE
 ppv
 ppv
-klw
+pDq
 vWN
 hUM
 hUM
@@ -46405,7 +46393,7 @@ fxx
 wzK
 wzK
 xtC
-pDq
+hIE
 ppv
 ppv
 ppv
