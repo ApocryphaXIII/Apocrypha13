@@ -42,11 +42,11 @@ GLOBAL_LIST_INIT(corax_fur_colors, list(
 
 GLOBAL_LIST_INIT(ananasi_fur_colors, list(
 	"black" = "black",
-	"brown" = "brown",
-	"white" = "white",
-	"green" = "green",
+	"blue" = "blue",
 	"red" = "red",
-	"gray" = "gray",
+	"white" = "white",
+	"ginger" = "ginger",
+	"brown" = "brown",
 ))
 
 #define STATUS_EFFECT_DELIRIUM /datum/status_effect/delirium
