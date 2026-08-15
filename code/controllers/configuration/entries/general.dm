@@ -39,7 +39,7 @@
 /// station name (the name of the station in-game)
 /datum/config_entry/string/stationname
 
-/datum/config_entry/flag/delay_if_no_admins // APOC EDIT ADD - (delay if no admins)
+/datum/config_entry/number/delay_if_no_admins // APOC EDIT ADD - (delay if no admins)
 
 /// Countdown between lobby and the round starting.
 /datum/config_entry/number/lobby_countdown

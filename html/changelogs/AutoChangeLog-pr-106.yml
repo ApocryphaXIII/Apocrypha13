@@ -1,0 +1,5 @@
+author: "FalloutFalcon"
+delete-after: True
+changes:
+  - map: "endron ruin should be a little less punishing weird bad mechanics"
+  - map: "endron ruin can be ghosted"
