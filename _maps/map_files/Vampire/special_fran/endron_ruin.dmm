@@ -1075,8 +1075,9 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "qz" = (
+/obj/machinery/photocopier/prebuilt,
 /obj/machinery/light/directional/north,
-/turf/closed/wall/vampwall/metal/reinforced,
+/turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "qH" = (
 /mob/living/basic/mining/legion/gray_masses,
@@ -1411,6 +1412,11 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
+"vz" = (
+/obj/effect/spawner/random/trash/garbage,
+/obj/machinery/light/directional/south,
+/turf/open/floor/city/plating,
+/area/vtm/interior/endron_facility/forest)
 "vA" = (
 /obj/structure/fence{
 	dir = 4
@@ -1447,9 +1453,9 @@
 /area/vtm/interior/endron_facility/forest)
 "wo" = (
 /obj/structure/closet/crate/bin,
-/obj/machinery/light/small/broken/directional/north,
 /obj/effect/spawner/random/trash/cigbutt,
 /obj/effect/spawner/random/trash/cigbutt,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
 "wp" = (
@@ -1925,8 +1931,8 @@
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
 "Dg" = (
-/obj/machinery/light/small/broken/directional/south,
 /obj/effect/spawner/random/trash/mess,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
 "Dl" = (
@@ -1946,10 +1952,10 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "DI" = (
-/obj/machinery/light/broken/directional/south,
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 1
 	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "DN" = (
@@ -2950,9 +2956,9 @@
 /turf/open/indestructible/necropolis/air,
 /area/vtm/interior/forest/cave/bane)
 "QI" = (
-/obj/machinery/light/small/broken/directional/south,
 /obj/effect/spawner/random/trash/garbage,
 /obj/structure/extinguisher_cabinet/directional/east,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/city/factory,
 /area/vtm/interior/endron_facility/forest)
 "QK" = (
@@ -3227,11 +3233,11 @@
 /turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "UA" = (
-/obj/machinery/light/broken/directional/south,
 /obj/effect/spawner/random/trash/garbage,
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 1
 	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/forest)
 "UE" = (
@@ -6189,9 +6195,9 @@ wD
 HO
 NT
 Ul
-Ox
+vz
+wD
 qz
-LL
 Hy
 iQ
 gf
