@@ -2,6 +2,12 @@
   dwinters99:
   - bugfix: BSD totem in the endron ruin no longer counts as an actual totem
 2026-08-03:
+  Faengi:
+  - rscadd: Added the Uncontrollable flaw for Brujah
+  FalloutFalcon:
+  - code_imp: new var on datum level for storing info on what source book it comes
+      from
+  - config: Adds config for limiting merit based on official status
   KCartridge:
   - rscadd: P25 radio to Endronites Loadouts
   Marshmellow105:
@@ -11,12 +17,6 @@
       them
   Potatocrip:
   - code_imp: lets ghouls pick bruiser and sweeper
-  Faengi:
-  - rscadd: Added the Uncontrollable flaw for Brujah
-  FalloutFalcon:
-  - code_imp: new var on datum level for storing info on what source book it comes
-      from
-  - config: Adds config for limiting merit based on official status
 2026-08-04:
   Absolucy:
   - rscadd: Open Seal can now unlock cars.
@@ -58,13 +58,13 @@
       other spawns not meant to send them to the sewers
   - bugfix: Loadout items wont get replaced by robes and masks assuming they cover
       your breaches
-  flleeppyy:
-  - rscadd: Detective UI is now a possible UI to choose from in preferences.
   Potatocrip:
   - balance: slowed down skate shop vehicles
   dwinters99:
   - bugfix: Gray Mass Ultraspore no longer informs all players, only people in the
       dungeon.
+  flleeppyy:
+  - rscadd: Detective UI is now a possible UI to choose from in preferences.
 2026-08-08:
   Absolucy:
   - qol: You can now see your phone number by examining your phone.
@@ -161,3 +161,9 @@
   - bugfix: door repair kits work now
   shqvelheaded, bomby:
   - rscadd: adds the military parka, a new jacket purchasable at the hunting store
+2026-08-16:
+  FalloutFalcon:
+  - map: endron ruin should be a little less punishing weird bad mechanics
+  - map: endron ruin can be ghosted
+  - admin: Tweaks admin delay round config to check for ban rights and allows for
+      setting amount of admins required

@@ -1,4 +1,0 @@
-author: "FalloutFalcon"
-delete-after: True
-changes:
-  - admin: "Tweaks admin delay round config to check for ban rights and allows for setting amount of admins required"
