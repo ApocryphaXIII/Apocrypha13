@@ -29,7 +29,6 @@
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
 "ai" = (
-/obj/machinery/jukebox/no_access,
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.23"
 	},
@@ -568,12 +567,12 @@
 /turf/closed/wall/vampwall/wood,
 /area/vtm/interior/forest/cabin)
 "cY" = (
-/obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/shaker{
 	dir = 1;
 	pixel_x = 12;
 	pixel_y = 8
 	},
+/obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.25"
@@ -825,6 +824,7 @@
 /area/vtm/interior/forest/cave)
 "em" = (
 /obj/effect/turf_decal/darkpack/dirt/corner,
+/obj/machinery/jukebox/no_access,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
@@ -2232,7 +2232,6 @@
 /turf/open/misc/dirt,
 /area/vtm/interior/forest/cave)
 "mS" = (
-/obj/structure/table/wood,
 /obj/structure/table/wood,
 /obj/effect/decal/pallet{
 	icon_state = "under2"
@@ -3837,7 +3836,6 @@
 	},
 /area/vtm/interior/forest/cave)
 "vj" = (
-/obj/structure/table/wood,
 /obj/effect/decal/pallet{
 	icon_state = "under2"
 	},
@@ -3851,6 +3849,7 @@
 	pixel_x = -10;
 	pixel_y = 14
 	},
+/obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
@@ -4324,7 +4323,6 @@
 /area/vtm/interior/forest/cave)
 "xq" = (
 /obj/structure/table/wood,
-/obj/structure/table/wood,
 /obj/effect/decal/pallet,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave4";
@@ -4523,25 +4521,25 @@
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest/sept)
 "ym" = (
+/obj/item/storage/box/drinkingglasses{
+	dir = 1
+	},
+/obj/item/storage/box/drinkingglasses{
+	dir = 1
+	},
+/obj/item/storage/box/drinkingglasses{
+	dir = 1
+	},
+/obj/item/storage/box/drinkingglasses{
+	dir = 1
+	},
+/obj/item/storage/box/drinkingglasses{
+	dir = 1
+	},
+/obj/item/storage/box/drinkingglasses{
+	dir = 1
+	},
 /obj/structure/table/wood,
-/obj/item/storage/box/drinkingglasses{
-	dir = 1
-	},
-/obj/item/storage/box/drinkingglasses{
-	dir = 1
-	},
-/obj/item/storage/box/drinkingglasses{
-	dir = 1
-	},
-/obj/item/storage/box/drinkingglasses{
-	dir = 1
-	},
-/obj/item/storage/box/drinkingglasses{
-	dir = 1
-	},
-/obj/item/storage/box/drinkingglasses{
-	dir = 1
-	},
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.25"
@@ -5764,15 +5762,6 @@
 	},
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
-"FC" = (
-/obj/structure/table/wood,
-/obj/effect/decal/pallet,
-/obj/effect/decal/pallet,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3";
-	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
-	},
-/area/vtm/interior/forest/cave)
 "FD" = (
 /obj/item/bouquet/poppy{
 	pixel_y = 32
@@ -6797,8 +6786,8 @@
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/sept)
 "KT" = (
-/obj/structure/table/wood,
 /obj/effect/decal/pallet,
+/obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
@@ -9187,8 +9176,8 @@
 /turf/open/genturf,
 /area/vtm/planetgeneration)
 "YB" = (
-/obj/structure/table/wood,
 /obj/effect/decal/pallet,
+/obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
@@ -9335,10 +9324,10 @@
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
 "Zl" = (
-/obj/structure/table/wood,
 /obj/effect/decal/pallet{
 	icon_state = "under2"
 	},
+/obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.21;TEMP=293.27"
 	},
@@ -43968,7 +43957,7 @@ EH
 EH
 EH
 WF
-FC
+WF
 gY
 gY
 uv
