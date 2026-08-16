@@ -143,7 +143,7 @@
 /area/vtm/interior/chantry)
 "aeQ" = (
 /obj/machinery/light/small/red/directional/west,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "afe" = (
 /obj/structure/chair/office/darkpack/green{
@@ -559,6 +559,8 @@
 	color = "#636363";
 	dir = 8
 	},
+/obj/item/plate,
+/obj/item/reagent_containers/cup/mixing_bowl,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "atI" = (
@@ -5471,6 +5473,8 @@
 	dir = 8
 	},
 /obj/item/plate,
+/obj/item/plate,
+/obj/item/reagent_containers/cup/mixing_bowl,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "dkT" = (
@@ -6383,14 +6387,6 @@
 /obj/structure/stairs/south,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior)
-"dRf" = (
-/obj/structure/curtain/bounty{
-	icon_state = "bounty-closed";
-	open = 0
-	},
-/obj/structure/platform/lowwall/rich/window,
-/turf/open/floor/plating/rough,
-/area/vtm/interior/apartment)
 "dRm" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/wood/smooth/old,
@@ -16057,7 +16053,7 @@
 	pixel_y = 24
 	},
 /obj/effect/decal/shadow,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "jrl" = (
 /obj/item/flashlight/lantern{
@@ -21417,7 +21413,7 @@
 /area/vtm/interior/voivodate)
 "mCU" = (
 /obj/machinery/light/small/red/directional/east,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "mDd" = (
 /obj/item/reagent_containers/cup/glass/coffee/vampire/robust{
@@ -21773,7 +21769,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/light/small/red/directional/west,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "mKP" = (
 /obj/structure/vampdoor/glass{
@@ -25788,7 +25784,7 @@
 /area/vtm/interior/voivodate/cave)
 "pcW" = (
 /obj/machinery/light/small/red/directional/north,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "pda" = (
 /obj/structure/chair/office/darkpack/green{
@@ -27240,7 +27236,7 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
 "pVV" = (
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "pWe" = (
 /obj/structure/sink/directional/south,
@@ -28780,6 +28776,8 @@
 	color = "#636363";
 	dir = 4
 	},
+/obj/item/plate,
+/obj/item/reagent_containers/cup/mixing_bowl,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "qMu" = (
@@ -29258,7 +29256,8 @@
 	},
 /obj/structure/rack/clothing_hanger{
 	pixel_y = 17;
-	pixel_x = -5
+	pixel_x = -5;
+	density = 0
 	},
 /obj/structure/sign/flag/spain{
 	pixel_y = 32
@@ -29783,7 +29782,8 @@
 	},
 /obj/structure/rack/clothing_hanger{
 	pixel_y = 10;
-	pixel_x = 5
+	pixel_x = 5;
+	density = 0
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
@@ -34114,7 +34114,8 @@
 	},
 /obj/structure/rack/clothing_hanger{
 	pixel_y = 17;
-	pixel_x = -5
+	pixel_x = -5;
+	density = 0
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
@@ -35395,7 +35396,7 @@
 	pixel_y = 24
 	},
 /obj/effect/decal/shadow,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "uvB" = (
 /obj/effect/turf_decal/siding/wood{
@@ -35999,7 +36000,7 @@
 /area/vtm/interior/voivodate/cave)
 "uKp" = (
 /obj/machinery/light/small/red/directional/south,
-/turf/open/water/bloodwave,
+/turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "uKs" = (
 /obj/structure/closet/crate/coffin,
@@ -61089,8 +61090,8 @@ bpT
 pbk
 uBn
 jLY
-kED
 ygW
+kED
 xGw
 qcp
 qcp
@@ -61195,9 +61196,9 @@ cQA
 cQA
 wqJ
 eKo
-wsQ
 xGw
 wsQ
+xGw
 xGw
 uBn
 gnu
@@ -71488,7 +71489,7 @@ pkt
 vhx
 vhx
 fAd
-awi
+ygx
 oed
 oed
 awi
@@ -82721,7 +82722,7 @@ awi
 awi
 awi
 awi
-awi
+ygx
 oed
 oed
 awi
@@ -82816,10 +82817,10 @@ awi
 awi
 awi
 awi
-dRf
-dRf
-dRf
-dRf
+tBE
+tBE
+tBE
+tBE
 awi
 lHu
 lHu

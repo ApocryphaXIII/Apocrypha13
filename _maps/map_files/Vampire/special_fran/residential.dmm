@@ -148,6 +148,12 @@
 	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/apartment)
+"bc" = (
+/obj/structure/bonfire/prelit{
+	density = 1
+	},
+/turf/open/misc/beach/vamp,
+/area/vtm/interior)
 "bd" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/vampire/coat/alt,
@@ -4620,14 +4626,6 @@
 "FA" = (
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/northbeach)
-"FB" = (
-/obj/effect/turf_decal/bordur{
-	dir = 4
-	},
-/obj/effect/landmark/npcability,
-/mob/living/carbon/human/npc/walkby,
-/turf/open/floor/plating/sidewalk,
-/area/vtm/outside/fishermanswharf)
 "FH" = (
 /obj/effect/turf_decal/bordur{
 	dir = 9
@@ -5531,10 +5529,6 @@
 /obj/item/bedsheet,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
-"LR" = (
-/mob/living/carbon/human/npc/walkby,
-/turf/open/misc/beach/vamp,
-/area/vtm/outside/northbeach)
 "LS" = (
 /obj/effect/landmark/npcability,
 /obj/effect/turf_decal/bordur{
@@ -5688,13 +5682,6 @@
 "MJ" = (
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm)
-"ML" = (
-/obj/effect/turf_decal/bordur{
-	dir = 8
-	},
-/mob/living/carbon/human/npc/walkby,
-/turf/open/floor/plating/sidewalk,
-/area/vtm/outside/fishermanswharf)
 "MP" = (
 /obj/effect/turf_decal/bordur/inverse,
 /turf/open/floor/plating/asphalt,
@@ -6018,6 +6005,11 @@
 	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/interior/apartment)
+"Pc" = (
+/obj/effect/landmark/npcability,
+/mob/living/carbon/human/npc/walkby,
+/turf/open/misc/beach/vamp,
+/area/vtm/outside/northbeach)
 "Pe" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -6686,6 +6678,13 @@
 "TF" = (
 /turf/closed/indestructible/the_matrix,
 /area/vtm/interior)
+"TG" = (
+/obj/effect/turf_decal/bordur/corner{
+	dir = 8
+	},
+/mob/living/carbon/human/npc/walkby,
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/fishermanswharf)
 "TJ" = (
 /obj/effect/decal/cleanable/garbage,
 /obj/item/reagent_containers/cup/soda_cans/vampirecola,
@@ -10872,9 +10871,9 @@ NL
 NL
 QN
 ug
-LR
+Sh
 OU
-zq
+Pc
 Sh
 Sh
 Sh
@@ -11274,7 +11273,7 @@ Lh
 Lh
 Lh
 Lh
-uc
+bc
 Lh
 ll
 vD
@@ -12448,9 +12447,9 @@ rk
 rk
 xb
 MY
-Yz
+TG
 Dw
-ML
+Rz
 Rz
 Rz
 Rz
@@ -13304,9 +13303,9 @@ rk
 bL
 bL
 IX
-IX
 EB
-FB
+IX
+jg
 IX
 IX
 IX
