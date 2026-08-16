@@ -1588,7 +1588,6 @@
 /area/vtm/interior/forest/cave)
 "iC" = (
 /obj/structure/table/wood,
-/obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks{
 	dir = 4
 	},
