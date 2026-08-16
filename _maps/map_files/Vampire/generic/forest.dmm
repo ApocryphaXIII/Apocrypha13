@@ -32,7 +32,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.23"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ak" = (
 /obj/structure/noticeboard{
 	pixel_y = 32
@@ -75,7 +75,7 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.79;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ao" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -89,7 +89,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.92;n2=82;co2=0.05;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ar" = (
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/genturf,
@@ -244,7 +244,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "bl" = (
 /turf/closed/wall/vampwall/wood,
 /area/vtm/outside/forest/sept)
@@ -264,7 +264,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "bu" = (
 /obj/transfer_point_vamp/forest/north/two,
 /turf/open/floor/plating/rough,
@@ -302,7 +302,7 @@
 	dir = 10
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "bC" = (
 /obj/structure/stairs/south,
 /turf/open/floor/plating/rough,
@@ -340,7 +340,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.95;n2=81.94;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "bR" = (
 /obj/structure/glowshroom/glowcap,
 /turf/open/floor/plating/rough/cave,
@@ -356,7 +356,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "bX" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -370,7 +370,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.22"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "ca" = (
 /turf/closed/wall/vampwall/wood,
 /area/vtm/interior/forest/cave)
@@ -385,7 +385,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "cf" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 1
@@ -486,7 +486,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "cA" = (
 /obj/structure/bed/dogbed,
 /turf/open/floor/wood/smooth/old,
@@ -498,7 +498,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "cD" = (
 /obj/effect/decal/coastline{
 	dir = 6
@@ -507,7 +507,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "cE" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -527,12 +527,12 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=81.94;co2=0.02;TEMP=293.64"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "cK" = (
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "cL" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 5
@@ -577,7 +577,7 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "cZ" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 6
@@ -608,29 +608,20 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "di" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.22"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "dj" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
-"dm" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 10
-	},
-/turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
 "dn" = (
 /obj/item/flashlight/lantern{
 	light_on = 1;
@@ -753,13 +744,13 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "dV" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "dW" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 4
@@ -829,7 +820,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "en" = (
 /obj/structure/table/countertop/bubway,
 /turf/open/floor/plating/concrete,
@@ -854,7 +845,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "er" = (
 /obj/structure/chair{
 	name = "sitting rock";
@@ -883,7 +874,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ex" = (
 /obj/structure/table,
 /obj/item/fishing_rod{
@@ -891,6 +882,11 @@
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest)
+"ey" = (
+/turf/open/misc/dirt{
+	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.2"
+	},
+/area/vtm/outside/forest/sept)
 "ez" = (
 /obj/effect/decal/coastline{
 	dir = 8
@@ -899,7 +895,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.97;n2=81.94;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "eA" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -926,7 +922,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.99;n2=81.96;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "eG" = (
 /obj/structure/glowshroom/glowcap,
 /obj/effect/turf_decal/darkpack/dirt{
@@ -966,7 +962,7 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.83;n2=82;co2=0.17;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "eL" = (
 /obj/structure/chair/wood/darkpack,
 /obj/effect/landmark/start/darkpack/forest_wolves/guardian,
@@ -1002,7 +998,7 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.22"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "fb" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -1019,7 +1015,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.99;n2=81.96;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "fg" = (
 /obj/structure/table/countertop/bubway,
 /obj/machinery/chem_dispenser/drinks{
@@ -1038,13 +1034,13 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "fi" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.79;n2=82;co2=0.21;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "fk" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 4
@@ -1052,7 +1048,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "fl" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
@@ -1073,7 +1069,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.22"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "fu" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 9
@@ -1116,6 +1112,11 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest/sept)
+"fE" = (
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/outside/forest/sept)
 "fK" = (
 /obj/effect/decal/coastline,
 /obj/effect/decal/coastline,
@@ -1123,7 +1124,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.99;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "fM" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -1156,7 +1157,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "fU" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -1221,7 +1222,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "ge" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -1269,7 +1270,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.84;n2=82;co2=0.16;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "gr" = (
 /obj/effect/turf_decal/darkpack/rough/corner{
 	dir = 1
@@ -1303,6 +1304,9 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
+"gE" = (
+/turf/open/water/river,
+/area/vtm/outside/forest/sept)
 "gG" = (
 /obj/effect/decal/coastline{
 	dir = 9
@@ -1327,7 +1331,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "gM" = (
 /obj/effect/turf_decal/siding,
 /turf/open/misc/beach/vamp,
@@ -1337,7 +1341,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "gU" = (
 /obj/structure/bed/dogbed,
 /turf/open/floor/wood/smooth/old,
@@ -1357,7 +1361,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "hb" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 8
@@ -1386,7 +1390,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "he" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
 /obj/effect/decal/pallet,
@@ -1397,7 +1401,7 @@
 	atom_integrity = 96.3
 	},
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "hk" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -1452,7 +1456,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "hJ" = (
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 9
@@ -1514,7 +1518,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "il" = (
 /obj/effect/turf_decal/siding/wood/dark{
 	dir = 1
@@ -1595,7 +1599,7 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.73;n2=82;co2=0.27;TEMP=293.29"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "iD" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /obj/effect/turf_decal/darkpack/cave,
@@ -1659,7 +1663,7 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "jj" = (
 /obj/item/reagent_containers/cup/glass/bottle/beer/vampire,
 /obj/item/reagent_containers/cup/glass/bottle/beer/vampire,
@@ -1723,12 +1727,12 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "ju" = (
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.92;n2=82;co2=0.08;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "jv" = (
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.17"
@@ -1778,7 +1782,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "jR" = (
 /obj/structure/chair{
 	name = "sitting rock";
@@ -1817,12 +1821,12 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ki" = (
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "kj" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 9
@@ -1837,7 +1841,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.96;n2=81.93;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "km" = (
 /obj/effect/turf_decal/siding/wood/end{
 	color = "#4a3925";
@@ -1906,12 +1910,12 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "kI" = (
 /turf/open/water/river{
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "kK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2041,7 +2045,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "lH" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
@@ -2052,7 +2056,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.73;n2=82;co2=0.27;TEMP=293.31"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "lM" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 10
@@ -2085,7 +2089,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "lT" = (
 /obj/structure/chair/plastic,
 /turf/open/floor/plating/rough/cave,
@@ -2096,7 +2100,7 @@
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "lV" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 1
@@ -2140,12 +2144,12 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=81.96;co2=0.02;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "mp" = (
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.94;n2=82;co2=0.06;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ms" = (
 /obj/item/flashlight/lantern/on{
 	dir = 1;
@@ -2155,7 +2159,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=81.94;co2=0.02;TEMP=293.69"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "mt" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -2170,7 +2174,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "mv" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
@@ -2229,7 +2233,7 @@
 /obj/effect/decal/pallet,
 /obj/effect/decal/pallet,
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "mS" = (
 /obj/structure/table/wood,
 /obj/effect/decal/pallet{
@@ -2239,7 +2243,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "mT" = (
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /turf/open/misc/beach/vamp,
@@ -2268,7 +2272,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "mY" = (
 /obj/structure/closet/crate{
 	name = "medical supplies"
@@ -2288,7 +2292,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.96;n2=81.91;co2=0.02;TEMP=293.9"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "nb" = (
 /obj/effect/decal/garou_glyph/danger{
 	alpha = 128;
@@ -2327,7 +2331,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.73;n2=82;co2=0.27;TEMP=293.31"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "nm" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 8
@@ -2387,7 +2391,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=81.95;co2=0.02;TEMP=293.51"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "nI" = (
 /obj/structure/chair/wood/darkpack{
 	dir = 8
@@ -2396,7 +2400,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "nJ" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/flare/candle/infinite,
@@ -2422,7 +2426,7 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "nQ" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -2446,7 +2450,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "nZ" = (
 /obj/structure/glowshroom/single,
 /obj/effect/realistic_fog/dense,
@@ -2466,7 +2470,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.94;n2=81.95;co2=0.05;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "oi" = (
 /obj/structure/stone_tile/slab/cracked,
 /turf/open/floor/wood/smooth/old,
@@ -2514,11 +2518,6 @@
 "ot" = (
 /obj/structure/flora/bush/style_random,
 /turf/open/floor/plating/rough/cave,
-/area/vtm/interior/forest/cave)
-"ou" = (
-/turf/open/misc/dirt{
-	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
-	},
 /area/vtm/interior/forest/cave)
 "ow" = (
 /obj/structure/table/wood,
@@ -2589,7 +2588,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "oP" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 1
@@ -2632,15 +2631,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/old,
 /area/vtm/interior/forest)
-"oX" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 10
-	},
-/turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
 "pa" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 8
@@ -2655,7 +2645,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "pd" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
 /obj/effect/turf_decal/darkpack/grass{
@@ -2668,7 +2658,7 @@
 	density = 1
 	},
 /turf/open/misc/grass,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "pg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/countertop/bubway,
@@ -2703,7 +2693,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.96;n2=81.93;co2=0.02;TEMP=293.42"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "pn" = (
 /mob/living/basic/pet/dog/wolf/kinfolk,
 /turf/open/floor/plating/rough/cave,
@@ -2728,7 +2718,7 @@
 	density = 1
 	},
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "py" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /obj/effect/turf_decal/darkpack/cave/corner{
@@ -2746,7 +2736,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "pE" = (
 /obj/effect/landmark/navigate_destination,
 /turf/open/floor/plating/concrete,
@@ -2762,7 +2752,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "pK" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 6
@@ -2806,7 +2796,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.9;n2=81.95;co2=0.09;TEMP=292.69"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "pW" = (
 /obj/structure/flora/tree/vamp/pine,
 /turf/open/misc/grass/random,
@@ -2821,13 +2811,13 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "qa" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "qb" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 10
@@ -2867,7 +2857,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "qw" = (
 /mob/living/basic/bear/vampire,
 /turf/open/floor/plating/rough/cave,
@@ -2950,7 +2940,7 @@
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.2;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "qK" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/random/bedsheet,
@@ -3009,7 +2999,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "qV" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 1
@@ -3021,7 +3011,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "qY" = (
 /obj/effect/turf_decal/darkpack/sand/corner,
 /turf/open/genturf,
@@ -3092,7 +3082,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "rl" = (
 /obj/effect/turf_decal/darkpack/rough/corner,
 /turf/open/floor/plating/rough/cave,
@@ -3159,15 +3149,6 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/sept)
-"rI" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 6
-	},
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 5
-	},
-/turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
 "rL" = (
 /turf/open/floor/iron/stairs/black{
 	dir = 4
@@ -3211,7 +3192,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "sc" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/railing,
@@ -3221,7 +3202,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.39"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "sf" = (
 /obj/effect/decal/coastline{
 	dir = 6
@@ -3229,7 +3210,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "si" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/misc/grass,
@@ -3321,7 +3302,7 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.84;n2=82;co2=0.16;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "sz" = (
 /obj/structure/closet/crate/grave/fancy,
 /obj/structure/railing/wooden_fence{
@@ -3335,7 +3316,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.22"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "sE" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 8
@@ -3419,6 +3400,11 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest/sept)
+"sY" = (
+/turf/open/misc/dirt{
+	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.17"
+	},
+/area/vtm/outside/forest/sept)
 "te" = (
 /obj/structure/flora/rock/pile/darkpack,
 /turf/open/floor/plating/rough,
@@ -3427,7 +3413,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "tg" = (
 /obj/structure/table/wood/poker,
 /turf/open/floor/plating/rough/cave,
@@ -3441,14 +3427,14 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.79;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ts" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.83;n2=82;co2=0.17;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "tt" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
@@ -3523,7 +3509,7 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.22"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "tH" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 9
@@ -3543,7 +3529,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "tL" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
@@ -3624,7 +3610,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.94;n2=82;co2=0.06;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "uh" = (
 /obj/effect/turf_decal/darkpack/grass,
 /obj/structure/chair/sofa/city_bench/wood/left{
@@ -3646,7 +3632,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "uo" = (
 /obj/structure/chair/wood/darkpack{
 	dir = 1
@@ -3658,7 +3644,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "ur" = (
 /obj/structure/closet/cabinet{
 	dir = 8
@@ -3710,7 +3696,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ux" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /obj/effect/realistic_fog/dense,
@@ -3755,7 +3741,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "uL" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 5
@@ -3833,7 +3819,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "vj" = (
 /obj/effect/decal/pallet{
 	icon_state = "under2"
@@ -3852,7 +3838,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "vk" = (
 /obj/structure/vampdoor,
 /obj/effect/turf_decal/darkpack/sand,
@@ -3882,7 +3868,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "vu" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 8
@@ -3905,7 +3891,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "vC" = (
 /obj/structure/railing/darkpack/wood{
 	dir = 5
@@ -3941,7 +3927,7 @@
 	icon_state = "under2"
 	},
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "vJ" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 1
@@ -3952,7 +3938,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "vM" = (
 /obj/structure/platform/lowwall/wood,
 /turf/open/misc/dirt,
@@ -3962,7 +3948,7 @@
 	dir = 8
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "vP" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 1
@@ -3981,7 +3967,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "vS" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -4071,7 +4057,7 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.73;n2=82;co2=0.27;TEMP=293.31"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "wk" = (
 /obj/structure/bonfire/prelit/alt2{
 	density = 1
@@ -4079,7 +4065,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.98;n2=81.93;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "wl" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 4
@@ -4107,7 +4093,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "wp" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/blood,
@@ -4129,12 +4115,12 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "wy" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "wA" = (
 /obj/effect/turf_decal/darkpack/grass,
 /obj/effect/decal/garou_glyph/watch,
@@ -4182,7 +4168,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "wP" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 1
@@ -4207,7 +4193,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.88;n2=82;co2=0.12;TEMP=293.23"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "wT" = (
 /obj/structure/flora/tree/jungle{
 	pixel_x = -44;
@@ -4243,7 +4229,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "xa" = (
 /obj/effect/turf_decal/siding/wood/dark{
 	dir = 5
@@ -4264,7 +4250,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "xe" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
@@ -4278,7 +4264,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "xg" = (
 /obj/machinery/vending/boozeomat/syndicate{
 	dir = 1
@@ -4310,7 +4296,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "xp" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -4327,16 +4313,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
-"xr" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 9
-	},
-/turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "xs" = (
 /obj/effect/realistic_fog,
 /turf/open/floor/plating/rough/cave,
@@ -4350,7 +4327,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "xu" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt{
@@ -4370,7 +4347,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "xw" = (
 /obj/item/toy/beach_ball,
 /turf/open/misc/beach/vamp,
@@ -4434,7 +4411,7 @@
 	dir = 10;
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "xP" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 6
@@ -4466,7 +4443,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "xY" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /obj/structure/flora/tree/jungle,
@@ -4543,14 +4520,14 @@
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ys" = (
 /obj/structure/table/wood,
 /obj/effect/decal/pallet,
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "yu" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 9
@@ -4572,7 +4549,7 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "yA" = (
 /obj/effect/turf_decal/darkpack/rough/corner,
 /obj/structure/glowshroom/glowcap,
@@ -4582,7 +4559,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.96;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "yD" = (
 /obj/effect/decal/coastline{
 	dir = 4
@@ -4591,7 +4568,7 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.97;n2=81.9;TEMP=292.81"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "yE" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 4
@@ -4606,14 +4583,14 @@
 	dir = 1
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "yL" = (
 /obj/structure/chair/stool/bar/darkpack/red,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "yN" = (
 /obj/item/flashlight/lantern/on{
 	dir = 1;
@@ -4626,13 +4603,13 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "yP" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.92;n2=81.95;co2=0.07;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "yQ" = (
 /obj/fusebox,
 /turf/open/floor/wood/smooth/old,
@@ -4654,11 +4631,6 @@
 	},
 /turf/open/floor/wood/rough,
 /area/vtm/outside/forest)
-"yX" = (
-/turf/open/misc/grass/random/grass{
-	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.17"
-	},
-/area/vtm/interior/forest/cave)
 "yY" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 1
@@ -4670,7 +4642,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "zc" = (
 /turf/open/floor/plating/rough/cave,
 /area/vtm/outside/forest)
@@ -4728,6 +4700,11 @@
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"zv" = (
+/turf/open/misc/dirt{
+	initial_gas_mix = "o2=21.96;n2=82;co2=0.04;TEMP=293.17"
+	},
+/area/vtm/outside/forest/sept)
 "zx" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
@@ -4740,23 +4717,18 @@
 /turf/open/water/river{
 	dir = 10
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "zz" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 1
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
-"zA" = (
-/turf/open/misc/grass/random/grass{
-	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
-	},
-/area/vtm/interior/forest/cave)
 "zD" = (
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.71;n2=82;co2=0.29;TEMP=293.32"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "zF" = (
 /mob/living/basic/pet/dog/wolf/kinfolk/black{
 	name = "Nightshade";
@@ -4780,7 +4752,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.96;n2=81.92;co2=0.02;TEMP=293.58"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "zN" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -4811,7 +4783,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "zW" = (
 /obj/structure/platform/lowwall/wood,
 /obj/structure/lectern{
@@ -4827,7 +4799,7 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "zZ" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/misc/dirt,
@@ -4843,7 +4815,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ae" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 1
@@ -4857,13 +4829,13 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Al" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "An" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -4899,7 +4871,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "AB" = (
 /mob/living/basic/pet/dog/wolf/kinfolk,
 /turf/open/misc/grass/random/grass,
@@ -4929,7 +4901,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.2;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "AJ" = (
 /obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/vamp,
@@ -4965,7 +4937,7 @@
 /obj/structure/table/wood,
 /obj/effect/decal/pallet,
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "AZ" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/cave{
@@ -5002,7 +4974,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Bj" = (
 /obj/effect/turf_decal/darkpack/sand,
 /turf/open/floor/plating/rough,
@@ -5056,7 +5028,7 @@
 	pixel_y = -1
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "BC" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
@@ -5109,7 +5081,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "BI" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
@@ -5180,7 +5152,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ca" = (
 /obj/machinery/griddle,
 /turf/open/floor/wood/smooth/old,
@@ -5192,7 +5164,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Cc" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -5206,7 +5178,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Cj" = (
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating/rough/cave,
@@ -5257,7 +5229,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Cu" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 5
@@ -5375,14 +5347,14 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Df" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Dl" = (
 /obj/structure/railing/darkpack/wood/ending{
 	dir = 9;
@@ -5409,7 +5381,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Dq" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -5429,14 +5401,14 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.93;n2=81.93;co2=0.05;TEMP=293.41"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "DD" = (
 /obj/structure/railing/darkpack/wood,
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "DE" = (
 /obj/structure/flora/bush/sparsegrass/style_random{
 	icon_state = "sparsegrass_2"
@@ -5444,7 +5416,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "DG" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 4
@@ -5469,7 +5441,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "DT" = (
 /turf/open/floor/wood/rough,
 /area/vtm/outside/forest)
@@ -5492,7 +5464,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "DX" = (
 /obj/structure/bonfire/prelit/alt2{
 	density = 1
@@ -5500,7 +5472,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "DZ" = (
 /obj/effect/decal/coastline/corner{
 	dir = 8
@@ -5519,7 +5491,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ef" = (
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /turf/open/genturf,
@@ -5569,7 +5541,10 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.84;n2=82;co2=0.16;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
+"Er" = (
+/turf/open/misc/dirt,
+/area/vtm/interior/forest/sept)
 "Ew" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 8
@@ -5587,13 +5562,18 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "EC" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
+"ED" = (
+/turf/open/misc/dirt{
+	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
+	},
+/area/vtm/outside/forest/sept)
 "EE" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 8
@@ -5632,7 +5612,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.92;n2=82;co2=0.09;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ES" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/effect/turf_decal/darkpack/dirt,
@@ -5648,7 +5628,7 @@
 /turf/open/water/river{
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "EX" = (
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/sept)
@@ -5659,12 +5639,12 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Fb" = (
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=81.94;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Fc" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -5682,7 +5662,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Fh" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/cave/corner{
@@ -5699,15 +5679,6 @@
 "Fk" = (
 /obj/effect/turf_decal/darkpack/rough/corner,
 /turf/open/water/river,
-/area/vtm/interior/forest/cave)
-"Fl" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 5
-	},
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 9
-	},
-/turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "Fm" = (
 /obj/effect/turf_decal/darkpack/cave{
@@ -5729,17 +5700,17 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.86;n2=82;co2=0.14;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Fs" = (
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ft" = (
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Fu" = (
 /obj/transfer_point_vamp/forest/north/four,
 /turf/open/floor/plating/rough,
@@ -5791,7 +5762,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.46"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "FN" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 4
@@ -5819,7 +5790,7 @@
 	icon_state = "fullgrass_3"
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "FU" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -5875,13 +5846,13 @@
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.86;n2=82;co2=0.14;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Gi" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.79;n2=82;co2=0.21;TEMP=293.29"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Gj" = (
 /mob/living/basic/pet/dog/wolf/kinfolk/ginger{
 	name = "Gingerpaw";
@@ -5920,7 +5891,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.84;n2=82;co2=0.16;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Gr" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 10
@@ -5931,7 +5902,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Gw" = (
 /obj/effect/turf_decal/siding/wood/dark{
 	dir = 10
@@ -5961,7 +5932,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "GD" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -5975,7 +5946,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=81.94;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "GI" = (
 /obj/structure/bonfire/prelit/alt2{
 	density = 1
@@ -5983,7 +5954,12 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
+"GJ" = (
+/turf/open/misc/dirt{
+	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.19"
+	},
+/area/vtm/outside/forest/sept)
 "GL" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 9
@@ -6023,11 +5999,7 @@
 /turf/open/water/river{
 	initial_gas_mix = "o2=21.99;n2=81.97;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
-"GW" = (
-/obj/structure/railing/darkpack/wood,
-/turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Hc" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 6
@@ -6114,7 +6086,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Ho" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -6138,7 +6110,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Hu" = (
 /obj/effect/decal/kopatich{
 	pixel_x = 12
@@ -6157,13 +6129,13 @@
 	dir = 1
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Hx" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.97;n2=81.95;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Hz" = (
 /obj/structure/bed/dogbed,
 /turf/open/misc/dirt,
@@ -6190,7 +6162,7 @@
 	density = 1
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "HD" = (
 /obj/structure/flora/rock/darkpack,
 /turf/open/floor/plating/rough,
@@ -6246,7 +6218,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "HX" = (
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
@@ -6274,7 +6246,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ih" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 1
@@ -6307,7 +6279,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ip" = (
 /obj/item/flashlight/flare/candle/infinite,
 /obj/effect/turf_decal/darkpack/rough/corner{
@@ -6385,7 +6357,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "IO" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/rough/cave,
@@ -6404,7 +6376,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "IR" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -6430,7 +6402,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.45"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "IV" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 6
@@ -6441,7 +6413,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.99;n2=81.97;TEMP=292.75"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "IZ" = (
 /turf/open/misc/grass/random/bushes,
 /area/vtm/outside/forest)
@@ -6461,12 +6433,12 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ji" = (
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.23"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Jl" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 8
@@ -6477,7 +6449,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.92;n2=81.95;co2=0.07;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Jo" = (
 /obj/structure/table/wood,
 /obj/effect/decal/pallet,
@@ -6521,7 +6493,7 @@
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Jz" = (
 /obj/structure/glowshroom,
 /turf/open/floor/plating/rough,
@@ -6545,14 +6517,14 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "JH" = (
 /obj/structure/chair/stool/bar/darkpack/red,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.74;n2=82;co2=0.26;TEMP=293.3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "JJ" = (
 /obj/structure/flora/rock/darkpack_big,
 /turf/open/misc/grass,
@@ -6584,15 +6556,6 @@
 	item_chair = null
 	},
 /turf/open/floor/plating/rough/cave,
-/area/vtm/interior/forest/cave)
-"JT" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 10
-	},
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 6
-	},
-/turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "JU" = (
 /obj/effect/decal/garou_glyph/danger{
@@ -6635,7 +6598,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Kc" = (
 /obj/structure/lamppost/sidewalk,
 /obj/effect/turf_decal/bordur{
@@ -6665,7 +6628,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Kg" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 1
@@ -6709,7 +6672,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.48"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ky" = (
 /obj/effect/decal/pallet{
 	pixel_x = -6;
@@ -6720,7 +6683,7 @@
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.79;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Kz" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 4
@@ -6735,7 +6698,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.65;n2=82;co2=0.35;TEMP=293.32"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "KD" = (
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /obj/structure/bonfire/torch,
@@ -6791,7 +6754,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "KV" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 10
@@ -6810,7 +6773,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ld" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 4
@@ -6830,7 +6793,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Lg" = (
 /obj/structure/bonfire/prelit/alt2{
 	density = 1
@@ -6838,13 +6801,13 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.22"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Lj" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Lq" = (
 /obj/effect/decal/pallet,
 /obj/structure/table/wood,
@@ -6873,7 +6836,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Lz" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 4
@@ -6909,7 +6872,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.96;n2=81.91;co2=0.02;TEMP=294.08"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "LK" = (
 /turf/open/floor/iron/stairs/black{
 	dir = 8
@@ -6947,7 +6910,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "LV" = (
 /turf/open/floor/plating/rough/cave,
 /area/vtm/interior/forest/sept)
@@ -6972,7 +6935,7 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.97;n2=81.95;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ma" = (
 /obj/effect/decal/coastline{
 	dir = 9
@@ -6981,7 +6944,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Md" = (
 /obj/structure/closet/crate/grave/fancy,
 /turf/open/misc/dirt,
@@ -7010,7 +6973,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.97;n2=81.95;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ml" = (
 /obj/structure/railing/darkpack/wood{
 	dir = 5
@@ -7078,7 +7041,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "MA" = (
 /obj/effect/decal/coastline{
 	dir = 4
@@ -7111,7 +7074,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "MI" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 9
@@ -7122,13 +7085,13 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=81.95;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "MK" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "MM" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/closet/crate/large,
@@ -7159,7 +7122,7 @@
 /turf/open/water/river{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.62"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "MW" = (
 /obj/effect/landmark/start/darkpack/forest_wolves/council,
 /obj/effect/realistic_fog/dense,
@@ -7220,7 +7183,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.95;n2=81.96;co2=0.04;TEMP=293.55"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Nn" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
@@ -7228,7 +7191,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "No" = (
 /obj/effect/turf_decal/siding/wood/dark{
 	dir = 10
@@ -7249,7 +7212,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Nv" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 9
@@ -7329,7 +7292,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "NQ" = (
 /obj/structure/chair/plastic/darkpack,
 /obj/effect/turf_decal/darkpack/dirt{
@@ -7348,7 +7311,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "NW" = (
 /turf/closed/indestructible/the_matrix,
 /area/vtm/outside/forest/sept)
@@ -7359,7 +7322,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "NY" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 1
@@ -7397,7 +7360,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Oi" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/rough/cave{
@@ -7432,7 +7395,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Os" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -7457,7 +7420,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Oz" = (
 /obj/structure/stone_tile/slab/burnt,
 /obj/structure/railing,
@@ -7478,7 +7441,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "OF" = (
 /obj/effect/decal/coastline,
 /turf/open/misc/beach/vamp,
@@ -7627,7 +7590,7 @@
 	icon_state = "cave5";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "PG" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 8
@@ -7643,7 +7606,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "PJ" = (
 /obj/structure/chair{
 	name = "sitting rock";
@@ -7659,7 +7622,7 @@
 /turf/open/misc/beach/vamp{
 	dir = 9
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "PL" = (
 /obj/effect/turf_decal/darkpack/sand/corner{
 	dir = 8
@@ -7711,7 +7674,7 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.98;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "PY" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 5
@@ -7775,7 +7738,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Qt" = (
 /obj/effect/turf_decal/darkpack/grass,
 /obj/effect/turf_decal/darkpack/dirt{
@@ -7791,7 +7754,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=81.94;co2=0.02;TEMP=293.69"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Qx" = (
 /obj/effect/decal/coastline{
 	dir = 1
@@ -7800,7 +7763,7 @@
 	dir = 10;
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Qy" = (
 /obj/effect/decal/coastline{
 	dir = 5
@@ -7815,13 +7778,13 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.98;n2=81.93;TEMP=293.05"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "QB" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.2;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "QC" = (
 /obj/structure/chair/wood/darkpack{
 	dir = 8
@@ -7830,7 +7793,7 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.9;n2=82;co2=0.1;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "QG" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 10
@@ -7848,7 +7811,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.99;n2=82;co2=0.01;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "QJ" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -7896,7 +7859,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.99;n2=81.96;TEMP=293.58"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ra" = (
 /obj/effect/turf_decal/siding/wood/dark{
 	dir = 8
@@ -7947,7 +7910,7 @@
 "Rj" = (
 /obj/effect/decal/coastline,
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Rk" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 10
@@ -7964,7 +7927,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.91;n2=82;co2=0.09;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Rp" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/structure/ladder/rope/upwards,
@@ -7997,7 +7960,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.2;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Rx" = (
 /obj/effect/turf_decal/bordur{
 	dir = 1
@@ -8049,16 +8012,11 @@
 /obj/structure/flora/rock/pile/darkpack,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
-"RL" = (
-/turf/open/misc/grass/random/grass{
-	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.17"
-	},
-/area/vtm/interior/forest/cave)
 "RN" = (
 /turf/open/water/river{
 	initial_gas_mix = "o2=21.99;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "RO" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /obj/effect/turf_decal/darkpack/grass/corner{
@@ -8104,7 +8062,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.73;n2=82;co2=0.27;TEMP=293.31"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "RX" = (
 /obj/structure/flora/rock/darkpack,
 /turf/open/misc/grass,
@@ -8114,7 +8072,7 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.2;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Sb" = (
 /obj/effect/turf_decal/darkpack/rough/corner{
 	dir = 1
@@ -8188,7 +8146,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Sz" = (
 /obj/structure/bonfire/prelit{
 	pixel_y = -24;
@@ -8210,7 +8168,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.11;TEMP=293.21"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "SE" = (
 /obj/structure/flora/rock/darkpack,
 /turf/open/misc/dirt,
@@ -8227,7 +8185,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=81.95;co2=0.02;TEMP=293.64"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "SK" = (
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
@@ -8247,13 +8205,13 @@
 	icon_state = "cave7";
 	initial_gas_mix = "o2=21.89;n2=82;co2=0.12;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "SQ" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "SR" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 10
@@ -8278,7 +8236,7 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "SV" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 8
@@ -8292,19 +8250,6 @@
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
-"SY" = (
-/obj/effect/turf_decal/darkpack/sand/corner,
-/obj/effect/turf_decal/darkpack/sand/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/darkpack/sand/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/darkpack/sand/corner{
-	dir = 1
-	},
-/turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
 "Ta" = (
 /obj/effect/decal/coastline{
 	dir = 8
@@ -8312,7 +8257,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand2"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Tb" = (
 /obj/structure/closet/crate/large,
 /turf/open/misc/dirt,
@@ -8322,7 +8267,7 @@
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.79;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Tf" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -8364,7 +8309,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "To" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 4
@@ -8393,7 +8338,7 @@
 /turf/open/water/river{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Tz" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/vampire/coat/alt,
@@ -8452,7 +8397,7 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.71;n2=82;co2=0.29;TEMP=293.3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "TQ" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
 /turf/open/misc/dirt,
@@ -8498,7 +8443,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ue" = (
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /obj/effect/turf_decal/darkpack/grass,
@@ -8597,7 +8542,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "UP" = (
 /turf/open/misc/grass/random,
 /area/vtm/outside/forest/sept)
@@ -8651,13 +8596,13 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Vh" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave2";
 	initial_gas_mix = "o2=21.85;n2=82;co2=0.15;TEMP=293.24"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Vj" = (
 /turf/cordon,
 /area/misc/cordon)
@@ -8682,13 +8627,13 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Vr" = (
 /obj/structure/flora/bush/sparsegrass/style_random{
 	icon_state = "sparsegrass_2"
 	},
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Vu" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/plating/rough/cave,
@@ -8783,7 +8728,7 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Wf" = (
 /obj/effect/realistic_fog/dense,
 /turf/open/floor/plating/rough/cave,
@@ -8799,7 +8744,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.99;n2=81.94;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Wi" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
@@ -8862,13 +8807,13 @@
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "WG" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3";
 	initial_gas_mix = "o2=21.81;n2=82;co2=0.19;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "WH" = (
 /obj/structure/chair/darkpack/green{
 	dir = 8
@@ -8888,7 +8833,7 @@
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.19"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "WN" = (
 /obj/structure/flora/bush/style_random,
 /turf/open/misc/dirt,
@@ -8909,13 +8854,13 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.98;n2=82;co2=0.02;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "WS" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "WW" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
@@ -8927,7 +8872,7 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand4"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "WY" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 8
@@ -8956,13 +8901,13 @@
 /turf/open/misc/dirt{
 	initial_gas_mix = "o2=21.96;n2=82;co2=0.02;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Xd" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.18"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Xh" = (
 /turf/closed/wall/vampwall/city,
 /area/vtm/interior/forest/cave)
@@ -9052,7 +8997,7 @@
 /turf/open/misc/beach/vamp{
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "XN" = (
 /obj/structure/flora/rock/pile/darkpack,
 /turf/open/misc/beach/vamp,
@@ -9067,13 +9012,13 @@
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.78;n2=82;co2=0.22;TEMP=293.28"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "XU" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave6";
 	initial_gas_mix = "o2=21.73;n2=82;co2=0.27;TEMP=293.31"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "XV" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 1
@@ -9096,13 +9041,13 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ya" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand2";
 	initial_gas_mix = "o2=21.95;n2=82;co2=0.05;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Yd" = (
 /obj/structure/railing/darkpack/wood{
 	dir = 1
@@ -9147,7 +9092,7 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.99;n2=81.95;TEMP=293.15"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "Ys" = (
 /obj/effect/realistic_fog/dense,
 /turf/open/floor/plating/rough,
@@ -9180,7 +9125,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.82;n2=82;co2=0.18;TEMP=293.25"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "YC" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 9
@@ -9227,7 +9172,7 @@
 	icon_state = "sand4";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "YN" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -9241,7 +9186,7 @@
 /turf/open/misc/beach/vamp{
 	dir = 10
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "YR" = (
 /obj/machinery/hydroponics/simple/wooden,
 /turf/open/misc/grass,
@@ -9270,7 +9215,7 @@
 	icon_state = "fullgrass_3"
 	},
 /turf/open/misc/beach/vamp,
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "YY" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 8
@@ -9330,7 +9275,7 @@
 /turf/open/floor/plating/rough/cave{
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.21;TEMP=293.27"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "Zn" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 10
@@ -9363,7 +9308,7 @@
 	icon_state = "sand3";
 	initial_gas_mix = "o2=21.97;n2=82;co2=0.04;TEMP=293.16"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "ZA" = (
 /obj/item/toy/plush/goatplushie{
 	name = "horribly shredded goat plushie";
@@ -9407,15 +9352,6 @@
 	},
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/forest)
-"ZH" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 9
-	},
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 5
-	},
-/turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
 "ZJ" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -9436,7 +9372,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ZP" = (
 /obj/item/flashlight/lantern/on{
 	dir = 1;
@@ -9446,13 +9382,13 @@
 /turf/open/misc/grass/random/grass{
 	initial_gas_mix = "o2=21.93;n2=82;co2=0.07;TEMP=293.17"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/outside/forest/sept)
 "ZT" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave4";
 	initial_gas_mix = "o2=21.8;n2=82;co2=0.2;TEMP=293.26"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/forest/sept)
 "ZY" = (
 /obj/effect/decal/garou_glyph/caern,
 /obj/effect/turf_decal/darkpack/cave{
@@ -40188,7 +40124,7 @@ Rc
 Kq
 Kq
 EH
-Iv
+Er
 yB
 xo
 EH
@@ -40979,7 +40915,7 @@ EH
 EH
 DX
 Al
-Iv
+Er
 vL
 yB
 xo
@@ -41572,7 +41508,7 @@ EH
 EH
 DX
 Al
-Iv
+Er
 vL
 yB
 xo
@@ -42165,7 +42101,7 @@ EH
 EH
 DX
 Al
-Iv
+Er
 vL
 yB
 xo
@@ -42758,7 +42694,7 @@ EH
 EH
 DX
 Al
-Iv
+Er
 vL
 yB
 xo
@@ -42941,12 +42877,12 @@ ZN
 ZN
 ZN
 EH
-ZN
-HX
+fE
+LP
 Qw
 Qw
 Qw
-HX
+LP
 EH
 EH
 EH
@@ -43138,14 +43074,14 @@ EH
 ZN
 ZN
 ZN
-kd
-kd
-HX
+bA
+bA
+LP
 Qw
 ms
 Qw
 Qw
-zA
+ln
 EH
 EH
 EH
@@ -43335,10 +43271,10 @@ EH
 EH
 ZN
 ZN
-kd
-kd
-kd
-kd
+bA
+bA
+bA
+bA
 Qw
 Qw
 Qw
@@ -43532,10 +43468,10 @@ EH
 EH
 EH
 EH
-kd
-kd
-kd
-kd
+bA
+bA
+bA
+bA
 wy
 za
 dV
@@ -43543,14 +43479,14 @@ zR
 Cb
 XZ
 ZP
-yX
+jv
 EH
 EH
 EH
 EH
 Al
 qW
-Iv
+Er
 Nn
 jQ
 EH
@@ -43730,15 +43666,15 @@ EH
 EH
 EH
 EH
-kd
-kd
-kd
+bA
+bA
+bA
 Vp
-CL
+mf
 Dp
 BZ
 EC
-CL
+mf
 zR
 Vp
 wW
@@ -43929,27 +43865,27 @@ EH
 EH
 EH
 Qw
-HX
+LP
 tf
 xt
-CL
-CL
-xr
-CL
+mf
+mf
+iA
+mf
 BZ
 Ac
 UH
 Rl
-Gs
+Ko
 Vr
-cz
-vz
-Iv
-Iv
-yB
-yB
-HX
-HX
+ED
+AC
+Rc
+Rc
+zv
+zv
+LP
+LP
 EH
 EH
 EH
@@ -44125,30 +44061,30 @@ EH
 EH
 EH
 EH
-HX
+LP
 Qw
-zA
+ln
 za
 tf
 Dp
-Fl
-SY
-JT
+tM
+cj
+sX
 BZ
 Lw
 Xd
 Vf
-Bh
-Bh
-Bh
-Iv
-qW
+ey
+ey
+ey
+Rc
+Au
 cK
-qW
-RL
-HX
+Au
+fy
+LP
 dR
-HX
+LP
 EH
 EH
 EH
@@ -44323,31 +44259,31 @@ EH
 EH
 EH
 EH
-HX
+LP
 Qw
-HX
+LP
 wy
-CL
+mf
 Dp
-CL
-rI
-CL
+mf
+vW
+mf
 BZ
 bg
 DD
 Vf
 px
-ew
-Gs
-vz
-Bh
+Kq
+Ko
+AC
+ey
 cK
-qW
+Au
 up
 pe
-HX
-HX
-HX
+LP
+LP
+LP
 EH
 EH
 Sx
@@ -44532,20 +44468,20 @@ Dp
 Dp
 Ya
 yx
-GW
-RL
-Bh
+Qv
+fy
+ey
 AX
-Iv
-qW
-RL
+Rc
+Au
+fy
 cK
-ew
+Kq
 sd
-Bh
-HX
-HX
-ew
+ey
+LP
+LP
+Kq
 EH
 Xb
 ER
@@ -44719,7 +44655,7 @@ EH
 EH
 EH
 EH
-HX
+LP
 Qw
 Uc
 Bz
@@ -44732,19 +44668,19 @@ Dp
 yN
 WX
 rZ
-zA
+ln
 vH
-vz
+AC
 cK
-RL
-RL
-ew
-ew
-vL
-Gs
-vz
-qW
-ew
+fy
+fy
+Kq
+Kq
+iF
+Ko
+AC
+Au
+Kq
 Gs
 ju
 Gq
@@ -44917,11 +44853,11 @@ EH
 EH
 EH
 EH
-HX
+LP
 Qw
 Qw
 tf
-CL
+mf
 Dp
 BZ
 Dp
@@ -44932,15 +44868,15 @@ XM
 rZ
 Hr
 mP
-Ay
-Iv
-RL
-RL
-RL
-qW
-Kb
-qW
-ew
+sY
+Rc
+fy
+fy
+fy
+Au
+GJ
+Au
+Kq
 cK
 cK
 Ji
@@ -45130,18 +45066,18 @@ hd
 rZ
 tJ
 ys
-Gs
-Ay
-RL
-RL
-ew
-Iv
-vz
-qW
-vL
-Gs
+Ko
+sY
+fy
+fy
+Kq
+Rc
+AC
+Au
+iF
+Ko
 cK
-Iv
+Er
 uf
 Gg
 vR
@@ -45326,15 +45262,15 @@ fR
 Ya
 Qs
 ki
-Bh
+ey
 vH
-ou
-vL
-RL
-Iv
-ew
-Iv
-vL
+nR
+iF
+fy
+Rc
+Kq
+Rc
+iF
 tJ
 DW
 bY
@@ -45513,29 +45449,29 @@ EH
 EH
 Qw
 ms
-HX
-CL
+LP
+mf
 fR
 Dp
-CL
-dm
-CL
+mf
+Qe
+mf
 fR
 Ya
 IN
 gd
 px
-Bh
-Gs
-qW
-Iv
-Gs
-Gs
+ey
+Ko
+Au
+Rc
+Ko
+Ko
 px
-RL
-RL
+fy
+fy
 dR
-zA
+ln
 EH
 EH
 em
@@ -45711,29 +45647,29 @@ EH
 EH
 Qw
 Qw
-HX
+LP
 tf
 nX
 Dp
-ZH
-SY
-oX
+pL
+cj
+Ne
 fR
 Ya
 Ya
 xf
-Bh
-Iv
-vL
-Ay
-Iv
+ey
+Rc
+iF
+sY
+Rc
 hj
-Iv
-zA
-RL
-zA
+Rc
+ln
+fy
+ln
 Jd
-RL
+fy
 EH
 eX
 ai
@@ -45909,29 +45845,29 @@ EH
 EH
 Qw
 Qw
-HX
-CL
-CL
+LP
+mf
+mf
 fR
-CL
-rI
-CL
+mf
+vW
+mf
 yx
 wy
 MK
 Vf
-ou
-Ay
-Kb
-ou
-Iv
-Iv
-qW
-HX
-RL
-RL
-RL
-RL
+nR
+sY
+GJ
+nR
+Rc
+Rc
+Au
+LP
+fy
+fy
+fy
+fy
 EH
 EH
 sD
@@ -46110,7 +46046,7 @@ Qw
 Qw
 Qw
 lP
-CL
+mf
 fR
 Ya
 wy
@@ -46118,18 +46054,18 @@ bg
 Lj
 Ya
 wO
-ou
-Iv
-Iv
-Gs
-ou
-Iv
+nR
+Rc
+Rc
+Ko
+nR
+Rc
 Hr
-zA
-RL
-RL
-RL
-RL
+ln
+fy
+fy
+fy
+fy
 EH
 EH
 tG
@@ -46302,7 +46238,7 @@ EH
 EH
 EH
 EH
-HX
+LP
 Qw
 Qw
 Qw
@@ -46315,19 +46251,19 @@ kk
 kk
 yP
 IQ
-zA
-ew
-Iv
+ln
+Kq
+Rc
 hj
 zM
-vL
-Gs
-Gs
-HX
+iF
+Ko
+Ko
+LP
 EY
-HX
-RL
-RL
+LP
+fy
+fy
 EH
 Lg
 fo
@@ -46507,25 +46443,25 @@ Qw
 Fb
 Qw
 Ft
-zA
+ln
 ri
-zA
+ln
 DC
 Qw
 Qw
 Uc
 px
-qW
+Au
 cK
 zM
 zM
-Ay
-cz
+sY
+ED
 px
-HX
+LP
 DE
-HX
-RL
+LP
+fy
 EH
 EH
 fo
@@ -46711,19 +46647,19 @@ Qw
 Qw
 Qw
 Qw
-HX
-HX
-Gs
+LP
+LP
+Ko
 Fs
-Gs
+Ko
 zM
 zM
-cz
+ED
 hj
-ew
+Kq
 ki
-HX
-RL
+LP
+fy
 EH
 EH
 EH
@@ -46904,24 +46840,24 @@ Ft
 Qw
 Kx
 Qw
-zA
-HX
-zA
+ln
+LP
+ln
 Qw
 Qw
 SJ
 nG
-HX
-ew
-ew
+LP
+Kq
+Kq
 zM
-ew
-ew
-RL
-HX
-HX
-HX
-RL
+Kq
+Kq
+fy
+LP
+LP
+LP
+fy
 EH
 EH
 EH
@@ -47111,15 +47047,15 @@ bN
 zM
 zM
 pV
-Gs
+Ko
 Fg
 Fg
-vL
-RL
-RL
-RL
-HX
-RL
+iF
+fy
+fy
+fy
+LP
+fy
 EH
 EH
 EH
@@ -47300,10 +47236,10 @@ zM
 qU
 wy
 za
-CL
+mf
 tf
 qa
-CL
+mf
 wy
 Wh
 SQ
@@ -47312,13 +47248,13 @@ Nm
 SU
 SU
 LT
-Iv
-RL
-RL
+Rc
+fy
+fy
 ii
-zA
-RL
-RL
+ln
+fy
+fy
 EH
 EH
 EH
@@ -47511,16 +47447,16 @@ DQ
 DQ
 df
 Ox
-zA
-RL
-RL
-RL
-RL
-RL
-RL
-RL
-RL
-RL
+ln
+fy
+fy
+fy
+fy
+fy
+fy
+fy
+fy
+fy
 EH
 EH
 EH
@@ -47710,17 +47646,17 @@ DQ
 Ec
 wy
 nX
-HX
-RL
-RL
-RL
-RL
-RL
-RL
-RL
-RL
-RL
-RL
+LP
+fy
+fy
+fy
+fy
+fy
+fy
+fy
+fy
+fy
+fy
 EH
 EH
 EH
@@ -47895,9 +47831,9 @@ oe
 LZ
 bs
 xO
-FK
-FK
-FK
+gE
+gE
+gE
 EU
 WL
 We
@@ -47908,17 +47844,17 @@ za
 MK
 nX
 HC
-RL
-RL
-RL
-RL
-RL
-RL
-RL
-kd
-kd
-RL
-RL
+fy
+fy
+fy
+fy
+fy
+fy
+fy
+bA
+bA
+fy
+fy
 EH
 EH
 EH
@@ -48092,9 +48028,9 @@ Hx
 yP
 Qx
 GV
-FK
-FK
-FK
+gE
+gE
+gE
 EU
 EU
 zy
@@ -48107,17 +48043,17 @@ IT
 vO
 Hw
 nX
-RL
-RL
-RL
-RL
-RL
-kd
-kd
-kd
-kd
-kd
-RL
+fy
+fy
+fy
+fy
+fy
+bA
+bA
+bA
+bA
+bA
+fy
 EH
 EH
 EH
@@ -48296,26 +48232,26 @@ jt
 kI
 EU
 EU
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
 MR
 pZ
 nX
 pm
-RL
+fy
 IW
-RL
-kd
-kd
-kd
-kd
-kd
-kd
-RL
+fy
+bA
+bA
+bA
+bA
+bA
+bA
+fy
 EH
 EH
 EH
@@ -48493,27 +48429,27 @@ wk
 wo
 RN
 EU
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
 Tv
-FK
-FK
+gE
+gE
 Rj
 BZ
-RL
-RL
-RL
-RL
-kd
-kd
-kd
+fy
+fy
+fy
+fy
+bA
+bA
+bA
 pe
-kd
-kd
-RL
+bA
+bA
+fy
 EH
 EH
 EH
@@ -48685,33 +48621,33 @@ gO
 wy
 Dp
 yH
-FK
+gE
 PX
 ez
 GF
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 FL
 nX
 nX
-RL
-RL
-RL
-kd
-kd
-kd
-kd
-kd
-kd
-RL
+fy
+fy
+fy
+bA
+bA
+bA
+bA
+bA
+bA
+fy
 EH
 EH
 EH
@@ -48883,33 +48819,33 @@ vi
 BZ
 DQ
 YM
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
 sf
 cC
 WQ
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
 FR
 Oh
 nX
 nX
-RL
+fy
 EH
-RL
-kd
-kd
-kd
-kd
-kd
-RL
+fy
+bA
+bA
+bA
+bA
+bA
+fy
 EH
 EH
 EH
@@ -49081,20 +49017,20 @@ gO
 gO
 qr
 pI
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
 eq
 GI
 yH
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
 bB
 vt
 Ct
@@ -49102,11 +49038,11 @@ nX
 nX
 EH
 EH
-RL
-kd
-kd
-kd
-RL
+fy
+bA
+bA
+bA
+fy
 EH
 EH
 EH
@@ -49278,33 +49214,33 @@ Lc
 Lc
 Lc
 Cd
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
 Tv
 YP
 fh
 Ma
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
 EB
 vt
 Ig
 nX
 EH
 EH
-RL
-RL
-RL
-RL
-RL
+fy
+fy
+fy
+fy
+fy
 EH
 EH
 EH
@@ -49472,36 +49408,36 @@ EH
 EH
 EH
 EH
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 EB
 bs
 bs
 EH
 EH
 EH
-RL
-RL
-RL
+fy
+fy
+fy
 EH
 EH
 EH
@@ -49670,30 +49606,30 @@ EH
 EH
 EH
 EH
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
 Tv
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
-FK
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
+gE
 EH
 EH
 EH
