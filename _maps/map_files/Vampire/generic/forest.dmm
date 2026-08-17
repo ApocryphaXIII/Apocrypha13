@@ -2586,8 +2586,8 @@
 /obj/transfer_point_vamp/forest/pentex,
 /obj/effect/mapping_helpers/deleter{
 	objs_to_del = list(/obj/effect/decal/garou_glyph/toxic, /obj/transfer_point_vamp/forest/pentex);
-	chance_to_del = 66;
-	name = "Delete Pentex POI and Garou Glyph 66 chance"
+	chance_to_del = 75;
+	name = "Delete Pentex POI and Garou Glyph 75 chance"
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
