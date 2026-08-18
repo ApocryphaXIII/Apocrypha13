@@ -14,7 +14,7 @@ SUBSYSTEM_DEF(ticker)
 	/// or a "round-ending" event, like summoning Nar'Sie, a blob victory, the nuke going off, etc. ([FORCE_END_ROUND])
 	var/force_ending = END_ROUND_AS_NORMAL
 	/// If TRUE, there is no lobby phase, the game starts immediately.
-	#ifdef ABSOLUTE_MINIMUM
+	#ifdef AUTOSTART_GAME
 	var/start_immediately = TRUE
 	#else
 	var/start_immediately = FALSE
@@ -153,12 +153,17 @@ SUBSYSTEM_DEF(ticker)
 						++total_admins_ready
 
 			// APOC EDIT ADD START - (delay if no admins)
-			if(CONFIG_GET(flag/delay_if_no_admins))
+			if(CONFIG_GET(number/delay_if_no_admins))
 				if(timeLeft <= 600 && timeLeft > -1)
-					if(length(GLOB.admins) <= 0)
+					var/important_admins_on = 0
+					for(var/client/online_admin as anything in GLOB.admins)
+						if(online_admin.is_afk() || !check_rights_for(online_admin, R_BAN))
+							continue
+						important_admins_on++
+					if(important_admins_on < CONFIG_GET(number/delay_if_no_admins))
 						SetTimeLeft(-1)
 						start_immediately = FALSE
-						to_chat(world, span_infoplain("<b>The game start has been delayed due to no admins connected.</b>"), confidential = TRUE)
+						to_chat(world, span_infoplain("<b>The game start has been delayed due to not enough important admins connected.</b>"), confidential = TRUE)
 						return
 			// APOC EDIT ADD END
 
@@ -402,11 +407,11 @@ SUBSYSTEM_DEF(ticker)
 			if(L.client.inactivity >= GLOB.logout_timer_set) //Connected, but inactive (alt+tabbed or something)
 				msg += "<b>[L.name]</b> ([L.key]), the [L.job] (<font color='#ffcc00'><b>Connected, Inactive</b></font>)\n"
 				failed = TRUE //AFK client
-			if(!failed && L.stat)
+			if(!failed && IS_UNCONSCIOUS_OR_CRIT(L))
 				if(HAS_TRAIT(L, TRAIT_SUICIDED)) //Suicider
 					msg += "<b>[L.name]</b> ([L.key]), the [L.job] ([span_bolddanger("Suicide")])\n"
 					failed = TRUE //Disconnected client
-				if(!failed && (L.stat == UNCONSCIOUS || L.stat == HARD_CRIT))
+				if(!failed && (L.stat == HARD_CRIT))
 					msg += "<b>[L.name]</b> ([L.key]), the [L.job] (Dying)\n"
 					failed = TRUE //Unconscious
 				if(!failed && L.stat == DEAD)
