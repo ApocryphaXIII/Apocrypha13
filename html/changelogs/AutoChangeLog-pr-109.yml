@@ -1,6 +1,0 @@
-author: "Marshmellow105"
-delete-after: True
-changes:
-  - map: "adds a det camera and missing decal to pd"
-  - map: "changes all /obj/item/detective_scanner to /obj/item/detective_scanner/darkpack"
-  - map: "changes all photocopiers on specialfran to gratis subtype so you can use them"
