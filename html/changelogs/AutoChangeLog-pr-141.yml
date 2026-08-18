@@ -1,0 +1,5 @@
+author: "Potatocrip"
+delete-after: True
+changes:
+  - map: "small strip club tweaks"
+  - code_imp: "small courtesy reminder when claiming doors"
