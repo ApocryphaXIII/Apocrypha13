@@ -1,4 +1,0 @@
-author: "dwinters99"
-delete-after: True
-changes:
-  - bugfix: "BSD totem in the endron ruin no longer counts as an actual totem"
