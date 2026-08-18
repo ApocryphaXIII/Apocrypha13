@@ -9,8 +9,10 @@
 	icon_state = "bowie"
 	inhand_icon_state = "bowie"
 	slot_flags = ITEM_SLOT_MASK
-	custom_price = 125
+	force = 3 TTRPG_DAMAGE // stronger than knife
+	custom_price = 200
 	icon_angle = 210
+	attack_difficulty = 5 // harder to use than a normal knife
 
 /obj/item/knife/vamp/bowie/silver
 	name = "silver bowie knife"
