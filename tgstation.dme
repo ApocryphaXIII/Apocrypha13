@@ -8317,4 +8317,6 @@
 #include "modular_zapoc\modules\mapping\code\transfer_zones.dm"
 #include "modular_zapoc\modules\mobs\code\cockroach.dm"
 #include "modular_zapoc\modules\smites\code\crystal.dm"
+#include "modular_zapoc\modules\weapons\code\bowie_knife.dm"
+#include "modular_zapoc\modules\weapons\code\waraxe.dm"
 // END_INCLUDE
