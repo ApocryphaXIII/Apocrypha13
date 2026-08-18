@@ -7823,7 +7823,7 @@
 /obj/structure/vampdoor{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/daughters,
+/obj/effect/mapping_helpers/door/access/strip,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/strip)
 "eHq" = (
@@ -13062,7 +13062,10 @@
 /turf/open/floor/city/factory,
 /area/vtm/interior/radio)
 "hFE" = (
-/obj/machinery/vending/boozeomat/private,
+/obj/machinery/vending/boozeomat/private{
+	density = 0;
+	pixel_x = 32
+	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/strip)
 "hFY" = (
@@ -13150,7 +13153,7 @@
 /area/vtm/interior/millennium_tower/f2)
 "hIE" = (
 /obj/structure/vampdoor,
-/obj/effect/mapping_helpers/door/access/daughters,
+/obj/effect/mapping_helpers/door/access/strip,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/strip)
 "hIG" = (
@@ -13518,10 +13521,6 @@
 /obj/structure/hedge,
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/millennium_tower/f4)
-"hSC" = (
-/obj/effect/decal/wallpaper/red,
-/turf/closed/wall/vampwall/bar,
-/area/vtm/interior/strip)
 "hSG" = (
 /obj/effect/landmark/npcwall,
 /obj/effect/turf_decal/bordur/corner,
@@ -17646,13 +17645,6 @@
 	},
 /turf/open/floor/wood/herring,
 /area/vtm/interior/voivodate)
-"klw" = (
-/obj/structure/mop_bucket,
-/obj/item/reagent_containers/cup/bucket,
-/obj/item/mop,
-/obj/item/pushbroom,
-/turf/open/floor/city/plating,
-/area/vtm/interior/strip)
 "klR" = (
 /obj/structure/table/wood,
 /obj/item/folder/red{
@@ -26656,9 +26648,11 @@
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f4)
 "pDq" = (
-/obj/effect/mapping_helpers/door/access/daughters,
-/obj/structure/vampdoor,
-/turf/open/floor/city/plating_mono,
+/obj/structure/mop_bucket,
+/obj/item/reagent_containers/cup/bucket,
+/obj/item/pushbroom,
+/obj/item/mop,
+/turf/open/floor/city/plating,
 /area/vtm/interior/strip)
 "pDt" = (
 /obj/structure/vampdoor/glass,
@@ -40689,8 +40683,10 @@
 /obj/item/clothing/under/vampire/toreador,
 /obj/item/clothing/under/vampire/toreador/female,
 /obj/item/clothing/under/vampire/toreador/female,
-/obj/effect/spawner/random/clothing/kittyears_or_rabbitears,
-/obj/effect/spawner/random/clothing/kittyears_or_rabbitears,
+/obj/item/clothing/head/costume/kitty,
+/obj/item/clothing/head/costume/kitty,
+/obj/item/clothing/head/costume/rabbitears,
+/obj/item/clothing/head/costume/rabbitears,
 /turf/open/floor/city/plating,
 /area/vtm/interior/strip)
 "xKY" = (
@@ -45004,7 +45000,7 @@ vWN
 vWN
 vWN
 vWN
-vWN
+urj
 nDN
 cgD
 rVC
@@ -45970,7 +45966,7 @@ hrk
 jzc
 iME
 wGX
-ppv
+hFE
 bfQ
 rwK
 nOx
@@ -46077,7 +46073,7 @@ hrk
 hrk
 hrk
 vWN
-hFE
+vWN
 urj
 eHp
 vWN
@@ -46188,7 +46184,7 @@ sQl
 iNE
 ppv
 ppv
-vWN
+pDq
 vWN
 hUM
 hUM
@@ -46280,14 +46276,14 @@ hUM
 hUM
 hUM
 hUM
-hSC
+urj
 sCK
 ukg
-qQr
-qQr
-qQr
-qQr
-tjZ
+vWN
+vWN
+vWN
+vWN
+urj
 sCK
 ukg
 vWN
@@ -46295,7 +46291,7 @@ gML
 xtA
 ppv
 ppv
-klw
+ppv
 vWN
 hUM
 hUM
@@ -46387,7 +46383,7 @@ hUM
 hUM
 hUM
 hUM
-hSC
+urj
 gtt
 wzK
 dKw
@@ -46397,7 +46393,7 @@ fxx
 wzK
 wzK
 xtC
-pDq
+hIE
 ppv
 ppv
 ppv
@@ -46494,7 +46490,7 @@ hUM
 hUM
 hUM
 hUM
-hSC
+urj
 hVZ
 wzK
 wzK
@@ -46601,7 +46597,7 @@ hUM
 hUM
 hUM
 hUM
-hSC
+urj
 fZG
 tWI
 fVu
