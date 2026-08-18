@@ -9,6 +9,7 @@
 	ONFLOOR_ICON_HELPER('modular_zapoc/modules/weapons/icons/melee_onfloor.dmi')
 	attack_difficulty = 5 // Easier to use than a sickle, harder than a knife
 	icon_angle = -45
+	demolition_mod = 1.25
 	custom_price = 850
 
 /obj/item/melee/vamp/handsickle/waraxe/Initialize(mapload)

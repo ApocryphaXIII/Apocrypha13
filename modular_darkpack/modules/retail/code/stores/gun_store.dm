@@ -20,6 +20,7 @@
 		new /datum/data/vending_product("9mm pistol magazine, 18 rounds", /obj/item/ammo_box/magazine/semi9mm, 100),
 		new /datum/data/vending_product("Colt M1911 magazine", /obj/item/ammo_box/magazine/darkpack45acp, 50),
 		new /datum/data/vending_product("knife", /obj/item/knife/vamp, 100),
+		new /datum/data/vending_product("hunting knife", /obj/item/knife/vamp/bowie, 200), // APOC EDIT ADD - MELEE
 		new /datum/data/vending_product("baseball bat", /obj/item/melee/baseball_bat/vamp, 200),
 		new /datum/data/vending_product("real katana", /obj/item/katana/vamp, 1500),
 		new /datum/data/vending_product("war axe", /obj/item/melee/vamp/handsickle/waraxe, 1500), // APOC EDIT ADD - MELEE
