@@ -6,7 +6,6 @@
 	head = /obj/item/clothing/head/vampire/inquisitor
 	gloves = /obj/item/clothing/gloves/vampire/inquisitor
 	r_pocket = /obj/item/flashlight
-	l_pocket = /obj/item/intel_report
 	glasses = /obj/item/clothing/glasses/night/thermal
 	neck = /obj/item/card/hunter
 	shoes = /obj/item/clothing/shoes/vampire/jackboots/inquisitor

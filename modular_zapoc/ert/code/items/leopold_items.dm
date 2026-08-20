@@ -54,7 +54,7 @@
 /obj/item/clothing/head/vampire/inquisitor/worn_overlays(mutable_appearance/standing, isinhands, icon_file, bodyshape = NONE)
 	. = ..()
 	if(!isinhands)
-		. += emissive_appearance(icon, light_mask, src, effect_type = EMISSIVE_BLOOM)
+		. += emissive_appearance(worn_icon, light_mask, src, effect_type = EMISSIVE_BLOOM)
 
 //------------SUIT------------
 /obj/item/clothing/suit/vampire/inquisitor
