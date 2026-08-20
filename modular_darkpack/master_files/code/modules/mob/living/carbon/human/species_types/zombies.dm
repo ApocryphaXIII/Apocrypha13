@@ -1,5 +1,6 @@
 #define REGENERATION_DELAY 60  // After taking damage, how long it takes for automatic regeneration to begin
 
+/* Commented out so i can deal with a more atomic pr to reimplement behavoir ontop of the tg changes.
 /datum/species/zombie
 	name = "Zombie"
 	id = "zombie"
@@ -34,7 +35,7 @@
 	C.maxHealth = 300 //tanky
 	C.health = 300
 
-	//zombies resist vampire bites better than mortals
 	ADD_TRAIT(C, TRAIT_MASQUERADE_VIOLATING_FACE, "zombie")
 
+*/
 #undef REGENERATION_DELAY
