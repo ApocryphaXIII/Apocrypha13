@@ -392,6 +392,9 @@
 	},
 /obj/structure/coclock,
 /obj/structure/platform/lowwall/market,
+/obj/structure/vampfence/rich{
+	name = "window bars"
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/police)
 "aos" = (
@@ -6829,7 +6832,8 @@
 /obj/machinery/door/poddoor/shutters{
 	damage_deflection = 60;
 	max_integrity = 300;
-	name = "Parking Shutter"
+	name = "Parking Shutter";
+	id = "camarilla garage"
 	},
 /obj/effect/landmark/npcwall,
 /obj/effect/turf_decal/bordur{
@@ -7777,7 +7781,7 @@
 /area/vtm/interior/wyrm_corrupted)
 "eIv" = (
 /obj/machinery/button/door{
-	id = 1;
+	id = "camarilla garage";
 	name = "Parking Shutters Control"
 	},
 /turf/closed/wall/vampwall/rich,
@@ -8540,6 +8544,20 @@
 /obj/item/ammo_box/darkpack/c45acp,
 /obj/item/ammo_box/darkpack/c45acp,
 /obj/machinery/light/red/directional/west,
+/obj/item/ammo_box/darkpack/c12g/rubber,
+/obj/item/ammo_box/darkpack/c12g/rubber,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/magazine/glock9mm,
+/obj/item/ammo_box/darkpack/c12g/incap,
+/obj/item/ammo_box/darkpack/c12g/incap,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "fet" = (
@@ -9610,6 +9628,12 @@
 /obj/item/gun/energy/taser/darkpack,
 /obj/item/gun/energy/taser/darkpack,
 /obj/item/gun/energy/taser/darkpack,
+/obj/item/gun/ballistic/shotgun/vampire{
+	pixel_y = 4
+	},
+/obj/item/gun/ballistic/shotgun/vampire{
+	pixel_y = 4
+	},
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "fGz" = (
@@ -20614,14 +20638,14 @@
 /turf/open/water,
 /area/vtm/interior/voivodate)
 "meG" = (
-/obj/structure/vampdoor/simple{
-	dir = 4
-	},
 /obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /obj/effect/landmark/npcwall,
 /obj/effect/mapping_helpers/door/access/police,
+/obj/structure/vampdoor/glass{
+	dir = 8
+	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/police)
 "meP" = (
@@ -20811,9 +20835,6 @@
 /turf/open/misc/dirt,
 /area/vtm/interior/sewer)
 "mkA" = (
-/obj/structure/vampdoor/simple{
-	dir = 4
-	},
 /obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
@@ -20822,6 +20843,9 @@
 	},
 /obj/effect/landmark/npcwall,
 /obj/effect/mapping_helpers/door/access/police,
+/obj/structure/vampdoor/glass{
+	dir = 8
+	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/police)
 "mkL" = (
@@ -20927,7 +20951,7 @@
 "mnN" = (
 /obj/structure/table,
 /obj/machinery/button/door{
-	id = 1;
+	id = "camarilla garage";
 	name = "Parking Shutters Control"
 	},
 /obj/effect/decal/rugs,
@@ -21647,6 +21671,14 @@
 /obj/item/ammo_box/magazine/darkpackaug,
 /obj/item/ammo_box/magazine/darkpackaug,
 /obj/item/ammo_box/magazine/darkpackaug,
+/obj/item/ammo_box/darkpack/c12g/buck,
+/obj/item/ammo_box/darkpack/c12g/buck,
+/obj/item/ammo_box/darkpack/c12g/buck,
+/obj/item/ammo_box/darkpack/c12g/buck,
+/obj/item/ammo_box/darkpack/c12g/incap,
+/obj/item/ammo_box/darkpack/c12g/incap,
+/obj/item/ammo_box/darkpack/c12g/rubber,
+/obj/item/ammo_box/darkpack/c12g/rubber,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "mII" = (
@@ -24566,7 +24598,10 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/obj/effect/landmark/start/darkpack/law_enforcement/sergeant,
+/obj/structure/vampdoor/simple{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/door/access/police,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/police)
 "otM" = (
@@ -25444,7 +25479,8 @@
 /obj/machinery/door/poddoor/shutters{
 	damage_deflection = 60;
 	max_integrity = 300;
-	name = "Parking Shutter"
+	name = "Parking Shutter";
+	id = "camarilla garage"
 	},
 /obj/effect/landmark/npcwall,
 /obj/effect/turf_decal/bordur{
@@ -25712,6 +25748,9 @@
 /obj/item/folder/blue,
 /obj/item/smartphone/emergency,
 /obj/structure/platform/lowwall/market,
+/obj/structure/vampfence/rich{
+	name = "window bars"
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/police)
 "pbe" = (
@@ -31373,7 +31412,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/north,
-/turf/open/floor/plating/concrete,
+/turf/closed/wall/vampwall/market,
 /area/vtm/interior/police)
 "sjB" = (
 /obj/structure/curtain/bounty,
@@ -35448,6 +35487,10 @@
 /obj/effect/decal/wallpaper/stone,
 /turf/closed/wall/vampwall/rich,
 /area/vtm/interior/millennium_tower/f4)
+"uwZ" = (
+/obj/effect/landmark/start/darkpack/law_enforcement/sergeant,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/police)
 "uxp" = (
 /obj/structure/chair/darkpack{
 	dir = 4;
@@ -36283,7 +36326,8 @@
 /obj/machinery/door/poddoor/shutters{
 	damage_deflection = 60;
 	max_integrity = 300;
-	name = "Parking Shutter"
+	name = "Parking Shutter";
+	id = "camarilla garage"
 	},
 /obj/effect/landmark/npcwall,
 /turf/open/floor/plating/asphalt,
@@ -62102,7 +62146,7 @@ flG
 sBt
 auS
 lVj
-lVj
+uwZ
 wcy
 wcy
 eVs
