@@ -167,3 +167,7 @@
   - map: endron ruin can be ghosted
   - admin: Tweaks admin delay round config to check for ban rights and allows for
       setting amount of admins required
+2026-08-19:
+  Potatocrip:
+  - map: small strip club tweaks
+  - code_imp: small courtesy reminder when claiming doors
