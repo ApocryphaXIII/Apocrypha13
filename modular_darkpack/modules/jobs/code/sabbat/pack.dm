@@ -27,9 +27,9 @@
 	r_pocket = /obj/item/vamp/keys/sabbat
 	uses_default_clan_clothes = TRUE
 	backpack_contents = list(/obj/item/card/credit=1)
-
+/*// APOC EDIT REMOVAL START
 /datum/outfit/job/vampire/sabbatpack/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	if(H.mind)
 		H.mind.add_antag_datum(/datum/antagonist/sabbatist)
-
+*/ // APOC EDIT REMOVAL END
