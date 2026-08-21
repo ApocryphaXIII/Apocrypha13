@@ -8311,6 +8311,8 @@
 #include "modular_zapoc\modules\jobs\code\voivode.dm"
 #include "modular_zapoc\modules\jobs\code\ocean76\handler.dm"
 #include "modular_zapoc\modules\jobs\code\ocean76\operator.dm"
+#include "modular_zapoc\modules\loadout\code\categories\glasses.dm"
+#include "modular_zapoc\modules\loadout\code\categories\shoes.dm"
 #include "modular_zapoc\modules\mapping\code\corpses.dm"
 #include "modular_zapoc\modules\mapping\code\mapping_helper.dm"
 #include "modular_zapoc\modules\mapping\code\modular_rooms.dm"
