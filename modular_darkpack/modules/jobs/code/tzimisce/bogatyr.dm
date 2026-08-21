@@ -36,4 +36,4 @@
 	suit = /obj/item/clothing/suit/vampire/bogatyr
 	belt = /obj/item/storage/belt/sheath/vamp/sword
 	l_pocket = /obj/item/smartphone/bogatyr
-	backpack_contents = list(/obj/item/vamp/keys/voivodate = 1, /obj/item/card/credit=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)
+	backpack_contents = list(/obj/item/vamp/keys/voivodate/advanced = 1, /obj/item/card/credit=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)

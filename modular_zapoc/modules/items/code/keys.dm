@@ -5,7 +5,8 @@
 #define LOCKACCESS_OCEAN "ocean"
 
 #define LOCKACCESS_VOIVODATE "voivodate_citizen"
-#define LOCKACCESS_VOIVODATE_MASTER "seer_voivodate"
+#define LOCKACCESS_VOIVODATE_ADVANCED "seer_voivodate"
+#define LOCKACCESS_VOIVODATE_MASTER
 
 /obj/item/vamp/keys/veterinarian
 	name = "veterinarian keys"
@@ -69,10 +70,20 @@
 /obj/effect/mapping_helpers/door/access/voivodate
 	lock_id = LOCKACCESS_VOIVODATE
 
+/obj/item/vamp/keys/voivodate/advanced
+	name = "Estate security keys"
+	accesslocks = list(
+		LOCKACCESS_VOIVODATE,
+		LOCKACCESS_VOIVODATE_ADVANCED
+	)
+
+/obj/effect/mapping_helpers/door/access/voivodate/advanced
+	lock_id = LOCKACCESS_VOIVODATE_ADVANCED
 
 /obj/item/vamp/keys/voivodate/master
 	name = "Estate master keys"
 	accesslocks = list(
+		LOCKACCESS_VOIVODATE_ADVANCED,
 		LOCKACCESS_VOIVODATE_MASTER,
 		LOCKACCESS_VOIVODATE
 	)

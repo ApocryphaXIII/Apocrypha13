@@ -50,3 +50,4 @@
 	name = "Bogatyr Captain"
 	jobtype = /datum/job/vampire/bogatyr/captain
 	// id = /obj/item/card/id/bogatyr/captain
+	backpack_contents = list(/obj/item/vamp/keys/voivodate/master = 1, /obj/item/card/credit=1)
