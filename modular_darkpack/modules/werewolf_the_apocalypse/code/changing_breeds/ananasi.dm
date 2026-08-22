@@ -1,3 +1,6 @@
+#define ALTER_MOOD_ENHANCE "Enhance"
+#define ALTER_MOOD_DAMPEN "Dampen"
+
 /datum/action/cooldown/power/gift/bloodheal
 	name = "Blood Heal"
 	desc = "The Ananasi can heal their wounds by drawing on their own blood."
@@ -50,7 +53,6 @@
 	var/mob/living/living_target = astype(target)
 	if(!living_target)
 		return FALSE
-
 	. = ..()
 
 	var/datum/splat/werewolf/shifter/shifter_splat = get_shifter_splat(owner)
@@ -66,6 +68,9 @@
 	SEND_SOUND(target, sound('modular_darkpack/modules/powers/sounds/dominate.ogg', volume = 50))
 	SEND_SIGNAL(target, COMSIG_ALL_MASQUERADE_REINFORCE)
 	to_chat(target, span_hypnophrase("At [owner]'s touch, the last fifteen minutes of your memory are stolen away. You feel a sense of confusion and disorientation as you struggle to recall what just happened."))
+
+	StartCooldown()
+	return TRUE
 
 /datum/action/cooldown/power/gift/breath_of_the_wyld/inspire
 	name = "Inspire"
@@ -125,3 +130,37 @@
 	desc = "Gain an additional die to all mental checks, but suffer a penalty to rage check difficulty."
 	icon = 'modular_darkpack/modules/deprecated/icons/hud/screen_alert.dmi'
 	icon_state = "riddle" // TODO: get an icon for this
+
+/datum/action/cooldown/power/gift/alter_mood
+	name = "Alter Mood"
+	desc = "The Wyrsta can enhance or dampen the mood of a single individual."
+	button_icon_state = "stolen_moments"
+	click_to_activate = TRUE
+	rank = 1
+	gnosis_cost = 1
+	var/alter_types = list(ALTER_MOOD_ENHANCE, ALTER_MOOD_DAMPEN)
+
+/datum/action/cooldown/power/gift/alter_mood/Activate(atom/target)
+	var/mob/living/living_target = astype(target)
+	if(!living_target)
+		return FALSE
+
+	var/alter_type_selected = tgui_input_list(owner, "How do you want to alter the target's mood?", "Alter Mood Type Selection", alter_types, ALTER_MOOD_ENHANCE)
+	if(!alter_type_selected)
+		return FALSE
+
+	. = ..()
+
+	switch(alter_type_selected)
+		if(ALTER_MOOD_ENHANCE)
+			to_chat(living_target, span_boldnotice("An odd warmth spreads through your mind, heightening your emotional state. Any emotional highs or lows are suddenly more intense and extreme."))
+		if(ALTER_MOOD_DAMPEN)
+			to_chat(living_target, span_boldwarning("An odd numbness sets over your mind, dulling your emotional state. Any extreme emotional highs or lows are suddenly muted to a more moderate, mundane level."))
+
+	StartCooldown()
+	return TRUE
+
+#undef ALTER_MOOD_ENHANCE
+#undef ALTER_MOOD_DAMPEN
+
+
