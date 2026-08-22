@@ -137,8 +137,10 @@ SUBSYSTEM_DEF(map_vote)
 	// Remove stale (played twice in the past KEEP_ROUNDS_MAP + 1 rounds (including this one as the + 1)) maps
 	var/list/freshened_valid_maps = list()
 	for(var/map_name in pop_valid_maps)
+		/* // APOC EDIT REMOVAL START - (Readd if we add more then one real map.)
 		if(map_name in SSpersistence.blocked_maps)
 			continue
+		*/ // APOC EDIT REMOVAL END
 		freshened_valid_maps += map_name
 
 	// We might stale out all valid maps, in that case just ignore the stale system
