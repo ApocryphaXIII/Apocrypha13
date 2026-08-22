@@ -100,12 +100,12 @@
 	ONFLOOR_ICON_HELPER('modular_zapoc/ert/icons/items/inquisitor_armor_onfloor.dmi')
 	armor_type = /datum/armor/clothing_under/security_head_of_security
 
-//------------BELT------------
+//------------BACKPACK------------
 /datum/storage/inquisitor_belt // Should supplant backpacks but not replace
 	max_total_storage = 14
 	max_slots = 21
 
-/obj/item/storage/belt/inquisitor
+/obj/item/storage/backpack/inquisitor
 	name = "harness"
 	desc = "A belt and carrier rig. Silver and cold iron buckshot should do the trick."
 	icon_state = "belt"
@@ -113,6 +113,7 @@
 	icon = 'modular_zapoc/ert/icons/items/inquisitor_armor.dmi'
 	worn_icon = 'modular_zapoc/ert/icons/items/inquisitor_armor_worn.dmi'
 	ONFLOOR_ICON_HELPER('modular_zapoc/ert/icons/items/inquisitor_armor_onfloor.dmi')
+	equip_sound = 'sound/items/equip/toolbelt_equip.ogg'
 	storage_type = /datum/storage/inquisitor_belt
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 
