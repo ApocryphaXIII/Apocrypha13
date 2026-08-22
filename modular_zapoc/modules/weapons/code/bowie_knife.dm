@@ -4,7 +4,7 @@
 	icon = 'modular_zapoc/modules/weapons/icons/melee.dmi'
 	lefthand_file = 'modular_zapoc/modules/weapons/icons/melee_inhand_left.dmi'
 	righthand_file = 'modular_zapoc/modules/weapons/icons/melee_inhand_right.dmi'
-	worn_icon = 'modular_darkpack/modules/weapons/icons/worn_melee.dmi'
+	worn_icon = 'modular_zapoc/modules/weapons/icons/melee_worn.dmi'
 	ONFLOOR_ICON_HELPER('modular_zapoc/modules/weapons/icons/melee_onfloor.dmi')
 	icon_state = "bowie"
 	inhand_icon_state = "bowie"
