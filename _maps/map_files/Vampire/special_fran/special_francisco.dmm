@@ -1061,6 +1061,11 @@
 	},
 /turf/open/floor/wood/smooth,
 /area/vtm/interior)
+"aIU" = (
+/obj/structure/sink/directional/south,
+/obj/structure/mirror/directional/north,
+/turf/open/floor/city/plating_stone,
+/area/vtm/interior/millennium_tower/f4)
 "aIX" = (
 /obj/effect/decal/wallpaper/paper,
 /turf/closed/wall/vampwall/city,
@@ -2776,8 +2781,8 @@
 /turf/open/floor/carpet/red,
 /area/vtm/interior/coffee)
 "bGG" = (
-/obj/structure/closet/crate/freezer/blood,
-/turf/open/floor/city/plating,
+/obj/effect/turf_decal/stripes/red/full,
+/turf/open/floor/city/plating_mono,
 /area/vtm/interior/millennium_tower/f4)
 "bGP" = (
 /obj/structure/table/wood/fancy/green,
@@ -3543,12 +3548,8 @@
 /turf/open/floor/iron/stairs,
 /area/vtm/interior/supply)
 "cdC" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/obj/structure/table,
-/obj/effect/turf_decal/stripes/red/full,
-/turf/open/floor/city/plating_mono,
+/obj/structure/vampdoor/simple,
+/turf/open/floor/city/plating_stone,
 /area/vtm/interior/millennium_tower/f4)
 "cdL" = (
 /obj/structure/table,
@@ -18490,7 +18491,7 @@
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/coffee)
 "kOe" = (
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f4)
 "kOq" = (
@@ -19472,6 +19473,10 @@
 	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/outside/park)
+"ltA" = (
+/obj/structure/closet/crate/freezer/blood,
+/turf/open/floor/city/plating,
+/area/vtm/interior/millennium_tower/f4)
 "ltM" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/structure/vampdoor/wood,
@@ -31691,6 +31696,14 @@
 	},
 /turf/open/water,
 /area/vtm/voivodate)
+"stS" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/stripes/red/full,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/millennium_tower/f4)
 "suz" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 1
@@ -34395,7 +34408,7 @@
 /area/vtm/interior/clinic)
 "tOI" = (
 /obj/fusebox,
-/obj/structure/tank_holder/extinguisher,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f4)
 "tOX" = (
@@ -35315,10 +35328,6 @@
 /obj/effect/decal/wallpaper/red,
 /turf/closed/wall/vampwall/junk,
 /area/vtm/interior/strip)
-"uro" = (
-/obj/effect/turf_decal/stripes/red/full,
-/turf/open/floor/city/plating_mono,
-/area/vtm/interior/millennium_tower/f4)
 "urv" = (
 /obj/effect/turf_decal/bordur,
 /obj/effect/landmark/npcwall,
@@ -36939,6 +36948,7 @@
 /area/vtm/interior/endron_facility/restricted)
 "vnx" = (
 /obj/machinery/light/directional/north,
+/obj/machinery/washing_machine,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f4)
 "vnA" = (
@@ -37788,6 +37798,13 @@
 /obj/structure/table/countertop/red,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior)
+"vPk" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/city/plating_stone,
+/area/vtm/interior/millennium_tower/f4)
 "vPI" = (
 /obj/item/toy/crayon/spraycan,
 /obj/item/toy/crayon/spraycan,
@@ -38380,6 +38397,9 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/radio)
+"wjK" = (
+/turf/open/floor/city/plating_stone,
+/area/vtm/interior/millennium_tower/f4)
 "wkb" = (
 /obj/structure/table/countertop/bubway,
 /obj/machinery/chem_dispenser/drinks{
@@ -41097,6 +41117,10 @@
 /obj/structure/sink/directional/north,
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/police)
+"xNB" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/city/plating_stone,
+/area/vtm/interior/millennium_tower/f4)
 "xNG" = (
 /obj/effect/turf_decal/bordur/corner{
 	dir = 4
@@ -81458,10 +81482,10 @@ nls
 nls
 nls
 bTa
-mrm
-mrm
-mrm
-mrm
+aIU
+xNB
+bTa
+vPk
 bTa
 rdj
 rdj
@@ -81564,11 +81588,11 @@ nls
 nls
 nls
 nls
-bTa
-mrm
-mrm
-mrm
-mrm
+cdC
+wjK
+wjK
+cdC
+wjK
 bTa
 rdj
 rdj
@@ -81884,7 +81908,7 @@ uXm
 wYE
 iiO
 gQu
-cdC
+stS
 bTa
 uZF
 mrm
@@ -81991,7 +82015,7 @@ uXm
 wYE
 jVD
 jVD
-uro
+bGG
 jJY
 mrm
 mrm
@@ -82102,7 +82126,7 @@ tSz
 bTa
 kyL
 iUH
-bGG
+ltA
 sPw
 bTa
 rdj
