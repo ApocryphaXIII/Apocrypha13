@@ -1225,12 +1225,12 @@
 /turf/open/floor/carpet/darkpack/bluesilver,
 /area/vtm/interior/radio)
 "aMY" = (
-/obj/structure/vampdoor/simple{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/door/access/camarilla,
 /obj/effect/mapping_helpers/door/lock,
 /obj/structure/lattice/pentex,
+/obj/structure/vampdoor/reinf{
+	dir = 4
+	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "aNJ" = (
@@ -2901,6 +2901,25 @@
 	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/voivodate)
+"bIy" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer/commercial/small,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/turf/open/floor/iron/showroomfloor,
+/area/vtm/interior/millennium_tower/f4)
 "bJc" = (
 /obj/structure/hedge{
 	pixel_x = 0;
@@ -6785,13 +6804,9 @@
 /area/vtm/interior/endron_facility/restricted)
 "ech" = (
 /obj/structure/lattice/pentex,
-/obj/machinery/door/poddoor/shutters/armory{
-	damage_deflection = 60;
-	max_integrity = 300;
-	name = "Panic Room Shutters";
-	id = 12;
-	dir = 1
-	},
+/obj/structure/vampdoor/reinf,
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/camarilla,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "ecA" = (
@@ -9042,6 +9057,12 @@
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior)
+"foI" = (
+/obj/structure/table,
+/obj/item/mop,
+/obj/item/reagent_containers/cup/bucket,
+/turf/open/floor/city/toilet/large,
+/area/vtm/interior/millennium_tower)
 "foW" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -9953,6 +9974,27 @@
 	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility)
+"fNe" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/freezer/commercial/small,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/turf/open/floor/iron/showroomfloor,
+/area/vtm/interior/millennium_tower/f4)
 "fNI" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -14312,7 +14354,6 @@
 /obj/structure/table/greyscale{
 	name = "metal table"
 	},
-/obj/keypad/panic_room,
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
@@ -23435,9 +23476,6 @@
 "nKu" = (
 /obj/structure/table,
 /obj/item/smartphone/clean,
-/obj/item/reagent_containers/blood/vitae{
-	pixel_x = -7
-	},
 /obj/item/flashlight{
 	pixel_x = 9;
 	pixel_y = 5
@@ -24323,10 +24361,6 @@
 "okq" = (
 /obj/structure/table/greyscale{
 	name = "metal table"
-	},
-/obj/item/documents/syndicate/blue{
-	desc = "A bundle of papers detailing the features of your new Safe Haven Construction panic room. There is fine print at the bottom stating usage of the panic room automatically indemnifies the company of any and all liability or wrongdoing, or death and disfigurement.";
-	name = "Safe Haven Panic Room"
 	},
 /obj/effect/turf_decal/siding/red{
 	dir = 4
@@ -26164,10 +26198,6 @@
 	},
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/gangbasement)
-"plz" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/carpet/darkpack/cyan,
-/area/vtm/interior/millennium_tower)
 "plI" = (
 /obj/item/clothing/suit/vampire/trench/voivode{
 	pixel_x = 1;
@@ -26518,12 +26548,6 @@
 /obj/structure/table/optable,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
-"puR" = (
-/obj/structure/table,
-/obj/item/mop,
-/obj/item/reagent_containers/cup/bucket,
-/turf/open/floor/city/toilet/large,
-/area/vtm/interior/millennium_tower)
 "puS" = (
 /obj/structure/hoop,
 /turf/open/floor/plating/sidewalk/poor,
@@ -40759,6 +40783,10 @@
 	},
 /turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/clinic)
+"xBq" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/darkpack/cyan,
+/area/vtm/interior/millennium_tower)
 "xBs" = (
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -59758,7 +59786,7 @@ vhR
 tMZ
 uUn
 bGG
-puR
+foI
 cFJ
 nIU
 xoa
@@ -60076,7 +60104,7 @@ epb
 epb
 epb
 cju
-plz
+xBq
 jgM
 jgM
 jgM
@@ -82442,7 +82470,7 @@ mrm
 vgt
 gpq
 lIb
-mrm
+fNe
 jne
 lRJ
 tSe
@@ -82549,7 +82577,7 @@ pcz
 mrm
 mrm
 mrm
-mrm
+bIy
 xte
 tSe
 tSe
