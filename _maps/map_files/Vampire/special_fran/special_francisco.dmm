@@ -2901,25 +2901,6 @@
 	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/voivodate)
-"bIy" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner,
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/freezer/commercial/small,
-/obj/item/reagent_containers/blood/vitae,
-/obj/item/reagent_containers/blood/vitae,
-/obj/item/reagent_containers/blood/vitae,
-/obj/item/reagent_containers/blood/vitae,
-/turf/open/floor/iron/showroomfloor,
-/area/vtm/interior/millennium_tower/f4)
 "bJc" = (
 /obj/structure/hedge{
 	pixel_x = 0;
@@ -9057,12 +9038,6 @@
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior)
-"foI" = (
-/obj/structure/table,
-/obj/item/mop,
-/obj/item/reagent_containers/cup/bucket,
-/turf/open/floor/city/toilet/large,
-/area/vtm/interior/millennium_tower)
 "foW" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -9974,27 +9949,6 @@
 	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility)
-"fNe" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/freezer/commercial/small,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/turf/open/floor/iron/showroomfloor,
-/area/vtm/interior/millennium_tower/f4)
 "fNI" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -15299,6 +15253,10 @@
 /obj/effect/landmark/npcactivity,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/unionsquare)
+"iQA" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/darkpack/cyan,
+/area/vtm/interior/millennium_tower)
 "iQB" = (
 /obj/structure/vampdoor/glass{
 	dir = 4
@@ -25212,6 +25170,12 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/voivodate)
+"oEJ" = (
+/obj/structure/table,
+/obj/item/mop,
+/obj/item/reagent_containers/cup/bucket,
+/turf/open/floor/city/toilet/large,
+/area/vtm/interior/millennium_tower)
 "oEV" = (
 /obj/structure/closet/crate/bin/undense{
 	pixel_x = -7;
@@ -32103,6 +32067,25 @@
 /obj/effect/decal/cleanable/trash,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/anarch/basement)
+"syF" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer/commercial/small,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/turf/open/floor/iron/showroomfloor,
+/area/vtm/interior/millennium_tower/f4)
 "syQ" = (
 /obj/machinery/light/prince/directional/north,
 /turf/open/floor/wood/smooth/old,
@@ -40783,10 +40766,6 @@
 	},
 /turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/clinic)
-"xBq" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/carpet/darkpack/cyan,
-/area/vtm/interior/millennium_tower)
 "xBs" = (
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -40948,6 +40927,27 @@
 	},
 /turf/open/floor/stone,
 /area/vtm/interior/mallunderground)
+"xHv" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/freezer/commercial/small,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/turf/open/floor/iron/showroomfloor,
+/area/vtm/interior/millennium_tower/f4)
 "xHz" = (
 /obj/structure/sign/departments/security,
 /turf/closed/wall/vampwall/metal/reinforced,
@@ -59786,7 +59786,7 @@ vhR
 tMZ
 uUn
 bGG
-foI
+oEJ
 cFJ
 nIU
 xoa
@@ -59889,7 +59889,7 @@ haC
 cvz
 cFJ
 cFJ
-vhR
+jWc
 uam
 cFJ
 cFJ
@@ -59996,7 +59996,7 @@ sTd
 qwE
 qwE
 shE
-cju
+jWc
 jgM
 jOa
 cic
@@ -60103,8 +60103,8 @@ epb
 epb
 epb
 epb
-cju
-xBq
+jWc
+iQA
 jgM
 jgM
 jgM
@@ -60210,7 +60210,7 @@ xNM
 bbV
 bbV
 bZj
-cju
+jWc
 dsN
 acj
 wnN
@@ -60317,7 +60317,7 @@ rCG
 maG
 sxo
 fCU
-cju
+jWc
 aac
 cdC
 gOz
@@ -82470,7 +82470,7 @@ mrm
 vgt
 gpq
 lIb
-fNe
+xHv
 jne
 lRJ
 tSe
@@ -82577,7 +82577,7 @@ pcz
 mrm
 mrm
 mrm
-bIy
+syF
 xte
 tSe
 tSe
