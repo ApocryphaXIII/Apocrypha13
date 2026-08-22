@@ -217,13 +217,26 @@
   - bugfix: fix a phone bluescreen where some contacts could have empty names.
   - bugfix: typo in ugly examine
 2026-08-19:
-  chazzyjazzy:
-  - rscdel: removed /tg/ brainwashing
   Potatocrip:
   - map: small strip club tweaks
   - code_imp: small courtesy reminder when claiming doors
+  chazzyjazzy:
+  - rscdel: removed /tg/ brainwashing
 2026-08-20:
   SabbyKat:
   - bugfix: fixed Blood Form on-exit head sprite bug.
   breadcrombs:
   - balance: npc vendor .45 acp ammo box price has been reduced from 2100 to 700
+2026-08-21:
+  KCartridge:
+  - map: new blorbo house
+  - map: moved grocery store, skate park & skate shop
+  - map: modified S-W downtown pending rework
+  SoreYew:
+  - bugfix: Fixed the Camarilla Garage Doors
+  Stutternov:
+  - bugfix: Fixes issue on Dread Gaze that was causing people to run away for entire
+      rounds. Adjusted to 2 minute timer.
+  chazzyjazzy:
+  - rscdel: Removes Beekeeping supply pack from the warehouse
+  - rscdel: Removes Monkey Cubes supply pack from the warehouse
