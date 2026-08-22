@@ -2776,10 +2776,7 @@
 /turf/open/floor/carpet/red,
 /area/vtm/interior/coffee)
 "bGG" = (
-/obj/machinery/light/directional/north,
-/obj/structure/table,
-/obj/item/ammo_box/darkpack/c50,
-/obj/item/ammo_box/darkpack/c50,
+/obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "bGP" = (
@@ -3546,12 +3543,12 @@
 /turf/open/floor/iron/stairs,
 /area/vtm/interior/supply)
 "cdC" = (
-/obj/item/clothing/suit/vampire/eod,
-/obj/item/clothing/head/vampire/eod,
-/obj/structure/closet/bombcloset{
-	anchored = 1
+/obj/effect/turf_decal/siding/white{
+	dir = 8
 	},
-/turf/open/floor/city/plating,
+/obj/structure/table,
+/obj/effect/turf_decal/stripes/red/full,
+/turf/open/floor/city/plating_mono,
 /area/vtm/interior/millennium_tower/f4)
 "cdL" = (
 /obj/structure/table,
@@ -5316,10 +5313,13 @@
 /turf/open/floor/carpet/black,
 /area/vtm/interior/laundromat)
 "ddx" = (
-/obj/item/gun/ballistic/automatic/darkpack/ar15,
-/obj/structure/guncase,
-/obj/item/gun/ballistic/automatic/darkpack/ar15,
-/obj/item/gun/ballistic/automatic/darkpack/sniper,
+/obj/item/clothing/suit/vampire/eod,
+/obj/item/clothing/head/vampire/eod,
+/obj/structure/closet/bombcloset{
+	anchored = 1
+	},
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/stripes/red/full,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "ddB" = (
@@ -15284,11 +15284,10 @@
 /area/vtm/interior/sewer)
 "iUH" = (
 /obj/structure/table,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
+/obj/item/clothing/suit/vampire/vest,
+/obj/item/clothing/suit/vampire/vest,
+/obj/item/clothing/suit/vampire/vest,
+/obj/item/clothing/suit/vampire/vest,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "iUK" = (
@@ -16627,9 +16626,9 @@
 /turf/open/water/river,
 /area/vtm/interior/voivodate/cave)
 "jJY" = (
-/obj/machinery/door/poddoor/shutters/armory{
-	name = "Armory Shutters"
-	},
+/obj/structure/vampdoor/reinf,
+/obj/effect/mapping_helpers/door/access/prince,
+/obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "jKc" = (
@@ -18038,11 +18037,12 @@
 /turf/open/floor/wood/ornate,
 /area/vtm/interior/voivodate)
 "kyL" = (
-/obj/machinery/button/door{
-	id = 10
-	},
 /obj/structure/table,
 /obj/structure/extinguisher_cabinet/directional/north,
+/obj/item/clothing/head/vampire/helmet,
+/obj/item/clothing/head/vampire/helmet,
+/obj/item/clothing/head/vampire/helmet,
+/obj/item/clothing/head/vampire/helmet,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "kzb" = (
@@ -23644,11 +23644,11 @@
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/anarch/basement)
 "nTM" = (
-/obj/structure/table,
-/obj/item/clothing/suit/vampire/vest,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/suit/vampire/vest,
+/obj/item/gun/ballistic/automatic/darkpack/ar15,
+/obj/structure/guncase,
+/obj/item/gun/ballistic/automatic/darkpack/ar15,
+/obj/item/gun/ballistic/automatic/darkpack/sniper,
+/obj/effect/turf_decal/stripes/red/full,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "nUd" = (
@@ -32574,11 +32574,19 @@
 /area/vtm/interior/voivodate/sanctum)
 "sPw" = (
 /obj/machinery/light/directional/east,
-/obj/item/knife/vamp,
-/obj/item/knife/vamp,
 /obj/structure/table,
-/obj/item/storage/box/handcuffs,
-/obj/item/storage/box/handcuffs,
+/obj/item/melee/baton/vamp{
+	pixel_y = 10
+	},
+/obj/item/melee/baton/vamp{
+	pixel_y = 10
+	},
+/obj/item/melee/baton/vamp{
+	pixel_y = 10
+	},
+/obj/item/melee/baton/vamp{
+	pixel_y = 10
+	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "sPI" = (
@@ -33330,6 +33338,11 @@
 /obj/item/ammo_box/magazine/darkpack45acp,
 /obj/item/ammo_box/darkpack/c45acp,
 /obj/structure/table,
+/obj/item/gun/ballistic/automatic/pistol/darkpack/m1911,
+/obj/item/gun/ballistic/automatic/pistol/darkpack/m1911,
+/obj/item/ammo_box/magazine/darkpack45acp,
+/obj/item/ammo_box/magazine/darkpack45acp,
+/obj/item/ammo_box/darkpack/c45acp,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "tmn" = (
@@ -34523,11 +34536,8 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/tattoo)
 "tSz" = (
-/obj/structure/table/reinforced,
-/obj/keypad/armory,
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 6
-	},
+/obj/structure/table,
+/obj/effect/turf_decal/stripes/red/full,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/millennium_tower/f4)
 "tSB" = (
@@ -35305,6 +35315,10 @@
 /obj/effect/decal/wallpaper/red,
 /turf/closed/wall/vampwall/junk,
 /area/vtm/interior/strip)
+"uro" = (
+/obj/effect/turf_decal/stripes/red/full,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/millennium_tower/f4)
 "urv" = (
 /obj/effect/turf_decal/bordur,
 /obj/effect/landmark/npcwall,
@@ -36489,12 +36503,8 @@
 /area/vtm/voivodate)
 "uZF" = (
 /obj/structure/table,
-/obj/item/ammo_box/darkpack/c556,
-/obj/item/ammo_box/darkpack/c556,
-/obj/item/ammo_box/darkpack/c556,
-/obj/item/ammo_box/darkpack/c556,
-/obj/item/ammo_box/magazine/darkpack556,
-/obj/item/ammo_box/magazine/darkpack556,
+/obj/item/storage/box/handcuffs,
+/obj/item/storage/box/handcuffs,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "uZZ" = (
@@ -36834,11 +36844,14 @@
 /area/vtm/outside/financialdistrict)
 "vkd" = (
 /obj/structure/table,
-/obj/item/ammo_box/darkpack/c45acp,
-/obj/item/ammo_box/magazine/darkpack45acp,
-/obj/item/ammo_box/magazine/darkpack45acp,
-/obj/item/gun/ballistic/automatic/pistol/darkpack/m1911,
-/obj/item/gun/ballistic/automatic/pistol/darkpack/m1911,
+/obj/item/ammo_box/darkpack/c50,
+/obj/item/ammo_box/darkpack/c50,
+/obj/item/ammo_box/darkpack/c556,
+/obj/item/ammo_box/darkpack/c556,
+/obj/item/ammo_box/darkpack/c556,
+/obj/item/ammo_box/darkpack/c556,
+/obj/item/ammo_box/magazine/darkpack556,
+/obj/item/ammo_box/magazine/darkpack556,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "vkQ" = (
@@ -81552,10 +81565,10 @@ nls
 nls
 nls
 bTa
-bTa
-bTa
-bTa
-bTa
+mrm
+mrm
+mrm
+mrm
 bTa
 rdj
 rdj
@@ -81659,10 +81672,10 @@ nls
 nls
 nls
 bTa
-bGG
-mrm
-hNG
-cdC
+bTa
+bTa
+bTa
+bTa
 bTa
 rdj
 rdj
@@ -81768,7 +81781,7 @@ qsR
 bTa
 ddx
 mrm
-mrm
+hNG
 nTM
 bTa
 rdj
@@ -81871,7 +81884,7 @@ uXm
 wYE
 iiO
 gQu
-gQu
+cdC
 bTa
 uZF
 mrm
@@ -81978,7 +81991,7 @@ uXm
 wYE
 jVD
 jVD
-jVD
+uro
 jJY
 mrm
 mrm
@@ -82089,7 +82102,7 @@ tSz
 bTa
 kyL
 iUH
-mrm
+bGG
 sPw
 bTa
 rdj
