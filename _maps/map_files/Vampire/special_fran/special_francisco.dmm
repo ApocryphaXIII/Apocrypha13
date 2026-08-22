@@ -3732,6 +3732,7 @@
 /obj/item/newspaper{
 	pixel_y = 6
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/millennium_tower)
 "cie" = (
@@ -8568,11 +8569,8 @@
 /turf/open/misc/dirt,
 /area/vtm/voivodate)
 "fcx" = (
-/obj/structure/ladder/manhole/down,
-/obj/structure/table,
-/obj/item/reagent_containers/cup/bucket,
-/obj/item/mop,
 /obj/machinery/light/directional/north,
+/obj/structure/ladder/manhole/down,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/millennium_tower)
 "fcU" = (
@@ -11728,6 +11726,7 @@
 	dir = 4
 	},
 /obj/machinery/iv_drip,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/showroomfloor,
 /area/vtm/interior/millennium_tower)
 "gOB" = (
@@ -26165,6 +26164,10 @@
 	},
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/gangbasement)
+"plz" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/darkpack/cyan,
+/area/vtm/interior/millennium_tower)
 "plI" = (
 /obj/item/clothing/suit/vampire/trench/voivode{
 	pixel_x = 1;
@@ -26515,6 +26518,12 @@
 /obj/structure/table/optable,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
+"puR" = (
+/obj/structure/table,
+/obj/item/mop,
+/obj/item/reagent_containers/cup/bucket,
+/turf/open/floor/city/toilet/large,
+/area/vtm/interior/millennium_tower)
 "puS" = (
 /obj/structure/hoop,
 /turf/open/floor/plating/sidewalk/poor,
@@ -59749,7 +59758,7 @@ vhR
 tMZ
 uUn
 bGG
-bGG
+puR
 cFJ
 nIU
 xoa
@@ -60067,7 +60076,7 @@ epb
 epb
 epb
 cju
-jgM
+plz
 jgM
 jgM
 jgM
