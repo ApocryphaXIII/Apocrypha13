@@ -15955,12 +15955,12 @@
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
 "jdk" = (
-/obj/effect/decal/wallpaper/paper/rich,
-/obj/item/toy/crayon/spraycan{
-	pixel_x = -8;
-	pixel_y = 12
+/obj/structure/table/wood/fancy/red,
+/obj/item/chair/wood/darkpack,
+/obj/structure/sign/painting/library_private{
+	pixel_y = 30
 	},
-/turf/closed/wall/vampwall/rich/old,
+/turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
 "jdT" = (
 /obj/structure/vampdoor/simple{
@@ -17520,8 +17520,8 @@
 	pixel_y = -8
 	},
 /obj/item/chair/wood/darkpack,
-/obj/structure/sign/painting/large/library_private{
-	pixel_y = 24
+/obj/structure/sign/painting/library_private{
+	pixel_y = 30
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
@@ -23431,9 +23431,11 @@
 /turf/closed/wall/vampwall/rich,
 /area/vtm/interior/apartment)
 "nwm" = (
-/obj/effect/turf_decal/siding/white,
-/turf/open/floor/wood/old,
-/area/vtm/interior/chantry)
+/obj/structure/sign/painting/library_private{
+	pixel_y = 30
+	},
+/turf/open/floor/city/plating,
+/area/vtm/interior/endron_facility/restricted)
 "nwy" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/chair/comfy/beige{
@@ -26990,8 +26992,8 @@
 /area/vtm/outside/chinatown/rooftops)
 "pvj" = (
 /obj/effect/turf_decal/siding/white,
-/obj/structure/sign/painting/large/library{
-	pixel_y = 24
+/obj/structure/sign/painting/library_private{
+	pixel_y = 30
 	},
 /turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
@@ -36029,8 +36031,8 @@
 /turf/closed/wall/vampwall/junk,
 /area/vtm/interior/strip)
 "urr" = (
-/obj/structure/sign/painting/large/library_private{
-	pixel_y = 24
+/obj/structure/sign/painting/library_private{
+	pixel_y = 30
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
@@ -52886,7 +52888,7 @@ wyO
 kfR
 iAF
 bOb
-iUa
+urr
 iUa
 bOb
 pqA
@@ -63036,7 +63038,7 @@ fQV
 fQV
 oMo
 lWZ
-jdk
+qsw
 pvj
 kfR
 npI
@@ -63144,7 +63146,7 @@ fQV
 snH
 dpB
 qsw
-nwm
+pvj
 mfx
 nMJ
 kfR
@@ -64749,7 +64751,7 @@ cNV
 kbq
 lxP
 qsw
-ovK
+jdk
 ovK
 iUa
 eJU
@@ -66795,7 +66797,7 @@ xQB
 eeP
 eeP
 fmH
-qZC
+nwm
 cAb
 eeP
 fmH
@@ -66902,7 +66904,7 @@ oUt
 wfH
 oUt
 fmH
-cAb
+nwm
 cAb
 bHe
 cAb
