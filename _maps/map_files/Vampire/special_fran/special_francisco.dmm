@@ -1225,12 +1225,12 @@
 /turf/open/floor/carpet/darkpack/bluesilver,
 /area/vtm/interior/radio)
 "aMY" = (
-/obj/effect/mapping_helpers/door/access/camarilla,
 /obj/effect/mapping_helpers/door/lock,
 /obj/structure/lattice/pentex,
 /obj/structure/vampdoor/reinf{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/door/access/prince,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "aNJ" = (
@@ -3056,6 +3056,10 @@
 /obj/effect/decal/wallpaper/paper/darkred,
 /turf/closed/wall/vampwall/rich/old,
 /area/vtm/interior/chantry)
+"bOi" = (
+/obj/effect/decal/cleanable/trash,
+/turf/open/floor/plating/canal,
+/area/vtm/interior/sewer)
 "bOn" = (
 /obj/effect/decal/pallet,
 /obj/structure/bonfire/prelit/fire_barrel,
@@ -6787,7 +6791,7 @@
 /obj/structure/lattice/pentex,
 /obj/structure/vampdoor/reinf,
 /obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/access/camarilla,
+/obj/effect/mapping_helpers/door/access/prince,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "ecA" = (
@@ -25232,6 +25236,11 @@
 /obj/machinery/iv_drip,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic)
+"oHt" = (
+/obj/structure/ladder/manhole/up,
+/obj/effect/decal/cleanable/trash,
+/turf/open/floor/plating/canal,
+/area/vtm/interior/sewer)
 "oHx" = (
 /obj/structure/table/wood,
 /turf/open/floor/carpet/darkpack/old,
@@ -29904,6 +29913,13 @@
 /obj/item/reagent_containers/cup/bottle/fluorine,
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/clinic)
+"rkX" = (
+/obj/structure/chair/sofa/corp{
+	color = "#50C878";
+	dir = 8
+	},
+/turf/open/floor/city/plating,
+/area/vtm/interior/millennium_tower)
 "rlb" = (
 /obj/structure/curtain/bounty{
 	open = 0
@@ -36327,6 +36343,7 @@
 /obj/structure/table,
 /obj/item/mop,
 /obj/item/reagent_containers/cup/bucket,
+/obj/item/storage/bag/trash,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/millennium_tower)
 "uQj" = (
@@ -48330,7 +48347,7 @@ arg
 arg
 arg
 tiW
-hxj
+bOi
 ofT
 hxj
 kzb
@@ -48437,7 +48454,7 @@ arg
 mvR
 aRA
 tiW
-oNK
+oHt
 ofT
 hxj
 kzb
@@ -59458,8 +59475,8 @@ fws
 myP
 vhR
 tMZ
-tMZ
 wyy
+rkX
 bZr
 jWc
 bpf
