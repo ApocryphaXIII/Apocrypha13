@@ -15253,10 +15253,6 @@
 /obj/effect/landmark/npcactivity,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/unionsquare)
-"iQA" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/carpet/darkpack/cyan,
-/area/vtm/interior/millennium_tower)
 "iQB" = (
 /obj/structure/vampdoor/glass{
 	dir = 4
@@ -19260,6 +19256,27 @@
 	},
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/unionsquare)
+"llu" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/freezer/commercial/small,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/turf/open/floor/iron/showroomfloor,
+/area/vtm/interior/millennium_tower/f4)
 "llw" = (
 /obj/effect/spawner/random/bedsheet/any,
 /obj/structure/bed,
@@ -23606,10 +23623,9 @@
 /turf/closed/wall/vampwall/rich/old,
 /area/vtm/interior/chantry)
 "nQd" = (
-/obj/keypad/panic_room,
-/obj/effect/decal/wallpaper/stone,
-/turf/closed/wall/vampwall/rich,
-/area/vtm/interior/millennium_tower/f4)
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/darkpack/cyan,
+/area/vtm/interior/millennium_tower)
 "nQk" = (
 /obj/structure/vampfence/corner/rich,
 /obj/effect/turf_decal/bordur{
@@ -25170,12 +25186,6 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/voivodate)
-"oEJ" = (
-/obj/structure/table,
-/obj/item/mop,
-/obj/item/reagent_containers/cup/bucket,
-/turf/open/floor/city/toilet/large,
-/area/vtm/interior/millennium_tower)
 "oEV" = (
 /obj/structure/closet/crate/bin/undense{
 	pixel_x = -7;
@@ -32067,25 +32077,6 @@
 /obj/effect/decal/cleanable/trash,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/anarch/basement)
-"syF" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner,
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/freezer/commercial/small,
-/obj/item/reagent_containers/blood/vitae,
-/obj/item/reagent_containers/blood/vitae,
-/obj/item/reagent_containers/blood/vitae,
-/obj/item/reagent_containers/blood/vitae,
-/turf/open/floor/iron/showroomfloor,
-/area/vtm/interior/millennium_tower/f4)
 "syQ" = (
 /obj/machinery/light/prince/directional/north,
 /turf/open/floor/wood/smooth/old,
@@ -36332,6 +36323,12 @@
 	},
 /turf/open/floor/plating/asphalt,
 /area/vtm/outside/financialdistrict)
+"uPR" = (
+/obj/structure/table,
+/obj/item/mop,
+/obj/item/reagent_containers/cup/bucket,
+/turf/open/floor/city/toilet/large,
+/area/vtm/interior/millennium_tower)
 "uQj" = (
 /obj/structure/table/wood,
 /obj/structure/closet/mini_fridge{
@@ -39894,6 +39891,25 @@
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior)
+"wYc" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer/commercial/small,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/obj/item/reagent_containers/blood/vitae,
+/turf/open/floor/iron/showroomfloor,
+/area/vtm/interior/millennium_tower/f4)
 "wYh" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
@@ -40927,27 +40943,6 @@
 	},
 /turf/open/floor/stone,
 /area/vtm/interior/mallunderground)
-"xHv" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/freezer/commercial/small,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/obj/item/reagent_containers/blood,
-/turf/open/floor/iron/showroomfloor,
-/area/vtm/interior/millennium_tower/f4)
 "xHz" = (
 /obj/structure/sign/departments/security,
 /turf/closed/wall/vampwall/metal/reinforced,
@@ -59786,7 +59781,7 @@ vhR
 tMZ
 uUn
 bGG
-oEJ
+uPR
 cFJ
 nIU
 xoa
@@ -60104,7 +60099,7 @@ epb
 epb
 epb
 jWc
-iQA
+nQd
 jgM
 jgM
 jgM
@@ -82039,7 +82034,7 @@ jVD
 bTa
 bTa
 gTy
-nQd
+uwK
 jGT
 jGT
 uwK
@@ -82470,7 +82465,7 @@ mrm
 vgt
 gpq
 lIb
-xHv
+llu
 jne
 lRJ
 tSe
@@ -82577,7 +82572,7 @@ pcz
 mrm
 mrm
 mrm
-syF
+wYc
 xte
 tSe
 tSe
