@@ -110,7 +110,7 @@
 		"Lorem Ipsum",
 	)
 
-/datum/splat/werewolf/shifter/corax/create_pref_unique_perks()
+/datum/splat/werewolf/shifter/ananasi/create_pref_unique_perks()
 	var/list/to_add = list()
 
 	to_add += list(
@@ -123,7 +123,7 @@
 		list(
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 			SPECIES_PERK_ICON = FA_ICON_BAND_AID,
-			SPECIES_PERK_NAME = "Passive healing",
+			SPECIES_PERK_NAME = "Blood healing",
 			SPECIES_PERK_DESC = "Ananasi can use blood they've consumed to heal their injuries.",
 		),
 	)

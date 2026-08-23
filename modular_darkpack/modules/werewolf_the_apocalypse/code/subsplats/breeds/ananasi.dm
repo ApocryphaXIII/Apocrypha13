@@ -8,9 +8,9 @@
 	start_gnosis = 4
 	breed_species = /datum/species/human/shifter/homid
 	gifts_provided = list(
+		/datum/action/cooldown/power/gift/bloodheal,
 		/datum/action/cooldown/power/gift/resist_pain,
-		/datum/action/cooldown/power/gift/stolen_moments,
-		/datum/action/cooldown/power/gift/bloodheal
+		/datum/action/cooldown/power/gift/stolen_moments
 	)
 
 /datum/subsplat/werewolf/breed_form/ananasi/arachnid
@@ -18,9 +18,9 @@
 	start_gnosis = 4
 	breed_species = /datum/species/human/shifter/feral
 	gifts_provided = list(
+		/datum/action/cooldown/power/gift/bloodheal,
 		/datum/action/cooldown/power/gift/resist_pain,
-		/datum/action/cooldown/power/gift/stolen_moments,
-		/datum/action/cooldown/power/gift/bloodheal
+		/datum/action/cooldown/power/gift/stolen_moments
 	)
 
 /datum/subsplat/werewolf/breed_form/ananasi/arachnid/generation_pref_icon(datum/universal_icon/main_icon)
