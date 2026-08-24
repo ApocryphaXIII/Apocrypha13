@@ -32,12 +32,11 @@
 #define JOB_PRIMOGEN_MALKAVIAN "Primogen Malkavian"
 #define JOB_PRIMOGEN_NOSFERATU "Primogen Nosferatu"
 #define JOB_PRIMOGEN_VENTRUE "Primogen Ventrue"
-#define JOB_PRIMOGEN_DUSKBORN "Primogen of the Duskborn"
+#define JOB_PRIMOGEN_DUSKBORN "Primogen of the Duskborn" // APOC EDIT CHANGE - JOBS
 
 //Anarch
 #define JOB_BARON "Baron"
 #define JOB_TAPSTER "Retinue" // APOC EDIT CHANGE - JOBS
-#define JOB_REEVE "Reeve" // APOC EDIT CHANGE - JOBS
 #define JOB_BRUISER "Bruiser"
 #define JOB_EMISSARY "Emissary"
 #define JOB_SWEEPER "Sweeper"

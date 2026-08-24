@@ -1,13 +1,13 @@
 /obj/item/smartphone/prince
 	contact_networks_pre_init = list(
 		alist(NETWORK_ID = MILLENIUM_TOWER_NETWORK, OUR_ROLE = "C.E.O.", USE_JOB_TITLE = FALSE)
-		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "TransAmerica Corporation C.E.O.", USE_JOB_TITLE = FALSE)
+		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Millenium Group C.E.O.", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/seneschal
 	contact_networks_pre_init = list(
 		alist(NETWORK_ID = MILLENIUM_TOWER_NETWORK, OUR_ROLE = "C.O.O.", USE_JOB_TITLE = FALSE)
-		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "TransAmerica Corporation C.O.O", USE_JOB_TITLE = FALSE)
+		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Millenium Group C.O.O", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/sheriff
@@ -37,7 +37,7 @@
 /obj/item/smartphone/ventrue_primo
 	important_contact_of = VAMPIRE_CLAN_VENTRUE
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Crown Blue Jazz Club Owner", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Management", USE_JOB_TITLE = FALSE)
 		)
 
 // TOREADOR
@@ -45,7 +45,7 @@
 /obj/item/smartphone/toreador_primo
 	important_contact_of = VAMPIRE_CLAN_TOREADOR
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = (PRIMARY_NIGHTCLUB_COMPANY + " Night Club Owner"), USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = (PRIMARY_NIGHTCLUB_COMPANY + "Sunday Friend"), USE_JOB_TITLE = FALSE)
 		)
 
 // NOSFERATU
@@ -53,7 +53,7 @@
 /obj/item/smartphone/nosferatu_primo
 	important_contact_of = VAMPIRE_CLAN_NOSFERATU
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Utility Administrator", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Administrator", USE_JOB_TITLE = FALSE)
 		)
 
 // MALKAVIAN
@@ -61,7 +61,15 @@
 /obj/item/smartphone/malkavian_primo
 	important_contact_of = VAMPIRE_CLAN_MALKAVIAN
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Hospital Administrator", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Contact", USE_JOB_TITLE = FALSE)
+		)
+
+// DUSKBORN
+
+/obj/item/smartphone/duskborn_primo
+	important_contact_of = VAMPIRE_CLAN_CAITIFF
+	contact_networks_pre_init = list(
+		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Outreach", USE_JOB_TITLE = FALSE)
 		)
 
 // LASOMBRA
@@ -69,13 +77,13 @@
 /obj/item/smartphone/lasombra_primo
 	important_contact_of = VAMPIRE_CLAN_LASOMBRA
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = LASOMBRA_NETWORK, OUR_ROLE = "Church Administrator", USE_JOB_TITLE = FALSE)
-		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Church Administrator", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = LASOMBRA_NETWORK, OUR_ROLE = "Open Shoulder", USE_JOB_TITLE = FALSE)
+		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Open Shoulder", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/lasombra_caretaker
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = LASOMBRA_NETWORK, OUR_ROLE = "Church Caretaker", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = LASOMBRA_NETWORK, OUR_ROLE = "Caretaker", USE_JOB_TITLE = FALSE)
 		)
 
 // BANU HAQIM
@@ -83,7 +91,7 @@
 /obj/item/smartphone/banu_primo
 	important_contact_of = VAMPIRE_CLAN_BANU_HAQIM
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "SFPD Civilian Consultant", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Head of the Household", USE_JOB_TITLE = FALSE)
 		)
 
 // TREMERE
@@ -147,34 +155,34 @@
 
 /obj/item/smartphone/baron
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Club Manager", USE_JOB_TITLE = FALSE)
-		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Anarchy Rose Club Manager", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Dragonsbreath Manager", USE_JOB_TITLE = FALSE)
+		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Dragonsbreath Smokeshop Manager", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/emissary
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Club Representative", USE_JOB_TITLE = FALSE)
-		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Anarchy Rose Club Representative", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Dragonsbreath HR", USE_JOB_TITLE = FALSE)
+		, alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Dragonsbreath Smokeshop HR", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/bruiser
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Club Bouncer", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Dragonsbreath Security", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/sweeper
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Club Bartender", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Dragonsbreath Shift Lead", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/liaison
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Club Promotor", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "TELL A CODER! - Liason", USE_JOB_TITLE = FALSE)
 		)
 
 /obj/item/smartphone/tapster
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Club Bartender", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = ANARCH_NETWORK, OUR_ROLE = "Dragonsbreath Employee", USE_JOB_TITLE = FALSE)
 		)
 
 // SUPPLY

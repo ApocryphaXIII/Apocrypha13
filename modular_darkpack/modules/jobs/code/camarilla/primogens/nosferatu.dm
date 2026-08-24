@@ -22,8 +22,8 @@
 	)
 
 	minimal_generation = 12
-	minimum_immortal_age = 15
-	minimum_masquerade = 5
+	minimum_immortal_age = 50
+	minimum_masquerade = 4
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_NOSFERATU)
 

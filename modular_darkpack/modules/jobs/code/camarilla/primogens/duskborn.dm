@@ -21,11 +21,11 @@
 		/datum/job_department/camarilla
 	)
 
-	minimal_generation = 10
-	minimum_immortal_age = 150
-	minimum_masquerade = 5
+	minimal_generation = 13
+	minimum_immortal_age = 50
+	minimum_masquerade = 4
 	allowed_splats = list(SPLAT_KINDRED)
-	allowed_clans = list(VAMPIRE_CLAN_BRUJAH, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_BANU_HAQIM_VIZIER, VAMPIRE_CLAN_CAITIFF, VAMPIRE_CLAN_DOMINATE_MALKAVIAN, VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY, VAMPIRE_CLAN_HEALER_SALUBRI, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_WARRIOR_SALUBRI)
+//	allowed_clans = list(VAMPIRE_CLAN_BRUJAH, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_BANU_HAQIM_VIZIER, VAMPIRE_CLAN_CAITIFF, VAMPIRE_CLAN_DOMINATE_MALKAVIAN, VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY, VAMPIRE_CLAN_HEALER_SALUBRI, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_WARRIOR_SALUBRI)
 
 	known_contacts = list("Prince")
 
@@ -38,5 +38,5 @@
 	uniform = /obj/item/clothing/under/vampire/suit
 	suit = /obj/item/clothing/suit/vampire/trench
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
-//	l_pocket = /obj/item/smartphone/duskborn_primo
+	l_pocket = /obj/item/smartphone/duskborn_primo
 	backpack_contents = list(/obj/item/vamp/keys/duskborn/primogen=1, /obj/item/card/credit/elder=1, /obj/item/card/whip, /obj/item/card/steward, /obj/item/card/myrmidon)
