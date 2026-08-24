@@ -6,7 +6,7 @@
 
 #define LOCKACCESS_VOIVODATE "voivodate_citizen"
 #define LOCKACCESS_VOIVODATE_ADVANCED "seer_voivodate"
-#define LOCKACCESS_VOIVODATE_MASTER
+#define LOCKACCESS_VOIVODATE_MASTER "voivodate_master"
 
 /obj/item/vamp/keys/veterinarian
 	name = "veterinarian keys"
@@ -88,7 +88,7 @@
 		LOCKACCESS_VOIVODATE
 	)
 
-/obj/effect/mapping_helpers/door/access/voivodate_master
+/obj/effect/mapping_helpers/door/access/voivodate/master
 	lock_id = LOCKACCESS_VOIVODATE_MASTER
 
 
