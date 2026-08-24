@@ -3,7 +3,12 @@
 
 /datum/discipline/vicissitude
 	name = "Vicissitude"
-	desc = "It is widely known as Tzimisce art of flesh and bone shaping. Violates Masquerade."
+	desc = {"It is widely known as Tzimisce art of flesh and bone shaping. Violates Masquerade.
+● Malleable Visage: Passive
+●● Fleshcrafting: Passive
+●●● Bonecrafting: Strength + Medicine (difficulty 7)
+●●●● Horrid Form: Passive
+●●●●● Bloodform: Passive"}
 	icon_state = "vicissitude"
 	clan_restricted = TRUE
 	power_type = /datum/discipline_power/vicissitude
@@ -84,7 +89,6 @@
 		tzimisce_operations += /datum/surgery_operation/basic/tend_wounds/combo/upgraded/master
 		tzimisce_operations += /datum/surgery_operation/limb/add_plastic
 		tzimisce_operations += typesof(/datum/surgery_operation/limb/bioware)
-		tzimisce_operations += typesof(/datum/surgery_operation/organ/brainwash)
 		tzimisce_operations += typesof(/datum/surgery_operation/organ/lobotomy)
 		tzimisce_operations += typesof(/datum/surgery_operation/organ/pacify)
 		tzimisce_operations += /datum/surgery_operation/organ/eye_color_surgery

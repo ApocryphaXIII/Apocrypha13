@@ -14,7 +14,7 @@ SUBSYSTEM_DEF(ticker)
 	/// or a "round-ending" event, like summoning Nar'Sie, a blob victory, the nuke going off, etc. ([FORCE_END_ROUND])
 	var/force_ending = END_ROUND_AS_NORMAL
 	/// If TRUE, there is no lobby phase, the game starts immediately.
-	#ifdef ABSOLUTE_MINIMUM
+	#ifdef AUTOSTART_GAME
 	var/start_immediately = TRUE
 	#else
 	var/start_immediately = FALSE
@@ -35,8 +35,13 @@ SUBSYSTEM_DEF(ticker)
 	var/tipped = FALSE //Did we broadcast the tip of the day yet?
 	var/selected_tip // What will be the tip of the day?
 
-	var/timeLeft //pregame timer
-	var/start_at
+	/// Time left until the round starts after all subsystems initialize
+	var/timeLeft = 120 SECONDS
+	/// value used to initialize `timeLeft` when the master subsystem finishes initializing.
+	/// We do this to allow for the timer to be set manually before all subsystems initialize,
+	/// while also making sure that when the timer does start, it does so at the value we have set.
+	/// This is set to the config value when SSticker initializes, so setting this only makes sense after that point.
+	var/start_at = 120 SECONDS
 
 	var/gametime_offset = 21 HOURS //Deciseconds to add to world.time for station time. // DARKPACK EDIT ADD - CITY_TIME
 	var/city_time_rate_multiplier = 2 //factor of station time progressal vs real time. // DARKPACK EDIT CHANGE - CITY_TIME
@@ -115,7 +120,7 @@ SUBSYSTEM_DEF(ticker)
 	else
 		set_lobby_music("[global.config.directory]/title_music/sounds/[pick(music)]")
 
-	start_at = world.time + (CONFIG_GET(number/lobby_countdown) * (1 SECONDS))
+	start_at = CONFIG_GET(number/lobby_countdown) * (1 SECONDS)
 	// DARKPACK EDIT ADD START - CITY_TIME
 	round_start_time = start_at // May be changed later, but prevents the time from jumping back when the round actually starts
 	gametime_offset = (CONFIG_GET(number/shift_time_start_hour) * (1 HOURS))
@@ -125,8 +130,6 @@ SUBSYSTEM_DEF(ticker)
 /datum/controller/subsystem/ticker/fire()
 	switch(current_state)
 		if(GAME_STATE_STARTUP)
-			if(Master.initializations_finished_with_no_players_logged_in)
-				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * (1 SECONDS))
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
 			to_chat(world, span_notice("<b>Welcome to [station_name()]!</b>"))
@@ -141,8 +144,6 @@ SUBSYSTEM_DEF(ticker)
 			fire()
 		if(GAME_STATE_PREGAME)
 			//lobby stats for statpanels
-			if(isnull(timeLeft))
-				timeLeft = max(0, start_at - world.time)
 			totalPlayers = LAZYLEN(GLOB.new_player_list)
 			totalPlayersReady = 0
 			total_admins_ready = 0
@@ -153,12 +154,17 @@ SUBSYSTEM_DEF(ticker)
 						++total_admins_ready
 
 			// APOC EDIT ADD START - (delay if no admins)
-			if(CONFIG_GET(flag/delay_if_no_admins))
+			if(CONFIG_GET(number/delay_if_no_admins))
 				if(timeLeft <= 600 && timeLeft > -1)
-					if(length(GLOB.admins) <= 0)
+					var/important_admins_on = 0
+					for(var/client/online_admin as anything in GLOB.admins)
+						if(online_admin.is_afk() || !check_rights_for(online_admin, R_BAN))
+							continue
+						important_admins_on++
+					if(important_admins_on < CONFIG_GET(number/delay_if_no_admins))
 						SetTimeLeft(-1)
 						start_immediately = FALSE
-						to_chat(world, span_infoplain("<b>The game start has been delayed due to no admins connected.</b>"), confidential = TRUE)
+						to_chat(world, span_infoplain("<b>The game start has been delayed due to not enough important admins connected.</b>"), confidential = TRUE)
 						return
 			// APOC EDIT ADD END
 
@@ -185,7 +191,6 @@ SUBSYSTEM_DEF(ticker)
 			if(!setup())
 				//setup failed
 				current_state = GAME_STATE_STARTUP
-				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * (1 SECONDS))
 				timeLeft = null
 				Master.SetRunLevel(RUNLEVEL_LOBBY)
 				SEND_SIGNAL(src, COMSIG_TICKER_ERROR_SETTING_UP)
@@ -402,11 +407,11 @@ SUBSYSTEM_DEF(ticker)
 			if(L.client.inactivity >= GLOB.logout_timer_set) //Connected, but inactive (alt+tabbed or something)
 				msg += "<b>[L.name]</b> ([L.key]), the [L.job] (<font color='#ffcc00'><b>Connected, Inactive</b></font>)\n"
 				failed = TRUE //AFK client
-			if(!failed && L.stat)
+			if(!failed && IS_UNCONSCIOUS_OR_CRIT(L))
 				if(HAS_TRAIT(L, TRAIT_SUICIDED)) //Suicider
 					msg += "<b>[L.name]</b> ([L.key]), the [L.job] ([span_bolddanger("Suicide")])\n"
 					failed = TRUE //Disconnected client
-				if(!failed && (L.stat == UNCONSCIOUS || L.stat == HARD_CRIT))
+				if(!failed && (L.stat == HARD_CRIT))
 					msg += "<b>[L.name]</b> ([L.key]), the [L.job] (Dying)\n"
 					failed = TRUE //Unconscious
 				if(!failed && L.stat == DEAD)
@@ -618,6 +623,8 @@ SUBSYSTEM_DEF(ticker)
 				var/atom/movable/screen/splash/fade_out = new(null, null, living.client, TRUE)
 				fade_out.fade(TRUE)
 				living.client.init_verbs()
+				living.client.show_spawn_text_overlay()
+
 			livings += living
 	if(livings.len)
 		addtimer(CALLBACK(src, PROC_REF(release_characters), livings), 3 SECONDS, TIMER_CLIENT_TIME)
@@ -807,15 +814,11 @@ SUBSYSTEM_DEF(ticker)
 		send2otherserver(news_source, news_message, "News_Report")
 
 /datum/controller/subsystem/ticker/proc/GetTimeLeft()
-	if(isnull(SSticker.timeLeft))
-		return max(0, start_at - world.time)
 	return timeLeft
 
 /datum/controller/subsystem/ticker/proc/SetTimeLeft(newtime)
-	if(newtime >= 0 && isnull(timeLeft)) //remember, negative means delayed
-		start_at = world.time + newtime
-	else
-		timeLeft = newtime
+	start_at = newtime
+	timeLeft = newtime
 
 /datum/controller/subsystem/ticker/proc/SetRoundEndSound(the_sound)
 	set waitfor = FALSE

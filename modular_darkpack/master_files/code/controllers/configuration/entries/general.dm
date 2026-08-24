@@ -18,6 +18,10 @@
 /datum/config_entry/flag/disable_ghost_looc
 	default = TRUE
 
+/datum/config_entry/string/servertagline
+
+// APOC EDIT ADD START
 // url for the alternate web_sound server. you can safely leave this alone if you want, vampire
 /// e.g. https://vampire-freaks.com/api
 /datum/config_entry/string/music_server_url // Not an existing override, bite me.
+// APOC EDIT ADD END
