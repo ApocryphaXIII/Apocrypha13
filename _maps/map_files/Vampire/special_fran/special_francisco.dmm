@@ -13017,6 +13017,17 @@
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/hotel)
+"hEY" = (
+/obj/effect/turf_decal/bordur{
+	dir = 1
+	},
+/obj/structure/vampdoor/reinf{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/voivodate/sanctum)
 "hFd" = (
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 8
@@ -15210,6 +15221,15 @@
 /obj/structure/coclock,
 /turf/open/floor/city/plating,
 /area/vtm/interior/museum)
+"iSq" = (
+/obj/effect/turf_decal/bordur,
+/obj/structure/vampdoor/reinf{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/voivodate/sanctum)
 "iSP" = (
 /obj/effect/turf_decal/siding/white/corner{
 	color = "#570090"
@@ -23776,7 +23796,7 @@
 	},
 /obj/structure/vampdoor/reinf,
 /obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/access/voivodate/advanced,
+/obj/effect/mapping_helpers/door/access/voivodate,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "nXv" = (
@@ -25584,7 +25604,7 @@
 	},
 /obj/structure/vampdoor/oldwood,
 /obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/access/voivodate/advanced,
+/obj/effect/mapping_helpers/door/access/voivodate,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate)
 "oVN" = (
@@ -32569,7 +32589,7 @@
 	},
 /obj/structure/vampdoor/reinf,
 /obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/access/voivodate/advanced,
+/obj/effect/mapping_helpers/door/access/voivodate,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "sPw" = (
@@ -88651,8 +88671,8 @@ tBB
 tBB
 tBB
 tBB
-izK
-wuQ
+hEY
+iSq
 tBB
 tBB
 tBB
