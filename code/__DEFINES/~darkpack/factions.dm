@@ -4,7 +4,7 @@
 #define FACTION_ANARCHS "anarchs"
 #define FACTION_CAMARILLA "camarilla"
 #define FACTION_SABBAT "sabbat"
-#define FACTION_BLACK_SUITS "giovanni-faction"
+#define FACTION_GIOVANNI "giovanni-faction"
 #define FACTION_VOIVODATE "seers-voivodate"
 
 // City faction
