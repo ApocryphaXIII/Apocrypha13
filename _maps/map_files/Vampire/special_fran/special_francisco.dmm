@@ -18135,14 +18135,10 @@
 "kyL" = (
 /obj/structure/table,
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/head/vampire/helmet,
-/obj/item/clothing/suit/vampire/vest,
-/obj/item/clothing/suit/vampire/vest,
-/obj/item/clothing/suit/vampire/vest,
-/obj/item/clothing/suit/vampire/vest,
+/obj/item/vampire_stake,
+/obj/item/vampire_stake,
+/obj/item/vampire_stake,
+/obj/item/vampire_stake,
 /turf/open/floor/city/plating,
 /area/vtm/interior/millennium_tower/f4)
 "kzb" = (
@@ -21398,6 +21394,10 @@
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
+"mxQ" = (
+/obj/structure/chair/darkpack/green,
+/turf/open/floor/carpet/darkpack/greengold,
+/area/vtm/interior/endron_facility/restricted)
 "myg" = (
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 4
@@ -77885,7 +77885,7 @@ eeP
 eeP
 eeP
 vZM
-lxK
+mxQ
 pid
 lxK
 lxK
