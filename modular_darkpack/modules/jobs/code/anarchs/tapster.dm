@@ -1,8 +1,8 @@
 /datum/job/vampire/tapster
 	title = JOB_TAPSTER
 	faction = FACTION_ANARCHS
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = SUPERVISOR_BARON_PUBLIC
 	config_tag = "TAPSTER"
 	job_flags = CITY_JOB_FLAGS

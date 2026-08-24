@@ -30,7 +30,7 @@
 	known_contacts = list("Prince")
 
 /datum/outfit/job/vampire/ventrue
-	name = "Primogen Ventrue"
+	name = "Primogen Ventrue Primogen"
 	jobtype = /datum/job/vampire/primogen_ventrue
 
 	ears = /obj/item/radio/headset/darkpack

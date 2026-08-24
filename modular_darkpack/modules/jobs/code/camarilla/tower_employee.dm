@@ -1,8 +1,8 @@
 /datum/job/vampire/towerwork
 	title = JOB_TOWERWORK
 	faction = FACTION_CAMARILLA
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = SUPERVISOR_SENESCHAL_PUBLIC
 	exp_granted_type = EXP_TYPE_CAMARILLA
 	config_tag = "TOWER_EMPLOYEE"

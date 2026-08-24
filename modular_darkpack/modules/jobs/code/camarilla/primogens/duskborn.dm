@@ -12,11 +12,11 @@
 	exp_required_type = EXP_TYPE_CAMARILLA
 	exp_required_type_department = EXP_TYPE_CAMARILLA
 	exp_granted_type = EXP_TYPE_CAMARILLA
-	config_tag = "PRIMOGEN_MALKAVIAN"
+	config_tag = "PRIMOGEN_DUSKBORN"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/duskborn
 
-//	display_order = JOB_DISPLAY_ORDER_DUSKBORN
+	display_order = JOB_DISPLAY_ORDER_DUSKBORN
 	departments_list = list(
 		/datum/job_department/camarilla
 	)
@@ -30,7 +30,7 @@
 	known_contacts = list("Prince")
 
 /datum/outfit/job/vampire/duskborn
-	name = "Duskborn Primogen"
+	name = "Primogen Duskborn"
 	jobtype = /datum/job/vampire/primogen_duskborn
 
 	ears = /obj/item/radio/headset/darkpack

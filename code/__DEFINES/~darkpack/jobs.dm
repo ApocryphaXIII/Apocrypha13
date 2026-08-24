@@ -26,13 +26,13 @@
 #define JOB_TOWERWORK "Tower Employee"
 
 //Primogens
-#define JOB_PRIMOGEN_TOREADOR "Primogen Toreador"
-#define JOB_PRIMOGEN_BANU_HAQIM "Primogen Banu Haqim"
-#define JOB_PRIMOGEN_LASOMBRA "Primogen Lasombra"
-#define JOB_PRIMOGEN_MALKAVIAN "Primogen Malkavian"
-#define JOB_PRIMOGEN_NOSFERATU "Primogen Nosferatu"
-#define JOB_PRIMOGEN_VENTRUE "Primogen Ventrue"
-#define JOB_PRIMOGEN_DUSKBORN "Primogen of the Duskborn" // APOC EDIT CHANGE - JOBS
+#define JOB_PRIMOGEN_TOREADOR "Toreador Primogen"
+#define JOB_PRIMOGEN_BANU_HAQIM "Banu Haqim Primogen"
+#define JOB_PRIMOGEN_LASOMBRA "Lasombra Primogen"
+#define JOB_PRIMOGEN_MALKAVIAN "Malkavian Primogen"
+#define JOB_PRIMOGEN_NOSFERATU "Nosferatu Primogen"
+#define JOB_PRIMOGEN_VENTRUE "Ventrue Primogen"
+#define JOB_PRIMOGEN_DUSKBORN "Duskborn Primogen" // APOC EDIT CHANGE - JOBS
 
 //Anarch
 #define JOB_BARON "Baron"
@@ -123,6 +123,7 @@
 #define JOB_DISPLAY_ORDER_NOSFERATU 10
 #define JOB_DISPLAY_ORDER_TOREADOR 11
 #define JOB_DISPLAY_ORDER_VENTRUE 12
+#define JOB_DISPLAY_ORDER_DUSKBORN 13
 
 #define JOB_DISPLAY_ORDER_CLINICS_DIRECTOR 1
 #define JOB_DISPLAY_ORDER_DOCTOR 2
