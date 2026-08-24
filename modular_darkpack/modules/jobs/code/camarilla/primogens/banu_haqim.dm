@@ -16,6 +16,8 @@
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/banuprim
 
+	exp_requirements = 1600
+	exp_required_type = EXP_TYPE_CAMARILLA
 	display_order = JOB_DISPLAY_ORDER_BANU
 	departments_list = list(
 		/datum/job_department/camarilla,

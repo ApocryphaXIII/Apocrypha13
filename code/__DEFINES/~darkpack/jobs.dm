@@ -32,6 +32,7 @@
 #define JOB_PRIMOGEN_MALKAVIAN "Primogen Malkavian"
 #define JOB_PRIMOGEN_NOSFERATU "Primogen Nosferatu"
 #define JOB_PRIMOGEN_VENTRUE "Primogen Ventrue"
+#define JOB_PRIMOGEN_DUSKBORN "Primogen of the Duskborn"
 
 //Anarch
 #define JOB_BARON "Baron"

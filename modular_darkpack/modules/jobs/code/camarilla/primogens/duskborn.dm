@@ -1,5 +1,5 @@
 /datum/job/vampire/primogen_duskborn
-	title = JOB_PRIMOGEN_MALKAVIAN
+	title = JOB_PRIMOGEN_DUSKBORN
 	description = "You are too valuable to not have a position, but you are not recognized enough for anything more. You are tasked with managing the city's thinbloods and Caitiff population. You may be a Caitiff yourself, however unlikely that may be."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
@@ -8,7 +8,7 @@
 	supervisors = SUPERVISOR_TRADITIONS
 	req_admin_notify = 1
 	minimal_player_age = 14
-	exp_requirements = 180
+	exp_requirements = 1600
 	exp_required_type = EXP_TYPE_CAMARILLA
 	exp_required_type_department = EXP_TYPE_CAMARILLA
 	exp_granted_type = EXP_TYPE_CAMARILLA

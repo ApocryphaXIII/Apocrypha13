@@ -3,6 +3,7 @@
 	faction = FACTION_VOIVODATE
 	total_positions = 2
 	spawn_positions = 2
+	exp_requirements = 3000
 	supervisors = " the Laws of Hospitality"
 	config_tag = "VOIVODE"
 	outfit = /datum/outfit/job/vampire/voivode

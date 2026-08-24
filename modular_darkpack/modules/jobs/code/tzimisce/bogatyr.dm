@@ -8,6 +8,7 @@
 	config_tag = "BOGATYR"
 	outfit = /datum/outfit/job/vampire/bogatyr
 	job_flags = CITY_JOB_FLAGS
+	exp_requirements = 1000
 	exp_required_type_department = EXP_TYPE_MANOR
 	departments_list = list(
 		/datum/job_department/manor,

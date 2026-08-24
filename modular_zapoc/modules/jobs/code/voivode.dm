@@ -43,6 +43,8 @@
 	config_tag = "BOGATYR_CAPTAIN"
 	description = "Captain of the Bogatyri, protectors of the Seer's Voivodate. You lead them in the protection of your family and the Voivode-in-Waiting who sleeps in the basement. Serve the Voivodes, and enforce the Hospitality on your family's lands."
 
+	exp_requirements = 2000
+	exp_required_type_department = EXP_TYPE_MANOR
 	display_order = JOB_DISPLAY_ORDER_BOGATYR_CAPTAIN
 	known_contacts = list("Voivode", "Zadruga", "Bogatyr", "Bogatyr Captain")
 

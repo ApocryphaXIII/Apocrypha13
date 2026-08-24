@@ -1,6 +1,6 @@
 /datum/job/vampire/prince
 	title = JOB_PRINCE
-	description = "You are the top dog of this city. You hold Praxis over " + CITY_NAME + ", and your word is law. Make sure the Masquerade is upheld, and your status is respected."
+	description = "You are the Prince of San Francisco, a chair vacated and filled with regularity. You grasp Praxis of this city, holding over domain, at least on paper and wherever the Anarchs aren't pushing you out. Try not to turn your hot peace with them into a hot war."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -8,7 +8,7 @@
 	supervisors = SUPERVISOR_TRADITIONS
 	req_admin_notify = 1
 	minimal_player_age = 14
-	exp_requirements = 180
+	exp_requirements = 3000
 	exp_required_type = EXP_TYPE_CAMARILLA
 	exp_required_type_department = EXP_TYPE_CAMARILLA
 	exp_granted_type = EXP_TYPE_CAMARILLA
@@ -25,7 +25,7 @@
 	minimum_immortal_age = 75
 	minimum_masquerade = 5
 	allowed_splats = list(SPLAT_KINDRED)
-	allowed_clans = list(VAMPIRE_CLAN_TREMERE, VAMPIRE_CLAN_VENTRUE, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_DOMINATE_MALKAVIAN, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_BANU_HAQIM_VIZIER)
+	allowed_clans = list(VAMPIRE_CLAN_TREMERE, VAMPIRE_CLAN_VENTRUE, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_DOMINATE_MALKAVIAN, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_BANU_HAQIM_VIZIER, VAMPIRE_CLAN_CAITIFF)
 
 	known_contacts = list(
 		"Sheriff",

@@ -8,7 +8,7 @@
 	supervisors = SUPERVISOR_TRADITIONS
 	req_admin_notify = 1
 	minimal_player_age = 14
-	exp_requirements = 180
+	exp_requirements = 1600
 	exp_required_type = EXP_TYPE_CAMARILLA
 	exp_required_type_department = EXP_TYPE_CAMARILLA
 	exp_granted_type = EXP_TYPE_CAMARILLA
