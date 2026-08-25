@@ -1394,8 +1394,8 @@
 /area/vtm/voivodate)
 "aSg" = (
 /obj/effect/turf_decal/siding/white,
-/obj/structure/sign/painting{
-	pixel_y = 30
+/obj/structure/sign/painting/library{
+	pixel_y = 32
 	},
 /turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
@@ -2225,6 +2225,9 @@
 	dir = 1
 	},
 /obj/structure/chair/sofa/corp/right,
+/obj/structure/sign/painting/large/library{
+	dir = 1
+	},
 /turf/open/floor/carpet/darkpack/greengold,
 /area/vtm/interior/endron_facility/restricted)
 "bqr" = (
@@ -8623,7 +8626,9 @@
 /area/vtm/interior/voivodate)
 "eZG" = (
 /obj/effect/decal/wallpaper/paper/rich,
-/obj/structure/sign/painting/library,
+/obj/structure/sign/painting/library{
+	pixel_y = 32
+	},
 /turf/closed/wall/vampwall/old,
 /area/vtm/interior/voivodate)
 "eZV" = (
@@ -10848,8 +10853,8 @@
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/voivodate)
 "gjp" = (
-/obj/structure/sign/painting{
-	pixel_y = 30
+/obj/structure/sign/painting/library{
+	pixel_y = 32
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
@@ -11122,6 +11127,15 @@
 	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
+"gsw" = (
+/obj/structure/closet/crate{
+	icon_state = "crateopen"
+	},
+/obj/structure/sign/painting/large/library_private{
+	dir = 1
+	},
+/turf/open/floor/carpet/lone,
+/area/vtm/interior/chantry)
 "gsy" = (
 /obj/effect/turf_decal/bordur/corner/inverse{
 	dir = 4
@@ -15955,12 +15969,8 @@
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
 "jdk" = (
-/obj/structure/table/wood/fancy/red,
-/obj/item/chair/wood/darkpack,
-/obj/structure/sign/painting/library_private{
-	pixel_y = 30
-	},
-/turf/open/floor/carpet/darkpack,
+/obj/effect/turf_decal/siding/white,
+/turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
 "jdT" = (
 /obj/structure/vampdoor/simple{
@@ -17520,8 +17530,8 @@
 	pixel_y = -8
 	},
 /obj/item/chair/wood/darkpack,
-/obj/structure/sign/painting/library_private{
-	pixel_y = 30
+/obj/structure/sign/painting/large/library{
+	dir = 1
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
@@ -23431,8 +23441,8 @@
 /turf/closed/wall/vampwall/rich,
 /area/vtm/interior/apartment)
 "nwm" = (
-/obj/structure/sign/painting/library_private{
-	pixel_y = 30
+/obj/structure/sign/painting/large/library{
+	dir = 1
 	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
@@ -24632,8 +24642,8 @@
 /turf/open/floor/carpet/black,
 /area/vtm/interior/laundromat)
 "oih" = (
-/obj/structure/sign/painting/large/library_private{
-	pixel_y = 24
+/obj/structure/sign/painting/large/library{
+	dir = 1
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/chantry)
@@ -26777,10 +26787,6 @@
 	dir = 1
 	},
 /obj/structure/chair/sofa/corp,
-/obj/structure/sign/painting/large/library{
-	pixel_y = 24;
-	pixel_x = -16
-	},
 /turf/open/floor/carpet/darkpack/greengold,
 /area/vtm/interior/endron_facility/restricted)
 "pqj" = (
@@ -26992,8 +26998,8 @@
 /area/vtm/outside/chinatown/rooftops)
 "pvj" = (
 /obj/effect/turf_decal/siding/white,
-/obj/structure/sign/painting/library_private{
-	pixel_y = 30
+/obj/structure/sign/painting/large/library{
+	dir = 1
 	},
 /turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
@@ -36031,8 +36037,8 @@
 /turf/closed/wall/vampwall/junk,
 /area/vtm/interior/strip)
 "urr" = (
-/obj/structure/sign/painting/library_private{
-	pixel_y = 30
+/obj/structure/sign/painting/large/library_private{
+	dir = 1
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
@@ -36428,8 +36434,8 @@
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop/bacotell)
 "uBg" = (
-/obj/structure/sign/painting{
-	pixel_y = 30
+/obj/structure/sign/painting/library{
+	pixel_y = 32
 	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/museum)
@@ -41680,7 +41686,7 @@
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "xIQ" = (
-/obj/effect/decal/painting{
+/obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
 /turf/open/floor/wood/smooth/old,
@@ -52356,7 +52362,7 @@ mdL
 iUa
 iUa
 bOb
-rKK
+gsw
 eJU
 rKK
 nPE
@@ -52888,7 +52894,7 @@ wyO
 kfR
 iAF
 bOb
-urr
+iUa
 iUa
 bOb
 pqA
@@ -63146,7 +63152,7 @@ fQV
 snH
 dpB
 qsw
-pvj
+jdk
 mfx
 nMJ
 kfR
@@ -64751,7 +64757,7 @@ cNV
 kbq
 lxP
 qsw
-jdk
+ovK
 ovK
 iUa
 eJU
@@ -66785,7 +66791,7 @@ kJg
 kJg
 kJg
 fmH
-cAb
+nwm
 cAb
 cAb
 cAb
@@ -66904,7 +66910,7 @@ oUt
 wfH
 oUt
 fmH
-nwm
+cAb
 cAb
 bHe
 cAb

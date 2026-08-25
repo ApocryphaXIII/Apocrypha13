@@ -148,6 +148,8 @@
 
 /area/vtm/interior/ghetto/sewer
 	name = "Sewer Apartments"
+	zone_type = ZONE_NO_MASQUERADE
+	domain = FALSE
 
 /area/vtm/interior/ghetto/fishermanswharf
 	name = "Fisherman's Wharf Ghetto Apartments"
