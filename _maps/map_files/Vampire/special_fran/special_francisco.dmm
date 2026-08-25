@@ -11127,15 +11127,6 @@
 	},
 /turf/open/floor/city/plating,
 /area/vtm/interior/endron_facility/restricted)
-"gsw" = (
-/obj/structure/closet/crate{
-	icon_state = "crateopen"
-	},
-/obj/structure/sign/painting/large/library_private{
-	dir = 1
-	},
-/turf/open/floor/carpet/lone,
-/area/vtm/interior/chantry)
 "gsy" = (
 /obj/effect/turf_decal/bordur/corner/inverse{
 	dir = 4
@@ -14986,7 +14977,7 @@
 /obj/structure/table/glass,
 /obj/item/reagent_containers/cup/glass/bottle/champagne,
 /obj/structure/sign/painting/large/library{
-	pixel_y = 24
+	dir = 1
 	},
 /turf/open/floor/carpet/darkpack/greengold,
 /area/vtm/interior/endron_facility/restricted)
@@ -15969,8 +15960,13 @@
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
 "jdk" = (
-/obj/effect/turf_decal/siding/white,
-/turf/open/floor/wood/old,
+/obj/structure/closet/crate{
+	icon_state = "crateopen"
+	},
+/obj/structure/sign/painting/large/library_private{
+	dir = 1
+	},
+/turf/open/floor/carpet/lone,
 /area/vtm/interior/chantry)
 "jdT" = (
 /obj/structure/vampdoor/simple{
@@ -19860,6 +19856,10 @@
 "lsG" = (
 /turf/closed/wall/vampwall/old,
 /area/vtm)
+"lsK" = (
+/obj/effect/turf_decal/siding/white,
+/turf/open/floor/wood/old,
+/area/vtm/interior/chantry)
 "lsP" = (
 /obj/structure/chair/sofa/corp/left{
 	color = "#50C878";
@@ -52362,7 +52362,7 @@ mdL
 iUa
 iUa
 bOb
-gsw
+jdk
 eJU
 rKK
 nPE
@@ -63152,7 +63152,7 @@ fQV
 snH
 dpB
 qsw
-jdk
+lsK
 mfx
 nMJ
 kfR
