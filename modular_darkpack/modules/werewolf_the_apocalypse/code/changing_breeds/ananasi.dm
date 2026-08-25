@@ -134,7 +134,7 @@
 /datum/action/cooldown/power/gift/alter_mood
 	name = "Alter Mood"
 	desc = "The Wyrsta can enhance or dampen the mood of a single individual."
-	button_icon_state = "stolen_moments"
+	button_icon_state = "alter_mood"
 	click_to_activate = TRUE
 	rank = 1
 	gnosis_cost = 1
