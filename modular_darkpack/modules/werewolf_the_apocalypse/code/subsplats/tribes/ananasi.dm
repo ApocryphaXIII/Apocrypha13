@@ -29,6 +29,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/open_seal,
 	)
+	tribe_traits = list(TRAIT_WYRMLING_KINSHIP)
 
 /datum/subsplat/werewolf/tribe/ananasi/anomia
 	name = TRIBE_ANOMIA
@@ -36,6 +37,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/mindspeak
 	)
+	tribe_traits = list(TRAIT_WYRMLING_KINSHIP)
 
 /datum/subsplat/werewolf/tribe/ananasi/malum
 	name = TRIBE_MALUM
@@ -43,6 +45,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/alter_mood,
 	)
+	tribe_traits = list(TRAIT_WYRMLING_KINSHIP)
 
 /datum/subsplat/werewolf/tribe/ananasi/kar
 	name = TRIBE_KAR

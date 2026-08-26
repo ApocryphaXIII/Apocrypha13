@@ -48,8 +48,12 @@
 				if(10)
 					. += "<i>In the local Garou, you have heard of [examined.p_their(TRUE)] [glory_flavor[3]].</i>"
 
+	// Wyrmling Kinship gift for Hatar Ananasi
+	if(HAS_TRAIT(examined, TRAIT_WYRMLING_KINSHIP) && tribe?.name == TRIBE_BLACK_SPIRAL_DANCERS)
+		. += span_boldnicegreen("<i>The Wyrm's presence clings to [examined.p_them()]. You recognize [examined.p_them()] as one of your own.</i>")
+
 	// For now, only one pattern flavor on examine. When Renown is reworked, this will be expanded to describe more complex patterns based on rank.
-	if(spiber_splat)
+	if(spiber_splat && istype(src, /datum/splat/werewolf/shifter/ananasi))
 		var/list/tenere_flavor = list("structure and order", "immaculately weaved patterns")
 		var/list/hatar_flavor = list("death and decay", "indiscriminate destruction")
 		var/list/kumoti_flavor = list("growth and change", "chaos and life unbidden")

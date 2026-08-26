@@ -5,6 +5,9 @@
 
 #define GIFT_TRAIT "gift"
 
+/// Trait given by a werewolf's Tribe
+#define TRIBE_TRAIT "tribe"
+
 #define STAKE_TRAIT "stake"
 #define DAMAGE_TRAIT "damage"
 

@@ -1,7 +1,20 @@
 /datum/subsplat/werewolf/tribe
 	abstract_type = /datum/subsplat/werewolf/tribe
 
-	//var/tribe_trait
+	// Traits granted from a tribe
+	var/list/tribe_traits = list()
+
+/datum/subsplat/werewolf/tribe/on_gain(mob/living/carbon/human/gaining_mob, datum/splat/gaining_splat, joining_round)
+	. = ..()
+
+	for(var/trait in tribe_traits)
+		ADD_TRAIT(gaining_mob, trait, TRIBE_TRAIT)
+
+/datum/subsplat/werewolf/tribe/on_lose(mob/living/carbon/human/losing_mob)
+	. = ..()
+
+	for(var/trait in tribe_traits)
+		REMOVE_TRAIT(losing_mob, trait, TRIBE_TRAIT)
 
 /**
  * Gets the singleton of an tribe
