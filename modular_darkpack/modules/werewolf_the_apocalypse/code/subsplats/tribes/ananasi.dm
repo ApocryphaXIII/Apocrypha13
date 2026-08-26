@@ -8,6 +8,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/open_seal,
 	)
+	tribe_traits = list(TRAIT_ALWAYS_CLEAN)
 
 /datum/subsplat/werewolf/tribe/ananasi/plicare
 	name = TRIBE_PLICARE
@@ -15,6 +16,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/mindspeak,
 	)
+	tribe_traits = list(TRAIT_ALWAYS_CLEAN)
 
 /datum/subsplat/werewolf/tribe/ananasi/gaderin
 	name = TRIBE_GADERIN
@@ -22,6 +24,7 @@
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/alter_mood,
 	)
+	tribe_traits = list(TRAIT_ALWAYS_CLEAN)
 
 /datum/subsplat/werewolf/tribe/ananasi/agere
 	name = TRIBE_AGERE

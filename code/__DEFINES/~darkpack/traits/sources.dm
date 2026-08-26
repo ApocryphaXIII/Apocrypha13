@@ -5,7 +5,7 @@
 
 #define GIFT_TRAIT "gift"
 
-/// Trait given by a werewolf's Tribe
+/// Trait given by a fera's Tribe
 #define TRIBE_TRAIT "tribe"
 
 #define STAKE_TRAIT "stake"

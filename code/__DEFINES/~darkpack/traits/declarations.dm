@@ -167,6 +167,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_NO_PASSIVE_HEALING "no_passive_healing"
 // Wyrmling Kinship gift, per Changing Breeds - Ananasi Gifts - Hatar
 #define TRAIT_WYRMLING_KINSHIP "wyrmling_kinship"
+// Prevents bloodying, made for Groom gift, per Changing Breeds - Ananasi Gifts - Tenere
+#define TRAIT_ALWAYS_CLEAN "always_clean"
 
 /// Mob has had atleast one tooth yanked out while having no method of regenerating it.
 #define TRAIT_TOOTH_PULLED "tooth_pulled"

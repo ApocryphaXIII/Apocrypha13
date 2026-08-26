@@ -1,7 +1,6 @@
 /datum/subsplat/werewolf/breed_form/ananasi
 	abstract_type = /datum/subsplat/werewolf/breed_form/ananasi
 	fera_restriction = SPLAT_ANANASI
-	roleplay_level = "Advanced"
 
 /datum/subsplat/werewolf/breed_form/ananasi/homid
 	name = BREED_ANANASI_HOMID
