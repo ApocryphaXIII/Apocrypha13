@@ -74,6 +74,17 @@
 		remove_drinking_overlay(drunk_from)
 		return
 
+	if(get_ananasi_splat(drunk_from))
+		to_chat(src, span_userdanger("Something is WRONG with [drunk_from]'s blood!"))
+		visible_message(span_danger("[src] throws up!"), span_userdanger("You throw up!"))
+		playsound(get_turf(src), 'modular_darkpack/modules/deprecated/sounds/vomit.ogg', 75, TRUE)
+		if(isturf(loc))
+			add_splatter_floor(loc)
+		remove_drinking_overlay(drunk_from)
+		if(HAS_TRAIT(drunk_from, TRAIT_BLOOD_OF_PAIN))
+			apply_status_effect(/datum/status_effect/blood_of_pain)
+		return
+
 	if(get_kindred_splat(drunk_from))
 		to_chat(src, span_userdanger("[drunk_from]'s blood tastes HEAVENLY..."))
 		adjust_brute_loss(-25, TRUE)

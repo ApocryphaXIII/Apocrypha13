@@ -163,6 +163,112 @@
 	StartCooldown()
 	return TRUE
 
+/datum/action/cooldown/power/gift/blood_of_pain
+	name = "Blood of Pain"
+	desc = "The Hatar turns their blood into debilitating poison."
+	button_icon_state = "blood_of_pain"
+	rank = 1
+
+/datum/action/cooldown/power/gift/blood_of_pain/Grant(mob/granted_to)
+	. = ..()
+	ADD_TRAIT(granted_to, TRAIT_BLOOD_OF_PAIN, GIFT_TRAIT)
+
+/datum/action/cooldown/power/gift/blood_of_pain/Activate(atom/target)
+	. = ..()
+
+	if(HAS_TRAIT_FROM(owner, TRAIT_BLOOD_OF_PAIN, GIFT_TRAIT))
+		REMOVE_TRAIT(owner, TRAIT_BLOOD_OF_PAIN, GIFT_TRAIT)
+		to_chat(owner, span_notice("Your blood is no longer poisonous."))
+	else
+		ADD_TRAIT(owner, TRAIT_BLOOD_OF_PAIN, GIFT_TRAIT)
+		to_chat(owner, span_notice("Your blood is now poisonous."))
+
+/atom/movable/screen/alert/status_effect/blood_of_pain
+	name = "Blood of Pain"
+	desc = "The blood you have consumed is causing you horrible agony!"
+	icon = 'modular_darkpack/modules/deprecated/icons/hud/screen_alert.dmi'
+	icon_state = "default"
+
+/datum/status_effect/blood_of_pain
+	duration = 3 MINUTES
+	tick_interval = 5 SECONDS
+	status_type = STATUS_EFFECT_UNIQUE
+	alert_type = /atom/movable/screen/alert/status_effect/blood_of_pain
+
+/datum/status_effect/blood_of_pain/tick(seconds_between_ticks)
+	var/datum/storyteller_roll/stamina_roll = new()
+	stamina_roll.applicable_stats = list(STAT_STAMINA)
+	stamina_roll.difficulty = 6
+	stamina_roll.roll_output_type = ROLL_PRIVATE
+	stamina_roll.spammy_roll = TRUE
+	if(stamina_roll.st_roll(owner, owner) != ROLL_SUCCESS)
+		to_chat(owner, span_danger("THE AGONY IS UNBEARABLE!"))
+		SEND_SOUND(owner, sound('modular_darkpack/modules/werewolf_the_apocalypse/sounds/gifts/blood_of_pain.ogg', volume = 75))
+		owner.Stun(5 SECONDS)
+
+/datum/status_effect/blood_of_pain/on_apply()
+	to_chat(owner, span_danger("You feel horrible after drinking that blood..."))
+	return TRUE
+
+/datum/status_effect/blood_of_pain/on_remove()
+	to_chat(owner, span_danger("The agonizing pain subsides."))
+
+/datum/action/cooldown/power/gift/blood_of_pain/Remove(mob/removed_from)
+	. = ..()
+	REMOVE_TRAIT(removed_from, TRAIT_BLOOD_OF_PAIN, GIFT_TRAIT)
+
+/datum/action/cooldown/power/gift/beneath_notice
+	name = "Beneath Notice"
+	desc = "The Tenere can make an object blend into the surrounding area."
+	button_icon_state = "beneath_notice"
+	click_to_activate = TRUE
+	rank = 1
+	gnosis_cost = 1
+
+	var/hide_duration = 30 MINUTES
+	var/alpha_reduction = 220
+	var/list/hidden_targets = list()
+
+/datum/action/cooldown/power/gift/beneath_notice/Activate(atom/movable/target)
+	if(!isobj(target) && !isitem(target))
+		return FALSE
+	if(hidden_targets[target])
+		remove_beneath_notice(target)
+		to_chat(owner, span_warning("[target] is revealed!"))
+		StartCooldown()
+		return TRUE
+
+	. = ..()
+
+	target.alpha = max(target.alpha - alpha_reduction, 0)
+
+	var/list/existing = list()
+	hidden_targets[target] = existing
+	RegisterSignal(target, COMSIG_QDELETING, PROC_REF(on_target_deleted))
+
+	existing["timer"] = addtimer(CALLBACK(src, PROC_REF(remove_beneath_notice), target), hide_duration, TIMER_STOPPABLE)
+
+	to_chat(owner, span_info("[target] is now hidden from sight."))
+	StartCooldown()
+	return TRUE
+
+/datum/action/cooldown/power/gift/beneath_notice/proc/remove_beneath_notice(atom/movable/target)
+	var/list/existing = hidden_targets[target]
+	if(!existing)
+		return
+	hidden_targets -= target
+	UnregisterSignal(target, COMSIG_QDELETING)
+
+	target.alpha = min(target.alpha + alpha_reduction, 255)
+
+/datum/action/cooldown/power/gift/beneath_notice/proc/on_target_deleted(atom/movable/target)
+	SIGNAL_HANDLER
+	var/list/existing = hidden_targets[target]
+	if(!existing)
+		return
+	hidden_targets -= target
+	deltimer(existing["timer"])
+
 #undef ALTER_MOOD_ENHANCE
 #undef ALTER_MOOD_DAMPEN
 

@@ -169,6 +169,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_WYRMLING_KINSHIP "wyrmling_kinship"
 // Prevents bloodying, made for Groom gift, per Changing Breeds - Ananasi Gifts - Tenere
 #define TRAIT_ALWAYS_CLEAN "always_clean"
+// Blood Of Pain gift, per Changing Breeds - Ananasi Gifts - Hatar
+#define TRAIT_BLOOD_OF_PAIN "blood_of_pain"
 
 /// Mob has had atleast one tooth yanked out while having no method of regenerating it.
 #define TRAIT_TOOTH_PULLED "tooth_pulled"
