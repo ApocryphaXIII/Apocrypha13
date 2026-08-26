@@ -34,6 +34,7 @@
 
 	. = ..()
 
+	playsound(owner, 'modular_darkpack/modules/vampire_the_masquerade/sounds/bloodhealing.ogg', 50, FALSE)
 	human_owner.heal_ordered_damage(30, list(BRUTE, TOX, OXY, STAMINA))
 	human_owner.heal_ordered_damage(6, list(BURN, AGGRAVATED))
 	human_owner.update_damage_overlays()
@@ -153,8 +154,10 @@
 
 	switch(alter_type_selected)
 		if(ALTER_MOOD_ENHANCE)
+			SEND_SOUND(target, sound('modular_darkpack/modules/werewolf_the_apocalypse/sounds/gifts/altermood.ogg', volume = 50))
 			to_chat(living_target, span_boldnotice("An odd warmth spreads through your mind, heightening your emotional state. Any emotional highs or lows are suddenly more intense and extreme."))
 		if(ALTER_MOOD_DAMPEN)
+			SEND_SOUND(target, sound('modular_darkpack/modules/werewolf_the_apocalypse/sounds/gifts/altermood.ogg', volume = 50))
 			to_chat(living_target, span_boldwarning("An odd numbness sets over your mind, dulling your emotional state. Any extreme emotional highs or lows are suddenly muted to a more moderate, mundane level."))
 
 	StartCooldown()
