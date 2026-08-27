@@ -205,6 +205,8 @@
 		to_chat(owner, span_danger("THE AGONY IS UNBEARABLE!"))
 		SEND_SOUND(owner, sound('modular_darkpack/modules/werewolf_the_apocalypse/sounds/gifts/blood_of_pain.ogg', volume = 75))
 		owner.Stun(5 SECONDS)
+	else
+		SEND_SOUND(owner, sound('modular_darkpack/modules/werewolf_the_apocalypse/sounds/gifts/blood_of_pain_pass.ogg', volume = 75))
 
 /datum/status_effect/blood_of_pain/on_apply()
 	to_chat(owner, span_danger("You feel horrible after drinking that blood..."))
