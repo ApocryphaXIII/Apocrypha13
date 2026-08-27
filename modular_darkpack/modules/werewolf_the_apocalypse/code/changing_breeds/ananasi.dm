@@ -225,7 +225,7 @@
 	rank = 1
 	gnosis_cost = 1
 
-	var/hide_duration = 30 MINUTES
+	var/hide_duration = 180 MINUTES
 	var/alpha_reduction = 220
 	var/list/hidden_targets = list()
 
@@ -241,6 +241,12 @@
 	. = ..()
 
 	target.alpha = max(target.alpha - alpha_reduction, 0)
+	ADD_TRAIT(target, TRAIT_EXAMINE_SKIP, GIFT_TRAIT)
+
+	if(isitem(target) && ismob(target.loc))
+		var/obj/item/worn_item = target
+		var/mob/wearer = target.loc
+		wearer.update_clothing(worn_item.slot_flags)
 
 	var/list/existing = list()
 	hidden_targets[target] = existing
@@ -260,14 +266,27 @@
 	UnregisterSignal(target, COMSIG_QDELETING)
 
 	target.alpha = min(target.alpha + alpha_reduction, 255)
+	REMOVE_TRAIT(target, TRAIT_EXAMINE_SKIP, GIFT_TRAIT)
+
+	if(isitem(target) && ismob(target.loc))
+		var/obj/item/worn_item = target
+		var/mob/wearer = target.loc
+		wearer.update_clothing(worn_item.slot_flags)
 
 /datum/action/cooldown/power/gift/beneath_notice/proc/on_target_deleted(atom/movable/target)
 	SIGNAL_HANDLER
 	var/list/existing = hidden_targets[target]
 	if(!existing)
 		return
+
+	if(isitem(target) && ismob(target.loc))
+		var/obj/item/worn_item = target
+		var/mob/wearer = target.loc
+		wearer.update_clothing(worn_item.slot_flags)
+
 	hidden_targets -= target
 	deltimer(existing["timer"])
+	REMOVE_TRAIT(target, TRAIT_EXAMINE_SKIP, GIFT_TRAIT)
 
 #undef ALTER_MOOD_ENHANCE
 #undef ALTER_MOOD_DAMPEN
