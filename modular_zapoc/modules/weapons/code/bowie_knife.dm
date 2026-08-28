@@ -8,6 +8,7 @@
 	ONFLOOR_ICON_HELPER('modular_zapoc/modules/weapons/icons/melee_onfloor.dmi')
 	icon_state = "bowie"
 	inhand_icon_state = "bowie"
+	worn_icon_state = null
 	slot_flags = ITEM_SLOT_MASK
 	force = 3 TTRPG_DAMAGE // stronger than knife
 	custom_price = 200
