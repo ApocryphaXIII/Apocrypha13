@@ -63,7 +63,7 @@
 			ownership_question = "Is this my car?"
 			alert_title = "Vehicle"
 		if(LOCK_OWNERSHIP_APARTMENT)
-			ownership_question = "Is this my apartment?"
+			ownership_question = "Is this my apartment? (Please be courteous and only claim apartments when you need them!)"
 			alert_title = "Apartment"
 
 	var/alert = tgui_alert(human, ownership_question, alert_title, list("Yes", "No"))
