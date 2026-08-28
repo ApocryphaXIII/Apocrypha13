@@ -240,3 +240,11 @@
   chazzyjazzy:
   - rscdel: Removes Beekeeping supply pack from the warehouse
   - rscdel: Removes Monkey Cubes supply pack from the warehouse
+2026-08-28:
+  SoreYew:
+  - map: Changed Armory Stock
+  - map: Added bathroom to Millennium Tower 3rd floor, and a washing machine to the
+      supply closet outside the conference room
+  - map: hid blood around Millennium Tower from Tower Employees in a care room on
+      the 1st floor
+  - map: added a janitorial closet to the 1st floor
