@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_lasombra
 	title = JOB_PRIMOGEN_LASOMBRA
-	description = "Offer your infinite knowledge to Prince of the City. Monitor those of your Clan and your lesser cousins, while holding a Court of Blood as need be, for all it takes for the Camarilla to turn on you is one mistake. You and Your Clan were given a domain in the local Church and in the vicinity of a swarm of Lupines, keep matters under control."
+	description = "Offer your infinite knowledge to Prince of the City. Monitor those of your Clan and your lesser cousins, while holding a Court of Blood as need be, for all it takes for the Camarilla to turn on you is one mistake."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -8,7 +8,7 @@
 	supervisors = SUPERVISOR_TRADITIONS
 	req_admin_notify = 1
 	minimal_player_age = 14
-	exp_requirements = 180
+	exp_requirements = 1600
 	exp_required_type = EXP_TYPE_CAMARILLA
 	exp_required_type_department = EXP_TYPE_CAMARILLA
 	exp_granted_type = EXP_TYPE_CAMARILLA
@@ -18,13 +18,12 @@
 
 	display_order = JOB_DISPLAY_ORDER_LASOMBRA
 	departments_list = list(
-		/datum/job_department/church,
-		/datum/job_department/camarilla,
+		/datum/job_department/camarilla
 	)
 
 	minimal_generation = 12
 	minimum_immortal_age = 50
-	minimum_masquerade = 5
+	minimum_masquerade = 4
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_LASOMBRA)
 

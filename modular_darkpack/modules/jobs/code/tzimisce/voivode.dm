@@ -1,8 +1,9 @@
 /datum/job/vampire/voivode
 	title = JOB_VOIVODE
-	faction = FACTION_SABBAT
-	total_positions = 1
-	spawn_positions = 1
+	faction = FACTION_VOIVODATE
+	total_positions = 2
+	spawn_positions = 2
+	exp_requirements = 3000
 	supervisors = " the Laws of Hospitality"
 	config_tag = "VOIVODE"
 	outfit = /datum/outfit/job/vampire/voivode
@@ -15,6 +16,8 @@
 
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE) // APOC EDIT CHANGE - JOBS - (Voivode)
+
+	clan_slots = list(VAMPIRE_CLAN_TZIMISCE = 1, VAMPIRE_CLAN_MALKAVIAN = 1, VAMPIRE_CLAN_TOREADOR = 1, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE = 1)
 
 	description = "You are a leader of the Seer's Voivodate. A congregation of Seer clans, leading the new Voivodate in the face of near systemic Collapse. Oversee the Hospitality on your lands, and guard the Sarcophagus of the Voivode-in-Waiting in Waiting kept in your basement." // APOC EDIT CHANGE - JOBS - (Voivode)
 	minimum_masquerade = 2
@@ -31,4 +34,19 @@
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	belt = /obj/item/storage/belt/sheath/vamp/sword
 	l_pocket = /obj/item/smartphone/voivode
-	backpack_contents = list(/obj/item/vamp/keys/voivodate/master = 1, /obj/item/instrument/eguitar/vamp = 1, /obj/item/card/credit/elder = 1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)
+	backpack_contents = list(/obj/item/vamp/keys/voivodate/master = 1, /obj/item/card/credit/elder = 1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)
+
+/*
+/datum/job/vampire/voivode/after_spawn(mob/living/spawned, client/player_client)
+	. = ..()
+	RegisterSignal(spawned, COMSIG_MOB_GHOSTIZED, PROC_REF(on_mob_ghost))
+	var/datum/splat/our_splat = get_kindred_splat(spawned)
+	var/clan_id = our_splat.clan.id
+	allowed_clans -= clan_id
+
+/datum/job/vampire/voivode/proc/on_mob_ghost(mob/living/despawning)
+	SIGNAL_HANDLER
+	var/datum/splat/our_splat = get_kindred_splat(spawned)
+	var/clan_id = our_splat.clan.id
+	allowed_clans += clan_id
+*/

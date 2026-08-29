@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_banu
 	title = JOB_PRIMOGEN_BANU_HAQIM
-	description = "Offer your infinite knowledge to Prince of the City, while overseeing the Banu Haqim in the city. Monitor their contracts and ensure they remain true to the ways of the Clan. You have an official cover with the Police Department as a local civilian consultant, ensure things run smoothly, on either end."
+	description = "Offer your infinite knowledge to Prince of the City, while overseeing the Banu Haqim in the city. Monitor their contracts and ensure they remain true to the ways of the Clan."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -16,6 +16,8 @@
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/banuprim
 
+	exp_requirements = 1600
+	exp_required_type = EXP_TYPE_CAMARILLA
 	display_order = JOB_DISPLAY_ORDER_BANU
 	departments_list = list(
 		/datum/job_department/camarilla,
@@ -23,14 +25,14 @@
 
 	minimal_generation = 12
 	minimum_immortal_age = 50
-	minimum_masquerade = 5
+	minimum_masquerade = 4
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_BANU_HAQIM_VIZIER)
 
 	known_contacts = list("Prince")
 
 /datum/outfit/job/vampire/banuprim
-	name = "Primogen Banu Haqim"
+	name = "Banu Haqim Primogen"
 	jobtype = /datum/job/vampire/primogen_banu
 
 	ears = /obj/item/radio/headset/darkpack

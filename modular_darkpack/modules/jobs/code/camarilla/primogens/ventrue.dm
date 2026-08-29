@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_ventrue
 	title = JOB_PRIMOGEN_VENTRUE
-	description = "Offer your infinite knowledge to Prince of the City. Maintain the local Jazz Club, in front of the Tower, and its Elysium."
+	description = "Offer your infinite knowledge to Prince of the City. Uphold Clan interests and look out for prospective protege for it."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -8,7 +8,7 @@
 	supervisors = SUPERVISOR_TRADITIONS
 	req_admin_notify = 1
 	minimal_player_age = 14
-	exp_requirements = 180
+	exp_requirements = 1600
 	exp_required_type = EXP_TYPE_CAMARILLA
 	exp_required_type_department = EXP_TYPE_CAMARILLA
 	exp_granted_type = EXP_TYPE_CAMARILLA
@@ -23,14 +23,14 @@
 
 	minimal_generation = 12
 	minimum_immortal_age = 50
-	minimum_masquerade = 5
+	minimum_masquerade = 4
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_VENTRUE)
 
 	known_contacts = list("Prince")
 
 /datum/outfit/job/vampire/ventrue
-	name = "Primogen Ventrue"
+	name = "Primogen Ventrue Primogen"
 	jobtype = /datum/job/vampire/primogen_ventrue
 
 	ears = /obj/item/radio/headset/darkpack

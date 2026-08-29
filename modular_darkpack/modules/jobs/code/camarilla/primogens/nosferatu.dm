@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_nosferatu
 	title = JOB_PRIMOGEN_NOSFERATU
-	description = "Offer your infinite knowledge to Prince of the City, and run the warren, your domain watches over the sewers."
+	description = "Offer your infinite knowledge to Prince of the City. Manage what's left of your Warrens. Keep your clan interests in mind."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -8,7 +8,7 @@
 	supervisors = SUPERVISOR_TRADITIONS
 	req_admin_notify = 1
 	minimal_player_age = 14
-	exp_requirements = 180
+	exp_requirements = 1600
 	exp_required_type = EXP_TYPE_CAMARILLA
 	exp_required_type_department = EXP_TYPE_CAMARILLA
 	exp_granted_type = EXP_TYPE_CAMARILLA
@@ -18,13 +18,12 @@
 
 	display_order = JOB_DISPLAY_ORDER_NOSFERATU
 	departments_list = list(
-		/datum/job_department/camarilla,
-		/datum/job_department/city_services
+		/datum/job_department/camarilla
 	)
 
 	minimal_generation = 12
-	minimum_immortal_age = 15
-	minimum_masquerade = 5
+	minimum_immortal_age = 50
+	minimum_masquerade = 4
 	allowed_splats = list(SPLAT_KINDRED)
 	allowed_clans = list(VAMPIRE_CLAN_NOSFERATU)
 

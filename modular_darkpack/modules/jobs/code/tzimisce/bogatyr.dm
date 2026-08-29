@@ -1,13 +1,14 @@
 
 /datum/job/vampire/bogatyr
 	title = JOB_BOGATYR
-	faction = FACTION_SABBAT
+	faction = FACTION_VOIVODATE
 	total_positions = 2 // APOC EDIT CHANGE - JOBS - (Voivode)
 	spawn_positions = 2 // APOC EDIT CHANGE - JOBS - (Voivode)
 	supervisors = " the Laws of Hospitality"
 	config_tag = "BOGATYR"
 	outfit = /datum/outfit/job/vampire/bogatyr
 	job_flags = CITY_JOB_FLAGS
+	exp_requirements = 1000
 	exp_required_type_department = EXP_TYPE_MANOR
 	departments_list = list(
 		/datum/job_department/manor,
@@ -22,7 +23,7 @@
 	maximum_immortal_age = 200
 	minimum_masquerade = 2
 
-	known_contacts = list("Prince", "Baron", "Sheriff")
+	known_contacts = list("Voivode", "Zadruga", "Bogatyr", "Bogatyr Captain")
 
 /datum/outfit/job/vampire/bogatyr
 	name = "Bogatyr"
@@ -36,4 +37,4 @@
 	suit = /obj/item/clothing/suit/vampire/bogatyr
 	belt = /obj/item/storage/belt/sheath/vamp/sword
 	l_pocket = /obj/item/smartphone/bogatyr
-	backpack_contents = list(/obj/item/vamp/keys/voivodate = 1, /obj/item/card/credit=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)
+	backpack_contents = list(/obj/item/vamp/keys/voivodate/advanced = 1, /obj/item/card/credit=1) // DARKPACK EDIT CHANGE - JOBS - (Voivode)
