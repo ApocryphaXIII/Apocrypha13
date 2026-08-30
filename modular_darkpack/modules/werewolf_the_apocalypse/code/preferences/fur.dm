@@ -33,3 +33,10 @@
 
 /datum/preference/choiced/fera_fur_color/corax/init_possible_values()
 	return assoc_to_keys(GLOB.corax_fur_colors)
+
+/datum/preference/choiced/fera_fur_color/ananasi
+	savefile_key = "ananasi_fur_color"
+	splat_id = SPLAT_ANANASI
+
+/datum/preference/choiced/fera_fur_color/ananasi/init_possible_values()
+	return assoc_to_keys(GLOB.ananasi_fur_colors)

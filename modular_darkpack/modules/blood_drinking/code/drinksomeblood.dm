@@ -43,7 +43,7 @@
 
 	if(!do_after(src, 3 SECONDS, target = drunk_from, timed_action_flags = NONE, show_progress = FALSE))
 		remove_drinking_overlay(drunk_from)
-		if(!(SEND_SIGNAL(drunk_from, COMSIG_MOB_VAMPIRE_SUCKED, drunk_from) & COMPONENT_RESIST_VAMPIRE_KISS))
+		if(get_kindred_splat(src) && !HAS_TRAIT(src, TRAIT_PAINFUL_VAMPIRE_KISS) && !HAS_TRAIT(drunk_from, TRAIT_RESISTS_KISS))
 			drunk_from.apply_status_effect(/datum/status_effect/kissed)
 		return
 
@@ -72,6 +72,17 @@
 		if(isturf(loc))
 			add_splatter_floor(loc)
 		remove_drinking_overlay(drunk_from)
+		return
+
+	if(get_ananasi_splat(drunk_from))
+		to_chat(src, span_userdanger("Something is WRONG with [drunk_from]'s blood!"))
+		visible_message(span_danger("[src] throws up!"), span_userdanger("You throw up!"))
+		playsound(get_turf(src), 'modular_darkpack/modules/deprecated/sounds/vomit.ogg', 75, TRUE)
+		if(isturf(loc))
+			add_splatter_floor(loc)
+		remove_drinking_overlay(drunk_from)
+		if(HAS_TRAIT(drunk_from, TRAIT_BLOOD_OF_PAIN))
+			apply_status_effect(/datum/status_effect/blood_of_pain)
 		return
 
 	if(get_kindred_splat(drunk_from))

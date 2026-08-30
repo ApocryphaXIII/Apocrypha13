@@ -6,10 +6,15 @@
 	if(grab_state > GRAB_PASSIVE)
 		if(isliving(pulling))
 			var/mob/living/bit_living = pulling
-			if(!get_vampire_splat(src))
+			if(!get_vampire_splat(src) && !get_ananasi_splat(src))
 				SEND_SOUND(src, sound('modular_darkpack/modules/blood_drinking/sounds/need_blood.ogg', volume = 75))
 				to_chat(src, span_warning("You're not desperate enough to try <i>that</i>."))
 				return
+			if(get_ananasi_splat(src))
+				if(get_kindred_splat(bit_living))
+					SEND_SOUND(src, sound('modular_darkpack/modules/blood_drinking/sounds/need_blood.ogg', volume = 75))
+					to_chat(src, span_warning("This <b>BLOOD</b> is toxic to you!"))
+					return
 			// Allow ghouls to steal viate?
 			if(get_ghoul_splat(src))
 				if(!get_kindred_splat(bit_living))
@@ -71,7 +76,9 @@
 
 			if(get_kindred_splat(src))
 				bit_living.emote("groan")
-			else if(get_ghoul_splat(src))
+			if(get_ghoul_splat(src))
+				bit_living.emote("scream")
+			if(get_ananasi_splat(src))
 				bit_living.emote("scream")
 
 			if(ishuman(bit_living))

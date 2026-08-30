@@ -103,7 +103,7 @@ GLOBAL_LIST_EMPTY(unallocated_agility_shortcuts)
 /obj/agility_shortcut/urban/spiral
 	name = "hole"
 	desc = "There are a bunch of bricks missing. Not enough for you to crawl in. Unless you were insane."
-	allowed_tribes = TRIBE_LIST_WYRM
+	allowed_tribes = TRIBE_BLACK_SPIRAL_DANCERS
 
 /obj/agility_shortcut/anyone
 	desc = "You could probably fit in there. Want to find out?"

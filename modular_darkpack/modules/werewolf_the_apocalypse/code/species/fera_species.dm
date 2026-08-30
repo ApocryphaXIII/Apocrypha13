@@ -274,9 +274,11 @@
 	fallback_icon = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/garou_forms/hispo.dmi'
 	speed_mod = /datum/movespeed_modifier/shifter/dire
 
+/datum/species/human/shifter/dire/ananasi
+	form_causes_delirium = TRUE
+
 /datum/species/human/shifter/dire/visible_gender_override(mob/living/carbon/human/holder)
 	return "beast"
-
 
 /datum/species/human/shifter/feral
 	name = "feral form"

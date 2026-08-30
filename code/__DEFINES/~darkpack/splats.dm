@@ -9,7 +9,8 @@
 //#define SPLAT_FERA "splat_fera"
 #define SPLAT_GAROU "splat_garou"
 #define SPLAT_CORAX "splat_corax"
-#define SPLAT_SHIFTERS list(SPLAT_GAROU, SPLAT_CORAX)
+#define SPLAT_ANANASI "splat_ananasi"
+#define SPLAT_SHIFTERS list(SPLAT_GAROU, SPLAT_CORAX, SPLAT_ANANASI)
 
 #define SPLAT_PRIO_HALFSPLAT 100
 #define SPLAT_PRIO_SPLAT 200

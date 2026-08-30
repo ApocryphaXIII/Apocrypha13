@@ -106,6 +106,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_SCARRING_RESISTANT "scarring_resistant"// Temporal scars wont save
 /// Stepping on glass shards immunity. Currently used for a couple Garou forms but could be used elsewhere.
 #define TRAIT_HARDENED_SOLES "hardened_soles"
+// Splats that resist the affects of The Kiss
+#define TRAIT_RESISTS_KISS "resists_kiss"
 
 
 // Allows the user to pass through doors
@@ -161,6 +163,14 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_JAMMING_WEAPONS "jamming_weapons"
 #define TRAIT_NATURAL "natural"
 #define TRAIT_AURA_OF_CONFIDENCE "aura_of_confidence"
+// Fera with no passive healing
+#define TRAIT_NO_PASSIVE_HEALING "no_passive_healing"
+// Wyrmling Kinship gift, per Changing Breeds - Ananasi Gifts - Hatar
+#define TRAIT_WYRMLING_KINSHIP "wyrmling_kinship"
+// Prevents bloodying, made for Groom gift, per Changing Breeds - Ananasi Gifts - Tenere
+#define TRAIT_ALWAYS_CLEAN "always_clean"
+// Blood Of Pain gift, per Changing Breeds - Ananasi Gifts - Hatar
+#define TRAIT_BLOOD_OF_PAIN "blood_of_pain"
 
 /// Mob has had atleast one tooth yanked out while having no method of regenerating it.
 #define TRAIT_TOOTH_PULLED "tooth_pulled"
