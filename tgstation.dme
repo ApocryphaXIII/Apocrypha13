@@ -8323,7 +8323,6 @@
 #include "modular_zapoc\modules\decor\code\grate.dm"
 #include "modular_zapoc\modules\decor\code\man_crystal.dm"
 #include "modular_zapoc\modules\decor\code\superhigh_railing.dm"
-#include "modular_zapoc\modules\decor\code\torch.dm"
 #include "modular_zapoc\modules\gray_masses\code\effects.dm"
 #include "modular_zapoc\modules\gray_masses\code\gray_core.dm"
 #include "modular_zapoc\modules\gray_masses\code\gray_man.dm"

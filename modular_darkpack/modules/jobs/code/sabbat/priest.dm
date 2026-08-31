@@ -27,12 +27,12 @@
 	head = /obj/item/clothing/head/vampire/noddist_mask
 	uses_default_clan_clothes = TRUE
 	backpack_contents = list(/obj/item/card/credit=1)
-
+/*// APOC EDIT REMOVAL START
 /datum/outfit/job/vampire/sabbatpriest/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.mind)
 		H.mind.add_antag_datum(/datum/antagonist/sabbatist/priest)
-
+*/ // APOC EDIT REMOVAL END
 /datum/antagonist/sabbatist/priest
 	antag_hud_name = "ductus_priest"
 
