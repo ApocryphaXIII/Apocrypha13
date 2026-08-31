@@ -173,9 +173,8 @@
 	name = "police helmet"
 	desc = "Looks dangerous. Provides good protection."
 	icon_state = "helmet"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEHAIR
 	armor_type = /datum/armor/police_helmet
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	masquerade_violating = TRUE
 	custom_price = 50
 
@@ -185,6 +184,26 @@
 	laser = 40
 	energy = 40
 	bomb = 20
+	fire = 20
+	acid = 40
+	wound = 25
+
+/obj/item/clothing/head/vampire/helmet/riot
+	name = "riot helmet"
+	desc = "A riot helmet. Provides good protection against blunt force, but less so against projectiles."
+	icon_state = "riothelm"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
+	armor_type = /datum/armor/riot_helmet
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
+	masquerade_violating = TRUE
+	custom_price = 75
+
+/datum/armor/riot_helmet
+	melee = 65
+	bullet = 35
+	laser = 35
+	energy = 35
+	bomb = 30
 	fire = 20
 	acid = 40
 	wound = 25
