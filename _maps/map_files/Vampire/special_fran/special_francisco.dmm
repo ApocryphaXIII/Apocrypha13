@@ -611,14 +611,6 @@
 /obj/item/gun/energy/taser/darkpack,
 /obj/item/gun/energy/taser/darkpack,
 /obj/item/gun/energy/taser/darkpack,
-/obj/item/clothing/head/vampire/helmet/riot,
-/obj/item/clothing/head/vampire/helmet/riot,
-/obj/item/clothing/head/vampire/helmet/riot,
-/obj/item/clothing/head/vampire/helmet/riot,
-/obj/item/clothing/suit/vampire/vest/police/riot,
-/obj/item/clothing/suit/vampire/vest/police/riot,
-/obj/item/clothing/suit/vampire/vest/police/riot,
-/obj/item/clothing/suit/vampire/vest/police/riot,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "atL" = (
@@ -8902,9 +8894,6 @@
 	},
 /obj/structure/table,
 /obj/structure/platform/lowwall/market,
-/obj/structure/retail/police_utilities{
-	dir = 4
-	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/police)
 "flk" = (
@@ -9949,22 +9938,10 @@
 /obj/structure/guncase{
 	name = "rifles locker"
 	},
-/obj/item/gun/ballistic/automatic/darkpack/ar15{
-	desc = "A shiny new SFPD Carbine, courtesy of improved budgets and a dire need to clean these streets.";
-	name = "Police Issue CAR-15"
-	},
-/obj/item/gun/ballistic/automatic/darkpack/ar15{
-	desc = "A shiny new SFPD Carbine, courtesy of improved budgets and a dire need to clean these streets.";
-	name = "Police Issue CAR-15"
-	},
-/obj/item/gun/ballistic/automatic/darkpack/ar15{
-	desc = "A shiny new SFPD Carbine, courtesy of improved budgets and a dire need to clean these streets.";
-	name = "Police Issue CAR-15"
-	},
-/obj/item/gun/ballistic/automatic/darkpack/ar15{
-	desc = "A shiny new SFPD Carbine, courtesy of improved budgets and a dire need to clean these streets.";
-	name = "Police Issue CAR-15"
-	},
+/obj/item/gun/ballistic/automatic/darkpack/ar15,
+/obj/item/gun/ballistic/automatic/darkpack/ar15,
+/obj/item/gun/ballistic/automatic/darkpack/ar15,
+/obj/item/gun/ballistic/automatic/darkpack/ar15,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "fOp" = (
@@ -14101,22 +14078,10 @@
 /obj/structure/closet/bombcloset{
 	anchored = 1
 	},
-/obj/item/clothing/suit/vampire/eod{
-	desc = "SFPD Breacher equipment. Provides best protection against nearly everything.";
-	name = "SFPD EOD suit"
-	},
-/obj/item/clothing/suit/vampire/eod{
-	desc = "SFPD Breacher equipment. Provides best protection against nearly everything.";
-	name = "SFPD EOD suit"
-	},
-/obj/item/clothing/head/vampire/eod{
-	desc = "Looks ready to butt heads with the hardest of criminals. Provides best protection against nearly everything.";
-	name = "SFPD EOD helmet"
-	},
-/obj/item/clothing/head/vampire/eod{
-	desc = "Looks ready to butt heads with the hardest of criminals. Provides best protection against nearly everything.";
-	name = "SFPD EOD helmet"
-	},
+/obj/item/clothing/head/vampire/eod,
+/obj/item/clothing/head/vampire/eod,
+/obj/item/clothing/suit/vampire/eod,
+/obj/item/clothing/suit/vampire/eod,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "ifH" = (
@@ -21797,11 +21762,11 @@
 	},
 /obj/item/grenade/smokebomb{
 	pixel_y = 7;
-	pixel_x = -10
+	pixel_x = -7
 	},
 /obj/item/grenade/smokebomb,
 /obj/item/grenade/smokebomb{
-	pixel_x = -10
+	pixel_x = -7
 	},
 /obj/item/ammo_box/darkpack/c762x51mm{
 	pixel_y = 12;
