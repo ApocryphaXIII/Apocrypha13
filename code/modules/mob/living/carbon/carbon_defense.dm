@@ -305,10 +305,12 @@
 		to_chat(helper, span_notice("You shake [src] trying to pick [p_them()] up!"))
 		to_chat(src, span_notice("[helper] shakes you to get you up!"))
 	else if(check_zone(helper.zone_selected) == BODY_ZONE_HEAD && get_bodypart(BODY_ZONE_HEAD)) //Headpats!
-		helper.visible_message(span_notice("[helper] gives [src] a pat on the head to make [p_them()] feel better!"), \
+		// DARKPACK EDIT START - emote sounds port -  ORIGINAL: helper.visible_message(span_notice("[helper] gives [src] a pat on the head to make [p_them()] feel better!"))
+		helper.visible_message(span_notice("[helper] gives [src] a pat on the head."), \
 					null, span_hear("You hear a soft patter."), DEFAULT_MESSAGE_RANGE, list(helper, src))
-		to_chat(helper, span_notice("You give [src] a pat on the head to make [p_them()] feel better!"))
-		to_chat(src, span_notice("[helper] gives you a pat on the head to make you feel better! "))
+		// DARKPACK EDIT END
+		to_chat(helper, span_notice("You give [src] a pat on the head.")) // DARKPACK EDIT - emote sounds port -  ORIGINAL: to_chat(helper, span_notice("You give [src] a pat on the head to make [p_them()] feel better!"))
+		to_chat(src, span_notice("[helper] gives you a pat on the head.")) // DARKPACK EDIT - emote sounds port - ORIGINAL: to_chat(src, span_notice("[helper] gives you a pat on the head to make you feel better!"))
 
 		share_blood_on_touch(helper, ITEM_SLOT_HEAD|ITEM_SLOT_MASK)
 		if(HAS_TRAIT(src, TRAIT_BADTOUCH))
@@ -342,10 +344,12 @@
 			to_chat(helper, span_notice("You wrap [src] into a tight bear hug!"))
 			to_chat(src, span_notice("[helper] squeezes you super tightly in a firm bear hug!"))
 		else
-			helper.visible_message(span_notice("[helper] hugs [src] to make [p_them()] feel better!"), \
+			// DARKPACK EDIT START - emote sounds port - ORIGINAL: helper.visible_message(span_notice("[helper] hugs [src] to make [p_them()] feel better!")
+			helper.visible_message(span_notice("[helper] hugs [src]."), \
 						null, span_hear("You hear the rustling of clothes."), DEFAULT_MESSAGE_RANGE, list(helper, src))
-			to_chat(helper, span_notice("You hug [src] to make [p_them()] feel better!"))
-			to_chat(src, span_notice("[helper] hugs you to make you feel better!"))
+			// DARKPACK EDIT END
+			to_chat(helper, span_notice("You hug [src].")) // DARKPACK EDIT - emote sounds port - ORIGINAL: to_chat(helper, span_notice("You hug [src] to make [p_them()] feel better!"))
+			to_chat(src, span_notice("[helper] hugs you.")) // DARKPACK EDIT - emote sounds port - ORIGINAL: to_chat(src, span_notice("[helper] hugs you to make you feel better!"))
 
 		share_blood_on_touch(helper, ITEM_SLOT_HEAD|ITEM_SLOT_MASK|ITEM_SLOT_GLOVES)
 		// Warm them up with hugs
