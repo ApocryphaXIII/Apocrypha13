@@ -611,6 +611,12 @@
 /obj/item/gun/energy/taser/darkpack,
 /obj/item/gun/energy/taser/darkpack,
 /obj/item/gun/energy/taser/darkpack,
+/obj/item/clothing/suit/vampire/vest/police/riot,
+/obj/item/clothing/suit/vampire/vest/police/riot,
+/obj/item/clothing/suit/vampire/vest/police/riot,
+/obj/item/clothing/head/vampire/helmet/riot,
+/obj/item/clothing/head/vampire/helmet/riot,
+/obj/item/clothing/head/vampire/helmet/riot,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "atL" = (
@@ -8894,6 +8900,9 @@
 	},
 /obj/structure/table,
 /obj/structure/platform/lowwall/market,
+/obj/structure/retail/police_utilities{
+	dir = 4
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/police)
 "flk" = (
