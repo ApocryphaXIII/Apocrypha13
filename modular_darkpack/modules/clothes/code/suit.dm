@@ -418,16 +418,6 @@
 	acid = 10
 	wound = 25
 
-/datum/armor/riot_vest
-	melee = 80
-	bullet = 50
-	laser = 10
-	energy = 10
-	bomb = 55
-	fire = 45
-	acid = 10
-	wound = 25
-
 /obj/item/clothing/suit/vampire/vest/medieval
 	name = "medieval vest"
 	desc = "Probably spanish. Provides good protection."
@@ -456,12 +446,6 @@
 	name = "police sergeant vest"
 	icon_state = "sgtvest"
 	desc = "Lightweight, bulletproof vest with SFPD markings, tailored for active duty. This one has sergeant insignia on it."
-
-/obj/item/clothing/suit/vampire/vest/police/riot
-	name = "riot vest"
-	icon_state = "riotvest"
-	desc = "Lightweight riot vest with SFPD markings, tailored for riot control."
-	armor_type = /datum/armor/riot_vest
 
 // They got an Army vest post-PD update. I am just giving them the same, instead coded into their equipment instead of mapped.
 /obj/item/clothing/suit/vampire/vest/police/captain
