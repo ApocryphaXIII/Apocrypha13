@@ -21785,7 +21785,6 @@
 /area/vtm/interior/voivodate/sanctum)
 "mIC" = (
 /obj/structure/table/reinforced,
-/obj/structure/table/reinforced,
 /obj/item/ammo_box/darkpack/c12g/incap{
 	pixel_y = 12
 	},
