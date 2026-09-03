@@ -248,3 +248,7 @@
   - map: hid blood around Millennium Tower from Tower Employees in a care room on
       the 1st floor
   - map: added a janitorial closet to the 1st floor
+2026-08-29:
+  dwinters99:
+  - rscdel: Sabbat no longer are assigned an antag datum
+  - bugfix: removes a regression with torches caused by a duplicate file
