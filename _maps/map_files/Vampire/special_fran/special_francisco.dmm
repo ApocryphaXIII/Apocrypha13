@@ -31080,13 +31080,6 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/misc/dirt,
 /area/vtm/voivodate)
-"rpZ" = (
-/obj/effect/turf_decal/crosswalk,
-/obj/effect/turf_decal/bordur{
-	dir = 4
-	},
-/turf/open/floor/plating/asphalt,
-/area/vtm/outside/chinatown)
 "rqA" = (
 /obj/structure/chair/sofa/corp/left{
 	color = "#CD5C5C";
@@ -57682,7 +57675,7 @@ rVO
 exx
 csh
 aEj
-rpZ
+cFs
 gCI
 iVt
 cIC
@@ -91390,7 +91383,7 @@ lpi
 lpi
 bwy
 bwy
-dtG
+iCa
 fnb
 fUo
 fUo
@@ -91497,7 +91490,7 @@ mIX
 mIX
 mIX
 bwy
-fUo
+iCa
 dtG
 dtG
 fUo
@@ -91585,7 +91578,7 @@ iCa
 iCa
 iCa
 iCa
-bwy
+iCa
 bwy
 bwy
 bwy
@@ -91604,7 +91597,7 @@ mIX
 mIX
 mIX
 bwy
-dtG
+iCa
 dtG
 fUo
 dtG
@@ -91711,8 +91704,8 @@ mIX
 mIX
 mIX
 bwy
+iCa
 vqY
-fUo
 fUo
 fUo
 dtG
@@ -91818,7 +91811,7 @@ mIX
 mIX
 mIX
 bwy
-lPw
+iCa
 dtG
 fUo
 fUo
@@ -91925,8 +91918,8 @@ lpi
 bwy
 bwy
 bwy
-dtG
-fUo
+iCa
+lPw
 fUo
 fUo
 iCa
