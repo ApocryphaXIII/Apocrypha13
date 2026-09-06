@@ -1,0 +1,304 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/water/beach/vamp/deep,
+/area/space)
+"u" = (
+/obj/structure/platform/lowwall/junk/alt,
+/turf/open/floor/iron,
+/area/space)
+"y" = (
+/turf/open/floor/iron,
+/area/space)
+"Y" = (
+/obj/structure/platform/lowwall/junk/alt,
+/turf/open/space/basic,
+/area/space)
+
+(1,1,1) = {"
+a
+a
+a
+u
+Y
+Y
+u
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+u
+u
+y
+y
+u
+u
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+u
+y
+y
+y
+y
+u
+a
+a
+"}
+(4,1,1) = {"
+a
+u
+u
+y
+y
+y
+y
+u
+u
+a
+"}
+(5,1,1) = {"
+a
+u
+y
+y
+y
+y
+y
+y
+u
+a
+"}
+(6,1,1) = {"
+u
+u
+y
+y
+y
+y
+y
+y
+u
+u
+"}
+(7,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(8,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(9,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(10,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(11,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(12,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(13,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(14,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(15,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(16,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(17,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(18,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(19,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(20,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(21,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(22,1,1) = {"
+u
+y
+y
+y
+y
+y
+y
+y
+y
+u
+"}
+(23,1,1) = {"
+u
+u
+y
+y
+y
+y
+y
+y
+u
+u
+"}
+(24,1,1) = {"
+a
+u
+u
+u
+u
+u
+u
+u
+u
+a
+"}
