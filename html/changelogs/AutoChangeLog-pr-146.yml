@@ -1,0 +1,7 @@
+author: "dwinters99, Major00"
+delete-after: True
+changes:
+  - rscadd: "Eyepatches are now in the loadout"
+  - rscadd: "Bimberton boots are now in the loadout"
+  - rscadd: "Bowie Knife, a side-grade to normal knives. More damage, harder to use."
+  - rscadd: "War Axe, a one-handed axe that does less damage than a fireaxe but does not require being wielded."
