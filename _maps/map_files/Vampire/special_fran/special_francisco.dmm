@@ -11310,7 +11310,7 @@
 /area/vtm/outside/unionsquare)
 "gCx" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/glasses/apoc/blindfold{
+/obj/item/clothing/glasses/blindfold/apoc{
 	color = "CC0000"
 	},
 /obj/effect/spawner/random/bedsheet/double,

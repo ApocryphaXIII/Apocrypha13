@@ -8,7 +8,7 @@
 
 /obj/item/clothing/under/vampire/turtleneck_skirt/black
 	name = "black turtleneck skirt"
-	desc = "By those in the know, it's called the Tactleneck, the premier clothing for secret agents.Features a fashionable pencil skirt."
+	desc = "By those in the know, it's called the Tactleneck, the premier clothing for secret agents. Features a fashionable pencil skirt."
 	icon_state = "turtleneck_black"
 
 /obj/item/clothing/under/vampire/turtleneck_skirt/red
@@ -23,5 +23,5 @@
 
 /obj/item/clothing/under/vampire/turtleneck_skirt/endron
 	name = EVIL_OIL_COMPANY + " turtleneck skirt"
-	desc = "An Endron International employee uniform. This one is a nice turtleneck! Features a fashionable pencil skirt."
+	desc = "An " + EVIL_OIL_COMPANY + " employee uniform. This one is a nice turtleneck! Features a fashionable pencil skirt."
 	icon_state = "pentex_turtleneck"
