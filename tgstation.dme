@@ -7383,6 +7383,7 @@
 #include "modular_darkpack\modules\areas\code\zone_hud.dm"
 #include "modular_darkpack\modules\areas\code\interiors\__interior.dm"
 #include "modular_darkpack\modules\areas\code\interiors\anarch.dm"
+#include "modular_darkpack\modules\areas\code\interiors\centcom.dm"
 #include "modular_darkpack\modules\areas\code\interiors\city_interiors.dm"
 #include "modular_darkpack\modules\areas\code\interiors\endron_facility.dm"
 #include "modular_darkpack\modules\areas\code\interiors\forest.dm"

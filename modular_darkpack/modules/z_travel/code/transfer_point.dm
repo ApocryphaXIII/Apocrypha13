@@ -126,6 +126,13 @@ GLOBAL_LIST_EMPTY(unallocted_transfer_points)
 	id = "admin_theatre_2"
 	unit_test_exempt = TRUE
 
+/obj/transfer_point_vamp/stairs/admin_club_1
+	id = "admin_club_1"
+	unit_test_exempt = TRUE
+/obj/transfer_point_vamp/stairs/admin_club_2
+	id = "admin_club_2"
+	unit_test_exempt = TRUE
+
 /obj/transfer_point_vamp/backrooms
 	id = "backrooms"
 	invisibility = INVISIBILITY_OBSERVER
