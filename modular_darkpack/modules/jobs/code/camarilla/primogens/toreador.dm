@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_toreador
 	title = JOB_PRIMOGEN_TOREADOR
-	description = "Offer your infinite knowledge to Prince of the City. Take care of the Strip Club and its Elysium, for it is your domain and a social center within the city."
+	description = "Offer your infinite knowledge to Prince of the City. Keep clan interests in mind."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
@@ -15,7 +15,6 @@
 
 	display_order = JOB_DISPLAY_ORDER_TOREADOR
 	departments_list = list(
-		/datum/job_department/strip_club,
 		/datum/job_department/camarilla,
 	)
 
