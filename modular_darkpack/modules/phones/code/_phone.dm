@@ -73,7 +73,7 @@
 	if(!sim_card && default_sim_card_type)
 		sim_card = new default_sim_card_type(src)
 		sim_card.phone_weakref = WEAKREF(src)
-	phone_radio = new(src)
+	phone_radio = new /obj/item/radio/phone(src)
 	phone_radio.keyslot = new
 	phone_radio.radio_noise = FALSE
 	phone_radio.canhear_range = 1
