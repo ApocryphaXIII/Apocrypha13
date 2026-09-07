@@ -8,6 +8,7 @@
 	breed_species = /datum/species/human/shifter/homid
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/bloodheal,
+		/datum/action/cooldown/power/gift/spin_web,
 		/datum/action/cooldown/power/gift/resist_pain,
 		/datum/action/cooldown/power/gift/stolen_moments
 	)
@@ -18,6 +19,7 @@
 	breed_species = /datum/species/human/shifter/feral
 	gifts_provided = list(
 		/datum/action/cooldown/power/gift/bloodheal,
+		/datum/action/cooldown/power/gift/spin_web,
 		/datum/action/cooldown/power/gift/resist_pain,
 		/datum/action/cooldown/power/gift/stolen_moments
 	)
