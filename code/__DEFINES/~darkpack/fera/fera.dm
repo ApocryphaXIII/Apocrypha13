@@ -19,25 +19,28 @@
 #define BREED_ANANASI_HOMID "Ananasi Homid"
 #define BREED_ARACHNID "Arachnid"
 
-#define FEATURE_FUR_COLOR "fera_fur"
+#define FEATURE_FERA_FUR_COLOR "fera_fur_color"
+#define FEATURE_FERA_HAIR(splat_id) "fera_hair" + splat_id
+#define FEATURE_FERA_BODY(splat_id) "fera_body" + splat_id
+#define FEATURE_FERA_CLOTHES(splat_id) "fera_clothes" + splat_id
 
-// fera will likely have a seperate list of colors but uses the same feature or var as other fera
-GLOBAL_LIST_INIT(garou_fur_colors, list(
-	"black" = "black",
-	"gray" = "gray",
-	"red" = "red",
-	"white" = "white",
-	"ginger" = "ginger",
-	"brown" = "brown",
-))
-
-GLOBAL_LIST_INIT(corax_fur_colors, list(
-	"black" = "black",
-	"brown" = "brown",
-	"white" = "white",
-	"green" = "green",
-	"red" = "red",
-	"gray" = "gray",
+GLOBAL_ALIST_INIT(fera_fur_colors, alist(
+	SPLAT_GAROU = list(
+		"black" = "black",
+		"gray" = "gray",
+		"red" = "red",
+		"white" = "white",
+		"ginger" = "ginger",
+		"brown" = "brown",
+	),
+	SPLAT_CORAX = list(
+		"black" = "black",
+		"brown" = "brown",
+		"white" = "white",
+		"green" = "green",
+		"red" = "red",
+		"gray" = "gray",
+	)
 ))
 
 GLOBAL_LIST_INIT(ananasi_fur_colors, list(
