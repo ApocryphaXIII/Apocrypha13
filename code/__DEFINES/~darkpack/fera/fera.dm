@@ -40,16 +40,15 @@ GLOBAL_ALIST_INIT(fera_fur_colors, alist(
 		"green" = "green",
 		"red" = "red",
 		"gray" = "gray",
-	)
-))
-
-GLOBAL_LIST_INIT(ananasi_fur_colors, list(
-	"black" = "black",
-	"blue" = "blue",
-	"red" = "red",
-	"white" = "white",
-	"ginger" = "ginger",
-	"brown" = "brown",
+	),
+	SPLAT_ANANASI = list(
+		"black" = "black",
+		"blue" = "blue",
+		"red" = "red",
+		"white" = "white",
+		"ginger" = "ginger",
+		"brown" = "brown",
+	),
 ))
 
 #define STATUS_EFFECT_DELIRIUM /datum/status_effect/delirium

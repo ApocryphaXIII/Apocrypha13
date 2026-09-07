@@ -13,6 +13,8 @@ export const corax_fur_color: FeatureChoiced = {
 
 export const ananasi_fur_color: FeatureChoiced = {
   name: 'Ananasi Exoskeleton Color',
+  component: FeatureDropdownInput,
+};
 
 export const garou_hair: FeatureChoiced = {
   name: 'Garou Hair',
