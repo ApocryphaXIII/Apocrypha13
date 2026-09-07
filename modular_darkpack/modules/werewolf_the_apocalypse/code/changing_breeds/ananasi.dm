@@ -1,5 +1,6 @@
 #define ALTER_MOOD_ENHANCE "Enhance"
 #define ALTER_MOOD_DAMPEN "Dampen"
+#define ANANASI_COCOON_TRAIT "ananasi_cocoon"
 
 /datum/action/cooldown/power/gift/bloodheal
 	name = "Blood Heal"
@@ -41,6 +42,191 @@
 	human_owner.update_health_hud()
 	return TRUE
 
+/datum/action/cooldown/power/gift/spin_web
+	name = "Spin Web"
+	desc = "The Ananasi in Pithus form can break down stored blood and spin very strong, very durable webs."
+	button_icon_state = "spin_web"
+	click_to_activate = FALSE
+	rank = 1
+	handles_spend_resources = FALSE
+
+	// /tg/ giant spider web actions! minus reflector, spikes, and effigy bc they don't really fit
+	var/static/list/web_action_choices = list(
+		/datum/action/cooldown/mob_cooldown/lay_web,
+		/datum/action/cooldown/mob_cooldown/lay_web/solid_web,
+		/datum/action/cooldown/mob_cooldown/lay_web/web_passage,
+		/datum/action/cooldown/mob_cooldown/lay_web/sticky_web,
+		/datum/action/cooldown/mob_cooldown/wrap/ananasi_cocoon,
+	)
+
+/datum/action/cooldown/power/gift/spin_web/can_afford(feedback)
+	var/mob/living/human_owner = astype(owner)
+	if(!human_owner)
+		return ..()
+	if(human_owner.bloodpool < 1)
+		if(feedback)
+			to_chat(owner, span_warning("You don't have enough blood to cast [src]!"))
+		return FALSE
+	return ..()
+
+/datum/action/cooldown/power/gift/spin_web/spend_resources()
+	var/mob/living/human_owner = astype(owner)
+	. = ..()
+	if(human_owner)
+		human_owner.adjust_blood_pool(-1)
+
+// only pithus form can spin webs. crawlerling can too but not to any significant effect
+/datum/action/cooldown/power/gift/spin_web/proc/in_valid_form(mob/living/carbon/human/human_owner)
+	var/datum/species/human/shifter/shifter_species = human_owner.dna?.species
+	if(!istype(shifter_species))
+		return FALSE
+	return (shifter_species.id == SPECIES_FERA_DIRE)
+
+/datum/action/cooldown/power/gift/spin_web/Activate(atom/target)
+	var/mob/living/carbon/human/human_owner = astype(owner)
+	if(!human_owner)
+		return FALSE
+	if(!in_valid_form(human_owner))
+		to_chat(owner, span_warning("You must be in Pithus form to spin webs!"))
+		return FALSE
+
+	var/list/choices = list()
+	var/list/name_to_type = list()
+	for(var/datum/action/cooldown/mob_cooldown/web_action_type as anything in web_action_choices)
+		var/datum/radial_menu_choice/option = new
+		option.image = image(icon = initial(web_action_type.button_icon), icon_state = initial(web_action_type.button_icon_state))
+		option.info = span_boldnotice(initial(web_action_type.name))
+		name_to_type[initial(web_action_type.name)] = web_action_type
+		choices[initial(web_action_type.name)] = option
+
+	var/picked_name = show_radial_menu(human_owner, human_owner, choices, tooltips = TRUE)
+	var/chosen_type = name_to_type[picked_name]
+	if(!chosen_type)
+		return FALSE
+
+	. = ..()
+
+	var/datum/action/cooldown/mob_cooldown/action_instance = new chosen_type()
+	action_instance.owner_has_control = FALSE
+	action_instance.Grant(human_owner)
+	action_instance.Trigger(human_owner, NONE)
+	if(!action_instance.click_to_activate)
+		action_instance.Remove(human_owner)
+		qdel(action_instance)
+	return TRUE
+
+// the people demanded cocoon wrapping
+/datum/action/cooldown/mob_cooldown/wrap/ananasi_cocoon
+	name = "Cocoon"
+	desc = "Wrap a nearby target in a cocoon, restraining them until they can force their way free. While restrained, you may drain them of their blood."
+
+/datum/action/cooldown/mob_cooldown/wrap/ananasi_cocoon/wrap_target(mob/living/to_wrap)
+	var/mob/living/cocoon_owner = owner
+	var/obj/structure/spider/cocoon/ananasi/casing = new(to_wrap.loc)
+	to_wrap.forceMove(casing)
+	ADD_TRAIT(to_wrap, TRAIT_HANDS_BLOCKED, ANANASI_COCOON_TRAIT)
+	if(isliving(to_wrap) && (to_wrap.mob_biotypes & MOB_HUMANOID))
+		casing.icon_state = pick("cocoon_large1", "cocoon_large2", "cocoon_large3")
+	else
+		casing.icon_state = pick("cocoon1", "cocoon2", "cocoon3")
+	cocoon_owner?.visible_message(
+		span_notice("[cocoon_owner] wraps [to_wrap] tightly in silk!"),
+		span_notice("You finish wrapping [to_wrap] into a cocoon."),
+	)
+
+/datum/action/cooldown/mob_cooldown/wrap/ananasi_cocoon/cocoon(atom/movable/to_wrap)
+	var/mob/living/cocoon_owner = owner
+	. = ..()
+	Remove(cocoon_owner)
+	qdel(src)
+
+/obj/structure/spider/cocoon/ananasi
+	name = "silken cocoon"
+	desc = "A cocoon of dense spider silk. Something is bound within, struggling weakly."
+
+/obj/structure/spider/cocoon/ananasi/Destroy()
+	for(var/mob/living/trapped_mob in contents)
+		REMOVE_TRAIT(trapped_mob, TRAIT_HANDS_BLOCKED, ANANASI_COCOON_TRAIT)
+	return ..()
+
+// per ananasi breedbook, webs resist Strength rolls with an effective Strength of 9
+/obj/structure/spider/cocoon/ananasi/container_resist_act(mob/living/user)
+	user.changeNext_move(CLICK_CD_BREAKOUT)
+	user.last_special = world.time + CLICK_CD_BREAKOUT
+	user.visible_message(
+		span_warning("[user] strains against the webbing, trying to break free!"),
+		span_notice("You strain against the sticky bonds..."),
+	)
+	var/datum/storyteller_roll/escape_roll = new()
+	escape_roll.applicable_stats = list(STAT_STRENGTH)
+	escape_roll.difficulty = 9
+	escape_roll.roll_output_type = ROLL_PRIVATE
+
+	if(QDELETED(src) || user.loc != src)
+		return
+	if(escape_roll.st_roll(user, user) != ROLL_SUCCESS)
+		to_chat(user, span_warning("You fail to break free of the webbing!"))
+		user.Stun(6 SECONDS)
+		return
+
+	REMOVE_TRAIT(user, TRAIT_HANDS_BLOCKED, ANANASI_COCOON_TRAIT)
+	user.forceMove(get_turf(src))
+	qdel(src)
+
+/obj/structure/spider/cocoon/ananasi/attack_hand(mob/user, list/modifiers)
+	. = ..()
+	if(.)
+		return
+	var/mob/living/living_user = astype(user)
+	if(living_user?.combat_mode)
+		var/datum/storyteller_roll/tear_roll = new()
+		tear_roll.applicable_stats = list(STAT_STRENGTH)
+		tear_roll.difficulty = 9
+		tear_roll.roll_output_type = ROLL_PUBLIC
+		living_user.visible_message(
+			span_danger("[living_user] starts tearing [src] apart!"),
+			span_danger("You start tearing [src] apart!"),
+		)
+		if(!do_after(living_user, 3 SECONDS, target = src))
+			return
+		if(QDELETED(src))
+			return
+		if(tear_roll.st_roll(user, user) != ROLL_SUCCESS)
+			to_chat(user, span_warning("You fail to tear through the silk!"))
+			return
+		living_user.visible_message(
+			span_danger("[living_user] rips [src] to shreds!"),
+			span_danger("You rip [src] to shreds!"),
+		)
+		qdel(src)
+		return
+	var/mob/living/attacker = astype(user)
+	if(!attacker || !get_ananasi_splat(attacker))
+		return
+	var/mob/living/victim = locate(/mob/living) in contents
+	if(!victim)
+		return
+	if(get_kindred_splat(victim))
+		to_chat(attacker, span_warning("[victim]'s blood would be toxic to you!"))
+		return
+	if(victim.blood_volume <= 0)
+		to_chat(attacker, span_warning("[victim] has no more blood left to drain!"))
+		return
+	playsound(src, 'modular_darkpack/modules/blood_drinking/sounds/drinkblood1.ogg', 50, TRUE)
+	attacker.visible_message(
+		span_danger("[attacker] sinks its fangs into [victim] through the cocoon!"),
+		span_danger("You begin drinking the blood from [victim]!"),
+	)
+	if(!do_after(attacker, 6 SECONDS, target = src))
+		return
+	if(QDELETED(src) || QDELETED(victim) || (victim.loc != src))
+		return
+	attacker.adjust_blood_pool(2)
+	victim.adjust_blood_pool(-2)
+	victim.adjust_blood_volume(-112)
+	log_combat(attacker, victim, "drained the blood from")
+	to_chat(attacker, span_notice("You finish drinking [victim]'s blood."))
+
 /datum/action/cooldown/power/gift/stolen_moments
 	name = "Stolen Moments"
 	desc = "This Gift allows the Ananasi to literally steal away the last few minutes of memories from another being."
@@ -69,6 +255,7 @@
 	SEND_SOUND(target, sound('modular_darkpack/modules/powers/sounds/dominate.ogg', volume = 50))
 	SEND_SIGNAL(target, COMSIG_ALL_MASQUERADE_REINFORCE)
 	to_chat(target, span_hypnophrase("At [owner]'s touch, the last fifteen minutes of your memory are stolen away. You feel a sense of confusion and disorientation as you struggle to recall what just happened."))
+	log_combat(owner, target, "used Stolen Moments on")
 
 	StartCooldown()
 	return TRUE
@@ -156,9 +343,11 @@
 		if(ALTER_MOOD_ENHANCE)
 			SEND_SOUND(target, sound('modular_darkpack/modules/werewolf_the_apocalypse/sounds/gifts/altermood.ogg', volume = 50))
 			to_chat(living_target, span_boldnotice("An odd warmth spreads through your mind, heightening your emotional state. Any emotional highs or lows are suddenly more intense and extreme."))
+			log_combat(owner, target, "used Alter Mood (Enhance) on")
 		if(ALTER_MOOD_DAMPEN)
 			SEND_SOUND(target, sound('modular_darkpack/modules/werewolf_the_apocalypse/sounds/gifts/altermood.ogg', volume = 50))
 			to_chat(living_target, span_boldwarning("An odd numbness sets over your mind, dulling your emotional state. Any extreme emotional highs or lows are suddenly muted to a more moderate, mundane level."))
+			log_combat(owner, target, "used Alter Mood (Dampen) on")
 
 	StartCooldown()
 	return TRUE
@@ -290,7 +479,10 @@
 	deltimer(existing["timer"])
 	REMOVE_TRAIT(target, TRAIT_EXAMINE_SKIP, GIFT_TRAIT)
 
+
+
 #undef ALTER_MOOD_ENHANCE
 #undef ALTER_MOOD_DAMPEN
+#undef ANANASI_COCOON_TRAIT
 
 
