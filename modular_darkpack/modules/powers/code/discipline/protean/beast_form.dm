@@ -69,7 +69,7 @@
 	bloodpool = 10
 	maxbloodpool = 10
 	held_items = list(null, null)
-	ai_controller = /datum/ai_controller/basic_controller/simple/simple_hostile_obstacles
+	ai_controller = /datum/ai_controller/basic_controller/simple/simple_hostile
 
 /mob/living/basic/gangrel/hostile
 	faction = list(FACTION_HOSTILE)
