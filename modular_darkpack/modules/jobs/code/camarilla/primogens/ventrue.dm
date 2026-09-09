@@ -1,6 +1,6 @@
 /datum/job/vampire/primogen_ventrue
 	title = JOB_PRIMOGEN_VENTRUE
-	description = "Offer your infinite knowledge to Prince of the City. Maintain the local Jazz Club, in front of the Tower, and its Elysium."
+	description = "Offer your infinite knowledge to Prince of the City. Uphold Clan interests and look out for prospective protege for it."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	faction = FACTION_CAMARILLA
 	total_positions = 1
