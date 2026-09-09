@@ -27,6 +27,8 @@ const vocalFeatures: VocalFeature[] = [
   { id: 'blooper_speed', label: 'Blooper Speed', type: 'number' },
   { id: 'blooper_pitch', label: 'Blooper Pitch', type: 'number' },
   { id: 'blooper_pitch_range', label: 'Blooper Range', type: 'number' },
+  { id: 'emote_voicepack', label: 'Emote Voice Pack', type: 'string' },
+  { id: 'emote_voice_pitch', label: 'Emote Voice Pitch', type: 'number' },
 ];
 
 type FeatureValueInputProps = {
