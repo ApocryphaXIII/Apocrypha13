@@ -275,6 +275,11 @@
 		else // clear any personalities the prefs added since our job clearly does not want them
 			humanc.clear_personalities()
 
+	// DARKPACK EDIT ADD START
+	for(var/datum/preference_middleware/our_middleware in character.client?.prefs?.middleware)
+		our_middleware.on_character_spawn(character)
+	// DARKPACK EDIT ADD END
+
 	if(humanc) // Quirks may change manifest datapoints, so inject only after assigning quirks
 		GLOB.manifest.inject(humanc)
 		SEND_SIGNAL(humanc, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
