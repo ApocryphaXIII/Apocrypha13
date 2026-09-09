@@ -66,35 +66,36 @@
 /datum/preference_middleware/proc/on_character_spawn(mob/living/spawning_mob)
 
 /datum/preference_middleware/stats/on_character_spawn(mob/living/spawning_mob)
-	validate_stats(spawning_mob)
+	validate_stats()
 
-/datum/preference_middleware/stats/proc/validate_stats(mob/checked_mob)
+/datum/preference_middleware/stats/proc/validate_stats()
 	var/stat_error = get_stat_validation_error()
 	if(!stat_error)
+		// message_admins("[key_name(preferences.parent?.ckey)]'s character '[char_name]' (slot [preferences.default_slot]): VALID")
 		return
+	var/char_name = preferences.read_preference(/datum/preference/name/real_name)
 	// to_chat(checked_mob, span_warning(stat_error))
-	var/char_name = preferences?.read_preference(/datum/preference/name/real_name)
-	var/log_msg = "[key_name(checked_mob)]'s character '[char_name]' (slot [preferences?.default_slot]) has invalid stats:\n[stat_error]"
+	var/log_msg = "[key_name(preferences.parent?.ckey)]'s character '[char_name]' (slot [preferences.default_slot]) has invalid stats:\n[stat_error]"
 	// SSoverwatch.record_action(null, log_msg)
 	message_admins(log_msg)
 
 
-ADMIN_VERB(validate_sheets, R_ADMIN, "Validate Sheets", "Validate Sheets.", ADMIN_CATEGORY_MAIN)
-	var/choice = tgui_alert(user, "Validate unloaded characters as well?", "Validate Sheets", list("Yes", "No"))
-	// var/list/connected = list()
+ADMIN_VERB(validate_sheets, R_ADMIN, "Validate Sheets", "Validate Sheets.", ADMIN_CATEGORY_SECOND_CITY)
+	var/choice = tgui_alert(user, "Validate unloaded characters as well?", "Validate Sheets", list("Yes", "Including Offline", "No"))
+	var/list/connected = list()
 	// var/list/invalid_ckeys = list()
 	for(var/ckey in GLOB.directory)
 		var/client/C = GLOB.directory[ckey]
 		if(!C || !C.mob || !C.prefs)
 			continue
-		// connected += ckey
+		connected += ckey
 		/*
 		if(ishuman(C.mob))
 			var/list/validation = validate_mob_sheet(C.mob)
 			if(validation && !validation["valid"])
 				invalid_ckeys += ckey
 		*/
-		if(choice == "Yes")
+		if(choice != "No")
 			var/original_slot = C.prefs.default_slot
 			var/list/profiles = C.prefs.create_character_profiles() // Helps filter for unfilled out slots
 			for(var/i in 1 to C.prefs.max_save_slots)
@@ -102,8 +103,34 @@ ADMIN_VERB(validate_sheets, R_ADMIN, "Validate Sheets", "Validate Sheets.", ADMI
 					var/slot = clamp(i, 1, C.prefs.max_save_slots)
 					C.prefs.switch_to_slot(slot)
 					for(var/datum/preference_middleware/stats/stat in C.prefs.middleware)
-						stat.validate_stats(C.mob)
+						stat.validate_stats()
 			C.prefs.switch_to_slot(original_slot)
 		else
 			for(var/datum/preference_middleware/stats/stat in C.prefs.middleware)
-				stat.validate_stats(C.mob)
+				stat.validate_stats()
+	if(choice != "Including Offline")
+		return
+	for(var/initial in flist("data/player_saves/"))
+		initial = replacetext(initial, "/", "")
+		for(var/search_ckey in flist("data/player_saves/[initial]/"))
+			search_ckey = replacetext(search_ckey, "/", "")
+			var/prefs_path = "data/player_saves/[initial]/[search_ckey]/preferences.json"
+			if(!fexists(prefs_path))
+				continue
+
+			if(search_ckey in connected)
+				continue
+
+			var/datum/client_interface/mock = new
+			mock.ckey = search_ckey
+			mock.key = search_ckey
+			var/datum/preferences/offline_prefs = new(mock)
+			var/original_slot = offline_prefs.default_slot
+			var/list/profiles = offline_prefs.create_character_profiles() // Helps filter for unfilled out slots
+			for(var/i in 1 to offline_prefs.max_save_slots)
+				if(profiles[i])
+					var/slot = clamp(i, 1, offline_prefs.max_save_slots)
+					offline_prefs.switch_to_slot(slot)
+					for(var/datum/preference_middleware/stats/stat in offline_prefs.middleware)
+						stat.validate_stats()
+			offline_prefs.switch_to_slot(original_slot)
