@@ -596,3 +596,9 @@
 	AddElement(/datum/element/pet_bonus, "chitter")
 	AddElement(/datum/element/ai_retaliate)
 	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
+
+// Ananasi Subtype
+/mob/living/basic/spider/giant/arachnid
+	name = "spider"
+	desc = "Furry and black, it makes you shudder to look at it."
+	speak_emote = list("hiss")

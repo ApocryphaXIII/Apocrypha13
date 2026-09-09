@@ -34,6 +34,9 @@
 	savefile_key = "corax_fur_color"
 	splat_id = SPLAT_CORAX
 
+/datum/preference/choiced/fera_fur_color/ananasi
+	savefile_key = "ananasi_fur_color"
+	splat_id = SPLAT_ANANASI
 
 /datum/dna_block/feature/fera_fur_color
 	feature_key = FEATURE_FERA_FUR_COLOR

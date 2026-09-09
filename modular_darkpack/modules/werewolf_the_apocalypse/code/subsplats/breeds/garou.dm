@@ -1,6 +1,9 @@
 /datum/subsplat/werewolf/breed_form/garou
 	abstract_type = /datum/subsplat/werewolf/breed_form/garou
 	fera_restriction = SPLAT_GAROU
+	gifts_provided = list(
+		/datum/action/cooldown/power/gift/howling
+	)
 
 
 /datum/subsplat/werewolf/breed_form/garou/homid

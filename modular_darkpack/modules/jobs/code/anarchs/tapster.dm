@@ -32,8 +32,8 @@
 		JOB_SWEEPER,
 		JOB_TAPSTER
 	)
-	allowed_splats = list(SPLAT_NONE, SPLAT_GHOUL)
-	splat_slots = list(SPLAT_NONE = 2, SPLAT_GHOUL = 2)
+	allowed_splats = list(SPLAT_NONE, SPLAT_GHOUL, SPLAT_ANANASI)
+	splat_slots = list(SPLAT_NONE = 2, SPLAT_GHOUL = 2, SPLAT_ANANASI = 1)
 	description = "You are an employee of the local smoke shop. Serve the eclectic clients that pass through, and try not to ask too many questions." // APOC EDIT CHANGE - JOBS
 	minimum_masquerade = 0
 
