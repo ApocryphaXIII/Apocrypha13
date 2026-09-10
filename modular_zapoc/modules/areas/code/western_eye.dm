@@ -1,13 +1,17 @@
 /area/vtm/interior/forest
 	name = "Forest"
 	music_index = MUSIC_FOREST
+	zone_type = ZONE_NO_MASQUERADE
 
 /area/vtm/outside/forest/sept
 	name = "Sinkhole Cave"
 	sound_environment = SOUND_ENVIRONMENT_CAVE
+	zone_type = ZONE_ELYSIUM
+
 /area/vtm/interior/forest/sept
 	name = "Sinkhole Cave"
 	sound_environment = SOUND_ENVIRONMENT_CAVE
+	zone_type = ZONE_ELYSIUM
 
 /area/vtm/interior/forest/cave
 	name = "Forest Cave"

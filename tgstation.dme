@@ -8349,6 +8349,7 @@
 #include "modular_zapoc\modules\gray_masses\code\gray_man.dm"
 #include "modular_zapoc\modules\gray_masses\code\tall_gray_man.dm"
 #include "modular_zapoc\modules\items\code\keys.dm"
+#include "modular_zapoc\modules\items\fluff\notes.dm"
 #include "modular_zapoc\modules\jobs\code\_departments.dm"
 #include "modular_zapoc\modules\jobs\code\voivode.dm"
 #include "modular_zapoc\modules\jobs\code\ocean76\handler.dm"
@@ -8361,6 +8362,7 @@
 #include "modular_zapoc\modules\mapping\code\transfer_zones.dm"
 #include "modular_zapoc\modules\mobs\code\cockroach.dm"
 #include "modular_zapoc\modules\smites\code\crystal.dm"
+#include "modular_zapoc\modules\structures\formaldehyde_tank.dm"
 #include "modular_zapoc\modules\weapons\code\bowie_knife.dm"
 #include "modular_zapoc\modules\weapons\code\waraxe.dm"
 // END_INCLUDE
