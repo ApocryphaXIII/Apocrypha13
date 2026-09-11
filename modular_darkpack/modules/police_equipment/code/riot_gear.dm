@@ -10,10 +10,10 @@
 
 /datum/armor/riot_vest
 	melee = 80
-	bullet = 50
+	bullet = 40
 	laser = 10
 	energy = 10
-	bomb = 55
+	bomb = 45
 	fire = 45
 	acid = 10
 	wound = 25
@@ -33,9 +33,9 @@
 
 /datum/armor/riot_helmet
 	melee = 65
-	bullet = 35
-	laser = 35
-	energy = 35
+	bullet = 25
+	laser = 25
+	energy = 25
 	bomb = 30
 	fire = 20
 	acid = 40
