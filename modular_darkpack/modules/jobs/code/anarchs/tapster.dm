@@ -25,15 +25,21 @@
 	)
 	*/
 
-	known_contacts = list("Baron", "Bouncer", "Emissary", "Sweeper")
+	known_contacts = list(
+		JOB_BARON,
+		JOB_BRUISER,
+		JOB_EMISSARY,
+		JOB_SWEEPER,
+		JOB_TAPSTER
+	)
 	allowed_splats = list(SPLAT_NONE, SPLAT_GHOUL, SPLAT_KINDRED)
 	splat_slots = list(SPLAT_NONE = 2, SPLAT_GHOUL = 2, SPLAT_KINDRED = 1)
-	maximum_immortal_age = 5
+//	maximum_immortal_age = 5
 	description = "You have been given keys to the DragonsBreath Smokeshop, but are not trusted to hold a real title. You are either a ghoul, a doll, a fledgeling, or someone impersonating one of the three." // APOC EDIT CHANGE - JOBS
 	minimum_masquerade = 0
 
 /datum/outfit/job/vampire/tapster
-	name = "Retinue"
+	name = JOB_TAPSTER
 	jobtype = /datum/job/vampire/tapster
 
 	id = /obj/item/card/tapster
