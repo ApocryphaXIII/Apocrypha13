@@ -7,8 +7,6 @@
 	config_tag = "BARON"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/baron
-	exp_requirements = 3000
-	exp_required_type_department = EXP_TYPE_ANARCH
 
 	display_order = JOB_DISPLAY_ORDER_BARON
 	departments_list = list(
