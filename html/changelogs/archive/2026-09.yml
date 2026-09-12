@@ -5,3 +5,6 @@
   - rscadd: Bowie Knife, a side-grade to normal knives. More damage, harder to use.
   - rscadd: War Axe, a one-handed axe that does less damage than a fireaxe but does
       not require being wielded.
+2026-09-09:
+  KCartridge:
+  - config: Maptainer CODEOWNER stuff
