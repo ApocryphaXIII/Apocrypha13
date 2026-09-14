@@ -14605,14 +14605,8 @@
 /obj/structure/guncase{
 	name = "specialist gun locker"
 	},
-/obj/item/gun/ballistic/automatic/darkpack/autosniper{
-	name = "SFPD Specialist Auto-Sniper";
-	desc = "Despite not commonly being used by standardised police forces across the US, this one has somehow made it into the hands of the SFPD. For better or for worse."
-	},
-/obj/item/gun/ballistic/automatic/darkpack/aug{
-	desc = "A specialty Steyr AUG, a holdover from your days in the SWAT unit. For when the freaks come out to riot, you'll be ready.";
-	name = "SFPD Captain's AUG"
-	},
+/obj/item/gun/ballistic/automatic/darkpack/aug,
+/obj/item/gun/ballistic/automatic/darkpack/autosniper,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/police)
 "ivi" = (
