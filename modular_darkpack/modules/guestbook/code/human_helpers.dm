@@ -44,3 +44,14 @@
 	if(prefixed)
 		final_string = "\A [final_string]"
 	return lowercase ? LOWER_TEXT(final_string) : final_string
+
+GLOBAL_LIST_EMPTY(living_ref_stacktraces)
+/mob/living/proc/operator""()
+	var/dump = jointext(dump_stack(3), ": ")
+	if(GLOB.living_ref_stacktraces[dump])
+		GLOB.living_ref_stacktraces[dump]++
+	else
+		GLOB.living_ref_stacktraces[dump] = 1
+	logger.Log(LOG_CATEGORY_DEBUG, "Operator Test: [dump]")
+	return usr?.mind?.guestbook?.get_known_name(usr, src) || name
+
