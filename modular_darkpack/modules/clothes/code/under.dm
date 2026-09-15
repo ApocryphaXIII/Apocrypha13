@@ -223,7 +223,7 @@
 
 /obj/item/clothing/under/vampire/gothic
 	name = "gothic getup"
-	desc = "Torn jeans and a black sweatshirt. Goth. Apperently."
+	desc = "Torn jeans and a black sweatshirt. Goth. Apparently."
 	icon_state = "gothic"
 
 //PATRICK BATEMAN (High Society)
@@ -477,51 +477,61 @@
 	name = "Ardus Enterprises custodian jumpsuit"
 	desc = "An Ardus Enterprises custodian's uniform."
 	icon_state = "pentex_janitor"
+	brand = "ardus"
 
 /obj/item/clothing/under/vampire/pentex_shortsleeve
 	name = "\improper " + MAIN_EVIL_COMPANY + " polo-shirt"
 	desc = "An " + MAIN_EVIL_COMPANY + " International employee uniform. This one is a nice polo!"
 	icon_state = "pentex_shortsleeve"
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/under/vampire/pentex_longleeve
 	name = "\improper " + MAIN_EVIL_COMPANY + " shirt"
 	desc = "An " + MAIN_EVIL_COMPANY + " International employee uniform. This one has sleeves!"
 	icon_state = "pentex_longsleeve"
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/under/vampire/pentex_turtleneck
 	name = "\improper " + MAIN_EVIL_COMPANY + " turtleneck"
 	desc = "An " + MAIN_EVIL_COMPANY + " International employee uniform. This one is a nice turtleneck!"
 	icon_state = "pentex_turtleneck"
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/under/vampire/pentex_suit
 	name = "\improper " + MAIN_EVIL_COMPANY + " suit"
 	desc = "A nice suit with a green dress-shirt. This one has an " + MAIN_EVIL_COMPANY + " International tag on it!"
 	icon_state = "pentex_suit"
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/under/vampire/pentex_suitskirt
 	name = "\improper " + MAIN_EVIL_COMPANY + " suitskirt"
 	desc = "A nice suitskirt with a green dress-shirt. This one has an " + MAIN_EVIL_COMPANY + " International tag on it!"
 	icon_state = "pentex_suitskirt"
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/under/vampire/pentex_executive_suit
 	name = "\improper " + MAIN_EVIL_COMPANY + " executive suit"
 	desc = "A  white designer suit with a green dress shirt. This one has an " + MAIN_EVIL_COMPANY + " International tag on it!"
 	icon_state = "pentex_executivesuit"
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/under/vampire/pentex_executiveskirt
 	name = "\improper " + MAIN_EVIL_COMPANY + " executive suitskirt"
 	desc = "A white designer suitskirt with a green dress shirt. This one has an " + MAIN_EVIL_COMPANY + " International tag on it!"
 	icon_state = "pentex_executiveskirt"
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/under/vampire/pentex_executive_suit
 	name = "Endron executive suit"
 	desc = "A  white designer suit with a green dress shirt. This one has an Endron International tag on it!"
 	icon_state = "pentex_executivesuit"
+	brand = "endron"
 
 /obj/item/clothing/under/vampire/pentex_executiveskirt
 	name = "Endron executive suitskirt"
 	desc = "A white designer suitskirt with a green dress shirt. This one has an Endron International tag on it!"
 	icon_state = "pentex_executiveskirt"
+	brand = "endron"
 
 /obj/item/clothing/under/vampire/gown_black
 	name = "black gown"
