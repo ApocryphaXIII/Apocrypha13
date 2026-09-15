@@ -39,4 +39,4 @@
 	suit = /obj/item/clothing/suit/vampire/trench
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	l_pocket = /obj/item/smartphone/duskborn_primo
-	backpack_contents = list(/obj/item/vamp/keys/duskborn/primogen=1, /obj/item/card/credit/elder=1, /obj/item/card/whip, /obj/item/card/steward, /obj/item/card/myrmidon, /obj/item/smartphone/duskborn_primo)
+	backpack_contents = list(/obj/item/vamp/keys/duskborn/primogen=1, /obj/item/card/credit/elder=1, /obj/item/card/whip, /obj/item/card/steward, /obj/item/card/myrmidon)
