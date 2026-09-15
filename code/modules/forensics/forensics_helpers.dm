@@ -190,6 +190,8 @@
 )
 	if(QDELING(src))
 		return FALSE
+	if(HAS_TRAIT(src, TRAIT_ALWAYS_CLEAN)) // APOC EDIT CHANGE - (#139 Ananasi)
+		return FALSE
 
 	if(!length(blood_DNA_to_add))
 		return FALSE
@@ -236,6 +238,8 @@
 
 /mob/living/add_blood_DNA(list/blood_DNA_to_add, list/datum/disease/diseases)
 	if(QDELING(src))
+		return FALSE
+	if(HAS_TRAIT(src, TRAIT_ALWAYS_CLEAN)) // APOC EDIT CHANGE - (#139 Ananasi)
 		return FALSE
 	if(!length(blood_DNA_to_add))
 		return FALSE

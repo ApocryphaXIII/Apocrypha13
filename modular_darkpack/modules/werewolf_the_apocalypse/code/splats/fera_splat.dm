@@ -134,7 +134,6 @@
 /datum/splat/werewolf/shifter/on_gain()
 	. = ..()
 	owner.set_species(/datum/species/human/shifter/homid)
-	add_power(/datum/action/cooldown/power/gift/howling)
 	COOLDOWN_START(src, passive_regrowth_cd, 8 MINUTES)
 
 	RegisterSignal(owner, COMSIG_LIVING_DEATH, PROC_REF(revert_to_breed_form))
@@ -143,8 +142,6 @@
 	. = ..()
 	if(!QDELETED(owner))
 		owner.set_species(/datum/species/human)
-
-	remove_power(/datum/action/cooldown/power/gift/howling)
 	UnregisterSignal(owner, COMSIG_LIVING_DEATH)
 
 /datum/splat/werewolf/shifter/splat_life(seconds_per_tick)
@@ -153,7 +150,7 @@
 	// their fast healing is represented in day/days in breed-form so we just dont.
 	var/can_passively_heal = !(is_breed_form() && (get_breed_form_species() != /datum/species/human/shifter/war))
 	if(COOLDOWN_FINISHED(src, passive_healing_cd))
-		if(can_passively_heal)
+		if(can_passively_heal && !HAS_TRAIT(owner, TRAIT_NO_PASSIVE_HEALING))
 			// 2 to represent lethal. Fera passive regen closes burn, but not aggravated damage.
 			owner.heal_storyteller_health(2, heal_aggravated = FALSE, heal_scars = TRUE, heal_blood = TRUE, heal_burn = TRUE)
 			// Keep organ healing ticking so internal damage recovers even between major regrowth pulses.
@@ -302,6 +299,50 @@
 	. = ..()
 	remove_power(/datum/action/cooldown/power/gift/eye_drink)
 
+/datum/splat/werewolf/shifter/ananasi
+	name = "Ananasi"
+	id = SPLAT_ANANASI
+	uses_rage = FALSE
+	splat_traits = list(
+		TRAIT_FERA_FORMS,
+		TRAIT_FERA_FUR,
+		TRAIT_FERA_RENOWN,
+		TRAIT_NO_PASSIVE_HEALING,
+	)
+	transformation_list = list(
+		/datum/species/human/shifter/homid,
+		/datum/species/human/shifter/war,
+		/datum/species/human/shifter/dire/ananasi,
+		/datum/species/human/shifter/feral
+	)
+	transformation_stats = list(
+		SPECIES_FERA_WAR = list(
+			STAT_STRENGTH = 3,
+			STAT_STAMINA = 2,
+			STAT_DEXTERITY = 3,
+			STAT_MANIPULATION = -1,
+			STAT_APPEARANCE = -1
+		),
+		SPECIES_FERA_FERAL = list(
+			STAT_DEXTERITY = 6,
+		),
+		SPECIES_FERA_DIRE = list(
+			STAT_STRENGTH = 4,
+			STAT_DEXTERITY = 2,
+			STAT_MANIPULATION = -3,
+			STAT_APPEARANCE = -2
+		)
+	)
+	transform_sound = 'modular_darkpack/modules/werewolf_the_apocalypse/sounds/ananasi_transform.ogg'
+	mob_icons = list(
+		SPECIES_FERA_WAR = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/lilian.dmi',
+		SPECIES_FERA_DIRE = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/pithus.dmi',
+		SPECIES_FERA_FERAL = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/ananasi_forms/crawlerling.dmi'
+	)
+	transform_hud_icon = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/hud_transforms.dmi'
+	mimmicing_animal = /mob/living/basic/spider/giant/arachnid
+
+	warcry_emote = "hiss"
 
 /mob/living/carbon/human/splat/kinfolk
 	auto_splats = list(/datum/splat/werewolf/kinfolk)
@@ -311,3 +352,6 @@
 
 /mob/living/carbon/human/splat/corax
 	auto_splats = list(/datum/splat/werewolf/shifter/corax)
+
+/mob/living/carbon/human/splat/ananasi
+	auto_splats = list(/datum/splat/werewolf/shifter/ananasi)

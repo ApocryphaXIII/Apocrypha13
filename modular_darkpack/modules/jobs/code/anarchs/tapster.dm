@@ -32,8 +32,8 @@
 		JOB_SWEEPER,
 		JOB_TAPSTER
 	)
-	allowed_splats = list(SPLAT_NONE, SPLAT_GHOUL, SPLAT_KINDRED)
-	splat_slots = list(SPLAT_NONE = 2, SPLAT_GHOUL = 2, SPLAT_KINDRED = 1)
+	allowed_splats = list(SPLAT_NONE, SPLAT_GHOUL, SPLAT_KINDRED, SPLAT_ANANASI)
+	splat_slots = list(SPLAT_NONE = 2, SPLAT_GHOUL = 2, SPLAT_ANANASI = 1, SPLAT_KINDRED = 1)
 //	maximum_immortal_age = 5
 	description = "You have been given keys to the DragonsBreath Smokeshop, but are not trusted to hold a real title. You are either a ghoul, a doll, a fledgeling, or someone impersonating one of the three." // APOC EDIT CHANGE - JOBS
 	minimum_masquerade = 0
