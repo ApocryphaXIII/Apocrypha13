@@ -2129,8 +2129,6 @@
 /obj/structure/vampdoor/reinf{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
 "kO" = (
@@ -2604,8 +2602,6 @@
 /obj/structure/vampdoor/reinf{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_shed)
 "ni" = (
@@ -4415,8 +4411,6 @@
 /area/vtm/outside/forest/sept)
 "vX" = (
 /obj/effect/mapping_helpers/door/access/claimable,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
 /obj/effect/mapping_helpers/door/lock,
 /obj/structure/vampdoor/reinf{
 	dir = 4
@@ -6896,8 +6890,6 @@
 	},
 /area/vtm/interior/forest/sept)
 "Hx" = (
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
 /obj/effect/mapping_helpers/door/access/claimable,
 /obj/effect/mapping_helpers/door/lock,
 /obj/structure/vampdoor/reinf{
@@ -7100,12 +7092,10 @@
 /area/vtm/interior/forest/bawn_lodge)
 "Iu" = (
 /obj/effect/mapping_helpers/door/access/park_ranger,
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
 /obj/structure/vampdoor/reinf{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/forest/bawn_lodge)
 "Iv" = (
@@ -7808,15 +7798,13 @@
 /turf/open/genturf,
 /area/vtm/planetgeneration)
 "Mk" = (
-/obj/structure/vampdoor/wood{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/door/access/park_ranger,
 /obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/bash_difficulty/five,
-/obj/effect/mapping_helpers/door/lock_difficulty/seven,
 /obj/effect/turf_decal/siding/beige{
 	dir = 8
+	},
+/obj/structure/vampdoor/reinf{
+	dir = 4
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
@@ -8674,8 +8662,6 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/door/access/park_ranger,
-/obj/effect/mapping_helpers/door/lock_difficulty/nine,
-/obj/effect/mapping_helpers/door/bash_difficulty/eight,
 /obj/effect/turf_decal/siding/yellow{
 	dir = 4
 	},
@@ -8858,10 +8844,8 @@
 /area/vtm/outside/forest)
 "Re" = (
 /obj/structure/vampdoor,
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
 /obj/effect/mapping_helpers/door/lock,
 /obj/effect/mapping_helpers/door/access/park_ranger,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
 /turf/open/floor/stone,
 /area/vtm/interior/forest/bawn_lodge)
 "Rg" = (
@@ -10331,12 +10315,12 @@
 	},
 /area/vtm/outside/forest/sept)
 "Ye" = (
-/obj/structure/vampdoor/wood,
 /obj/effect/mapping_helpers/door/access/park_ranger,
 /obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/bash_difficulty/five,
-/obj/effect/mapping_helpers/door/lock_difficulty/seven,
 /obj/effect/turf_decal/siding/beige,
+/obj/structure/vampdoor/reinf{
+	dir = 1
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
 "Yf" = (
