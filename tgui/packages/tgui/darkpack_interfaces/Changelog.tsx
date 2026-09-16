@@ -54,6 +54,7 @@ type ChangelogYaml = Record<string, AuthorChanges>;
 type ChangelogState = {
   loaded_text: ChangelogYaml | string;
   darkpack_text: ChangelogYaml | string;
+  apoc_text: ChangelogYaml | string; // APOC EDIT ADD - SPLIT_CHANGELOG
   selectedDate: string;
   selectedIndex: number;
 };
@@ -71,6 +72,7 @@ export class ChangelogContent extends Component<any, ChangelogState> {
     this.state = {
       loaded_text: 'Loading changelog data...',
       darkpack_text: 'Loading changelog data...',
+      apoc_text: 'Loading changelog data...', // APOC EDIT ADD - SPLIT_CHANGELOG
       selectedDate: '',
       selectedIndex: 0,
     };
@@ -83,6 +85,12 @@ export class ChangelogContent extends Component<any, ChangelogState> {
   setEffigyData(darkpack_text) {
     this.setState({ darkpack_text });
   }
+
+  // APOC EDIT ADD START - SPLIT_CHANGELOG
+  setApocData(apoc_text) {
+    this.setState({ apoc_text });
+  }
+  // APOC EDIT ADD END
 
   setSelectedDate(selectedDate) {
     this.setState({ selectedDate });
@@ -98,6 +106,7 @@ export class ChangelogContent extends Component<any, ChangelogState> {
     if (attemptNumber > maxAttempts) {
       this.setData(`Failed to load data after ${maxAttempts} attempts`);
       this.setEffigyData(`Failed to load data after ${maxAttempts} attempts`);
+      this.setApocData(`Failed to load data after ${maxAttempts} attempts`); // APOC EDIT ADD - SPLIT_CHANGELOG
       return;
     }
 
@@ -106,14 +115,20 @@ export class ChangelogContent extends Component<any, ChangelogState> {
     Promise.all([
       fetch(resolveAsset(`${date}.yml`)),
       fetch(resolveAsset(`darkpack_${date}.yml`)),
-    ]).then(async ([changelogData, darkpackData]) => {
-      if (!changelogData.ok && !darkpackData.ok) {
+      fetch(resolveAsset(`apoc_${date}.yml`)), // APOC EDIT ADD - SPLIT_CHANGELOG
+    ]).then(async ([changelogData, darkpackData, apocData]) => {
+      // APOC EDIT CHANGE - SPLIT_CHANGELOG
+      if (!changelogData.ok && !darkpackData.ok && !apocData.ok) {
+        // APOC EDIT CHANGE - SPLIT_CHANGELOG
         const timeout = 50 + attemptNumber * 50;
 
         this.setData(`Loading changelog data${'.'.repeat(attemptNumber + 3)}`);
         this.setEffigyData(
           `Loading changelog data${'.'.repeat(attemptNumber + 3)}`,
         );
+        this.setApocData(
+          `Loading changelog data${'.'.repeat(attemptNumber + 3)}`,
+        ); // APOC EDIT ADD - SPLIT_CHANGELOG
 
         setTimeout(() => {
           this.getData(date, attemptNumber + 1);
@@ -141,6 +156,18 @@ export class ChangelogContent extends Component<any, ChangelogState> {
           }) as ChangelogYaml,
         );
       }
+
+      // APOC EDIT ADD START - SPLIT_CHANGELOG
+      if (apocData.ok) {
+        const result = await apocData.text();
+
+        this.setApocData(
+          yaml.load(result, {
+            schema: yaml.CORE_SCHEMA,
+          }) as ChangelogYaml,
+        );
+      }
+      // APOC EDIT ADD END
     });
   };
 
@@ -210,8 +237,13 @@ export class ChangelogContent extends Component<any, ChangelogState> {
     const { data } = useBackend<ChangelogData>();
     const { dates = [] } = data;
 
-    const { loaded_text, darkpack_text, selectedIndex, selectedDate } =
-      this.state;
+    const {
+      loaded_text,
+      darkpack_text,
+      apoc_text,
+      selectedIndex,
+      selectedDate,
+    } = this.state; // APOC EDIT CHANGE - SPLIT_CHANGELOG
 
     const { dateChoices } = this;
 
@@ -227,6 +259,7 @@ export class ChangelogContent extends Component<any, ChangelogState> {
 
               this.setData('Loading changelog data...');
               this.setEffigyData('Loading changelog data...');
+              this.setApocData('Loading changelog data...'); // APOC EDIT CHANGE - SPLIT_CHANGELOG
               this.setSelectedIndex(index);
               this.setSelectedDate(dateChoices[index]);
 
@@ -248,6 +281,7 @@ export class ChangelogContent extends Component<any, ChangelogState> {
 
               this.setData('Loading changelog data...');
               this.setEffigyData('Loading changelog data...');
+              this.setApocData('Loading changelog data...'); // APOC EDIT CHANGE - SPLIT_CHANGELOG
               this.setSelectedIndex(index);
               this.setSelectedDate(value);
               window.scrollTo(
@@ -271,6 +305,7 @@ export class ChangelogContent extends Component<any, ChangelogState> {
 
               this.setData('Loading changelog data...');
               this.setEffigyData('Loading changelog data...');
+              this.setApocData('Loading changelog data...'); // APOC EDIT CHANGE - SPLIT_CHANGELOG
               this.setSelectedIndex(index);
               this.setSelectedDate(dateChoices[index]);
               window.scrollTo(
@@ -405,9 +440,12 @@ export class ChangelogContent extends Component<any, ChangelogState> {
     const darkpackChangelog =
       typeof darkpack_text === 'object' ? darkpack_text : null;
 
+    const apocChangelog = typeof apoc_text === 'object' ? apoc_text : null; // APOC EDIT ADD - SPLIT_CHANGELOG
+
     const combinedDates = new Set([
       ...(changelog ? Object.keys(changelog) : []),
       ...(darkpackChangelog ? Object.keys(darkpackChangelog) : []),
+      ...(apocChangelog ? Object.keys(apocChangelog) : []), // APOC EDIT ADD - SPLIT_CHANGELOG
     ]);
 
     const changes = [...combinedDates]
@@ -416,6 +454,14 @@ export class ChangelogContent extends Component<any, ChangelogState> {
       .map((date) => (
         <Section key={date} title={dateformat(date, 'd mmmm yyyy', true)}>
           <Box ml={3}>
+            {/* APOC EDIT ADD START - SPLIT_CHANGELOG */}
+            {apocChangelog?.[date] && (
+              <Section>
+                {this.renderChangelogEntries(apocChangelog[date], 'apoc')}
+              </Section>
+            )}
+            {/* APOC EDIT ADD END */}
+
             {darkpackChangelog?.[date] && (
               <Section>
                 {this.renderChangelogEntries(

@@ -35,9 +35,10 @@
 	// DARKPACK EDIT CHANGE START - SPLIT_CHANGELOG
 	var/list/tg_files = flist("html/changelogs/archive/")
 	var/list/darkpack_files = flist("html/changelogs/darkpack_archive/")
+	var/list/apoc_files = flist("html/changelogs/apoc_archive/") // APOC EDIT ADD - SPLIT_CHANGELOG
 
 	// for(var/archive_file in sort_list(flist("html/changelogs/archive/")))
-	for(var/archive_file in sort_list(tg_files |= darkpack_files))
+	for(var/archive_file in sort_list(tg_files + darkpack_files + apoc_files)) // APOC EDIT CHANGE - SPLIT_CHANGELOG
 		var/archive_date = ymlRegex.Replace(archive_file, "")
 		data["dates"] = list(archive_date) + data["dates"]
 	// DARKPACK EDIT CHANGE END
@@ -49,5 +50,6 @@
 	assets = list(
 		"tg_16.png" = 'icons/ui/common/tg_16.png',
 		"darkpack_16.png" = 'icons/ui/common/darkpack_16.png',
+		"apoc_16.png" = 'icons/ui/common/apoc_16.png', // APOC EDIT ADD - SPLIT_CHANGELOG
 	)
 // DARKPACK EDIT ADD END
