@@ -8,7 +8,6 @@
 	outfit = /datum/outfit/job/vampire/sabbatpack
 	job_flags = CITY_JOB_FLAGS
 	allowed_splats = list(SPLAT_KINDRED)
-	exp_required_type_department = EXP_TYPE_SABBAT
 	departments_list = list(
 		/datum/job_department/sabbat,
 	)
@@ -20,16 +19,21 @@
 	display_order = JOB_DISPLAY_ORDER_SABBATPACK
 	whitelisted = TRUE
 
+	known_contacts = list(
+		JOB_SABBAT_DUCTUS,
+		JOB_SABBAT_PRIEST
+	)
+
 /datum/outfit/job/vampire/sabbatpack
-	name = "Sabbat Pack"
+	name = JOB_SABBAT_PACK
 	jobtype = /datum/job/vampire/sabbatpack
-	l_pocket = /obj/item/smartphone
+	l_pocket = /obj/item/smartphone/sabbat_pack
 	r_pocket = /obj/item/vamp/keys/sabbat
 	uses_default_clan_clothes = TRUE
 	backpack_contents = list(/obj/item/card/credit=1)
-
+/*// APOC EDIT REMOVAL START
 /datum/outfit/job/vampire/sabbatpack/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	if(H.mind)
 		H.mind.add_antag_datum(/datum/antagonist/sabbatist)
-
+*/ // APOC EDIT REMOVAL END
