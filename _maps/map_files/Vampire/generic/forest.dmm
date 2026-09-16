@@ -366,7 +366,7 @@
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 10
 	},
-/obj/effect/realistic_fog/bawn/gaia,
+/obj/effect/realistic_fog/dense,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "bR" = (
@@ -530,7 +530,7 @@
 	},
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/misc/grass/random/grass,
-/area/vtm/planetgeneration)
+/area/vtm/outside/forest)
 "cA" = (
 /obj/structure/bed/dogbed,
 /turf/open/floor/wood/smooth/old,
@@ -1051,7 +1051,7 @@
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 4
 	},
-/obj/effect/realistic_fog/bawn/gaia,
+/obj/effect/realistic_fog/dense,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "fg" = (
@@ -1876,7 +1876,7 @@
 /area/vtm/interior/forest/bawn_lodge)
 "jz" = (
 /obj/structure/flora/rock/darkpack_big,
-/obj/effect/realistic_fog/bawn/gaia,
+/obj/effect/realistic_fog/dense,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
 "jA" = (
@@ -2742,12 +2742,6 @@
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
-"oc" = (
-/obj/effect/realistic_fog/bawn/gaia,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
 "oi" = (
 /obj/structure/stone_tile/slab/cracked,
 /turf/open/floor/wood/smooth/old,
@@ -4603,12 +4597,10 @@
 	},
 /area/vtm/interior/forest/cave)
 "wL" = (
-/obj/machinery/light/small/directional/south{
-	dir = 4
-	},
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 6
 	},
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "wM" = (
@@ -5098,10 +5090,6 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest/sept)
-"yI" = (
-/obj/effect/realistic_fog/bawn/gaia,
-/turf/open/floor/plating/rough,
-/area/vtm/interior/forest/cave)
 "yL" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/wood/parquet,
@@ -5219,12 +5207,6 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
-"zw" = (
-/obj/effect/landmark/bawn_entrance/gaia,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
 "zx" = (
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/forest/bawn_shelter)
@@ -6512,7 +6494,7 @@
 	dir = 9
 	},
 /turf/open/misc/grass/random/grass,
-/area/vtm/planetgeneration)
+/area/vtm/outside/forest)
 "FK" = (
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
@@ -7095,10 +7077,10 @@
 "Ir" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/vampire/gangrel,
-/obj/item/clothing/shoes/vampire/jackboots/work/bimbs,
 /obj/item/clothing/under/vampire/gangrel,
 /obj/item/clothing/under/vampire/gangrel/female,
 /obj/item/clothing/under/vampire/gangrel/female,
+/obj/item/clothing/shoes/vampire/jackboots/work/bimbs,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
@@ -8275,13 +8257,6 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest/sept)
-"Oi" = (
-/obj/effect/turf_decal/darkpack/cave/corner{
-	dir = 8
-	},
-/obj/effect/realistic_fog/bawn/gaia,
-/turf/open/water/river,
-/area/vtm/interior/forest/cave)
 "Oj" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /turf/open/water/river,
@@ -8373,9 +8348,6 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet/purple,
 /area/vtm/interior/forest/bawn_shelter)
-"OL" = (
-/turf/open/genturf,
-/area/vtm/outside/forest)
 "OM" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 4
@@ -9368,7 +9340,7 @@
 /area/vtm/outside/forest/sept)
 "Ti" = (
 /obj/effect/realistic_fog/dense,
-/obj/structure/werewolf_totem/generic/gaia,
+/obj/structure/werewolf_totem/generic,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
@@ -9643,7 +9615,7 @@
 /obj/effect/turf_decal/darkpack/rough/corner{
 	dir = 1
 	},
-/obj/effect/realistic_fog/bawn/gaia,
+/obj/effect/realistic_fog/dense,
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "Uz" = (
@@ -10172,17 +10144,13 @@
 /area/vtm/interior/forest/cave)
 "Xe" = (
 /obj/structure/glowshroom,
-/obj/effect/realistic_fog/bawn/gaia,
+/obj/effect/realistic_fog/dense,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
 "Xh" = (
 /turf/closed/wall/vampwall/city,
-/area/vtm/interior/forest/cave)
-"Xj" = (
-/obj/effect/realistic_fog/bawn/gaia,
-/turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "Xk" = (
 /obj/structure/platform/lowwall/wood,
@@ -35977,7 +35945,7 @@ NT
 NT
 NT
 NT
-NT
+dd
 Dn
 xj
 Pc
@@ -36173,10 +36141,10 @@ zU
 Dn
 Dn
 Dn
-NT
-NT
-NT
-OL
+Dn
+Dn
+xj
+Pc
 Bk
 Pc
 Pc
@@ -36551,7 +36519,7 @@ yh
 Nr
 Nr
 dn
-zw
+Nr
 Nr
 Nr
 wK
@@ -40091,7 +40059,7 @@ ZF
 FK
 Wa
 yh
-oc
+Wf
 Nr
 Xe
 hl
@@ -40288,7 +40256,7 @@ Sr
 Sb
 ZF
 FK
-Oi
+Wa
 tF
 bP
 aU
@@ -40485,9 +40453,9 @@ Ys
 ye
 qV
 FK
-Xj
+ZF
 FK
-Xj
+ZF
 Hm
 mB
 tF
@@ -40684,7 +40652,7 @@ Ys
 CO
 Ux
 FK
-Xj
+ZF
 FK
 ZF
 FK
@@ -40879,7 +40847,7 @@ EH
 EH
 bv
 ye
-yI
+Ys
 CO
 ff
 Sb
@@ -41078,7 +41046,7 @@ EH
 EH
 jz
 ye
-yI
+Ys
 ye
 Sr
 Sb
@@ -41275,7 +41243,7 @@ EH
 EH
 EH
 EH
-yI
+Ys
 iG
 nZ
 ye
