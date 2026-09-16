@@ -27,7 +27,7 @@
 	lighting_cutoff_green = 25
 	lighting_cutoff_blue = 15
 
-	ai_controller = /datum/ai_controller/basic_controller/simple/simple_hostile_obstacles
+	ai_controller = /datum/ai_controller/basic_controller/simple/simple_hostile
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 1, STAMINA = 0, OXY = 1)
 	var/health_scaling = TRUE
 

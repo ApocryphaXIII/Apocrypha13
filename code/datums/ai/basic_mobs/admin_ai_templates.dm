@@ -74,7 +74,7 @@
 /// Walks at a guy and attacks
 /datum/admin_ai_template/hostile
 	name = "Hostile Melee"
-	controller_type = /datum/ai_controller/basic_controller/simple/simple_hostile_obstacles
+	controller_type = /datum/ai_controller/basic_controller/simple/simple_hostile
 
 /// Walks away from a guy and attacks
 /datum/admin_ai_template/hostile_ranged
