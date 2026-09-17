@@ -13,7 +13,8 @@
 		TRAIT_NOBREATH,
 		TRAIT_TOXIMMUNE,
 		TRAIT_NOCRITDAMAGE,
-		TRAIT_FAKEDEATH
+		TRAIT_FAKEDEATH,
+		TRAIT_RESISTS_KISS
 	)
 	//mutantbrain = /obj/item/organ/brain/vampire //to prevent brain transplant surgery
 	//mutanteyes = /obj/item/organ/eyes/night_vision/zombie
@@ -34,18 +35,7 @@
 	C.maxHealth = 300 //tanky
 	C.health = 300
 
-	//zombies resist vampire bites better than mortals
-	RegisterSignal(C, COMSIG_MOB_VAMPIRE_SUCKED, PROC_REF(on_zombie_bitten))
 	ADD_TRAIT(C, TRAIT_MASQUERADE_VIOLATING_FACE, "zombie")
 
-/datum/species/zombie/proc/on_zombie_bitten(datum/source, mob/living/carbon/being_bitten)
-	SIGNAL_HANDLER
-
-	return COMPONENT_RESIST_VAMPIRE_KISS
-
-/datum/species/zombie/on_species_loss(mob/living/carbon/human/human, datum/species/new_species, pref_load)
-	. = ..()
-	UnregisterSignal(human, COMSIG_MOB_VAMPIRE_SUCKED)
 */
-
 #undef REGENERATION_DELAY

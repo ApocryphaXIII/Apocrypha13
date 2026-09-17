@@ -16,6 +16,9 @@
 #define BREED_CORAX_HOMID "Corax Homid"
 #define BREED_CORVID "Corvid"
 
+#define BREED_ANANASI_HOMID "Ananasi Homid"
+#define BREED_ARACHNID "Arachnid"
+
 #define FEATURE_FERA_FUR_COLOR "fera_fur_color"
 #define FEATURE_FERA_HAIR(splat_id) "fera_hair" + splat_id
 #define FEATURE_FERA_BODY(splat_id) "fera_body" + splat_id
@@ -37,7 +40,15 @@ GLOBAL_ALIST_INIT(fera_fur_colors, alist(
 		"green" = "green",
 		"red" = "red",
 		"gray" = "gray",
-	)
+	),
+	SPLAT_ANANASI = list(
+		"black" = "black",
+		"blue" = "blue",
+		"red" = "red",
+		"white" = "white",
+		"ginger" = "ginger",
+		"brown" = "brown",
+	),
 ))
 
 #define STATUS_EFFECT_DELIRIUM /datum/status_effect/delirium

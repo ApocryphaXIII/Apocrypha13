@@ -42,3 +42,7 @@
 	splat_id = SPLAT_CORAX
 	savefile_key = "corax_tribe"
 */
+
+/datum/preference/choiced/subsplat/fera_tribe/ananasi
+	splat_id = SPLAT_ANANASI
+	savefile_key = "ananasi_tribe"
