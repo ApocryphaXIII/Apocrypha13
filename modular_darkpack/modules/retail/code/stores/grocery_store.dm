@@ -52,7 +52,7 @@
 		new /datum/data/vending_product("rake", /obj/item/cultivator/rake, 30),
 		new /datum/data/vending_product("hatchet", /obj/item/hatchet, 100),
 		new /datum/data/vending_product("pest spray", /obj/item/reagent_containers/spray/pestspray, 150),
-		// DARKPACk EDIT END
+		// DARKPACK EDIT CHANGE END
 	)
 
 /obj/structure/retail/deli
