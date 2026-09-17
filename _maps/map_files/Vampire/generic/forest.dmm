@@ -272,6 +272,7 @@
 /obj/item/soil_sack,
 /obj/item/soil_sack,
 /obj/item/melee/vamp/handsickle,
+/obj/item/reagent_containers/spray/pestspray,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "bA" = (
@@ -6422,6 +6423,9 @@
 /obj/item/seeds/potato,
 /obj/item/seeds/watermelon,
 /obj/item/seeds/watermelon,
+/obj/item/cultivator/rake,
+/obj/item/hatchet/wooden,
+/obj/item/shovel/spade,
 /turf/open/misc/grass,
 /area/vtm/outside/forest/sept)
 "NI" = (
