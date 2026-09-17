@@ -627,12 +627,14 @@
 	desc = "A crisp white labcoat. This one has the " + MAIN_EVIL_COMPANY + " International logo stiched onto the breast!"
 	icon_state = "pentex_closedlabcoat"
 	armor_type = /datum/armor/labcoat
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/suit/vampire/pentex_labcoat_alt
 	name = "\improper " + MAIN_EVIL_COMPANY + " labcoat"
 	desc = "A crisp white labcoat. This one has a green trim and the " + MAIN_EVIL_COMPANY + " International logo stiched onto the breast!"
 	icon_state = "pentex_labcoat_alt"
 	armor_type = /datum/armor/labcoat
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/suit/vampire/bomber_jacket_classic
 	name = "classic bomber jacket"

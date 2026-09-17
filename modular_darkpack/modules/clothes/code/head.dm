@@ -343,18 +343,21 @@
 	desc = "A yellow hardhat. This one has an " + MAIN_EVIL_COMPANY + "  logo on it!"
 	icon_state = "pentex_hardhat_yellow"
 	flags_inv = HIDEHAIR
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/head/vampire/pentex_whitehardhat
 	name = "\improper " + MAIN_EVIL_COMPANY + " hardhat"
 	desc = "A white hardhat. This one has an " + MAIN_EVIL_COMPANY + " logo on it!"
 	icon_state = "pentex_hardhat_white"
 	flags_inv = HIDEHAIR
+	brand = "endron" //APOC note: Endron is the main evil company, so the endron logo gets stuck on this
 
 /obj/item/clothing/head/vampire/pentex_beret
 	name = "First Team beret"
 	desc = "A black beret with a mysterious golden insigna bearing a spiral."
 	icon_state = "pentex_beret"
 	flags_inv = HIDEHAIR
+	brand = "pentex"
 
 /obj/item/clothing/head/vampire/blackbag
 	name = "black bag"

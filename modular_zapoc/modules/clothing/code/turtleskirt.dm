@@ -25,3 +25,4 @@
 	name = EVIL_OIL_COMPANY + " turtleneck skirt"
 	desc = "An " + EVIL_OIL_COMPANY + " employee uniform. This one is a nice turtleneck! Features a fashionable pencil skirt."
 	icon_state = "pentex_turtleneck"
+	brand = "endron"
