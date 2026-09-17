@@ -258,6 +258,33 @@ SUBSYSTEM_DEF(job)
 	player.mind.set_assigned_role(job)
 	unassigned -= player
 	job.current_positions++
+	// APOC EDIT CHANGE START
+	var/splat_pref = player.client.prefs.read_preference(/datum/preference/choiced/splats)
+	var/datum/splat/vampire/kindred/clan_pref = get_kindred_splat(player)
+	var/datum/splat/werewolf/tribe_pref = get_werewolf_splat(player)
+	var/player_splat_id
+	var/player_clan_id
+	var/player_tribe_id
+	if(ispath(splat_pref))
+		var/datum/splat/player_splat = GLOB.splat_prototypes[splat_pref]
+		player_splat_id = player_splat.id
+	else
+		player_splat_id = splat_pref
+
+	if(clan_pref) // APOC EDIT ADD START
+		player_clan_id = clan_pref.clan.id
+	else if(tribe_pref)
+		player_tribe_id = tribe_pref.name
+	if(job.splat_slots)
+		if(job.splat_slots[player_splat_id] > 0)
+			job.splat_slots[player_splat_id] = job.splat_slots[player_splat_id] - 1
+	if(job.clan_slots)
+		if(job.clan_slots[player_clan_id] > 0)
+			job.clan_slots[player_clan_id] = job.clan_slots[player_clan_id] - 1
+	if(job.tribe_slots)
+		if(job.tribe_slots[player_tribe_id] > 0)
+			job.tribe_slots[player_tribe_id] = job.tribe_slots[player_tribe_id] - 1
+	// APOC EDIT CHANGE END
 	return TRUE
 
 /datum/controller/subsystem/job/proc/find_occupation_candidates(datum/job/job, level = 0)

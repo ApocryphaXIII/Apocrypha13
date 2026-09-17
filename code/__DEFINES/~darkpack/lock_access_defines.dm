@@ -4,6 +4,8 @@
 #define LOCKACCESS_PRINCE "prince"
 #define LOCKACCESS_PRIMOGEN "primogen"
 
+#define LOCKACCESS_DUSKBORN_PRIMOGEN "duskborn"
+
 #define LOCKACCESS_BANU "banuhaqim"
 #define LOCKACCESS_BANU_PRIMOGEN "primBanu"
 

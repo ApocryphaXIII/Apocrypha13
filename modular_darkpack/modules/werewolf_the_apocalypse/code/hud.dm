@@ -139,8 +139,9 @@
 	abstract_type = /atom/movable/screen/fera_transform
 	icon = 'modular_darkpack/modules/werewolf_the_apocalypse/icons/hud_transforms.dmi'
 	mouse_over_pointer = MOUSE_HAND_POINTER
-	var/datum/species/left_click_transform
-	var/datum/species/right_click_transform
+	/// Generic form slot (SPECIES_FERA_WAR, etc), resolved to the clicker's actual splat-specific species on use
+	var/left_click_form_id
+	var/right_click_form_id
 
 /atom/movable/screen/fera_transform/Initialize(mapload, datum/hud/hud_owner)
 	. = ..()
@@ -157,9 +158,16 @@
 		return
 
 	var/datum/splat/werewolf/shifter/shifting = get_shifter_splat(clicker)
+	if(!istype(shifting))
+		return
+
 	var/list/modifiers = params2list(params)
 	// Right click for alt forms like glabro and hispo. Ctrl click to use rage to do it instantly (doesnt matter if its breed form tho)
-	shifting.transform_fera(LAZYACCESS(modifiers, RIGHT_CLICK) ? right_click_transform : left_click_transform, LAZYACCESS(modifiers, CTRL_CLICK))
+	var/form_id = LAZYACCESS(modifiers, RIGHT_CLICK) ? right_click_form_id : left_click_form_id
+	var/datum/species/human/shifter/form_to_transform = shifting.get_form_by_id(form_id)
+	if(!form_to_transform)
+		return
+	shifting.transform_fera(form_to_transform, LAZYACCESS(modifiers, CTRL_CLICK))
 
 /atom/movable/screen/fera_transform/update_icon(updates)
 	. = ..()
@@ -178,14 +186,19 @@
 	. = ..()
 
 	var/datum/splat/werewolf/shifter/shifting = get_shifter_splat(user)
+	if(!istype(shifting))
+		return
 
-	if(left_click_transform && (left_click_transform in shifting.transformation_list))
-		context[SCREENTIP_CONTEXT_LMB] = "Shift to [left_click_transform::name]"
-		if(left_click_transform != shifting.get_breed_form_species())
+	var/datum/species/human/shifter/left_form = shifting.get_form_by_id(left_click_form_id)
+	var/datum/species/human/shifter/right_form = shifting.get_form_by_id(right_click_form_id)
+
+	if(left_form && (left_form in shifting.transformation_list))
+		context[SCREENTIP_CONTEXT_LMB] = "Shift to [initial(left_form.name)]"
+		if(left_form != shifting.get_breed_form_species())
 			context[SCREENTIP_CONTEXT_CTRL_LMB] = "Shift using rage"
-	if(right_click_transform && (right_click_transform in shifting.transformation_list))
-		context[SCREENTIP_CONTEXT_RMB] = "Shift to [right_click_transform::name]"
-		if(right_click_transform != shifting.get_breed_form_species())
+	if(right_form && (right_form in shifting.transformation_list))
+		context[SCREENTIP_CONTEXT_RMB] = "Shift to [initial(right_form.name)]"
+		if(right_form != shifting.get_breed_form_species())
 			context[SCREENTIP_CONTEXT_CTRL_RMB] = "Shift using rage"
 
 	return CONTEXTUAL_SCREENTIP_SET
@@ -195,23 +208,23 @@
 	name = "homid form"
 	icon_state = "homid"
 	screen_loc = UI_LIVING_TRANSFORM_HOMID
-	left_click_transform = /datum/species/human/shifter/homid
-	right_click_transform = /datum/species/human/shifter/bestial
+	left_click_form_id = SPECIES_FERA_HOMID
+	right_click_form_id = SPECIES_FERA_BESTIAL
 
 
 /atom/movable/screen/fera_transform/war
 	name = "war form"
 	icon_state = "war"
 	screen_loc = UI_LIVING_TRANSFORM_WAR
-	left_click_transform = /datum/species/human/shifter/war
+	left_click_form_id = SPECIES_FERA_WAR
 
 
 /atom/movable/screen/fera_transform/feral
 	name = "feral form"
 	icon_state = "feral"
 	screen_loc = UI_LIVING_TRANSFORM_FERAL
-	left_click_transform = /datum/species/human/shifter/feral
-	right_click_transform = /datum/species/human/shifter/dire
+	left_click_form_id = SPECIES_FERA_FERAL
+	right_click_form_id = SPECIES_FERA_DIRE
 
 #undef UI_LIVING_TRANSFORM_HOMID
 #undef UI_LIVING_TRANSFORM_WAR

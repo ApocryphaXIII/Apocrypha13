@@ -3488,8 +3488,8 @@
 /obj/structure/vampdoor/prison{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/master,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "cbT" = (
@@ -5290,8 +5290,8 @@
 /obj/structure/vampdoor/reinf{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/advanced,
 /turf/open/floor/plating/stone,
 /area/vtm/interior/voivodate/sanctum)
 "daK" = (
@@ -12311,8 +12311,8 @@
 /area/vtm/interior/ghetto)
 "heH" = (
 /obj/structure/vampdoor/reinf,
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/master,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/voivodate)
 "heM" = (
@@ -13091,6 +13091,17 @@
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/hotel)
+"hEY" = (
+/obj/effect/turf_decal/bordur{
+	dir = 1
+	},
+/obj/structure/vampdoor/reinf{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/voivodate/sanctum)
 "hFd" = (
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 8
@@ -13247,8 +13258,8 @@
 /obj/structure/vampdoor/reinf{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/advanced,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/voivodate/sanctum)
 "hJu" = (
@@ -14798,8 +14809,8 @@
 /obj/structure/vampdoor/reinf{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/advanced,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "izL" = (
@@ -15283,6 +15294,15 @@
 /obj/structure/coclock,
 /turf/open/floor/city/plating,
 /area/vtm/interior/museum)
+"iSq" = (
+/obj/effect/turf_decal/bordur,
+/obj/structure/vampdoor/reinf{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/voivodate/sanctum)
 "iSP" = (
 /obj/effect/turf_decal/siding/white/corner{
 	color = "#570090"
@@ -16852,8 +16872,8 @@
 /area/vtm/interior/gang)
 "jNQ" = (
 /obj/structure/vampdoor/prison,
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/advanced,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "jNV" = (
@@ -21764,8 +21784,8 @@
 /area/vtm/interior/endron_facility/restricted)
 "mIw" = (
 /obj/structure/vampdoor/prison,
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/advanced,
 /turf/open/floor/plating/stone,
 /area/vtm/interior/voivodate/sanctum)
 "mIC" = (
@@ -23899,8 +23919,8 @@
 	dir = 4
 	},
 /obj/structure/vampdoor/reinf,
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "nXv" = (
@@ -25714,8 +25734,8 @@
 	dir = 1
 	},
 /obj/structure/vampdoor/oldwood,
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate)
 "oVN" = (
@@ -32709,8 +32729,8 @@
 	dir = 8
 	},
 /obj/structure/vampdoor/reinf,
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "sPw" = (
@@ -37445,8 +37465,8 @@
 /obj/structure/vampdoor/reinf{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/advanced,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/voivodate)
 "vws" = (
@@ -38378,8 +38398,8 @@
 /obj/structure/vampdoor/prison{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/master,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "wcF" = (
@@ -38929,8 +38949,8 @@
 /obj/structure/vampdoor/reinf{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/access/voivodate_master,
 /obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/access/voivodate/advanced,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/voivodate/sanctum)
 "wuR" = (
@@ -88852,8 +88872,8 @@ tBB
 tBB
 tBB
 tBB
-izK
-wuQ
+hEY
+iSq
 tBB
 tBB
 tBB

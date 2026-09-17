@@ -173,8 +173,7 @@ GLOBAL_LIST_INIT(city_door_lock_ids, list())
 	name = "dark keys"
 	accesslocks = list(
 		LOCKACCESS_LASOMBRA,
-		LOCKACCESS_KIASYD,
-		LOCKACCESS_CHURCH
+		LOCKACCESS_KIASYD
 	)
 	color = "#290355"
 
@@ -183,11 +182,9 @@ GLOBAL_LIST_INIT(city_door_lock_ids, list())
 	accesslocks = list(
 		LOCKACCESS_LASOMBRA,
 		LOCKACCESS_KIASYD,
-		LOCKACCESS_CHURCH,
 		LOCKACCESS_PRIMOGEN,
 		LOCKACCESS_PRIMOGEN_LASOMBRA,
 		LOCKACCESS_JAZZ_CLUB,
-		LOCKACCESS_THEATRE,
 		LOCKACCESS_CAMARILLA,
 		LOCKACCESS_PRIMOGEN_LASOMBRA,
 	)
@@ -218,6 +215,12 @@ GLOBAL_LIST_INIT(city_door_lock_ids, list())
 	)
 	color = "#8cc4ff"
 
+/obj/item/vamp/keys/giovanni
+	name = "church keys"
+	accesslocks = list(
+		LOCKACCESS_CHURCH
+	)
+
 /obj/item/vamp/keys/malkav/primogen
 	name = "really insane keys"
 	accesslocks = list(
@@ -247,6 +250,15 @@ GLOBAL_LIST_INIT(city_door_lock_ids, list())
 		LOCKACCESS_BANU
 	)
 	color = "#06053d"
+
+/obj/item/vamp/keys/duskborn/primogen
+	name = "brass keys"
+	accesslocks = list(
+		LOCKACCESS_JAZZ_CLUB,
+		LOCKACCESS_THEATRE,
+		LOCKACCESS_CAMARILLA,
+		LOCKACCESS_DUSKBORN_PRIMOGEN
+	)
 
 /obj/item/vamp/keys/banuhaqim/primogen
 	name = "really just keys" // lol

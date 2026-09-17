@@ -26,16 +26,17 @@
 #define JOB_TOWERWORK "Tower Employee"
 
 //Primogens
-#define JOB_PRIMOGEN_TOREADOR "Primogen Toreador"
-#define JOB_PRIMOGEN_BANU_HAQIM "Primogen Banu Haqim"
-#define JOB_PRIMOGEN_LASOMBRA "Primogen Lasombra"
-#define JOB_PRIMOGEN_MALKAVIAN "Primogen Malkavian"
-#define JOB_PRIMOGEN_NOSFERATU "Primogen Nosferatu"
-#define JOB_PRIMOGEN_VENTRUE "Primogen Ventrue"
+#define JOB_PRIMOGEN_TOREADOR "Toreador Primogen"
+#define JOB_PRIMOGEN_BANU_HAQIM "Banu Haqim Primogen"
+#define JOB_PRIMOGEN_LASOMBRA "Lasombra Primogen"
+#define JOB_PRIMOGEN_MALKAVIAN "Malkavian Primogen"
+#define JOB_PRIMOGEN_NOSFERATU "Nosferatu Primogen"
+#define JOB_PRIMOGEN_VENTRUE "Ventrue Primogen"
+#define JOB_PRIMOGEN_DUSKBORN "Duskborn Primogen" // APOC EDIT CHANGE - JOBS
 
 //Anarch
 #define JOB_BARON "Baron"
-#define JOB_TAPSTER "The Anarchy Rose Employee" // APOC EDIT CHANGE - JOBS
+#define JOB_TAPSTER "Retinue" // APOC EDIT CHANGE - JOBS
 #define JOB_BRUISER "Bruiser"
 #define JOB_EMISSARY "Emissary"
 #define JOB_SWEEPER "Sweeper"
@@ -60,7 +61,7 @@
 #define JOB_FEDERAL_INVESTIGATOR "Federal Investigator"
 
 //Clinic
-#define JOB_CLINIC_DIRECTOR "Clinic Director"
+#define JOB_CLINIC_DIRECTOR "Senior Doctor"
 #define JOB_DOCTOR "Doctor"
 
 //Church
@@ -122,6 +123,7 @@
 #define JOB_DISPLAY_ORDER_NOSFERATU 10
 #define JOB_DISPLAY_ORDER_TOREADOR 11
 #define JOB_DISPLAY_ORDER_VENTRUE 12
+#define JOB_DISPLAY_ORDER_DUSKBORN 13
 
 #define JOB_DISPLAY_ORDER_CLINICS_DIRECTOR 1
 #define JOB_DISPLAY_ORDER_DOCTOR 2
@@ -136,10 +138,11 @@
 
 #define JOB_DISPLAY_ORDER_BARON 1
 #define JOB_DISPLAY_ORDER_EMISSARY 2
-#define JOB_DISPLAY_ORDER_SWEEPER 3
-#define JOB_DISPLAY_ORDER_BRUISER 4
-#define JOB_DISPLAY_ORDER_LIAISON 5
-#define JOB_DISPLAY_ORDER_TAPSTER 6
+#define JOB_DISPLAY_ORDER_REEVE 3
+#define JOB_DISPLAY_ORDER_SWEEPER 4
+#define JOB_DISPLAY_ORDER_BRUISER 5
+#define JOB_DISPLAY_ORDER_LIAISON 6
+#define JOB_DISPLAY_ORDER_TAPSTER 7
 
 #define JOB_DISPLAY_ORDER_REGENT 1
 #define JOB_DISPLAY_ORDER_ARCHIVIST 2

@@ -153,6 +153,10 @@
 			return "Your character's tribe is incompatible for [jobtitle]."
 		if(JOB_UNAVAILABLE_FERA_AUSPICE)
 			return "Your character's auspice is incompatible for [jobtitle]."
+		if(JOB_UNAVAILABLE_CLAN_SLOTS) // APOC EDIT ADD START
+			return "[jobtitle] doesn't have any free clan slots for you."
+		if(JOB_UNAVAILABLE_TRIBE_SLOTS)
+			return "[jobtitle] doesn't have any free tribe slots for your tribe." // APOC EDIT ADD END
 		// DARKPACK EDIT END
 
 	return GENERIC_JOB_UNAVAILABLE_ERROR

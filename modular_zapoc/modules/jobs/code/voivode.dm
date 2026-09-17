@@ -1,6 +1,6 @@
 /datum/job/vampire/voivodate_citizen
 	title = JOB_VOIVODATE_CITIZEN
-	faction = FACTION_SABBAT
+	faction = FACTION_VOIVODATE
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = " the Laws of Hospitality"
@@ -18,13 +18,6 @@
 	allowed_clans = list(VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_OLD_CLAN_TZIMISCE, VAMPIRE_CLAN_HEALER_SALUBRI, VAMPIRE_CLAN_WARRIOR_SALUBRI, VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY)
 
 	description = "You belong to the Seer's Voivodate, a resurgance of the pre-existing California Voivodate. Above all you must respect the Hospitality, and the Voivodes."
-
-	known_contacts = list(
-		JOB_VOIVODE,
-		JOB_BOGATYR_CAPTAIN,
-		JOB_BOGATYR,
-		JOB_ZADRUGA
-	)
 
 /datum/outfit/job/vampire/voivodate_citizen
 	name = JOB_VOIVODATE_CITIZEN
@@ -49,6 +42,8 @@
 	config_tag = "BOGATYR_CAPTAIN"
 	description = "Captain of the Bogatyri, protectors of the Seer's Voivodate. You lead them in the protection of your family and the Voivode-in-Waiting who sleeps in the basement. Serve the Voivodes, and enforce the Hospitality on your family's lands."
 
+	exp_requirements = 2000
+	exp_required_type_department = EXP_TYPE_MANOR
 	display_order = JOB_DISPLAY_ORDER_BOGATYR_CAPTAIN
 
 	known_contacts = list(
@@ -67,3 +62,4 @@
 	name = "Bogatyr Captain"
 	jobtype = /datum/job/vampire/bogatyr/captain
 	// id = /obj/item/card/id/bogatyr/captain
+	backpack_contents = list(/obj/item/vamp/keys/voivodate/master = 1, /obj/item/card/credit=1)
