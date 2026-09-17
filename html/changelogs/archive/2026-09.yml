@@ -8,3 +8,6 @@
 2026-09-09:
   KCartridge:
   - config: Maptainer CODEOWNER stuff
+2026-09-17:
+  FalloutFalcon:
+  - bugfix: Special fran will not scrapeaway to space tiles
