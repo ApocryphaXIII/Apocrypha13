@@ -1,0 +1,41 @@
+2026-08-01:
+  dwinters99:
+  - bugfix: BSD totem in the endron ruin no longer counts as an actual totem
+2026-08-03:
+  KCartridge:
+  - rscadd: P25 radio to Endronites Loadouts
+  Marshmellow105:
+  - map: adds a det camera and missing decal to pd
+  - map: changes all /obj/item/detective_scanner to /obj/item/detective_scanner/darkpack
+  - map: changes all photocopiers on specialfran to gratis subtype so you can use
+      them
+  Potatocrip:
+  - code_imp: lets ghouls pick bruiser and sweeper
+2026-08-07:
+  Potatocrip:
+  - balance: slowed down skate shop vehicles
+  dwinters99:
+  - bugfix: Gray Mass Ultraspore no longer informs all players, only people in the
+      dungeon.
+2026-08-16:
+  FalloutFalcon:
+  - map: endron ruin should be a little less punishing weird bad mechanics
+  - map: endron ruin can be ghosted
+  - admin: Tweaks admin delay round config to check for ban rights and allows for
+      setting amount of admins required
+2026-08-19:
+  Potatocrip:
+  - map: small strip club tweaks
+  - code_imp: small courtesy reminder when claiming doors
+2026-08-23:
+  SoreYew:
+  - map: Changed Armory Stock
+  - map: Added bathroom to Millennium Tower 3rd floor, and a washing machine to the
+      supply closet outside the conference room
+  - map: hid blood around Millennium Tower from Tower Employees in a care room on
+      the 1st floor
+  - map: added a janitorial closet to the 1st floor
+2026-08-29:
+  dwinters99:
+  - rscdel: Sabbat no longer are assigned an antag datum
+  - bugfix: removes a regression with torches caused by a duplicate file
