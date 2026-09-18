@@ -1166,7 +1166,7 @@
 /obj/structure/table,
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/item/clothing/under/vampire/pentex_longleeve,
-/obj/item/clothing/head/vampire/pentex_yellowhardhat,
+/obj/item/clothing/head/vampire/hardhat/pentex_yellow,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "se" = (
@@ -1339,9 +1339,9 @@
 /area/vtm/interior/endron_facility/forest)
 "uI" = (
 /obj/structure/closet/crate/large,
-/obj/item/clothing/head/vampire/pentex_yellowhardhat,
-/obj/item/clothing/head/vampire/pentex_yellowhardhat,
-/obj/item/clothing/head/vampire/pentex_yellowhardhat,
+/obj/item/clothing/head/vampire/hardhat/pentex_yellow,
+/obj/item/clothing/head/vampire/hardhat/pentex_yellow,
+/obj/item/clothing/head/vampire/hardhat/pentex_yellow,
 /obj/item/lighter,
 /turf/open/floor/city/circled,
 /area/vtm/interior/endron_facility/forest)
@@ -3475,7 +3475,7 @@
 /obj/item/grown/log/tree,
 /obj/item/grown/log/tree,
 /obj/item/grown/log/tree,
-/obj/item/clothing/head/vampire/pentex_yellowhardhat,
+/obj/item/clothing/head/vampire/hardhat/pentex_yellow,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "YT" = (
