@@ -5682,6 +5682,11 @@
 "MJ" = (
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm)
+"MM" = (
+/obj/effect/decal/cleanable/litter,
+/obj/item/cultivator/rake,
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto)
 "MP" = (
 /obj/effect/turf_decal/bordur/inverse,
 /turf/open/floor/plating/asphalt,
@@ -5790,6 +5795,7 @@
 /area/vtm/outside/fishermanswharf/ghetto)
 "NQ" = (
 /obj/structure/closet/crate/wooden/communitygardens/seeds,
+/obj/item/reagent_containers/spray/pestspray,
 /turf/open/misc/grass,
 /area/vtm/outside/fishermanswharf/ghetto)
 "NR" = (
@@ -18274,7 +18280,7 @@ ni
 bG
 mt
 PW
-qJ
+MM
 zc
 zc
 uj
