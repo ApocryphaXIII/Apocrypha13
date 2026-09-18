@@ -47,12 +47,12 @@
 		new /datum/data/vending_product("kitchen knife", /obj/item/knife, 26),
 		new /datum/data/vending_product("rolling pin", /obj/item/kitchen/rollingpin, 8),
 		new /datum/data/vending_product("mixing bowl", /obj/item/reagent_containers/cup/mixing_bowl),
-		// APOC EDIT ADD - Add gardening tools to grocery store
+		// APOC EDIT ADD START - (Add gardening tools to grocery store)
 		new /datum/data/vending_product("spade", /obj/item/shovel/spade, 50),
 		new /datum/data/vending_product("rake", /obj/item/cultivator/rake, 30),
 		new /datum/data/vending_product("hatchet", /obj/item/hatchet, 100),
 		new /datum/data/vending_product("pest spray", /obj/item/reagent_containers/spray/pestspray, 150),
-		// DARKPACK EDIT CHANGE END
+		// APOC EDIT ADD END
 	)
 
 /obj/structure/retail/deli
