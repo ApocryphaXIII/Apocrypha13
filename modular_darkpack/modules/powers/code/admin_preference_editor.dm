@@ -162,8 +162,7 @@
 			if(!slot)
 				return FALSE
 			slot = clamp(slot, 1, target_prefs.max_save_slots)
-			target_prefs.load_character(slot)
-			target_prefs.default_slot = slot
+			target_prefs.switch_to_slot(slot)
 			selected_slot = slot
 			return TRUE
 
