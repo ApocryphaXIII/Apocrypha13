@@ -389,6 +389,7 @@ GLOBAL_LIST_INIT(city_door_lock_ids, list())
 /obj/item/vamp/keys/dispatch
 	name = "dispatcher keys"
 	accesslocks = list(
+		LOCKACCESS_POLICE,
 		LOCKACCESS_DISPATCH
 	)
 
