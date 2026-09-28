@@ -1,12 +1,10 @@
-https://github.com/DarkPack13/SecondCity/pull/166
-
 ## \<Battering Ram>
 
-Module ID: battering_ram
+Module ID: pipe_bomb
 
 ### Description:
 
-This module holds a battering ram, in compliance with attributes.
+This module holds a pipe bomb, in compliance with attributes.
 
 ### TG Proc/File Changes:
 
@@ -26,4 +24,4 @@ This module holds a battering ram, in compliance with attributes.
 
 ### Credits:
 
-bomby, XeonMations
+cactus_mouth
