@@ -7,7 +7,7 @@
 /// Returns an ordered list of all our parent procs, highest to deepest.
 ///
 /// introspection like this is mostly useful for debugging, if you have another use I suspect you are just creating god's strongest footgun and should rethink things
-/proc/dump_stack(max_depth = STACK_DEPTH_SEARCH_LIMIT)
+/proc/dump_stack(max_depth = STACK_DEPTH_SEARCH_LIMIT) as /list // DARKPACK EDIT CHANGE
 	var/list/proc_paths = list()
 	var/crashed = FALSE
 	var/depth = 0

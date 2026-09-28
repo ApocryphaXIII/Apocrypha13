@@ -9,6 +9,6 @@
 #define GUESTBOOK_FORGETMENOT (1 << 3)
 
 /// Differs from GET_GUESTBOOK_NAME_TRUE as it returns the known name OR the whole mob for situations where we directly embed into a string for text macros.
-#define GET_GUESTBOOK_NAME(mob, guest) (mob?.mind?.guestbook?.get_known_name(mob, guest) || guest)
+#define GET_GUESTBOOK_NAME(mob, guest) (mob?.mind?.guestbook?.get_known_name(mob, guest) || guest.name)
 /// Macro to get a STRING (never a mob) of the name we refer to them as.
 #define GET_GUESTBOOK_NAME_TRUE(mob, guest) (mob?.mind?.guestbook?.get_known_name(mob, guest) || guest.name)
