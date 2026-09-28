@@ -1,6 +1,6 @@
 /obj/item/grenade/frag/pipe_bomb
 	name = "pipe bomb"
-	desc = "A hap-hazardly put together explosive device, often used by militia and domestic terrorist forces."
+	desc = "A haphazardly put together explosive device, often used by militia and domestic terrorist forces."
 	icon = 'modular_darkpack/modules/pipe_bomb/icons/pipe_bomb.dmi'
 	icon_state = "pipe_bomb"
 	inhand_icon_state = "pipe_bomb"
