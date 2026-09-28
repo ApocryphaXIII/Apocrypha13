@@ -16,7 +16,7 @@
 /datum/crafting_recipe/pipe_bomb
 	name = "Pipe bomb"
 	time = 150
-	reqs = list(/obj/item/stack/sheet/iron = 5, /obj/item/stack/cable_coil = 2, /obj/item/gas_can = 1, /obj/item/stack/medical/wrap/sticky_tape/duct = 1)
+	reqs = list(/obj/item/stack/sheet/iron = 5, /obj/item/stack/cable_coil = 2, /datum/reagent/gunpowder = 35, /obj/item/stack/medical/wrap/sticky_tape/duct = 1)
 	tool_paths = list(
 		/obj/item/screwdriver,
 	)
