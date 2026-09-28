@@ -2,6 +2,7 @@
 	name = "pipe bomb"
 	desc = "A hap-hazardly put together explosive device, often used by militia and domestic terrorist forces."
 	icon = 'modular_darkpack/modules/pipe_bomb/icons/pipe_bomb.dmi'
+	icon_state = "pipe_bomb"
 	inhand_icon_state = "pipe_bomb"
 	lefthand_file = 'modular_darkpack/modules/pipe_bomb/icons/inhand_lefthand.dmi'
 	righthand_file = 'modular_darkpack/modules/pipe_bomb/icons/inhand_righthand.dmi'
@@ -15,7 +16,7 @@
 /datum/crafting_recipe/pipe_bomb
 	name = "Pipe bomb"
 	time = 150
-	reqs = list(/obj/item/stack/sheet/iron = 5, /obj/item/stack/cable_coil = 2, /obj/item/gas_can = 1, /obj/item/stack/medical/wrap/sticky_tape/duct = 2)
+	reqs = list(/obj/item/stack/sheet/iron = 5, /obj/item/stack/cable_coil = 2, /obj/item/gas_can = 1, /obj/item/stack/medical/wrap/sticky_tape/duct = 1)
 	tool_paths = list(
 		/obj/item/screwdriver,
 	)
