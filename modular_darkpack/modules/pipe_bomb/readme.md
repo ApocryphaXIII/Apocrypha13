@@ -24,4 +24,4 @@ This module holds a pipe bomb, in compliance with attributes.
 
 ### Credits:
 
-cactus_mouth
+CactusMouth
