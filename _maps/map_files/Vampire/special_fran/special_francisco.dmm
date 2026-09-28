@@ -1139,8 +1139,8 @@
 /obj/structure/closet,
 /obj/item/clothing/under/vampire/pentex_janitor,
 /obj/item/clothing/under/vampire/pentex_janitor,
-/obj/item/clothing/head/vampire/pentex_whitehardhat,
-/obj/item/clothing/head/vampire/pentex_whitehardhat,
+/obj/item/clothing/head/vampire/hardhat/pentex_white,
+/obj/item/clothing/head/vampire/hardhat/pentex_white,
 /obj/item/clothing/gloves/vampire/cleaning,
 /obj/item/clothing/gloves/vampire/cleaning,
 /obj/item/reagent_containers/cup/bucket,
@@ -33002,9 +33002,9 @@
 /area/vtm/interior/apartment)
 "sXV" = (
 /obj/structure/closet,
-/obj/item/clothing/head/vampire/pentex_yellowhardhat,
-/obj/item/clothing/head/vampire/pentex_yellowhardhat,
-/obj/item/clothing/head/vampire/pentex_whitehardhat,
+/obj/item/clothing/head/vampire/hardhat/pentex_yellow,
+/obj/item/clothing/head/vampire/hardhat/pentex_yellow,
+/obj/item/clothing/head/vampire/hardhat/pentex_white,
 /obj/item/clothing/mask/gas/explorer{
 	name = "endron gasmask"
 	},
