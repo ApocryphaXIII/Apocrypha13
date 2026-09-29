@@ -1,0 +1,4 @@
+author: "dwinters99"
+delete-after: True
+changes:
+  - map: "transfer point to pentex ruin no longer opens until 30 minutes have passed"
