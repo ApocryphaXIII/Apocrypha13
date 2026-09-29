@@ -21,6 +21,11 @@
 
 	return character.get_splat(/datum/splat/werewolf/shifter/corax)
 
+/proc/get_ananasi_splat(mob/character)
+	RETURN_TYPE(/datum/splat/werewolf/shifter/ananasi)
+
+	return character.get_splat(/datum/splat/werewolf/shifter/ananasi)
+
 /proc/get_kinfolk_splat(mob/character)
 	RETURN_TYPE(/datum/splat/werewolf/kinfolk)
 

@@ -1,8 +1,8 @@
 /datum/job/vampire/clinic_director
 	title = JOB_CLINIC_DIRECTOR
 	faction = FACTION_CITY
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Hospital Administrator"
 	config_tag = "CLINIC_DIRECTOR"
 	outfit = /datum/outfit/job/vampire/clinic_director
@@ -21,9 +21,19 @@
 		JOB_PRIMOGEN_MALKAVIAN
 	)
 
-	description = "Keep Saint John's clinic up and running. Collect blood by helping mortals at the Clinic."
-	allowed_splats = list(SPLAT_KINDRED, SPLAT_GHOUL, SPLAT_NONE)
-	allowed_clans = list(VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY, VAMPIRE_CLAN_HEALER_SALUBRI, VAMPIRE_CLAN_BAALI, VAMPIRE_CLAN_BRUJAH, VAMPIRE_CLAN_TREMERE, VAMPIRE_CLAN_VENTRUE, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_GANGREL, VAMPIRE_CLAN_CITY_GANGREL, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_SETITE, VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_CAITIFF, VAMPIRE_CLAN_KIASYD, VAMPIRE_CLAN_NAGARAJA)
+	known_contacts = list(
+		JOB_DOCTOR
+	)
+
+	description = "Senior staff at Ocean Clinic, help the rest of the doctors, nurses, and EMTs with whatever they need. Uphold high standards of care."
+	allowed_splats = list(SPLAT_KINDRED, SPLAT_GHOUL, SPLAT_NONE, SPLAT_GAROU, SPLAT_KINFOLK, SPLAT_CORAX)
+//	allowed_clans = list(VAMPIRE_CLAN_DAUGHTERS_OF_CACOPHONY, VAMPIRE_CLAN_HEALER_SALUBRI, VAMPIRE_CLAN_BAALI, VAMPIRE_CLAN_BRUJAH, VAMPIRE_CLAN_TREMERE, VAMPIRE_CLAN_VENTRUE, VAMPIRE_CLAN_NOSFERATU, VAMPIRE_CLAN_GANGREL, VAMPIRE_CLAN_CITY_GANGREL, VAMPIRE_CLAN_TOREADOR, VAMPIRE_CLAN_MALKAVIAN, VAMPIRE_CLAN_BANU_HAQIM, VAMPIRE_CLAN_GIOVANNI, VAMPIRE_CLAN_SETITE, VAMPIRE_CLAN_TZIMISCE, VAMPIRE_CLAN_LASOMBRA, VAMPIRE_CLAN_CAITIFF, VAMPIRE_CLAN_KIASYD, VAMPIRE_CLAN_NAGARAJA, VAMPIRE_CLAN_WARRIOR_SALUBRI)
+
+	alt_titles = list(
+		"Senior Surgeon",
+		"Care Coordinator",
+		"Shift Operations Coordinator"
+	)
 
 /datum/outfit/job/vampire/clinic_director
 	name = JOB_CLINIC_DIRECTOR

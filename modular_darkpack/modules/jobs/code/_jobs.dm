@@ -23,6 +23,8 @@
 	var/list/allowed_clans
 	///List of Clans that are disallowed to do this job.
 	var/list/disallowed_clans
+	///List of clans that are limited to a certain amount of that clan doing this job. e.g.: list(VAMPIRE_CLAN_TZIMISCE = 1, VAMPIRE_CLAN_MALKAVIAN = 0) // APOC EDIT ADD START
+	var/list/clan_slots // APOC EDIT ADD END
 
 	// WTA
 	///Minimum Renown Rank necessary to do this job.
@@ -33,7 +35,8 @@
 	///List of Auspices that are allowed to do this job.
 	var/list/allowed_auspice
 	var/list/disallowed_auspice
-
+	///List of tribe that are limited to a certain amount of that tribe doing this job. e.g.: list(TRIBE_BLACK_SPIRAL_DANCERS = 1, TRIBE_BONE_GNAWERS = 0) // APOC EDIT ADD START
+	var/list/tribe_slots // APOC EDIT ADD END
 
 	///If this job requires whitelisting before it can be selected for characters.
 	var/whitelisted = FALSE

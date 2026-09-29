@@ -18,12 +18,22 @@
 /datum/controller/subsystem/job/proc/check_job_eligibility_darkpack(mob/dead/new_player/player, datum/job/possible_job, debug_prefix = "", add_job_to_log = FALSE)
 	var/client/player_client = GET_CLIENT(player)
 	var/splat_pref = player_client.prefs.read_preference(/datum/preference/choiced/splats)
+	var/datum/splat/clan_pref = get_kindred_splat(player) // APOC EDIT ADD START
+	var/datum/splat/tribe_pref = get_werewolf_splat(player) // APOC EDIT ADD END
 	var/player_splat_id
+	var/player_clan_id // APOC EDIT ADD START
+	var/player_tribe_id // APOC EDIT ADD END
+
 	if(ispath(splat_pref))
 		var/datum/splat/player_splat = GLOB.splat_prototypes[splat_pref]
 		player_splat_id = player_splat.id
 	else
 		player_splat_id = splat_pref
+
+	if(clan_pref) // APOC EDIT ADD START
+		player_clan_id = clan_pref.id
+	else if(tribe_pref)
+		player_tribe_id = tribe_pref.name
 
 	if(possible_job.allowed_splats && !(player_splat_id in possible_job.allowed_splats))
 		job_debug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_SPLAT, possible_job.title)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
@@ -32,6 +42,14 @@
 	if(possible_job.splat_slots && (possible_job.splat_slots[player_splat_id] == 0))
 		job_debug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_SPLAT_SLOTS, possible_job.title)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_SPLAT_SLOTS
+
+	if(possible_job.clan_slots && (possible_job.clan_slots[player_clan_id] == 0)) // APOC EDIT ADD START
+		job_debug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_CLAN_SLOTS, possible_job.title)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
+		return JOB_UNAVAILABLE_CLAN_SLOTS
+
+	if(possible_job.tribe_slots && (possible_job.tribe_slots[player_tribe_id] == 0))
+		job_debug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_TRIBE_SLOTS, possible_job.title)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
+		return JOB_UNAVAILABLE_TRIBE_SLOTS // APOC EDIT ADD END
 
 	/*
 	if(possible_job.whitelisted)

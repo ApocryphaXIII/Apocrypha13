@@ -47,6 +47,7 @@ JOB_START_HELPER(primogen/lasombra, JOB_PRIMOGEN_LASOMBRA)
 JOB_START_HELPER(primogen/malkavian, JOB_PRIMOGEN_MALKAVIAN)
 JOB_START_HELPER(primogen/nosferatu, JOB_PRIMOGEN_NOSFERATU)
 JOB_START_HELPER(primogen/ventrue, JOB_PRIMOGEN_VENTRUE)
+JOB_START_HELPER(primogen/duskborn, JOB_PRIMOGEN_DUSKBORN)
 
 /* Hospital */
 /obj/effect/landmark/start/darkpack/hospital
