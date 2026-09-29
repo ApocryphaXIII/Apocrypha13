@@ -44,10 +44,11 @@ GLOBAL_ALIST_INIT(fera_fur_colors, alist(
 	SPLAT_ANANASI = list(
 		"black" = "black",
 		"blue" = "blue",
+		"grey" = "grey",
 		"red" = "red",
-		"white" = "white",
-		"ginger" = "ginger",
 		"brown" = "brown",
+		"white" = "white",
+		"purple" = "purple",
 	),
 ))
 
