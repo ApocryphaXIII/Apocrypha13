@@ -8373,6 +8373,7 @@
 #include "modular_zapoc\modules\mapping\code\modular_rooms.dm"
 #include "modular_zapoc\modules\mapping\code\transfer_zones.dm"
 #include "modular_zapoc\modules\mobs\code\cockroach.dm"
+#include "modular_darkpack\modules\police_bearcat\code\bearcat.dm"
 #include "modular_zapoc\modules\smites\code\crystal.dm"
 #include "modular_zapoc\modules\weapons\code\bowie_knife.dm"
 #include "modular_zapoc\modules\weapons\code\waraxe.dm"
