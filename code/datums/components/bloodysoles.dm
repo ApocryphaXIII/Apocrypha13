@@ -239,7 +239,7 @@
 		return
 
 	/// The character is agile enough to not mess their clothing and hands just from one blood splatter at floor
-	if(HAS_TRAIT(wielder, TRAIT_LIGHT_STEP))
+	if(HAS_TRAIT(wielder, TRAIT_LIGHT_STEP) || HAS_TRAIT(wielder, TRAIT_ALWAYS_CLEAN)) // APOC EDIT CHANGE - (#139 Ananasi)
 		return
 
 	// Don't share from other feetprints, not super realistic but I think it ruins the effect a bit

@@ -18,6 +18,7 @@
 		TRAIT_DRINKS_BLOOD,
 		TRAIT_PALE_AURA,
 		TRAIT_SCARRING_RESISTANT,
+		TRAIT_RESISTS_KISS,
 	)
 	splat_actions = list(
 		/datum/action/cooldown/mob_cooldown/give_vitae,
@@ -73,9 +74,6 @@
 	//vampires don't die while in crit, they just slip into torpor after 2 minutes of being critted
 	RegisterSignal(owner, COMSIG_MOB_STATCHANGE, PROC_REF(handle_enter_critical_condition))
 
-	//vampires resist vampire bites better than mortals
-	RegisterSignal(owner, COMSIG_MOB_VAMPIRE_SUCKED, PROC_REF(on_vampire_bitten))
-
 	// Apply bashing damage resistance
 	RegisterSignal(owner, COMSIG_MOB_APPLY_DAMAGE_MODIFIERS, PROC_REF(damage_resistance))
 
@@ -110,7 +108,6 @@
 	UnregisterSignal(owner, list(
 		COMSIG_CARBON_LOSE_ORGAN,
 		COMSIG_MOB_STATCHANGE,
-		COMSIG_MOB_VAMPIRE_SUCKED,
 		COMSIG_MOB_APPLY_DAMAGE_MODIFIERS,
 		COMSIG_HUMAN_ON_HANDLE_BLOOD,
 		COMSIG_PATH_HIT,
@@ -207,12 +204,10 @@
 /**
  * On being bit by a vampire
  *
- * This handles vampire bite sleep immunity and any future special interactions.
+ * This handles any future special interactions. Vampire bite immunity is now handled by TRAIT_RESISTS_KISS.
  */
 /datum/splat/vampire/kindred/proc/on_vampire_bitten(datum/source, mob/living/carbon/being_bitten)
 	SIGNAL_HANDLER
-
-	return COMPONENT_RESIST_VAMPIRE_KISS
 
 /datum/splat/vampire/kindred/proc/kindred_blood(mob/living/carbon/human/kindred, seconds_per_tick, times_fired)
 	SIGNAL_HANDLER
