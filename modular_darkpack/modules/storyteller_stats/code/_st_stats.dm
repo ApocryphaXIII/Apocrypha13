@@ -169,6 +169,10 @@
 	SHOULD_NOT_OVERRIDE(TRUE)
 	return points
 
+/datum/st_stat/proc/get_initial_points()
+	SHOULD_NOT_OVERRIDE(TRUE)
+	return src::points
+
 /datum/st_stat/proc/set_points(amount)
 	SHOULD_NOT_OVERRIDE(TRUE)
 	points = max(amount, 0)
