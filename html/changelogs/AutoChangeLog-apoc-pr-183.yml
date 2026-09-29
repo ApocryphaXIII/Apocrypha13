@@ -1,6 +1,0 @@
-author: "Dangerlurking"
-delete-after: True
-changes:
-  - rscadd: "Adds gardening tools to the grocery store for purchase."
-  - rscadd: "Adds gardening tools around town in certain locations to be found."
-  - rscdel: "Removes a redundant trash can at Tzimisce manor that was right next to another one."
