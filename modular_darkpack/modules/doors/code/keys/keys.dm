@@ -399,7 +399,7 @@ GLOBAL_LIST_INIT(city_door_lock_ids, list())
 //===========================FERA KEYS===========================
 
 /obj/item/vamp/keys/nps
-	name = "\improper Park Service keys"
+	name = "\improper Hunting Lodge keys" // APOC EDIT CHANGE
 	accesslocks = list(
 		LOCKACCESS_PARK_RANGER
 	)

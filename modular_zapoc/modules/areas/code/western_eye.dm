@@ -22,3 +22,17 @@
 /area/vtm/interior/forest/abandoned_cabin
 	name = "Abandoned Cabin"
 
+/area/vtm/outside/forest/bawn_lodge
+	name = "Sinkhole Lodge"
+
+/area/vtm/interior/forest/bawn_lodge
+	name = "Hunting Lodge"
+
+/area/vtm/interior/forest/bawn_shelter
+	name = "Storm Shelter"
+
+/area/vtm/interior/forest/bawn_shed
+	name = "Lodge Shed"
+
+/area/vtm/interior/forest/hotsprings
+	name = "Hotsprings"

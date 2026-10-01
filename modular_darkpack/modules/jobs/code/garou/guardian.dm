@@ -41,4 +41,5 @@
 	gloves = /obj/item/clothing/gloves/vampire/leather
 	suit = /obj/item/clothing/suit/vampire/jacket
 	l_pocket = /obj/item/smartphone/garou_guardian
+	r_pocket = /obj/item/vamp/keys/nps // APOC EDIT CHANGE
 	backpack_contents = list(/obj/item/card/credit=1)
