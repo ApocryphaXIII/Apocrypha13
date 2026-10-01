@@ -25,7 +25,7 @@
 	maxbloodpool = 0
 	bloodquality = BLOOD_QUALITY_LOW
 
-	ai_controller = /datum/ai_controller/basic_controller/simple/simple_hostile_obstacles
+	ai_controller = /datum/ai_controller/basic_controller/simple/simple_hostile
 	// General spitball of the "power" of the bane so we can use that for difficulty calculations
 	var/power_rank = 1
 
