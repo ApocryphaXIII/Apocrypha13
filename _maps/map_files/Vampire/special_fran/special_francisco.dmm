@@ -6229,10 +6229,10 @@
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior)
 "dIB" = (
-/obj/structure/closet/crate/bin{
-	pixel_x = -5;
-	pixel_y = 8
-	},
+/obj/structure/closet/crate/wooden,
+/obj/item/hatchet/wooden,
+/obj/item/cultivator/rake,
+/obj/item/shovel/spade,
 /turf/open/floor/wood/old,
 /area/vtm/interior/voivodate)
 "dIN" = (
@@ -23250,6 +23250,8 @@
 /area/vtm/interior/voivodate/sanctum)
 "nBY" = (
 /obj/structure/rack,
+/obj/item/cultivator/rake,
+/obj/item/shovel/spade,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/supply)
 "nCb" = (
