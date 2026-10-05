@@ -1,0 +1,21 @@
+2026-09-07:
+  dwinters99, Major00:
+  - rscadd: Eyepatches are now in the loadout
+  - rscadd: Bimberton boots are now in the loadout
+  - rscadd: Bowie Knife, a side-grade to normal knives. More damage, harder to use.
+  - rscadd: War Axe, a one-handed axe that does less damage than a fireaxe but does
+      not require being wielded.
+2026-09-09:
+  KCartridge:
+  - config: Maptainer CODEOWNER stuff
+2026-09-17:
+  FalloutFalcon:
+  - bugfix: Special fran will not scrapeaway to space tiles
+2026-09-29:
+  Dangerlurking:
+  - rscadd: Adds gardening tools to the grocery store for purchase.
+  - rscadd: Adds gardening tools around town in certain locations to be found.
+  - rscdel: Removes a redundant trash can at Tzimisce manor that was right next to
+      another one.
+  dwinters99:
+  - map: transfer point to pentex ruin no longer opens until 30 minutes have passed
