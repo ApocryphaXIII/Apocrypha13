@@ -9809,6 +9809,10 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/bawn_lodge)
+"UJ" = (
+/obj/item/flashlight/lantern/on,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/forest/bawn_shed)
 "UL" = (
 /obj/effect/turf_decal/siding/brown{
 	dir = 1;
@@ -52756,7 +52760,7 @@ xD
 xD
 It
 Sy
-Sy
+UJ
 Sy
 xO
 EH
