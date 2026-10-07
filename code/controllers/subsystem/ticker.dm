@@ -575,6 +575,11 @@ SUBSYSTEM_DEF(ticker)
 			else // clear any personalities the prefs added since our job clearly does not want them
 				new_player_living.clear_personalities()
 
+		// DARKPACK EDIT ADD START
+		for(var/datum/preference_middleware/our_middleware in new_player_mob.client?.prefs?.middleware)
+			our_middleware.on_character_spawn(new_player_mob)
+		// DARKPACK EDIT ADD END
+
 		if(ishuman(new_player_living))
 			SEND_SIGNAL(new_player_living, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
 		CHECK_TICK
