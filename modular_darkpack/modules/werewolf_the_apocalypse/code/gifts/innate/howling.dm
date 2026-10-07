@@ -4,42 +4,35 @@
 	button_icon_state = "call_of_the_wyld"
 	rage_cost = 1
 	check_flags = null
-	innate_ability = TRUE
+	innate_ability = FALSE
 	var/static/list/howls = list(
 		"attack" = list(
 			"menu" = "Attack",
 			SPLAT_GAROU = "A wolf howls a fierce call to attack",
-			SPLAT_CORAX = "A raven hisses a fierce call to attack"
 		),
 		"retreat" = list(
 			"menu" = "Retreat",
 			SPLAT_GAROU = "A wolf howls a warning to retreat",
-			SPLAT_CORAX = "A raven squawks a warning to retreat"
 		),
 		"help" = list(
 			"menu" = "Help",
 			SPLAT_GAROU = "A wolf howls a desperate plea for help",
-			SPLAT_CORAX = "A raven shrieks a a desperate plea for help"
 		),
 		"gather" = list(
 			"menu" = "Gather",
 			SPLAT_GAROU = "A wolf howls to gather the pack",
-			SPLAT_CORAX = "A raven beckons the conspiracy"
 		),
 		"victory" = list(
 			"menu" = "Victory",
 			SPLAT_GAROU = "A wolf howls in celebration of victory",
-			SPLAT_CORAX = "A raven croaks in celebration of victory"
 		),
 		"dying" = list(
 			"menu" = "Dying",
 			SPLAT_GAROU = "A wolf howls in pain and despair",
-			SPLAT_CORAX = "A raven shrieks in pain and despair"
 		),
 		"mourning" = list(
 			"menu" = "Mourning",
 			SPLAT_GAROU = "A wolf howls in deep mourning for the fallen",
-			SPLAT_CORAX = "A raven mourns the loss of the fallen"
 		)
 	)
 

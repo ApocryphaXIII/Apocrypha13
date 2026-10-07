@@ -93,3 +93,39 @@
 	)
 
 	return to_add
+
+// START - ANANASI SPLAT
+/datum/splat/werewolf/shifter/ananasi/prepare_human_for_preview(mob/living/carbon/human/human)
+	human.set_haircolor("#50504f", update = FALSE)
+	human.set_hairstyle("Wisp", update = TRUE)
+	human.undershirt = "Shirt (Black)"
+	human.glasses = "Prescription Glasses"
+	human.update_body()
+
+/datum/splat/werewolf/shifter/ananasi/get_splat_description()
+	return "Lorem Ipsum"
+
+/datum/splat/werewolf/shifter/ananasi/get_splat_lore()
+	return list(
+		"Lorem Ipsum",
+	)
+
+/datum/splat/werewolf/shifter/ananasi/create_pref_unique_perks()
+	var/list/to_add = list()
+
+	to_add += list(
+		list(
+			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
+			SPECIES_PERK_ICON = FA_ICON_SPIDER,
+			SPECIES_PERK_NAME = "Shapeshifting",
+			SPECIES_PERK_DESC = "Ananasi can shift between 4 different forms that grant them bonuses.",
+		),
+		list(
+			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
+			SPECIES_PERK_ICON = FA_ICON_BAND_AID,
+			SPECIES_PERK_NAME = "Blood healing",
+			SPECIES_PERK_DESC = "Ananasi can use blood they've consumed to heal their injuries.",
+		),
+	)
+
+	return to_add

@@ -44,3 +44,7 @@
 /datum/preference/choiced/subsplat/fera_breed/coeax
 	savefile_key = "corax_breed"
 	splat_id = SPLAT_CORAX
+
+/datum/preference/choiced/subsplat/fera_breed/ananasi
+	savefile_key = "ananasi_breed"
+	splat_id = SPLAT_ANANASI
