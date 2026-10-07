@@ -13,6 +13,7 @@
 		/datum/job_department/anarch,
 	)
 
+	tgui_icon = FA_ICON_GLASS_WHISKEY
 	/* // APOC EDIT REMOVAL - JOBS
 	alt_titles = list(
 		"Bartender",
