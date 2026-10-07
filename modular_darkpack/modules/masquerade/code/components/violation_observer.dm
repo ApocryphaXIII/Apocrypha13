@@ -28,6 +28,8 @@
 		return
 	if(breacher_area.zone_type != ZONE_MASQUERADE)
 		return
+	if(HAS_TRAIT(src, TRAIT_OBFUSCATED))
+		return
 	for(var/atom/movable/moving_atom in view(7, loc))
 		if(!moving_atom.violation_observer)
 			continue
