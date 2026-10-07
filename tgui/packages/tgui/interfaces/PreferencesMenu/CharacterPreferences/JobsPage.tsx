@@ -301,18 +301,24 @@ function JobRow(props: JobRowProps) {
             >
               <Tooltip content={job.description} position="bottom-start">
                 {
-                  // DARKPACK EDIT CHANGE START -  ALTERNATIVE_JOB_TITLES - ORIGINAL: {name}
+                  // DARKPACK EDIT CHANGE START - ALTERNATIVE_JOB_TITLES - ORIGINAL: {name}
                   !job.alt_titles ? (
                     name
                   ) : (
-                    <Dropdown
-                      width="100%"
-                      options={job.alt_titles}
-                      selected={alt_title_selected}
-                      onSelected={(value) =>
-                        act('set_job_title', { job: name, new_title: value })
-                      }
-                    />
+                    <Box position="relative">
+                      <Dropdown
+                        width="100%"
+                        options={job.alt_titles}
+                        selected={alt_title_selected}
+                        menuWidth="25"
+                        onSelected={(value) =>
+                          act('set_job_title', {
+                            job: name,
+                            new_title: value,
+                          })
+                        }
+                      />
+                    </Box>
                   )
                   // DARKPACK EDIT CHANGE END
                 }
@@ -538,8 +544,8 @@ export function JobsPage() {
         </Stack.Item>
       </Stack>
       <Stack vertical fill>
+        {/* // DARKPACK EDIT CHANGE, ORIGINAL: 15 */}
         <Stack.Item mt={10}>
-          {/* // DARKPACK EDIT CHANGE */}
           <Stack fill g={1} className="PreferencesMenu__Jobs">
             {
               // DARKPACK EDIT ADD START
