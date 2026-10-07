@@ -160,7 +160,7 @@
 	var/datum/storyteller_roll/escape_roll = new()
 	escape_roll.applicable_stats = list(STAT_STRENGTH)
 	escape_roll.difficulty = 9
-	escape_roll.roll_output_type = ROLL_PRIVATE
+	escape_roll.roll_output_type = ROLL_FLAG_ROLLER
 
 	if(QDELETED(src) || user.loc != src)
 		return
@@ -246,7 +246,7 @@
 	var/datum/subsplat/werewolf/breed_form/breed = shifter_splat?.breed_form
 	var/datum/storyteller_roll/roll_datum = new()
 	roll_datum.difficulty = living_target.st_get_stat(STAT_TEMPORARY_WILLPOWER)
-	roll_datum.roll_output_type = ROLL_PRIVATE_AND_TARGET
+	roll_datum.roll_output_type = ROLL_FLAG_ROLLER|ROLL_FLAG_TARGET
 	var/roll_result = roll_datum.st_roll(owner, target, breed?.start_gnosis || 0)
 
 	if(roll_result != ROLL_SUCCESS)
@@ -279,7 +279,7 @@
 	if(!roll_datum)
 		roll_datum = new()
 	roll_datum.difficulty = roll_difficulty
-	roll_datum.roll_output_type = ROLL_PRIVATE_AND_TARGET
+	roll_datum.roll_output_type = ROLL_FLAG_ROLLER|ROLL_FLAG_TARGET
 	var/roll_result = roll_datum.st_roll(caster, target, casting_splat.gnosis)
 
 	if(roll_result != ROLL_SUCCESS)
@@ -388,7 +388,7 @@
 	var/datum/storyteller_roll/stamina_roll = new()
 	stamina_roll.applicable_stats = list(STAT_STAMINA)
 	stamina_roll.difficulty = 6
-	stamina_roll.roll_output_type = ROLL_PRIVATE
+	stamina_roll.roll_output_type = ROLL_FLAG_ROLLER
 	stamina_roll.spammy_roll = TRUE
 	if(stamina_roll.st_roll(owner, owner) != ROLL_SUCCESS)
 		to_chat(owner, span_danger("THE AGONY IS UNBEARABLE!"))
