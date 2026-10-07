@@ -48,7 +48,7 @@
 	mirage.AddElement(/datum/element/content_barfer)
 
 	qdel(mirage.ai_controller)
-	mirage.ai_controller = new /datum/ai_controller/basic_controller/simple/simple_hostile_obstacles(mirage)
+	mirage.ai_controller = new /datum/ai_controller/basic_controller/simple/simple_hostile(mirage)
 
 	var/list/our_stuff = user.unequip_everything()
 	for (var/atom/movable/thing in our_stuff)
