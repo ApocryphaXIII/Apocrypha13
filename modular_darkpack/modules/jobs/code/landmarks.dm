@@ -7,7 +7,7 @@
 /obj/effect/landmark/start/darkpack
 	name = "generic darkpack start"
 	desc = "Var-edit me if you're an idiot who doesn't like making subtypes!"
-	icon = 'modular_darkpack/modules/jobs/icons/landmarks.dmi'
+	icon = 'modular_zapoc/modules/jobs/icons/landmarks.dmi' // APOC EDIT CHANGE
 
 /* Anarchs */
 /obj/effect/landmark/start/darkpack/anarch
