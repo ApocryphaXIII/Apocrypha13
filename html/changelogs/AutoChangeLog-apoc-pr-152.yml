@@ -1,5 +1,0 @@
-author: "dwinters99"
-delete-after: True
-changes:
-  - map: "Audited most areas to prevent odd situations where a murder is reported in Hell"
-  - map: "Many, many misc. fixes to Special Francisco"
