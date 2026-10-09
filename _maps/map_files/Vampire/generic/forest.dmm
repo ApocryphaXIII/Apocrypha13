@@ -1215,7 +1215,6 @@
 /turf/open/floor/wood/rough,
 /area/vtm/outside/forest/sept)
 "fX" = (
-/obj/structure/platform/lowwall/brick_old,
 /obj/structure/table/countertop/black,
 /obj/machinery/reagentgrinder/kitchen{
 	pixel_x = 0;
@@ -2015,7 +2014,6 @@
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
 "jB" = (
-/obj/structure/platform/lowwall/brick_old,
 /obj/structure/table/countertop/black,
 /obj/item/storage/box/drinkingglasses,
 /turf/open/floor/iron/checker,
@@ -3242,7 +3240,6 @@
 	},
 /area/vtm/outside/forest/sept)
 "pJ" = (
-/obj/item/paper_bin,
 /obj/structure/table/no_smooth/modular_desk,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
@@ -3269,7 +3266,6 @@
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 4
 	},
-/obj/structure/platform/lowwall/brick_old,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
 "pO" = (
@@ -4755,6 +4751,10 @@
 /obj/item/clothing/shoes/vampire/jackboots/work,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_shed)
+"wj" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/iron/checker,
+/area/vtm/interior/forest/bawn_lodge)
 "wl" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 4
@@ -4801,12 +4801,12 @@
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
 "wt" = (
-/obj/structure/vampdoor/wood{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/door/access/park_ranger,
 /obj/effect/mapping_helpers/door/lock_difficulty/six,
 /obj/effect/mapping_helpers/door/lock,
+/obj/structure/vampdoor/woodglass{
+	dir = 4
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
 "wu" = (
@@ -5304,6 +5304,10 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest)
+"yx" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/forest/bawn_lodge)
 "yA" = (
 /obj/effect/turf_decal/darkpack/rough/corner,
 /obj/structure/glowshroom/glowcap,
@@ -5312,7 +5316,6 @@
 	},
 /area/vtm/interior/forest/cave)
 "yB" = (
-/obj/structure/platform/lowwall/brick_old,
 /obj/structure/table/countertop/black,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
@@ -5328,7 +5331,6 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/west,
-/obj/structure/platform/lowwall/brick_old,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
 "yG" = (
@@ -6639,6 +6641,13 @@
 /obj/item/food/spaghetti/raw,
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/enzyme,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/food/spaghetti/raw,
+/obj/item/food/spaghetti/raw,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/condiment/flour,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
 "Fh" = (
@@ -6903,17 +6912,12 @@
 /turf/open/floor/plating/stone,
 /area/vtm/interior/forest/cave)
 "Gq" = (
-/obj/structure/closet,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/rice,
 /obj/machinery/light/small/directional/north,
-/obj/item/kitchen/rollingpin,
-/obj/item/knife,
-/obj/item/food/spaghetti/raw,
-/obj/item/food/spaghetti/raw,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/condiment/enzyme,
+/obj/structure/table/countertop/black,
+/obj/structure/sink/directional/south{
+	icon_state = "basin";
+	pixel_y = 0
+	},
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
 "Gr" = (
@@ -7094,19 +7098,6 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
-"Hf" = (
-/obj/structure/table/wood,
-/obj/machinery/microwave{
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = 13
-	},
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = -12
-	},
-/turf/open/floor/iron/checker,
-/area/vtm/interior/forest/bawn_lodge)
 "Hi" = (
 /obj/structure/table,
 /obj/item/food/burger/plain{
@@ -7267,24 +7258,6 @@
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
-"HN" = (
-/obj/structure/rack/tall/metal_shelf,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/obj/item/reagent_containers/cup/bowl,
-/turf/open/floor/iron/checker,
-/area/vtm/interior/forest/bawn_lodge)
 "HO" = (
 /obj/structure/railing{
 	dir = 8
@@ -7734,6 +7707,26 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"Kh" = (
+/obj/machinery/microwave{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = 13
+	},
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = -12
+	},
+/obj/structure/table/countertop/black,
+/turf/open/floor/iron/checker,
+/area/vtm/interior/forest/bawn_lodge)
+"Kj" = (
+/obj/effect/turf_decal/siding/brown{
+	color = "#50331a"
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/wood/parquet,
+/area/vtm/interior/forest/bawn_lodge)
 "Kk" = (
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/forest/bawn_lodge)
@@ -8817,19 +8810,18 @@
 /area/vtm/outside/forest)
 "PR" = (
 /obj/structure/rack/tall/metal_shelf,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/reagent_containers/cup/bowl,
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/kitchen/fork,
+/obj/item/kitchen/fork,
+/obj/item/kitchen/fork,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
 "PS" = (
@@ -9555,6 +9547,13 @@
 "Tx" = (
 /obj/structure/table/no_smooth/modular_desk/right{
 	dir = 1
+	},
+/obj/item/pen{
+	pixel_x = 11;
+	pixel_y = 5
+	},
+/obj/item/paper_bin{
+	pixel_y = 6
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
@@ -10355,7 +10354,6 @@
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
 /obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/seafood,
 /obj/item/storage/box/ingredients/sweets,
 /obj/item/storage/box/ingredients/vegetarian,
 /obj/item/storage/box/ingredients/grains,
@@ -12361,7 +12359,7 @@ nI
 nI
 nI
 nI
-nI
+yx
 Jk
 EH
 EH
@@ -31944,7 +31942,7 @@ EH
 EH
 Jk
 PR
-HN
+yB
 yF
 pN
 jB
@@ -32735,7 +32733,7 @@ EH
 wQ
 sD
 Jk
-VI
+Kh
 RC
 RC
 RC
@@ -32933,7 +32931,7 @@ oN
 sD
 sD
 Jk
-Hf
+VI
 RC
 RC
 RC
@@ -33134,7 +33132,7 @@ Jk
 cW
 RC
 RC
-RC
+wj
 Jk
 DM
 DM
@@ -53538,12 +53536,12 @@ UL
 Pe
 Pe
 Pe
-oy
+Kj
 gY
 lr
 tE
 lr
-lr
+tE
 lr
 lr
 lr
