@@ -1,0 +1,8 @@
+author: "QuietSymphony"
+delete-after: True
+changes:
+  - rscadd: "The ranger keys are real again and renamed to lodge keys. Every sept role gets a set and so does anyone that is a Gaian tribe other than CoG/Glassies. Sept Roles sometimes get two sets."
+  - bugfix: "Added a roof to the forest bar and abandoned cabin"
+  - map: "Added an entire Hunting Lodge from before 1908, built in a sinkhole, abandoned, then refurbished by the Sept"
+  - map: "Added a hotsprings near the lodge"
+  - map: "Added a new storm shelter/panic room for the lodge."
