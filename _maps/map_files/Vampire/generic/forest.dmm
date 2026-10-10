@@ -502,8 +502,6 @@
 	dir = 1
 	},
 /obj/effect/mapping_helpers/door/access/park_ranger,
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
@@ -7546,8 +7544,6 @@
 "Jq" = (
 /obj/structure/vampdoor/wood,
 /obj/effect/mapping_helpers/door/access/park_ranger,
-/obj/effect/mapping_helpers/door/lock_difficulty/eight,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
