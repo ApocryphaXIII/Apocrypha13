@@ -2598,6 +2598,9 @@
 "mj" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/cosmos/double,
+/obj/item/toy/plush/shark{
+	name = "\improper Fawn's Shark"
+	},
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/forest/bawn_lodge)
 "mn" = (
@@ -8761,6 +8764,10 @@
 /obj/item/bedsheet/red/double,
 /turf/open/floor/carpet/darkpack/orangesilver,
 /area/vtm/interior/forest/bawn_lodge)
+"Nq" = (
+/obj/structure/table/wood,
+/turf/open/floor/carpet/darkpack/blacksilver,
+/area/vtm/interior/forest/bawn_lodge)
 "Nr" = (
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
@@ -10869,6 +10876,7 @@
 /area/vtm/interior/forest/bawn_lodge)
 "Xk" = (
 /obj/structure/sign/flag/pride/lesbian/directional/north,
+/obj/structure/table/wood,
 /turf/open/floor/carpet/darkpack/orangesilver,
 /area/vtm/interior/forest/bawn_lodge)
 "Xm" = (
@@ -34180,7 +34188,7 @@ GY
 bt
 xd
 kP
-hl
+Nr
 Hj
 dp
 Qh
@@ -36349,8 +36357,8 @@ EH
 EH
 EH
 EH
-YL
-ye
+EH
+bi
 fN
 vo
 zc
@@ -54564,7 +54572,7 @@ Ik
 DM
 cM
 yM
-yM
+Nq
 RV
 DM
 DM
