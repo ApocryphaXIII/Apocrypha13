@@ -1,6 +1,7 @@
 /obj/structure/retail/grocery_store
 	desc = "A small grocery store."
 	products_list = list(
+		new /datum/data/vending_product("gum", /obj/item/storage/box/gum, 5),
 		new /datum/data/vending_product("chocolate bar", /obj/item/food/chocolatebar),
 		new /datum/data/vending_product("chips", /obj/item/food/chips),
 		new /datum/data/vending_product("water bottle", /obj/item/reagent_containers/cup/glass/vampirewater),
@@ -46,13 +47,7 @@
 		new /datum/data/vending_product("bruise pack", /obj/item/stack/medical/bruise_pack),
 		new /datum/data/vending_product("kitchen knife", /obj/item/knife, 26),
 		new /datum/data/vending_product("rolling pin", /obj/item/kitchen/rollingpin, 8),
-		new /datum/data/vending_product("mixing bowl", /obj/item/reagent_containers/cup/mixing_bowl),
-		// APOC EDIT ADD START - (Add gardening tools to grocery store)
-		new /datum/data/vending_product("spade", /obj/item/shovel/spade, 50),
-		new /datum/data/vending_product("rake", /obj/item/cultivator/rake, 30),
-		new /datum/data/vending_product("hatchet", /obj/item/hatchet, 100),
-		new /datum/data/vending_product("pest spray", /obj/item/reagent_containers/spray/pestspray, 150),
-		// APOC EDIT ADD END
+		new /datum/data/vending_product("mixing bowl", /obj/item/reagent_containers/cup/mixing_bowl)
 	)
 
 /obj/structure/retail/deli

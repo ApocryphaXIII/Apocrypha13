@@ -4,6 +4,8 @@
 		new /datum/data/vending_product("tire iron", /obj/item/melee/vamp/tire, 50),
 		new /datum/data/vending_product("lockpick", /obj/item/vamp/keys/hack, 50),
 		new /datum/data/vending_product("respirator", /obj/item/clothing/mask/gas/vampire),
+		new /datum/data/vending_product("gas filter", /obj/item/gas_filter, 20),
+		new /datum/data/vending_product("earmuffs", /obj/item/clothing/ears/earmuffs, 50),
 		new /datum/data/vending_product("baseball bat", /obj/item/melee/baseball_bat/vamp, 200),
 		new /datum/data/vending_product("knife", /obj/item/knife/vamp, 100),
 		new /datum/data/vending_product("stake", /obj/item/vampire_stake, 100),
@@ -24,6 +26,9 @@
 		new /datum/data/vending_product("upgraded industrial welding tool", /obj/item/weldingtool/hugetank, 200),
 		new /datum/data/vending_product("emergency welding tool", /obj/item/weldingtool/mini, 15),
 		new /datum/data/vending_product("welding helmet", /obj/item/clothing/head/utility/welding, 100),
+		new /datum/data/vending_product("welding gasmask", /obj/item/clothing/mask/gas/welding, 200),
+		new /datum/data/vending_product("welding hardhat", /obj/item/clothing/head/utility/hardhat/welding, 200),
+		new /datum/data/vending_product("deluxe welding hardhat", /obj/item/clothing/head/utility/hardhat/welding/white, 400),
 		new /datum/data/vending_product("welding goggles", /obj/item/clothing/glasses/welding, 50),
 		new /datum/data/vending_product("insulated gloves", /obj/item/clothing/gloves/color/yellow),
 		new /datum/data/vending_product("extinguisher", /obj/item/extinguisher, 100),
@@ -64,6 +69,6 @@
 		new /datum/data/vending_product("decal painter", /obj/item/airlock_painter/decal, 25),
 		new /datum/data/vending_product("lead pipe", /obj/item/lead_pipe, 50),
 		new /datum/data/vending_product("lead cell", /obj/item/stock_parts/power_store/cell/lead, 50),
-		new /datum/data/vending_product("pitchfork", /obj/item/pitchfork, 50),
+		new /datum/data/vending_product("mirror", /obj/item/wallframe/mirror, 100),
 		new /datum/data/vending_product("whetstone", /obj/item/sharpener, 100)
 	)

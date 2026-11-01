@@ -22,6 +22,7 @@
 		new /datum/data/vending_product("hunting rifle", /obj/item/gun/ballistic/automatic/darkpack/huntrifle),
 		new /datum/data/vending_product("5.56 ammo", /obj/item/ammo_box/darkpack/c556),
 		new /datum/data/vending_product("military parka", /obj/item/clothing/suit/vampire/coat/milparka, 90),
+		new /datum/data/vending_product("ice hiking boots", /obj/item/clothing/shoes/winterboots/ice_boots, 100),
 		new /datum/data/vending_product("fishing gloves", /obj/item/clothing/gloves/fishing, 500)
 	)
 	product_types = list(
