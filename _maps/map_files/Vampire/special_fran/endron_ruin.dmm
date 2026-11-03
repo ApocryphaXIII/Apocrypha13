@@ -2878,9 +2878,7 @@
 /turf/open/water/bloodwave/shallow,
 /area/vtm/interior/forest/cave/bane)
 "Ph" = (
-/obj/warehouse_generator{
-	on = 0
-	},
+/obj/warehouse_generator/start_off,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "Pu" = (

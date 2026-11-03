@@ -46,7 +46,29 @@
 
 /obj/transfer_point_vamp/forest/pentex
 	id = "pentex_logging"
+	var/locked = TRUE
 
+/obj/transfer_point_vamp/forest/pentex/Initialize(mapload) // super snowflake janky solution, i'll make an actually good way to do this later upstream
+	. = ..()
+	icon = 'modular_zapoc/modules/mapping/icons/z_travel.dmi'
+	icon_state = "matrix_blocked"
+	addtimer(CALLBACK(src, PROC_REF(unlock)), 30 MINUTES, TIMER_UNIQUE | TIMER_DELETE_ME)
+
+/obj/transfer_point_vamp/forest/pentex/transfer_atom(atom/movable/arrived)
+	if(locked)
+		return
+	else
+		. = ..()
+
+/obj/transfer_point_vamp/forest/pentex/proc/unlock()
+	icon = src::icon
+	icon_state = src::icon_state
+	locked = FALSE
+
+/obj/transfer_point_vamp/forest/pentex/examine(mob/user)
+	. = ..()
+	if(locked)
+		. += span_warning("You can't go that way yet.")
 
 /obj/transfer_point_vamp/voivodate
 	name = "voivodate transfer point"
