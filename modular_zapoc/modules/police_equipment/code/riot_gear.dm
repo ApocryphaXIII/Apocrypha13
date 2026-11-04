@@ -4,9 +4,9 @@
 	icon_state = "riotvest"
 	desc = "Lightweight riot vest with SFPD markings, tailored for riot control."
 	armor_type = /datum/armor/riot_vest
-	icon = 'modular_darkpack/modules/police_equipment/icons/clothing.dmi'
-	worn_icon = 'modular_darkpack/modules/police_equipment/icons/worn.dmi'
-	ONFLOOR_ICON_HELPER('modular_darkpack/modules/police_equipment/icons/clothing_onfloor.dmi')
+	icon = 'modular_zapoc/modules/police_equipment/icons/clothing.dmi'
+	worn_icon = 'modular_zapoc/modules/police_equipment/icons/worn.dmi'
+	ONFLOOR_ICON_HELPER('modular_zapoc/modules/police_equipment/icons/clothing_onfloor.dmi')
 
 /datum/armor/riot_vest
 	melee = 80
@@ -24,9 +24,9 @@
 	icon_state = "riothelm"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	armor_type = /datum/armor/riot_helmet
-	icon = 'modular_darkpack/modules/police_equipment/icons/clothing.dmi'
-	worn_icon = 'modular_darkpack/modules/police_equipment/icons/worn.dmi'
-	ONFLOOR_ICON_HELPER('modular_darkpack/modules/police_equipment/icons/clothing_onfloor.dmi')
+	icon = 'modular_zapoc/modules/police_equipment/icons/clothing.dmi'
+	worn_icon = 'modular_zapoc/modules/police_equipment/icons/worn.dmi'
+	ONFLOOR_ICON_HELPER('modular_zapoc/modules/police_equipment/icons/clothing_onfloor.dmi')
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	masquerade_violating = TRUE
 	custom_price = 75
