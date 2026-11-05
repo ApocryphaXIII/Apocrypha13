@@ -7656,7 +7656,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "bianchi";
 	max_integrity = 200;
-	pixel_y = 7
+	dir = 4
 	},
 /obj/effect/turf_decal/siding/white/end{
 	dir = 4;
@@ -22280,6 +22280,15 @@
 /obj/effect/decal/cleanable/trash,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/chinatown)
+"mBJ" = (
+/obj/effect/decal/wallpaper/gold/alt,
+/obj/machinery/button/curtain{
+	id = "bianchi_office_curtains";
+	pixel_x = 8;
+	pixel_y = -11
+	},
+/turf/closed/wall/vampwall/painted,
+/area/vtm/interior/bianchiBank)
 "mBW" = (
 /obj/structure/noticeboard{
 	desc = "A board with pamphlets of Saint John's Community Health Clinic.";
@@ -23010,12 +23019,28 @@
 /obj/structure/table/wood/fancy/red,
 /obj/machinery/light/prince/directional/north,
 /obj/item/reagent_containers/cup/glass/bottle/trappist{
-	pixel_y = 15
+	pixel_y = 12;
+	pixel_x = 3
 	},
-/obj/item/spirit_chime,
 /obj/effect/turf_decal/siding/white{
 	dir = 5;
 	color = "#636363"
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = -7;
+	pixel_y = 4
 	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/bianchiBank)
@@ -23829,7 +23854,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "bianchi";
 	max_integrity = 200;
-	pixel_y = 7
+	dir = 4
 	},
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/bianchiBank)
@@ -27669,15 +27694,16 @@
 /obj/machinery/button/door{
 	id = "bianchi";
 	name = "Bank Lockdown";
-	pixel_y = 21
+	pixel_y = 21;
+	pixel_x = -2
 	},
 /obj/effect/turf_decal/siding/white{
 	dir = 9;
 	color = "#636363"
 	},
 /obj/machinery/light_switch/directional/north{
-	pixel_y = 25;
-	pixel_x = 10
+	pixel_y = 21;
+	pixel_x = -10
 	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/bianchiBank)
@@ -38038,8 +38064,9 @@
 /area/vtm/outside/pacificheights)
 "uQu" = (
 /obj/structure/table/wood/fancy/red,
-/obj/machinery/button/curtain{
-	id = "bianchi_office_curtains"
+/obj/item/spirit_chime{
+	pixel_x = 3;
+	pixel_y = 6
 	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/bianchiBank)
@@ -69767,7 +69794,7 @@ iHe
 iHe
 mKd
 cvc
-bFz
+mBJ
 pxX
 ceq
 gPu
