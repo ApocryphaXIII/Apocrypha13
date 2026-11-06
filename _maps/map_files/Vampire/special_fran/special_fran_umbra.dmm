@@ -669,6 +669,14 @@
 "zy" = (
 /turf/open/floor/plating/rough/cave,
 /area/vtm/outside/penumbra)
+"zP" = (
+/obj/transfer_point_vamp/umbral{
+	id = "umb_shadowlands";
+	name = "Moon Path";
+	desc = "A shimmering pathway of moonlight, guiding you to another umbral realm...this one emanates an unwelcoming chill and unearthly wails."
+	},
+/turf/open/misc/dirt/rails,
+/area/vtm/outside/penumbra)
 "Al" = (
 /obj/structure/flora/bush/style_random,
 /turf/open/floor/plating/rough/cave,
@@ -10557,7 +10565,7 @@ Vz
 Vz
 Vz
 Jr
-XL
+zP
 WS
 Yv
 Yv

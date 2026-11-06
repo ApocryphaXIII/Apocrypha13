@@ -10110,9 +10110,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/darkpack/dirt/corner,
-/obj/structure/water_source/puddle{
-	alpha = 1
-	},
+/obj/structure/water_source/puddle,
 /turf/open/misc/grass/nosmooth,
 /area/vtm/outside/financialdistrict)
 "fSq" = (
@@ -25931,6 +25929,11 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
 "oHc" = (
+/obj/transfer_point_vamp/umbral/nihil{
+	id = "hospitalley";
+	pixel_x = -6;
+	pixel_y = 16
+	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/clinic)
 "oHh" = (
