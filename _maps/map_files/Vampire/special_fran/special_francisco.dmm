@@ -1,4 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aaa" = (
+/obj/structure/table/wood,
+/obj/item/storage/box/cups,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/carpet/darkpack/cyan,
+/area/vtm/interior/clinic)
+"aab" = (
+/obj/effect/turf_decal/siding/white/corner{
+	color = "#636363"
+	},
+/turf/open/floor/city/clinic,
+/area/vtm/interior/vet)
 "aac" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
@@ -7177,15 +7189,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/restricted)
-"eiw" = (
-/obj/structure/table/wood,
-/obj/item/storage/box/cups,
-/obj/machinery/light_switch/directional/north{
-	pixel_y = 25;
-	pixel_x = 10
-	},
-/turf/open/floor/carpet/darkpack/cyan,
-/area/vtm/interior/clinic)
 "eiI" = (
 /obj/structure/vampdoor/glass{
 	dir = 8
@@ -30776,13 +30779,6 @@
 	},
 /turf/open/water,
 /area/vtm/voivodate)
-"qYA" = (
-/obj/effect/turf_decal/siding/white/corner{
-	color = "#636363";
-	dir = 4
-	},
-/turf/open/floor/city/clinic,
-/area/vtm/interior/vet)
 "qYI" = (
 /obj/structure/sign/painting/library{
 	pixel_y = 32
@@ -57056,7 +57052,7 @@ uJk
 wRx
 sRg
 uJv
-eiw
+aaa
 bva
 hXi
 uJv
@@ -65683,7 +65679,7 @@ cxg
 wRd
 ttw
 udU
-qYA
+aab
 nwB
 nwB
 nwB
