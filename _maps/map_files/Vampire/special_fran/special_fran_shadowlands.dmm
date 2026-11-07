@@ -100,17 +100,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"ao" = (
-/obj/effect/turf_decal/bordur{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/basic/lasombra/better/hostile{
-	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
-	name = "Shadowy Spectre"
-	},
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm/interior/penumbra/shadowlands)
 "ap" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
@@ -540,11 +529,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating_stone,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"bF" = (
-/obj/structure/table/wood,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "bG" = (
 /obj/structure/vampdoor/glass,
@@ -1304,7 +1288,6 @@
 /obj/structure/vampdoor/simple{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/door/unlock,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1467,6 +1450,10 @@
 /obj/effect/decal/pallet,
 /obj/effect/spawner/random/occult/artifact,
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/penumbra/shadowlands)
 "es" = (
@@ -2491,17 +2478,22 @@
 /turf/open/floor/city/factory,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hq" = (
-/obj/structure/table/wood/fancy/red,
+/obj/effect/decal/pallet,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
+/obj/structure/closet/cardboard/metal,
+/turf/open/misc/dirt,
+/area/vtm/interior/penumbra/shadowlands)
 "hr" = (
 /obj/item/paper{
 	pixel_y = 8
 	},
 /obj/structure/table/wood/fancy/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "ht" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2538,12 +2530,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/necropolis{
 	color = "#676767"
-	},
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"hy" = (
-/obj/effect/decal/wallpaper/stone,
-/turf/closed/indestructible/necropolis{
-	color = "#8F8F8F"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hA" = (
@@ -2600,30 +2586,23 @@
 /obj/item/pen,
 /obj/structure/table/wood/fancy/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hH" = (
 /obj/effect/decal/pallet,
 /obj/effect/spawner/random/occult/artifact,
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
 /turf/open/misc/dirt,
 /area/vtm/interior/penumbra/shadowlands)
-"hI" = (
-/obj/structure/chair/office/darkpack/green{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/basic/ghost/swarm{
-	name = "Wraith";
-	desc = "One of the many citizens of the Shadowlands. They seem pretty wary of you."
-	},
-/turf/open/floor/wood/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "hJ" = (
 /obj/machinery/light/prince/broken/directional/north,
 /obj/structure/table/wood/fancy/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hK" = (
 /obj/effect/turf_decal/bordur,
@@ -2673,18 +2652,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"hR" = (
-/obj/item/kirbyplants/darkpack/random,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "hS" = (
 /obj/structure/table/wood/fancy/red,
 /obj/item/paper{
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hT" = (
 /obj/structure/table/wood/fancy/red,
@@ -2693,7 +2667,7 @@
 	},
 /obj/item/pen,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hV" = (
 /obj/structure/table/wood/fancy/red,
@@ -2706,7 +2680,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hX" = (
 /obj/effect/turf_decal/bordur/inverse{
@@ -2765,10 +2739,15 @@
 /turf/open/floor/iron/showroomfloor,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "ig" = (
-/obj/machinery/light/prince/broken/directional/north,
+/obj/effect/turf_decal/bordur,
+/obj/effect/decal/pallet,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/interior/penumbra/shadowlands)
 "ih" = (
 /obj/structure/vampfence/rich{
 	dir = 4
@@ -2786,25 +2765,12 @@
 "ik" = (
 /obj/structure/filingcabinet/white,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"il" = (
-/obj/structure/flora/bush/leavy/style_random,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "in" = (
 /obj/structure/closet/cardboard,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"ip" = (
-/obj/structure/vampdoor/simple{
-	dir = 4
-	},
-/turf/closed/indestructible/necropolis{
-	color = "#8F8F8F"
-	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "iq" = (
 /obj/effect/decal/rugs,
@@ -3625,6 +3591,10 @@
 /obj/structure/closet/cardboard,
 /obj/effect/spawner/random/occult/artifact,
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "mo" = (
@@ -3671,12 +3641,13 @@
 /turf/open/floor/wood/ornate,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "mD" = (
-/obj/effect/decal/shadow{
-	pixel_y = -32
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
+/turf/open/misc/dirt,
+/area/vtm/interior/penumbra/shadowlands)
 "mE" = (
 /obj/structure/table/optable,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -4282,7 +4253,7 @@
 /obj/effect/turf_decal/siding/white/corner,
 /obj/structure/table/wood/fancy/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "qi" = (
 /obj/effect/turf_decal/crosswalk{
@@ -4514,13 +4485,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/ornate,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"rq" = (
-/obj/effect/turf_decal/siding/white/corner{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/darkpack,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "rs" = (
 /obj/structure/table/countertop/bubway,
@@ -4830,12 +4794,13 @@
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "tz" = (
+/obj/effect/decal/cleanable/trash,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/basic/ghost/swarm{
-	name = "Wraith";
-	desc = "One of the many citizens of the Shadowlands. They seem pretty wary of you."
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
 	},
-/turf/open/floor/plating/rough,
+/turf/open/floor/plating/sidewalkalt,
 /area/vtm/interior/penumbra/shadowlands)
 "tB" = (
 /obj/structure/table/rolling,
@@ -5364,15 +5329,6 @@
 "wT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/penumbra/shadowlands)
-"wU" = (
-/obj/effect/decal/pallet,
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/basic/lasombra/better/hostile{
-	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
-	name = "Shadowy Spectre"
-	},
-/turf/open/misc/dirt,
 /area/vtm/interior/penumbra/shadowlands)
 "wX" = (
 /obj/structure/table/countertop/green,
@@ -6285,6 +6241,10 @@
 /obj/structure/closet/crate/dumpster,
 /obj/effect/spawner/random/occult/artifact,
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
 /turf/open/misc/dirt,
 /area/vtm/interior/penumbra/shadowlands)
 "BW" = (
@@ -6332,11 +6292,6 @@
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"Cj" = (
-/obj/machinery/light/prince/broken/directional/west,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "Ck" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8012,11 +7967,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"Ly" = (
-/obj/cargocrate,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/misc/dirt/rails,
-/area/vtm/interior/penumbra/shadowlands)
 "LC" = (
 /obj/effect/turf_decal/bordur/corner{
 	dir = 4
@@ -8069,13 +8019,6 @@
 "LV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/hay,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"LW" = (
-/obj/effect/turf_decal/siding/white/corner{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/darkpack,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "Mc" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -8198,7 +8141,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/darkpack/cyan,
+/turf/open/indestructible/necropolis{
+	color = "#676767"
+	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "MG" = (
 /obj/effect/turf_decal/siding/brown{
@@ -8528,9 +8473,14 @@
 /turf/open/misc/beach/vamp,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "OE" = (
+/obj/effect/decal/rugs,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/interior/penumbra/shadowlands)
 "OH" = (
 /obj/structure/chair/darkpack,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8858,7 +8808,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "Qe" = (
 /obj/structure/vampdoor/prison,
@@ -9192,7 +9142,7 @@
 	},
 /obj/item/pen,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/old,
+/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "RM" = (
 /obj/machinery/light/broken/directional/east,
@@ -9430,9 +9380,13 @@
 /turf/open/floor/iron/stairs,
 /area/vtm/interior/penumbra/shadowlands)
 "Td" = (
-/obj/structure/closet/cardboard,
 /obj/effect/spawner/random/occult/artifact,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/cardboard/metal,
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/penumbra/shadowlands)
 "Te" = (
@@ -9570,12 +9524,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"Ub" = (
-/obj/effect/turf_decal/bordur/inverse,
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/basic/lasombra/hostile,
-/turf/open/floor/plating/rough,
-/area/vtm/interior/penumbra/shadowlands)
 "Uc" = (
 /obj/structure/closet/crate/large,
 /obj/effect/decal/pallet,
@@ -10755,6 +10703,10 @@
 /obj/effect/decal/pallet,
 /obj/effect/spawner/random/occult/artifact,
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/lasombra/better/hostile{
+	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
+	name = "Shadowy Spectre"
+	},
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/penumbra/shadowlands)
 "ZM" = (
@@ -11068,7 +11020,7 @@ Zw
 Ze
 Ze
 ZQ
-SF
+pN
 SF
 Iv
 gx
@@ -11485,7 +11437,7 @@ VU
 VU
 al
 PI
-Ub
+pe
 fN
 iQ
 fN
@@ -12449,7 +12401,7 @@ dv
 jh
 iQ
 iQ
-tz
+iQ
 tb
 iQ
 iQ
@@ -16642,8 +16594,8 @@ xG
 Jt
 gF
 gF
-hy
-ip
+gF
+gF
 gF
 gF
 gF
@@ -17602,7 +17554,7 @@ aY
 aY
 aY
 aY
-bi
+gF
 ed
 bV
 bV
@@ -17709,7 +17661,7 @@ SF
 SF
 SF
 SF
-bi
+gF
 ht
 fY
 fY
@@ -17816,7 +17768,7 @@ SF
 SF
 SF
 SF
-bi
+gF
 hw
 bV
 gY
@@ -17883,7 +17835,7 @@ bd
 tG
 tG
 gG
-tG
+mD
 tG
 tG
 tG
@@ -17923,7 +17875,7 @@ SF
 SF
 SF
 SF
-bi
+gF
 hx
 dV
 gb
@@ -18095,13 +18047,13 @@ jh
 iX
 tG
 tG
-Ly
+iX
 tG
 tG
 iX
 tG
 HV
-Ly
+iX
 HV
 tG
 iX
@@ -18211,7 +18163,7 @@ tG
 iX
 HV
 tG
-Ly
+iX
 ix
 Jr
 ja
@@ -18312,7 +18264,7 @@ zQ
 iX
 tG
 tG
-Ly
+iX
 tG
 HV
 iX
@@ -18639,7 +18591,7 @@ tG
 iX
 tG
 bd
-Ly
+iX
 ix
 Jr
 ja
@@ -18740,10 +18692,10 @@ tG
 iX
 tG
 tG
-Ly
+iX
 tG
 tG
-Ly
+iX
 Cs
 HV
 iX
@@ -19067,7 +19019,7 @@ bd
 iX
 bd
 tG
-Ly
+iX
 ix
 Jr
 ja
@@ -19168,10 +19120,10 @@ tG
 iX
 tG
 Cs
-Ly
+iX
 HV
 HV
-Ly
+iX
 Cs
 bd
 iX
@@ -19495,7 +19447,7 @@ tG
 iX
 tG
 HV
-Ly
+iX
 ix
 Jr
 ja
@@ -19599,7 +19551,7 @@ bd
 iX
 HV
 tG
-Ly
+iX
 tG
 tG
 iX
@@ -19744,9 +19696,9 @@ WG
 jF
 hJ
 hG
-hq
-OE
-OE
+Hb
+sR
+sR
 WG
 WO
 WO
@@ -19848,12 +19800,12 @@ jF
 qh
 hT
 hS
-hR
-OE
-hI
+lm
+sR
+sQ
 hr
-OE
-OE
+sR
+sR
 WG
 WG
 WG
@@ -19923,7 +19875,7 @@ tG
 iX
 Cs
 tG
-Ly
+iX
 ix
 Jr
 ja
@@ -19962,7 +19914,7 @@ sR
 sR
 sR
 sR
-OE
+sR
 fu
 fh
 WG
@@ -20027,7 +19979,7 @@ HV
 iX
 HV
 tG
-Ly
+iX
 Cs
 HV
 iX
@@ -20059,7 +20011,7 @@ WG
 CT
 Kl
 jF
-OE
+sR
 Xo
 Hb
 sR
@@ -20072,7 +20024,7 @@ sR
 sR
 sR
 sR
-OE
+sR
 WG
 WG
 jI
@@ -20166,7 +20118,7 @@ WG
 GH
 WG
 jF
-ig
+tp
 hV
 Hb
 sR
@@ -20180,7 +20132,7 @@ sR
 VX
 RU
 sR
-Cj
+HE
 jI
 VU
 VU
@@ -20273,7 +20225,7 @@ mt
 sR
 sR
 jF
-OE
+sR
 sR
 sR
 sR
@@ -20287,7 +20239,7 @@ Pc
 ic
 Pr
 sR
-OE
+sR
 jI
 Hx
 VU
@@ -20349,9 +20301,9 @@ tG
 tG
 HV
 iX
-wU
+HV
 tG
-Ly
+iX
 ix
 Jr
 ja
@@ -20394,7 +20346,7 @@ Pc
 ic
 ic
 sR
-OE
+sR
 jI
 VU
 VU
@@ -20455,7 +20407,7 @@ eb
 eb
 BM
 LI
-Ly
+iX
 tG
 tG
 iX
@@ -20487,7 +20439,7 @@ sR
 sR
 sR
 jF
-OE
+sR
 sR
 sR
 sR
@@ -20501,7 +20453,7 @@ sR
 XC
 JI
 sR
-OE
+sR
 jI
 aQ
 VU
@@ -20594,7 +20546,7 @@ sR
 sR
 sR
 jF
-ig
+tp
 sR
 KQ
 EO
@@ -20608,7 +20560,7 @@ sR
 sR
 sR
 sR
-OE
+sR
 jI
 CR
 VU
@@ -20701,7 +20653,7 @@ Gq
 Ng
 kB
 jF
-il
+rN
 sR
 WG
 jO
@@ -20779,7 +20731,7 @@ Ih
 iX
 tG
 tG
-Ly
+iX
 ix
 Jr
 ja
@@ -20808,7 +20760,7 @@ iz
 ym
 kB
 jF
-il
+rN
 sR
 lz
 lz
@@ -20877,13 +20829,13 @@ jh
 iX
 ix
 tk
-py
+OE
 ih
 GG
 Jr
 Jr
 XR
-Ly
+iX
 Cs
 HV
 iX
@@ -20915,7 +20867,7 @@ Rn
 kB
 kB
 jF
-il
+rN
 sR
 lz
 lz
@@ -20989,7 +20941,7 @@ ih
 GG
 fA
 dl
-mc
+ig
 iX
 HV
 HV
@@ -21022,7 +20974,7 @@ Gq
 tJ
 vj
 jF
-il
+rN
 sR
 sR
 mO
@@ -21207,7 +21159,7 @@ ja
 iX
 tG
 tG
-Ly
+iX
 ix
 Jr
 ja
@@ -21236,15 +21188,15 @@ ke
 Yw
 lL
 jF
-bF
+xL
 Qb
-OE
-Cj
-OE
-OE
-OE
-OE
-Cj
+sR
+HE
+sR
+sR
+sR
+sR
+HE
 Pc
 Pc
 jF
@@ -21311,7 +21263,7 @@ Hk
 ja
 ja
 ja
-Ly
+iX
 tG
 HV
 iX
@@ -21344,14 +21296,14 @@ lL
 qJ
 jF
 RL
-OE
-OE
-OE
+sR
+sR
+sR
 WG
 jF
-OE
-OE
-OE
+sR
+sR
+sR
 Pc
 Pc
 fw
@@ -21452,11 +21404,11 @@ lL
 jF
 oM
 Pc
-OE
-OE
+sR
+sR
 Pc
 Pc
-OE
+sR
 WG
 jF
 Pc
@@ -21526,7 +21478,7 @@ VU
 Mi
 Ug
 iX
-Te
+hq
 tG
 iX
 ix
@@ -21560,10 +21512,10 @@ jF
 jT
 vq
 Pc
-OE
+sR
 Pc
 Pc
-mD
+sR
 Pc
 Pc
 Pc
@@ -21635,7 +21587,7 @@ Ug
 iX
 tG
 tG
-Ly
+iX
 ix
 Jr
 ja
@@ -21667,10 +21619,10 @@ jF
 vq
 vq
 Pc
-OE
+sR
 Pc
 Pc
-mD
+sR
 Pc
 Pc
 Pc
@@ -21680,7 +21632,7 @@ uh
 aH
 uh
 WG
-pW
+tz
 yG
 WO
 Og
@@ -21773,14 +21725,14 @@ VF
 jF
 Pc
 Pc
-OE
-OE
-Pc
-LW
+sR
+sR
 Pc
 Pc
 Pc
-rq
+Pc
+Pc
+Pc
 Pc
 WG
 WG
@@ -21878,10 +21830,10 @@ fq
 fq
 fq
 jF
-OE
-OE
-OE
-OE
+sR
+sR
+sR
+sR
 Pc
 Pc
 Pc
@@ -21957,8 +21909,8 @@ ZV
 tG
 tG
 iX
-ao
-Yx
+ix
+Jr
 ja
 "}
 (105,1,1) = {"
