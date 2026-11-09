@@ -189,9 +189,7 @@
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
 "aQ" = (
-/obj/structure/railing,
-/obj/structure/flora/bush/style_random,
-/turf/open/misc/dirt,
+/turf/open/misc/hay,
 /area/vtm/interior/forest/cave)
 "aS" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
@@ -1923,6 +1921,14 @@
 	density = 1
 	},
 /obj/effect/realistic_fog/dense,
+/obj/structure/railing/wooden_fence{
+	dir = 6;
+	resistance_flags = 2
+	},
+/obj/structure/railing/wooden_fence{
+	dir = 9;
+	resistance_flags = 2
+	},
 /turf/open/misc/dirt,
 /area/vtm/interior/forest)
 "jl" = (
@@ -4774,8 +4780,7 @@
 /area/vtm/planetgeneration)
 "wp" = (
 /obj/structure/railing,
-/obj/effect/decal/cleanable/blood,
-/turf/open/misc/dirt,
+/turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
 "wq" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
@@ -5208,9 +5213,13 @@
 /obj/structure/flora/bush/style_random,
 /turf/open/water/beach/vamp,
 /area/vtm/interior/forest/cave)
+"yb" = (
+/mob/living/basic/chick/permanent,
+/turf/open/misc/grass/random/grass,
+/area/vtm/interior/forest/cave)
 "yc" = (
-/mob/living/basic/deer,
-/turf/open/misc/dirt,
+/mob/living/basic/chicken,
+/turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
 "yd" = (
 /obj/structure/railing{
@@ -9420,11 +9429,10 @@
 	},
 /area/vtm/interior/forest/cave)
 "SS" = (
-/obj/structure/glowshroom/shadowshroom,
 /obj/structure/railing{
 	dir = 6
 	},
-/turf/open/misc/dirt,
+/turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
 "SV" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
@@ -10027,9 +10035,8 @@
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/forest/bawn_lodge)
 "VV" = (
-/mob/living/basic/deer,
-/obj/structure/flora/grass/tall/style_random,
-/turf/open/misc/dirt,
+/mob/living/basic/cow,
+/turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
 "Wa" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
@@ -10815,8 +10822,8 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/obj/structure/flora/grass/tall/style_random,
-/turf/open/misc/dirt,
+/obj/structure/water_source/puddle,
+/turf/open/misc/grass,
 /area/vtm/interior/forest/cave)
 "ZN" = (
 /turf/open/floor/plating/rough/cave{
@@ -46086,9 +46093,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
+aQ
+HX
+HX
 ZM
 FU
 Nr
@@ -46284,8 +46291,8 @@ EH
 EH
 EH
 EH
-EH
-EH
+aQ
+HX
 VV
 wp
 My
@@ -46482,10 +46489,10 @@ EH
 EH
 EH
 EH
-EH
-EH
-yc
 aQ
+yb
+yc
+wp
 RU
 ZC
 Nr
@@ -46680,9 +46687,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
+aQ
+HX
+HX
 SS
 li
 wP

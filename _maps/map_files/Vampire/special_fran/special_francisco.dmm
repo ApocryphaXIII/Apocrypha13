@@ -5810,9 +5810,7 @@
 /obj/structure/curtain,
 /obj/structure/bath/sabbatbath{
 	name = "Bathtub";
-	desc = "A tub large enough to comfortably soak in. Relaxing!";
-	pixel_x = 0;
-	pixel_y = 11
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
 /turf/open/floor/city/clinic,
 /area/vtm/interior/apartment)
@@ -18470,15 +18468,10 @@
 "kxP" = (
 /obj/structure/bath/sabbatbath{
 	name = "Bathtub";
-	desc = "A tub large enough to comfortably soak in. Relaxing!";
-	pixel_x = 0;
-	pixel_y = 11
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
 /obj/machinery/shower/directional/south,
-/obj/structure/curtain{
-	pixel_x = 0;
-	pixel_y = 9
-	},
+/obj/structure/curtain,
 /turf/open/floor/city/clinic,
 /area/vtm/interior/apartment)
 "kya" = (
