@@ -5806,12 +5806,14 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/voivodate)
 "dvg" = (
-/obj/structure/bath{
-	pixel_y = 10;
-	density = 0
-	},
-/obj/machinery/shower/directional/east,
 /obj/machinery/shower/directional/south,
+/obj/structure/curtain,
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!";
+	pixel_x = 0;
+	pixel_y = 11
+	},
 /turf/open/floor/city/clinic,
 /area/vtm/interior/apartment)
 "dvt" = (
@@ -6922,6 +6924,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
+/obj/structure/curtain,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "eea" = (
@@ -7167,6 +7170,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
+/obj/structure/curtain,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/hotel)
 "elo" = (
@@ -9241,6 +9245,10 @@
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/roofwalk,
 /area/vtm/outside/chinatown/rooftops)
+"fud" = (
+/obj/structure/curtain,
+/turf/open/floor/wood/smooth,
+/area/vtm/interior/voivodate)
 "fuf" = (
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 5
@@ -11802,6 +11810,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/blood/gibs/down,
+/obj/structure/curtain,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "gPu" = (
@@ -12458,7 +12467,10 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment/hallway)
 "hih" = (
-/obj/structure/bath,
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
+	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/sewer)
 "hik" = (
@@ -13610,6 +13622,7 @@
 /obj/effect/turf_decal/siding{
 	dir = 9
 	},
+/obj/structure/curtain,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/ghetto/sewer)
 "hRu" = (
@@ -18455,11 +18468,17 @@
 /turf/open/floor/city/clinic,
 /area/vtm/interior/apartment)
 "kxP" = (
-/obj/structure/bath{
-	pixel_y = 10;
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!";
+	pixel_x = 0;
+	pixel_y = 11
 	},
 /obj/machinery/shower/directional/south,
+/obj/structure/curtain{
+	pixel_x = 0;
+	pixel_y = 9
+	},
 /turf/open/floor/city/clinic,
 /area/vtm/interior/apartment)
 "kya" = (
@@ -22623,6 +22642,7 @@
 /obj/effect/turf_decal/siding{
 	dir = 10
 	},
+/obj/structure/curtain,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/ghetto/sewer)
 "mPQ" = (
@@ -26264,12 +26284,14 @@
 /area/vtm/interior/chantry)
 "oRl" = (
 /obj/machinery/shower/directional/west,
-/obj/structure/bath{
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
 /obj/effect/turf_decal/siding{
 	dir = 9
 	},
+/obj/structure/curtain,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/ghetto/sewer)
 "oRm" = (
@@ -29434,6 +29456,7 @@
 	color = "#9a704a";
 	dir = 1
 	},
+/obj/structure/curtain,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/voivodate)
 "qDy" = (
@@ -30415,6 +30438,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
+/obj/structure/curtain,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/apartment)
 "qZN" = (
@@ -34780,6 +34804,10 @@
 	},
 /turf/open/misc/grass/nosmooth,
 /area/vtm/outside/financialdistrict)
+"tpz" = (
+/obj/structure/curtain,
+/turf/open/floor/plating/sidewalk/old,
+/area/vtm/interior/voivodate)
 "tpV" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood/smooth/old,
@@ -100819,7 +100847,7 @@ wba
 lNz
 sLN
 mNK
-xow
+tpz
 cae
 cZv
 sLN
@@ -100926,7 +100954,7 @@ lNz
 lNz
 sLN
 qVo
-xow
+tpz
 tZQ
 mCS
 wUL
@@ -115488,7 +115516,7 @@ xkJ
 sLN
 xow
 kbG
-xWL
+fud
 aTZ
 hjJ
 vwd
@@ -115595,7 +115623,7 @@ xkJ
 sLN
 uoy
 pTS
-xWL
+fud
 aTZ
 hjJ
 vwd

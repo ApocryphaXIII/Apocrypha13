@@ -2792,10 +2792,12 @@
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/fishermanswharf/ghetto)
 "sY" = (
-/obj/structure/bath{
-	pixel_y = 8;
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
+/obj/structure/curtain,
+/obj/machinery/shower/directional/west,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/ghetto/fishermanswharf)
 "tb" = (
@@ -3054,11 +3056,17 @@
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/apartment/fishermanswharf)
 "uZ" = (
-/obj/structure/bath{
-	pixel_y = 10;
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!";
+	pixel_x = 0;
+	pixel_y = 11
 	},
 /obj/machinery/shower/directional/south,
+/obj/structure/curtain{
+	pixel_x = 0;
+	pixel_y = 8
+	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/interior/apartment/fishermanswharf)
 "vb" = (
@@ -3461,11 +3469,12 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/structure/bath{
-	pixel_y = 10;
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
 /obj/machinery/shower/directional/west,
+/obj/structure/curtain,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/ghetto/fishermanswharf)
 "yb" = (
@@ -4641,11 +4650,12 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/northbeach)
 "Gc" = (
-/obj/structure/bath{
-	pixel_y = 10;
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
 /obj/machinery/shower/directional/east,
+/obj/structure/curtain,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/apartment/fishermanswharf)
 "Ge" = (
@@ -5432,9 +5442,11 @@
 /area/vtm/outside/fishermanswharf/suburbs)
 "LR" = (
 /obj/machinery/shower/directional/west,
-/obj/structure/bath{
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
+/obj/structure/curtain,
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/ghetto/fishermanswharf)
 "LS" = (
@@ -6459,11 +6471,12 @@
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/northbeach)
 "Sj" = (
-/obj/structure/bath{
-	pixel_y = 10;
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
 	},
 /obj/machinery/shower/directional/west,
+/obj/structure/curtain,
 /turf/open/floor/city/clinic,
 /area/vtm/interior/apartment/fishermanswharf)
 "Sk" = (
@@ -7190,6 +7203,15 @@
 /obj/structure/table/wood/fancy/cyan,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment/fishermanswharf)
+"WS" = (
+/obj/machinery/shower/directional/south,
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!"
+	},
+/obj/structure/curtain,
+/turf/open/floor/plating/sidewalk/rich,
+/area/vtm/interior/apartment/fishermanswharf)
 "WU" = (
 /obj/structure/table,
 /obj/item/melee/vamp/tire{
@@ -7537,9 +7559,15 @@
 /area/vtm/interior/apartment/fishermanswharf)
 "Yp" = (
 /obj/machinery/shower/directional/south,
-/obj/structure/bath{
-	pixel_y = 10;
-	density = 0
+/obj/structure/bath/sabbatbath{
+	name = "Bathtub";
+	desc = "A tub large enough to comfortably soak in. Relaxing!";
+	pixel_x = 0;
+	pixel_y = 11
+	},
+/obj/structure/curtain{
+	pixel_x = 0;
+	pixel_y = 8
 	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/interior/apartment/fishermanswharf)
@@ -17837,7 +17865,7 @@ HZ
 HZ
 ND
 zG
-Yp
+WS
 kx
 Rv
 Rv
