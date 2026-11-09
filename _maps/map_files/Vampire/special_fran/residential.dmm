@@ -2751,7 +2751,7 @@
 	},
 /obj/structure/vampdoor{
 	dir = 1;
-	lock_id = s
+	lock_id = "ResHighEnd3"
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/apartment/fishermanswharf)
