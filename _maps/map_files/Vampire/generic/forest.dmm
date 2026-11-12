@@ -1486,6 +1486,12 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"hi" = (
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/outside/forest)
 "hj" = (
 /obj/structure/flora/bush/sparsegrass/style_random{
 	atom_integrity = 96.3
@@ -2510,6 +2516,13 @@
 /obj/item/bedsheet/cosmos/double,
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/forest/bawn_lodge)
+"mm" = (
+/obj/effect/turf_decal/darkpack/grass/corner{
+	dir = 1
+	},
+/obj/structure/railing/wooden_fence,
+/turf/open/misc/grass/random/grass,
+/area/vtm/outside/forest)
 "mp" = (
 /obj/structure/glowshroom,
 /turf/open/floor/plating/rough/cave{
@@ -2894,6 +2907,10 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/misc/grass,
+/area/vtm/outside/forest)
+"of" = (
+/obj/structure/railing/wooden_fence,
+/turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
 "oh" = (
 /obj/structure/flora/rock/pile/darkpack,
@@ -3373,6 +3390,23 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"qm" = (
+/obj/effect/turf_decal/darkpack/grass{
+	dir = 1
+	},
+/obj/structure/railing/wooden_fence{
+	dir = 8;
+	pixel_x = -2
+	},
+/turf/open/misc/grass/random/grass,
+/area/vtm/outside/forest)
+"qn" = (
+/obj/structure/railing/wooden_fence{
+	dir = 9;
+	resistance_flags = 2
+	},
+/turf/open/misc/grass/random/grass,
+/area/vtm/outside/forest)
 "qp" = (
 /obj/structure/stone_tile/slab,
 /turf/open/floor/wood/smooth/old,
@@ -3463,6 +3497,12 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"qJ" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/outside/forest)
 "qK" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/random/bedsheet,
@@ -4227,6 +4267,12 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"ug" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/outside/forest)
 "uh" = (
 /obj/effect/turf_decal/darkpack/grass,
 /obj/structure/chair/sofa/city_bench/wood/left{
@@ -6956,6 +7002,12 @@
 	},
 /turf/open/floor/wood/rough,
 /area/vtm/outside/forest/sept)
+"Gx" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/outside/forest)
 "Gy" = (
 /obj/structure/dresser{
 	icon = 'icons/obj/storage/crates.dmi';
@@ -7298,6 +7350,13 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
+"HZ" = (
+/obj/structure/railing/wooden_fence{
+	dir = 6;
+	resistance_flags = 2
+	},
+/turf/open/misc/grass/random/grass,
+/area/vtm/outside/forest)
 "Ia" = (
 /obj/effect/decal/pallet,
 /turf/open/misc/dirt,
@@ -7665,6 +7724,12 @@
 	},
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
+"JW" = (
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/outside/forest)
 "JZ" = (
 /obj/structure/flora/tree/vamp/pine,
 /obj/effect/turf_decal/darkpack/dirt{
@@ -7880,6 +7945,18 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest/sept)
+"Lg" = (
+/obj/structure/railing/wooden_fence{
+	dir = 1
+	},
+/turf/open/misc/grass/random/grass,
+/area/vtm/outside/forest)
+"Ll" = (
+/obj/structure/railing{
+	dir = 9
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/outside/forest)
 "Lo" = (
 /turf/open/floor/carpet/royalblue,
 /area/vtm/interior/forest/bawn_shelter)
@@ -8218,6 +8295,10 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
+/area/vtm/outside/forest)
+"MQ" = (
+/obj/structure/railing,
+/turf/open/floor/plating/concrete,
 /area/vtm/outside/forest)
 "MS" = (
 /obj/structure/closet/crate/wooden/communitygardens/seeds{
@@ -9170,6 +9251,12 @@
 "RC" = (
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
+"RE" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/outside/forest)
 "RG" = (
 /obj/structure/chair/darkpack/green{
 	dir = 4;
@@ -9434,6 +9521,12 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
+"ST" = (
+/obj/structure/railing/wooden_fence{
+	dir = 4
+	},
+/turf/open/misc/grass/random/grass,
+/area/vtm/outside/forest)
 "SV" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 8
@@ -10621,6 +10714,13 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood/old,
+/area/vtm/outside/forest)
+"YT" = (
+/obj/structure/railing/wooden_fence{
+	dir = 8;
+	pixel_x = -2
+	},
+/turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
 "YV" = (
 /obj/item/trash/semki,
@@ -32397,7 +32497,7 @@ EH
 EH
 EH
 Pc
-Pc
+ST
 Pc
 NT
 NT
@@ -32593,10 +32693,10 @@ EH
 EH
 EH
 Pc
-Pc
-Pc
+ST
+HZ
 vv
-Pc
+Lg
 NT
 NT
 NT
@@ -32790,11 +32890,11 @@ Dn
 Dn
 Dn
 Dn
-UE
+mm
 vv
 vv
 vv
-Pc
+Lg
 NT
 NT
 NT
@@ -32992,7 +33092,7 @@ JP
 tC
 vv
 vv
-Pc
+Lg
 NT
 NT
 NT
@@ -33186,10 +33286,10 @@ LB
 LB
 LB
 Pc
-Pc
+of
 vv
 vv
-Pc
+qn
 Pc
 NT
 NT
@@ -33385,8 +33485,8 @@ jV
 LB
 Pc
 Pc
-cv
-Pc
+qm
+YT
 Pc
 NT
 NT
@@ -57169,14 +57269,14 @@ vv
 vv
 vv
 vv
-gA
-gA
-gA
-gA
-gA
-gA
-gA
-gA
+Ll
+qJ
+qJ
+qJ
+qJ
+qJ
+qJ
+hi
 vv
 vv
 vv
@@ -57367,14 +57467,14 @@ vv
 vv
 vv
 vv
+ug
 gA
 gA
 gA
 gA
 gA
 gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -57565,14 +57665,14 @@ vv
 vv
 vv
 vv
+ug
 gA
 gA
 gA
 gA
+Gx
 gA
-gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -57763,14 +57863,14 @@ vv
 vv
 vv
 vv
+ug
 gA
 gA
 gA
-gA
-gA
+MQ
 vv
-gA
-gA
+ug
+MQ
 vv
 vv
 vv
@@ -57961,14 +58061,14 @@ vv
 vv
 vv
 vv
+ug
 gA
 gA
 gA
 gA
+qJ
 gA
-gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -58159,14 +58259,14 @@ vv
 vv
 vv
 vv
+ug
 gA
 gA
 gA
 gA
 gA
 gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -58357,14 +58457,14 @@ vv
 vv
 vv
 vv
+ug
 gA
 gA
-gA
-gA
-gA
-gA
-gA
-gA
+Gx
+Gx
+Gx
+Gx
+JW
 vv
 vv
 vv
@@ -58555,9 +58655,9 @@ vv
 vv
 vv
 vv
+ug
 gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -58753,9 +58853,9 @@ vv
 vv
 vv
 vv
+ug
 gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -58951,9 +59051,9 @@ vv
 vv
 vv
 vv
+ug
 gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -59149,9 +59249,9 @@ vv
 vv
 vv
 vv
+ug
 gA
-gA
-gA
+MQ
 vv
 vv
 vv
@@ -59347,9 +59447,9 @@ vv
 vv
 vv
 vv
-gA
-gA
-gA
+RE
+Gx
+JW
 vv
 vv
 vv

@@ -62,8 +62,8 @@
 /turf/closed/indestructible/the_matrix,
 /area/vtm/outside/fishermanswharf/ghetto)
 "ay" = (
-/obj/structure/closet/cardboard,
 /obj/effect/decal/cleanable/trash,
+/obj/structure/closet/cardboard,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "az" = (
@@ -438,11 +438,14 @@
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/northbeach)
 "cM" = (
-/obj/structure/railing/wooden_fence{
-	dir = 6
+/obj/effect/turf_decal/bordur{
+	dir = 8
 	},
-/turf/open/misc/grass,
-/area/vtm/outside/fishermanswharf/suburbs)
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "cN" = (
 /obj/effect/landmark/npcactivity,
 /turf/open/floor/plating/sidewalk,
@@ -1604,6 +1607,15 @@
 /obj/effect/mapping_helpers/door/access/npc,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/shop)
+"jK" = (
+/obj/effect/turf_decal/bordur/corner{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "jL" = (
 /obj/machinery/light/prince/directional/west,
 /turf/open/floor/carpet/darkpack/redsilver,
@@ -1625,6 +1637,12 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto/fishermanswharf)
+"kf" = (
+/obj/effect/decal/cleanable/cardboard,
+/obj/effect/decal/cleanable/garbage,
+/obj/effect/decal/cleanable/trash,
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto)
 "ki" = (
 /obj/effect/turf_decal/bordur/corner,
 /turf/open/floor/plating/sidewalk,
@@ -2214,6 +2232,11 @@
 "nK" = (
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/caves/beach)
+"nO" = (
+/obj/effect/turf_decal/bordur/corner,
+/obj/structure/railing,
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "nY" = (
 /obj/structure/chair/sofa/corp/corner{
 	dir = 4;
@@ -3064,6 +3087,13 @@
 	},
 /turf/open/floor/plating/asphalt,
 /area/vtm/outside/fishermanswharf/ghetto)
+"uD" = (
+/obj/effect/turf_decal/bordur/corner,
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "uE" = (
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 4
@@ -3628,6 +3658,15 @@
 	},
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/fishermanswharf)
+"ym" = (
+/obj/effect/turf_decal/bordur/corner{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "yn" = (
 /obj/effect/turf_decal/bordur/inverse,
 /turf/open/floor/plating/sidewalk,
@@ -3937,6 +3976,15 @@
 	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop/gummaguts)
+"Ay" = (
+/obj/effect/turf_decal/bordur/corner{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "AA" = (
 /obj/structure/chair/wood/darkpack{
 	dir = 1
@@ -4716,9 +4764,7 @@
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/fishermanswharf)
 "FJ" = (
-/obj/effect/decal/cleanable/trash,
-/obj/effect/decal/cleanable/trash,
-/obj/effect/decal/cleanable/garbage,
+/obj/structure/closet/crate/dumpster,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/ghetto/fishermanswharf)
 "FN" = (
@@ -5131,8 +5177,8 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/northbeach)
 "IM" = (
-/obj/effect/decal/cleanable/trash,
 /obj/effect/decal/cleanable/garbage,
+/obj/effect/decal/cleanable/trash,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto)
 "IO" = (
@@ -5422,6 +5468,15 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/fishermanswharf/ghetto)
+"KK" = (
+/obj/effect/turf_decal/bordur{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "KP" = (
 /obj/structure/closet/crate/bin{
 	pixel_x = -8;
@@ -5671,6 +5726,15 @@
 /obj/effect/landmark/npcactivity,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/fishermanswharf)
+"Mm" = (
+/obj/effect/turf_decal/bordur/corner{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "Mn" = (
 /obj/machinery/light/small/directional/west,
 /obj/machinery/washing_machine,
@@ -6120,6 +6184,15 @@
 /mob/living/carbon/human/npc/walkby,
 /turf/open/misc/beach/vamp,
 /area/vtm/outside/northbeach)
+"Pf" = (
+/obj/effect/turf_decal/bordur{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "Pj" = (
 /obj/structure/chair/sofa/city_bench/metal/left{
 	dir = 4
@@ -6784,6 +6857,11 @@
 /obj/effect/turf_decal/bordur/inverse{
 	dir = 8
 	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
+"SZ" = (
+/obj/effect/turf_decal/bordur,
+/obj/structure/railing,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "Ta" = (
@@ -7772,9 +7850,10 @@
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/ghetto/fishermanswharf)
 "Yl" = (
-/obj/structure/closet/cardboard,
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm/interior/ghetto/fishermanswharf)
+/obj/effect/turf_decal/bordur,
+/obj/structure/railing,
+/turf/open/floor/plating/sidewalk,
+/area/vtm/outside/fishermanswharf/ghetto/rooftops)
 "Ym" = (
 /obj/structure/table/wood,
 /obj/item/music_tape/jazz{
@@ -7874,6 +7953,12 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto/fishermanswharf)
+"YD" = (
+/obj/effect/decal/cleanable/cardboard,
+/obj/item/reagent_containers/cup/soda_cans/vampirecola,
+/obj/effect/decal/cleanable/trash,
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/fishermanswharf/ghetto)
 "YF" = (
 /obj/structure/closet/crate/bin{
 	pixel_x = -8
@@ -14136,7 +14221,7 @@ ZY
 ZY
 ZY
 ZY
-cM
+ZY
 ZY
 ZY
 ZY
@@ -15674,7 +15759,7 @@ LJ
 OW
 wP
 ik
-At
+mt
 os
 SP
 Fz
@@ -15781,7 +15866,7 @@ bt
 OW
 wP
 ik
-At
+mt
 os
 zy
 Ll
@@ -15996,7 +16081,7 @@ tK
 wP
 wP
 ik
-mt
+os
 zy
 Ll
 Ll
@@ -16210,7 +16295,7 @@ tK
 OW
 wP
 ik
-mt
+os
 ss
 Ll
 Ll
@@ -17411,7 +17496,7 @@ xX
 hu
 JW
 FJ
-Yl
+FJ
 hu
 eO
 Wi
@@ -17492,7 +17577,7 @@ oe
 oe
 oe
 mt
-Oj
+mt
 lW
 lW
 lW
@@ -17519,7 +17604,7 @@ tD
 os
 os
 os
-WH
+YD
 os
 os
 St
@@ -17598,8 +17683,8 @@ wk
 os
 os
 os
-os
-os
+ok
+WY
 os
 WH
 WY
@@ -17626,10 +17711,10 @@ tD
 os
 os
 IM
-mt
-os
+IM
+wk
 ay
-Oj
+kf
 os
 pa
 WY
@@ -17708,12 +17793,12 @@ os
 os
 bN
 St
-mt
+os
 wk
 lU
 os
 os
-mt
+os
 WY
 my
 my
@@ -17750,7 +17835,7 @@ rv
 os
 LD
 Ej
-Ej
+BL
 bJ
 rk
 rk
@@ -25305,19 +25390,19 @@ wP
 wP
 wP
 wP
-Uy
-CD
-CD
-CD
-CD
-CD
-CD
-CD
-CD
-CD
-CD
-CD
-ki
+ym
+cM
+cM
+cM
+cM
+cM
+cM
+cM
+cM
+cM
+cM
+cM
+uD
 YG
 YG
 YG
@@ -25425,7 +25510,7 @@ Pa
 Pa
 Pa
 NN
-ki
+uD
 YG
 YG
 YG
@@ -25532,7 +25617,7 @@ Pa
 Pa
 Pa
 Pa
-uu
+Yl
 YG
 YG
 YG
@@ -25639,7 +25724,7 @@ Pa
 Pa
 Pa
 Pa
-uu
+Yl
 gp
 gp
 gp
@@ -25746,7 +25831,7 @@ Pa
 Pa
 Pa
 Pa
-uu
+Yl
 gp
 gp
 gp
@@ -25853,7 +25938,7 @@ Pa
 Pa
 Pa
 Pa
-uu
+Yl
 gp
 gp
 gp
@@ -25960,7 +26045,7 @@ Pa
 Pa
 Pa
 Pa
-uu
+Yl
 gp
 gp
 gp
@@ -26067,7 +26152,7 @@ Pa
 Pa
 Pa
 Pa
-uu
+Yl
 gp
 gp
 gp
@@ -26174,7 +26259,7 @@ fy
 fy
 fy
 fy
-UV
+nO
 gp
 gp
 gp
@@ -26281,7 +26366,7 @@ GU
 GU
 GU
 GU
-EX
+SZ
 gp
 gp
 gp
@@ -26388,7 +26473,7 @@ GU
 GU
 GU
 GU
-EX
+SZ
 gp
 gp
 gp
@@ -26495,7 +26580,7 @@ GU
 GU
 GU
 Jr
-EX
+SZ
 gp
 gp
 gp
@@ -26602,7 +26687,7 @@ GU
 GU
 GU
 GU
-EX
+SZ
 gp
 gp
 gp
@@ -26709,7 +26794,7 @@ GU
 GU
 GU
 dg
-az
+jK
 gp
 gp
 gp
@@ -26803,19 +26888,19 @@ gv
 wP
 wP
 wP
-Nt
-hs
-hs
-hs
-Lv
-OP
-OP
-OP
-OP
-OP
-OP
-OP
-az
+Ay
+KK
+KK
+KK
+Mm
+Pf
+Pf
+Pf
+Pf
+Pf
+Pf
+Pf
+jK
 gp
 gp
 gp
