@@ -1883,13 +1883,13 @@
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "bet" = (
-/obj/machinery/light/prince/directional/east,
-/obj/effect/turf_decal/siding/white{
-	dir = 5;
-	color = "#636363"
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "bianchi";
+	pixel_y = -3;
+	max_integrity = 200
 	},
-/turf/open/floor/carpet/darkpack/redsilver,
-/area/vtm/interior/bianchiBank)
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/outside/chinatown)
 "bey" = (
 /obj/structure/dresser,
 /turf/open/floor/plating/concrete,
@@ -2448,7 +2448,10 @@
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/millennium_tower/f4)
 "bvB" = (
-/obj/machinery/light/prince/directional/west,
+/obj/structure/chair/sofa/corp/left{
+	dir = 8;
+	pixel_x = 7
+	},
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "bvG" = (
@@ -4651,6 +4654,7 @@
 /obj/effect/turf_decal/siding/white{
 	color = "#636363"
 	},
+/obj/machinery/light/prince/directional/south,
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/bianchiBank)
 "cFJ" = (
@@ -7661,7 +7665,9 @@
 /area/vtm/interior/anarch/basement)
 "evH" = (
 /obj/effect/mapping_helpers/door/access/bank,
-/obj/structure/vampdoor/glass,
+/obj/structure/vampdoor/glass{
+	dir = 8
+	},
 /obj/effect/turf_decal/trimline/red/warning{
 	dir = 8
 	},
@@ -7723,12 +7729,10 @@
 /turf/open/floor/city/clinic,
 /area/vtm/interior/millennium_tower)
 "exw" = (
-/obj/structure/lattice/catwalk/borderless/smooth_walls,
-/obj/structure/railing{
-	dir = 10
-	},
-/turf/open/openspace,
-/area/vtm/outside/chinatown/rooftops)
+/obj/machinery/camera/autoname/motion/directional/east,
+/obj/machinery/light/prince/directional/east,
+/turf/open/floor/wood/parquet,
+/area/vtm/interior/bianchiBank)
 "exx" = (
 /obj/effect/landmark/npcability,
 /turf/open/floor/plating/sidewalkalt,
@@ -8705,6 +8709,7 @@
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
+/obj/machinery/light/prince/directional/east,
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "faN" = (
@@ -12235,6 +12240,7 @@
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
+/obj/machinery/light/prince/directional/west,
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "gVI" = (
@@ -14883,10 +14889,12 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/supply)
 "itB" = (
-/obj/structure/lattice/catwalk/borderless/smooth_walls,
-/obj/structure/ladder/manhole,
-/turf/open/openspace,
-/area/vtm/outside/chinatown/rooftops)
+/obj/effect/turf_decal/siding/white{
+	color = "#636363"
+	},
+/obj/machinery/light/prince/directional/south,
+/turf/open/floor/carpet/darkpack/redsilver,
+/area/vtm/interior/bianchiBank)
 "itO" = (
 /obj/structure/table,
 /obj/vampire_computer/prince,
@@ -17336,8 +17344,15 @@
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/shop/ishu)
 "jMn" = (
-/obj/structure/ladder/manhole/up,
-/turf/open/floor/plating/roofwalk,
+/obj/structure/lattice/catwalk/borderless/smooth_walls,
+/obj/structure/railing{
+	dir = 10
+	},
+/obj/structure/ladder/manhole{
+	pixel_y = 19;
+	pixel_x = 7
+	},
+/turf/open/openspace,
 /area/vtm/outside/chinatown/rooftops)
 "jMp" = (
 /obj/structure/hedge,
@@ -24373,7 +24388,6 @@
 /turf/open/floor/city/plating,
 /area/vtm/interior/strip)
 "nDm" = (
-/obj/machinery/light/prince/directional/west,
 /obj/effect/turf_decal/siding/white{
 	color = "#636363";
 	dir = 8
@@ -26292,9 +26306,10 @@
 /area/vtm/interior/millennium_tower/f2)
 "oFk" = (
 /obj/machinery/light/prince/directional/east,
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp{
 	dir = 8;
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 0
 	},
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
@@ -26665,7 +26680,10 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/millennium_tower/f2)
 "oRo" = (
-/obj/machinery/light/prince/directional/east,
+/obj/structure/sign/painting/library{
+	pixel_y = 32
+	},
+/obj/machinery/light/prince/directional/west,
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "oRx" = (
@@ -26919,7 +26937,10 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/obj/structure/ladder/manhole,
+/obj/structure/ladder/manhole{
+	pixel_x = 7;
+	pixel_y = 19
+	},
 /turf/open/floor/plating/roofwalk,
 /area/vtm/outside/chinatown/rooftops)
 "oYC" = (
@@ -29296,10 +29317,6 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/financialdistrict)
-"qmJ" = (
-/obj/machinery/camera/autoname/motion/directional/east,
-/turf/open/floor/wood/parquet,
-/area/vtm/interior/bianchiBank)
 "qmU" = (
 /obj/item/flashlight/lantern{
 	light_on = 1;
@@ -37972,9 +37989,9 @@
 /area/vtm/interior/chantry)
 "uOu" = (
 /obj/machinery/jukebox/no_access{
-	pixel_x = 6;
+	pixel_x = 5;
 	density = 0;
-	pixel_y = 7
+	pixel_y = 3
 	},
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
@@ -39176,7 +39193,10 @@
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f4)
 "vwH" = (
-/obj/structure/ladder/manhole/up,
+/obj/structure/ladder/manhole/up{
+	pixel_x = 7;
+	pixel_y = 19
+	},
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/outside/chinatown)
 "vwW" = (
@@ -61151,7 +61171,7 @@ hFq
 dST
 tfD
 tfD
-tfD
+bet
 qWo
 bEC
 xpT
@@ -69812,7 +69832,7 @@ ujz
 ujz
 ozf
 ozf
-jMn
+cvc
 cvc
 cvc
 cvc
@@ -70344,7 +70364,7 @@ iQa
 uOu
 cpw
 oFk
-nHQ
+bvB
 nHQ
 eSx
 xYU
@@ -80941,12 +80961,12 @@ aPe
 aPe
 aPe
 aPe
-nPe
-iHe
-iHe
-iHe
-iHe
-iHe
+aPe
+aPe
+aPe
+aPe
+aPe
+jMn
 iHe
 iHe
 iHe
@@ -81048,12 +81068,12 @@ ukl
 ukl
 ozf
 ozf
-itB
-aPe
-aPe
-aPe
-exw
-iHe
+ryM
+ryM
+ryM
+ryM
+ryM
+lhj
 iHe
 iHe
 iHe
@@ -81149,9 +81169,9 @@ wKz
 wKz
 sJp
 yeE
-osk
+oRo
 xRN
-bvB
+nHQ
 nHQ
 gVo
 ozf
@@ -81159,8 +81179,8 @@ evH
 ozf
 ozf
 ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -81266,8 +81286,8 @@ rlu
 nDm
 jFk
 ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -81365,16 +81385,16 @@ hVP
 jfM
 nHQ
 sYQ
-eal
 nHQ
+eal
 ycd
 ozf
 aRE
 xYU
 cFG
 ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -81480,8 +81500,8 @@ lAb
 hkt
 jcL
 ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -81579,16 +81599,16 @@ gtY
 yeE
 faF
 fKE
-oRo
-qmJ
 nHQ
+nHQ
+exw
 ltW
 ugv
 qgQ
 jcL
 ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -81685,17 +81705,17 @@ yeE
 yeE
 yeE
 ozf
-ozf
-ozf
-ozf
+ukl
+ukl
+ukl
 ozf
 sgB
 sgB
 eSx
-jcL
+itB
 ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -81798,11 +81818,11 @@ ozf
 ozf
 bIR
 uWd
-bet
+ltW
 uBM
 ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -81901,15 +81921,15 @@ iHe
 iHe
 iHe
 qpU
-scU
 ozf
 ozf
 ozf
 ozf
 ozf
 ozf
+ozf
+ryM
 lhj
-iHe
 iHe
 iHe
 iHe
@@ -82015,8 +82035,8 @@ gcD
 gcD
 gcD
 gcD
+gcD
 uSN
-iHe
 iHe
 iHe
 iHe
