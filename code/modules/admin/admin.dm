@@ -120,6 +120,10 @@ ADMIN_VERB(create_or_modify_area, R_DEBUG, "Create Or Modify Area", "Create of m
 		if(isnewplayer(C.mob))
 			if(kick_only_afk && !C.is_afk()) //Ignore clients who are not afk
 				continue
+			// APOC EDIT ADD START - SERVER_STUFF
+			if(kick_only_afk && is_admin(C) && C.prefs.read_preference(/datum/preference/toggle/avoid_admin_kick))
+				continue
+			// APOC EDIT ADD END
 			if(message)
 				to_chat(C, message, confidential = TRUE)
 			kicked_client_names.Add("[C.key]")
