@@ -1882,14 +1882,6 @@
 /mob/living/basic/pet/cat/darkpack/don,
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
-"bet" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "bianchi";
-	pixel_y = -3;
-	max_integrity = 200
-	},
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm/outside/chinatown)
 "bey" = (
 /obj/structure/dresser,
 /turf/open/floor/plating/concrete,
@@ -61191,7 +61183,7 @@ hFq
 dST
 tfD
 tfD
-bet
+tfD
 qWo
 bEC
 xpT
