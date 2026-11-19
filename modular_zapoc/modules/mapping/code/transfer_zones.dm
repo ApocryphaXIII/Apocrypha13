@@ -1,3 +1,15 @@
+/obj/transfer_point_vamp/umbral/nihil
+	name = "Nihil"
+	desc = "A tear in the Shroud that facilitates travel between the land of the Quick and the land of the Dead. It emanates a dreadful chill..."
+	icon = 'icons/obj/machines/engine/singularity.dmi'
+	icon_state = "dark_matter_s1"
+	invisibility = INVISIBILITY_OBSERVER
+	density = FALSE
+
+/obj/transfer_point_vamp/umbral/nihil/Initialize(mapload)
+	. = ..()
+	set_light(0)
+
 /obj/transfer_point_vamp/forest
 	name = "forest transfer point"
 	id = "forest_1"
