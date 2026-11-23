@@ -3124,12 +3124,13 @@
 /area/vtm/interior/police)
 "bMT" = (
 /obj/structure/table/wood/fancy/red,
-/obj/item/modular_computer/laptop/preset/mafia{
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/siding/white{
 	dir = 1;
 	color = "#636363"
+	},
+/obj/item/phone/black{
+	pixel_x = 0;
+	pixel_y = 9
 	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/bianchiBank)
@@ -6861,10 +6862,11 @@
 /area/vtm/voivodate)
 "eae" = (
 /obj/structure/table/wood/fancy/red,
-/obj/item/masquerade_contract,
-/obj/item/masquerade_contract,
-/obj/item/masquerade_contract,
 /obj/machinery/sprinkler/area_managed,
+/obj/item/spirit_chime{
+	pixel_x = 1;
+	pixel_y = 2
+	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/bianchiBank)
 "eal" = (
@@ -22364,18 +22366,11 @@
 /turf/open/water/bloodwave/shallow,
 /area/vtm/interior/wyrm_corrupted)
 "mDd" = (
-/obj/item/reagent_containers/cup/glass/coffee/vampire/robust{
-	pixel_x = -11;
-	pixel_y = 9
-	},
-/obj/item/reagent_containers/cup/glass/coffee/vampire{
-	pixel_x = -7;
-	pixel_y = 13
-	},
-/obj/item/food/cannoli{
-	pixel_y = 5
-	},
 /obj/structure/table/wood/fancy/green,
+/obj/item/papercutter{
+	pixel_x = 0;
+	pixel_y = 6
+	},
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "mDr" = (
@@ -27749,6 +27744,10 @@
 	pixel_x = 8;
 	pixel_y = 21
 	},
+/obj/structure/table/wood/fancy/red,
+/obj/item/masquerade_contract,
+/obj/item/masquerade_contract,
+/obj/item/masquerade_contract,
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/bianchiBank)
 "pyg" = (
@@ -28649,14 +28648,6 @@
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/chantry)
-"pWw" = (
-/obj/effect/decal/pallet,
-/obj/structure/lattice,
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/wood/rough,
-/area/vtm/outside/unionsquare/rooftops)
 "pWE" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
@@ -31328,14 +31319,6 @@
 	},
 /turf/open/floor/wood/old,
 /area/vtm/interior/chantry)
-"rmy" = (
-/obj/effect/decal/pallet,
-/obj/structure/lattice,
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/open/floor/wood/rough,
-/area/vtm/outside/unionsquare/rooftops)
 "rng" = (
 /obj/structure/table/reinforced,
 /obj/structure/fluff/tv/analog{
@@ -31426,17 +31409,6 @@
 /obj/effect/decal/shadow,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/sewer)
-"roS" = (
-/obj/effect/decal/pallet{
-	pixel_x = -3;
-	pixel_y = -4
-	},
-/obj/structure/lattice,
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/wood/rough,
-/area/vtm/outside/unionsquare/rooftops)
 "rpj" = (
 /obj/effect/landmark/npcability,
 /obj/effect/turf_decal/crosswalk,
@@ -35538,11 +35510,16 @@
 /turf/open/floor/iron/showroomfloor,
 /area/vtm/interior/clinic)
 "tya" = (
-/obj/item/storage/fancy/cigarettes/cigars/havana{
-	pixel_y = 9
-	},
 /obj/structure/table/wood/fancy/green,
 /obj/machinery/sprinkler/area_managed,
+/obj/item/lighter{
+	pixel_x = -9;
+	pixel_y = 6
+	},
+/obj/item/storage/fancy/cigarettes/cigars/havana{
+	pixel_x = 2;
+	pixel_y = 4
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/bianchiBank)
 "tyd" = (
@@ -35987,17 +35964,6 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/anarch/basement)
-"tJH" = (
-/obj/effect/decal/pallet{
-	pixel_x = -3;
-	pixel_y = -4
-	},
-/obj/structure/lattice,
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/open/floor/wood/rough,
-/area/vtm/outside/unionsquare/rooftops)
 "tJK" = (
 /turf/closed/wall/vampwall/brick_old,
 /area/vtm/interior/supply)
@@ -38099,9 +38065,8 @@
 /area/vtm/outside/pacificheights)
 "uQu" = (
 /obj/structure/table/wood/fancy/red,
-/obj/item/spirit_chime{
-	pixel_x = 3;
-	pixel_y = 6
+/obj/item/modular_computer/laptop/preset/mafia{
+	pixel_y = 5
 	},
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/bianchiBank)
@@ -41627,9 +41592,15 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/anarch/basement)
 "wUD" = (
-/obj/item/paper_bin/carbon,
-/obj/item/pen/fourcolor,
 /obj/structure/table/wood/fancy/green,
+/obj/item/paper_bin{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/paper_bin/carbon{
+	pixel_x = -6;
+	pixel_y = 5
+	},
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "wUF" = (
@@ -43526,6 +43497,7 @@
 /area/vtm/interior/bianchiBank)
 "xYZ" = (
 /obj/structure/table/wood/fancy/green,
+/obj/item/pen/fourcolor,
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/bianchiBank)
 "xZh" = (
@@ -67725,8 +67697,8 @@ aVo
 lUl
 lUl
 lUl
-roS
-pWw
+goc
+goc
 gCo
 xus
 mXc
@@ -67832,8 +67804,8 @@ jse
 eTp
 jse
 xWH
-tJH
-rmy
+qaj
+qaj
 gCo
 mXc
 mXc
