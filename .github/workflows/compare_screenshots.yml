@@ -15,7 +15,7 @@ jobs:
             code/modules/unit_tests/screenshots
             tools/screenshot-test-comparison
             modular_darkpack
-            modular_apoc
+            modular_zapoc
 
       - name: Setup directory
         run: mkdir -p artifacts

@@ -3419,9 +3419,7 @@
 /area/vtm/interior/apartment)
 "bWM" = (
 /obj/effect/mob_spawn/corpse/human/ciz4,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/voivodate/sanctum)
 "bWR" = (
 /obj/machinery/iv_drip,
@@ -3965,9 +3963,7 @@
 /area/vtm/interior/ghetto/sewer)
 "cml" = (
 /obj/effect/decal/gut_floor,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/voivodate/sanctum)
 "cmA" = (
 /obj/machinery/light/prince/directional/north,
@@ -4109,12 +4105,6 @@
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/restricted)
-"cta" = (
-/obj/effect/decal/support,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "cte" = (
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/museum)
@@ -4757,9 +4747,7 @@
 /area/vtm/outside/financialdistrict)
 "cLd" = (
 /obj/item/guts,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/voivodate/sanctum)
 "cLk" = (
 /obj/structure/railing{
@@ -10404,13 +10392,6 @@
 /obj/transfer_point_vamp/voivodate/two,
 /turf/open/floor/plating/asphalt,
 /area/vtm/outside/unionsquare)
-"gbi" = (
-/obj/effect/decal/shadow,
-/obj/structure/flora/rock/darkpack,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "gbA" = (
 /turf/closed/wall/vampwall/brick_old,
 /area/vtm/interior/ghetto/sewer)
@@ -14870,9 +14851,7 @@
 /area/vtm/interior/clinic)
 "izJ" = (
 /obj/structure/flora/rock/darkpack,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/voivodate/sanctum)
 "izK" = (
 /obj/effect/turf_decal/bordur{
@@ -16227,12 +16206,6 @@
 "jpf" = (
 /turf/open/floor/city/circled/large,
 /area/vtm/interior/laundromat)
-"jph" = (
-/obj/effect/decal/shadow,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "jpD" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
@@ -16342,12 +16315,6 @@
 /obj/structure/closet/crate/dumpster,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/apartment/overhang)
-"jtf" = (
-/obj/effect/decal/support,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "jtD" = (
 /obj/structure/hedge,
 /obj/structure/railing{
@@ -16976,8 +16943,7 @@
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/endron_facility/restricted)
 "jKs" = (
-/turf/open/floor/plating/grate{
-	icon_state = "lattice_new_dirt";
+/turf/open/floor/plating/grate/dirty{
 	dir = 4
 	},
 /area/vtm/interior/voivodate/cave)
@@ -22117,16 +22083,6 @@
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/plating/granite,
 /area/vtm/interior/millennium_tower/f2)
-"mEN" = (
-/obj/effect/decal/shadow,
-/obj/item/flashlight/lantern{
-	light_on = 1;
-	start_on = 14
-	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "mEQ" = (
 /obj/effect/landmark/npcwall,
 /turf/open/floor/plating/sidewalk,
@@ -23625,11 +23581,6 @@
 /obj/effect/decal/cleanable/cardboard,
 /turf/open/floor/plating/canal,
 /area/vtm/interior/sewer)
-"ntF" = (
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "ntZ" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
@@ -23960,9 +23911,7 @@
 /area/vtm/interior/gang)
 "nBv" = (
 /obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/voivodate/sanctum)
 "nBY" = (
 /obj/structure/rack,
@@ -27495,9 +27444,7 @@
 /area/vtm/interior/ghetto/sewer/north)
 "pDl" = (
 /obj/structure/vampdoor/reinf,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/voivodate/sanctum)
 "pDo" = (
 /obj/machinery/light/prince/directional/east,
@@ -28835,15 +28782,6 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/financialdistrict)
-"qmU" = (
-/obj/item/flashlight/lantern{
-	light_on = 1;
-	start_on = 14
-	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "qmY" = (
 /obj/effect/turf_decal/bordur/corner,
 /obj/structure/railing{
@@ -28931,12 +28869,6 @@
 /obj/effect/decal/wallpaper/grey,
 /turf/closed/wall/vampwall/rich/old,
 /area/vtm/interior/shop/grocery)
-"qpv" = (
-/obj/structure/flora/rock/darkpack,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "qpy" = (
 /obj/structure/table/countertop/bubway,
 /turf/open/floor/wood/smooth/old,
@@ -30799,9 +30731,7 @@
 /obj/structure/flora/rock/darkpack,
 /obj/structure/flora/rock/darkpack,
 /obj/item/clothing/mask/animal/frog,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/sewer)
 "rmp" = (
 /obj/structure/closet/cabinet,
@@ -35480,11 +35410,6 @@
 "tJK" = (
 /turf/closed/wall/vampwall/brick_old,
 /area/vtm/interior/supply)
-"tKr" = (
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone4"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "tKt" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 6
@@ -38866,12 +38791,6 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/shop/ishu)
-"vEV" = (
-/obj/structure/vampdoor/reinf,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "vFe" = (
 /obj/effect/landmark/npcwall,
 /turf/open/floor/plating/sidewalk/old,
@@ -41122,12 +41041,6 @@
 	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/shop/grocery)
-"wWV" = (
-/obj/effect/decal/shadow,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "stone8"
-	},
-/area/vtm/interior/voivodate/sanctum)
 "wXk" = (
 /obj/transfer_point_vamp/umbral/exit{
 	id = "umb_library"
@@ -89227,7 +89140,7 @@ aDc
 eqY
 eqY
 cml
-tKr
+uwk
 bwy
 bwy
 bCd
@@ -89345,10 +89258,10 @@ bqt
 oTR
 dFZ
 dFZ
-vEV
-ntF
 pDl
-tKr
+uwk
+pDl
+uwk
 iZi
 fko
 wHA
@@ -89659,11 +89572,11 @@ eqY
 eqY
 dTn
 eqY
-tKr
+uwk
 dFZ
 mIw
-tKr
-tKr
+uwk
+uwk
 bnC
 dFZ
 aDY
@@ -89769,9 +89682,9 @@ qMp
 qMp
 qMp
 tBB
-tKr
+uwk
 dFZ
-tKr
+uwk
 bnC
 tBB
 tfx
@@ -89877,7 +89790,7 @@ eqY
 dFZ
 mIw
 dFZ
-tKr
+uwk
 bnC
 bnC
 aDY
@@ -90077,7 +89990,7 @@ iCa
 iCa
 iCa
 bwy
-tKr
+uwk
 gjU
 cml
 cLd
@@ -90736,7 +90649,7 @@ bwy
 mcG
 bHv
 pvz
-gbi
+mcG
 tBB
 puO
 tUB
@@ -90839,11 +90752,11 @@ dFZ
 bwy
 sWI
 bwy
-gbi
+mcG
 uwk
 bHv
 pvz
-cta
+cKE
 tBB
 fpc
 tUB
@@ -90942,7 +90855,7 @@ bwy
 fjR
 dFZ
 dFZ
-tKr
+uwk
 dFZ
 sWI
 tkF
@@ -90950,7 +90863,7 @@ cKE
 jrl
 bHv
 pvz
-gbi
+mcG
 tBB
 puO
 kIF
@@ -91048,7 +90961,7 @@ iCa
 bwy
 fjR
 nBv
-tKr
+uwk
 eBq
 dFZ
 psZ
@@ -91057,7 +90970,7 @@ juw
 juw
 qSR
 pvz
-cta
+cKE
 tBB
 uiQ
 mSR
@@ -91156,8 +91069,8 @@ bwy
 fjR
 dFZ
 dFZ
-tKr
-tKr
+uwk
+uwk
 mIX
 jNQ
 mIX
@@ -91263,7 +91176,7 @@ bwy
 dFZ
 dFZ
 bWM
-tKr
+uwk
 jjk
 mIX
 jNQ
@@ -91369,8 +91282,8 @@ iCa
 bwy
 wxX
 swg
-tKr
-tKr
+uwk
+uwk
 dFZ
 qOd
 kNL
@@ -91589,7 +91502,7 @@ bwy
 sWI
 bwy
 qxf
-qmU
+jrl
 bHv
 mIX
 jNQ
@@ -91695,7 +91608,7 @@ iCa
 bwy
 sWI
 bwy
-jph
+qxf
 izJ
 bHv
 mIX
@@ -91802,7 +91715,7 @@ iCa
 bwy
 bwy
 bwy
-jph
+qxf
 nJW
 bHv
 xKN
@@ -91909,11 +91822,11 @@ iCa
 iCa
 bwy
 tAS
-jtf
+cKE
 xAb
 bHv
 pvz
-wWV
+qxf
 iFo
 lpi
 lpi
@@ -92016,13 +91929,13 @@ iCa
 iCa
 bwy
 bwy
-jph
+qxf
 uwk
 bHv
 pvz
 cKE
-qpv
-ntF
+izJ
+uwk
 bwy
 bwy
 iCa
@@ -92129,7 +92042,7 @@ bHv
 pvz
 mcG
 jrl
-ntF
+uwk
 bwy
 iCa
 iCa
@@ -92551,12 +92464,12 @@ iCa
 iCa
 iCa
 bwy
-jph
+qxf
 jrl
 bHv
 pvz
-wWV
-tKr
+qxf
+uwk
 uwk
 bwy
 iCa
@@ -92659,11 +92572,11 @@ bwy
 bwy
 xYK
 qxf
-tKr
+uwk
 bHv
 pvz
-jph
-qmU
+qxf
+jrl
 uwk
 bwy
 bwy
@@ -92765,7 +92678,7 @@ bwy
 tkF
 cKE
 uwk
-ntF
+uwk
 aFM
 qSR
 oSe
@@ -92870,8 +92783,8 @@ iCa
 iCa
 bwy
 bwy
-mEN
-ntF
+gJH
+uwk
 aFM
 qlh
 dgf
@@ -92977,7 +92890,7 @@ iCa
 iCa
 iCa
 bwy
-wWV
+qxf
 aFM
 qlh
 fra
@@ -92986,7 +92899,7 @@ bnC
 fra
 xDG
 qmY
-jtf
+cKE
 bwy
 iCa
 rDp
@@ -93084,7 +92997,7 @@ iCa
 iCa
 iCa
 bwy
-jph
+qxf
 kcz
 wdo
 bnC
@@ -93093,7 +93006,7 @@ bnC
 bnC
 tUB
 qQE
-wWV
+qxf
 bwy
 iCa
 gjr
@@ -93191,7 +93104,7 @@ iCa
 iCa
 bwy
 bwy
-jph
+qxf
 kcz
 wdo
 bnC
@@ -93200,7 +93113,7 @@ hym
 bnC
 tUB
 qQE
-wWV
+qxf
 bwy
 iCa
 mKm
@@ -93405,7 +93318,7 @@ iCa
 iCa
 bwy
 bwy
-jph
+qxf
 kcz
 wdo
 bnC
@@ -93512,7 +93425,7 @@ iCa
 iCa
 iCa
 bwy
-jph
+qxf
 kcz
 wdo
 bnC
@@ -93734,7 +93647,7 @@ sEa
 sEa
 nWH
 eSl
-jtf
+cKE
 jrl
 bwy
 iCa
@@ -93841,7 +93754,7 @@ fKG
 fKG
 eSl
 cKE
-ntF
+uwk
 uwk
 bwy
 iCa
@@ -93941,14 +93854,14 @@ iCa
 bwy
 bwy
 bwy
-mEN
-ntF
-ntF
-ntF
+gJH
 uwk
 uwk
-tKr
-tKr
+uwk
+uwk
+uwk
+uwk
+uwk
 bwy
 bwy
 iCa
@@ -94049,11 +93962,11 @@ iCa
 iCa
 bwy
 bwy
-wWV
-ntF
+qxf
 uwk
 uwk
-qmU
+uwk
+jrl
 uwk
 bwy
 bwy
