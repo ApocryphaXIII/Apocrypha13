@@ -102,6 +102,16 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest/sept)
+"au" = (
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "firingrange"
+	},
+/obj/item/target,
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "aw" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt/corner{
@@ -1563,6 +1573,15 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/sept)
+"hC" = (
+/obj/machinery/conveyor/inverted{
+	dir = 4;
+	id = "firingrange"
+	},
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "hD" = (
 /obj/structure/flora/rock/darkpack_big,
 /turf/open/misc/dirt,
@@ -2479,6 +2498,15 @@
 /obj/item/toy/plush/snakeplushie,
 /turf/open/floor/carpet/darkpack/hotel,
 /area/vtm/interior/forest/bawn_lodge)
+"mg" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "firingrange"
+	},
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "mj" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/cosmos/double,
@@ -2834,6 +2862,16 @@
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
+"nV" = (
+/obj/item/target,
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "firingrange"
+	},
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "nW" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
@@ -3341,6 +3379,14 @@
 /area/vtm/interior/forest/bawn_shelter)
 "qk" = (
 /obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
+"ql" = (
+/obj/machinery/conveyor{
+	id = "firingrange"
+	},
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
@@ -5566,8 +5612,10 @@
 	},
 /area/vtm/interior/forest/cave)
 "Ag" = (
-/obj/effect/decal/cleanable/generic,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "firingrange"
+	},
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
@@ -5587,8 +5635,10 @@
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/forest/bawn_shelter)
 "Aj" = (
-/obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/conveyor{
+	id = "firingrange"
+	},
+/obj/item/target,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
@@ -7359,10 +7409,6 @@
 /area/vtm/outside/forest)
 "EN" = (
 /obj/structure/tire/big,
-/obj/structure/tire{
-	pixel_x = 0;
-	pixel_y = 9
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
@@ -8336,6 +8382,16 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/interior/forest/cave)
+"Jm" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "firingrange"
+	},
+/obj/item/target,
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "Jn" = (
 /obj/structure/toilet{
 	dir = 8
@@ -8647,6 +8703,15 @@
 /obj/item/bedsheet,
 /turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/forest/bawn_lodge)
+"KN" = (
+/obj/machinery/conveyor/inverted{
+	dir = 10;
+	id = "firingrange"
+	},
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "KO" = (
 /obj/effect/turf_decal/siding/wood/dark{
 	dir = 4
@@ -8711,6 +8776,15 @@
 /obj/structure/glowshroom,
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
+"Ls" = (
+/obj/machinery/conveyor/inverted{
+	dir = 9;
+	id = "firingrange"
+	},
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "Lt" = (
 /obj/effect/decal/coastline/corner,
 /turf/open/misc/beach/vamp{
@@ -9119,6 +9193,15 @@
 	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
+"Nl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/conveyor_switch{
+	id = "firingrange"
+	},
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "Nn" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
@@ -10637,6 +10720,16 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
+"US" = (
+/obj/machinery/conveyor/inverted{
+	dir = 6;
+	id = "firingrange"
+	},
+/obj/item/target,
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "UT" = (
 /obj/effect/turf_decal/darkpack/sand/corner,
 /turf/open/floor/plating/concrete,
@@ -11173,6 +11266,15 @@
 /obj/item/food/cheese/wheel,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
+"XG" = (
+/obj/machinery/conveyor/inverted{
+	dir = 5;
+	id = "firingrange"
+	},
+/turf/open/floor/plating/rough/cave{
+	icon_state = "cave3"
+	},
+/area/vtm/interior/forest/cave)
 "XH" = (
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/floor/plating/rough/cave{
@@ -13823,7 +13925,7 @@ Ad
 Ad
 Ad
 Ad
-Ad
+Nl
 CR
 Ad
 Ad
@@ -15402,19 +15504,19 @@ EH
 EH
 EN
 Ad
-Ad
-Nr
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
+XG
+ql
+Aj
+ql
+ql
+ql
+Aj
+ql
+ql
+ql
+Aj
+ql
+Ls
 Ad
 EN
 EH
@@ -15600,6 +15702,7 @@ EH
 EH
 EN
 Ad
+hC
 Ad
 Ad
 Ad
@@ -15610,9 +15713,8 @@ Ad
 Ad
 Ad
 Ad
-Ad
-Ad
-Ad
+CB
+mg
 Ad
 EN
 EH
@@ -15798,6 +15900,10 @@ EH
 EH
 EN
 Ad
+hC
+Ad
+Ad
+EF
 Ad
 Ad
 Ad
@@ -15805,12 +15911,8 @@ EF
 Ad
 Ad
 Ad
-EF
 Ad
-Ad
-Ad
-Ad
-Ad
+Jm
 Ad
 EN
 EH
@@ -15996,19 +16098,19 @@ EH
 EH
 EN
 CG
-Ad
-Ad
-Ad
-Aj
-Ad
-Ad
-Ad
+US
 Ag
-Ad
-Ad
-Ad
-CB
-Ad
+Ag
+Ag
+nV
+Ag
+Ag
+Ag
+au
+Ag
+Ag
+Ag
+KN
 CG
 EN
 EH
