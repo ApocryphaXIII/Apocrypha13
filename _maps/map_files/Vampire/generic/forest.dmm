@@ -12,6 +12,26 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
+"ab" = (
+/turf/open/misc/ashplanet/wateryrock/safeair{
+	desc = "A sturdy layer of pebbles allows the river to run through, while still providing stable footing.";
+	color = "#7A7A9A";
+	lattice_underneath = 1
+	},
+/area/vtm/interior/forest/cave)
+"ac" = (
+/turf/open/water/river/deep,
+/area/vtm/interior/forest/cave)
+"ad" = (
+/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/dense,
+/turf/open/misc/ashplanet/wateryrock/safeair{
+	desc = "A sturdy layer of pebbles allows the river to run through, while still providing stable footing.";
+	color = "#7A7A9A";
+	lattice_underneath = 1
+	},
+/area/vtm/interior/forest/cave)
 "ae" = (
 /obj/structure/fluff/grate/drain,
 /turf/open/floor/plating/concrete,
@@ -25,12 +45,27 @@
 /obj/structure/railing,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/cave)
+"ag" = (
+/obj/warehouse_generator{
+	pixel_x = 0;
+	pixel_y = 17
+	},
+/obj/item/gas_can{
+	pixel_x = -10;
+	pixel_y = -8
+	},
+/obj/effect/decal/rugs,
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/forest/cave)
 "ah" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
 	},
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass/random/grass,
+/area/vtm/interior/forest/cave)
+"ai" = (
+/turf/open/floor/plating/concrete,
 /area/vtm/interior/forest/cave)
 "ak" = (
 /obj/structure/noticeboard{
@@ -5726,16 +5761,6 @@
 /obj/item/toy/plush/human,
 /turf/open/floor/carpet/darkpack/hotel,
 /area/vtm/interior/forest/bawn_lodge)
-"Ax" = (
-/obj/effect/realistic_fog/dense,
-/obj/effect/realistic_fog/dense,
-/obj/effect/realistic_fog/dense,
-/turf/open/misc/ashplanet/wateryrock/safeair{
-	desc = "A sturdy layer of pebbles allows the river to run through, while still providing stable footing.";
-	color = "#7A7A9A";
-	lattice_underneath = 1
-	},
-/area/vtm/outside/forest)
 "Ay" = (
 /obj/structure/railing{
 	dir = 4;
@@ -6074,12 +6099,6 @@
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
-"Bv" = (
-/obj/effect/turf_decal/trimline/yellow/filled/warning{
-	dir = 4
-	},
-/turf/closed/wall/vampwall/metal/glass,
-/area/vtm/interior/forest/cave)
 "Bw" = (
 /obj/darkpack_car/rand,
 /turf/open/floor/plating/rough,
@@ -7439,13 +7458,6 @@
 	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest/cave)
-"EV" = (
-/turf/open/misc/ashplanet/wateryrock/safeair{
-	desc = "A sturdy layer of pebbles allows the river to run through, while still providing stable footing.";
-	color = "#7A7A9A";
-	lattice_underneath = 1
-	},
-/area/vtm/outside/forest)
 "EW" = (
 /turf/open/openspace,
 /area/vtm/interior/forest/cave)
@@ -8153,20 +8165,6 @@
 	},
 /turf/open/floor/carpet/darkpack/redsilver,
 /area/vtm/interior/forest/bawn_lodge)
-"If" = (
-/obj/warehouse_generator{
-	pixel_x = 0;
-	pixel_y = 17
-	},
-/obj/item/gas_can{
-	pixel_x = -10;
-	pixel_y = -8
-	},
-/obj/effect/decal/rugs,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
 "Ig" = (
 /obj/structure/bonfire/prelit/alt2{
 	density = 1
@@ -13118,8 +13116,8 @@ EH
 EH
 EH
 EH
-Nr
-If
+ai
+ag
 Ad
 Ad
 Ad
@@ -14705,13 +14703,13 @@ Ad
 Ad
 EO
 AI
-Bv
+EO
 AI
-Bv
+EO
 AI
-Bv
+EO
 AI
-Bv
+EO
 AI
 EO
 wb
@@ -40620,9 +40618,9 @@ je
 OO
 Uz
 BV
-OQ
-CT
-OQ
+FK
+ac
+FK
 EP
 Ar
 rh
@@ -40818,9 +40816,9 @@ iV
 Bh
 Du
 EQ
-EV
-EV
-EV
+ab
+ab
+ab
 Cp
 By
 BR
@@ -41016,9 +41014,9 @@ je
 BO
 Dv
 ER
-OQ
-Ax
-OQ
+FK
+ad
+FK
 Cp
 Dy
 BJ
@@ -41214,9 +41212,9 @@ BP
 BW
 Dt
 ER
-EV
-EV
-EV
+ab
+ab
+ab
 Cs
 Dw
 BX
@@ -41412,9 +41410,9 @@ xG
 je
 LC
 Ba
-OQ
-CT
-OQ
+FK
+ac
+FK
 EP
 Sn
 BZ
