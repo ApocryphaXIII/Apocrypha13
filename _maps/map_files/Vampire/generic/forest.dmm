@@ -7359,7 +7359,10 @@
 /obj/item/clothing/mask/whistle,
 /obj/item/clothing/mask/whistle,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/storage/medkit/darkpack/standard,
+/obj/item/storage/medkit/darkpack/standard{
+	pixel_x = 8;
+	pixel_y = 10
+	},
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
