@@ -7700,7 +7700,7 @@
 /area/vtm/interior/apartment/hallway)
 "eAN" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
-/obj/item/storage/box/ingredients/random,
+/obj/item/storage/box/ingredients/wildcard,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/ghetto)
 "eBa" = (
@@ -14281,7 +14281,7 @@
 "ihm" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/milk{
 	name = "full cream milk"
@@ -14716,10 +14716,10 @@
 "ivw" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/fruity,
-/obj/item/storage/box/ingredients/grains,
-/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
 /obj/machinery/light/prince/directional/east,
 /turf/open/floor/city/plating_stone,
@@ -18159,8 +18159,8 @@
 "kpW" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/random,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/food/hotdog,
 /obj/item/food/hotdog,
 /obj/item/reagent_containers/condiment/sugar,
@@ -20878,10 +20878,10 @@
 "lUF" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/fruity,
-/obj/item/storage/box/ingredients/grains,
-/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
 /obj/effect/turf_decal/siding,
 /turf/open/floor/city/bacotell,
@@ -25062,11 +25062,11 @@
 /area/vtm/outside/financialdistrict)
 "okU" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/storage/box/ingredients/grains,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
-/obj/item/storage/box/ingredients/fruity,
-/obj/item/storage/box/ingredients/carnivore,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/american,
 /obj/effect/turf_decal/siding{
 	dir = 8
@@ -28124,7 +28124,7 @@
 "pVB" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/storage/box/ingredients/random,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/wood/smooth/old,
@@ -31414,11 +31414,11 @@
 /area/vtm/interior/millennium_tower)
 "rCJ" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/storage/box/ingredients/grains,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
-/obj/item/storage/box/ingredients/fruity,
-/obj/item/storage/box/ingredients/carnivore,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/american,
 /obj/effect/turf_decal/siding{
 	dir = 4
@@ -38374,10 +38374,10 @@
 "vpx" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/fruity,
-/obj/item/storage/box/ingredients/grains,
-/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
 /obj/effect/turf_decal/siding{
 	dir = 4
@@ -39915,9 +39915,9 @@
 "wnK" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/storage/box/ingredients/italian,
-/obj/item/storage/box/ingredients/grains,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/milk{
@@ -41389,11 +41389,11 @@
 	pixel_y = 14
 	},
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/fruity,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
-/obj/item/storage/box/ingredients/grains,
-/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/structure/platform/lowwall/bar,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/ghetto/sewer)
@@ -42363,10 +42363,10 @@
 "xJP" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/fruity,
-/obj/item/storage/box/ingredients/grains,
-/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/reagent_containers/condiment/milk,
 /obj/machinery/light/prince/directional/west,
 /turf/open/floor/city/plating_stone,
