@@ -393,6 +393,15 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/bawn_lodge)
+"bW" = (
+/obj/structure/fake_stairs/stone{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/forest/cave)
 "bX" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -3216,6 +3225,7 @@
 /obj/effect/turf_decal/bordur{
 	dir = 8
 	},
+/obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest/cave)
 "pL" = (
@@ -3556,6 +3566,18 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"rh" = (
+/obj/effect/turf_decal/darkpack/dirt{
+	dir = 6
+	},
+/obj/item/flashlight/lantern{
+	light_on = 1;
+	start_on = 14
+	},
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/outside/forest)
 "rj" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/orange/double,
@@ -6024,10 +6046,6 @@
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
 "By" = (
-/obj/item/flashlight/lantern{
-	light_on = 1;
-	start_on = 14
-	},
 /obj/structure/stairs/wood{
 	dir = 1
 	},
@@ -6710,6 +6728,12 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
+/obj/machinery/light/floor/lamppost/sidewalk/chinese{
+	name = "Forest Border";
+	desc = "The sign declares that beyond this bridge, you'll be in the wilderness. Beware of bears!";
+	pixel_x = 2;
+	pixel_y = 1
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/outside/forest)
 "Dc" = (
@@ -6917,6 +6941,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
+/obj/structure/chair/sofa/city_bench/wood/right{
+	dir = 4
+	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/outside/forest)
 "DD" = (
@@ -6959,10 +6986,10 @@
 /obj/structure/railing/wooden_fence{
 	dir = 4
 	},
-/obj/structure/chair/sofa/city_bench/wood/right{
+/obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wood{
+/obj/structure/chair/sofa/city_bench/wood{
 	dir = 4
 	},
 /turf/open/floor/wood/smooth/old,
@@ -7021,13 +7048,10 @@
 /obj/structure/railing/wooden_fence{
 	dir = 8
 	},
-/obj/machinery/light/floor/lamppost/sidewalk/chinese{
-	name = "Forest Border";
-	desc = "The sign declares that beyond this bridge, you'll be in the wilderness. Beware of bears!";
-	pixel_x = 2;
-	pixel_y = 1
-	},
 /obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/chair/sofa/city_bench/wood/left{
 	dir = 8
 	},
 /turf/open/floor/wood/smooth/old,
@@ -7036,10 +7060,10 @@
 /obj/structure/railing/wooden_fence{
 	dir = 8
 	},
-/obj/structure/chair/sofa/city_bench/wood/left{
+/obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/wood{
+/obj/structure/chair/sofa/city_bench/wood{
 	dir = 8
 	},
 /turf/open/floor/wood/smooth/old,
@@ -7075,10 +7099,10 @@
 /obj/structure/railing/wooden_fence{
 	dir = 8
 	},
-/obj/structure/chair/sofa/city_bench/wood/right{
+/obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/wood{
+/obj/structure/chair/sofa/city_bench/wood/right{
 	dir = 8
 	},
 /turf/open/floor/wood/smooth/old,
@@ -7374,10 +7398,8 @@
 	},
 /area/vtm/outside/forest)
 "EU" = (
-/obj/effect/turf_decal/bordur/corner/inverse{
-	dir = 1;
-	pixel_x = -27;
-	pixel_y = -26
+/obj/effect/turf_decal/bordur{
+	dir = 10
 	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest/cave)
@@ -7914,11 +7936,10 @@
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
 "Hi" = (
-/obj/effect/turf_decal/bordur/corner/inverse{
-	dir = 8;
-	pixel_x = 27;
-	pixel_y = -26
+/obj/effect/turf_decal/bordur{
+	dir = 4
 	},
+/obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest/cave)
 "Hj" = (
@@ -9646,6 +9667,15 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
+"Qd" = (
+/obj/structure/fake_stairs/stone{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/forest/cave)
 "Qe" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 9
@@ -12399,7 +12429,7 @@ EH
 EH
 EH
 EH
-EH
+bW
 km
 km
 Dj
@@ -12597,7 +12627,7 @@ EH
 EH
 EH
 EH
-EH
+Qd
 Di
 Di
 Dh
@@ -32795,7 +32825,7 @@ CT
 EH
 Ee
 pK
-Cx
+EW
 EW
 EW
 EH
@@ -32992,8 +33022,8 @@ CT
 CT
 EH
 Ao
-Hi
 Dz
+EW
 EW
 EW
 EH
@@ -33190,7 +33220,7 @@ CT
 CT
 EH
 Au
-yd
+Hi
 EH
 EH
 EH
@@ -34775,7 +34805,7 @@ EH
 EH
 Ao
 EU
-Dz
+Cx
 Cg
 Pb
 ex
@@ -40503,7 +40533,7 @@ CT
 OQ
 EP
 Ar
-ZG
+rh
 je
 Cr
 je
