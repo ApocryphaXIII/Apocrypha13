@@ -6028,13 +6028,6 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
-"Bn" = (
-/obj/effect/turf_decal/darkpack/sand{
-	dir = 6
-	},
-/obj/structure/fake_stairs/wood/directional/south,
-/turf/open/genturf,
-/area/vtm/planetgeneration)
 "Bo" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/wood/smooth/old,
@@ -6652,9 +6645,7 @@
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_shelter)
 "CN" = (
-/obj/structure/chair/plastic/darkpack{
-	dir = 4
-	},
+/obj/structure/chair/plastic/darkpack,
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
@@ -6733,9 +6724,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest)
 "CW" = (
-/obj/structure/chair/plastic/darkpack{
-	dir = 8
-	},
+/obj/structure/chair/plastic/darkpack,
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 5
 	},
@@ -6748,9 +6737,7 @@
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
 "CY" = (
-/obj/structure/chair/plastic/darkpack{
-	dir = 8
-	},
+/obj/structure/chair/plastic/darkpack,
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 9
 	},
@@ -37459,7 +37446,7 @@ NT
 NT
 NT
 vd
-Bn
+IV
 us
 by
 OQ
