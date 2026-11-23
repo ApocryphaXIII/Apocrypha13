@@ -12,6 +12,29 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
+"ab" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"ac" = (
+/obj/effect/decal/coastline{
+	dir = 6
+	},
+/turf/open/water/river,
+/area/vtm/outside/forest)
+"ad" = (
+/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/flowers_pp/style_random,
+/obj/effect/turf_decal/darkpack/dirt,
+/obj/item/food/grown/flower/moonflower,
+/turf/open/misc/grass,
+/area/vtm/outside/forest)
 "ae" = (
 /obj/structure/fluff/grate/drain,
 /turf/open/floor/plating/concrete,
@@ -25,6 +48,10 @@
 /obj/structure/railing,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/cave)
+"ag" = (
+/obj/machinery/light/warm/directional/south,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "ah" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
@@ -32,6 +59,16 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
+"ai" = (
+/obj/structure/flora/rock/darkpack_big,
+/turf/open/water/hot_spring,
+/area/vtm/outside/forest)
+"aj" = (
+/obj/structure/railing/wooden_fence,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/structure/chair/sofa/city_bench/wood/left,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "ak" = (
 /obj/structure/noticeboard{
 	pixel_y = 32
@@ -63,6 +100,9 @@
 /obj/structure/platform/lowwall/wood,
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest)
+"an" = (
+/turf/open/water/river/deep,
+/area/vtm/interior/forest/cave)
 "ao" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -76,6 +116,10 @@
 /obj/structure/railing,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
+"aq" = (
+/obj/effect/decal/remains/human,
+/turf/open/water/river,
+/area/vtm/interior/forest/cave)
 "ar" = (
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/genturf,
@@ -102,6 +146,21 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest/sept)
+"au" = (
+/turf/open/misc/ashplanet/wateryrock/safeair{
+	color = "#7A7A9A";
+	desc = "A sturdy layer of pebbles allows the river to run through, while still providing stable footing."
+	},
+/area/vtm/interior/forest/cave)
+"av" = (
+/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/dense,
+/obj/effect/realistic_fog/dense,
+/turf/open/misc/ashplanet/wateryrock/safeair{
+	color = "#7A7A9A";
+	desc = "A sturdy layer of pebbles allows the river to run through, while still providing stable footing."
+	},
+/area/vtm/interior/forest/cave)
 "aw" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt/corner{
@@ -109,6 +168,15 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
+"ax" = (
+/obj/structure/railing/wooden_fence{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 10
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "ay" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -126,6 +194,11 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/interior/forest/cave)
+"aA" = (
+/obj/structure/railing/wooden_fence,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "aB" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
 /obj/effect/turf_decal/darkpack/grass/corner{
@@ -133,10 +206,25 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
+"aC" = (
+/obj/structure/railing/wooden_fence{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 6
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "aD" = (
 /obj/structure/flora/bush/large/style_random,
 /turf/open/misc/dirt,
 /area/vtm/interior/forest/cave)
+"aE" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "aF" = (
 /obj/structure/railing{
 	dir = 4
@@ -151,6 +239,13 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"aH" = (
+/obj/machinery/light/small/dim/directional/north,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"aI" = (
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "aJ" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/effect/turf_decal/darkpack/dirt/corner{
@@ -170,6 +265,12 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
+"aM" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "aN" = (
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet/any,
@@ -193,10 +294,33 @@
 /obj/structure/flora/bush/style_random,
 /turf/open/misc/dirt,
 /area/vtm/interior/forest/cave)
+"aR" = (
+/obj/structure/railing/wooden_fence{
+	dir = 9;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 9
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "aS" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
+"aT" = (
+/obj/structure/chair/sofa/city_bench/wood/right{
+	dir = 1
+	},
+/obj/structure/railing/wooden_fence{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "aU" = (
 /obj/structure/flora/rock/pile/darkpack,
 /turf/open/floor/plating/rough/cave{
@@ -242,12 +366,50 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/bawn_lodge)
+"aZ" = (
+/obj/structure/chair/sofa/city_bench/wood/left{
+	dir = 1
+	},
+/obj/structure/railing/wooden_fence{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "ba" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"bb" = (
+/obj/machinery/light/floor/lamppost/sidewalk/chinese{
+	pixel_x = 25;
+	name = "Natural Springs";
+	desc = "The sign on the lamppost states that beyond this point, you'll find some natural hotsprings."
+	},
+/obj/structure/railing/wooden_fence{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"bc" = (
+/obj/structure/railing/wooden_fence{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "bd" = (
 /obj/item/fishing_rod{
 	pixel_y = 13
@@ -266,11 +428,43 @@
 	},
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_shelter)
+"bf" = (
+/obj/structure/railing/wooden_fence{
+	dir = 5;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 5
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"bg" = (
+/obj/structure/railing/wooden_fence,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/structure/chair/sofa/city_bench/wood/right,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"bh" = (
+/obj/structure/dresser{
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "crate";
+	pixel_y = 0;
+	name = "swimwear crate";
+	desc = "A big metal crate full of all kinds of swimwear. And normal underwear, if you're changing back into your civvies."
+	},
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "bi" = (
 /obj/structure/spacevine{
 	name = "vines"
 	},
 /turf/closed/wall/vampwall/rock,
+/area/vtm/interior/forest/cave)
+"bj" = (
+/obj/structure/chair/plastic/darkpack{
+	dir = 1
+	},
+/turf/open/floor/stone,
 /area/vtm/interior/forest/cave)
 "bk" = (
 /obj/machinery/griddle,
@@ -279,11 +473,38 @@
 "bl" = (
 /turf/closed/wall/vampwall/wood,
 /area/vtm/outside/forest/sept)
+"bm" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 2
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"bn" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
+"bo" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "bp" = (
 /obj/item/restraints/legcuffs/beartrap,
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
+/area/vtm/interior/forest/cave)
+"bq" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 1
+	},
+/turf/open/floor/stone,
 /area/vtm/interior/forest/cave)
 "br" = (
 /obj/structure/glowshroom/glowcap,
@@ -291,6 +512,12 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
+/area/vtm/interior/forest/cave)
+"bs" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/turf/open/floor/stone,
 /area/vtm/interior/forest/cave)
 "bt" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
@@ -310,6 +537,15 @@
 /obj/effect/realistic_fog/dense,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
+"bw" = (
+/turf/open/water/hot_spring,
+/area/vtm/interior/forest/cave)
+"bx" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "by" = (
 /obj/effect/decal/coastline{
 	dir = 1
@@ -318,9 +554,17 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest)
+"bz" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "bA" = (
 /turf/open/misc/grass,
 /area/vtm/outside/forest/sept)
+"bB" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "bC" = (
 /obj/structure/stairs/south,
 /turf/open/floor/plating/rough,
@@ -332,11 +576,20 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/vtm/interior/forest/bawn_lodge)
+"bE" = (
+/turf/open/water/hot_spring,
+/area/vtm/outside/forest)
 "bF" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 1
 	},
 /turf/open/misc/grass,
+/area/vtm/interior/forest/cave)
+"bG" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 8
+	},
+/turf/open/floor/stone,
 /area/vtm/interior/forest/cave)
 "bH" = (
 /obj/effect/turf_decal/darkpack/dirt{
@@ -354,6 +607,12 @@
 /obj/effect/turf_decal/darkpack/sand,
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"bK" = (
+/obj/structure/closet/cabinet{
+	icon = 'icons/obj/storage/closet.dmi'
+	},
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "bL" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 5
@@ -363,6 +622,21 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"bM" = (
+/obj/machinery/light/warm/directional/south,
+/obj/structure/dresser{
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "crate";
+	pixel_y = 0;
+	name = "swimwear crate";
+	desc = "A big metal crate full of all kinds of swimwear. And normal underwear, if you're changing back into your civvies."
+	},
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
+"bN" = (
+/obj/structure/table/rolling/darkpack,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "bO" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -372,6 +646,29 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"bP" = (
+/obj/machinery/light/warm/directional/north,
+/obj/structure/dresser{
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "crate";
+	pixel_y = 11;
+	name = "swimwear crate";
+	desc = "A big metal crate full of all kinds of swimwear. And normal underwear, if you're changing back into your civvies."
+	},
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
+"bQ" = (
+/obj/structure/dresser{
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "crate";
+	pixel_y = 11;
+	name = "swimwear crate";
+	desc = "A big metal crate full of all kinds of swimwear. And normal underwear, if you're changing back into your civvies."
+	},
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/outside/forest)
 "bR" = (
 /obj/structure/glowshroom/glowcap,
 /turf/open/floor/plating/rough/cave{
@@ -393,6 +690,14 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/bawn_lodge)
+"bU" = (
+/obj/structure/curtain/bounty,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
+"bV" = (
+/obj/machinery/light/floor,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "bX" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -417,6 +722,27 @@
 	icon_state = "cave3"
 	},
 /area/vtm/outside/forest/sept)
+"cc" = (
+/obj/structure/fake_stairs/stone{
+	dir = 1
+	},
+/obj/structure/railing/metal{
+	dir = 4
+	},
+/obj/structure/railing/metal{
+	dir = 8
+	},
+/turf/open/water/hot_spring,
+/area/vtm/outside/forest)
+"cd" = (
+/obj/effect/turf_decal/darkpack/dirt/corner,
+/obj/structure/fluff/shrine{
+	desc = "It's said to be good luck to leave an offering here before crossing the bridge."
+	},
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/outside/forest)
 "ce" = (
 /obj/structure/bed/dogbed{
 	name = "The wolf's bed"
@@ -447,6 +773,14 @@
 	},
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
+"ci" = (
+/obj/structure/fluff/shrine{
+	desc = "It's said to be good luck to leave an offering here before crossing the bridge."
+	},
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/outside/forest)
 "cj" = (
 /obj/effect/turf_decal/darkpack/sand/corner,
 /obj/effect/turf_decal/darkpack/sand/corner{
@@ -467,6 +801,17 @@
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/cabin)
+"cl" = (
+/obj/effect/turf_decal/darkpack/dirt{
+	dir = 8
+	},
+/obj/structure/fluff/shrine{
+	desc = "It's said to be good luck to leave an offering here before crossing the bridge."
+	},
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/outside/forest)
 "cm" = (
 /obj/effect/decal/pallet,
 /obj/structure/table/wood,
@@ -497,6 +842,10 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
+"cp" = (
+/obj/structure/chair/plastic/darkpack,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "cq" = (
 /obj/structure/vampdoor/wood{
 	dir = 1
@@ -506,6 +855,16 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/hotsprings)
+"cr" = (
+/obj/machinery/shower/directional/south,
+/obj/structure/fluff/shower_drain,
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 8
+	},
+/turf/open/floor/noslip{
+	icon_state = "stone_floor"
+	},
+/area/vtm/outside/forest)
 "cs" = (
 /obj/item/flashlight/lantern{
 	light_on = 1;
@@ -519,6 +878,23 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest/sept)
+"ct" = (
+/obj/machinery/shower/directional/south,
+/obj/structure/fluff/shower_drain,
+/turf/open/floor/noslip{
+	icon_state = "stone_floor"
+	},
+/area/vtm/outside/forest)
+"cu" = (
+/obj/machinery/shower/directional/south,
+/obj/structure/fluff/shower_drain,
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 4
+	},
+/turf/open/floor/noslip{
+	icon_state = "stone_floor"
+	},
+/area/vtm/outside/forest)
 "cv" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 1
@@ -537,10 +913,35 @@
 	icon_state = "cave3"
 	},
 /area/vtm/outside/forest)
+"cx" = (
+/obj/machinery/light/warm/directional/north,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
+"cy" = (
+/obj/structure/closet/cabinet{
+	icon = 'icons/obj/storage/closet.dmi'
+	},
+/obj/machinery/light/warm/directional/north,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
+"cz" = (
+/obj/structure/table/rolling/darkpack,
+/obj/machinery/light/warm/directional/north,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "cA" = (
 /obj/structure/bed/dogbed,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/sept)
+"cB" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "cC" = (
 /obj/effect/decal/coastline{
 	dir = 4
@@ -549,6 +950,15 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest/sept)
+"cD" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "cE" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -572,25 +982,83 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/bawn_lodge)
+"cG" = (
+/turf/open/water/beach,
+/area/vtm/outside/forest)
 "cH" = (
 /obj/structure/chair/sofa/booth_seat/right{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/forest/bawn_shelter)
+"cI" = (
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"cJ" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 2
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "cK" = (
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/forest/bawn_shelter)
+"cL" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 2
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "cM" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/chaplainsuit/armor/studentuni,
 /obj/item/clothing/head/vampire/wizard/black,
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/forest/bawn_lodge)
+"cN" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"cO" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"cP" = (
+/obj/structure/closet/cabinet{
+	icon = 'icons/obj/storage/closet.dmi'
+	},
+/obj/machinery/light/warm/directional/south,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "cQ" = (
 /obj/machinery/light/small/pink/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cabin)
+"cR" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "cS" = (
 /turf/closed/wall/vampwall/wood,
 /area/vtm/interior/forest/cabin)
@@ -607,10 +1075,33 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/hotsprings)
+"cU" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"cV" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "cW" = (
 /obj/machinery/griddle,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
+"cX" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "cY" = (
 /obj/item/reagent_containers/cup/glass/shaker{
 	dir = 1;
@@ -651,22 +1142,54 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
+"de" = (
+/obj/effect/turf_decal/darkpack/sand/corner,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "df" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 5
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
+"dg" = (
+/obj/structure/table/rolling/darkpack,
+/obj/machinery/light/warm/directional/south,
+/turf/open/floor/stone,
+/area/vtm/interior/forest/cave)
 "dh" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/carpet/orange,
 /area/vtm/interior/forest/bawn_shelter)
+"di" = (
+/turf/closed/wall/vampwall/bar,
+/area/vtm/interior/forest/cave)
 "dj" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
+"dk" = (
+/obj/structure/flora/rock/darkpack_big,
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/outside/forest)
+"dl" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"dm" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dn" = (
 /obj/item/flashlight/lantern{
 	light_on = 1;
@@ -683,6 +1206,11 @@
 /obj/structure/table,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
+"dp" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/item/clothing/shoes/sandal/beach,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dq" = (
 /obj/effect/turf_decal/darkpack/cave/corner,
 /turf/open/floor/plating/rough,
@@ -717,6 +1245,12 @@
 /obj/item/chair/wood/darkpack,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/cabin)
+"dv" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dw" = (
 /obj/structure/sink/directional/south,
 /obj/structure/mirror/directional/north,
@@ -731,6 +1265,19 @@
 "dy" = (
 /turf/open/misc/grass/random,
 /area/vtm/outside/forest)
+"dz" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"dA" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dB" = (
 /obj/effect/decal/pallet,
 /obj/structure/table/wood,
@@ -739,6 +1286,9 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/sept)
+"dC" = (
+/turf/closed/wall/vampwall/bar,
+/area/vtm/outside/forest)
 "dD" = (
 /obj/effect/turf_decal/darkpack/rough/corner{
 	dir = 1
@@ -776,6 +1326,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/old,
 /area/vtm/interior/forest)
+"dI" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"dJ" = (
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dK" = (
 /obj/effect/turf_decal/darkpack/rough/corner{
 	dir = 4
@@ -787,6 +1346,12 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/sept)
+"dL" = (
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dM" = (
 /obj/structure/vampdoor/reinf{
 	lock_id = "saferoom"
@@ -796,6 +1361,12 @@
 /obj/effect/turf_decal/siding/beige,
 /turf/open/floor/stone,
 /area/vtm/interior/forest/bawn_shelter)
+"dN" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 1
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dO" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/darkpack/blacksilver,
@@ -814,6 +1385,21 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/misc/dirt,
 /area/vtm/interior/forest/bawn_lodge)
+"dR" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 1
+	},
+/obj/machinery/light/floor/lamppost/sidewalk{
+	pixel_x = 16
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"dS" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 5
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dT" = (
 /obj/structure/platform/lowwall/wood,
 /turf/open/floor/plating/rough/cave{
@@ -829,6 +1415,13 @@
 	},
 /turf/open/water/hot_spring,
 /area/vtm/interior/forest/hotsprings)
+"dV" = (
+/obj/effect/turf_decal/darkpack/sand,
+/obj/effect/turf_decal/darkpack/dirt{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dW" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 4
@@ -843,6 +1436,15 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
+"dY" = (
+/obj/effect/turf_decal/darkpack/dirt/corner,
+/obj/structure/railing/wooden_fence,
+/obj/effect/turf_decal/darkpack/sand,
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "dZ" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 1
@@ -864,6 +1466,14 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest/sept)
+"ec" = (
+/obj/structure/railing/wooden_fence,
+/obj/effect/turf_decal/darkpack/sand,
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "ed" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 1
@@ -877,6 +1487,30 @@
 /obj/item/flashlight/lantern{
 	light_on = 1;
 	start_on = 14
+	},
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/outside/forest)
+"ef" = (
+/obj/effect/turf_decal/darkpack/sand,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"eg" = (
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"eh" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"ei" = (
+/obj/structure/closet/cabinet{
+	icon = 'icons/obj/storage/closet.dmi'
 	},
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
@@ -897,6 +1531,18 @@
 	},
 /turf/open/misc/grass,
 /area/vtm/interior/forest/cave)
+"ek" = (
+/obj/effect/turf_decal/darkpack/dirt{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"el" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "em" = (
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /obj/machinery/jukebox/no_access,
@@ -946,11 +1592,23 @@
 	},
 /turf/open/misc/grass,
 /area/vtm/interior/forest/cave)
+"es" = (
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "et" = (
 /obj/structure/table,
 /obj/item/stack/cable_coil/five,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest/bawn_lodge)
+"eu" = (
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "ev" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -962,6 +1620,15 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"ew" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 1
+	},
+/obj/effect/turf_decal/darkpack/dirt{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "ex" = (
 /obj/structure/table,
 /obj/item/fishing_rod{
@@ -970,6 +1637,29 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
+/area/vtm/outside/forest)
+"ey" = (
+/obj/structure/railing/wooden_fence{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 1
+	},
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"ez" = (
+/obj/structure/railing/wooden_fence{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/stone,
 /area/vtm/outside/forest)
 "eA" = (
 /obj/effect/turf_decal/darkpack/dirt{
@@ -985,6 +1675,14 @@
 /mob/living/basic/cockroach/apoc,
 /turf/open/floor/wood/old,
 /area/vtm/interior/forest)
+"eC" = (
+/obj/effect/turf_decal/darkpack/sand/corner,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
+"eD" = (
+/obj/structure/curtain/bounty,
+/turf/open/floor/stone,
+/area/vtm/outside/forest)
 "eG" = (
 /obj/structure/glowshroom/glowcap,
 /obj/effect/turf_decal/darkpack/dirt{
@@ -1547,11 +2245,6 @@
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
 	},
-/area/vtm/outside/forest)
-"hx" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/misc/dirt,
 /area/vtm/outside/forest)
 "hz" = (
 /obj/structure/chair/wood/darkpack,
@@ -2341,10 +3034,6 @@
 "lr" = (
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
-"lt" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest)
 "lu" = (
 /obj/structure/dresser,
 /obj/item/flashlight/lantern{
@@ -3266,12 +3955,6 @@
 	},
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
-"pO" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/item/food/grown/flower/moonflower,
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest)
 "pP" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt,
@@ -4777,11 +5460,6 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/misc/dirt,
 /area/vtm/interior/forest/cave)
-"wq" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest)
 "wr" = (
 /obj/structure/spacevine{
 	opacity = 1;
@@ -5540,10 +6218,6 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/darkpack/greengold,
 /area/vtm/interior/forest/bawn_lodge)
-"zZ" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest)
 "Aa" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
@@ -7365,13 +8039,6 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/sept)
-"Is" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/effect/turf_decal/darkpack/dirt,
-/turf/open/misc/grass,
-/area/vtm/outside/forest)
 "It" = (
 /obj/structure/spacevine{
 	name = "vines"
@@ -9647,12 +10314,6 @@
 	},
 /turf/open/water/beach/vamp/deep,
 /area/vtm/outside/forest)
-"TW" = (
-/obj/effect/decal/remains/human,
-/turf/open/misc/beach/vamp{
-	icon_state = "sand3"
-	},
-/area/vtm/outside/forest)
 "TX" = (
 /obj/effect/turf_decal/darkpack/rough{
 	dir = 4
@@ -10309,10 +10970,6 @@
 	},
 /turf/open/genturf,
 /area/vtm/planetgeneration)
-"Xv" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/misc/dirt,
-/area/vtm/outside/forest)
 "Xw" = (
 /obj/effect/turf_decal/bordur/inverse,
 /obj/effect/turf_decal/darkpack/grass{
@@ -41115,7 +41772,7 @@ Qh
 Qh
 ze
 xG
-Xv
+je
 OO
 FP
 by
@@ -41313,7 +41970,7 @@ Qh
 rd
 Ez
 nQ
-lt
+je
 je
 Cl
 by
@@ -41512,12 +42169,12 @@ gH
 VP
 BE
 fm
-lt
+je
 Cl
 by
 OQ
 CT
-OQ
+CT
 OQ
 OQ
 OQ
@@ -41710,13 +42367,13 @@ ze
 rd
 ze
 ES
-lt
+je
 NQ
 by
 OQ
 CT
-OQ
-OQ
+CT
+CT
 OQ
 OQ
 OQ
@@ -41907,7 +42564,7 @@ gH
 ze
 FG
 ze
-Is
+ad
 je
 NQ
 by
@@ -42106,7 +42763,7 @@ rd
 ze
 GB
 nv
-zZ
+je
 Cl
 by
 OQ
@@ -42298,12 +42955,12 @@ je
 je
 je
 je
-hx
+je
 ay
 wa
 GB
 Ry
-lt
+je
 je
 Ho
 by
@@ -42496,11 +43153,11 @@ Yw
 Yw
 Ns
 dG
-pO
+je
 je
 IR
 Eg
-lt
+je
 je
 LC
 mT
@@ -42695,16 +43352,16 @@ AO
 zQ
 Ew
 dG
-wq
-lt
-lt
-Xv
+je
+je
+je
+je
 LC
 mT
 WC
 gG
 OQ
-OQ
+CT
 CT
 CT
 CT
@@ -42893,16 +43550,16 @@ OQ
 nF
 zQ
 Ew
-dG
-lt
-zZ
-LC
-mT
+cl
+ew
+ek
+dV
+cd
 us
 by
 OQ
-OQ
-OQ
+CT
+CT
 CT
 CT
 CT
@@ -43092,15 +43749,15 @@ OQ
 nF
 zQ
 Ew
-Ns
-Ns
-mT
+ey
+el
+dY
 hs
 WC
 gG
 OQ
-OQ
-OQ
+CT
+CT
 CT
 CT
 CT
@@ -43289,15 +43946,15 @@ CT
 OQ
 OQ
 nF
-AO
-AO
-AO
-AO
-AO
+dC
+dC
+dC
+dC
+dC
 gG
 OQ
-OQ
-OQ
+CT
+CT
 CT
 CT
 CT
@@ -43487,14 +44144,14 @@ CT
 CT
 OQ
 OQ
+di
+au
+aq
+au
+di
 OQ
-OQ
-OQ
-OQ
-OQ
-OQ
-OQ
-OQ
+CT
+CT
 CT
 CT
 CT
@@ -43684,14 +44341,14 @@ CT
 CT
 CT
 CT
-OQ
-OQ
-OQ
-OQ
-OQ
-OQ
-OQ
-OQ
+CT
+an
+au
+av
+au
+an
+CT
+CT
 CT
 CT
 CT
@@ -43883,14 +44540,14 @@ CT
 CT
 CT
 CT
+an
+au
+an
+au
+an
 CT
-CT
-CT
-CT
-CT
-CT
-CT
-CT
+OQ
+ac
 EH
 EH
 EH
@@ -44081,17 +44738,17 @@ CT
 CT
 CT
 CT
-CT
-CT
-CT
-CT
-CT
-CT
-CT
-EH
-EH
-EH
-EH
+an
+au
+an
+au
+an
+OQ
+ac
+Lt
+us
+us
+CL
 EH
 EH
 EH
@@ -44279,20 +44936,20 @@ CT
 CT
 CT
 CT
-CT
-CT
-CT
-CT
-CT
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+an
+au
+av
+au
+FK
+tD
+Lt
+us
+us
+us
+us
+us
+CL
+CL
 EH
 EH
 EH
@@ -44476,21 +45133,21 @@ CT
 CT
 CT
 CT
-CT
-CT
-CT
-CT
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+OQ
+di
+au
+FK
+au
+di
+Lt
+us
+us
+us
+cU
+cD
+cD
+ab
+CL
 EH
 EH
 EH
@@ -44671,24 +45328,24 @@ OQ
 OQ
 OQ
 OQ
-CT
-CT
-CT
-CT
-CT
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+OQ
+OQ
+OQ
+OQ
+dC
+dC
+dC
+dC
+dC
+us
+dk
+us
+Cx
+cV
+cG
+cG
+bm
+us
 EH
 EH
 EH
@@ -44869,24 +45526,24 @@ MA
 MA
 ph
 OQ
-CT
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+ac
+MA
+MA
+MA
+MA
+ez
+es
+ec
+us
+us
+us
+us
+Cx
+cV
+cG
+cG
+bm
+us
 EH
 EH
 EH
@@ -45063,29 +45720,29 @@ EH
 PL
 Mj
 us
-TW
+us
 EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+us
+us
+us
+ci
+dN
+dJ
+ef
+ci
+us
+us
+us
+us
+cX
+cN
+cI
+cB
+us
+us
 EH
 EH
 EH
@@ -45267,23 +45924,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cr
+dI
+dI
+eC
+dJ
+eg
+dI
+dl
+cD
+cD
+cD
+de
+cO
+cJ
+us
+us
+us
 EH
 EH
 EH
@@ -45465,23 +46122,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+ct
+dJ
+dJ
+dJ
+dJ
+dJ
+dJ
+dm
+bE
+bE
+bE
+bE
+bE
+bm
+us
+us
+us
 EH
 EH
 EH
@@ -45663,23 +46320,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cu
+eh
+dL
+dJ
+eu
+eh
+dL
+dm
+cc
+bE
+bE
+ai
+bE
+bm
+us
+us
+us
 EH
 EH
 EH
@@ -45862,22 +46519,22 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+bQ
+dC
+eD
+dC
+ei
+dN
+dp
+bE
+bE
+bE
+bE
+bE
+bm
+sJ
+us
+us
 EH
 EH
 EH
@@ -46060,22 +46717,22 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+us
+dC
+aH
+dC
+ei
+dR
+dv
+cN
+cN
+cN
+cN
+cN
+cL
+sJ
+us
+us
 EH
 EH
 EH
@@ -46259,21 +46916,21 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+dC
+dC
+dC
+ei
+dN
+dz
+cO
+cO
+cO
+cO
+cO
+cJ
+sJ
+us
+us
 EH
 EH
 EH
@@ -46458,20 +47115,20 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+us
+us
+us
+dN
+dm
+bE
+bE
+bE
+bE
+bE
+bm
+sJ
+us
+us
 EH
 EH
 EH
@@ -46657,18 +47314,18 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+us
+us
+dN
+dm
+cc
+bE
+bE
+ai
+bE
+bm
+us
+us
 EH
 EH
 EH
@@ -46855,18 +47512,18 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+us
+us
+dN
+dm
+bE
+bE
+bE
+bE
+bE
+bm
+us
+us
 EH
 EH
 EH
@@ -47054,16 +47711,16 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+us
+dS
+dA
+cR
+cN
+cN
+cN
+cR
+cB
+us
 EH
 EH
 EH
@@ -47253,15 +47910,15 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+us
+us
+us
+dJ
+dJ
+dJ
+us
+us
+CL
 EH
 EH
 EH
@@ -47454,9 +48111,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
+aI
+aI
+aI
 EH
 EH
 EH
@@ -47645,23 +48302,23 @@ EH
 EH
 EH
 EH
+aI
+aI
+aI
+aI
+aI
+bK
 EH
+aI
+bV
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+bK
+aI
+aI
+aI
+aI
+bh
 EH
 EH
 EH
@@ -47843,23 +48500,23 @@ EH
 EH
 EH
 EH
+bP
+bz
+bs
+bs
+bn
+ag
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cx
+bz
+bs
+bs
+bn
+ag
 EH
 EH
 EH
@@ -48041,23 +48698,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cp
+bB
+bw
+bw
+bo
+aI
+bU
+aI
+aI
+aI
+bU
+aI
+bB
+bw
+bw
+bo
+bj
 EH
 EH
 EH
@@ -48239,23 +48896,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cp
+bB
+bw
+bw
+bo
+aI
+bU
+aI
+aI
+aI
+bU
+aI
+bB
+bw
+bw
+bo
+bj
 EH
 EH
 EH
@@ -48437,23 +49094,23 @@ EH
 EH
 EH
 EH
+cx
+bG
+bx
+bx
+bq
+ag
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cx
+bG
+bx
+bx
+bq
+ag
 EH
 EH
 EH
@@ -48635,23 +49292,23 @@ EH
 EH
 EH
 EH
+aI
+aI
+aI
+aI
+aI
+bN
 EH
+aI
+bV
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+bN
+aI
+aI
+aI
+aI
+aI
 EH
 EH
 EH
@@ -48840,9 +49497,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
+aI
+aI
+aI
 EH
 EH
 EH
@@ -49031,23 +49688,23 @@ EH
 EH
 EH
 EH
+aI
+aI
+aI
+aI
+aI
+bK
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+bK
+aI
+aI
+aI
+aI
+bh
 EH
 EH
 EH
@@ -49229,23 +49886,23 @@ EH
 EH
 EH
 EH
+bP
+bz
+bs
+bs
+bn
+ag
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cx
+bz
+bs
+bs
+bn
+ag
 EH
 EH
 EH
@@ -49427,23 +50084,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cp
+bB
+bw
+bw
+bo
+aI
+bU
+aI
+aI
+aI
+bU
+aI
+bB
+bw
+bw
+bo
+bj
 EH
 EH
 EH
@@ -49625,23 +50282,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cp
+bB
+bw
+bw
+bo
+aI
+bU
+aI
+bV
+aI
+bU
+aI
+bB
+bw
+bw
+bo
+bj
 EH
 EH
 EH
@@ -49823,23 +50480,23 @@ EH
 EH
 EH
 EH
+cx
+bG
+bx
+bx
+bq
+ag
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cx
+bG
+bx
+bx
+bq
+ag
 EH
 EH
 EH
@@ -50021,23 +50678,23 @@ EH
 EH
 EH
 EH
+aI
+aI
+aI
+aI
+aI
+bN
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+bN
+aI
+aI
+aI
+aI
+aI
 EH
 EH
 EH
@@ -50226,9 +50883,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
+aI
+aI
+aI
 EH
 EH
 EH
@@ -50417,23 +51074,23 @@ EH
 EH
 EH
 EH
+bP
+bz
+bs
+bs
+bn
+cP
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cy
+bz
+bs
+bs
+bn
+bM
 EH
 EH
 EH
@@ -50615,23 +51272,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cp
+bB
+bw
+bw
+bo
+aI
+bU
+aI
+bV
+aI
+bU
+aI
+bB
+bw
+bw
+bo
+bj
 EH
 EH
 EH
@@ -50813,23 +51470,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cp
+bB
+bw
+bw
+bo
+aI
+bU
+aI
+aI
+aI
+bU
+aI
+bB
+bw
+bw
+bo
+bj
 EH
 EH
 EH
@@ -51011,23 +51668,23 @@ EH
 EH
 EH
 EH
+cx
+bG
+bx
+bx
+bq
+dg
 EH
+aI
+aI
+aI
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+cz
+bG
+bx
+bx
+bq
+ag
 EH
 EH
 EH
@@ -63684,11 +64341,11 @@ vv
 vv
 vv
 vv
-vv
-vv
-vv
-vv
-vv
+aR
+aE
+aE
+aE
+ax
 vv
 vv
 vv
@@ -63882,11 +64539,11 @@ vv
 vv
 vv
 vv
-vv
-vv
-vv
-vv
-vv
+aT
+dJ
+dJ
+dJ
+aj
 vv
 vv
 vv
@@ -64080,11 +64737,11 @@ vv
 vv
 vv
 vv
-vv
-vv
-vv
-vv
-vv
+aZ
+dJ
+dJ
+dJ
+bg
 vv
 vv
 vv
@@ -64278,11 +64935,11 @@ vv
 vv
 vv
 vv
-vv
-vv
-vv
-vv
-vv
+bb
+dJ
+dJ
+dJ
+aA
 vv
 vv
 vv
@@ -64476,17 +65133,17 @@ vv
 vv
 vv
 vv
+bc
+dJ
+dJ
+dJ
+aA
 vv
 vv
 vv
 vv
 vv
 vv
-vv
-EH
-EH
-EH
-EH
 EH
 EH
 EH
@@ -64674,20 +65331,20 @@ vv
 vv
 vv
 vv
+aT
+dJ
+dJ
+dJ
+aj
 vv
 vv
 vv
 vv
 vv
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -64872,20 +65529,20 @@ vv
 vv
 vv
 vv
+aZ
+dJ
+dJ
+dJ
+bg
 vv
 vv
 vv
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -65070,20 +65727,20 @@ vv
 vv
 vv
 vv
+bf
+aM
+aM
+aM
+aC
 vv
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -65265,23 +65922,23 @@ vv
 vv
 vv
 vv
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -65463,24 +66120,24 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -65662,23 +66319,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -65860,23 +66517,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -66058,23 +66715,23 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -66257,22 +66914,22 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -66455,22 +67112,22 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -66654,21 +67311,21 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -66853,20 +67510,20 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -67052,18 +67709,18 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -67250,18 +67907,18 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -67449,16 +68106,16 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
@@ -67648,15 +68305,15 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
+vv
 EH
 EH
 EH
