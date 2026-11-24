@@ -178,7 +178,7 @@
 "aA" = (
 /obj/structure/vampdoor/simple,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/trail_holder,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "aB" = (
@@ -1387,8 +1387,6 @@
 "eg" = (
 /obj/effect/turf_decal/bordur,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/blood/trail,
 /obj/effect/decal/cleanable/blood/trail_holder,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/penumbra/shadowlands)
@@ -10273,8 +10271,6 @@
 /area/vtm/interior/penumbra/shadowlands)
 "XL" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/blood/tracks,
-/obj/effect/decal/cleanable/blood/trail,
 /obj/effect/decal/cleanable/blood/trail_holder,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/penumbra/shadowlands)
