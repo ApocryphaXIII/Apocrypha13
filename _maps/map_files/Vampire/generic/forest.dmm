@@ -45,27 +45,12 @@
 /obj/structure/railing,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/cave)
-"ag" = (
-/obj/warehouse_generator{
-	pixel_x = 0;
-	pixel_y = 17
-	},
-/obj/item/gas_can{
-	pixel_x = -10;
-	pixel_y = -8
-	},
-/obj/effect/decal/rugs,
-/turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
 "ah" = (
 /obj/effect/turf_decal/darkpack/cave/corner{
 	dir = 8
 	},
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass/random/grass,
-/area/vtm/interior/forest/cave)
-"ai" = (
-/turf/open/floor/plating/concrete,
 /area/vtm/interior/forest/cave)
 "ak" = (
 /obj/structure/noticeboard{
@@ -143,10 +128,8 @@
 	id = "firingrange"
 	},
 /obj/item/target,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "aw" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/dirt/corner{
@@ -287,6 +270,18 @@
 	},
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/bawn_lodge)
+"aZ" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/bottle/beer/almost_empty,
+/obj/item/flashlight/lantern{
+	light_on = 1;
+	start_on = 14
+	},
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "ba" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -446,7 +441,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "bX" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 8
@@ -850,6 +845,12 @@
 /obj/effect/turf_decal/siding/beige,
 /turf/open/floor/stone,
 /area/vtm/interior/forest/bawn_shelter)
+"dN" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "dO" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/darkpack/blacksilver,
@@ -1019,7 +1020,7 @@
 "ex" = (
 /obj/effect/turf_decal/bordur/inverse,
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "eA" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -1034,6 +1035,14 @@
 /mob/living/basic/cockroach/apoc,
 /turf/open/floor/wood/old,
 /area/vtm/interior/forest)
+"eF" = (
+/obj/structure/bonfire/prelit/fire_barrel,
+/obj/effect/realistic_fog/dense,
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 6
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "eG" = (
 /obj/structure/glowshroom/glowcap,
 /obj/effect/turf_decal/darkpack/dirt{
@@ -1121,6 +1130,10 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"ff" = (
+/obj/item/target/alien/anchored,
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "fg" = (
 /obj/structure/table/countertop/bubway,
 /obj/machinery/chem_dispenser/drinks{
@@ -1613,10 +1626,8 @@
 	dir = 8;
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "hD" = (
 /obj/structure/flora/rock/darkpack_big,
 /turf/open/misc/dirt,
@@ -1631,6 +1642,12 @@
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/outside/forest)
+"hK" = (
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "hL" = (
 /mob/living/basic/cockroach/apoc,
 /turf/open/floor/wood/smooth/old,
@@ -2189,7 +2206,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "kn" = (
 /obj/effect/turf_decal/asphaltline/alt{
 	dir = 8
@@ -2538,10 +2555,8 @@
 	dir = 4;
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "mj" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/cosmos/double,
@@ -2699,7 +2714,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "mW" = (
 /obj/structure/platform/lowwall/wood,
 /turf/open/floor/wood/rough,
@@ -2903,10 +2918,8 @@
 	dir = 1;
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "nW" = (
 /turf/open/misc/beach/vamp{
 	icon_state = "sand3"
@@ -3300,7 +3313,7 @@
 	},
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "pL" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 9
@@ -3422,10 +3435,8 @@
 /obj/machinery/conveyor{
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "qp" = (
 /obj/structure/stone_tile/slab,
 /turf/open/floor/wood/smooth/old,
@@ -3798,6 +3809,12 @@
 	dir = 4
 	},
 /area/vtm/interior/forest)
+"rQ" = (
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "rR" = (
 /obj/effect/turf_decal/darkpack/rough/corner{
 	dir = 4
@@ -4265,6 +4282,12 @@
 /obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/vtm/interior/forest/cave)
+"ud" = (
+/obj/item/target/alien/anchored,
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/interior/gunrange)
 "ue" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 1
@@ -4751,16 +4774,13 @@
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
 "wb" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door/directional/north{
 	id = "shootingrange";
 	pixel_x = 0;
 	pixel_y = 20
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "wc" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 10
@@ -5279,7 +5299,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "ye" = (
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/cave)
@@ -5608,14 +5628,10 @@
 	},
 /area/vtm/interior/forest/cave)
 "Ab" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sign/poster/contraband/revolver/directional/west,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Ac" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
 /obj/item/clothing/ears/earmuffs,
 /obj/item/clothing/glasses/vampire/yellow,
@@ -5623,16 +5639,11 @@
 	dir = 4;
 	id = "shootingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Ad" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Ae" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 1
@@ -5641,20 +5652,15 @@
 /area/vtm/planetgeneration)
 "Af" = (
 /obj/effect/decal/cleanable/garbage,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Ag" = (
 /obj/machinery/conveyor{
 	dir = 1;
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Ah" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 6
@@ -5674,10 +5680,8 @@
 	id = "firingrange"
 	},
 /obj/item/target,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Ak" = (
 /obj/fusebox,
 /turf/open/floor/stone,
@@ -5708,7 +5712,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Ap" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -5748,7 +5752,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Av" = (
 /obj/effect/turf_decal/darkpack/cave{
 	dir = 5
@@ -5813,36 +5817,24 @@
 	is_flipped = 1;
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AG" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/trash/big,
 /obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AH" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/realistic_fog/dense,
 /obj/structure/bonfire/prelit/fire_barrel,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AI" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 4
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AJ" = (
 /obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/vamp{
@@ -5850,12 +5842,11 @@
 	},
 /area/vtm/outside/forest)
 "AK" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/item/broken_bottle,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "AL" = (
 /obj/machinery/light/small/directional/north,
 /obj/machinery/vending/cola{
@@ -5868,15 +5859,12 @@
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "AM" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door/directional/north{
 	id = "shootingrange";
 	pixel_x = 0
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AN" = (
 /obj/effect/turf_decal/darkpack/dirt/corner{
 	dir = 4
@@ -5905,21 +5893,14 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/bawn_lodge)
 "AS" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/directional/east,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AT" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/directional/west,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AU" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/trashcart/laundry{
 	name = "Brass Bin";
 	desc = "A repurposed laundry cart with a sign crudely stapled to it, dubbing it the Brass Bin."
@@ -5928,40 +5909,35 @@
 	name = "Brass";
 	desc = "A colorful kingsnake that smells like gunpowder. He loves to curl up in piles of warm spent brass. You wouldn't deprive him of his favorite bedding by not picking up your brass, would you?"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AV" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/fence/door{
 	dir = 4
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AW" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/fence/end,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 4
 	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AX" = (
 /obj/structure/table/wood,
 /obj/effect/decal/pallet,
 /turf/open/misc/dirt,
 /area/vtm/outside/forest/sept)
 "AY" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/fence/end{
 	dir = 1
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
+/obj/effect/turf_decal/darkpack/sand/corner{
+	dir = 1
 	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "AZ" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/effect/turf_decal/darkpack/cave{
@@ -6148,11 +6124,8 @@
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "BB" = (
 /obj/effect/turf_decal/darkpack/dirt,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -6379,7 +6352,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Ce" = (
 /obj/structure/closet,
 /obj/item/mop,
@@ -6400,7 +6373,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Ch" = (
 /obj/structure/fake_stairs/stone{
 	dir = 4
@@ -6409,7 +6382,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Ci" = (
 /obj/structure/fake_stairs/stone{
 	dir = 4
@@ -6421,7 +6394,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Cj" = (
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating/rough/cave{
@@ -6461,7 +6434,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Co" = (
 /obj/structure/vampdoor/wood,
 /obj/effect/mapping_helpers/door/access/park_ranger,
@@ -6529,14 +6502,14 @@
 	dir = 8
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Cy" = (
 /obj/effect/turf_decal/bordur,
 /obj/effect/turf_decal/bordur{
 	dir = 4
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Cz" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
@@ -6549,27 +6522,19 @@
 /area/vtm/outside/forest)
 "CB" = (
 /obj/item/target/alien/anchored,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/obj/effect/turf_decal/darkpack/sand,
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "CC" = (
 /obj/item/target/alien/anchored,
 /obj/effect/decal/cleanable/food/egg_smudge,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "CD" = (
 /obj/item/target/alien/anchored,
 /obj/effect/decal/cleanable/food/tomato_smudge,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "CE" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 10
@@ -6588,12 +6553,9 @@
 /area/vtm/outside/forest)
 "CG" = (
 /obj/structure/bonfire/prelit/fire_barrel,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/realistic_fog/dense,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "CH" = (
 /obj/structure/dresser{
 	icon = 'icons/obj/storage/crates.dmi';
@@ -6713,11 +6675,8 @@
 	name = "Steve";
 	desc = "Steve, the mouthpiece of God...when it comes to the local firing range and its rules."
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "CS" = (
 /obj/effect/decal/coastline/corner{
 	dir = 1
@@ -6826,11 +6785,8 @@
 /obj/effect/turf_decal/bordur{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Dg" = (
 /obj/structure/decoration/rock,
 /obj/effect/decal/garou_glyph/conceal,
@@ -6851,7 +6807,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Di" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -6862,7 +6818,7 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Dj" = (
 /obj/structure/railing{
 	dir = 8
@@ -6873,11 +6829,11 @@
 /turf/open/floor/plating/rough/cave{
 	icon_state = "cave3"
 	},
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Dk" = (
 /obj/structure/sign/poster/official/safety_eye_protection/directional/west,
-/turf/closed/wall/vampwall/rock,
-/area/vtm/interior/forest/cave)
+/turf/closed/wall/vampwall/dirtywood,
+/area/vtm/interior/gunrange)
 "Dl" = (
 /obj/structure/railing/darkpack/wood/ending{
 	dir = 9;
@@ -6910,8 +6866,8 @@
 /area/vtm/outside/forest/sept)
 "Dp" = (
 /obj/structure/sign/poster/official/twelve_gauge/directional/west,
-/turf/closed/wall/vampwall/rock,
-/area/vtm/interior/forest/cave)
+/turf/closed/wall/vampwall/dirtywood,
+/area/vtm/interior/gunrange)
 "Dq" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 1
@@ -6975,7 +6931,7 @@
 "Dz" = (
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "DA" = (
 /obj/structure/flora/rock/pile/darkpack,
 /obj/structure/flora/bush/flowers_pp/style_random,
@@ -7215,7 +7171,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Ef" = (
 /obj/effect/turf_decal/darkpack/dirt/corner,
 /turf/open/genturf,
@@ -7311,21 +7267,16 @@
 	dir = 4;
 	id = "shootingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "ED" = (
 /obj/structure/table/wood,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/item/picket_sign{
 	name = "Steve's Rules";
 	desc = "1: BE VISIBLE AT ALL TIMES. 2: NEVER FIRE DOWNRANGE WHEN SOMEONE IS OUT THERE. 3: NEVER WALK DOWNRANGE WHEN SOMEONE IS FIRING. 4: CLEAN UP AFTER YOURSELF. 5: HAVE FUN :)"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "EE" = (
 /obj/effect/turf_decal/darkpack/grass/corner{
 	dir = 8
@@ -7337,16 +7288,13 @@
 /area/vtm/outside/forest/sept)
 "EF" = (
 /obj/structure/table/wood,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/cup/glass/bottle/beer/almost_empty,
 /obj/item/flashlight/lantern{
 	light_on = 1;
 	start_on = 14
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "EG" = (
 /obj/structure/flora/rock/pile/darkpack,
 /obj/effect/turf_decal/darkpack/grass{
@@ -7364,15 +7312,12 @@
 /obj/item/clothing/mask/whistle,
 /obj/item/clothing/mask/whistle,
 /obj/item/clothing/mask/whistle,
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/medkit/darkpack/standard{
 	pixel_x = 8;
 	pixel_y = 10
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "EJ" = (
 /obj/structure/table/wood,
 /obj/item/clothing/suit/hazardvest,
@@ -7380,11 +7325,8 @@
 /obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/suit/hazardvest,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "EK" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 6
@@ -7402,11 +7344,8 @@
 	is_flipped = 1;
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "EM" = (
 /obj/structure/table,
 /obj/item/fishing_rod{
@@ -7417,15 +7356,12 @@
 	},
 /area/vtm/outside/forest)
 "EN" = (
-/obj/structure/tire/big,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/obj/effect/turf_decal/darkpack/sand,
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "EO" = (
 /turf/closed/wall/vampwall/metal/glass,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "EP" = (
 /turf/closed/wall/vampwall/wood,
 /area/vtm/outside/forest)
@@ -7457,10 +7393,10 @@
 	dir = 10
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "EW" = (
 /turf/open/openspace,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "EX" = (
 /turf/open/floor/plating/rough,
 /area/vtm/interior/forest/sept)
@@ -7476,7 +7412,7 @@
 	dir = 4
 	},
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Fa" = (
 /obj/effect/mapping_helpers/door/access/park_ranger,
 /obj/effect/mapping_helpers/door/lock,
@@ -7558,6 +7494,9 @@
 	},
 /turf/open/misc/grass/random/grass,
 /area/vtm/interior/forest/cave)
+"Fn" = (
+/turf/closed/wall/vampwall/dirtywood,
+/area/vtm/interior/gunrange)
 "Fp" = (
 /obj/structure/chair/sofa/city_bench/wood/right{
 	dir = 1
@@ -7587,6 +7526,12 @@
 	},
 /turf/open/water/river,
 /area/vtm/interior/forest/cave)
+"FA" = (
+/obj/structure/tire/big,
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/interior/gunrange)
 "FC" = (
 /obj/effect/turf_decal/darkpack/grass/corner,
 /obj/effect/turf_decal/darkpack/grass/corner{
@@ -7670,6 +7615,13 @@
 	icon_state = "sand3"
 	},
 /area/vtm/outside/forest)
+"FS" = (
+/obj/structure/bonfire/prelit/fire_barrel,
+/obj/effect/realistic_fog/dense,
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/interior/gunrange)
 "FT" = (
 /turf/open/floor/wood/smooth/old,
 /area/vtm/outside/forest)
@@ -7813,6 +7765,11 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/sept)
+"Gs" = (
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/interior/gunrange)
 "Gt" = (
 /obj/structure/fireplace{
 	dir = 4
@@ -7989,7 +7946,7 @@
 	},
 /obj/effect/turf_decal/bordur,
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Hj" = (
 /obj/effect/turf_decal/darkpack/grass,
 /obj/structure/spacevine{
@@ -8376,10 +8333,8 @@
 	id = "firingrange"
 	},
 /obj/item/target,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Jn" = (
 /obj/structure/toilet{
 	dir = 8
@@ -8696,10 +8651,8 @@
 	dir = 10;
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "KO" = (
 /obj/effect/turf_decal/siding/wood/dark{
 	dir = 4
@@ -8769,10 +8722,8 @@
 	dir = 9;
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Lt" = (
 /obj/effect/decal/coastline/corner,
 /turf/open/misc/beach/vamp{
@@ -9182,14 +9133,11 @@
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "Nl" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/conveyor_switch{
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Nn" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 9
@@ -9529,7 +9477,7 @@
 	dir = 8
 	},
 /turf/open/misc/dirt,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Pc" = (
 /turf/open/misc/grass/random/grass,
 /area/vtm/outside/forest)
@@ -9593,6 +9541,12 @@
 /obj/structure/coclock,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/forest/cabin)
+"Po" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 6
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "Pp" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 6
@@ -9746,7 +9700,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/concrete,
-/area/vtm/interior/forest/cave)
+/area/vtm/interior/gunrange)
 "Qe" = (
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 9
@@ -9898,6 +9852,12 @@
 	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
+"QU" = (
+/obj/structure/barricade/sandbags,
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/interior/gunrange)
 "QW" = (
 /obj/effect/turf_decal/darkpack/dirt{
 	dir = 10
@@ -10714,10 +10674,8 @@
 	id = "firingrange"
 	},
 /obj/item/target,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "UT" = (
 /obj/effect/turf_decal/darkpack/sand/corner,
 /turf/open/floor/plating/concrete,
@@ -10880,6 +10838,12 @@
 /obj/machinery/oven/range,
 /turf/open/floor/iron/checker,
 /area/vtm/interior/forest/bawn_lodge)
+"VK" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 1
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "VL" = (
 /obj/effect/turf_decal/darkpack/grass{
 	dir = 8
@@ -11041,6 +11005,14 @@
 	icon_state = "cave3"
 	},
 /area/vtm/interior/forest/cave)
+"WI" = (
+/obj/structure/bonfire/prelit/fire_barrel,
+/obj/effect/realistic_fog/dense,
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 5
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "WK" = (
 /mob/living/basic/cockroach/apoc,
 /turf/open/floor/plating/rough/cave{
@@ -11144,6 +11116,17 @@
 /obj/item/toy/plush/unicorn,
 /turf/open/floor/carpet/darkpack/hotel,
 /area/vtm/interior/forest/bawn_lodge)
+"Xg" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/bottle/beer/almost_empty,
+/obj/item/flashlight/lantern{
+	light_on = 1;
+	start_on = 14
+	},
+/turf/open/misc/beach/vamp{
+	icon_state = "sand3"
+	},
+/area/vtm/interior/gunrange)
 "Xh" = (
 /turf/closed/wall/vampwall/city,
 /area/vtm/interior/forest/cave)
@@ -11259,10 +11242,8 @@
 	dir = 5;
 	id = "firingrange"
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
-/area/vtm/interior/forest/cave)
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "XH" = (
 /obj/effect/turf_decal/darkpack/grass,
 /turf/open/floor/plating/rough/cave{
@@ -11731,6 +11712,12 @@
 	},
 /turf/open/floor/carpet/darkpack/purplegold,
 /area/vtm/interior/forest/bawn_lodge)
+"ZR" = (
+/obj/effect/turf_decal/darkpack/sand{
+	dir = 5
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior/gunrange)
 "ZU" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/carpet/darkpack/redsilver,
@@ -12320,20 +12307,20 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
 EH
 EH
 EH
@@ -12518,7 +12505,7 @@ EH
 EH
 EH
 EH
-EH
+Fn
 bW
 km
 km
@@ -12531,8 +12518,8 @@ Ad
 Ad
 AT
 Ad
-EH
-EH
+Fn
+Fn
 EH
 EH
 EH
@@ -12716,7 +12703,7 @@ EH
 EH
 EH
 EH
-EH
+Fn
 Qd
 Di
 Di
@@ -12730,7 +12717,7 @@ Ad
 Ad
 Ad
 Ad
-EH
+Fn
 EH
 EH
 EH
@@ -12914,12 +12901,12 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
 Ad
 Ad
 Ad
@@ -12928,8 +12915,8 @@ Ad
 Ad
 Ad
 Ad
-EH
-EH
+Fn
+Fn
 EH
 EH
 EH
@@ -13116,18 +13103,18 @@ EH
 EH
 EH
 EH
-ai
-ag
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
 EH
+Fn
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Fn
 EH
 EH
 EH
@@ -13314,8 +13301,8 @@ EH
 EH
 EH
 EH
-EH
-EH
+Fn
+Fn
 Ad
 Ad
 Ad
@@ -13325,8 +13312,8 @@ Ad
 Ad
 Ad
 Ad
-EH
-EH
+Fn
+Fn
 EH
 EH
 EH
@@ -13511,8 +13498,8 @@ EH
 EH
 EH
 EH
-EH
-EH
+Fn
+Fn
 AG
 Ad
 Ad
@@ -13524,7 +13511,7 @@ Ad
 Ad
 Ad
 AU
-EH
+Fn
 EH
 EH
 EH
@@ -13709,7 +13696,7 @@ EH
 EH
 EH
 EH
-EH
+Fn
 Ad
 Ad
 Ad
@@ -13722,7 +13709,7 @@ Ad
 Ad
 Ad
 Ad
-EH
+Fn
 EH
 EH
 EH
@@ -13920,8 +13907,8 @@ Ad
 Ad
 Ad
 Ad
-EH
-EH
+Fn
+Fn
 EH
 EH
 EH
@@ -14104,7 +14091,7 @@ EH
 EH
 EH
 EH
-EH
+Fn
 Dp
 Ad
 Ad
@@ -14119,8 +14106,8 @@ Ad
 Ad
 Ad
 Af
-EH
-EH
+Fn
+Fn
 EH
 EH
 Vj
@@ -14302,7 +14289,7 @@ EH
 EH
 EH
 EH
-EH
+Fn
 Ab
 Ad
 Ad
@@ -14318,7 +14305,7 @@ Ad
 Ad
 Ad
 Ad
-EH
+Fn
 EH
 EH
 Vj
@@ -14499,8 +14486,8 @@ EH
 EH
 EH
 EH
-EH
-EH
+Fn
+Fn
 AM
 Ad
 AS
@@ -14516,8 +14503,8 @@ Ad
 AS
 Ad
 Ad
-EH
-EH
+Fn
+Fn
 EH
 Vj
 "}
@@ -14697,7 +14684,7 @@ EH
 EH
 EH
 EH
-EH
+Fn
 AH
 Ad
 Ad
@@ -14715,7 +14702,7 @@ EO
 wb
 Ad
 AH
-EH
+Fn
 EH
 Vj
 "}
@@ -14894,8 +14881,8 @@ EH
 EH
 EH
 EH
-EH
-EH
+Fn
+Fn
 AY
 AV
 AV
@@ -14913,8 +14900,8 @@ EO
 AV
 AV
 AW
-EH
-EH
+Fn
+Fn
 Vj
 "}
 (17,1,1) = {"
@@ -15092,9 +15079,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+VK
 Ad
 Ad
 EC
@@ -15111,8 +15098,8 @@ EC
 Ad
 Ad
 EN
-EH
-EH
+QU
+Fn
 Vj
 "}
 (18,1,1) = {"
@@ -15290,9 +15277,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+VK
 Ad
 BA
 Ad
@@ -15305,12 +15292,12 @@ Ad
 Ad
 Ad
 Ad
-Nr
+Ad
 BA
 Ad
 EN
-EH
-EH
+QU
+Fn
 Vj
 "}
 (19,1,1) = {"
@@ -15488,9 +15475,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+VK
 Ad
 XG
 ql
@@ -15507,8 +15494,8 @@ ql
 Ls
 Ad
 EN
-EH
-EH
+QU
+Fn
 Vj
 "}
 (20,1,1) = {"
@@ -15686,9 +15673,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+VK
 Ad
 hC
 Ad
@@ -15701,12 +15688,12 @@ Ad
 Ad
 Ad
 Ad
-CB
+ff
 mg
 Ad
 EN
-EH
-EH
+QU
+Fn
 Vj
 "}
 (21,1,1) = {"
@@ -15884,9 +15871,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+VK
 Ad
 hC
 Ad
@@ -15903,8 +15890,8 @@ Ad
 Jm
 Ad
 EN
-EH
-EH
+QU
+Fn
 Vj
 "}
 (22,1,1) = {"
@@ -16082,9 +16069,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+VK
 CG
 US
 Ag
@@ -16101,8 +16088,8 @@ Ag
 KN
 CG
 EN
-EH
-EH
+QU
+Fn
 Vj
 "}
 (23,1,1) = {"
@@ -16280,9 +16267,9 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+VK
 Ad
 Ad
 CC
@@ -16299,8 +16286,8 @@ Ad
 Ad
 Ad
 EN
-EH
-EH
+QU
+Fn
 Vj
 "}
 (24,1,1) = {"
@@ -16478,10 +16465,10 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
-Ad
+Fn
+QU
+ZR
+hK
 Ad
 Ad
 Ad
@@ -16495,10 +16482,10 @@ Ad
 EF
 Ad
 Ad
-Ad
-EN
-EH
-EH
+rQ
+Po
+QU
+Fn
 Vj
 "}
 (25,1,1) = {"
@@ -16676,10 +16663,10 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
-Ad
+Fn
+QU
+FA
+VK
 Ad
 Ad
 Ad
@@ -16693,10 +16680,10 @@ Ad
 Ad
 Ad
 Ad
-Ad
 EN
-EH
-EH
+FA
+QU
+Fn
 Vj
 "}
 (26,1,1) = {"
@@ -16874,27 +16861,27 @@ EH
 EH
 EH
 EH
-EH
-EH
+Fn
+QU
+FA
+VK
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
 EN
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-EN
-EH
-EH
+FA
+QU
+Fn
 Vj
 "}
 (27,1,1) = {"
@@ -17072,27 +17059,27 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
+Fn
+QU
+FA
+VK
 Ad
 Ad
+Ad
+ff
+Ad
+Ad
+ff
+Ad
+Ad
+Ad
+ff
 Ad
 Ad
 CB
-Ad
-Ad
-CB
-Ad
-Ad
-Ad
-CB
-Ad
-Ad
-CB
-EN
-EH
-EH
+FA
+QU
+Fn
 Vj
 "}
 (28,1,1) = {"
@@ -17270,27 +17257,27 @@ EH
 EH
 EH
 EH
-EH
-EH
+Fn
+QU
+FA
+WI
+hK
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
+Ad
 EN
-CG
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-EN
-EH
-EH
+FA
+QU
+Fn
 Vj
 "}
 (29,1,1) = {"
@@ -17468,27 +17455,27 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
-EN
-Ad
-Ad
-EF
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-EF
-Ad
-Ad
-Ad
-CG
-EN
-EH
-EH
+Fn
+QU
+FA
+FA
+ZR
+dN
+aZ
+dN
+dN
+dN
+dN
+dN
+dN
+aZ
+dN
+dN
+dN
+eF
+FA
+QU
+Fn
 Vj
 "}
 (30,1,1) = {"
@@ -17666,27 +17653,27 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EN
-Ad
-Ad
-Ad
-Ad
-CB
-Ad
-Ad
-EF
-Ad
-Ad
-Ad
-Ad
-CB
-Ad
-EN
-EH
-EH
+Fn
+QU
+QU
+FA
+Gs
+Gs
+Gs
+Gs
+ud
+Gs
+Gs
+Xg
+Gs
+Gs
+Gs
+Gs
+ud
+Gs
+FA
+QU
+Fn
 Vj
 "}
 (31,1,1) = {"
@@ -17864,27 +17851,27 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EN
-EN
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
+Fn
+Fn
+QU
+FA
+FA
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
 AK
-Ad
-Ad
-Ad
-Ad
-Ad
-EN
-EN
-EH
-EH
+Gs
+Gs
+Gs
+Gs
+Gs
+FA
+FA
+QU
+Fn
 Vj
 "}
 (32,1,1) = {"
@@ -18063,26 +18050,26 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EN
-EN
-Ad
-Ad
-EF
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-EN
-EN
-EH
-EH
-EH
+Fn
+QU
+QU
+FA
+FA
+Gs
+Gs
+Xg
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+FA
+FA
+QU
+QU
+Fn
 Vj
 "}
 (33,1,1) = {"
@@ -18261,26 +18248,26 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EN
-CB
-Ad
-Ad
-Ad
-Ad
-CB
-Ad
-Ad
-EF
-Ad
-EN
-EH
-EH
-EH
-EH
+Fn
+Fn
+QU
+QU
+FA
+ud
+Gs
+Gs
+Gs
+Gs
+ud
+Gs
+Gs
+Xg
+Gs
+FA
+QU
+QU
+Fn
+Fn
 Vj
 "}
 (34,1,1) = {"
@@ -18460,24 +18447,24 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EN
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-EN
-EH
-EH
-EH
+Fn
+Fn
+QU
+FA
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+FA
+QU
+Fn
+Fn
 EH
 Vj
 "}
@@ -18659,22 +18646,22 @@ EH
 EH
 EH
 EH
-EH
-EH
-EN
-EN
-Ad
-Ad
-CB
-Ad
-Ad
-Ad
-CB
-Ad
-EN
-EN
-EH
-EH
+Fn
+QU
+FA
+FA
+Gs
+Gs
+ud
+Gs
+Gs
+Gs
+ud
+Gs
+FA
+FA
+QU
+Fn
 EH
 EH
 Vj
@@ -18857,22 +18844,22 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EN
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-Ad
-EN
-EH
-EH
-EH
+Fn
+QU
+QU
+FA
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+Gs
+FA
+QU
+QU
+Fn
 EH
 EH
 Vj
@@ -19055,22 +19042,22 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EN
-EN
-Ad
-Ad
-Ad
-CG
-Ad
-Ad
-Ad
-EN
-EH
-EH
-EH
+Fn
+Fn
+QU
+FA
+FA
+Gs
+Gs
+Gs
+FS
+Gs
+Gs
+Gs
+FA
+QU
+Fn
+Fn
 EH
 EH
 Vj
@@ -19254,20 +19241,20 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EN
-EN
-EN
-EN
-EN
-EN
-EN
-EN
-EH
-EH
-EH
+Fn
+QU
+QU
+FA
+FA
+FA
+FA
+FA
+FA
+FA
+FA
+QU
+QU
+Fn
 EH
 EH
 EH
@@ -19452,20 +19439,20 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EN
-EN
-EN
-EN
-EH
-EH
-EH
-EH
-EH
+Fn
+Fn
+QU
+QU
+QU
+FA
+FA
+FA
+FA
+QU
+QU
+QU
+Fn
+Fn
 EH
 EH
 EH
@@ -19651,18 +19638,18 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+Fn
+Fn
+Fn
+QU
+QU
+QU
+QU
+QU
+QU
+Fn
+Fn
+Fn
 EH
 EH
 EH
@@ -19851,14 +19838,14 @@ EH
 EH
 EH
 EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
-EH
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
+Fn
 EH
 EH
 EH
