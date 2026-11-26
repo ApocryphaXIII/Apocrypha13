@@ -8420,6 +8420,7 @@
 #include "modular_zapoc\modules\mapping\code\modular_rooms.dm"
 #include "modular_zapoc\modules\mapping\code\transfer_zones.dm"
 #include "modular_zapoc\modules\mobs\code\cockroach.dm"
+#include "modular_zapoc\modules\police_bearcat\code\bearcat.dm"
 #include "modular_zapoc\modules\server_stuff\code\avoid_admin_kick.dm"
 #include "modular_zapoc\modules\smites\code\crystal.dm"
 #include "modular_zapoc\modules\structures\formaldehyde_tank.dm"
