@@ -79,3 +79,11 @@
 /obj/structure/sign/plaques/deempisi : /obj/structure/sign/picture_frame/portrait {@OLD}
 
 /turf/open/floor/grass/fakebasalt : /turf/open/floor/fakebasalt
+
+/obj/item/storage/box/ingredients/random : /obj/item/storage/box/ingredients/wildcard {@OLD}
+/obj/item/storage/box/ingredients/vegetarian : /obj/item/storage/box/ingredients/wildcard {@OLD}
+/obj/item/storage/box/ingredients/fruity : /obj/item/storage/box/ingredients/wildcard {@OLD}
+/obj/item/storage/box/ingredients/carnivore : /obj/item/storage/box/ingredients/wildcard {@OLD}
+/obj/item/storage/box/ingredients/grains : /obj/item/storage/box/ingredients/wildcard {@OLD}
+/obj/item/storage/box/ingredients/italian : /obj/item/storage/box/ingredients/wildcard {@OLD}
+

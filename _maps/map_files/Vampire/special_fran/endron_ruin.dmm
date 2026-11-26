@@ -3050,7 +3050,7 @@
 "RR" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
-/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/milk{
 	name = "full cream milk"
@@ -3058,7 +3058,7 @@
 /obj/item/reagent_containers/condiment/milk{
 	name = "full cream milk"
 	},
-/obj/item/storage/box/ingredients/carnivore,
+/obj/item/storage/box/ingredients/wildcard,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/forest)
 "RS" = (
