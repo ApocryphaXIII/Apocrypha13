@@ -16,6 +16,18 @@
 	TEST_ASSERT_NOTEQUAL(toolbox.loc, to_smack.loc, "The toolbox should not have been placed on the table.")
 	TEST_ASSERT_NOTEQUAL(to_smack.get_integrity(), to_smack.max_integrity, "Table failed to take damage from being smacked.")
 
+/datum/unit_test/structure_table_flip_smoothing/Run()
+	var/obj/structure/table/table = EASY_ALLOCATE()
+	SSicon_smooth.add_to_queue(table)
+
+	table.flip_table(EAST)
+	TEST_ASSERT(table.is_flipped, "The table should be flipped.")
+	TEST_ASSERT(!(table.smoothing_flags & SMOOTH_QUEUED), "A flipped table should not remain queued for smoothing.")
+
+	table.unflip_table()
+	TEST_ASSERT(!table.is_flipped, "The table should be upright again.")
+	TEST_ASSERT(table.smoothing_flags & SMOOTH_QUEUED, "An upright table should be queued for smoothing again.")
+
 /// Tests that mobs are able to bash down barricades / structures by clicking on them.
 /datum/unit_test/structure_generic_bash
 

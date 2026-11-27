@@ -20,6 +20,12 @@
 /area/vtm/interior/forest/cave/bane
 	name = "Forbidden Burial Site"
 
+/area/vtm/interior/gunrange
+	name = "Forest Gun Range"
+	zone_type = ZONE_NO_MASQUERADE
+	sound_environment = SOUND_ENVIRONMENT_STONEROOM
+	musictracks = list('modular_darkpack/modules/ambience/sounds/music/open_season.ogg')
+
 /area/vtm/interior/forest/cabin
 	name = "Forest Cabin"
 

@@ -154,6 +154,8 @@
 			if(is_able_to_throw(src, movable_entity))
 				movable_entity.safe_throw_at(throw_target, range = 1, speed = 1, force = MOVE_FORCE_NORMAL, gentle = TRUE)
 
+	if(smoothing_flags & SMOOTH_QUEUED)
+		SSicon_smooth.remove_from_queues(src)
 	smoothing_flags &= ~SMOOTH_BITMASK
 	smoothing_groups = null
 	canSmoothWith = null
