@@ -831,13 +831,11 @@
 /area/vtm/interior/forest/hotsprings)
 "cr" = (
 /obj/machinery/shower/directional/south,
-/obj/structure/fluff/shower_drain,
 /obj/effect/turf_decal/darkpack/sand{
 	dir = 8
 	},
-/turf/open/floor/noslip{
-	icon_state = "stone_floor"
-	},
+/obj/structure/fluff/grate/drain,
+/turf/open/floor/stone,
 /area/vtm/outside/forest)
 "cs" = (
 /obj/item/flashlight/lantern{
@@ -854,20 +852,16 @@
 /area/vtm/outside/forest/sept)
 "ct" = (
 /obj/machinery/shower/directional/south,
-/obj/structure/fluff/shower_drain,
-/turf/open/floor/noslip{
-	icon_state = "stone_floor"
-	},
+/obj/structure/fluff/grate/drain,
+/turf/open/floor/stone,
 /area/vtm/outside/forest)
 "cu" = (
 /obj/machinery/shower/directional/south,
-/obj/structure/fluff/shower_drain,
 /obj/effect/turf_decal/darkpack/sand/corner{
 	dir = 4
 	},
-/turf/open/floor/noslip{
-	icon_state = "stone_floor"
-	},
+/obj/structure/fluff/grate/drain,
+/turf/open/floor/stone,
 /area/vtm/outside/forest)
 "cv" = (
 /obj/effect/turf_decal/darkpack/grass{
@@ -9716,6 +9710,7 @@
 /obj/structure/curtain{
 	pixel_x = 1
 	},
+/obj/structure/fluff/grate/drain,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/forest)
 "TC" = (
@@ -10447,7 +10442,7 @@
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
 /obj/item/storage/box/ingredients/wildcard,
-/obj/item/storage/box/ingredients/sweets,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
