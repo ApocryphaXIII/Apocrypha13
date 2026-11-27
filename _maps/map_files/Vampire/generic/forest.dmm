@@ -2095,9 +2095,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "kn" = (
 /obj/effect/turf_decal/asphaltline/alt{
@@ -2559,9 +2557,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "mW" = (
 /obj/structure/platform/lowwall/wood,
@@ -6013,9 +6009,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Ce" = (
 /obj/structure/closet,
@@ -6034,18 +6028,14 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Ch" = (
 /obj/structure/fake_stairs/stone{
 	dir = 4
 	},
 /obj/structure/railing,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Ci" = (
 /obj/structure/fake_stairs/stone{
@@ -6055,9 +6045,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Cj" = (
 /obj/structure/curtain/bounty,
@@ -6093,9 +6081,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Co" = (
 /obj/structure/vampdoor/wood,
@@ -6458,9 +6444,7 @@
 /obj/structure/stairs/stone{
 	dir = 1
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Di" = (
 /obj/structure/stairs/stone{
@@ -6469,9 +6453,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Dj" = (
 /obj/structure/railing{
@@ -6480,9 +6462,7 @@
 /obj/structure/stairs/stone{
 	dir = 1
 	},
-/turf/open/floor/plating/rough/cave{
-	icon_state = "cave3"
-	},
+/turf/open/floor/plating/rough/cave,
 /area/vtm/interior/gunrange)
 "Dk" = (
 /obj/structure/sign/poster/official/safety_eye_protection/directional/west,
@@ -10667,7 +10647,7 @@
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/storage/box/ingredients/american,
 /obj/item/storage/box/ingredients/wildcard,
-/obj/item/storage/box/ingredients/sweets,
+/obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
