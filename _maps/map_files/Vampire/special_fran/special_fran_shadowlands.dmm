@@ -235,10 +235,6 @@
 /area/vtm/interior/penumbra/shadowlands)
 "aH" = (
 /obj/structure/table/wood/fancy/red,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen,
 /obj/machinery/light/prince/broken/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/darkpack,
@@ -338,10 +334,7 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "ba" = (
 /obj/structure/table/countertop/beige,
-/obj/item/kirbyplants/darkpack/random{
-	pixel_x = -8;
-	pixel_y = 15
-	},
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -584,24 +577,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"bS" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_y = 7;
-	pixel_x = 8
-	},
-/obj/item/pen{
-	pixel_y = 8
-	},
-/obj/item/folder/blue{
-	pixel_x = -15;
-	pixel_y = 7
-	},
-/obj/effect/decal/wallpaper/blue/low,
-/obj/structure/platform/lowwall/painted,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "bU" = (
 /obj/machinery/light/broken/directional/north,
 /obj/structure/platform/lowwall/market,
@@ -610,7 +585,7 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "bV" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -625,7 +600,7 @@
 "bX" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/footprints,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands)
@@ -644,7 +619,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -684,7 +659,7 @@
 "ce" = (
 /obj/machinery/door/poddoor/shutters/preopen/deconstructed,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -699,7 +674,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -731,7 +706,7 @@
 	pixel_x = 7
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -749,7 +724,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -786,7 +761,7 @@
 "cs" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -818,7 +793,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -843,7 +818,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood,
 /obj/structure/vampdoor/prison,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -886,7 +861,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -894,7 +869,7 @@
 /obj/structure/table,
 /obj/item/storage/ashtray,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -919,14 +894,14 @@
 	color = "#FFFFFF";
 	alpha = 255
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "cN" = (
 /obj/machinery/light/broken/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -936,7 +911,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1032,7 +1007,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1043,7 +1018,7 @@
 "di" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/ectoplasm,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1056,7 +1031,7 @@
 "dk" = (
 /obj/machinery/light/broken/directional/west,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1077,7 +1052,7 @@
 /obj/structure/platform/lowwall/rich/window,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mapping_helpers/damaged_window,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1099,15 +1074,6 @@
 "dr" = (
 /obj/effect/decal/wallpaper/grey,
 /turf/closed/wall/vampwall/bar,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"ds" = (
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen,
-/obj/structure/table/countertop/bubway,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "dt" = (
 /obj/structure/noticeboard{
@@ -1134,37 +1100,23 @@
 /obj/structure/platform/lowwall/rich,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/wisp_lantern,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "dx" = (
 /obj/structure/table,
-/obj/item/pen/fourcolor,
 /obj/effect/turf_decal/siding/wideplating/dark,
 /obj/effect/decal/wallpaper/blue/low,
 /obj/structure/platform/lowwall/rich,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "dy" = (
 /obj/effect/decal/wallpaper/grey,
 /turf/closed/wall/vampwall/market,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"dz" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/decal/wallpaper/blue/low,
-/obj/structure/platform/lowwall/rich,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
-	color = "#676767"
-	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "dA" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1177,7 +1129,7 @@
 /obj/structure/vampdoor/prison{
 	dir = 4
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1230,7 +1182,7 @@
 /obj/structure/platform/lowwall/rich/window,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mapping_helpers/damaged_window,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1243,7 +1195,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/coin/iron/obolus,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1262,7 +1214,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1284,9 +1236,9 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "dV" = (
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1318,7 +1270,7 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1354,14 +1306,14 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "ed" = (
 /obj/machinery/light/broken/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1371,7 +1323,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1396,7 +1348,7 @@
 "ei" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/vampdoor/prison,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1461,7 +1413,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1480,7 +1432,7 @@
 	},
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1549,7 +1501,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1564,7 +1516,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1606,7 +1558,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1626,7 +1578,7 @@
 /obj/structure/table/wood,
 /obj/machinery/light/broken/directional/west,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1644,7 +1596,7 @@
 	},
 /obj/structure/chair/darkpack/red,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1659,7 +1611,7 @@
 	},
 /obj/machinery/light/broken/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1674,7 +1626,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1687,7 +1639,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1696,7 +1648,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1705,7 +1657,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1738,7 +1690,7 @@
 /obj/structure/vampdoor/prison{
 	dir = 8
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1756,13 +1708,8 @@
 	pixel_x = 5;
 	pixel_y = 4
 	},
-/obj/item/paper_bin{
-	pixel_y = 6;
-	pixel_x = -3
-	},
-/obj/item/pen/fourcolor,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1805,7 +1752,7 @@
 	pixel_y = 13
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1859,7 +1806,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/necropolis_gate/legion_gate,
 /obj/structure/necropolis_arch,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1899,7 +1846,7 @@
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/siding/white/corner,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1947,7 +1894,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1956,7 +1903,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1965,7 +1912,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -1999,7 +1946,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2016,14 +1963,14 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "gb" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2043,7 +1990,7 @@
 	pixel_x = 12
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2085,7 +2032,7 @@
 	desc = "A Spectre of incredible age that has succumbed to a darkness beyond Creation and Oblivion.";
 	name = "Abyss-tainted Onceborn"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2102,7 +2049,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2121,7 +2068,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2161,7 +2108,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2177,7 +2124,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/coin/iron/obolus,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2205,7 +2152,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2216,7 +2163,7 @@
 	pixel_x = -5;
 	pixel_y = 1
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2264,7 +2211,7 @@
 	pixel_x = 0;
 	pixel_y = 8
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2275,7 +2222,7 @@
 	pixel_x = 4;
 	pixel_y = 0
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2353,7 +2300,7 @@
 	desc = "A wraith that has given in to its destructive desires and become a Spectre. Strangely filled with darkness...";
 	name = "Shadowy Spectre"
 	},
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2367,7 +2314,7 @@
 	pixel_y = 14
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2386,7 +2333,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2407,7 +2354,7 @@
 /obj/machinery/light/broken/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/coin/iron/obolus,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2489,7 +2436,7 @@
 	},
 /obj/structure/chair/sofa/right/brown,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2509,14 +2456,14 @@
 "hw" = (
 /obj/structure/chair/sofa/left/brown,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hx" = (
 /obj/structure/closet/cabinet,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -2532,9 +2479,6 @@
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "hC" = (
-/obj/item/folder/blue{
-	pixel_y = 6
-	},
 /obj/effect/decal/carpet{
 	icon_state = "greencarpet";
 	pixel_y = 21;
@@ -2567,15 +2511,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/penumbra/shadowlands)
-"hG" = (
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen,
-/obj/structure/table/wood/fancy/red,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "hH" = (
 /obj/effect/decal/pallet,
 /obj/effect/spawner/random/occult/artifact,
@@ -2648,15 +2583,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"hT" = (
-/obj/structure/table/wood/fancy/red,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "hV" = (
 /obj/structure/table/wood/fancy/red,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2703,7 +2629,6 @@
 /obj/item/paper{
 	pixel_y = 8
 	},
-/obj/item/pen,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -3416,7 +3341,7 @@
 /turf/open/floor/city/toilet/large,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "lm" = (
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -3451,13 +3376,6 @@
 /area/vtm/interior/penumbra/shadowlands)
 "lu" = (
 /obj/structure/filingcabinet/chestdrawer,
-/obj/item/folder/blue{
-	pixel_x = -2;
-	pixel_y = 7
-	},
-/obj/item/pen{
-	pixel_y = 8
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -3477,15 +3395,6 @@
 /obj/structure/bookcase/random/religion,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"lA" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin{
-	pixel_y = 7;
-	pixel_x = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/darkpack/cyan,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "lC" = (
 /obj/structure/table,
@@ -3628,6 +3537,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/ornate,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
+"mB" = (
+/obj/structure/chair/pew/left,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/ghost/giovanni,
+/turf/open/floor/city/church,
+/area/vtm/interior/penumbra/shadowlands/sheltered)
 "mD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/basic/lasombra/better/hostile{
@@ -3763,7 +3678,7 @@
 /area/vtm/interior/penumbra/shadowlands)
 "nn" = (
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/turf_decal/trimline/red/warning{
 	dir = 1
 	},
@@ -3789,6 +3704,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/sidewalk/rich,
 /area/vtm/interior/penumbra/shadowlands)
+"nv" = (
+/obj/structure/chair/pew/right,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/ghost/tremere,
+/turf/open/floor/city/church,
+/area/vtm/interior/penumbra/shadowlands/sheltered)
 "ny" = (
 /obj/structure/bed/maint,
 /obj/effect/decal/cleanable/cardboard,
@@ -4222,7 +4143,7 @@
 /turf/open/misc/dirt,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "qb" = (
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating_stone,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -4560,6 +4481,12 @@
 /obj/effect/mapping_helpers/damaged_window,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
+"rM" = (
+/obj/structure/chair/pew/right,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/ghost/giovanni,
+/turf/open/floor/city/church,
+/area/vtm/interior/penumbra/shadowlands/sheltered)
 "rP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/sidewalk,
@@ -4755,7 +4682,7 @@
 /area/vtm/interior/penumbra/shadowlands)
 "tn" = (
 /obj/machinery/light/broken/directional/south,
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -5133,6 +5060,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
+"vL" = (
+/obj/effect/decal/cleanable/trash,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/brazier,
+/turf/open/floor/city/saint,
+/area/vtm/interior/penumbra/shadowlands/sheltered)
 "vM" = (
 /obj/structure/table/wood,
 /obj/item/gun/ballistic/automatic/darkpack/ak74{
@@ -5282,10 +5215,7 @@
 /obj/structure/vampfence/rich{
 	pixel_y = 7
 	},
-/obj/item/kirbyplants/darkpack/random{
-	pixel_x = 8;
-	pixel_y = 11
-	},
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -5514,10 +5444,6 @@
 "yn" = (
 /obj/effect/decal/cleanable/cardboard,
 /obj/structure/table,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -5860,10 +5786,7 @@
 	color = "#50331a"
 	},
 /obj/structure/table/wood,
-/obj/item/kirbyplants/darkpack/random{
-	pixel_x = 9;
-	pixel_y = 15
-	},
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -5940,9 +5863,6 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "As" = (
 /obj/structure/table/wood,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
 /obj/item/pen/fountain,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/church,
@@ -6131,15 +6051,12 @@
 	pixel_x = -6;
 	pixel_y = 11
 	},
-/obj/item/kirbyplants/darkpack/random{
-	pixel_x = 12;
-	pixel_y = 17
-	},
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/darkpack/blackgold,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "Bv" = (
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -6286,7 +6203,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "Cm" = (
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -6614,6 +6531,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
+"Ed" = (
+/obj/structure/chair/pew/left,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/ghost/tremere,
+/turf/open/floor/city/church,
+/area/vtm/interior/penumbra/shadowlands/sheltered)
 "Ef" = (
 /obj/structure/bonfire/fire_barrel,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6930,19 +6853,11 @@
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "FY" = (
-/obj/item/flashlight/flare/candle/infinite{
-	pixel_y = 7
-	},
-/obj/item/flashlight/flare/candle/infinite{
-	pixel_y = 9;
-	pixel_x = -3
-	},
-/obj/item/flashlight/flare/candle/infinite{
-	pixel_y = 9;
-	pixel_x = 3
-	},
-/obj/structure/table/no_smooth/wood,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/brazier{
+	pixel_x = 0;
+	pixel_y = 10
+	},
 /turf/open/floor/city/church,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "FZ" = (
@@ -7109,10 +7024,6 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "GQ" = (
 /obj/structure/table/wood,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
 	},
@@ -7127,7 +7038,7 @@
 	name = "Shadowy Spectre"
 	},
 /obj/structure/chair/old/tzimisce,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -7360,18 +7271,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/penumbra/shadowlands)
-"If" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/granite/black,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "Ih" = (
 /obj/effect/turf_decal/bordur,
 /obj/structure/table/no_smooth/wood/cablereel,
@@ -7409,7 +7308,7 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "Iu" = (
 /obj/structure/table/wood,
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/structure/platform/lowwall/old,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rough,
@@ -8125,7 +8024,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/necropolis{
+/turf/open/indestructible/necropolis/air{
 	color = "#676767"
 	},
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -8850,10 +8749,7 @@
 /obj/structure/chair/darkpack{
 	dir = 4
 	},
-/obj/item/kirbyplants/darkpack/random{
-	pixel_x = 3;
-	pixel_y = 21
-	},
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -9038,14 +8934,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/darkpack/blacksilver,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"Rn" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/structure/platform/lowwall/rich/old,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "Rp" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
@@ -9066,15 +8954,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/interior/penumbra/shadowlands)
-"Rw" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "Ry" = (
 /obj/structure/bookcase/random,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -9124,7 +9003,6 @@
 /obj/item/paper{
 	pixel_y = 8
 	},
-/obj/item/pen,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -9136,7 +9014,7 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "RP" = (
 /obj/machinery/light/broken/directional/east,
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -9260,17 +9138,6 @@
 /obj/effect/decal/cleanable/trash,
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/interior/penumbra/shadowlands)
-"SB" = (
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen{
-	pixel_y = 7
-	},
-/obj/machinery/light/broken/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/smooth/old,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "SC" = (
 /obj/effect/decal/pallet,
 /obj/structure/bonfire/prelit/fire_barrel,
@@ -9330,7 +9197,7 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "SU" = (
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -9449,21 +9316,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/penumbra/shadowlands)
-"TI" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen{
-	pixel_y = 7
-	},
-/obj/structure/platform/lowwall/market,
-/obj/structure/vampfence/rich{
-	name = "window bars"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "TP" = (
 /obj/effect/decal/cleanable/litter,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -9487,7 +9339,6 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "TU" = (
 /obj/structure/table/wood,
-/obj/item/folder/blue,
 /obj/structure/platform/lowwall/market,
 /obj/structure/vampfence/rich{
 	name = "window bars"
@@ -9809,9 +9660,6 @@
 /turf/open/floor/hay,
 /area/vtm/interior/penumbra/shadowlands)
 "VE" = (
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
 /obj/structure/table/no_smooth/large/metal{
 	dir = 1
 	},
@@ -10009,10 +9857,6 @@
 /area/vtm/interior/penumbra/shadowlands)
 "Wt" = (
 /obj/structure/table,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen/fourcolor,
 /obj/machinery/light/broken/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/city/plating,
@@ -10198,16 +10042,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/asphalt,
 /area/vtm/interior/penumbra/shadowlands)
-"Xx" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen/fourcolor,
-/obj/structure/platform/lowwall/rich,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/rough,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "Xy" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -10231,15 +10065,6 @@
 	desc = "One of the many citizens of the Shadowlands. They seem pretty wary of you."
 	},
 /turf/open/floor/carpet/darkpack,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"XD" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_y = 6
-	},
-/obj/item/pen/fourcolor,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/city/plating,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "XF" = (
 /obj/structure/table/no_smooth/large/wood/square,
@@ -10337,7 +10162,7 @@
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "XZ" = (
 /obj/effect/turf_decal/bordur,
-/obj/item/kirbyplants/darkpack/random,
+/obj/item/kirbyplants/random/dead,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
@@ -11541,7 +11366,7 @@ SF
 SF
 cR
 kY
-XD
+kY
 cU
 cR
 Qg
@@ -11969,7 +11794,7 @@ SF
 SF
 cR
 kY
-XD
+kY
 jk
 cR
 PU
@@ -12296,7 +12121,7 @@ cR
 PU
 PU
 XM
-Xx
+yH
 gc
 yH
 Xv
@@ -12648,7 +12473,7 @@ aU
 Kk
 Kk
 DA
-bS
+uq
 kB
 kB
 kB
@@ -12754,7 +12579,7 @@ Jt
 aU
 Ko
 Kk
-lA
+Ko
 aU
 bI
 KZ
@@ -13009,7 +12834,7 @@ UX
 Vl
 Vl
 UX
-Rw
+Iw
 Iw
 sR
 UX
@@ -15035,10 +14860,10 @@ FY
 kB
 FF
 kB
-WK
+mB
 LP
 gV
-xU
+vL
 al
 Zs
 al
@@ -15142,7 +14967,7 @@ WK
 kB
 yI
 kB
-yR
+rM
 LP
 TS
 TS
@@ -15784,7 +15609,7 @@ yR
 kB
 bc
 kB
-WK
+Ed
 LP
 TS
 TS
@@ -15891,10 +15716,10 @@ FY
 kB
 Cn
 kB
-yR
+nv
 xU
 gO
-LP
+sH
 al
 hm
 TS
@@ -16221,7 +16046,7 @@ GQ
 oO
 SQ
 DT
-If
+oO
 kM
 "}
 (52,1,1) = {"
@@ -16480,7 +16305,7 @@ bV
 gF
 ed
 cm
-dz
+dx
 bV
 bV
 cz
@@ -18333,7 +18158,7 @@ zN
 IA
 jd
 NN
-ds
+Xn
 Xn
 VU
 VU
@@ -19017,7 +18842,7 @@ UX
 pI
 sR
 Xo
-SB
+pj
 UX
 Ze
 Ze
@@ -19118,7 +18943,7 @@ UX
 UX
 iT
 UX
-TI
+TU
 TU
 jB
 It
@@ -19677,7 +19502,7 @@ WG
 WG
 jF
 hJ
-hG
+Hb
 Hb
 sR
 sR
@@ -19780,7 +19605,7 @@ WG
 WG
 jF
 qh
-hT
+Hb
 hS
 lm
 sR
@@ -20845,7 +20670,7 @@ uv
 iC
 sR
 sR
-Rn
+Gq
 kB
 kB
 jF
