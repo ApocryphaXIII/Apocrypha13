@@ -1,5 +1,6 @@
 /area/vtm/interior/penumbra/shadowlands
 	name = "Shadowlands"
+	zone_type = ZONE_NO_MASQUERADE
 	/// Chance for each open turf to get a persistent fog patch, like the sewers
 	var/fog_chance = 25
 

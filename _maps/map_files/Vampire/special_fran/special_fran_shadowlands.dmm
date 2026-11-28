@@ -92,9 +92,6 @@
 "al" = (
 /turf/closed/wall/vampwall/city,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
-"am" = (
-/turf/closed/indestructible/the_matrix,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
 "an" = (
 /obj/structure/vampdoor/old,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1936,7 +1933,6 @@
 	color = "#636363"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/basic/lasombra/hostile,
 /turf/open/floor/city/clinic,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "fQ" = (
@@ -2245,7 +2241,6 @@
 /area/vtm/interior/penumbra/shadowlands)
 "gH" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/fishing_hook/bone,
 /obj/item/fishing_rod/bone,
 /turf/open/misc/dirt,
 /area/vtm/interior/penumbra/shadowlands)
@@ -4054,7 +4049,6 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior/penumbra/shadowlands)
 "pg" = (
-/obj/structure/flora/bush/leavy/style_random,
 /obj/machinery/light/prince/broken/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/smooth/old,
@@ -4565,11 +4559,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mapping_helpers/damaged_window,
 /turf/open/floor/plating/rough,
-/area/vtm/interior/penumbra/shadowlands/sheltered)
-"rN" = (
-/obj/structure/flora/bush/leavy/style_random,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/smooth/old,
 /area/vtm/interior/penumbra/shadowlands/sheltered)
 "rP" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -10795,10 +10784,10 @@ TQ
 TQ
 TQ
 al
-am
-am
-am
-am
+al
+al
+al
+al
 al
 al
 al
@@ -13344,7 +13333,7 @@ EQ
 EQ
 pX
 EQ
-am
+UX
 "}
 (25,1,1) = {"
 TQ
@@ -13451,7 +13440,7 @@ Ze
 Ze
 Ze
 Ze
-am
+UX
 "}
 (26,1,1) = {"
 TQ
@@ -13558,7 +13547,7 @@ kw
 Kx
 Kx
 Kx
-am
+UX
 "}
 (27,1,1) = {"
 TQ
@@ -13665,7 +13654,7 @@ Ze
 Ze
 Ze
 Ze
-am
+UX
 "}
 (28,1,1) = {"
 TQ
@@ -13772,7 +13761,7 @@ Mm
 Mm
 aP
 Mm
-am
+UX
 "}
 (29,1,1) = {"
 TQ
@@ -17736,7 +17725,7 @@ ja
 (66,1,1) = {"
 TQ
 al
-tG
+Ze
 EQ
 EQ
 EQ
@@ -17843,7 +17832,7 @@ ja
 (67,1,1) = {"
 TQ
 al
-tG
+Ze
 Ze
 Ze
 Ze
@@ -17950,7 +17939,7 @@ ja
 (68,1,1) = {"
 TQ
 al
-tG
+Ze
 Ze
 Ze
 Ze
@@ -18057,7 +18046,7 @@ ja
 (69,1,1) = {"
 TQ
 al
-tG
+Ze
 Mm
 Mm
 Mm
@@ -20646,7 +20635,7 @@ Gq
 Ng
 kB
 jF
-rN
+sR
 sR
 WG
 jO
@@ -20753,7 +20742,7 @@ iz
 ym
 kB
 jF
-rN
+sR
 sR
 lz
 lz
@@ -20860,7 +20849,7 @@ Rn
 kB
 kB
 jF
-rN
+sR
 sR
 lz
 lz
@@ -20967,13 +20956,13 @@ Gq
 tJ
 vj
 jF
-rN
+sR
 sR
 sR
 mO
 sR
 sR
-rN
+sR
 pg
 sR
 sR
