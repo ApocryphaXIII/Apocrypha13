@@ -489,6 +489,7 @@ Used by the AI doomsday and the self-destruct nuke.
 		LoadGroup(FailedZs, "Forest", "map_files/Vampire/generic", "forest.dmm", default_traits = ZTRAITS_STATION)
 		LoadGroup(FailedZs, "Neighborhood", "map_files/Vampire/special_fran", "residential.dmm", default_traits = ZTRAITS_STATION)
 		LoadGroup(FailedZs, "Facility", "map_files/Vampire/special_fran", "endron_ruin.dmm", default_traits = ZTRAITS_STATION)
+		LoadGroup(FailedZs, "Shadowlands", "map_files/Vampire/special_fran", "special_fran_shadowlands.dmm", default_traits = ZTRAITS_STATION)
 	// APOC EDIT ADD END
 	else if (!isnull(current_map.minetype) && current_map.minetype != MINETYPE_NONE && current_map.minetype != MINETYPE_ICE)
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[current_map.minetype]' was set! This is being ignored! Update the maploader code!")
